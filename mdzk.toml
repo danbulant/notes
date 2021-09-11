@@ -1,0 +1,22 @@
+[book]
+authors = ["Daniel Bulant"]
+language = "cs"
+multilingual = false
+src = "notes"
+title = "Poznámky"
+
+[build]
+build-dir = "html"
+create-missing = true
+use-default-preprocessors = true
+
+[output.html]
+default-theme = "navy"
+curly-quotes = true
+git-repository-url = "https://github.com/danbulant/notes"
+edit-url-template = "https://github.com/danbulant/notes/edit/main/{path}"
+no-section-label = true
+input-404 = ".404.md"
+
+[output.html.fold]
+enabled = true
