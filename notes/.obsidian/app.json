@@ -1,5 +1,6 @@
 {
   "showFrontmatter": false,
   "foldHeading": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "data"
 }

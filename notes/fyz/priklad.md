@@ -8,4 +8,3 @@ labels: [Monday, Tuesday, Wednesday]
 series:
 	- data: [1,3,4]
 ```
-
