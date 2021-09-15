@@ -11,7 +11,7 @@
 #### Drama
 Scénář, například pro divadelní hru.
 ##### Scénická poznámka
-Text v závorce u dramat, poznamenává akci či další kontext.
+Text v závorce (nebo v kurzívě) u dramat, poznamenává akci či další kontext.
 #### Lyrika
 Komunikuje city.
 #### Epika
@@ -39,7 +39,10 @@ Rozdělení dle rozsahu:
 | [muzikál](#muzikál) | [kronika](#kronika) | [žal](#žal) |
 | [opera](#opera) | [anekdota](#anekdota) | [elegie](#elegie) |
 | [balet](#balet) | [pohádka](#pohádka) | [poema](#poema) |
-| [opereta](#opereta) | | |
+| [opereta](#opereta) | | [kaligram](#kaligram) |
+
+Lyrickoepické:
+- balada
 
 #### píseň
 Rytmická píseň s refrénem.
@@ -52,6 +55,9 @@ Satirická báseň.
 #### Žal
 #### Elegie
 žalozpěv.
+#### Kaligram
+Báseň ve tvaru obrázku (např. báseň o eifelovce ve tvaru eiffelovi věže).
+ASCII art.
 #### báje
 mýtus (např. řecké mýty)
 #### Kronika
@@ -66,6 +72,9 @@ Vymyšlený příběh.
 - lidová (Erben)
 #### Komedie
 #### Tragédie
+Objevuje se v Antice a Renesanci.
+Významný autor:
+- Shakespear
 #### Opera
 Kde se zpívá od začátku do konce.
 #### Opereta
