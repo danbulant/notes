@@ -1,5 +1,11 @@
 # Fyz. veličiny
 ## Síla F
+$$
+F = m * a = m * \frac{v}{t}
+$$
+$$
+[N] = [kg \frac{\frac{m}{S}}{\frac{s}{1}}] = [kg * m * s^{-2}]
+$$
 ## Rychlost V
 ## Zrychlení a
 ### Tíhové zrychlení g
@@ -10,3 +16,14 @@
 ---
 ## Náboj elektronu
 $$ e = -1,602*10^{-19} C $$
+## Jednotky Si
+- **P**etta
+- **T**erra
+- **G**iga
+- **M**ega
+- **k**ilo
+- **1**
+- **m**ili
+- **$\micro$** mikro
+- **n**ano
+- **p**iko
