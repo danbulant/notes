@@ -86,3 +86,14 @@ Střídá se zpěv a mluvené slovo.
 Převládá mluvené slovo s občasným zpěvem.
 #### Melodram
 Drama doprovázeno melodií.
+## Tropy
+Přirovnání, metafora, metonymie.
+## Figury
+Určitá slova na určitých místech.
+### Anafora
+Stejné slovo ve dvou verších na začátku.
+### Epifora
+Stejné slovo ve dvou verších na konci.
+### Gradace
+Stupňování
+> tu zní, tam volá a burácí všady

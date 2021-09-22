@@ -77,8 +77,26 @@
 - pokročilejščí miniaturizace
 - Texas Instruments
 #### Multiprogramátorství
+Zatímco program čeká na přísun informací je procesorem zpracována další úloha.
 - proces
 #### Multitasking
+Procesor zpracovává více úloh naráz - procesor střídá procesy tak rychle že to vypadá že je dělá naráz.
 #### Gordon Moore
 > Kapacita integrovaných obvodů se každých 12 až 18 měsíců zdvojnásobí bez zvýšení výrobních nákladů.
-### Čtvrtá generace
+
+Je to pravda dodnes.
+### Čtvrtá generace (1981 - ...)
+- osobní počítače - PC
+- mikroprocesory
+
+#### Mikroprocesor
+- procesor
+	- jedno pouzdro s několika mikroprocesory
+- multiprocesor
+	- použití několika procesorů najednou
+
+#### Bill Gates
+- DOS
+- IBM
+- Microsoft
+- 2 členy (+ Paul Allen)
