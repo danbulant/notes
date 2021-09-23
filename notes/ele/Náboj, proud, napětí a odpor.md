@@ -2,7 +2,7 @@
 ![[Pasted image 20210920101314.png]]
 ## Náboj - Q
 - Jednotka - 1C = 1 coulomb
-- Výpočet $Q = n * q$
+- Výpočet $Q = n * q$ | $Q = I *t$
 - n <- počet volných elektronů
 - q <- elementární náboj
 ### Elementární náboj - q
@@ -18,12 +18,17 @@
 ## Napětí - U
 - Jednotka - 1V = 1 Volt
 - Výpočet $U = \frac{W}{Q}$
-- Elektrické napětí je práce **W** vykonaná elektrickými silami při přemísťování kladného elektrického náboje **Q**.
+- Elektrické napětí je práce **W** vykonaná elektrickými silami při přemísťování kladného elektrického náboje **Q**. Rozdíl počtů volných elektronů na svorkách zdroje.
 ## Elektrická práce - W
 - Jednotka: 1J = 1 Joule
 - Výpočet $W = U * Q$
 - Elektrická práce odpovídá velikosti tepla, které vzniká při průchodu elektrického proudu vodičem o odporu R (Joule-Lenzův zákon).
 ## Odpor - R
+- Jednotka: $R = 1 \ohm$ (ohm)
+- Brání průchodu proudu
+- Vlastnost spotřebiče/vodiče
+## Výkon
+## Práce
 ## Zdroj x Spotřebič
 - zdroj vytváří proud, spotřebič spotřebovává
 ## Rozdělení látek podle vodivosti
