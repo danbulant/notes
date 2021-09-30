@@ -18,7 +18,8 @@
 ## Napětí - U
 - Jednotka - 1V = 1 Volt
 - Výpočet $U = \frac{W}{Q}$
-- Elektrické napětí je práce **W** vykonaná elektrickými silami při přemísťování kladného elektrického náboje **Q**. Rozdíl počtů volných elektronů na svorkách zdroje.
+- Elektrické napětí je práce **W** vykonaná elektrickými silami při přemísťování kladného elektrického náboje
+- **Q** -> rozdíl počtů volných elektronů na svorkách zdroje.
 ## Elektrická práce - W
 - Jednotka: 1J = 1 Joule
 - Výpočet $W = U * Q$
@@ -27,8 +28,10 @@
 - Jednotka: $R = 1 \ohm$ (ohm)
 - Brání průchodu proudu
 - Vlastnost spotřebiče/vodiče
-## Výkon
-## Práce
+## Výkon - P
+- Jednotka: $P = W$ (watt)
+- Výpočet $P = \frac{W}{t}$
+- Vykonaná elektrická práce za jednotku času.
 ## Zdroj x Spotřebič
 - zdroj vytváří proud, spotřebič spotřebovává
 ## Rozdělení látek podle vodivosti

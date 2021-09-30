@@ -9,5 +9,7 @@
   "obsidian-mind-map",
   "obsidian-outliner",
   "obsidian-admonition",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "obsidian-auto-link-title",
+  "open-note-to-window-title"
 ]
