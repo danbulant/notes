@@ -8,7 +8,7 @@
 | Napětí           | U        | $\frac{W}{Q}$      |
 | Elektrická práce | W        | $U * Q$            |
 | Odpor            | R        | 1                  |
-| Výkon            | P        | $\frac{W}{t}$                   |
+| Výkon            | P        | $\frac{W}{t}$      |
 ## Náboj - Q
 - Jednotka - 1C = 1 coulomb
 - Výpočet $Q = n * q$ | $Q = I *t$
