@@ -1,5 +1,5 @@
 # Základy komunikace
-
+![[tcpudp.jpg]]
 ## 3 prvky
 - Zdroj
 - Médium

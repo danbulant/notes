@@ -19,4 +19,4 @@
 
 ## Periodizace dějin
 - rozdělení **starověk - středověk - novověk** zavedli it. humanisté
-- tradiční mezníkygi
+- tradiční mezníky

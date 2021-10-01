@@ -1,4 +1,11 @@
 # Fyz. veličiny
+Některé písmenka mohou mít více přiřazených veličin:
+- t čas, teplota
+
+## Vektorová veličina
+Má kromě velikosti i směr:
+- síla
+- rychlost
 ## Síla F
 $$
 F = m * a = m * \frac{v}{t}
