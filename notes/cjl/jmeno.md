@@ -14,7 +14,7 @@ Buclatý, kulatý.
 ## Viktor
 - výherce
 ## Chovánek
-- nic nenašel
+- Chovanec (sirotek), hodný chovanec -> chovánek
 - tipuje že je české, od "chovat"
 ## Michal
 - od Michael (jeden z apoštolů)
@@ -35,3 +35,19 @@ Buclatý, kulatý.
 ## Soldát
 - německé (rodina z německa)/ruské
 - voják
+## Tadeáš
+- z Hebrejštiny
+- chytrý, hodný
+## Souček
+- zdrobnělina od "suk"
+- praděda mohl být dřevorubec
+## Ondřej
+- od Andreas
+- 20. nejčastější jméno
+- mužný, statečný
+## Klapka
+## Povolný
+- po prapradědečkovy, mohl být rychtář kdo něco povoloval.
+## Jaroš
+- jarný, šťastný, energetický
+- (lidová etymologie)

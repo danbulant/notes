@@ -55,9 +55,10 @@ Postupně si to příjemci rozbalují a zabalují znova jak je třeba.
 
 #### MAC Adresa
 Neměnná (ve VM měnitelná), určuje výrobce a identifikátor zařízení. Fyzická adresa zařízení na čipu.
-Adresy jde získat přes `ifconfig` na linuxu (package `net-tools` na Arch) a Mac OS, `ipconfig` na tom horším.
+Adresy jde získat přes [`ifconfig`](https://en.wikipedia.org/wiki/Ifconfig) na linuxu (package [`net-tools`](https://archlinux.org/packages/core/x86_64/net-tools/) na Arch) a Mac OS, `ipconfig` na tom horším.
 - 48 bitů
 - zapisována v hexadecimální soustavě (16)
+- [MAC address - Wikipedia](https://en.wikipedia.org/wiki/MAC_address)
 
 #### Router
 Zprostředkovává připojení k ostatním sítí (internet).
@@ -69,6 +70,10 @@ Logická, určována routerem (DHCP) nebo jiným způsobem při připojení zař
 #### TCP
 Spolehlivý protokol, garantuje doručení nebo informaci o nedoručení. Pomalejší než UDP.
 20 byte na hlavičky.
+
+Funguje na tom principu že příjemce odpoví s obsahem zase zpátky, a TCP pak zkontroluje zda příjemce dostal všechny informace ve správném pořadí (případně je seřadí).
 #### UDP
 Rychlý, fire-and-forget, negarantuje doručení a neinformuje o nedoručení, avšak je rychlejší a menší.
 8 byte na hlavičky.
+
+UDP pošle 
