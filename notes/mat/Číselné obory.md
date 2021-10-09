@@ -4,7 +4,7 @@
 Celá čísla od nuly včetně.
 ## **Z** celá čísla
 Všechna celá čísla, včetně záporných.
-### **Q* racionální čísla
+### **Q** racionální čísla
 Všechna čísla jež jde zapsat uzavřeným desetiným zápisem (včetně periodických)
 ### Irracionální čísla
 Čísla které nejde zapsat uzavřeným desetiným zápisem.
