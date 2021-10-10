@@ -51,3 +51,23 @@ Buclatý, kulatý.
 ## Jaroš
 - jarný, šťastný, energetický
 - (lidová etymologie)
+## Vasilijev
+- ze staré řeckého "Vasileus" - vládce
+- všechnoduch
+- "vas" -> vše, všeobjímající
+- nejčastěji na Balkáně
+## Grund
+- pravděpodobně z německa
+- "země", "půda", "pozemek"
+- polévka je grunt -> polévka je základ
+## Václav
+- typické lidové české jméno
+- "slavný"
+## Šiml
+- z němčiny
+- značení pro "Bílého koně"
+## Michael
+- z hebřejštiny
+- kdo je bůh, "mi" -> bůh, "el" -> bůh
+## Moša
+- "moša" spása (dítěte) v hebrejštině

@@ -118,3 +118,16 @@ Odporující se text.
 ### Gradace
 Stupňování
 > tu zní, tam volá a burácí všady
+
+---
+## Drama
+### Expozice
+Nastíní se základní děje
+### Kolize
+Nastane problém
+### Krize
+Je nutno vyřešit problém
+### Periferie
+Problém se zhorší
+### Katastrofa
+Konec

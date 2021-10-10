@@ -71,9 +71,9 @@ Logická, určována routerem (DHCP) nebo jiným způsobem při připojení zař
 Spolehlivý protokol, garantuje doručení nebo informaci o nedoručení. Pomalejší než UDP.
 20 byte na hlavičky.
 
-Funguje na tom principu že příjemce odpoví s obsahem zase zpátky, a TCP pak zkontroluje zda příjemce dostal všechny informace ve správném pořadí (případně je seřadí).
+Funguje na tom principu že příjemce odpoví s obsahem zase zpátky, a TCP pak zkontroluje zda příjemce dostal všechny informace ve správném pořadí (případně je seřadí). TCP také vyžaduje navázání připojení přes které se poté pakety posílají.
 #### UDP
 Rychlý, fire-and-forget, negarantuje doručení a neinformuje o nedoručení, avšak je rychlejší a menší.
 8 byte na hlavičky.
 
-UDP pošle 
+UDP pošle pakety ale už se nestará jestli ve správným pořadí a jestli vůbec dojdou. UDP nevyžaduje připojení.
