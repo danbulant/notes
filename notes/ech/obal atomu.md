@@ -12,9 +12,9 @@ $$ \hat{H}\Psi=E\Psi $$
 
 ### Kvantová čísla - parametry Shrodingerovy rovnice
 
-n -> hlavní kvantové číslo $n = \{1,2,3,\cdots\}$
-l -> vedlejší kvantové číslo $l = \{0,1,\cdots,n-1\}$
-m -> magnetické kvantové číslo $m = \{-l,\cdots,l\}$
+n -> hlavní kvantové číslo $n = \{1,2,3,\dots\}$
+l -> vedlejší kvantové číslo $l = \{0,1,\dots,n-1\}$
+m -> magnetické kvantové číslo $m = \{-l,\dots,l\}$
 s -> spinové kvantové číslo $s = \{-\frac{1}{2}, +\frac{1}{2}\}$
 
 n - energie orbitalu
@@ -31,6 +31,12 @@ Orbitaly s nižší energií se zaplňují elektrony dříve než orbitaly s ene
 V základním stavu atomu tedy elektrony obsazují jednotlivé slupky a podslupky tak, aby měl co nejnižší energii.
 #### Pauliho princip
 Každý orbital může být obsazen nejvýše dvěma elektrony, které se od sebe liší čtvrtým (spinovým) kvantovým číslem.
+
+To znamená, že v každé hladině může být následující počet elektronů:
+- $s \dots 2 e^-$
+- $p \dots 6 e^-$
+- $d \dots 10 e^-$
+- $f \dots 14 e^-$
 #### Hundovo pravidlo
 Orbitaly se stejnou energií (mají stejné $n$ $i$ $l$ - liší se $m$) obsazujeme nejprve po jednom elektronu, teprve pak se elektrony párují.
 #### Valenční orbital

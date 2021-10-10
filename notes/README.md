@@ -9,3 +9,11 @@ Chyby? Překlepy? Opravte je v souborech (či přidejte nové informace) a vytvo
 ## Formátování
 
 Používá markdown v Obsidian. Používá YAML hlavičky s parsovatelnými daty. Složky jsou podle předmětů.
+
+## Activity
+
+Podporováno pouze v Obsidian zobrazení.
+
+```ActivityHistory
+/
+```
