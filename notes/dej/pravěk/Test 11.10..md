@@ -8,7 +8,7 @@
 4. Jakému účelu sloužila s největší pravděpodobností Věstonická venuše?
 -> Význam sošky má též mnoho výkladů: může být symbolem plodnosti, obecným symbolem bohyně Matky či sexuálním symbolem. O jejím účelu se pořád spekuluje. „Je to snad amulet ženství,“
 5. V čem byl výjimečný objev Tutanchamonovy hrobky?
--> 
+-> Byla to jedna z mála hrobek která nebyla vykradena
 6. Co vypovídá podoba hradu Kalich o svém staviteli (a majiteli)?
 ->  Byl náboženský
 7. Jaké společenské důsledky měl neolitický přechod k zemědělství?
