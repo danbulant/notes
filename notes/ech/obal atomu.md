@@ -43,6 +43,14 @@ Orbitaly se stejnou energií (mají stejné $n$ $i$ $l$ - liší se $m$) obsazuj
 Poslední zaplnění orbital.
 
 Prvky se dle valenčního orbitalu rozdělují na $s$, $p$, $d$ a $f$ prvky.
+
+#### Nepřechodné prvky (s a p)
+$s$ a $p$ prvky jsou přechodné.
+Valenční elektrony jsou v poslední vrstvě
+#### Přechodné prvky (d)
+Valenční elektrony jsou v poslední vrstvě a části předcházející.
+#### Vnitřně přechodné prvky (f)
+Valenční elektrony jsou v posledních 3 vrstvách.
 #### Pořadí hladin
 s, f, d, p:
 - 1s
