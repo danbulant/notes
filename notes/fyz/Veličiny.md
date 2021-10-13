@@ -15,6 +15,18 @@ $$
 $$
 ## Rychlost V
 ## Zrychlení a
+$$ a = \frac{\Delta v}{\Delta t} $$
+$$ [a] = m*s^{-2} $$
+
+Zrychlení je fyzikální veličina, která udává změnu okamžité rychlosti za jednotku času.
+
+```chart
+type: line
+labels: [0,1,2,3,4,5]
+series:
+ - data: [0,10,20,30,40,50]
+```
+
 ### Tíhové zrychlení g
 ## Délka L
 ## Hmotnost m

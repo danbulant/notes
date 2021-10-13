@@ -41,7 +41,17 @@
 - Jednotka: $P = W$ (watt)
 - Výpočet $P = \frac{W}{t}$
 - Vykonaná elektrická práce za jednotku času.
+## Energie
+- Jednotka $W = J$ (Joule)
+- Vypočet $W = P * t = U * I * t$
+- $1J = 1Ws$; $3600J = Wh$; $3600000J = 1kWh$
 ## Zdroj x Spotřebič
 - zdroj vytváří proud, spotřebič spotřebovává
 ## Rozdělení látek podle vodivosti
 Viz [[Vodiče]] - vodiče, polovodiče, nevodiče
+
+## Příklady
+$$t=24$$
+$$P=27/24=1.125$$
+$$U=230V$$
+$$W=100000J=100000Ws=27Wh$$
