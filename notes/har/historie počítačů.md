@@ -1,4 +1,4 @@
-# Historie
+# historie počítačů
 ## Počátek
 ### Starověk
 - vývoj mat. úkonů

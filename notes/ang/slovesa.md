@@ -1,3 +1,4 @@
+# slovesa
 1. beat, beat, beaten
 2. catch caught caught
 3. cost cost cost

@@ -1,4 +1,4 @@
-# Elektřina
+# Náboj, proud, napětí a odpor
 ![[Pasted image 20210920101314.png]]
 
 | Název            | Jednotka | Výpočet            |
