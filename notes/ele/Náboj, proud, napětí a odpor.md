@@ -1,14 +1,15 @@
-# Elektřina
+# Náboj, proud, napětí a odpor
 ![[Pasted image 20210920101314.png]]
 
-| Název            | Jednotka | Výpočet            |
-| ---------------- | -------- | ------------------ |
-| Náboj            | Q        | $n * q$ & $I * t$  |
-| Proud            | I        | $1.602 * 10^{-19}$ |
-| Napětí           | U        | $\frac{W}{Q}$      |
-| Elektrická práce | W        | $U * Q$            |
-| Odpor            | R        | 1                  |
-| Výkon            | P        | $\frac{W}{t}$      |
+| Název             | Jednotka | Výpočet            |
+| ----------------- | -------- | ------------------ |
+| Náboj             | Q        | $n * q$ & $I * t$  |
+| Proud             | I        | $\frac{Q}{t}$      |
+| Elementární náboj | q        | $1.602 * 10^{-19}$ |
+| Napětí            | U        | $\frac{W}{Q}$      |
+| Elektrická práce  | W        | $U * Q$            |
+| Odpor             | R        | 1                  |
+| Výkon             | P        | $\frac{W}{t}$      |
 ## Náboj - Q
 - Jednotka - 1C = 1 coulomb
 - Výpočet $Q = n * q$ | $Q = I *t$
