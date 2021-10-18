@@ -12,6 +12,7 @@
   "table-editor-obsidian",
   "obsidian-auto-link-title",
   "open-note-to-window-title",
+<<<<<<< HEAD
   "obsidian-autocomplete-plugin",
   "code-block-copy",
   "cycle-through-panes",
@@ -24,4 +25,8 @@
   "url-into-selection",
   "obsidian-plugin-toc",
   "wikilinks-to-mdlinks-obsidian"
+=======
+  "obsidian-filename-heading-sync",
+  "obsidian-latex"
+>>>>>>> 518b3cab39ab3f46cd019b871e71bcfddd414374
 ]

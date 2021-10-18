@@ -1,14 +1,15 @@
-# Elektřina
+# Náboj, proud, napětí a odpor
 ![[Pasted image 20210920101314.png]]
 
-| Název            | Jednotka | Výpočet            |
-| ---------------- | -------- | ------------------ |
-| Náboj            | Q        | $n * q$ & $I * t$  |
-| Proud            | I        | $1.602 * 10^{-19}$ |
-| Napětí           | U        | $\frac{W}{Q}$      |
-| Elektrická práce | W        | $U * Q$            |
-| Odpor            | R        | 1                  |
-| Výkon            | P        | $\frac{W}{t}$      |
+| Název             | Jednotka | Výpočet            |
+| ----------------- | -------- | ------------------ |
+| Náboj             | Q        | $n * q$ & $I * t$  |
+| Proud             | I        | $\frac{Q}{t}$      |
+| Elementární náboj | q        | $1.602 * 10^{-19}$ |
+| Napětí            | U        | $\frac{W}{Q}$      |
+| Elektrická práce  | W        | $U * Q$            |
+| Odpor             | R        | 1                  |
+| Výkon             | P        | $\frac{W}{t}$      |
 ## Náboj - Q
 - Jednotka - 1C = 1 coulomb
 - Výpočet $Q = n * q$ | $Q = I *t$
@@ -41,7 +42,17 @@
 - Jednotka: $P = W$ (watt)
 - Výpočet $P = \frac{W}{t}$
 - Vykonaná elektrická práce za jednotku času.
+## Energie
+- Jednotka $W = J$ (Joule)
+- Vypočet $W = P * t = U * I * t$
+- $1J = 1Ws$; $3600J = Wh$; $3600000J = 1kWh$
 ## Zdroj x Spotřebič
 - zdroj vytváří proud, spotřebič spotřebovává
 ## Rozdělení látek podle vodivosti
 Viz [[Vodiče]] - vodiče, polovodiče, nevodiče
+
+## Příklady
+$$t=24$$
+$$P=27/24=1.125$$
+$$U=230V$$
+$$W=100000J=100000Ws=27Wh$$
