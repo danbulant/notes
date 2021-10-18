@@ -11,5 +11,17 @@
   "obsidian-admonition",
   "table-editor-obsidian",
   "obsidian-auto-link-title",
-  "open-note-to-window-title"
+  "open-note-to-window-title",
+  "obsidian-autocomplete-plugin",
+  "code-block-copy",
+  "cycle-through-panes",
+  "cm-editor-syntax-highlight-obsidian",
+  "obsidian-emoji-toolbar",
+  "obsidian-filename-heading-sync",
+  "hotkey-helper",
+  "obsidian-icons-plugin",
+  "obsidian-kanban",
+  "url-into-selection",
+  "obsidian-plugin-toc",
+  "wikilinks-to-mdlinks-obsidian"
 ]
