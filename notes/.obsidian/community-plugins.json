@@ -1,32 +1,25 @@
 [
-  "obsidian-charts",
   "obsidian-git",
-  "obsidian-activity-history",
-  "obsidian-gist",
-  "emoji-shortcodes",
-  "dataview",
-  "templater-obsidian",
-  "obsidian-mind-map",
-  "obsidian-outliner",
-  "obsidian-admonition",
   "table-editor-obsidian",
+  "obsidian-admonition",
   "obsidian-auto-link-title",
-  "open-note-to-window-title",
-<<<<<<< HEAD
   "obsidian-autocomplete-plugin",
   "code-block-copy",
   "cycle-through-panes",
+  "dataview",
   "cm-editor-syntax-highlight-obsidian",
+  "emoji-shortcodes",
   "obsidian-emoji-toolbar",
+  "obsidian-latex",
   "obsidian-filename-heading-sync",
+  "obsidian-gist",
   "hotkey-helper",
   "obsidian-icons-plugin",
-  "obsidian-kanban",
+  "obsidian-mind-map",
+  "obsidian-charts",
   "url-into-selection",
   "obsidian-plugin-toc",
-  "wikilinks-to-mdlinks-obsidian"
-=======
-  "obsidian-filename-heading-sync",
-  "obsidian-latex"
->>>>>>> 518b3cab39ab3f46cd019b871e71bcfddd414374
+  "templater-obsidian",
+  "wikilinks-to-mdlinks-obsidian",
+  "obsidian-outliner"
 ]

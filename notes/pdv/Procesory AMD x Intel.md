@@ -1,0 +1,1 @@
+# Procesory AMD x Intel
