@@ -1,3 +1,8 @@
+---
+tags:
+  - cjl/literatura/tropy
+  - cjl/literatura/figury
+---
 # Tropy a figury
 
 - tu zní, tam volá a burácí všady -> Gradace

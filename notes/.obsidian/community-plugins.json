@@ -21,5 +21,6 @@
   "obsidian-plugin-toc",
   "templater-obsidian",
   "wikilinks-to-mdlinks-obsidian",
-  "obsidian-outliner"
+  "obsidian-outliner",
+  "obsidian-chartsview-plugin"
 ]

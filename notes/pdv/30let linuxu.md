@@ -1,4 +1,9 @@
-# 30 let Linuxu
+---
+tags:
+  - pdv
+  - pdv/linux
+---
+# 30let linuxu
 Necelé 2 týdny zpátky (v době psaní) bylo výročí 30 let od oznámení linuxu. Linus Torvalds 25. srpna poslal email kde psal o tom, jak pracuje na operačním systému pro procesory řady 386/486, a taky napsal že to nebude nic velkého a profesionálního jako GNU (ironicky). Napsal že Linux není portovatelný, protože používá hodně funkcí specifických pro 386 procesory. Nedávno byl naportován na VRChat shader (pomocí emulace RISC-V procesoru, který má úplně jinou architekturu než 386).
 > It will never be the professional OS that Hurd will be.
 >    &mdash; <cite>Linus Torvalds</cite>

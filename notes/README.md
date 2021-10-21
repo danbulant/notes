@@ -1,4 +1,4 @@
-# Poznámky
+# README
 
 Jednoduchý web na moje poznámky ze školy. SSPŠ kybernetická bezbečnost.
 

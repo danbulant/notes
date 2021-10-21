@@ -1,3 +1,7 @@
+---
+tags:
+  - mat/číselne-soustavy
+---
 # Číselné soustavy
 ## Používané
 - decimální / desítková

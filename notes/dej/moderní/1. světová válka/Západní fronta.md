@@ -1,3 +1,7 @@
+---
+tags:
+  - dej/moderní/první-světová/západní-fronta
+---
 # Západní fronta
 - blesková a zákopová válka, patová situace
 - fronta od belgického pobřeží přes Flandry, údolí Sommy, Champagne až k hranicím Švýcarska

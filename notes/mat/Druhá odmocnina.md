@@ -1,3 +1,7 @@
+---
+tags:
+  - mat/druhá-odmocnina
+---
 # Druhá odmocnina
 $\sqrt{x}$
 - $x\ge0$ $x \epsilon R$ (což je stejné jako toto:)

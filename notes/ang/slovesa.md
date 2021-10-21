@@ -1,3 +1,7 @@
+---
+tags:
+  - ang/slovesa
+---
 # slovesa
 1. beat, beat, beaten
 2. catch caught caught

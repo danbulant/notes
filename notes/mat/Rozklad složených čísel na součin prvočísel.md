@@ -1,4 +1,8 @@
-# Rozklad složených čísel na součin provčísel
+---
+tags:
+  - mat/prvočísla/rozklad
+---
+# Rozklad složených čísel na součin prvočísel
 
 ## Základní věta aritmetiky
 Každé přírozené číslo $n$ větší než $1$ lze zapsat jediným způsobem ve tvaru $n=p_1^{r_1} * p_2^{r_2} \dots$ kde $p_1 \lt p_2 \lt p_3 \dots$, jsou prvočísla a $r_1, r_2 \dots$ jsou přirozená čísla.

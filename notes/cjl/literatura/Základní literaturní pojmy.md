@@ -1,3 +1,8 @@
+---
+tags:
+  - cjl/literatura/pojmy
+  - cjl/literatura/žánry
+---
 # Základní literaturní pojmy
 ## Literatura
 - soubor všech zapsaných textů

@@ -1,3 +1,15 @@
+---
+tags:
+  - psi
+  - psi/protokol
+  - psi/isoosi
+  - psi/tcp
+  - psi/ip
+  - psi/udp
+  - psi/mac
+  - psi/router
+  - psi/switch
+---
 # Základy komunikace
 ![[tcpudp.jpg]]
 ## 3 prvky
