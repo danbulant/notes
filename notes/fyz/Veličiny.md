@@ -1,5 +1,7 @@
 ---
 tags:
+  - fyz
+  - fyz/veličiny
   - fyz/veličiny/vektory
   - fyz/veličiny/síla
   - fyz/veličiny/rychlost
@@ -10,6 +12,7 @@ tags:
   - fyz/veličiny/teplota
   - fyz/veličiny/čas
   - fyz/veličiny/náboj
+  - fyz/SI
   - fyz/SI/jednotky
   - fyz/SI/předpony
 ---

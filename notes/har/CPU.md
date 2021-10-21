@@ -1,5 +1,6 @@
 ---
 tags:
+  - har
   - har/cpu
   - har/cpu/alu
   - har/cpu/fpu

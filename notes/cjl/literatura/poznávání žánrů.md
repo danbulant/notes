@@ -1,6 +1,8 @@
 ---
 tags:
+  - cjl
   - cjl/literatura
+  - cjl/literatura/žánry
 ---
 # poznávání žánrů
 1. lyrika - kaligram

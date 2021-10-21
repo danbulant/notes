@@ -1,5 +1,7 @@
 ---
 tags:
+  - fyz
+  - fyz/SI
   - fyz/SI/jednotky
   - fyz/SI/příklady
 ---

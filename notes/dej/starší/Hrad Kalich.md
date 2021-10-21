@@ -1,6 +1,7 @@
 ---
 tags:
   - dej
+  - dej/starší
 ---
 # Hrad Kalich
 1. Kdo a proč si nechal hrad Kalich postavit?

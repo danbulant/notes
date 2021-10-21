@@ -1,5 +1,6 @@
 ---
 tags:
+  - cjl
   - cjl/jména
 ---
 # jména

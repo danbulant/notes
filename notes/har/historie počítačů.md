@@ -1,5 +1,7 @@
 ---
 tags:
+  - har
+  - dej
   - har/history
   - dej/počítače
 ---

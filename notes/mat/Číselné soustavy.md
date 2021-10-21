@@ -1,5 +1,6 @@
 ---
 tags:
+  - mat
   - mat/číselne-soustavy
 ---
 # Číselné soustavy

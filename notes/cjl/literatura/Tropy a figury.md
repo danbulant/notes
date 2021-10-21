@@ -1,5 +1,8 @@
 ---
 tags:
+  - cjl
+  - cjl/literatura
+  - cjl/literatura/pojmy
   - cjl/literatura/tropy
   - cjl/literatura/figury
 ---

@@ -1,12 +1,13 @@
 ---
 tags:
+  - ech
   - ech/radioaktivita
   - ech/radioaktivita/fúzní
   - ech/radioaktivita/rozklad
 ---
 # radioaktivita
 - přírodní proces
-- Objevil fyzik [[Antoine Henri Becquerel]]
+- Objevil fyzik Antoine Henri Becquerel
 
 ## Syntetické procesy (fúzní)
 - Probíhá u lehčích jader, vznikají těžší

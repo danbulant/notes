@@ -1,11 +1,16 @@
 ---
+desc: Dějepis
 tags:
   - dej
+  - dej/README
+  - README
 ---
-# uvod
+# Úvod
 - humanitní a společenská věda
 - dějiny člověka a jeho civilizace
 
+## Důležitá data
+![[Data#^806fb9]]
 ## Prameny
 1. písemné
 2. hmotné

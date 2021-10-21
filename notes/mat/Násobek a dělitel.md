@@ -1,5 +1,6 @@
 ---
 tags:
+  - mat
   - mat/násobek
   - mat/dělitel
 ---

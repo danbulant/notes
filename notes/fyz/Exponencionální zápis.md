@@ -1,5 +1,6 @@
 ---
 tags:
+  - fyz
   - fyz/exponencionální-zápis
 ---
 # Exponencionální zápis

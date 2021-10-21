@@ -22,5 +22,6 @@
   "templater-obsidian",
   "wikilinks-to-mdlinks-obsidian",
   "obsidian-outliner",
-  "obsidian-chartsview-plugin"
+  "obsidian-chartsview-plugin",
+  "obsidian-activity-history"
 ]

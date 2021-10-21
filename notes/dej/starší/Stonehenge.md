@@ -2,6 +2,9 @@
 title: Stonehenge
 location: 55HF+HG Salisbury, United Kingdom
 creation: -2100
+tags:
+  - dej
+  - dej/starší
 ---
 # Stonehenge
 Komplex kamenů uspořádáných v kruzích.

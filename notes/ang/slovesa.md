@@ -1,5 +1,6 @@
 ---
 tags:
+  - ang
   - ang/slovesa
 ---
 # slovesa

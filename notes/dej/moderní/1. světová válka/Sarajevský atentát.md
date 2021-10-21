@@ -1,6 +1,10 @@
 ---
-date: 28. 06. 1914
+Date: 1914-06-28
+desc: Atentát na Rakousko-uherského krále, zahájení 1. světové války.
 tags:
+  - dej
+  - dej/moderní
+  - dej/moderní/první-světová
   - dej/moderní/první-světová/atentát
 ---
 # Sarajevský atentát

@@ -1,5 +1,8 @@
 ---
 tags:
+  - dej
+  - dej/moderní
+  - dej/moderní/první-světová
   - dej/moderní/první-světová/zbraně
 ---
 # Zbraně

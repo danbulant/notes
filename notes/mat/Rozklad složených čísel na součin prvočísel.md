@@ -1,5 +1,6 @@
 ---
 tags:
+  - mat
   - mat/prvočísla/rozklad
 ---
 # Rozklad složených čísel na součin prvočísel

@@ -1,4 +1,12 @@
-# Test 11.10.2021
+---
+Day: 2021-10-11
+tags:
+  - dej
+  - testy
+  - testy/dej
+  - dej/starší
+---
+# Test 11.10.
 1. Jaký kódovací systém rozluštil Alan Turing?
 -> Enigma
 2. Jakým způsobem funguje letecká archeologie?

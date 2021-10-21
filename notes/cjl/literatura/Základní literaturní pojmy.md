@@ -1,5 +1,7 @@
 ---
 tags:
+  - cjl
+  - cjl/literatura
   - cjl/literatura/pojmy
   - cjl/literatura/žánry
 ---

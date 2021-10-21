@@ -1,5 +1,6 @@
 ---
 tags:
+  - ech
   - ech/Mendělejev
   - osobnosti
 ---

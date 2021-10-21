@@ -1,5 +1,6 @@
 ---
 tags:
+  - fyz
   - fyz/pohyb
 ---
 # Pohyb

@@ -1,5 +1,6 @@
 ---
 tags:
+  - ech
   - ech/atom
   - ech/shrodingerova-rovnice
   - ech/kvantová-čísla

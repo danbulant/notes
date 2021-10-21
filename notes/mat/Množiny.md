@@ -1,5 +1,6 @@
 ---
 tags:
+  - mat
   - mat/množiny
   - mat/množiny/průnik
   - mat/množiny/podmnožina

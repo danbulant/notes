@@ -1,4 +1,9 @@
-# Pravěk
+---
+tags:
+  - dej
+  - dej/starší
+---
+# úvod
 - období lidských dějin písemně (historicky) nezachycené
 -> **pre**-historie
 - informace přináší:

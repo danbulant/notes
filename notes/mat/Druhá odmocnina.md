@@ -1,5 +1,6 @@
 ---
 tags:
+  - mat
   - mat/druhá-odmocnina
 ---
 # Druhá odmocnina
