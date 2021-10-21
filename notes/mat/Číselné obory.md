@@ -1,3 +1,8 @@
+---
+tags:
+  - mat/číselné-obory
+  - mat/imaginárni-číslo
+---
 # Číselné obory
 
 ## **N** přirozená čísla

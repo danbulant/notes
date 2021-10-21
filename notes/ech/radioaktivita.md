@@ -1,5 +1,10 @@
-
-# Radioaktivita
+---
+tags:
+  - ech/radioaktivita
+  - ech/radioaktivita/fúzní
+  - ech/radioaktivita/rozklad
+---
+# radioaktivita
 - přírodní proces
 - Objevil fyzik [[Antoine Henri Becquerel]]
 

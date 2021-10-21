@@ -1,5 +1,7 @@
 ---
 date: 28. 06. 1914
+tags:
+  - dej/moderní/první-světová/atentát
 ---
 # Sarajevský atentát
 28.6.1914

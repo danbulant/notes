@@ -1,3 +1,10 @@
+---
+tags:
+  - ele
+  - ele/vodiče
+  - ele/vodiče/polovodiče
+  - ele/vodiče/izolanty
+---
 # Vodiče
 Rozdělení:
 ## Vodiče
@@ -9,7 +16,7 @@ Vedou proud.
 - Sn - cín (součástí pájky -> cín + olovo)
 ### Vlastnosti
 - zvýšení teploty se odpor zvýší (narozdíl od [polovodičů](#polovodiče))
-## Polovodiče
+## [[Polovodiče]]
 Vedou proud za určitých podmínek, při splnění podmínkách se stávají supravodiči.
 ### Příklady
 - Se - Selen

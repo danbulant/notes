@@ -1,4 +1,8 @@
-# Hmota
+---
+tags:
+  - ech/hmota
+---
+# hmota
 ## Částice
 - atom -> prvek (92 v přírodě)
 - molekula -> sloučenina (několik miliónů)

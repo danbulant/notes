@@ -1,3 +1,8 @@
+---
+tags:
+  - mat/zlomky
+---
+# Zlomky
 $$
 \frac{x}{3} - 20 = \frac{x}{7}
 $$

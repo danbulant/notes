@@ -1,3 +1,7 @@
+---
+tags:
+  - har/IQRF
+---
 # IQRF
 <abbr title="Internet of Things">IoT</abbr>, chytré spotřebiče/domácnost/škola.
 

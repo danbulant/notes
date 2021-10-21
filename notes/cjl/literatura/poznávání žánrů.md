@@ -1,3 +1,8 @@
+---
+tags:
+  - cjl/literatura
+---
+# poznávání žánrů
 1. lyrika - kaligram
 2. lyrika - epigram
 3. lyrika - elegie

@@ -1,3 +1,7 @@
+---
+tags:
+  - fyz/exponencionální-zápis
+---
 # Exponencionální zápis
 Jedna cifra před desetinou čárkou (ne nula), krát 10 na exponent.
 

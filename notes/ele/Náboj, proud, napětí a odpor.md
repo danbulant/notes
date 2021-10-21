@@ -1,3 +1,10 @@
+---
+tags:
+  - ele
+  - ele/náboj
+  - ele/proud
+  - ele/napětí
+---
 # Náboj, proud, napětí a odpor
 ![[Pasted image 20210920101314.png]]
 
@@ -52,7 +59,15 @@
 Viz [[Vodiče]] - vodiče, polovodiče, nevodiče
 
 ## Příklady
+---
 $$t=24$$
 $$P=27/24=1.125$$
 $$U=230V$$
 $$W=100000J=100000Ws=27Wh$$
+---
+$$W=I*U*t/P*t$$
+$$U=230V$$
+$$t=10h=36000s$$
+$$I=500mA=0.5A$$
+$$W=0.5*230*36000=4140000J=4140kJ$$
+---

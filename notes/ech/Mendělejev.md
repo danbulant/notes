@@ -1,4 +1,9 @@
-# Dimitrij Ivanovič Mendělejev
+---
+tags:
+  - ech/Mendělejev
+  - osobnosti
+---
+# Mendělejev
 1834 - 1907
 - nejmladší z 15. sourozenců
 - ve dvaceti letech osiřel
