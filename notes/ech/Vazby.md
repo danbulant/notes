@@ -1,3 +1,7 @@
+---
+tags:
+  - ech/vazby
+---
 # Vazby
 ## Vazebná energie a Disociační energie
 Vazebná energie je energie, která se uvolní při vzniku vazby.

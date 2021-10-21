@@ -1,3 +1,13 @@
+---
+tags:
+  - har/cpu
+  - har/cpu/alu
+  - har/cpu/fpu
+  - har/cpu/gpu
+  - har/cpu/controller
+  - har/cpu/registers
+  - har/cpu/cache
+---
 # CPU
 Základní úlohou mikroprocesoru je pracovat podle pokynů určitého programu nebo hardwaru v počítači či jiném podobném zařízení (tablet, smart phone...)
 

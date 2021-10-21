@@ -1,5 +1,12 @@
+---
+tags:
+  - fyz/SI/jednotky
+  - fyz/SI/příklady
+---
 # Jednotky SI
 – metr, kilogram, sekunda, Kelvin, ampér, mol, kandela 
+
+[Předpony SI](./Veličiny.md#Jednotky%20SI)
 
 $(-273)°C = 0K$
 $F = m*a$

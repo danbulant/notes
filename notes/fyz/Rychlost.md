@@ -1,3 +1,7 @@
+---
+tags:
+  - fyz/rychlost
+---
 # Rychlost
 ## Příklady
 - $t = 2,5h$

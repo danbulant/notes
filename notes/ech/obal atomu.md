@@ -1,4 +1,10 @@
-# Atomový obal
+---
+tags:
+  - ech/atom
+  - ech/shrodingerova-rovnice
+  - ech/kvantová-čísla
+---
+# obal atomu
 - Obsazování orbitalů elektrony
 - výstavbový princip
 

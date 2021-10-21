@@ -1,3 +1,8 @@
+---
+tags:
+  - fyz/příklad
+---
+# Příklad
 $$
 \beta\frac{1}{\alpha}^3+\infty_5
 $$

@@ -21,3 +21,22 @@ Odpověď: <u>24</u>
 ---
 Písemná práce z matematiky, které se zúčastnilo 35 studentů, obsahovala tři úlohy. Dva studenti vyřešili jenom první úlohu a tři studenti jenom druhou úlohu. První a druhou úlohu vyřešilo 16 studentů, druhou a třetí 14 studentů. Všechny úlohy vyřešilo 10 studentů, první nebo třetí 31 studentů a 3 studenti nevyřešili ani první ani druhou úlohu. Kolik stůdentů vyřešilo: a) aspoň dvě úlohy, b) aspoň jednu úlohu?
 
+---
+Z 825 oslovených osob 380 uvedlo, že používá počítač doma nebo v zaměstnání. Počet osob, které používají počítač doma, je dvakrát větší než počet těch, kteří používají počítač doma i v zaměstnání, a je o 40 menší než počet těch, kteří používají počítač pouze v zaměstnání. Kolik oslovených osob používá počítač:
+a) pouze v zaměstnání?	b) doma?	c) nepoužívá počítač vůbec?
+
+a -> pouze zaměstnání
+b -> doma
+c -> nepoužívá
+d -> doma i v zaměstnání
+$$c = 825-380 = 445$$
+$$b = 2d = a - 40$$
+$$d = b/2 = a/2 - 20$$
+$$a = b + 40 = d*2 + 20$$
+$$380 = a + b$$
+$$b = (380 - 40) / 2 = 340 / 2 = 170$$
+$$a = 170 + 40 = 210$$
+$$d = b/2 = 170/2 = 85$$
+
+---
+Jedničku z matematiky má na vysvědčení celkem 9 studentů. Jedničku z fyziky má na vysvědčení celkem 10 studentů. Jedničku z matematiky, nebo z fyziky má na vysvědčení 16 studentů. Jedničku z matematiky má třikrát více studentů, než je studentů, kteří mají jedničku z obou předmětů. Celkem je ve třídě 18 studentů, kteří nemají jedničku z matematiky ani z fyziky. Kolik studentů má jedničku z obou předmětů? Kolik je ve třídě celkem studentů, za předpokladu, že všichni byli klasifikování z matematiky i fyziky? Vennův diagram zakreslete.

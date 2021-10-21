@@ -1,3 +1,8 @@
+---
+tags:
+  - har/history
+  - dej/počítače
+---
 # historie počítačů
 ## Počátek
 ### Starověk

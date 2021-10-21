@@ -1,3 +1,7 @@
+---
+tags:
+  - fyz/pohyb
+---
 # Pohyb
 ## Mechanický
 Když se těleso pohybuje vzájemně k jinému tělesu.

@@ -1,3 +1,0 @@
-# Trnka
-
-Kabinet 309
