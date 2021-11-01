@@ -15,6 +15,7 @@
   "allowCtrlClick": true,
   "forceWrap": false,
   "pageTransclusionCharLimit": 200,
+  "iframelyAllowed": true,
   "pngExportScale": 1,
   "exportWithTheme": true,
   "exportWithBackground": true,
@@ -30,6 +31,6 @@
   "loadCount": 1,
   "drawingOpenCount": 0,
   "library": "{\"type\":\"excalidrawlib\",\"version\":1,\"library\":[]}",
-  "patchCommentBlock": true,
+  "patchCommentBlock": false,
   "imageElementNotice": true
 }
