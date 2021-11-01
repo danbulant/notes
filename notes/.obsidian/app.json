@@ -1,4 +1,6 @@
 {
   "newFileLocation": "current",
-  "attachmentFolderPath": "data"
+  "attachmentFolderPath": "data",
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true
 }

@@ -15,7 +15,7 @@ tags:
 - kuličkové počítadla
 - calculli (řecko/řím)
 - sčot (rusko)
-![[Pasted image 20210915110856.png]]
+![akabus.png](akabus.png)
 ### Anglie
 #### 17. století
 - logaritmické tabulky a pravítko
