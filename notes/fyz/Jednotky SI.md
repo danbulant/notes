@@ -2,8 +2,6 @@
 tags:
   - fyz
   - fyz/SI
-  - fyz/SI/jednotky
-  - fyz/SI/příklady
 ---
 # Jednotky SI
 – metr, kilogram, sekunda, Kelvin, ampér, mol, kandela 

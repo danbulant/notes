@@ -1,7 +1,6 @@
 ---
 tags:
   - fyz
-  - fyz/příklady
 ---
 # Příklad
 $$

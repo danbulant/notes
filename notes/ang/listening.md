@@ -1,7 +1,6 @@
 ---
 tags:
   - ang
-  - ang/listening
 ---
 # listening
 1. A 

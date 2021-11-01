@@ -1,9 +1,6 @@
 ---
 tags:
   - ech
-  - ech/radioaktivita
-  - ech/radioaktivita/fúzní
-  - ech/radioaktivita/rozklad
 ---
 # radioaktivita
 - přírodní proces

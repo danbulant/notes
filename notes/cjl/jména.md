@@ -1,7 +1,6 @@
 ---
 tags:
   - cjl
-  - cjl/jména
 ---
 # jména
 
@@ -76,3 +75,24 @@ Buclatý, kulatý.
 - kdo je bůh, "mi" -> bůh, "el" -> bůh
 ## Moša
 - "moša" spása (dítěte) v hebrejštině
+## Vít
+- Vojtěch
+- z nemčiny
+## Svoboda
+- svobodný sedlák
+- někdo kdo se vyplatil ze sedlanství
+- kdo měl ukončenou vojenskou službu
+## Lukáš
+- obyvatel Lukánie
+- z řečtiny
+## Kraus
+- kučera, kudrna
+## Alex
+- Saša
+- z ruska
+## Wage
+- ze severských zemí
+- v němčině "váha"
+## Souček
+- české
+- větvička

@@ -1,7 +1,6 @@
 ---
 tags:
   - ang
-  - ang/testy
   - testy
 ---
 # Testy

@@ -2,11 +2,6 @@
 tags:
   - mat
   - mat/množiny
-  - mat/množiny/průnik
-  - mat/množiny/podmnožina
-  - mat/množiny/sjednocení
-  - mat/množiny/doplněk
-  - mat/množiny/rozdíl
 ---
 # Množiny
 Množina je souhrn nějakých předmětů (prvků množiny).

@@ -2,6 +2,7 @@
 desc: Počítačové sítě
 tags:
   - psi
+  - generated
   - README
 ---
 # Sítě

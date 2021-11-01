@@ -1,7 +1,7 @@
 ---
 tags:
   - fyz
-  - fyz/rychlost
+  - fyz/veličiny
 ---
 # Rychlost
 ## Příklady

@@ -1,3 +1,8 @@
+---
+tags:
+  - dej
+  - generated
+---
 # Data
 Důležitá data:
 ```dataviewjs

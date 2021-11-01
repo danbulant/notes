@@ -2,13 +2,15 @@
 desc: Dějepis
 tags:
   - dej
-  - dej/README
   - README
 ---
 # Úvod
 - humanitní a společenská věda
 - dějiny člověka a jeho civilizace
 
+## Kde začít
+- [[1. světová válka]]
+- [[dej/starší/úvod|Úvod do pre-historie]]
 ## Důležitá data
 ![[Data#^806fb9]]
 ## Prameny

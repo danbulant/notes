@@ -3,7 +3,6 @@
   "table-editor-obsidian",
   "obsidian-admonition",
   "obsidian-auto-link-title",
-  "obsidian-autocomplete-plugin",
   "code-block-copy",
   "cycle-through-panes",
   "dataview",
@@ -23,6 +22,5 @@
   "wikilinks-to-mdlinks-obsidian",
   "obsidian-outliner",
   "obsidian-chartsview-plugin",
-  "obsidian-activity-history",
-  "obsidian-excalidraw-plugin"
+  "obsidian-codemirror-options"
 ]

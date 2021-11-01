@@ -1,7 +1,6 @@
 ---
 tags:
   - ech
-  - ech/hmota
 ---
 # hmota
 ## Částice

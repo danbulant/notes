@@ -3,7 +3,6 @@ tags:
   - dej
   - dej/moderní
   - dej/moderní/první-světová
-  - dej/moderní/první-světová/západní-fronta
 ---
 # Západní fronta
 - blesková a zákopová válka, patová situace

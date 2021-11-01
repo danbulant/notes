@@ -2,6 +2,7 @@
 tags:
   - fyz
   - fyz/pohyb
+  - fyz/veličiny
 ---
 # Pohyb
 ## Mechanický
@@ -40,3 +41,8 @@ $$ v_1 = 30\frac{km}{h} $$
 $$ t_2 = 10min = \frac{1}{6}h $$
 $$ v_2 = (s - t_1 * v_1) / t_2 = (30km - \frac{1}{3} * 30 \frac{km}{h}) / \frac{1}{6}h = (30km - 10) / \frac{1}{6} = 20 / \frac{1}{6} = 20 * 6 = 120 \frac{km}{h}$$
 - Musí jet rychlostí $120 \frac{km}{h}$ aby to stihl.
+
+## Perioda pohybu T
+- doba, za níž se rovnoměrný pohyb po kružnici opakuje.
+- $f=\frac{1}{T}$ - frekvence
+- $[T]=s$

@@ -38,3 +38,8 @@ tags:
 	- ve Středomoří se doba bronzová a železná již prolíná se starověkem
 	- železo - od Chetitů, důvod převahy Dórů
 		- kutí, lití kovu, ražení mincí
+
+## Místa
+- [[Hrad Kalich]]
+- [[Stonehenge]]
+- [[Jeskyně pod Býčí skálou]]

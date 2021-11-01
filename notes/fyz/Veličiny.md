@@ -2,19 +2,7 @@
 tags:
   - fyz
   - fyz/veličiny
-  - fyz/veličiny/vektory
-  - fyz/veličiny/síla
-  - fyz/veličiny/rychlost
-  - fyz/veličiny/zrychlení
-  - fyz/veličiny/zrychlení/tíhové
-  - fyz/veličiny/délka
-  - fyz/veličiny/hmotnost
-  - fyz/veličiny/teplota
-  - fyz/veličiny/čas
-  - fyz/veličiny/náboj
   - fyz/SI
-  - fyz/SI/jednotky
-  - fyz/SI/předpony
 ---
 # Veličiny
 Některé písmenka mohou mít více přiřazených veličin:

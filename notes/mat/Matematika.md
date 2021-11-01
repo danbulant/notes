@@ -1,8 +1,9 @@
 ---
 desc: Matematika
 tags:
-  - mat/README
+  - mat
   - README
+  - generated
 ---
 # Matematika
 ```dataviewjs

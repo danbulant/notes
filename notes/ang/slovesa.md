@@ -1,7 +1,6 @@
 ---
 tags:
   - ang
-  - ang/slovesa
 ---
 # slovesa
 1. beat, beat, beaten

@@ -1,7 +1,8 @@
 ---
+years: 1834 - 1907
+desc: Autor Periodické soustavy prvků
 tags:
   - ech
-  - ech/Mendělejev
   - osobnosti
 ---
 # Mendělejev

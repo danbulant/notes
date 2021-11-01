@@ -1,7 +1,6 @@
 ---
 tags:
   - ech
-  - ech/vazby
 ---
 # Vazby
 ## Vazebná energie a Disociační energie

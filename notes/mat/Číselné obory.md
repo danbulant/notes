@@ -1,8 +1,6 @@
 ---
 tags:
   - mat
-  - mat/číselné-obory
-  - mat/imaginárni-číslo
 ---
 # Číselné obory
 

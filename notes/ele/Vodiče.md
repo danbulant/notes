@@ -2,8 +2,6 @@
 tags:
   - ele
   - ele/vodiče
-  - ele/vodiče/polovodiče
-  - ele/vodiče/izolanty
 ---
 # Vodiče
 Rozdělení:

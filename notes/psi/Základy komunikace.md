@@ -2,14 +2,6 @@
 desc: Základní pojmy a věci okolo internetu. 
 tags:
   - psi
-  - psi/protokol
-  - psi/iso-osi
-  - psi/tcp
-  - psi/ip
-  - psi/udp
-  - psi/mac
-  - psi/router
-  - psi/switch
 ---
 # Základy komunikace
 ![[tcpudp.jpg]]

@@ -1,7 +1,6 @@
 ---
 tags:
   - mat
-  - mat/zakrouhlení
 ---
 # Zakrouhlení
 $$ 0.000000006328 = 6.328*10^{-9} $$

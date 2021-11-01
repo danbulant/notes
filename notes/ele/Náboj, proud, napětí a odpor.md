@@ -1,9 +1,6 @@
 ---
 tags:
   - ele
-  - ele/náboj
-  - ele/proud
-  - ele/napětí
 ---
 # Náboj, proud, napětí a odpor
 ![[Pasted image 20210920101314.png]]
