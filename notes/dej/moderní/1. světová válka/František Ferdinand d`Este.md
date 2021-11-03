@@ -3,6 +3,8 @@ desc: Rakousko-uherský císař
 years: 1863 - 1914
 tags:
   - dej
+  - dej/moderní
+  - dej/moderní/první-světová
   - osobnosti
 ---
 # František Ferdinand d\`Este
