@@ -18,3 +18,5 @@ tags:
 - 1869 - přednáška - vlastnosti prvků jsou periodickou funkcí jejich protonových čísel
 - 1869 - vydává "Základy chemie" - soustava prvků, periodický zákon
 - roku 1870 doplněna o volná místa pro dosud neobjevené prvky (např. Ga, Sr, Ge...)
+
+![](Pasted%20image%2020211104192915.png)
