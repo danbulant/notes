@@ -41,3 +41,15 @@ uč s. 20-21
 10. a
 11. a
 12. b
+---
+SB 26/3
+1. Nicolas - Brittish, Sara - Brittish, Felipe - Brazilian, Elke - German
+2. in UK.
+3. English, Portugues, German
+4. yes
+5. .
+6. school
+7. .
+8. .
+9. .
+10. great opportunity, but worries the children think they don't belong anywhere.
