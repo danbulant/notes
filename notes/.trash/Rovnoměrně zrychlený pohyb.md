@@ -1,0 +1,1 @@
+# Rovnoměrně zrychlený pohyb
