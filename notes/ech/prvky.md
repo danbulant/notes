@@ -20,3 +20,8 @@ $$ ^{133}_{56}Cs $$
 - $KOH$ Hydroxid draselný
 - $MgO_2$ Oxid hořčitý
 - $Mn(HS)_2$ Hydrogensulfid manganatý
+- $HCN$ Kyanovodík
+- $CN^-$ kyanový a.
+- $KCN$ kyanid draselný
+- $SCN^-$ thiokyanatanový a.
+- $KSCN$ thiokynatan draselný
