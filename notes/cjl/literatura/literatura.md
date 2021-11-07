@@ -1,5 +1,5 @@
 ---
-tags: [MOC]
+tags:
   - cjl
   - cjl/literatura
   - generated

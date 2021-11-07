@@ -1,5 +1,5 @@
 ---
-tags:
+tags: [MOC]
   - dej
   - dej/moderní
   - generated
