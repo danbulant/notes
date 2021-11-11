@@ -10,9 +10,16 @@
 - Disjukne je pravdivá když alespoň jeden z výroků je pravdivý.
 
 ## Tabulka pravdivostních hodnot
-| $a$ | $b$ | $a \wedge b$ | $a \vee b$ |
-| --- | --- | ------------ | ---------- |
-| 1   | 1   | 1            | 1          |
-| 1   | 0   | 0            | 1          |
-| 0   | 1   | 0            | 1          |
-| 0   | 0   | 0            | 0          |
+| $a$ | $b$ | $a \wedge b$ | $a \vee b$ | $a \Rightarrow b$ |
+| --- | --- | ------------ | ---------- | ------ |
+| 1   | 1   | 1            | 1          | 1      |
+| 1   | 0   | 0            | 1          | 0      |
+| 0   | 1   | 0            | 1          | 1      |
+| 0   | 0   | 0            | 0          | 1      |
+
+## Implikace
+Implikace libovolných prvků $a$, $b$ je výrok, který vznikne jejich spojením slovním obratem **jestliže, pak**, píšeme $a \Rightarrow b$, a čteme **jestliže** $a$, **pak** $b$.
+
+## Příklad
+
+$(a \wedge b) \Rightarrow a$ je pravdivý vždy. Nazývá se **tautologie**.
