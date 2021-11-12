@@ -18,6 +18,7 @@ imagePrefix: 'data/'
 -  [[mat/Množiny|Množiny]]
 -  [[mat/Násobek a dělitel|Násobek a dělitel]]
 -  [[mat/Příklady|Příklady]]
+-  [[mat/Rovnice|Rovnice]]
 -  [[mat/Rozklad složených čísel na součin prvočísel|Rozklad složených čísel na součin prvočísel]]
 -  [[mat/Výroková logika|Výroková logika]]
 -  [[mat/Zakrouhlení|Zakrouhlení]]

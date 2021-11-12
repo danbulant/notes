@@ -20,6 +20,10 @@
 ## Implikace
 Implikace libovolných prvků $a$, $b$ je výrok, který vznikne jejich spojením slovním obratem **jestliže, pak**, píšeme $a \Rightarrow b$, a čteme **jestliže** $a$, **pak** $b$.
 
+## Ekvivalence
+Pokud a je stejné jako b.
+$a \iff b$
+
 ## Příklad
 
 $(a \wedge b) \Rightarrow a$ je pravdivý vždy. Nazývá se **tautologie**.
