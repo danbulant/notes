@@ -14,6 +14,7 @@ imagePrefix: 'data/'
 -  [[mat/Číselné soustavy|Číselné soustavy]]
 -  [[mat/Druhá odmocnina|Druhá odmocnina]]
 -  [[mat/Intervaly|Intervaly]]
+-  [[mat/Kvantifikované výroky|Kvantifikované výroky]]
 -  [[mat/Matematika|Matematika]]
 -  [[mat/Množiny|Množiny]]
 -  [[mat/Násobek a dělitel|Násobek a dělitel]]
