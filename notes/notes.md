@@ -11,6 +11,7 @@ noteOnly: true
 -  [[dej/dej|dej]]
 -  [[ech/ech|ech]]
 -  [[ele/ele|ele]]
+-  [[Excalidraw/Excalidraw|Excalidraw]]
 -  [[fyz/fyz|fyz]]
 -  [[har/har|har]]
 -  [[mat/mat|mat]]
