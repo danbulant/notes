@@ -1,5 +1,5 @@
 ---
-tags: [MOC]
+tags:
   - mat
   - generated
   - index
