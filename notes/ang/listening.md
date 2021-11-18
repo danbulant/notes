@@ -53,3 +53,15 @@ SB 26/3
 8. .
 9. .
 10. great opportunity, but worries the children think they don't belong anywhere.
+
+---
+uč 30/4
+1. knew is loses
+2. watch don't go
+3. think makes
+4. ran
+5. go
+6. .
+7. .
+8. am building
+9. 

@@ -8,7 +8,7 @@ tags:
 	- podskupina: Západoslovanská
 - rodina: Indoevropská
 
-- přišli z východu
+- přišli z východu;
 
 ## Historie
 ### 6. století
