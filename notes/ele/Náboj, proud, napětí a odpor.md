@@ -24,7 +24,7 @@ tags:
 - Elementární náboj je nejmenší možný elektrický náboj **Q** jedné samostatné částice volného elektronu.
 ## Proud - I
 - Jednotka 1A = 1 Ampér
-- Výpočet $I = \frac{Q}{t}$
+- Výpočet $I = \frac{Q}{t}$ nebo $I = \frac{U}{R}$ (ohmův zákon)
 - Elektrický proud vyjadřuje množství náboje **Q** prošlého za jednotku času **t**.
 - Elektrický proud měříme ampérmetrem.
 ### Ampérmetr

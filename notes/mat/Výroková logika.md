@@ -1,5 +1,11 @@
+---
+tags:
+  - mat
+---
 # Výroková logika
 **Výrok** je sdělení, u něhož má smysl otázka, zda je či není pravdivé.
+
+Viz též [kvantifikované výroky](./Kvantifikované%20výroky.md).
 
 ## Konjukce
 - Konjukce libovolných výroků $a, b$ je výrok, který vznikne jejich spojením spojkou **a** (nebo **a zároveň**, někdy **i**), zapisujeme $a \wedge b$ a čteme **$a$ a zároveň $b$.**

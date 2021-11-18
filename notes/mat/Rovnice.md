@@ -1,3 +1,7 @@
+---
+tags:
+  - mat
+---
 # Rovnice
 ## Lineární
 $y = ax + b$
