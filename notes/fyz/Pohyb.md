@@ -14,4 +14,4 @@ množina všech poloh kterými projde hmotný bod.
 
 ## Typy
 - [Rovnoměrný pohyb](pohyb/Rovnoměrný%20pohyb.md)
-- [Rovnoměrně zrychlený pohyb](pohyb/Rovnoměrně%20zrychlený%20pohyb.md)
+- [Rovnoměrně zrychlený pohyb](pohyb/Rovnoměrně%20zrychlený%20či%20zpomalený%20pohyb.md)
