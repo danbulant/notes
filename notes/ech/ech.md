@@ -1,5 +1,5 @@
 ---
-tags:
+tags: [MOC]
   - ech
   - generated
   - index
@@ -14,6 +14,7 @@ imagePrefix: 'data/'
 -  [[ech/Mendělejev|Mendělejev]]
 -  [[ech/Názvosloví|Názvosloví]]
 -  [[ech/obal atomu|obal atomu]]
+-  [[ech/Příklady|Příklady]]
 -  [[ech/prvky|prvky]]
 -  [[ech/radioaktivita|radioaktivita]]
 -  [[ech/Vazby|Vazby]]
