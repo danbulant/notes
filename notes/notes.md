@@ -14,6 +14,7 @@ noteOnly: true
 -  [[Excalidraw/Excalidraw|Excalidraw]]
 -  [[fyz/fyz|fyz]]
 -  [[har/har|har]]
+-  [[kbb/kbb|kbb]]
 -  [[mat/mat|mat]]
 -  [[pdv/pdv|pdv]]
 -  [[preamble.sty|preamble.sty]]
