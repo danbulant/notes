@@ -1,3 +1,10 @@
+---
+tags:
+ - kbb
+ - command
+cmd: sqlmap
+arch-repo: Community repositories
+---
 # SQLMap
 `[Community repository]`
 SQL injection tool

@@ -1,8 +1,5 @@
 ---
-tags: [MOC]
-  - mat
-  - generated
-  - index
+tags: [MOC, mat, generated, index]
 ---
 # mat
 ```ccard

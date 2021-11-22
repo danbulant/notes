@@ -1,3 +1,7 @@
+---
+tags:
+ - fyz
+---
 # Volný pád
 Konstantní zrychlení $g$, nulová počáteční rychlost.
 Pád zrychlený gravitací (např pustím pero) ve vakuu.
