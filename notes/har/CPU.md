@@ -28,3 +28,20 @@ Elektronická řídící jednotka, realizovaná sekvenčním obvodem, která ř�
 Malá úložitě dat umístěná v mikroprocesoru, jejichž obsah lze načíst mnohem rychleji, než data uložená kdekoliv jinde v počítači.
 ### vyrovnávací paměť - Cache
 Je vlastně jakýmsi překladištěm dat mezi rychlejším a pomalejším zařízením v počítači a slouží jako dočasná paměť.
+
+## Funkce
+- procesor přečte ze vstupního registru posloupnost 1 a 0 (bitů)
+- dekóduje tento řetězec na instrukci
+- tuto instrukci nalezne v instrukční sadě a provede
+- výsledek uloží do registru výstupního
+
+## Parametry
+- vnitřní frekvence
+- počet fyz. jader
+- šířka datové sběrnice
+- typ použité instrukční řady (CISC vs RISC)
+- kapacita a typ použití vyrovnávací paměti
+- kapacita a typ použitých registrů
+- patice (socket), podpora konkrétních čipových sad na základní desce
+- podpora konkrétních modulů operační paměti
+- výrobce...
