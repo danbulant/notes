@@ -1,8 +1,5 @@
 ---
-tags: [MOC]
-  - har
-  - generated
-  - index
+tags: [MOC, har, generated, index]
 ---
 # har
 ```ccard

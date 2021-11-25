@@ -1,5 +1,6 @@
 ---
 aliases: [MCU, Micro Controller Unit]
+tags: [har]
 ---
 # Micro Controller Unit
 

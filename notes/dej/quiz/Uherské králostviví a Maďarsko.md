@@ -1,3 +1,6 @@
+---
+tags: [dej]
+---
 # Uherské králostviví a Maďarsko
 1. **V čem spočívá tzv. svatoštěpánská myšlenka?** Maďarsko byli "ti hlavní", ostatní kultury pouze jako hosté. ~~Různé kultury a jazyky jsou dobré pro chod země.~~
 2. **Vyjmenujte národy, které v Uherském králoství žily.** Slováci, Rusíni, Maďaři, Chorvati, Srbové, Rumuni, Němci, Židé, Cikáni a Sikulové

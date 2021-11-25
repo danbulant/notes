@@ -1,9 +1,5 @@
 ---
-tags: [MOC]
-  - dej
-  - dej/starší
-  - generated
-  - index
+tags: [MOC, dej, dej/starší, generated, index]
 ---
 # starší
 ```ccard
