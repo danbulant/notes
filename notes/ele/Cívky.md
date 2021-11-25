@@ -17,8 +17,24 @@ schopnost vytvořit elektromagnetické pole
 - závit vedle závitu
 - křížově vinuté
 - vinuté "na divoko"
+## Vinutí cívek
+- délka drátu
+- $\varnothing$ (průměr) drátu (-> odpor, čím větší průměr tím menší odpor)
+- počet závitu
+- podle použití
+## Jádra
+- z feromagnetického materiálu
+	- magnetický (např. železo)
 ## Použití
-- transformátory ![](Pasted%20image%2020211122134514.png)
-- tlumivky ![](Pasted%20image%2020211122134522.png)
-- filtry ![](Pasted%20image%2020211122134530.png)
-- rezonanční obvody
+### Transformátory
+![](Pasted%20image%2020211122134514.png)
+Transformuje proud mezi napětími.
+### Tlumivky
+![](Pasted%20image%2020211122134522.png)
+Tlumí výkyvy v proudu.
+Akumuluje proud, dává maximum na proud, aby se zabránilo nárazům.
+### Filtry
+![](Pasted%20image%2020211122134530.png)
+Filtrují podle napětí, například nepropustí proud pod určité napětí (či stejnosměrný proud).
+Opak tlumivky, dává spodní hranici proudu pod kterou nepropustí proud.
+### Rezonanční obvody

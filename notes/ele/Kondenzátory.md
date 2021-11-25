@@ -2,7 +2,14 @@
 - pasivní
 - lineární
 - frekvenčně závislá
+Hromadí náboj.
 
+$$
+I=\frac{Q}{t}
+$$
+$$\frac{Q}{C} = \frac{Q}{C_1} + \frac{Q}{C_2}$$
+$$C=\frac{Q}{U}$$ $$U = \frac{Q}{C}$$
+$$\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2}$$
 ## Vlastnosti
 - nepropustí stejnosměrný proud, pouze střídavý
 ### Kapacita
