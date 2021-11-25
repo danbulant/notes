@@ -1,8 +1,5 @@
 ---
-tags: [MOC]
-  - cjl
-  - generated
-  - index
+tags: [MOC, cjl, generated, index]
 ---
 # cjl
 ```ccard

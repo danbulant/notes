@@ -74,7 +74,14 @@
       "query": "tag:#psi",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 9961744
+      }
+    },
+    {
+      "query": "tag:#kbb",
+      "color": {
+        "a": 1,
+        "rgb": 16766208
       }
     }
   ],
@@ -88,6 +95,6 @@
   "repelStrength": 10.2352941176471,
   "linkStrength": 0.458823529411765,
   "linkDistance": 240,
-  "scale": 0.25971864303398534,
+  "scale": 0.2545063146060969,
   "close": false
 }

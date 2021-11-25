@@ -26,9 +26,7 @@ tags:
 - Jednotka 1A = 1 Ampér
 - Výpočet $I = \frac{Q}{t}$ nebo $I = \frac{U}{R}$ (ohmův zákon)
 - Elektrický proud vyjadřuje množství náboje **Q** prošlého za jednotku času **t**.
-- Elektrický proud měříme ampérmetrem.
-### Ampérmetr
-- Měří ampéry.
+- Elektrický proud měříme [ampérmetrem](./Ampérmetr.md).
 ## Napětí - U
 - Jednotka - 1V = 1 Volt
 - Výpočet $U = \frac{W}{Q}$

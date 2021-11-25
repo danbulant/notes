@@ -1,8 +1,5 @@
 ---
-tags: [MOC]
-  - fyz
-  - generated
-  - index
+tags: [MOC, fyz, generated, index]
 ---
 # fyz
 ```ccard

@@ -1,3 +1,7 @@
+---
+tags:
+ - mat
+---
 # Příklady
 ## Když prší, jsou mokré chodníky.
 A...prší

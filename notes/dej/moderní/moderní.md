@@ -1,9 +1,5 @@
 ---
-tags: [MOC]
-  - dej
-  - dej/moderní
-  - generated
-  - index
+tags: [MOC, dej/moderní, generated index]
 ---
 # moderní
 ```ccard

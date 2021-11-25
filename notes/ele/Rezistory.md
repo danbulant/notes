@@ -1,3 +1,7 @@
+---
+tags:
+ - ele
+---
 # Rezistory
 Elektronická součástka
 - pasivní
@@ -6,6 +10,33 @@ Elektronická součástka
 
 Elektrický [Odpor](Náboj,%20proud,%20napětí%20a%20odpor.md#Odpor%20-%20R).
 
+## Druhy
+![](Pasted%20image%2020211122124647.png)
+### S dvěma vývody
+- vrstvové
+	- uhlíkové
+	- metalizované
+- drátové
+### S více vývody
+- s pevnou odbočkou
+- s plynule nastavitelnou odboučkou (potenciometry)
+## Potenciometry
+![](Pasted%20image%2020211122124808.png)
+### Podle konstrukce
+- posuvný
+- otočný jednoduchý
+- otočný dvojitý
+- trimry
+### Podle průběhu elektrického obvodu
+- lineární **N**
+- logaritmické **G**
+- exponencionální **E**
+## Parametry
+- jmenovitý odpor **$\Omega$**
+- zatížitelnost **W**
+- přesnost **%**
+## Značení
+![](Pasted%20image%2020211122124922.png)
 ## Výpočty
 6.   Vypočtěte potřebné napětí, na které je nutno připojit dva sériově zapojené odpory 33 kΩ a 66 kΩ, aby jimi protékal proud 15,8 μA. Nakreslete a popište schéma zapojení. 
 $R_1 = 33 \ohm$

@@ -1,8 +1,5 @@
 ---
-tags: [MOC]
-  - psi
-  - generated
-  - index
+tags: [MOC, psi, generated, index]
 ---
 # psi
 ```ccard
