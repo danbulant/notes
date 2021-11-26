@@ -1,3 +1,6 @@
+---
+tags: [ele]
+---
 # Cívky
 - dvoupólová součástka
 - pasivní

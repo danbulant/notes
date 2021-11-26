@@ -1,3 +1,6 @@
+---
+tags: [ele]
+---
 # Kondenzátory
 - pasivní
 - lineární

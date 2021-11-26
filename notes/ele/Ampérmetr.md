@@ -1,5 +1,5 @@
 ---
-tags: [ech, přístroje]
+tags: [ele, přístroje]
 ---
 # Ampérmetr
 - Měří ampéry.
