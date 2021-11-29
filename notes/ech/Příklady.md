@@ -30,3 +30,25 @@ $$HI + H_2SO_4 \rightarrow I_2 + S + H_2O$$
 $$\textcolor{yellow}6HI^{-I} + 1H_2^{I}S^{VI}O_4^{-II} \rightarrow 3I_2^{0} + \textcolor{yellow}1S^0 + 4H_2O$$
 Ox: $I^{-I} - 1e^- \rightarrow I^{0}$ 1 ==6==
 Red: $S^{VI} + 6e^- \rightarrow S^0$ 6 ==1==
+
+---
+$$
+2Ca_3(P^{V}O_4)_2 + 10C^{0} + 6SiO_2 \Rightarrow P^0_4 + \textcolor{yellow}{10}C^{II}O^{-II} + 6CaSiO_3
+$$
+
+Ox: $C^0 - 2e^- \rightarrow C^{II}$ 2 ==5==
+Red: $P^{v} + 5e^- \rightarrow P^0$ 5 ==2==
+
+---
+$$
+2Fe(SO_4) + 1H_2O_2 + H_2SO_4 \Rightarrow 1Fe_2(SO_4)_2 + 2H_2O
+$$
+
+Red: $O_2^{-I} \rightarrow O^{-II}$
+
+---
+$$
+3K^ICl^VO_3 + 3H_2S^{VI}O_4 \rightarrow 1H^{I}Cl^{VII}O^{-II}_4 + 2Cl^{IV}O_2 + 3K^IH^IS^{VI}O^{-II}_4 + H_2O
+$$
+Ox: $Cl^{V} \rightarrow Cl^{VII}$ 2 1
+Red: $Cl^V \rightarrow Cl^{IV}$ 1 2

@@ -13,6 +13,7 @@ imagePrefix: 'data/'
 -  [[mat/Intervaly|Intervaly]]
 -  [[mat/Matematika|Matematika]]
 -  [[mat/Množiny|Množiny]]
+-  [[mat/Mocniny|Mocniny]]
 -  [[mat/Násobek a dělitel|Násobek a dělitel]]
 -  [[mat/Příklady|Příklady]]
 -  [[mat/Rovnice|Rovnice]]

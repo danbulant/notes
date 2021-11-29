@@ -64,4 +64,28 @@ uč 30/4
 6. .
 7. .
 8. am building
-9. 
+
+---
+32/1
+Nigel - D - CEO
+Matthew - E - IT
+Edward - B - SD
+Helena - C - Accountat
+Christina - A - PA
+Jenny - F - HR
+
+---
+32/3
+CEO - running the company - discussing plans and targets with the board of directors
+PA - makes appointments and arrangements - organizing hotel bookings for the sales conference
+Accountant - is in charge of budget and cash flow - writing the annual financial report
+Sales director - negotiates prices and contracts with customers - preparing to visit customers in China
+IT manager - runs IT support team - buying new hardware
+HR manager - looks after personnel and their conditions for employment - recruiting new staff
+
+---
+32/5
+1. came, come
+2. doesn't have, doesn't have
+3. saw, see
+4. don't think, think
