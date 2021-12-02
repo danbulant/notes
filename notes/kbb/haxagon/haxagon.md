@@ -1,3 +1,6 @@
+---
+tags: [kbb, generated, index]
+---
 # haxagon
 ```ccard
 type: folder_brief_live

@@ -1,3 +1,6 @@
+---
+tags: [kbb]
+---
 # Terminals
 ## Escape codes
 Used for things like colors and moving the cursor. They can set background color, foreground color and move cursor to any position. To delete text, you can move cursor backwards, replace with space and move it backwards again.

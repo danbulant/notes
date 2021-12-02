@@ -1,3 +1,6 @@
+---
+tags: [kbb, generated, index, MOC]
+---
 # tools
 ```ccard
 type: folder_brief_live

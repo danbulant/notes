@@ -1,6 +1,5 @@
 ---
-tags:
-  - ech
+tags: [ech]
 ---
 # prvky
 

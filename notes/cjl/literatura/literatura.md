@@ -1,9 +1,5 @@
 ---
-tags: [MOC]
-  - cjl
-  - cjl/literatura
-  - generated
-  - index
+tags: [MOC, cjl, cjl/literatura, generated, index]
 ---
 # literatura
 ```ccard
