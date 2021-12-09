@@ -45,3 +45,35 @@ Je vlastně jakýmsi překladištěm dat mezi rychlejším a pomalejším zaří
 - patice (socket), podpora konkrétních čipových sad na základní desce
 - podpora konkrétních modulů operační paměti
 - výrobce...
+
+## Instrukční sada
+- Vnitřní programové vybavení procesoru
+- strojový kód se přepíše na mikroinstrukce, které jsou přímo spustitelné
+
+### CISCI
+Complete instruction set of computer
+
+Komplexní program, složitější adresování, více instrukcí
+
+méně zatěžuje sběrnice, posílá méně dat.
+
+### RISC
+Redukovaná sada, snaha o co nejrychlejší běh procesoru místo aby měl co nejvíce instrukcí. Většina instrukcí se provádí během jednoho strojového cyklu.
+
+Novější než CISC.
+
+## Typy
+
+### CPU
+Hlavní procesor
+### GPU
+Grafika
+### MCU
+![Micro Controller Unit](./Micro%20Controller%20Unit.md)
+### APU
+**Accelerated Processing Unit**
+CPU + GPU v jednom obalu; většina moderní "CPU".
+### DSP
+**Digital Signal Processor**
+### NPU
+**Network Processor Unit**
