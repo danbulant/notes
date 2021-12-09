@@ -13,6 +13,7 @@ imagePrefix: 'data/'
 -  [[ech/Názvosloví|Názvosloví]]
 -  [[ech/obal atomu|obal atomu]]
 -  [[ech/Příklady|Příklady]]
+-  [[ech/Prvky/Prvky|Prvky]]
 -  [[ech/prvky|prvky]]
 -  [[ech/radioaktivita|radioaktivita]]
 -  [[ech/Vazby|Vazby]]
