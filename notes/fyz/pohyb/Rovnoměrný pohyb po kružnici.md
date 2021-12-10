@@ -8,7 +8,7 @@ Vektor okamžité rychlosti je kolmý na poloměr.
 V rovnoměrném pohybu má stejnou rychlost ale mění se směr.
 
 $t = \frac{1}{f}$
-$v = \frac{2\Pi r}{T}$
+$v = \frac{2\Pi r}{T} = \omega r$
 $\omega = \frac{2 \Pi}{T}$
 $[s^{-1}] = [\frac{1}{s}]$
 
