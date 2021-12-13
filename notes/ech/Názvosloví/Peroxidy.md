@@ -5,7 +5,7 @@ tags: [ech, ech/názvosloví]
 Dvouprvkové sloučeniny, obsahující peroxidový anion $O_2^{2-}$.
 
 ## Vzorec
-$$\textcolor{yellow}M^{\textcolor{red}N+}_{\textcolor{green}X}O^{II-}_{2}$$
+$$\textcolor{yellow}M^{\textcolor{red}N+}_{\textcolor{green}X}(O_{2})^{II-}$$
 $\textcolor{yellow}M$ - prvek
 $\textcolor{green}X$ - počet prvků (1...2)
 $\textcolor{red}N$ - ox. číslo (1...2). $\textcolor{red}N = 3 - \textcolor{green}X$
