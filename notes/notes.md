@@ -18,6 +18,7 @@ noteOnly: true
 -  [[mat/mat|mat]]
 -  [[pdv/pdv|pdv]]
 -  [[preamble.sty|preamble.sty]]
+-  [[projects/projects|projects]]
 -  [[psi/psi|psi]]
 -  [[README|README]]
 -  [[tek/tek|tek]]
