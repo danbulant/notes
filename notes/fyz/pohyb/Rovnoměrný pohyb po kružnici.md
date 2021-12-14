@@ -1,3 +1,6 @@
+---
+tags: [fyz]
+---
 # Rovnoměrný pohyb po kružnici
 ## Velikost rychlosti
 Velikost ujeté dráhy $\Delta s$ za dobu $\Delta t$.

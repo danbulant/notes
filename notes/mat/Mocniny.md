@@ -1,3 +1,6 @@
+---
+tags: [mat]
+---
 # Mocniny
 $a+a+a+a+a = 5a$ násobení
 $a*a*a*a*a = a^5$ mocnina

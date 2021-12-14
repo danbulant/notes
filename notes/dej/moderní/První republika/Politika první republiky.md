@@ -1,3 +1,6 @@
+---
+tags: [dej, dej/první-republika]
+---
 # Politika první republiky
 1. **Vysvětlete pojem versailleská jitrnice:** Tvar československa "vyrobena" na versailleské mírové konferenci
 2. **Jakou diplomatickou smlouvou se snažilo Československo bránit ohrožení ze strany Maďarska?** Malá dohoda

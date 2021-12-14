@@ -1,3 +1,6 @@
+---
+tags: [ech, ech/prvky]
+---
 # Kyslík
 ## Výskyt v přírodě
 Litosféra, hydrosféra a biosféra

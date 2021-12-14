@@ -1,3 +1,6 @@
+---
+tags: [ech, ech/prvky]
+---
 # Vodík
 ## Výsky vodíku v přírodě
 Málo volně se vyskytujících, např u sopek v sopečných plynech
