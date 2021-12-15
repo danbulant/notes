@@ -2,7 +2,7 @@
 tags:
   - cjl
   - cjl/literatura
-  - cjl/cizý
+  - cjl/cizí
 ---
 # Perská literatura
 - vzali si útržky cizích kultur a udělali si z toho vlastní

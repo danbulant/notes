@@ -12,6 +12,7 @@ imagePrefix: 'data/'
 -  [[mat/Druhá odmocnina|Druhá odmocnina]]
 -  [[mat/Intervaly|Intervaly]]
 -  [[mat/Matematika|Matematika]]
+-  [[mat/Mnohočlen|Mnohočlen]]
 -  [[mat/Množiny|Množiny]]
 -  [[mat/Mocniny|Mocniny]]
 -  [[mat/Násobek a dělitel|Násobek a dělitel]]

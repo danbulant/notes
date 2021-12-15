@@ -2,7 +2,7 @@
 tags:
   - cjl
   - cjl/literatura
-  - cjl/cizý
+  - cjl/cizí
 ---
 # Arabská literatura
 - umění ktere vychází s islámu - Arabský poloostrov

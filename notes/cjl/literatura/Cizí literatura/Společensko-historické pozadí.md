@@ -2,7 +2,7 @@
 tags:
   - cjl
   - cjl/literatura
-  - cjl/cizý
+  - cjl/cizí
 ---
 # Společensko-historické pozadí
 - odehráva se v době pravěku kdy umění bylo nepsané

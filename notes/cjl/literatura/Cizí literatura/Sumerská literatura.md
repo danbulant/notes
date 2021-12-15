@@ -2,7 +2,7 @@
 tags:
   - cjl
   - cjl/literatura
-  - cjl/cizý
+  - cjl/cizí
 ---
 # Sumerská literatura
 - Sumeruvé vynalezli obrázkove písmo ze kterého pak vzniklo klínové

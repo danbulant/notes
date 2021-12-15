@@ -2,7 +2,7 @@
 tags:
   - cjl
   - cjl/literatura
-  - cjl/cizý
+  - cjl/cizí
 ---
 # Čínská literatura
 - Čínska kultura má smysl pro pečlivé zaznamenávání historie

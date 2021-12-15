@@ -2,7 +2,7 @@
 tags:
   - cjl
   - cjl/literatura
-  - cjl/cizý
+  - cjl/cizí
 ---
 # Staroegyptská literatura
 - umění starého Egypta - vznik na konci 4. tisicileti

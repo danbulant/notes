@@ -2,9 +2,9 @@
 tags:
   - cjl
   - cjl/literatura
-  - cjl/cizý
+  - cjl/cizí
 ---
-# Cizý literatura
+# Cizí literatura
 
 ![Společensko-historické pozadí](Společensko-historické%20pozadí.md)
 

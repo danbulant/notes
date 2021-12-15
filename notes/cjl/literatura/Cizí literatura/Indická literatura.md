@@ -2,7 +2,7 @@
 tags:
   - cjl
   - cjl/literatura
-  - cjl/cizý
+  - cjl/cizí
 ---
 # Indická literatura
 - Pákistan - Indie (mezi Indusem a Gangou) 2500 pr.n.l
