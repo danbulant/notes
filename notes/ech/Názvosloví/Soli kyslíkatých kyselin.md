@@ -1,3 +1,6 @@
+---
+tags: [ech]
+---
 # Soli kyslíkatých kyselin
 Vodík je nahrazen jiným prvkem.
 

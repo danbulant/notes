@@ -1,3 +1,6 @@
+---
+tags: [dej, dej/první-republika]
+---
 # Hospodářství a kultura
 ## Silné stránky
 Těžba černého uhlí
