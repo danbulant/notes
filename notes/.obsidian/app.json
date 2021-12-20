@@ -2,5 +2,6 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "data",
   "useMarkdownLinks": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "promptDelete": false
 }

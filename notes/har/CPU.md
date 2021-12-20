@@ -62,6 +62,19 @@ Redukovaná sada, snaha o co nejrychlejší běh procesoru místo aby měl co ne
 
 Novější než CISC.
 
+### Rozšiřující
+
+Přidávají určité instrukce
+
+#### MMX
+Multimédia
+#### 3DNow
+AMD procesory; 3D grafika
+#### KNI
+3D aplikace
+#### SSE
+Reakce Intelu na 3DNow, pro SIMD zpracování
+
 ## Typy
 
 ### CPU

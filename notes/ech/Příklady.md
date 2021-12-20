@@ -4,7 +4,42 @@ tags:
 ---
 # Příklady
 
-## Redoxní
+## Hmotnostní zlomek
+
+---
+$M(Na_2CO_3) = 56$
+$w(K/KOH) = \frac{39}{56} = 0.696$
+$w(O/KOH) = \frac{16}{56} = 0.286$
+$w(H/KOH) = \frac{1}{56} = 0.017$
+
+---
+$M(Na_2CO_3) = 2 * M(Na) + M(C) + 3 * M(O) = 2 * 23 + 12 + 16 * 3 = 106$
+$w(Na/Na_2CO_3) = \frac{2 * 23}{112} = 0.41$
+$w(C/Na_2CO_3) = \frac{12}{112}$
+$w(O/Na_2CO_3) = \frac{3 * 16}{112}$
+
+---
+
+## Molární hmotnost
+
+---
+KOH
+$2 mol$
+$m = 2g$
+
+$M(KOH) = M(K) + M(O) + M(H) = 39 + 16 + 1 = 56 \frac{g}{mol}$
+$m(KOH) = M(KOH) * n(KOH) = 56 * 2 = 112$
+
+---
+Kolik molekul vody je v 1 litru?
+$m = 1kg$
+$M(H_2O) = 2M(H) + M(O) = 2 * 1 + 16 = 18 \frac{g}{mol}$
+$n(H_2O) = \frac{m}{M(H_2O)} = \frac{1000}{18} = 55.\overline5mol$
+---
+
+## Redoxní rovnice
+
+---
 $$Br_2 + KOH \rightarrow KBr + KBrO_3 + H_2O$$
 $$3Br_2^0 + 6KOH \rightarrow \textcolor{yellow}{5}KBr^{-I} + \textcolor{yellow}{1}KBr^{+V}O_3 + 3H_2O$$
 Redukce $Br^0 + 1e^- \rightarrow Br^{-I}$ 1  ==5==
@@ -52,3 +87,5 @@ $$
 $$
 Ox: $Cl^{V} \rightarrow Cl^{VII}$ 2 1
 Red: $Cl^V \rightarrow Cl^{IV}$ 1 2
+
+---
