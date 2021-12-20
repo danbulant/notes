@@ -19,6 +19,8 @@ $$
 $$
 [N] = [kg \frac{\frac{m}{S}}{\frac{s}{1}}] = [kg * m * s^{-2}]
 $$
+### Newton
+Newton je síla která tělesu s hmotnostní 1KG udá zrychlení $1ms^2$.
 ## Rychlost V
 ## Zrychlení a
 $$ a = \frac{\Delta v}{\Delta t} $$
