@@ -5,15 +5,16 @@ tags:
 # Náboj, proud, napětí a odpor
 ![[Pasted image 20210920101314.png]]
 
-| Název             | Jednotka | Výpočet            |
-| ----------------- | -------- | ------------------ |
-| Náboj             | Q        | $n * q$ & $I * t$  |
-| Proud             | I        | $\frac{Q}{t}$      |
-| Elementární náboj | q        | $1.602 * 10^{-19}$ |
-| Napětí            | U        | $\frac{W}{Q}$      |
-| Elektrická práce  | W        | $U * Q$            |
-| Odpor             | R        | 1                  |
-| Výkon             | P        | $\frac{W}{t}$      |
+| Název             | Zkratka | Výpočet            | Jednotka |
+| ----------------- | ------- | ------------------ | -------- |
+| Náboj             | Q       | $n * q$ & $I * t$  | C        |
+| Proud             | I       | $\frac{Q}{t}$      | A        |
+| Elementární náboj | q       | $1.602 * 10^{-19}$ | C        |
+| Napětí            | U       | $\frac{W}{Q}$      | V        |
+| Elektrická práce  | W       | $U * Q$            | J        |
+| Odpor             | R       | 1                  | $\Omega$ |
+| Výkon             | P       | $\frac{W}{t}$      | W        |
+| Energie           | W       | $P*t=U*I*t$        | J         |
 ## Náboj - Q
 - Jednotka - 1C = 1 coulomb
 - Výpočet $Q = n * q$ | $Q = I *t$
@@ -44,7 +45,7 @@ tags:
 - Jednotka: $P = W$ (watt)
 - Výpočet $P = \frac{W}{t}$
 - Vykonaná elektrická práce za jednotku času.
-## Energie
+## Energie - W
 - Jednotka $W = J$ (Joule)
 - Vypočet $W = P * t = U * I * t$
 - $1J = 1Ws$; $3600J = Wh$; $3600000J = 1kWh$

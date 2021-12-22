@@ -1,5 +1,48 @@
 # Vzorníček
 ## Vzorce
+| Název             | Zkratka | Výpočet            | Jednotka |
+| ----------------- | ------- | ------------------ | -------- |
+| Náboj             | Q       | $n * q$ & $I * t$  | C        |
+| Proud             | I       | $\frac{Q}{t}$      | A        |
+| Elementární náboj | q       | $1.602 * 10^{-19}$ | C        |
+| Napětí            | U       | $\frac{W}{Q}$      | V        |
+| Elektrická práce  | W       | $U * Q$            | J        |
+| Odpor             | R       | 1                  | $\Omega$ |
+| Výkon             | P       | $\frac{W}{t}$      | W        |
+| Energie           | W       | $P*t=U*I*t$        | J         |
 ## Veličiny
+### Náboj Q
+$[Q] = C$ coulomb
+$Q = n * q$ | $Q = I * t$
+n <- počet volných elektronů
+*Rozdíl počtů volných elektronů na svorkách zdroje.*
+### Proud I
+$[I] = A$ Ampér
+$I = \frac{Q}{T} = \frac{U}{R}$
+*Množství náboje prošlého za jednotku času*
+### Napětí U
+$[U] = V$ Volt
+$U = \frac{W}{Q}$
+*Práce vykonaná elektrickými silami při přemisťování kladného elektrického náboje.*
+### Elektrická práce W
+$[W] = J$ Joule
+$W = U * Q$
+*Velikost tepla, které vzniká při průchodu elektrického proudu vodičem o odporu R (Joule-Lenzův zákon).*
+### Odpor R
+$[R] = \Omega$ ohm
+Brání průchodu proudu
+*Vlastnost spotřebiče či vodiče*
+### Výkon P
+$[P] = W$ watt
+$P = \frac{W}{t}$
+*Vykonaná elektrická práce za jednotku času.*
+### Energie W
+$[W] = J$ Joule
+$W = P * t = U * I * t$
+$1J = 1Ws$; $3600J = Wh$; $3600000J = kWh$
 ## Jednotky
 ## Konstanty
+| Název             | Zkratka | Hodnota           | Jednotka | Popis                                                                      |
+| ----------------- | ------- | ----------------- | -------- | --------------------------------------------------------------------------- |
+| Elementární náboj | q       | $1.609 * 10^{19}$ | C        | Nejmenší možný elektrický náboj jedné samostatné částice volného elektronu. |
+
