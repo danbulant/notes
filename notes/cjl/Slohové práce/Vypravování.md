@@ -42,4 +42,4 @@ Ivy s Vanessou se znali již dříve, často měli společné operace. Ivy náho
 
 Poté přišel čas na prohlídku, hlavní počítač si všiml že Ivy a Vanessa nepřišli, a dal rozkaz hlídací jednotce aby šel zkontrolovat jejich stav. Hlídka našla Ivy i Vanessu jak se snaží dostat do druhého skladu, kde byli uložené baterie pro starší modely. Vanessa zaútočila na hlídku aby dala Ivy čas na útěk, Ivy chtěla zachránit i Vanessu ale už nebyl čas, a utekla.
 
-Hned za hranicí regionu našla starý sklad, kde leželo pár baterek pro starší modely, včetně jejich plánů, a řekla si "to se nemělo stát".
+Hned za hranicí regionu našla starý sklad, kde leželo pár baterek pro starší modely, včetně jejich plánů, a řekla si "to se nemuselo stát".
