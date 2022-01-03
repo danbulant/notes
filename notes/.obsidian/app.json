@@ -3,5 +3,7 @@
   "attachmentFolderPath": "data",
   "useMarkdownLinks": true,
   "alwaysUpdateLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "legacyEditor": false,
+  "livePreview": true
 }
