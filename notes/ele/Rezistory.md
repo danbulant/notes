@@ -58,3 +58,5 @@ $R_2=2413.95 \ohm$
 8. Vypočtěte výslednou hodnotu paralelně zapojených odporů 1,2 kΩ, 1,5 kΩ, 1,8 kΩ, 2,2 kΩ, 2,7 kΩ.
 $R=\frac{1}{\frac{1}{1.2k\ohm} + \frac{1}{1.5k\ohm} + \frac{1}{1.8k\ohm} + \frac{1}{2.2k\ohm} + \frac{1}{2.7k\ohm}}$
 $R=\frac{1}{2.88047k\ohm}=347.165\ohm$
+
+![](Pasted%20image%2020220103085740.png)
