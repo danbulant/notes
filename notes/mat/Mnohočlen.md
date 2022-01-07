@@ -1,5 +1,5 @@
 # Mnohočlen
-
+Pouze přirozená čísla v exponentech.
 $$
 (x^3 - 2x + 3) * (x^4 - 3x^2 + 5x) = x^7 - 3x^5 + 5x^4 - 2x^5 + 6x^3 - 10x^2 + 3x^4 - 9x^2 + 15x = x^7 - 5x^5 + 8x^4 + 6x^3 + 19x^2 + 15x
 $$
