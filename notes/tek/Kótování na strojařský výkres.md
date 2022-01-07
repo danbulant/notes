@@ -6,3 +6,5 @@ Na obrázku je text špatně. Čísla a písmena mají mít všechny stejnou vel
 
 ![[data/Kótování na strojařský výkres_2021-11-26 12.12.45.excalidraw.md]]
 U kružnic se před kótou píše značka průměru $\oslash$, v kresbách chybí.
+
+![[data/Kótování na strojařský výkres_2022-01-07 13.19.52.excalidraw.md]]
