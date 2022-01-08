@@ -11,3 +11,26 @@ $$
 $$
 (x+2)^2 - (x+1)(x-3) = 
 $$
+## Vzorečky
+$$
+(a+b)(a+b) = a^2 + 2ab + b^2
+$$
+$$
+(a-b)(a-b) = a^2 - 2ab + b^2
+$$
+$$
+(a+b)(a-b) = a^2 - b^2
+$$
+$$
+(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+$$
+
+## Vietovy vzorce
+Kvadratická rovnice
+$$
+ax^2 + bx +c = 0
+$$
+$$
+x_1 + x_2 = -b;
+x_1 + x_2 = c
+$$
