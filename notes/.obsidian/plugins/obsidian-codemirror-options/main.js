@@ -5,8 +5,12 @@ if you want to view the source visit the plugins github repository
 
 'use strict';
 
-var obsidian = require('obsidian');
+var require$$0 = require('obsidian');
 var electron = require('electron');
+
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var require$$0__default = /*#__PURE__*/_interopDefaultLegacy(require$$0);
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -22,22 +26,6 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    if (typeof b !== "function" && b !== null)
-        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
 
 function __awaiter(thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -49,33 +37,64 @@ function __awaiter(thisArg, _arguments, P, generator) {
     });
 }
 
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
+var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+
+function getDefaultExportFromCjs (x) {
+	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
+
+function createCommonjsModule(fn, basedir, module) {
+	return module = {
+		path: basedir,
+		exports: {},
+		require: function (path, base) {
+			return commonjsRequire(path, (base === undefined || base === null) ? module.path : base);
+		}
+	}, fn(module, module.exports), module.exports;
+}
+
+function commonjsRequire () {
+	throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
+}
+
+var assertNever_1 = createCommonjsModule(function (module, exports) {
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * Helper function for exhaustive checks of discriminated unions.
+ * https://basarat.gitbooks.io/typescript/docs/types/discriminated-unions.html
+ *
+ * @example
+ *
+ *    type A = {type: 'a'};
+ *    type B = {type: 'b'};
+ *    type Union = A | B;
+ *
+ *    function doSomething(arg: Union) {
+ *      if (arg.type === 'a') {
+ *        return something;
+ *      }
+ *
+ *      if (arg.type === 'b') {
+ *        return somethingElse;
+ *      }
+ *
+ *      // TS will error if there are other types in the union
+ *      // Will throw an Error when called at runtime.
+ *      // Use `assertNever(arg, true)` instead to fail silently.
+ *      return assertNever(arg);
+ *    }
+ */
+function assertNever(value, noThrow) {
+    if (noThrow) {
+        return value;
+    }
+    throw new Error("Unhandled discriminated union member: " + JSON.stringify(value));
+}
+exports.assertNever = assertNever;
+exports.default = assertNever;
+});
+
+var assertNever = /*@__PURE__*/getDefaultExportFromCjs(assertNever_1);
 
 function unload_math_preview(cm) {
     cm.setOption("hmdFoldMath", {
@@ -84,25 +103,30 @@ function unload_math_preview(cm) {
     });
 }
 function init_math_preview(cm) {
-    if (obsidian.loadMathJax)
-        obsidian.loadMathJax();
+    if (require$$0.loadMathJax)
+        require$$0.loadMathJax();
     if (!document.querySelector("#math-preview")) {
-        var mathPreviewEl = document.createElement("div");
+        const mathPreviewEl = document.createElement("div");
         mathPreviewEl.className = "float-win float-win-hidden";
         mathPreviewEl.id = "math-preview";
-        var mathTitleEl = document.createElement("div");
+        const mathTitleEl = document.createElement("div");
         mathTitleEl.addClass("float-win-title");
         mathPreviewEl.appendChild(mathTitleEl);
-        mathTitleEl.outerHTML = "<div class=\"float-win-title\">\n      <button class=\"float-win-close\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z\"/></svg>\n      </button>\n      Math Preview\n      </div>";
-        var mathContentEl = document.createElement("div");
+        mathTitleEl.outerHTML = `<div class="float-win-title">
+      <button class="float-win-close">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+      Math Preview
+      </div>`;
+        const mathContentEl = document.createElement("div");
         mathContentEl.addClass("float-win-content");
         mathContentEl.id = "math-preview-content";
         mathPreviewEl.appendChild(mathContentEl);
         document.body.appendChild(mathPreviewEl);
     }
-    var mathRenderer = null;
-    var win = new FloatWin("math-preview");
-    var supressed = false;
+    let mathRenderer = null;
+    const win = new FloatWin("math-preview");
+    let supressed = false;
     win.closeBtn.addEventListener("click", function () {
         supressed = true; // for current TeX block
     }, false);
@@ -115,7 +139,7 @@ function init_math_preview(cm) {
             mathRenderer.onChanged = function () {
                 // finished rendering. show the window
                 if (!win.visible) {
-                    var cursorPos = cm.charCoords(cm.getCursor(), "window");
+                    const cursorPos = cm.charCoords(cm.getCursor(), "window");
                     win.moveTo(cursorPos.left, cursorPos.bottom);
                 }
                 win.show();
@@ -135,22 +159,22 @@ function init_math_preview(cm) {
     });
 }
 function FloatWin(id) {
-    var win = document.getElementById(id);
+    const win = document.getElementById(id);
     // eslint-disable-next-line @typescript-eslint/no-this-alias
-    var self = this;
+    const self = this;
     /** @type {HTMLDivElement} */
-    var titlebar = win.querySelector(".float-win-title");
+    const titlebar = win.querySelector(".float-win-title");
     titlebar.addEventListener("selectstart", function () {
         return false;
     }, false);
     /** @type {HTMLButtonElement} */
-    var closeBtn = win.querySelector(".float-win-close");
+    const closeBtn = win.querySelector(".float-win-close");
     if (closeBtn) {
         closeBtn.addEventListener("click", function () {
             self.hide();
         }, false);
     }
-    var boxX, boxY, mouseX, mouseY, offsetX, offsetY;
+    let boxX, boxY, mouseX, mouseY, offsetX, offsetY;
     titlebar.addEventListener("mousedown", function (e) {
         if (e.target === closeBtn)
             return;
@@ -164,10 +188,10 @@ function FloatWin(id) {
         document.addEventListener("mouseup", up, false);
     }, false);
     function move(e) {
-        var x = getMouseXY(e).x - offsetX;
-        var y = getMouseXY(e).y - offsetY;
-        var width = document.documentElement.clientWidth - titlebar.offsetWidth;
-        var height = document.documentElement.clientHeight - titlebar.offsetHeight;
+        let x = getMouseXY(e).x - offsetX;
+        let y = getMouseXY(e).y - offsetY;
+        const width = document.documentElement.clientWidth - titlebar.offsetWidth;
+        const height = document.documentElement.clientHeight - titlebar.offsetHeight;
         x = Math.min(Math.max(0, x), width);
         y = Math.min(Math.max(0, y), height);
         win.style.left = x + "px";
@@ -178,7 +202,7 @@ function FloatWin(id) {
         document.removeEventListener("mouseup", up, false);
     }
     function getMouseXY(e) {
-        var x = 0, y = 0;
+        let x = 0, y = 0;
         e = e || window.event;
         if (e.pageX) {
             x = e.pageX;
@@ -200,7 +224,7 @@ function FloatWin(id) {
 FloatWin.prototype.show = function (moveToCenter) {
     if (this.visible)
         return;
-    var el = this.el, 
+    const el = this.el, 
     // eslint-disable-next-line @typescript-eslint/no-this-alias
     self = this;
     this.visible = true;
@@ -218,12 +242,12 @@ FloatWin.prototype.hide = function () {
     this.el.className += " float-win-hidden";
 };
 FloatWin.prototype.moveTo = function (x, y) {
-    var s = this.el.style;
+    const s = this.el.style;
     s.left = x + "px";
     s.top = y + "px";
 };
 
-var DEFAULT_SETTINGS = {
+const DEFAULT_SETTINGS = {
     dynamicCursor: false,
     markSelection: false,
     activeLineOnSelect: false,
@@ -249,447 +273,395 @@ var DEFAULT_SETTINGS = {
     renderDataview: false,
     renderMath: false,
     renderMathPreview: false,
-    renderBanner: true,
+    renderBanner: false,
+    renderEmbeds: false,
+    renderEmoji: false,
+    renderTasks: false,
+    showBacklinks: false,
     styleCheckBox: true,
     allowedYamlKeys: "document-font-size",
     tokenList: "em|strong|strikethrough|code|linkText|task|internalLink|highlight",
 };
-var ObsidianCodeMirrorOptionsSettingsTab = /** @class */ (function (_super) {
-    __extends(ObsidianCodeMirrorOptionsSettingsTab, _super);
-    function ObsidianCodeMirrorOptionsSettingsTab(app, plugin) {
-        var _this = _super.call(this, app, plugin) || this;
-        _this.plugin = plugin;
-        return _this;
+class ObsidianCodeMirrorOptionsSettingsTab extends require$$0.PluginSettingTab {
+    constructor(app, plugin) {
+        super(app, plugin);
+        this.plugin = plugin;
     }
-    ObsidianCodeMirrorOptionsSettingsTab.prototype.display = function () {
-        var _this = this;
-        var containerEl = this.containerEl;
+    display() {
+        const { containerEl } = this;
         containerEl.empty();
         containerEl.addClass("codemirror-options-settings");
-        containerEl.createEl("h3", {
-            text: "Markdown Parsing",
-        });
-        new obsidian.Setting(containerEl)
-            .setName("⚠️ Hide Markdown Tokens")
-            .setDesc("Emulate WYSIWYG while editing by hiding markdown tokens. Markdown tokens will automatically hide once the cursor leaves the element.\n         This mode will apply the class .hmd-inactive-line to all inactive lines and the class .hmd-hidden-token to all hidden tokens.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.editModeHideTokens).onChange(function (value) {
-                _this.plugin.settings.editModeHideTokens = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdHideToken", _this.plugin.settings.editModeHideTokens ? _this.plugin.settings.tokenList : false);
-                _this.plugin.applyBodyClasses();
+        let tokenSettings;
+        if (!this.app.vault.getConfig("legacyEditor")) {
+            containerEl.createEl("h3", {
+                text: "⚠️ Notice: Most of this plugin does not function when Live Preview mode is enabled.",
+            });
+        }
+        if (this.app.vault.getConfig("legacyEditor")) {
+            containerEl.createEl("h3", {
+                text: "Markdown Parsing",
+            });
+            new require$$0.Setting(containerEl)
+                .setName("⚠️ Hide Markdown Tokens")
+                .setDesc(`Emulate WYSIWYG while editing by hiding markdown tokens. Markdown tokens will automatically hide once the cursor leaves the element.
+         This mode will apply the class .hmd-inactive-line to all inactive lines and the class .hmd-hidden-token to all hidden tokens.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.editModeHideTokens).onChange(value => {
+                this.plugin.settings.editModeHideTokens = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateCodeMirrorOption("hmdHideToken", this.plugin.settings.editModeHideTokens ? this.plugin.settings.tokenList : false);
+                this.plugin.applyBodyClasses();
                 // hide the token list if the hide tokens setting is disabled
-                _this.plugin.settings.editModeHideTokens
+                this.plugin.settings.editModeHideTokens
                     ? tokenSettings.settingEl.removeClass("setting-disabled")
                     : tokenSettings.settingEl.addClass("setting-disabled");
-            });
-        });
-        var tokenSettings = new obsidian.Setting(this.containerEl)
-            .setName("⚠️ Token List")
-            .setDesc("These markdown token types will be hidden. The default value will hide all currently supported tokens.\n         Values must be pipe delimted with no spaces. Available options are: em|strong|strikethrough|code|linkText|task|internalLink|highlight")
-            .setClass("token-list-setting")
-            .addText(function (textfield) {
-            textfield.setPlaceholder(String("em|strong|strikethrough|code|linkText|task|internalLink|highlight"));
-            textfield.inputEl.type = "text";
-            textfield.setValue(String(_this.plugin.settings.tokenList));
-            textfield.onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
+            }));
+            tokenSettings = new require$$0.Setting(this.containerEl)
+                .setName("⚠️ Token List")
+                .setDesc(`These markdown token types will be hidden. The default value will hide all currently supported tokens.
+         Values must be pipe delimted with no spaces. Available options are: em|strong|strikethrough|code|linkText|task|internalLink|highlight`)
+                .setClass("token-list-setting")
+                .addText(textfield => {
+                textfield.setPlaceholder(String("em|strong|strikethrough|code|linkText|task|internalLink|highlight"));
+                textfield.inputEl.type = "text";
+                textfield.setValue(String(this.plugin.settings.tokenList));
+                textfield.onChange((value) => __awaiter(this, void 0, void 0, function* () {
                     this.plugin.settings.tokenList = value;
                     this.plugin.saveData(this.plugin.settings);
                     this.plugin.updateCodeMirrorOption("hmdHideToken", this.plugin.settings.editModeHideTokens ? this.plugin.settings.tokenList : false, true);
-                    return [2 /*return*/];
-                });
-            }); });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("⚠️ Enable OpenMD Mode")
-            .setDesc("Completely replace the HyperMD CodeMirror mode with a modified version of HyperMD that aims to\n                replicate the default Obsidian edit mode parser while adding additional functionality such as\n                improved internal link parsing.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.enableOpenMD).onChange(function (value) {
-                _this.plugin.settings.enableOpenMD = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("mode", _this.plugin.settings.enableOpenMD ? "openmd" : "hypermd");
+                }));
             });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("⚠️ Collapse External Links")
-            .setDesc("This will collapse external links in edit mode so that the URL is hidden and only the link text is shown. \n                The full URL will display once you click into the link text.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.foldLinks).onChange(function (value) {
-                _this.plugin.settings.foldLinks = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.applyBodyClasses();
-                _this.plugin.updateCodeMirrorOption("hmdFold", {
-                    image: _this.plugin.settings.foldImages,
-                    link: _this.plugin.settings.foldLinks,
-                    html: _this.plugin.settings.renderHTML,
-                    code: _this.plugin.settings.renderCode,
-                    math: _this.plugin.settings.renderMath,
-                });
+            new require$$0.Setting(containerEl)
+                .setName("⚠️ Enable OpenMD Mode")
+                .setDesc(`Completely replace the HyperMD CodeMirror mode with a modified version of HyperMD that aims to
+                replicate the default Obsidian edit mode parser while adding additional functionality such as
+                improved internal link parsing.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.enableOpenMD).onChange(value => {
+                this.plugin.settings.enableOpenMD = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateCodeMirrorOption("mode", this.plugin.settings.enableOpenMD ? "openmd" : "hypermd");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("⚠️ Collapse External Links")
+                .setDesc(`This will collapse external links in edit mode so that the URL is hidden and only the link text is shown. 
+                The full URL will display once you click into the link text.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.foldLinks).onChange(value => {
+                this.plugin.settings.foldLinks = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.applyBodyClasses();
+                this.plugin.updateHmdOptions("hmdFold");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("⚠️ Render Images Inline")
+                .setDesc(`This will render images in edit mode inline. Clicking on the image will collapse the image down to its source view.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.foldImages).onChange(value => {
+                this.plugin.settings.foldImages = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.applyBodyClasses();
+                this.plugin.updateHmdOptions("hmdFold");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Edit Mode Click Handler")
+                .setDesc(`Allow mouse clicks to toggle checkboxes in edit mode.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.editModeClickHandler).onChange(value => {
+                this.plugin.settings.editModeClickHandler = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateCodeMirrorOption("hmdClick", this.plugin.settings.editModeClickHandler);
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Style Checkboxes")
+                .setDesc(`Disable this if you want to do your own styling of edit mode checkboxes. This setting does nothing if Hide Markdown Tokens is disabled`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.styleCheckBox).onChange(value => {
+                this.plugin.settings.styleCheckBox = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.applyBodyClasses();
+            }));
+            containerEl.createEl("h3", {
+                text: "Edit Mode Code Rendering",
             });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("⚠️ Render Images Inline")
-            .setDesc("This will render images in edit mode inline. Clicking on the image will collapse the image down to its source view.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.foldImages).onChange(function (value) {
-                _this.plugin.settings.foldImages = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.applyBodyClasses();
-                _this.plugin.updateCodeMirrorOption("hmdFold", {
-                    image: _this.plugin.settings.foldImages,
-                    link: _this.plugin.settings.foldLinks,
-                    html: _this.plugin.settings.renderHTML,
-                    code: _this.plugin.settings.renderCode,
-                    math: _this.plugin.settings.renderMath,
-                });
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Edit Mode Click Handler")
-            .setDesc("Allow mouse clicks to toggle checkboxes in edit mode.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.editModeClickHandler).onChange(function (value) {
-                _this.plugin.settings.editModeClickHandler = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdClick", _this.plugin.settings.editModeClickHandler);
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Style Checkboxes")
-            .setDesc("Disable this if you want to do your own styling of edit mode checkboxes. This setting does nothing if Hide Markdown Tokens is disabled")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.styleCheckBox).onChange(function (value) {
-                _this.plugin.settings.styleCheckBox = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.applyBodyClasses();
-            });
-        });
-        containerEl.createEl("h3", {
-            text: "Edit Mode Code Rendering",
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Render HTML")
-            .setDesc("")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.renderHTML).onChange(function (value) {
-                _this.plugin.settings.renderHTML = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdFold", {
-                    image: _this.plugin.settings.foldImages,
-                    link: _this.plugin.settings.foldLinks,
-                    html: _this.plugin.settings.renderHTML,
-                    code: _this.plugin.settings.renderCode,
-                    math: _this.plugin.settings.renderMath,
-                });
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Render Math")
-            .setDesc("")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.renderMath).onChange(function (value) {
-                _this.plugin.settings.renderMath = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdFold", {
-                    image: _this.plugin.settings.foldImages,
-                    link: _this.plugin.settings.foldLinks,
-                    html: _this.plugin.settings.renderHTML,
-                    code: _this.plugin.settings.renderCode,
-                    math: _this.plugin.settings.renderMath,
-                });
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Render Math Preview")
-            .setDesc("")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.renderMathPreview).onChange(function (value) {
-                _this.plugin.settings.renderMathPreview = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                if (_this.plugin.settings.renderMathPreview) {
-                    _this.app.workspace.iterateCodeMirrors(function (cm) {
+            new require$$0.Setting(containerEl)
+                .setName("⚠️⚠️ Render Embeds")
+                .setDesc(``)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderEmbeds).onChange(value => {
+                this.plugin.settings.renderEmbeds = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateHmdOptions("hmdFold");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render HTML")
+                .setDesc(``)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderHTML).onChange(value => {
+                this.plugin.settings.renderHTML = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateHmdOptions("hmdFold");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Math")
+                .setDesc(``)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderMath).onChange(value => {
+                this.plugin.settings.renderMath = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateHmdOptions("hmdFold");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Math Preview")
+                .setDesc(``)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderMathPreview).onChange(value => {
+                this.plugin.settings.renderMathPreview = value;
+                this.plugin.saveData(this.plugin.settings);
+                if (this.plugin.settings.renderMathPreview) {
+                    this.app.workspace.iterateCodeMirrors(cm => {
                         init_math_preview(cm);
                     });
                 }
                 else {
-                    var previewEl = document.querySelector("#math-preview");
+                    const previewEl = document.querySelector("#math-preview");
                     if (previewEl) {
                         document.querySelector("#math-preview").detach();
                     }
-                    _this.app.workspace.iterateCodeMirrors(function (cm) {
+                    this.app.workspace.iterateCodeMirrors(cm => {
                         unload_math_preview(cm);
                     });
                 }
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Render Code Blocks")
-            .setDesc("If this is disabled, none of the options below will do anything")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.renderCode).onChange(function (value) {
-                _this.plugin.settings.renderCode = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdFold", {
-                    image: _this.plugin.settings.foldImages,
-                    link: _this.plugin.settings.foldLinks,
-                    html: _this.plugin.settings.renderHTML,
-                    code: _this.plugin.settings.renderCode,
-                    math: _this.plugin.settings.renderMath,
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Emoji/Icon Shortcodes")
+                .setDesc(createFragment(el => {
+                el.appendText(`Render emoji/icon `);
+                el.createEl("code", { text: ":shortcodes:" });
+                el.appendText(` inline.`);
+                el.createEl("br");
+                el.createEl("a", {
+                    href: "https://github.com/aidenlx/obsidian-icon-shortcodes",
+                    text: "Icon Shortcodes v0.4.1+",
                 });
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Render Admonitions")
-            .setDesc("")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.renderAdmonition).onChange(function (value) {
-                _this.plugin.settings.renderAdmonition = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdFoldCode", {
-                    admonition: _this.plugin.settings.renderAdmonition,
-                    chart: _this.plugin.settings.renderChart,
-                    query: _this.plugin.settings.renderQuery,
-                    dataview: _this.plugin.settings.renderDataview,
-                });
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Render Charts")
-            .setDesc("")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.renderChart).onChange(function (value) {
-                _this.plugin.settings.renderChart = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdFoldCode", {
-                    admonition: _this.plugin.settings.renderAdmonition,
-                    chart: _this.plugin.settings.renderChart,
-                    query: _this.plugin.settings.renderQuery,
-                    dataview: _this.plugin.settings.renderDataview,
-                });
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Render Embedded Search")
-            .setDesc("")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.renderQuery).onChange(function (value) {
-                _this.plugin.settings.renderQuery = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdFoldCode", {
-                    admonition: _this.plugin.settings.renderAdmonition,
-                    chart: _this.plugin.settings.renderChart,
-                    query: _this.plugin.settings.renderQuery,
-                    dataview: _this.plugin.settings.renderDataview,
-                });
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Render Dataview")
-            .setDesc("")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.renderDataview).onChange(function (value) {
-                _this.plugin.settings.renderDataview = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdFoldCode", {
-                    admonition: _this.plugin.settings.renderAdmonition,
-                    chart: _this.plugin.settings.renderChart,
-                    query: _this.plugin.settings.renderQuery,
-                    dataview: _this.plugin.settings.renderDataview,
-                });
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Render Banners")
-            .setDesc("This settings requires that the \"Container Attributes\" setting is enabled")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.renderBanner).onChange(function (value) {
-                _this.plugin.settings.renderBanner = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.applyBodyClasses();
-                _this.app.workspace.iterateCodeMirrors(function (cm) {
+                el.appendText(" Required. ");
+            }))
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderEmoji).onChange(value => {
+                this.plugin.settings.renderEmoji = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.applyBodyClasses();
+                this.app.workspace.iterateCodeMirrors(cm => {
                     cm.refresh();
                 });
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Code Blocks")
+                .setDesc(`If this is disabled, none of the options below will do anything`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderCode).onChange(value => {
+                this.plugin.settings.renderCode = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateHmdOptions("hmdFold");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Admonitions")
+                .setDesc(``)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderAdmonition).onChange(value => {
+                this.plugin.settings.renderAdmonition = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateHmdOptions("hmdFoldCode");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Charts")
+                .setDesc(``)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderChart).onChange(value => {
+                this.plugin.settings.renderChart = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateHmdOptions("hmdFoldCode");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Embedded Search")
+                .setDesc(``)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderQuery).onChange(value => {
+                this.plugin.settings.renderQuery = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateHmdOptions("hmdFoldCode");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Dataview")
+                .setDesc(``)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderDataview).onChange(value => {
+                this.plugin.settings.renderDataview = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateHmdOptions("hmdFoldCode");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Tasks")
+                .setDesc(``)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderTasks).onChange(value => {
+                this.plugin.settings.renderTasks = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateHmdOptions("hmdFoldCode");
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Render Banners")
+                .setDesc(`This settings requires that the "Container Attributes" setting is enabled`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.renderBanner).onChange(value => {
+                this.plugin.settings.renderBanner = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.applyBodyClasses();
+                this.app.workspace.iterateCodeMirrors(cm => {
+                    cm.refresh();
+                });
+            }));
+            containerEl.createEl("h3", {
+                text: "Visual Styling",
             });
-        });
-        containerEl.createEl("h3", {
-            text: "Visual Styling",
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Container Attributes")
-            .setDesc("Apply data attributes to the CodeMirror line div elements that describe the contained child elements. Think of\n      this like Contextual Typography for Edit Mode.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.containerAttributes).onChange(function (value) {
-                _this.plugin.settings.containerAttributes = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorHandlers("renderLine", _this.plugin.onRenderLineBound, value, true);
-            });
-        });
-        new obsidian.Setting(this.containerEl)
-            .setName("⚠️ Allowed Front Matter Keys")
-            .setDesc("A comma seperated list of front matter keys to turn into CSS variables and data attributes")
-            .setClass("frontmatter-key-list-setting")
-            .addText(function (textfield) {
-            textfield.setPlaceholder(String(""));
-            textfield.inputEl.type = "text";
-            textfield.setValue(String(_this.plugin.settings.allowedYamlKeys));
-            textfield.onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
+            new require$$0.Setting(containerEl)
+                .setName("Show Backlinks in Editor")
+                .setDesc(`Append a backlinks component to the footer of edit mode documents`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.showBacklinks).onChange(value => {
+                this.plugin.settings.showBacklinks = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.settings.showBacklinks
+                    ? this.plugin.addBacklinksImmediately()
+                    : this.plugin.removeBacklinksImmediately();
+                // this.plugin.updateCodeMirrorHandlers("renderLine", this.plugin.onRenderLineBound, value, true);
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Container Attributes")
+                .setDesc(`Apply data attributes to the CodeMirror line div elements that describe the contained child elements. Think of
+      this like Contextual Typography for Edit Mode.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.containerAttributes).onChange(value => {
+                this.plugin.settings.containerAttributes = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateCodeMirrorHandlers("renderLine", this.plugin.onRenderLineBound, value, true);
+            }));
+            new require$$0.Setting(this.containerEl)
+                .setName("⚠️ Allowed Front Matter Keys")
+                .setDesc(`A comma seperated list of front matter keys to turn into CSS variables and data attributes. This setting requires that the Container Attributes setting is enabled.`)
+                .setClass("frontmatter-key-list-setting")
+                .addText(textfield => {
+                textfield.setPlaceholder(String(""));
+                textfield.inputEl.type = "text";
+                textfield.setValue(String(this.plugin.settings.allowedYamlKeys));
+                textfield.onChange((value) => __awaiter(this, void 0, void 0, function* () {
                     this.plugin.settings.allowedYamlKeys = value;
                     this.plugin.saveData(this.plugin.settings);
-                    return [2 /*return*/];
-                });
-            }); });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Auto Align Tables")
-            .setDesc("Automatically align markdown tables as they are being built. Note: This setting currently requires that OpenMD Mode be enabled.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.autoAlignTables).onChange(function (value) {
-                _this.plugin.settings.autoAlignTables = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("hmdTableAlign", _this.plugin.settings.autoAlignTables);
+                }));
             });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Dynamic cursor size")
-            .setDesc("When enabled, the cursor height will be determined by the max height of the entire line. \n         When disabled, the cursor's height is based on the height of the adjacent reference character.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.dynamicCursor).onChange(function (value) {
-                _this.plugin.settings.dynamicCursor = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("singleCursorHeightPerLine", !_this.plugin.settings.dynamicCursor);
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Style active selection")
-            .setDesc("When enabled, selected text will be marked with the CSS class .CodeMirror-selectedtext. \n         Useful to force the styling of selected text when ::selection is not sufficient.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.markSelection).onChange(function (value) {
-                _this.plugin.settings.markSelection = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("styleSelectedText", _this.plugin.settings.markSelection);
-                _this.plugin.applyBodyClasses();
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Retain active line on selection")
-            .setDesc("When enabled, text selection will not remove the .active-line class on the current line. \n         When disabled text selection on the active line will remove the .active-line class.")
-            .addToggle(function (toggle) {
-            return toggle.setValue(_this.plugin.settings.activeLineOnSelect).onChange(function (value) {
-                _this.plugin.settings.activeLineOnSelect = value;
-                _this.plugin.saveData(_this.plugin.settings);
-                _this.plugin.updateCodeMirrorOption("styleActiveLine", _this.plugin.settings.activeLineOnSelect ? { nonEmpty: true } : true);
-            });
-        });
-        new obsidian.Setting(containerEl)
-            .setName("Cursor Blink Rate")
-            .setDesc("Value is in milliseconds. Default is 530. Set to 0 to disable blinking.")
-            .addText(function (textfield) {
-            textfield.setPlaceholder(String(530));
-            textfield.inputEl.type = "number";
-            textfield.setValue(String(_this.plugin.settings.cursorBlinkRate));
-            textfield.onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
+            new require$$0.Setting(containerEl)
+                .setName("Auto Align Tables")
+                .setDesc(`Automatically align markdown tables as they are being built. Note: This setting currently requires that OpenMD Mode be enabled.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.autoAlignTables).onChange(value => {
+                this.plugin.settings.autoAlignTables = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateCodeMirrorOption("hmdTableAlign", this.plugin.settings.autoAlignTables);
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Dynamic cursor size")
+                .setDesc(`When enabled, the cursor height will be determined by the max height of the entire line. 
+         When disabled, the cursor's height is based on the height of the adjacent reference character.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.dynamicCursor).onChange(value => {
+                this.plugin.settings.dynamicCursor = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateCodeMirrorOption("singleCursorHeightPerLine", !this.plugin.settings.dynamicCursor);
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Style active selection")
+                .setDesc(`When enabled, selected text will be marked with the CSS class .CodeMirror-selectedtext. 
+         Useful to force the styling of selected text when ::selection is not sufficient.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.markSelection).onChange(value => {
+                this.plugin.settings.markSelection = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateCodeMirrorOption("styleSelectedText", this.plugin.settings.markSelection);
+                this.plugin.applyBodyClasses();
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Retain active line on selection")
+                .setDesc(`When enabled, text selection will not remove the .active-line class on the current line. 
+         When disabled text selection on the active line will remove the .active-line class.`)
+                .addToggle(toggle => toggle.setValue(this.plugin.settings.activeLineOnSelect).onChange(value => {
+                this.plugin.settings.activeLineOnSelect = value;
+                this.plugin.saveData(this.plugin.settings);
+                this.plugin.updateCodeMirrorOption("styleActiveLine", this.plugin.settings.activeLineOnSelect ? { nonEmpty: true } : true);
+            }));
+            new require$$0.Setting(containerEl)
+                .setName("Cursor Blink Rate")
+                .setDesc(`Value is in milliseconds. Default is 530. Set to 0 to disable blinking.`)
+                .addText(textfield => {
+                textfield.setPlaceholder(String(530));
+                textfield.inputEl.type = "number";
+                textfield.setValue(String(this.plugin.settings.cursorBlinkRate));
+                textfield.onChange((value) => __awaiter(this, void 0, void 0, function* () {
                     this.plugin.settings.cursorBlinkRate = Number(value);
                     this.plugin.saveData(this.plugin.settings);
                     this.plugin.updateCodeMirrorOption("cursorBlinkRate", this.plugin.settings.cursorBlinkRate);
-                    return [2 /*return*/];
-                });
-            }); });
-        });
+                }));
+            });
+        }
         containerEl.createEl("h3", {
             text: "Syntax Highlighting",
         });
-        var lineNums, copyButton, copyButtonPre;
-        if (
-        //@ts-ignore
-        this.app.plugins.plugins["cm-editor-syntax-highlight-obsidian"]) {
-            new obsidian.Setting(containerEl)
-                .setName("Enable Edit Mode Syntax Highlighting Themes")
-                .setDesc("Apply syntax highlighting themes to code blocks in edit mode. The default theme is Material Pale Night\n                but additional themes are available via the Style Settings plugin")
-                .addToggle(function (toggle) {
-                return toggle.setValue(_this.plugin.settings.syntaxHighlighting).onChange(function (value) {
-                    _this.plugin.settings.syntaxHighlighting = value;
-                    _this.plugin.saveData(_this.plugin.settings);
-                    _this.plugin.applyBodyClasses(true);
-                });
-            });
-            new obsidian.Setting(containerEl)
-                .setName("Enable Preview Mode Syntax Highlighting Themes")
-                .setDesc("Apply syntax highlighting themes to code blocks in preview mode. The default theme is Material Pale Night\n        but additional themes are available via the Style Settings plugin")
-                .addToggle(function (toggle) {
-                return toggle.setValue(_this.plugin.settings.enablePrismJSStyling).onChange(function (value) {
-                    _this.plugin.settings.enablePrismJSStyling = value;
-                    _this.plugin.saveData(_this.plugin.settings);
-                    _this.plugin.applyBodyClasses(true);
-                });
-            });
-            new obsidian.Setting(containerEl)
-                .setName("Use CodeMirror for syntax highlighting in preview mode")
-                .setDesc("This setting creates consistent highlighting between edit and preview by using CodeMirror to highlight code in both modes.")
-                .addToggle(function (toggle) {
-                return toggle.setValue(_this.plugin.settings.enableCMinPreview).onChange(function (value) {
-                    _this.plugin.settings.enableCMinPreview = value;
-                    _this.plugin.saveData(_this.plugin.settings);
-                    _this.plugin.applyBodyClasses(true);
-                    _this.plugin.settings.enableCMinPreview
-                        ? (lineNums.settingEl.removeClass("setting-disabled"),
-                            copyButton.settingEl.removeClass("setting-disabled"),
-                            copyButtonPre.settingEl.removeClass("setting-disabled"))
-                        : (lineNums.settingEl.addClass("setting-disabled"),
-                            copyButton.settingEl.addClass("setting-disabled"),
-                            copyButtonPre.settingEl.addClass("setting-disabled"));
-                });
-            });
-            lineNums = new obsidian.Setting(containerEl)
-                .setName("⚠️ Show line numbers for code blocks in preview mode")
-                .setDesc("This setting will add line numbers to code blocks in preview mode.")
-                .addToggle(function (toggle) {
-                return toggle.setValue(_this.plugin.settings.showLineNums).onChange(function (value) {
-                    _this.plugin.settings.showLineNums = value;
-                    _this.plugin.saveData(_this.plugin.settings);
-                    _this.plugin.applyBodyClasses(true);
-                });
-            });
-            copyButton = new obsidian.Setting(containerEl)
-                .setName("Enable copy button to code blocks in preview mode")
-                .setDesc("This setting will add a copy button to the bottom left corner of code blocks in preview mode. The button will show up on code block hover.")
-                .addToggle(function (toggle) {
-                return toggle.setValue(_this.plugin.settings.copyButton).onChange(function (value) {
-                    _this.plugin.settings.copyButton = value;
-                    _this.plugin.saveData(_this.plugin.settings);
-                    _this.plugin.applyBodyClasses(true);
-                });
-            });
-            copyButtonPre = new obsidian.Setting(containerEl)
-                .setName("⚠️ Enable copy button to all PRE blocks in preview mode")
-                .setDesc("This setting will add a copy button to any PRE element. This could negatively impact certain plugins that render PRE blocks.")
-                .addToggle(function (toggle) {
-                return toggle.setValue(_this.plugin.settings.copyButtonOnPRE).onChange(function (value) {
-                    _this.plugin.settings.copyButtonOnPRE = value;
-                    _this.plugin.saveData(_this.plugin.settings);
-                    _this.plugin.applyBodyClasses(true);
-                });
-            });
-        }
-        else {
-            new obsidian.Setting(containerEl)
-                .setName("Use CodeMirror for syntax highlighting in preview mode")
-                .setDesc('⚠️ Install the plugin "Editor Syntax Highlight" in order to use this feature')
-                .setClass("info");
-        }
+        let lineNums, copyButton, copyButtonPre;
+        new require$$0.Setting(containerEl)
+            .setName("Enable Edit Mode Syntax Highlighting Themes")
+            .setDesc(`Apply syntax highlighting themes to code blocks in edit mode. The default theme is Material Pale Night
+                but additional themes are available via the Style Settings plugin`)
+            .addToggle(toggle => toggle.setValue(this.plugin.settings.syntaxHighlighting).onChange(value => {
+            this.plugin.settings.syntaxHighlighting = value;
+            this.plugin.saveData(this.plugin.settings);
+            this.plugin.applyBodyClasses(true);
+        }));
+        new require$$0.Setting(containerEl)
+            .setName("Enable Preview Mode Syntax Highlighting Themes")
+            .setDesc(`Apply syntax highlighting themes to code blocks in preview mode. The default theme is Material Pale Night
+        but additional themes are available via the Style Settings plugin`)
+            .addToggle(toggle => toggle.setValue(this.plugin.settings.enablePrismJSStyling).onChange(value => {
+            this.plugin.settings.enablePrismJSStyling = value;
+            this.plugin.saveData(this.plugin.settings);
+            this.plugin.applyBodyClasses(true);
+        }));
+        new require$$0.Setting(containerEl)
+            .setName("Use CodeMirror for syntax highlighting in preview mode")
+            .setDesc(`This setting creates consistent highlighting between edit and preview by using CodeMirror to highlight code in both modes.`)
+            .addToggle(toggle => toggle.setValue(this.plugin.settings.enableCMinPreview).onChange(value => {
+            this.plugin.settings.enableCMinPreview = value;
+            this.plugin.saveData(this.plugin.settings);
+            this.plugin.applyBodyClasses(true);
+            this.plugin.settings.enableCMinPreview
+                ? (lineNums.settingEl.removeClass("setting-disabled"),
+                    copyButton.settingEl.removeClass("setting-disabled"),
+                    copyButtonPre.settingEl.removeClass("setting-disabled"))
+                : (lineNums.settingEl.addClass("setting-disabled"),
+                    copyButton.settingEl.addClass("setting-disabled"),
+                    copyButtonPre.settingEl.addClass("setting-disabled"));
+        }));
+        lineNums = new require$$0.Setting(containerEl)
+            .setName("⚠️ Show line numbers for code blocks in preview mode")
+            .setDesc(`This setting will add line numbers to code blocks in preview mode.`)
+            .addToggle(toggle => toggle.setValue(this.plugin.settings.showLineNums).onChange(value => {
+            this.plugin.settings.showLineNums = value;
+            this.plugin.saveData(this.plugin.settings);
+            this.plugin.applyBodyClasses(true);
+        }));
+        copyButton = new require$$0.Setting(containerEl)
+            .setName("Enable copy button to code blocks in preview mode")
+            .setDesc(`This setting will add a copy button to the bottom left corner of code blocks in preview mode. The button will show up on code block hover.`)
+            .addToggle(toggle => toggle.setValue(this.plugin.settings.copyButton).onChange(value => {
+            this.plugin.settings.copyButton = value;
+            this.plugin.saveData(this.plugin.settings);
+            this.plugin.applyBodyClasses(true);
+        }));
+        copyButtonPre = new require$$0.Setting(containerEl)
+            .setName("⚠️ Enable copy button to all PRE blocks in preview mode")
+            .setDesc(`This setting will add a copy button to any PRE element. This could negatively impact certain plugins that render PRE blocks.`)
+            .addToggle(toggle => toggle.setValue(this.plugin.settings.copyButtonOnPRE).onChange(value => {
+            this.plugin.settings.copyButtonOnPRE = value;
+            this.plugin.saveData(this.plugin.settings);
+            this.plugin.applyBodyClasses(true);
+        }));
         containerEl.createEl("h3", {
             text: "Syntax Highlighting Theme",
         });
-        new obsidian.Setting(containerEl)
+        new require$$0.Setting(containerEl)
             .setName("Refer to the Style Settings plugin")
-            .setDesc("To customize the syntax highlighting theme, \n    install the Style Settings plugin and expand the \"CodeMirror Options\" section")
+            .setDesc(`To customize the syntax highlighting theme, 
+    install the Style Settings plugin and expand the "CodeMirror Options" section`)
             .setClass("info");
         // update dynamic setting visibility
         this.plugin.settings.editModeHideTokens
-            ? tokenSettings.settingEl.removeClass("setting-disabled")
-            : tokenSettings.settingEl.addClass("setting-disabled");
+            ? tokenSettings === null || tokenSettings === void 0 ? void 0 : tokenSettings.settingEl.removeClass("setting-disabled")
+            : tokenSettings === null || tokenSettings === void 0 ? void 0 : tokenSettings.settingEl.addClass("setting-disabled");
         this.plugin.settings.enableCMinPreview
             ? (lineNums === null || lineNums === void 0 ? void 0 : lineNums.settingEl.removeClass("setting-disabled"),
                 copyButton === null || copyButton === void 0 ? void 0 : copyButton.settingEl.removeClass("setting-disabled"),
@@ -697,9 +669,8 @@ var ObsidianCodeMirrorOptionsSettingsTab = /** @class */ (function (_super) {
             : (lineNums === null || lineNums === void 0 ? void 0 : lineNums.settingEl.addClass("setting-disabled"),
                 copyButton === null || copyButton === void 0 ? void 0 : copyButton.settingEl.addClass("setting-disabled"),
                 copyButtonPre === null || copyButtonPre === void 0 ? void 0 : copyButtonPre.settingEl.addClass("setting-disabled"));
-    };
-    return ObsidianCodeMirrorOptionsSettingsTab;
-}(obsidian.PluginSettingTab));
+    }
+}
 
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
@@ -709,7 +680,8 @@ function leftFillNum(num, targetLength) {
 }
 
 CodeMirror.runMode = function (string, modespec, callback, options) {
-  var mode = CodeMirror.getMode(CodeMirror.defaults, modespec);
+  var modeRef = CodeMirror.findModeByName(modespec);
+  var mode = CodeMirror.getMode(CodeMirror.defaults, modeRef?.mime);
   var lineNumber = 1;
   if (callback.nodeType == 1) {
     var tabSize = (options && options.tabSize) || CodeMirror.defaults.tabSize;
@@ -1006,22 +978,6 @@ CodeMirror.colorize = (function () {
     updateActiveLines(cm, sel.ranges);
   }
 });
-
-var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
-
-function createCommonjsModule(fn, basedir, module) {
-	return module = {
-		path: basedir,
-		exports: {},
-		require: function (path, base) {
-			return commonjsRequire(path, (base === undefined || base === null) ? module.path : base);
-		}
-	}, fn(module, module.exports), module.exports;
-}
-
-function commonjsRequire () {
-	throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
-}
 
 createCommonjsModule(function (module) {
 /*!
@@ -3441,7 +3397,7 @@ var __assign =
                   // successfully made one
                   state.hmdTable = tableType;
                   state.hmdTableColumns = rowStyles;
-                  state.hmdTableID = "T" + stream.lineOracle.line;
+                  state.hmdTableID = "T" + stream.lineOracle?.line;
                   state.hmdTableRow = state.hmdTableCol = 0;
                 }
               }
@@ -3752,16 +3708,27 @@ var ___extends = (function () {
           cm.on("changes", _this.onChange);
           cm.on("viewportChange", _this.onViewportChange);
           cm.on("cursorActivity", _this.onCursorActivity);
+          cm.on("gutterClick", _this.onGutterClick);
         } else {
           cm.off("changes", _this.onChange);
           cm.off("viewportChange", _this.onViewportChange);
           cm.off("cursorActivity", _this.onCursorActivity);
+          cm.off("gutterClick", _this.onGutterClick);
         }
       };
       this.onViewportChange = function (cm, from, to) {
         _this.startFold(from, to);
       };
-      this.checkForPreview = obsidian.debounce(
+      this.onGutterClick = function (cm, line, gutter, clickEvent) {
+        // check for widgets to render when lists or headers are expanded
+        if (
+          gutter === "CodeMirror-foldgutter" &&
+          clickEvent.composedPath()[0]?.hasClass("CodeMirror-foldgutter-folded")
+        ) {
+          _this.startFoldImmediately(line, cm.getViewport().to + 1);
+        }
+      };
+      this.checkForPreview = require$$0.debounce(
         function () {
           document.querySelector("#math-preview")?.addClass("float-win-hidden");
         },
@@ -4285,17 +4252,13 @@ var ___extends = (function () {
       title = mat[2] ? mat[2] : "";
       if (title.charAt(0) === '"') title = title.substr(1, title.length - 2).replace(/\\"/g, '"');
     }
-    return { url: url, title: title };
+    return { url: url?.trim(), title: title };
   }
   exports.ImageFolder = ImageFolder;
   fold_1.registerFolder("image", exports.ImageFolder, true);
 });
 
 // HyperMD, copyright (c) by laobubu
-// Distributed under an MIT license: http://laobubu.net/HyperMD/LICENSE
-//
-// DESCRIPTION: Turn code blocks into flow charts / playground sandboxes etc.
-//
 
 (function (mod) {
   mod(null, (HyperMD.FoldCode = HyperMD.FoldCode || {}), CodeMirror, HyperMD, HyperMD.Fold);
@@ -4412,9 +4375,23 @@ var ___extends = (function () {
       var info;
       while ((info = folded.pop())) info.marker.clear();
     };
+    FoldCode.prototype.clearAll = function () {
+      fold_1.getAddon(this.cm).startFold.stop();
+      for (var type in this.folded) {
+        var folded = this.folded[type];
+        var info;
+        while ((info = folded.pop())) {
+          info.marker.explicitlyCleared = false;
+          info.marker.clear();
+          info.marker = null;
+          info = null;
+        }
+      }
+    };
     FoldCode.prototype.fold = function (stream, token) {
       // eslint-disable-next-line @typescript-eslint/no-this-alias
       var _this = this;
+      var debug = false;
       if (token.start !== 0 || !token.type || token.type.indexOf("HyperMD-codeblock-begin") === -1) {
         return null;
       }
@@ -4478,7 +4455,6 @@ var ___extends = (function () {
         info.marker.clear();
         return null;
       }
-      //-----------------------------
 
       var $wrapper = document.createElement("div");
       $wrapper.className = contentClass + type;
@@ -4504,25 +4480,24 @@ var ___extends = (function () {
       // so that we can call widget.changed() to remeasure the element
       // and prevent any cursor placement issues
       // this allows our widget to shrink or grow to any size we want
-      this.widgetChanged = core_1.debounce(() => {
-        // console.log("widget change detected: " + this.lineWidget.node.className);
+
+      function updateWidget(widget) {
         try {
-          this.lineWidget.changed();
-        } catch {
-          // console.log("widget change failed");
+          widget.changed();
+        } catch (err) {
         }
-      }, 250);
-      // we're using MutationObserver rather than ResizeObserver here
-      // due to ResizeObserver causing a memory leak due to holding refs
-      const observer = new MutationObserver((mutations, observer) => {
-        // mutations.forEach(el => {
-        //   console.log(el.target.classList.value);
-        // });
-        this.lineWidget = lineWidget;
-        this.widgetChanged();
+      }
+
+      var widgetChanged = require$$0.debounce(updateWidget, 250);
+
+      let observer = new ResizeObserver((mutations, observer) => {
+        try {
+          widgetChanged(lineWidget);
+        } catch {}
       });
-      observer.observe($wrapper, { childList: true, subtree: true, attributes: true });
-      //-----------------------------
+
+      observer.observe($wrapper);
+
       var $stub = document.createElement("span");
       $stub.className = stubClass + type;
       $stub.textContent = "<CODE>";
@@ -4531,26 +4506,52 @@ var ___extends = (function () {
         inclusiveLeft: true,
         inclusiveRight: true,
       }));
-      // $wrapper.addEventListener("mouseenter", highlightON, false);
-      // $wrapper.addEventListener("mouseleave", highlightOFF, false);
+
       info.changed = function () {
-        lineWidget.changed();
+        try {
+          lineWidget.changed();
+        } catch (err) {
+        }
       };
       info.break = function () {
         observer.disconnect();
+        observer = null;
         fold_1.breakMark(cm, marker);
       };
       $stub.addEventListener("click", info.break, false);
-      marker.on("clear", function () {
+      var redraw = info.redraw;
+      if (redraw) {
+        lineWidget.on("redraw", info.redraw);
+      }
+      function onCodeBlockClear() {
+        if (redraw) {
+          lineWidget.off("redraw", info.redraw);
+        }
+        marker.off("clear", onCodeBlockClear);
+        $stub.removeEventListener("click", info.break);
+        if (info.unload) {
+          try {
+            info.unload();
+            info.unload = null;
+            info = null;
+            if (debug) ;
+          } catch (err) {
+          }
+        }
         var markers = _this.folded[type];
         var idx;
         if (markers && (idx = markers.indexOf(info)) !== -1) markers.splice(idx, 1);
-        if (typeof info.onRemove === "function") info.onRemove(info);
-        cm.addLineClass(wrapperLine, "wrap", `rendered-${type}-wrapper`);
+        cm.removeLineClass(wrapperLine, "wrap", `rendered-${type}-wrapper`);
         cm.removeLineClass(wrapperLine, "wrap", "rendered-code-block-wrapper");
-        observer.disconnect();
+        if (observer) observer.disconnect();
         lineWidget.clear();
-      });
+        lineWidget = null;
+        observer = null;
+        marker.replacedWith = null;
+        marker.widgetNode = null;
+        marker = null;
+      }
+      marker.on("clear", onCodeBlockClear);
       if (!(type in this.folded)) this.folded[type] = [info];
       else this.folded[type].push(info);
       return marker;
@@ -4719,7 +4720,7 @@ var ___extends = (function () {
     checker: exports.defaultChecker,
     renderer: exports.defaultRenderer,
     stubText: "<HTML>",
-    isolatedTagName: /^(?:div|pre|form|mark|table|iframe|ul|ol|input|textarea|p|summary|a)$/i,
+    isolatedTagName: /^(?:div|pre|details|form|mark|table|iframe|ul|ol|input|textarea|p|summary|a)$/i,
   };
   exports.suggestedOption = {};
   core_1.suggestedEditorConfig.hmdFoldHTML = exports.suggestedOption;
@@ -4770,8 +4771,19 @@ var ___extends = (function () {
       var replacedWith;
       var marker;
       var isBlock = false;
+      function updateWidgetByEl(targetEl) {
+        const found = cm.hmd.Fold.folded.html.filter(
+          el => el.replacedWith?.contains(targetEl) || el.associatedLineWidget?.node?.contains(targetEl)
+        );
+        if (found.length) {
+          found[0].changed();
+          // console.log("html widget size change");
+        }
+      }
       if (inlineMode) {
         /** put HTML inline */
+        stub.className = stubClassOmittable;
+
         var span = document.createElement("span");
         span.setAttribute("class", "hmd-fold-html rendered-widget");
         span.setAttribute("style", "display: inline-flex");
@@ -4780,61 +4792,102 @@ var ___extends = (function () {
 
         replacedWith = span;
         /** If element size changed, we notify CodeMirror */
-        var watcher = core_1.watchSize(el, function (w, h) {
-          var computedStyle = getComputedStyle(el);
-          var getStyle = function (name) {
-            return computedStyle.getPropertyValue(name);
-          };
-          var floating =
-            w < 10 || h < 10 || !/^relative|static$/i.test(getStyle("position")) || !/^none$/i.test(getStyle("float"));
-          if (!floating) stub.className = stubClassOmittable;
-          else stub.className = stubClass;
-          marker.changed();
-        });
-        watcher.check(); // trig the checker once
-        // Marker is not created yet. Bind events later
+
+        function watchInlineSize(w, h, el) {
+          try {
+            updateWidgetByEl(el);
+          } catch (err) {}
+        }
+
+        const inlineObserverCallback = entries => {
+          for (let entry of entries) {
+            if (entry.contentRect) {
+              var width = entry.contentRect.width,
+                height = entry.contentRect.height;
+              try {
+                watchInlineSize(width, height, entry.target);
+              } catch {}
+              entry = null;
+            }
+          }
+        };
+        if (!cm.inlineHTMLObserver) {
+          cm.inlineHTMLObserver = new ResizeObserver(inlineObserverCallback);
+        }
+
+        cm.inlineHTMLObserver.observe(el);
+
+        function onInlineMarkClear() {
+          cm.inlineHTMLObserver.unobserve(el);
+          marker.off("clear", onInlineMarkClear);
+          stub.removeEventListener("click", breakFn);
+          el.removeEventListener("click", breakFn);
+          stub = null;
+          el = null;
+          marker.replacedWith = null;
+          marker.widgetNode = null;
+          marker = null;
+        }
+
         setTimeout(function () {
-          marker.on("clear", function () {
-            watcher.stop();
-          });
+          marker.on("clear", onInlineMarkClear);
         }, 0);
       } else {
         isBlock = true;
+        stub.className = stubClass;
         /** use lineWidget to insert element */
         replacedWith = stub;
         // this causes any text selection to immediately stop if the cursor is coming out of a block html element
         // without this, the line widget will get duplicated on cursor selection. see issue #51
         if (cm.state.selectingText) cm.state.selectingText();
-        var lineWidget_1 = cm.addLineWidget(to.line, el, {
-          above: false,
-          coverGutter: false,
-          className: "rendered-html rendered-html-block rendered-widget",
-          noHScroll: false,
-          showIfHidden: false,
-        });
+        var lineWidget_1;
+        if (!cm.getLineHandle(from.line).widgets || cm.getLineHandle(from.line).widgets?.length === 0) {
+          lineWidget_1 = cm.addLineWidget(to.line, el, {
+            above: false,
+            coverGutter: false,
+            className: "rendered-html rendered-html-block rendered-widget",
+            noHScroll: false,
+            showIfHidden: false,
+          });
+        } else if (cm.getLineHandle(from.line).widgets?.length) {
+          lineWidget_1 = cm.getLineHandle(from.line).widgets[0];
+        } else {
+          return;
+        }
         var wrapperLine = from.line;
         cm.addLineClass(wrapperLine, "wrap", "rendered-html-block-wrapper");
-        // var highlightON_1 = function () {
-        //   return (stub.className = stubClassHighlight);
-        // };
-        // var highlightOFF_1 = function () {
-        //   return (stub.className = stubClass);
-        // };
-        // el.addEventListener("mouseenter", highlightON_1, false);
-        // el.addEventListener("mouseleave", highlightOFF_1, false);
-        var watcher = core_1.watchSize(el, function () {
-          return lineWidget_1.changed();
-        });
-        watcher.check();
+
+        const blockHTMLObserverCallback = entries => {
+          for (let entry of entries) {
+            if (entry.contentRect) {
+              try {
+                updateWidgetByEl(entry.target);
+              } catch {}
+            }
+          }
+        };
+        if (!cm.blockHTMLObserver) {
+          cm.blockHTMLObserver = new ResizeObserver(blockHTMLObserverCallback);
+        }
+        cm.blockHTMLObserver.observe(el);
         // Marker is not created yet. Bind events later
+        function onBlockClear() {
+          marker.off("clear", onBlockClear);
+          cm.blockHTMLObserver.unobserve(el);
+          stub.removeEventListener("click", breakFn);
+          el.removeEventListener("click", breakFn);
+          stub = null;
+          el = null;
+          lineWidget_1.clear();
+          lineWidget_1 = null;
+          cm.removeLineClass(wrapperLine, "wrap", "rendered-html-block-wrapper");
+          marker.replacedWith = null;
+          marker.widgetNode = null;
+          marker.associatedLineWidget = null;
+          marker = null;
+        }
         setTimeout(function () {
-          marker.on("clear", function () {
-            watcher.stop();
-            lineWidget_1.clear();
-            cm.removeLineClass(wrapperLine, "wrap", "rendered-html-block-wrapper");
-            // el.removeEventListener("mouseenter", highlightON_1, false);
-            // el.removeEventListener("mouseleave", highlightOFF_1, false);
-          });
+          marker.on("clear", onBlockClear);
         }, 0);
       }
       marker = cm.markText(from, to, {
@@ -4843,6 +4896,8 @@ var ___extends = (function () {
         inclusiveLeft: isBlock,
         inclusiveRight: isBlock,
       });
+      marker.associatedLineWidget = lineWidget_1;
+
       return marker;
     };
     FoldHTML.prototype.makeStub = function () {
@@ -5416,15 +5471,23 @@ var gte_1 = gte;
     const adType = info.lang.substring(3);
     var el = document.createElement("div");
     var asyncRenderer;
+    var ctx = new require$$0.Component();
+    ctx.sourcePath = info.editor.state.fileName;
     if (dependencyCheck()) {
-      asyncRenderer = () => {
+      asyncRenderer = async () => {
         try {
-          window.app.plugins
-            .getPlugin("obsidian-admonition")
-            .postprocessor(adType, code, el, info.editor.state.fileName);
+          window.app.plugins.getPlugin("obsidian-admonition").postprocessor(adType, code, el, ctx);
+          ctx.load();
         } catch (error) {
           el.innerText = "Failed to render Admonition: " + error;
         }
+        function unload() {
+          ctx._children[0].unload();
+          ctx.unload();
+          ctx._children[0] = null;
+          ctx._children = null;
+        }
+        info.unload = unload;
       };
     } else {
       el.innerText = "Error: Unable to find the Admonitions plugin or Admonition version not 6.3.6 or higher";
@@ -5449,11 +5512,6 @@ var gte_1 = gte;
 });
 
 // HyperMD, copyright (c) by laobubu
-// Distributed under an MIT license: http://laobubu.net/HyperMD/LICENSE
-//
-// POWERPACK for "addon/fold-code"
-//
-// This module provides `ChartRenderer` for FoldCode addon
 
 (function (mod) {
   mod(null, {}, CodeMirror, HyperMD.Fold, HyperMD.FoldCode);
@@ -5465,14 +5523,39 @@ var gte_1 = gte;
   };
   var ChartRenderer = function (code, info) {
     var el = document.createElement("div");
+    var ctx = new require$$0.Component();
     if (dependencyCheck()) {
-      window.app.plugins.getPlugin("obsidian-charts").postprocessor(code, el);
+      var asyncRenderer = () => {
+        try {
+          window.app.plugins.getPlugin("obsidian-charts").postprocessor(code, el, ctx);
+          ctx.load();
+          // el = ctx._children[0].containerEl;
+        } catch (error) {
+          el.innerText = "Failed to render Chart: " + error;
+        }
+      };
     } else {
       el.innerText = "Error: Unable to find the Obsidian Charts plugin";
     }
+    // charts have an element detach listener that causes charts to disappear when they leave
+    // the codemirror viewport. this redraw function forces them to redraw once they're back
+    // in the visible viewport
+    info.redraw = function () {
+      try {
+        ctx._children[0].chart.attached = true;
+        ctx._children[0].chart.resize();
+      } catch {}
+    };
+    function unload() {
+      ctx._children[0].unload();
+      ctx.unload();
+      ctx._children[0] = null;
+      ctx._children = null;
+    }
+    info.unload = unload;
     return {
       element: el,
-      asyncRenderer: null,
+      asyncRenderer: asyncRenderer,
     };
   };
   exports.ChartRenderer = ChartRenderer;
@@ -5524,18 +5607,23 @@ var gte_1 = gte;
       // Sanitize the HTML to make sure there's no funny business
       window.DOMPurify.sanitize(queryEl, purifySettings);
       renderer.owner.postProcess({ el: queryEl }, promises, renderer.frontmatter);
+      var targetChild;
+      Array.from(renderer.owner._children).forEach(child => {
+        if (child.containerEl === queryEl.firstChild) {
+          targetChild = child;
+        }
+      });
       // But wait... we have to clean up after ourselves so that we don't cause a memory leak
       // We do so by removing the node we just created from the preview mode's child list
-      setTimeout(() => {
-        renderer.owner._children.forEach(child => {
-          if (child.containerEl === queryEl.firstChild) {
-            child.unload();
-            previewMode.removeChild(child);
-          }
-        });
-        // we naively wait here because search query results are async
-        // if we clean up too fast, we don't get results
-      }, 15000);
+      function unload() {
+        previewMode.removeChild(targetChild);
+        renderer.owner._children.remove(targetChild);
+        targetChild.unload();
+        targetChild = null;
+      }
+      info.unload = unload;
+      // we naively wait here because search query results are async
+      // if we clean up too fast, we don't get results
     } else {
       queryEl.innerText = "Error: Unable to find the Global Search plugin";
     }
@@ -5569,7 +5657,7 @@ var gte_1 = gte;
   };
   var DataviewRenderer = function (code, info) {
     var el = document.createElement("div");
-    var ctx = new obsidian.Component();
+    var ctx = new require$$0.Component();
     ctx.sourcePath = info.editor.state.fileName;
     if (dependencyCheck()) {
       if (info.lang === "dataview") {
@@ -5579,10 +5667,13 @@ var gte_1 = gte;
       }
       ctx.load();
       el = ctx._children[0].containerEl;
-      setTimeout(() => {
+      function unload() {
         ctx._children[0].unload();
         ctx.unload();
-      }, 15000);
+        ctx._children[0] = null;
+        ctx._children = null;
+      }
+      info.unload = unload;
       return {
         element: el,
         asyncRenderer: null,
@@ -5607,6 +5698,542 @@ var gte_1 = gte;
     renderer: exports.DataviewRenderer,
     suggested: false,
   });
+});
+
+// HyperMD, copyright (c) by laobubu
+
+(function (mod) {
+  mod(null, {}, CodeMirror, HyperMD.Fold, HyperMD.FoldCode);
+})(function (require, exports, CodeMirror, fold_1, fold_code_1) {
+  var dependencyCheck = function () {
+    const plugin = window.app.plugins.getPlugin("obsidian-tasks-plugin");
+    return plugin?._loaded && gte_1(plugin?.manifest.version, "1.4.0") ? true : false;
+  };
+  var TasksRenderer = function (code, info) {
+    var el = document.createElement("div");
+    var ctx = new require$$0.Component();
+    ctx.sourcePath = info.editor.filePath;
+    if (dependencyCheck()) {
+      const renderer = window.app.plugins.getPlugin("obsidian-tasks-plugin").queryRenderer.addQueryRenderChild;
+      renderer(code, el, ctx);
+      ctx.load();
+      el = ctx._children[0].containerEl;
+      function unload() {
+        ctx._children[0].unload();
+        ctx.unload();
+        ctx._children[0] = null;
+        ctx._children = null;
+      }
+      info.unload = unload;
+      return {
+        element: el,
+        asyncRenderer: null,
+      };
+    } else {
+      el.innerText = "Error: Unable to find the Tasks plugin or version not 1.4.0 or greater";
+    }
+
+    return {
+      element: el,
+      asyncRenderer: null,
+    };
+  };
+  exports.TasksRenderer = TasksRenderer;
+  CodeMirror.defineOption("tasks", null, function (cm) {
+    fold_code_1.getAddon(cm).clear("tasks");
+    fold_1.getAddon(cm).startFold();
+  });
+  fold_code_1.registerRenderer({
+    name: "tasks",
+    pattern: /^tasks$/i,
+    renderer: exports.TasksRenderer,
+    suggested: false,
+  });
+});
+
+// HyperMD, copyright (c) by laobubu
+
+(function (mod) {
+  mod(null, {}, CodeMirror, HyperMD.Fold, HyperMD.ReadLink);
+})(function (require, exports, CodeMirror, fold_1) {
+  Object.defineProperty(exports, "__esModule", { value: true });
+  exports.EmbedFolder = void 0;
+  var debug = false;
+  var EmbedFolder = function (stream, token) {
+    var cm = stream.cm;
+    var embedRE = /(\bformatting-embed\b)/;
+    var extRE = /\.(jpe?g|png|gif|svg|bmp)/;
+    var urlRE = /(\bformatting-link-string\b)|(\bformatting-link\b)/; // matches the parentheses
+    if (embedRE.test(token.type) && (token.string === "!" || token.string === "![[")) {
+      var replacedWith;
+      var lineNo = stream.lineNo;
+      // find the begin and end of url part
+      var since = { line: lineNo, ch: token.start };
+      var url_begin = stream.findNext(urlRE, 0, since);
+      if (!url_begin) {
+        return null;
+      }
+      var url_end = stream.findNext(urlRE, url_begin.i_token + 1);
+      var rawurl = cm.getRange({ line: lineNo, ch: url_begin.token.end }, { line: lineNo, ch: url_end.token.start });
+      // bail if the embed is an image
+      if (extRE.test(rawurl)) return null;
+      var from = { line: lineNo, ch: token.start };
+      var to = { line: lineNo, ch: url_end.token.end };
+      var inlineMode = from.ch != 0 || to.ch < cm.getLine(to.line).length;
+      var rngReq = stream.requestRange(from, to, from, from);
+      var stubClassOmittable = "hmd-fold-embed-stub omittable";
+      if (rngReq === fold_1.RequestRangeResult.OK) {
+        var info = {
+          editor: cm,
+          lang: "embed",
+          attributes: null,
+          marker: null,
+          lineWidget: null,
+          el: null,
+          break: undefined_function,
+          changed: undefined_function,
+        };
+        var breakFn = function () {
+          return fold_1.breakMark(cm, marker);
+        };
+        // Renderer
+        var code = cm.getRange(from, to);
+        var el = document.createElement("div");
+        var ctx = new require$$0.Component();
+        ctx.sourcePath = cm.state.fileName;
+        const previewMode = window.app.workspace.activeLeaf.view.previewMode,
+          renderer = previewMode.renderer;
+        try {
+          // process the markdown
+          require$$0.MarkdownRenderer.renderMarkdown(code, el, cm.state.fileName, ctx);
+          // kick off the preview mode process that renders the embed
+          renderer.owner.postProcess({ el: el }, [], renderer.frontmatter);
+          var targetChild;
+          Array.from(renderer.owner._children).forEach(child => {
+            if (child.containerEl === el.querySelector(".markdown-embed-content")) {
+              targetChild = child;
+            }
+          });
+        } catch (error) {
+          el.innerText = "Failed to render embed: " + error;
+        }
+        function unload() {
+          previewMode.removeChild(targetChild);
+          renderer.owner._children.remove(targetChild);
+          targetChild.unload();
+          targetChild = null;
+        }
+        info.unload = unload;
+        var type = "embed";
+        var stub = document.createElement("span");
+        stub.className = stubClass;
+        stub.textContent = "<EMBED>";
+        stub.addEventListener("click", breakFn, false);
+        var marker, lineWidget;
+        function updateWidgetByEl(targetEl) {
+          const found = cm.hmd.Fold.folded.embed?.filter(
+            el => el.replacedWith?.contains(targetEl) || el.associatedLineWidget?.node?.contains(targetEl)
+          );
+          if (found?.length) {
+            found[0].changed();
+          }
+        }
+        var updateWidgetByElDebounced = require$$0.debounce(updateWidgetByEl, 250);
+        function watchInlineSize(w, h, el) {
+          try {
+            if (debug) ;
+            updateWidgetByElDebounced(el);
+          } catch (err) {
+          }
+        }
+
+        const embedObserverCallback = entries => {
+          for (let entry of entries) {
+            if (entry.contentRect) {
+              var width = entry.contentRect.width,
+                height = entry.contentRect.height;
+              try {
+                watchInlineSize(width, height, entry.target);
+              } catch (err) {
+              }
+              entry = null;
+            }
+          }
+        };
+
+        if (!cm.embedObserver) {
+          cm.embedObserver = new ResizeObserver(embedObserverCallback);
+        }
+
+        if (inlineMode) {
+          stub.className = stubClassOmittable;
+
+          var displayType, embedType;
+          var span = document.createElement("span");
+          if (code.contains("^")) {
+            displayType = "inline";
+            embedType = "block";
+          } else if (code.contains("#")) {
+            displayType = "flex";
+            embedType = "header";
+          } else {
+            displayType = "flex";
+            embedType = "page";
+          }
+          span.setAttribute("class", "rendered-inline-embed rendered-widget embed-type-" + embedType);
+          span.setAttribute("style", `display: ${displayType};`);
+          if (token.start < 7) {
+            stub.addClass("flip-stub");
+          }
+          span.appendChild(stub);
+          span.appendChild(el);
+          var targetFile = rawurl.match(/^([^#]*)#/);
+          if (targetFile && targetFile.length > 1 && targetFile[1]) {
+            targetFile = targetFile[1];
+          } else {
+            targetFile = cm.state.fileName?.replace(/\.md$/, "");
+          }
+          span.setAttribute("aria-label", targetFile);
+          el.onClickEvent = function (e, t) {
+            this.addEventListener("click", e, t), this.addEventListener("auxclick", e, t);
+          };
+          el.onClickEvent(function (e) {
+            if (e.composedPath()[0].className === "internal-link") return;
+            (0 !== e.button && 1 !== e.button) ||
+              (e.preventDefault(), window.app.workspace.openLinkText(rawurl, cm.state.fileName, false));
+          });
+
+          replacedWith = span;
+
+          cm.embedObserver.observe(span);
+          info.changed = function () {
+            try {
+              marker.changed();
+            } catch (err) {
+            }
+          };
+          info.break = function () {
+            fold_1.breakMark(cm, marker);
+          };
+          function onInlineMarkClear() {
+            cm.embedObserver.unobserve(span);
+            if (info.unload) {
+              try {
+                info.unload();
+                if (debug) ;
+              } catch (err) {
+              }
+            }
+            // var markers = cm.hmd.Fold.folded.embed;
+            // var idx;
+            // if (markers && (idx = markers.indexOf(marker)) !== -1) {
+            //   if (debug) console.log("found inline marker in registry", markers, marker);
+            //   markers.splice(idx, 1);
+            // } else {
+            //   if (debug) console.log("unable to find inline wiget in fold registry", markers, marker);
+            // }
+            marker.off("clear", onInlineMarkClear);
+            stub.removeEventListener("click", breakFn);
+            el.removeEventListener("click", breakFn);
+            stub = null;
+            el = null;
+            marker.replacedWith = null;
+            marker.widgetNode = null;
+            marker = null;
+            info = null;
+          }
+
+          setTimeout(function () {
+            marker.on("clear", onInlineMarkClear);
+          }, 100);
+        } else {
+          // Block Placement
+          var $wrapper = document.createElement("div");
+          $wrapper.className = contentClass;
+          $wrapper.style.minHeight = "1em";
+          $wrapper.appendChild(el);
+          if (code.contains("^")) {
+            displayType = "inline";
+            embedType = "block";
+          } else if (code.contains("#")) {
+            displayType = "flex";
+            embedType = "header";
+          } else {
+            displayType = "flex";
+            embedType = "page";
+          }
+          $wrapper.setAttribute("class", "rendered-embed rendered-widget embed-type-" + embedType);
+          if (!cm.getLineHandle(lineNo).widgets || cm.getLineHandle(lineNo).widgets?.length === 0) {
+            lineWidget = cm.addLineWidget(to.line, $wrapper, {
+              above: false,
+              coverGutter: false,
+              handleMouseEvents: false,
+              className: "rendered-block-embed rendered-widget",
+              noHScroll: false,
+              showIfHidden: false,
+            });
+          } else if (cm.getLineHandle(lineNo).widgets?.length) {
+            lineWidget = cm.getLineHandle(lineNo).widgets[0];
+          } else {
+            return;
+          }
+
+          var wrapperLine = stream.lineNo;
+          cm.addLineClass(wrapperLine, "wrap", `rendered-${type}-wrapper`);
+
+          cm.embedObserver.observe($wrapper);
+
+          replacedWith = stub;
+
+          info.changed = function () {
+            try {
+              lineWidget.changed();
+            } catch (err) {
+            }
+          };
+          info.break = function () {
+            cm.embedObserver.unobserve($wrapper);
+            fold_1.breakMark(cm, marker);
+          };
+          stub.addEventListener("click", info.break, false);
+          var redraw = info.redraw;
+          if (redraw) {
+            lineWidget.on("redraw", info.redraw);
+          }
+          function onCodeBlockClear() {
+            cm.embedObserver.unobserve($wrapper);
+            if (redraw) {
+              lineWidget.off("redraw", info.redraw);
+            }
+            marker.off("clear", onCodeBlockClear);
+            stub.removeEventListener("click", info.break);
+            if (info.unload) {
+              try {
+                info.unload();
+                if (debug) ;
+              } catch (err) {
+              }
+            }
+            var markers = cm.hmd.Fold.folded.embed;
+            var idx;
+            if (markers && (idx = markers.indexOf(marker)) !== -1) {
+              markers.splice(idx, 1);
+            }
+            cm.removeLineClass(wrapperLine, "wrap", `rendered-${type}-wrapper`);
+            cm.removeLineClass(wrapperLine, "wrap", "rendered-code-block-wrapper");
+            lineWidget.clear();
+            lineWidget = null;
+            marker.replacedWith = null;
+            marker.widgetNode = null;
+            marker = null;
+            info.unload = null;
+            info = null;
+          }
+          setTimeout(function () {
+            marker.on("clear", onCodeBlockClear);
+          }, 0);
+        }
+        marker = cm.markText(from, to, {
+          replacedWith: replacedWith,
+          inclusiveLeft: false,
+          inclusiveRight: false,
+        });
+        marker.associatedLineWidget = lineWidget;
+        setTimeout(() => {
+          marker.changed();
+        }, 0);
+        return marker;
+      }
+    }
+    return null;
+  };
+  var contentClass = "hmd-fold-embed-content hmd-fold-embed"; // + renderer_type
+  var stubClass = "hmd-fold-embed-stub hmd-fold-embed"; // + renderer_type
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  var undefined_function = function () {};
+  exports.EmbedFolder = EmbedFolder;
+  fold_1.registerFolder("embed", exports.EmbedFolder, true);
+});
+
+var lib = createCommonjsModule(function (module, exports) {
+/*
+THIS IS A GENERATED/BUNDLED FILE BY ESBUILD
+if you want to view the source visit the plugins github repository
+*/
+
+var t=Object.create;var o=Object.defineProperty;var a=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,l=Object.prototype.hasOwnProperty;var r=n=>o(n,"__esModule",{value:!0});var g=(n,e)=>{r(n);for(var i in e)o(n,i,{get:e[i],enumerable:!0});},c=(n,e,i)=>{if(e&&typeof e=="object"||typeof e=="function")for(let s of p(e))!l.call(n,s)&&s!=="default"&&o(n,s,{get:()=>e[s],enumerable:!(i=a(e,s))||i.enumerable});return n},u=n=>c(r(o(n!=null?t(d(n)):{},"default",n&&n.__esModule&&"default"in n?{get:()=>n.default,enumerable:!0}:{value:n,enumerable:!0})),n);g(exports,{getApi:()=>P,isPluginEnabled:()=>f});u(require$$0__default["default"]);var P=n=>{var e;return n?(e=n.app.plugins.plugins["obsidian-icon-shortcodes"])==null?void 0:e.api:window.IconSCAPIv0},f=n=>n.app.plugins.enabledPlugins.has("obsidian-icon-shortcodes");
+});
+
+createCommonjsModule(function (module) {
+// HyperMD, copyright (c) by laobubu
+// Distributed under an MIT license: http://laobubu.net/HyperMD/LICENSE
+//
+// DESCRIPTION: Fold and render emoji :smile:
+//
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { getApi } = lib;
+(function (mod) {
+  //[HyperMD] UMD patched!
+  /*plain env*/ mod(
+    null,
+    (HyperMD.FoldEmoji = HyperMD.FoldEmoji || {}),
+    CodeMirror,
+    HyperMD,
+    HyperMD.Fold
+  );
+})(function (require, exports, CodeMirror, core_1, fold_1) {
+  Object.defineProperty(exports, "__esModule", { value: true });
+  exports.defaultDict =
+    exports.defaultChecker =
+    exports.defaultRenderer =
+    exports.suggestedOption =
+    exports.EmojiFolder =
+    exports.getAddon =
+    exports.defaultOption =
+    exports.FoldEmoji =
+      void 0;
+  /********************************************************************************** */
+  //#region Folder
+  /**
+   * Detect if a token is emoji and fold it
+   *
+   * @see FolderFunc in ./fold.ts
+   */
+  const EmojiPattern = /\+1|-1|[\w-]+/,
+    AllowedChar = /^[\w-+]+$/;
+
+  exports.EmojiFolder = function (stream, token) {
+    if (token.string !== ":") return;
+    const nextColon = stream.findNext((t) => t.string === ":", false),
+      nextToken = stream.findNext(() => true);
+
+    // if nearest colon is next token, it's not an emoji
+    if (!nextToken || !nextColon || nextColon.i_token <= nextToken.i_token)
+      return;
+
+    const tokenType = token.type;
+    let name = "";
+    for (let i = stream.i_token + 1; i < nextColon.i_token; i++) {
+      const t = stream.lineTokens[i];
+      // if type of warpped tokens not the same as leading colon,
+      // it's not an emoji
+      if (t.type !== tokenType || !AllowedChar.test(t.string)) return;
+      name += t.string;
+    }
+    // filter text that is too long to be shortcode
+    if (name.length > 55) return;
+    // filter using common shortcode pattern
+    if (!EmojiPattern.test(name)) return;
+
+    var cm = stream.cm;
+    var addon = exports.getAddon(cm);
+    if (!addon.isEmoji(name)) return null;
+
+    var from = {
+      line: stream.lineNo,
+      ch: token.start,
+    };
+    var end = nextColon.token.end;
+    var to = { line: stream.lineNo, ch: end };
+
+    var reqAns = stream.requestRange(from, to);
+    if (reqAns !== fold_1.RequestRangeResult.OK) return null;
+    // now we are ready to fold and render!
+    var marker = addon.foldEmoji(name, from, to);
+    return marker;
+  };
+  //#endregion
+  fold_1.registerFolder("emoji", exports.EmojiFolder, true);
+  exports.defaultRenderer = (text) => {
+    const icon = getApi()?.getIcon(text);
+    if (!icon) {
+      return null;
+    } else if (typeof icon === "string") {
+      return createSpan({ text: icon });
+    } else {
+      return icon;
+    }
+  };
+  exports.defaultChecker = (text) => getApi()?.hasIcon(text) === true;
+  exports.defaultOption = {
+    myEmoji: {},
+    emojiRenderer: exports.defaultRenderer,
+    emojiChecker: exports.defaultChecker,
+  };
+  exports.suggestedOption = {};
+  core_1.suggestedEditorConfig.hmdFoldEmoji = exports.suggestedOption;
+  CodeMirror.defineOption(
+    "hmdFoldEmoji",
+    exports.defaultOption,
+    function (cm, newVal) {
+      ///// convert newVal's type to `Partial<Options>`, if it is not.
+      if (!newVal) {
+        newVal = {};
+      }
+      ///// apply config and write new values into cm
+      var inst = exports.getAddon(cm);
+      for (var k in exports.defaultOption) {
+        inst[k] = k in newVal ? newVal[k] : exports.defaultOption[k];
+      }
+    }
+  );
+  //#endregion
+  /********************************************************************************** */
+  //#region Addon Class
+  var FoldEmoji = /** @class */ (function (str) {
+    function FoldEmoji(cm) {
+      this.cm = cm;
+      // options will be initialized to defaultOption when constructor is finished
+    }
+    FoldEmoji.prototype.isEmoji = function (text) {
+      return text in this.myEmoji || this.emojiChecker(text);
+    };
+    FoldEmoji.prototype.foldEmoji = function (text, from, to) {
+      var cm = this.cm;
+      var el =
+        (text in this.myEmoji && this.myEmoji[text](text)) ||
+        this.emojiRenderer(text);
+      if (!el || !el.tagName) return null;
+      if (el.className.indexOf("hmd-emoji") === -1)
+        el.className += " hmd-emoji";
+      var marker = cm.markText(from, to, {
+        replacedWith: el,
+      });
+      el.addEventListener(
+        "click",
+        fold_1.breakMark.bind(this, cm, marker, 1),
+        false
+      );
+      if (el.tagName.toLowerCase() === "img") {
+        el.addEventListener(
+          "load",
+          function () {
+            return marker.changed();
+          },
+          false
+        );
+        el.addEventListener(
+          "dragstart",
+          function (ev) {
+            return ev.preventDefault();
+          },
+          false
+        );
+      }
+      return marker;
+    };
+    return FoldEmoji;
+  })();
+  exports.FoldEmoji = FoldEmoji;
+  //#endregion
+  /** ADDON GETTER (Singleton Pattern): a editor can have only one FoldEmoji instance */
+  exports.getAddon = core_1.Addon.Getter(
+    "FoldEmoji",
+    FoldEmoji,
+    exports.defaultOption /** if has options */
+  );
+});
+//#endregion
 });
 
 // HyperMD, copyright (c) by laobubu
@@ -5755,9 +6382,9 @@ var gte_1 = gte;
         if (!this.dependencyCheck()) {
           el.innerHTML = '<span class="mod-warning">Obsidian v0.12.16+ is needed to render Mathjax</span>';
         } else {
-          el.innerHTML = obsidian.renderMath(expr, { display: true }).outerHTML;
+          el.innerHTML =  require$$0.renderMath(expr, this.isDisplay).outerHTML;
+          require$$0.finishRenderMath();
           // this.container.appendChild(this.el);
-          obsidian.finishRenderMath();
         }
       } catch (err) {
         // failed to render!
@@ -5991,3861 +6618,13 @@ var gte_1 = gte;
   exports.getAddon = core_1.Addon.Getter("TableAlign", TableAlign, exports.defaultOption);
 });
 
-function isNothing(subject) {
-  return (typeof subject === 'undefined') || (subject === null);
-}
-
-
-function isObject(subject) {
-  return (typeof subject === 'object') && (subject !== null);
-}
-
-
-function toArray(sequence) {
-  if (Array.isArray(sequence)) return sequence;
-  else if (isNothing(sequence)) return [];
-
-  return [ sequence ];
-}
-
-
-function extend(target, source) {
-  var index, length, key, sourceKeys;
-
-  if (source) {
-    sourceKeys = Object.keys(source);
-
-    for (index = 0, length = sourceKeys.length; index < length; index += 1) {
-      key = sourceKeys[index];
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-
-function repeat(string, count) {
-  var result = '', cycle;
-
-  for (cycle = 0; cycle < count; cycle += 1) {
-    result += string;
-  }
-
-  return result;
-}
-
-
-function isNegativeZero(number) {
-  return (number === 0) && (Number.NEGATIVE_INFINITY === 1 / number);
-}
-
-
-var isNothing_1      = isNothing;
-var isObject_1       = isObject;
-var toArray_1        = toArray;
-var repeat_1         = repeat;
-var isNegativeZero_1 = isNegativeZero;
-var extend_1         = extend;
-
-var common = {
-	isNothing: isNothing_1,
-	isObject: isObject_1,
-	toArray: toArray_1,
-	repeat: repeat_1,
-	isNegativeZero: isNegativeZero_1,
-	extend: extend_1
-};
-
-// YAML error class. http://stackoverflow.com/questions/8458984
-
-
-function formatError(exception, compact) {
-  var where = '', message = exception.reason || '(unknown reason)';
-
-  if (!exception.mark) return message;
-
-  if (exception.mark.name) {
-    where += 'in "' + exception.mark.name + '" ';
-  }
-
-  where += '(' + (exception.mark.line + 1) + ':' + (exception.mark.column + 1) + ')';
-
-  if (!compact && exception.mark.snippet) {
-    where += '\n\n' + exception.mark.snippet;
-  }
-
-  return message + ' ' + where;
-}
-
-
-function YAMLException$1(reason, mark) {
-  // Super constructor
-  Error.call(this);
-
-  this.name = 'YAMLException';
-  this.reason = reason;
-  this.mark = mark;
-  this.message = formatError(this, false);
-
-  // Include stack trace in error object
-  if (Error.captureStackTrace) {
-    // Chrome and NodeJS
-    Error.captureStackTrace(this, this.constructor);
-  } else {
-    // FF, IE 10+ and Safari 6+. Fallback for others
-    this.stack = (new Error()).stack || '';
-  }
-}
-
-
-// Inherit from Error
-YAMLException$1.prototype = Object.create(Error.prototype);
-YAMLException$1.prototype.constructor = YAMLException$1;
-
-
-YAMLException$1.prototype.toString = function toString(compact) {
-  return this.name + ': ' + formatError(this, compact);
-};
-
-
-var exception = YAMLException$1;
-
-// get snippet for a single line, respecting maxLength
-function getLine(buffer, lineStart, lineEnd, position, maxLineLength) {
-  var head = '';
-  var tail = '';
-  var maxHalfLength = Math.floor(maxLineLength / 2) - 1;
-
-  if (position - lineStart > maxHalfLength) {
-    head = ' ... ';
-    lineStart = position - maxHalfLength + head.length;
-  }
-
-  if (lineEnd - position > maxHalfLength) {
-    tail = ' ...';
-    lineEnd = position + maxHalfLength - tail.length;
-  }
-
-  return {
-    str: head + buffer.slice(lineStart, lineEnd).replace(/\t/g, '→') + tail,
-    pos: position - lineStart + head.length // relative position
-  };
-}
-
-
-function padStart(string, max) {
-  return common.repeat(' ', max - string.length) + string;
-}
-
-
-function makeSnippet(mark, options) {
-  options = Object.create(options || null);
-
-  if (!mark.buffer) return null;
-
-  if (!options.maxLength) options.maxLength = 79;
-  if (typeof options.indent      !== 'number') options.indent      = 1;
-  if (typeof options.linesBefore !== 'number') options.linesBefore = 3;
-  if (typeof options.linesAfter  !== 'number') options.linesAfter  = 2;
-
-  var re = /\r?\n|\r|\0/g;
-  var lineStarts = [ 0 ];
-  var lineEnds = [];
-  var match;
-  var foundLineNo = -1;
-
-  while ((match = re.exec(mark.buffer))) {
-    lineEnds.push(match.index);
-    lineStarts.push(match.index + match[0].length);
-
-    if (mark.position <= match.index && foundLineNo < 0) {
-      foundLineNo = lineStarts.length - 2;
-    }
-  }
-
-  if (foundLineNo < 0) foundLineNo = lineStarts.length - 1;
-
-  var result = '', i, line;
-  var lineNoLength = Math.min(mark.line + options.linesAfter, lineEnds.length).toString().length;
-  var maxLineLength = options.maxLength - (options.indent + lineNoLength + 3);
-
-  for (i = 1; i <= options.linesBefore; i++) {
-    if (foundLineNo - i < 0) break;
-    line = getLine(
-      mark.buffer,
-      lineStarts[foundLineNo - i],
-      lineEnds[foundLineNo - i],
-      mark.position - (lineStarts[foundLineNo] - lineStarts[foundLineNo - i]),
-      maxLineLength
-    );
-    result = common.repeat(' ', options.indent) + padStart((mark.line - i + 1).toString(), lineNoLength) +
-      ' | ' + line.str + '\n' + result;
-  }
-
-  line = getLine(mark.buffer, lineStarts[foundLineNo], lineEnds[foundLineNo], mark.position, maxLineLength);
-  result += common.repeat(' ', options.indent) + padStart((mark.line + 1).toString(), lineNoLength) +
-    ' | ' + line.str + '\n';
-  result += common.repeat('-', options.indent + lineNoLength + 3 + line.pos) + '^' + '\n';
-
-  for (i = 1; i <= options.linesAfter; i++) {
-    if (foundLineNo + i >= lineEnds.length) break;
-    line = getLine(
-      mark.buffer,
-      lineStarts[foundLineNo + i],
-      lineEnds[foundLineNo + i],
-      mark.position - (lineStarts[foundLineNo] - lineStarts[foundLineNo + i]),
-      maxLineLength
-    );
-    result += common.repeat(' ', options.indent) + padStart((mark.line + i + 1).toString(), lineNoLength) +
-      ' | ' + line.str + '\n';
-  }
-
-  return result.replace(/\n$/, '');
-}
-
-
-var snippet = makeSnippet;
-
-var TYPE_CONSTRUCTOR_OPTIONS = [
-  'kind',
-  'multi',
-  'resolve',
-  'construct',
-  'instanceOf',
-  'predicate',
-  'represent',
-  'representName',
-  'defaultStyle',
-  'styleAliases'
-];
-
-var YAML_NODE_KINDS = [
-  'scalar',
-  'sequence',
-  'mapping'
-];
-
-function compileStyleAliases(map) {
-  var result = {};
-
-  if (map !== null) {
-    Object.keys(map).forEach(function (style) {
-      map[style].forEach(function (alias) {
-        result[String(alias)] = style;
-      });
-    });
-  }
-
-  return result;
-}
-
-function Type$1(tag, options) {
-  options = options || {};
-
-  Object.keys(options).forEach(function (name) {
-    if (TYPE_CONSTRUCTOR_OPTIONS.indexOf(name) === -1) {
-      throw new exception('Unknown option "' + name + '" is met in definition of "' + tag + '" YAML type.');
-    }
-  });
-
-  // TODO: Add tag format check.
-  this.options       = options; // keep original options in case user wants to extend this type later
-  this.tag           = tag;
-  this.kind          = options['kind']          || null;
-  this.resolve       = options['resolve']       || function () { return true; };
-  this.construct     = options['construct']     || function (data) { return data; };
-  this.instanceOf    = options['instanceOf']    || null;
-  this.predicate     = options['predicate']     || null;
-  this.represent     = options['represent']     || null;
-  this.representName = options['representName'] || null;
-  this.defaultStyle  = options['defaultStyle']  || null;
-  this.multi         = options['multi']         || false;
-  this.styleAliases  = compileStyleAliases(options['styleAliases'] || null);
-
-  if (YAML_NODE_KINDS.indexOf(this.kind) === -1) {
-    throw new exception('Unknown kind "' + this.kind + '" is specified for "' + tag + '" YAML type.');
-  }
-}
-
-var type = Type$1;
-
-/*eslint-disable max-len*/
-
-
-
-
-
-function compileList(schema, name) {
-  var result = [];
-
-  schema[name].forEach(function (currentType) {
-    var newIndex = result.length;
-
-    result.forEach(function (previousType, previousIndex) {
-      if (previousType.tag === currentType.tag &&
-          previousType.kind === currentType.kind &&
-          previousType.multi === currentType.multi) {
-
-        newIndex = previousIndex;
-      }
-    });
-
-    result[newIndex] = currentType;
-  });
-
-  return result;
-}
-
-
-function compileMap(/* lists... */) {
-  var result = {
-        scalar: {},
-        sequence: {},
-        mapping: {},
-        fallback: {},
-        multi: {
-          scalar: [],
-          sequence: [],
-          mapping: [],
-          fallback: []
-        }
-      }, index, length;
-
-  function collectType(type) {
-    if (type.multi) {
-      result.multi[type.kind].push(type);
-      result.multi['fallback'].push(type);
-    } else {
-      result[type.kind][type.tag] = result['fallback'][type.tag] = type;
-    }
-  }
-
-  for (index = 0, length = arguments.length; index < length; index += 1) {
-    arguments[index].forEach(collectType);
-  }
-  return result;
-}
-
-
-function Schema$1(definition) {
-  return this.extend(definition);
-}
-
-
-Schema$1.prototype.extend = function extend(definition) {
-  var implicit = [];
-  var explicit = [];
-
-  if (definition instanceof type) {
-    // Schema.extend(type)
-    explicit.push(definition);
-
-  } else if (Array.isArray(definition)) {
-    // Schema.extend([ type1, type2, ... ])
-    explicit = explicit.concat(definition);
-
-  } else if (definition && (Array.isArray(definition.implicit) || Array.isArray(definition.explicit))) {
-    // Schema.extend({ explicit: [ type1, type2, ... ], implicit: [ type1, type2, ... ] })
-    if (definition.implicit) implicit = implicit.concat(definition.implicit);
-    if (definition.explicit) explicit = explicit.concat(definition.explicit);
-
-  } else {
-    throw new exception('Schema.extend argument should be a Type, [ Type ], ' +
-      'or a schema definition ({ implicit: [...], explicit: [...] })');
-  }
-
-  implicit.forEach(function (type$1) {
-    if (!(type$1 instanceof type)) {
-      throw new exception('Specified list of YAML types (or a single Type object) contains a non-Type object.');
-    }
-
-    if (type$1.loadKind && type$1.loadKind !== 'scalar') {
-      throw new exception('There is a non-scalar type in the implicit list of a schema. Implicit resolving of such types is not supported.');
-    }
-
-    if (type$1.multi) {
-      throw new exception('There is a multi type in the implicit list of a schema. Multi tags can only be listed as explicit.');
-    }
-  });
-
-  explicit.forEach(function (type$1) {
-    if (!(type$1 instanceof type)) {
-      throw new exception('Specified list of YAML types (or a single Type object) contains a non-Type object.');
-    }
-  });
-
-  var result = Object.create(Schema$1.prototype);
-
-  result.implicit = (this.implicit || []).concat(implicit);
-  result.explicit = (this.explicit || []).concat(explicit);
-
-  result.compiledImplicit = compileList(result, 'implicit');
-  result.compiledExplicit = compileList(result, 'explicit');
-  result.compiledTypeMap  = compileMap(result.compiledImplicit, result.compiledExplicit);
-
-  return result;
-};
-
-
-var schema = Schema$1;
-
-var str = new type('tag:yaml.org,2002:str', {
-  kind: 'scalar',
-  construct: function (data) { return data !== null ? data : ''; }
-});
-
-var seq = new type('tag:yaml.org,2002:seq', {
-  kind: 'sequence',
-  construct: function (data) { return data !== null ? data : []; }
-});
-
-var map = new type('tag:yaml.org,2002:map', {
-  kind: 'mapping',
-  construct: function (data) { return data !== null ? data : {}; }
-});
-
-var failsafe = new schema({
-  explicit: [
-    str,
-    seq,
-    map
-  ]
-});
-
-function resolveYamlNull(data) {
-  if (data === null) return true;
-
-  var max = data.length;
-
-  return (max === 1 && data === '~') ||
-         (max === 4 && (data === 'null' || data === 'Null' || data === 'NULL'));
-}
-
-function constructYamlNull() {
-  return null;
-}
-
-function isNull(object) {
-  return object === null;
-}
-
-var _null = new type('tag:yaml.org,2002:null', {
-  kind: 'scalar',
-  resolve: resolveYamlNull,
-  construct: constructYamlNull,
-  predicate: isNull,
-  represent: {
-    canonical: function () { return '~';    },
-    lowercase: function () { return 'null'; },
-    uppercase: function () { return 'NULL'; },
-    camelcase: function () { return 'Null'; },
-    empty:     function () { return '';     }
-  },
-  defaultStyle: 'lowercase'
-});
-
-function resolveYamlBoolean(data) {
-  if (data === null) return false;
-
-  var max = data.length;
-
-  return (max === 4 && (data === 'true' || data === 'True' || data === 'TRUE')) ||
-         (max === 5 && (data === 'false' || data === 'False' || data === 'FALSE'));
-}
-
-function constructYamlBoolean(data) {
-  return data === 'true' ||
-         data === 'True' ||
-         data === 'TRUE';
-}
-
-function isBoolean(object) {
-  return Object.prototype.toString.call(object) === '[object Boolean]';
-}
-
-var bool = new type('tag:yaml.org,2002:bool', {
-  kind: 'scalar',
-  resolve: resolveYamlBoolean,
-  construct: constructYamlBoolean,
-  predicate: isBoolean,
-  represent: {
-    lowercase: function (object) { return object ? 'true' : 'false'; },
-    uppercase: function (object) { return object ? 'TRUE' : 'FALSE'; },
-    camelcase: function (object) { return object ? 'True' : 'False'; }
-  },
-  defaultStyle: 'lowercase'
-});
-
-function isHexCode(c) {
-  return ((0x30/* 0 */ <= c) && (c <= 0x39/* 9 */)) ||
-         ((0x41/* A */ <= c) && (c <= 0x46/* F */)) ||
-         ((0x61/* a */ <= c) && (c <= 0x66/* f */));
-}
-
-function isOctCode(c) {
-  return ((0x30/* 0 */ <= c) && (c <= 0x37/* 7 */));
-}
-
-function isDecCode(c) {
-  return ((0x30/* 0 */ <= c) && (c <= 0x39/* 9 */));
-}
-
-function resolveYamlInteger(data) {
-  if (data === null) return false;
-
-  var max = data.length,
-      index = 0,
-      hasDigits = false,
-      ch;
-
-  if (!max) return false;
-
-  ch = data[index];
-
-  // sign
-  if (ch === '-' || ch === '+') {
-    ch = data[++index];
-  }
-
-  if (ch === '0') {
-    // 0
-    if (index + 1 === max) return true;
-    ch = data[++index];
-
-    // base 2, base 8, base 16
-
-    if (ch === 'b') {
-      // base 2
-      index++;
-
-      for (; index < max; index++) {
-        ch = data[index];
-        if (ch === '_') continue;
-        if (ch !== '0' && ch !== '1') return false;
-        hasDigits = true;
-      }
-      return hasDigits && ch !== '_';
-    }
-
-
-    if (ch === 'x') {
-      // base 16
-      index++;
-
-      for (; index < max; index++) {
-        ch = data[index];
-        if (ch === '_') continue;
-        if (!isHexCode(data.charCodeAt(index))) return false;
-        hasDigits = true;
-      }
-      return hasDigits && ch !== '_';
-    }
-
-
-    if (ch === 'o') {
-      // base 8
-      index++;
-
-      for (; index < max; index++) {
-        ch = data[index];
-        if (ch === '_') continue;
-        if (!isOctCode(data.charCodeAt(index))) return false;
-        hasDigits = true;
-      }
-      return hasDigits && ch !== '_';
-    }
-  }
-
-  // base 10 (except 0)
-
-  // value should not start with `_`;
-  if (ch === '_') return false;
-
-  for (; index < max; index++) {
-    ch = data[index];
-    if (ch === '_') continue;
-    if (!isDecCode(data.charCodeAt(index))) {
-      return false;
-    }
-    hasDigits = true;
-  }
-
-  // Should have digits and should not end with `_`
-  if (!hasDigits || ch === '_') return false;
-
-  return true;
-}
-
-function constructYamlInteger(data) {
-  var value = data, sign = 1, ch;
-
-  if (value.indexOf('_') !== -1) {
-    value = value.replace(/_/g, '');
-  }
-
-  ch = value[0];
-
-  if (ch === '-' || ch === '+') {
-    if (ch === '-') sign = -1;
-    value = value.slice(1);
-    ch = value[0];
-  }
-
-  if (value === '0') return 0;
-
-  if (ch === '0') {
-    if (value[1] === 'b') return sign * parseInt(value.slice(2), 2);
-    if (value[1] === 'x') return sign * parseInt(value.slice(2), 16);
-    if (value[1] === 'o') return sign * parseInt(value.slice(2), 8);
-  }
-
-  return sign * parseInt(value, 10);
-}
-
-function isInteger(object) {
-  return (Object.prototype.toString.call(object)) === '[object Number]' &&
-         (object % 1 === 0 && !common.isNegativeZero(object));
-}
-
-var int_1 = new type('tag:yaml.org,2002:int', {
-  kind: 'scalar',
-  resolve: resolveYamlInteger,
-  construct: constructYamlInteger,
-  predicate: isInteger,
-  represent: {
-    binary:      function (obj) { return obj >= 0 ? '0b' + obj.toString(2) : '-0b' + obj.toString(2).slice(1); },
-    octal:       function (obj) { return obj >= 0 ? '0o'  + obj.toString(8) : '-0o'  + obj.toString(8).slice(1); },
-    decimal:     function (obj) { return obj.toString(10); },
-    /* eslint-disable max-len */
-    hexadecimal: function (obj) { return obj >= 0 ? '0x' + obj.toString(16).toUpperCase() :  '-0x' + obj.toString(16).toUpperCase().slice(1); }
-  },
-  defaultStyle: 'decimal',
-  styleAliases: {
-    binary:      [ 2,  'bin' ],
-    octal:       [ 8,  'oct' ],
-    decimal:     [ 10, 'dec' ],
-    hexadecimal: [ 16, 'hex' ]
-  }
-});
-
-var YAML_FLOAT_PATTERN = new RegExp(
-  // 2.5e4, 2.5 and integers
-  '^(?:[-+]?(?:[0-9][0-9_]*)(?:\\.[0-9_]*)?(?:[eE][-+]?[0-9]+)?' +
-  // .2e4, .2
-  // special case, seems not from spec
-  '|\\.[0-9_]+(?:[eE][-+]?[0-9]+)?' +
-  // .inf
-  '|[-+]?\\.(?:inf|Inf|INF)' +
-  // .nan
-  '|\\.(?:nan|NaN|NAN))$');
-
-function resolveYamlFloat(data) {
-  if (data === null) return false;
-
-  if (!YAML_FLOAT_PATTERN.test(data) ||
-      // Quick hack to not allow integers end with `_`
-      // Probably should update regexp & check speed
-      data[data.length - 1] === '_') {
-    return false;
-  }
-
-  return true;
-}
-
-function constructYamlFloat(data) {
-  var value, sign;
-
-  value  = data.replace(/_/g, '').toLowerCase();
-  sign   = value[0] === '-' ? -1 : 1;
-
-  if ('+-'.indexOf(value[0]) >= 0) {
-    value = value.slice(1);
-  }
-
-  if (value === '.inf') {
-    return (sign === 1) ? Number.POSITIVE_INFINITY : Number.NEGATIVE_INFINITY;
-
-  } else if (value === '.nan') {
-    return NaN;
-  }
-  return sign * parseFloat(value, 10);
-}
-
-
-var SCIENTIFIC_WITHOUT_DOT = /^[-+]?[0-9]+e/;
-
-function representYamlFloat(object, style) {
-  var res;
-
-  if (isNaN(object)) {
-    switch (style) {
-      case 'lowercase': return '.nan';
-      case 'uppercase': return '.NAN';
-      case 'camelcase': return '.NaN';
-    }
-  } else if (Number.POSITIVE_INFINITY === object) {
-    switch (style) {
-      case 'lowercase': return '.inf';
-      case 'uppercase': return '.INF';
-      case 'camelcase': return '.Inf';
-    }
-  } else if (Number.NEGATIVE_INFINITY === object) {
-    switch (style) {
-      case 'lowercase': return '-.inf';
-      case 'uppercase': return '-.INF';
-      case 'camelcase': return '-.Inf';
-    }
-  } else if (common.isNegativeZero(object)) {
-    return '-0.0';
-  }
-
-  res = object.toString(10);
-
-  // JS stringifier can build scientific format without dots: 5e-100,
-  // while YAML requres dot: 5.e-100. Fix it with simple hack
-
-  return SCIENTIFIC_WITHOUT_DOT.test(res) ? res.replace('e', '.e') : res;
-}
-
-function isFloat(object) {
-  return (Object.prototype.toString.call(object) === '[object Number]') &&
-         (object % 1 !== 0 || common.isNegativeZero(object));
-}
-
-var float_1 = new type('tag:yaml.org,2002:float', {
-  kind: 'scalar',
-  resolve: resolveYamlFloat,
-  construct: constructYamlFloat,
-  predicate: isFloat,
-  represent: representYamlFloat,
-  defaultStyle: 'lowercase'
-});
-
-var json = failsafe.extend({
-  implicit: [
-    _null,
-    bool,
-    int_1,
-    float_1
-  ]
-});
-
-var core = json;
-
-var YAML_DATE_REGEXP = new RegExp(
-  '^([0-9][0-9][0-9][0-9])'          + // [1] year
-  '-([0-9][0-9])'                    + // [2] month
-  '-([0-9][0-9])$');                   // [3] day
-
-var YAML_TIMESTAMP_REGEXP = new RegExp(
-  '^([0-9][0-9][0-9][0-9])'          + // [1] year
-  '-([0-9][0-9]?)'                   + // [2] month
-  '-([0-9][0-9]?)'                   + // [3] day
-  '(?:[Tt]|[ \\t]+)'                 + // ...
-  '([0-9][0-9]?)'                    + // [4] hour
-  ':([0-9][0-9])'                    + // [5] minute
-  ':([0-9][0-9])'                    + // [6] second
-  '(?:\\.([0-9]*))?'                 + // [7] fraction
-  '(?:[ \\t]*(Z|([-+])([0-9][0-9]?)' + // [8] tz [9] tz_sign [10] tz_hour
-  '(?::([0-9][0-9]))?))?$');           // [11] tz_minute
-
-function resolveYamlTimestamp(data) {
-  if (data === null) return false;
-  if (YAML_DATE_REGEXP.exec(data) !== null) return true;
-  if (YAML_TIMESTAMP_REGEXP.exec(data) !== null) return true;
-  return false;
-}
-
-function constructYamlTimestamp(data) {
-  var match, year, month, day, hour, minute, second, fraction = 0,
-      delta = null, tz_hour, tz_minute, date;
-
-  match = YAML_DATE_REGEXP.exec(data);
-  if (match === null) match = YAML_TIMESTAMP_REGEXP.exec(data);
-
-  if (match === null) throw new Error('Date resolve error');
-
-  // match: [1] year [2] month [3] day
-
-  year = +(match[1]);
-  month = +(match[2]) - 1; // JS month starts with 0
-  day = +(match[3]);
-
-  if (!match[4]) { // no hour
-    return new Date(Date.UTC(year, month, day));
-  }
-
-  // match: [4] hour [5] minute [6] second [7] fraction
-
-  hour = +(match[4]);
-  minute = +(match[5]);
-  second = +(match[6]);
-
-  if (match[7]) {
-    fraction = match[7].slice(0, 3);
-    while (fraction.length < 3) { // milli-seconds
-      fraction += '0';
-    }
-    fraction = +fraction;
-  }
-
-  // match: [8] tz [9] tz_sign [10] tz_hour [11] tz_minute
-
-  if (match[9]) {
-    tz_hour = +(match[10]);
-    tz_minute = +(match[11] || 0);
-    delta = (tz_hour * 60 + tz_minute) * 60000; // delta in mili-seconds
-    if (match[9] === '-') delta = -delta;
-  }
-
-  date = new Date(Date.UTC(year, month, day, hour, minute, second, fraction));
-
-  if (delta) date.setTime(date.getTime() - delta);
-
-  return date;
-}
-
-function representYamlTimestamp(object /*, style*/) {
-  return object.toISOString();
-}
-
-var timestamp = new type('tag:yaml.org,2002:timestamp', {
-  kind: 'scalar',
-  resolve: resolveYamlTimestamp,
-  construct: constructYamlTimestamp,
-  instanceOf: Date,
-  represent: representYamlTimestamp
-});
-
-function resolveYamlMerge(data) {
-  return data === '<<' || data === null;
-}
-
-var merge = new type('tag:yaml.org,2002:merge', {
-  kind: 'scalar',
-  resolve: resolveYamlMerge
-});
-
-/*eslint-disable no-bitwise*/
-
-
-
-
-
-// [ 64, 65, 66 ] -> [ padding, CR, LF ]
-var BASE64_MAP = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=\n\r';
-
-
-function resolveYamlBinary(data) {
-  if (data === null) return false;
-
-  var code, idx, bitlen = 0, max = data.length, map = BASE64_MAP;
-
-  // Convert one by one.
-  for (idx = 0; idx < max; idx++) {
-    code = map.indexOf(data.charAt(idx));
-
-    // Skip CR/LF
-    if (code > 64) continue;
-
-    // Fail on illegal characters
-    if (code < 0) return false;
-
-    bitlen += 6;
-  }
-
-  // If there are any bits left, source was corrupted
-  return (bitlen % 8) === 0;
-}
-
-function constructYamlBinary(data) {
-  var idx, tailbits,
-      input = data.replace(/[\r\n=]/g, ''), // remove CR/LF & padding to simplify scan
-      max = input.length,
-      map = BASE64_MAP,
-      bits = 0,
-      result = [];
-
-  // Collect by 6*4 bits (3 bytes)
-
-  for (idx = 0; idx < max; idx++) {
-    if ((idx % 4 === 0) && idx) {
-      result.push((bits >> 16) & 0xFF);
-      result.push((bits >> 8) & 0xFF);
-      result.push(bits & 0xFF);
-    }
-
-    bits = (bits << 6) | map.indexOf(input.charAt(idx));
-  }
-
-  // Dump tail
-
-  tailbits = (max % 4) * 6;
-
-  if (tailbits === 0) {
-    result.push((bits >> 16) & 0xFF);
-    result.push((bits >> 8) & 0xFF);
-    result.push(bits & 0xFF);
-  } else if (tailbits === 18) {
-    result.push((bits >> 10) & 0xFF);
-    result.push((bits >> 2) & 0xFF);
-  } else if (tailbits === 12) {
-    result.push((bits >> 4) & 0xFF);
-  }
-
-  return new Uint8Array(result);
-}
-
-function representYamlBinary(object /*, style*/) {
-  var result = '', bits = 0, idx, tail,
-      max = object.length,
-      map = BASE64_MAP;
-
-  // Convert every three bytes to 4 ASCII characters.
-
-  for (idx = 0; idx < max; idx++) {
-    if ((idx % 3 === 0) && idx) {
-      result += map[(bits >> 18) & 0x3F];
-      result += map[(bits >> 12) & 0x3F];
-      result += map[(bits >> 6) & 0x3F];
-      result += map[bits & 0x3F];
-    }
-
-    bits = (bits << 8) + object[idx];
-  }
-
-  // Dump tail
-
-  tail = max % 3;
-
-  if (tail === 0) {
-    result += map[(bits >> 18) & 0x3F];
-    result += map[(bits >> 12) & 0x3F];
-    result += map[(bits >> 6) & 0x3F];
-    result += map[bits & 0x3F];
-  } else if (tail === 2) {
-    result += map[(bits >> 10) & 0x3F];
-    result += map[(bits >> 4) & 0x3F];
-    result += map[(bits << 2) & 0x3F];
-    result += map[64];
-  } else if (tail === 1) {
-    result += map[(bits >> 2) & 0x3F];
-    result += map[(bits << 4) & 0x3F];
-    result += map[64];
-    result += map[64];
-  }
-
-  return result;
-}
-
-function isBinary(obj) {
-  return Object.prototype.toString.call(obj) ===  '[object Uint8Array]';
-}
-
-var binary = new type('tag:yaml.org,2002:binary', {
-  kind: 'scalar',
-  resolve: resolveYamlBinary,
-  construct: constructYamlBinary,
-  predicate: isBinary,
-  represent: representYamlBinary
-});
-
-var _hasOwnProperty$3 = Object.prototype.hasOwnProperty;
-var _toString$2       = Object.prototype.toString;
-
-function resolveYamlOmap(data) {
-  if (data === null) return true;
-
-  var objectKeys = [], index, length, pair, pairKey, pairHasKey,
-      object = data;
-
-  for (index = 0, length = object.length; index < length; index += 1) {
-    pair = object[index];
-    pairHasKey = false;
-
-    if (_toString$2.call(pair) !== '[object Object]') return false;
-
-    for (pairKey in pair) {
-      if (_hasOwnProperty$3.call(pair, pairKey)) {
-        if (!pairHasKey) pairHasKey = true;
-        else return false;
-      }
-    }
-
-    if (!pairHasKey) return false;
-
-    if (objectKeys.indexOf(pairKey) === -1) objectKeys.push(pairKey);
-    else return false;
-  }
-
-  return true;
-}
-
-function constructYamlOmap(data) {
-  return data !== null ? data : [];
-}
-
-var omap = new type('tag:yaml.org,2002:omap', {
-  kind: 'sequence',
-  resolve: resolveYamlOmap,
-  construct: constructYamlOmap
-});
-
-var _toString$1 = Object.prototype.toString;
-
-function resolveYamlPairs(data) {
-  if (data === null) return true;
-
-  var index, length, pair, keys, result,
-      object = data;
-
-  result = new Array(object.length);
-
-  for (index = 0, length = object.length; index < length; index += 1) {
-    pair = object[index];
-
-    if (_toString$1.call(pair) !== '[object Object]') return false;
-
-    keys = Object.keys(pair);
-
-    if (keys.length !== 1) return false;
-
-    result[index] = [ keys[0], pair[keys[0]] ];
-  }
-
-  return true;
-}
-
-function constructYamlPairs(data) {
-  if (data === null) return [];
-
-  var index, length, pair, keys, result,
-      object = data;
-
-  result = new Array(object.length);
-
-  for (index = 0, length = object.length; index < length; index += 1) {
-    pair = object[index];
-
-    keys = Object.keys(pair);
-
-    result[index] = [ keys[0], pair[keys[0]] ];
-  }
-
-  return result;
-}
-
-var pairs = new type('tag:yaml.org,2002:pairs', {
-  kind: 'sequence',
-  resolve: resolveYamlPairs,
-  construct: constructYamlPairs
-});
-
-var _hasOwnProperty$2 = Object.prototype.hasOwnProperty;
-
-function resolveYamlSet(data) {
-  if (data === null) return true;
-
-  var key, object = data;
-
-  for (key in object) {
-    if (_hasOwnProperty$2.call(object, key)) {
-      if (object[key] !== null) return false;
-    }
-  }
-
-  return true;
-}
-
-function constructYamlSet(data) {
-  return data !== null ? data : {};
-}
-
-var set = new type('tag:yaml.org,2002:set', {
-  kind: 'mapping',
-  resolve: resolveYamlSet,
-  construct: constructYamlSet
-});
-
-var _default = core.extend({
-  implicit: [
-    timestamp,
-    merge
-  ],
-  explicit: [
-    binary,
-    omap,
-    pairs,
-    set
-  ]
-});
-
-/*eslint-disable max-len,no-use-before-define*/
-
-
-
-
-
-
-
-var _hasOwnProperty$1 = Object.prototype.hasOwnProperty;
-
-
-var CONTEXT_FLOW_IN   = 1;
-var CONTEXT_FLOW_OUT  = 2;
-var CONTEXT_BLOCK_IN  = 3;
-var CONTEXT_BLOCK_OUT = 4;
-
-
-var CHOMPING_CLIP  = 1;
-var CHOMPING_STRIP = 2;
-var CHOMPING_KEEP  = 3;
-
-
-var PATTERN_NON_PRINTABLE         = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x84\x86-\x9F\uFFFE\uFFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/;
-var PATTERN_NON_ASCII_LINE_BREAKS = /[\x85\u2028\u2029]/;
-var PATTERN_FLOW_INDICATORS       = /[,\[\]\{\}]/;
-var PATTERN_TAG_HANDLE            = /^(?:!|!!|![a-z\-]+!)$/i;
-var PATTERN_TAG_URI               = /^(?:!|[^,\[\]\{\}])(?:%[0-9a-f]{2}|[0-9a-z\-#;\/\?:@&=\+\$,_\.!~\*'\(\)\[\]])*$/i;
-
-
-function _class(obj) { return Object.prototype.toString.call(obj); }
-
-function is_EOL(c) {
-  return (c === 0x0A/* LF */) || (c === 0x0D/* CR */);
-}
-
-function is_WHITE_SPACE(c) {
-  return (c === 0x09/* Tab */) || (c === 0x20/* Space */);
-}
-
-function is_WS_OR_EOL(c) {
-  return (c === 0x09/* Tab */) ||
-         (c === 0x20/* Space */) ||
-         (c === 0x0A/* LF */) ||
-         (c === 0x0D/* CR */);
-}
-
-function is_FLOW_INDICATOR(c) {
-  return c === 0x2C/* , */ ||
-         c === 0x5B/* [ */ ||
-         c === 0x5D/* ] */ ||
-         c === 0x7B/* { */ ||
-         c === 0x7D/* } */;
-}
-
-function fromHexCode(c) {
-  var lc;
-
-  if ((0x30/* 0 */ <= c) && (c <= 0x39/* 9 */)) {
-    return c - 0x30;
-  }
-
-  /*eslint-disable no-bitwise*/
-  lc = c | 0x20;
-
-  if ((0x61/* a */ <= lc) && (lc <= 0x66/* f */)) {
-    return lc - 0x61 + 10;
-  }
-
-  return -1;
-}
-
-function escapedHexLen(c) {
-  if (c === 0x78/* x */) { return 2; }
-  if (c === 0x75/* u */) { return 4; }
-  if (c === 0x55/* U */) { return 8; }
-  return 0;
-}
-
-function fromDecimalCode(c) {
-  if ((0x30/* 0 */ <= c) && (c <= 0x39/* 9 */)) {
-    return c - 0x30;
-  }
-
-  return -1;
-}
-
-function simpleEscapeSequence(c) {
-  /* eslint-disable indent */
-  return (c === 0x30/* 0 */) ? '\x00' :
-        (c === 0x61/* a */) ? '\x07' :
-        (c === 0x62/* b */) ? '\x08' :
-        (c === 0x74/* t */) ? '\x09' :
-        (c === 0x09/* Tab */) ? '\x09' :
-        (c === 0x6E/* n */) ? '\x0A' :
-        (c === 0x76/* v */) ? '\x0B' :
-        (c === 0x66/* f */) ? '\x0C' :
-        (c === 0x72/* r */) ? '\x0D' :
-        (c === 0x65/* e */) ? '\x1B' :
-        (c === 0x20/* Space */) ? ' ' :
-        (c === 0x22/* " */) ? '\x22' :
-        (c === 0x2F/* / */) ? '/' :
-        (c === 0x5C/* \ */) ? '\x5C' :
-        (c === 0x4E/* N */) ? '\x85' :
-        (c === 0x5F/* _ */) ? '\xA0' :
-        (c === 0x4C/* L */) ? '\u2028' :
-        (c === 0x50/* P */) ? '\u2029' : '';
-}
-
-function charFromCodepoint(c) {
-  if (c <= 0xFFFF) {
-    return String.fromCharCode(c);
-  }
-  // Encode UTF-16 surrogate pair
-  // https://en.wikipedia.org/wiki/UTF-16#Code_points_U.2B010000_to_U.2B10FFFF
-  return String.fromCharCode(
-    ((c - 0x010000) >> 10) + 0xD800,
-    ((c - 0x010000) & 0x03FF) + 0xDC00
-  );
-}
-
-var simpleEscapeCheck = new Array(256); // integer, for fast access
-var simpleEscapeMap = new Array(256);
-for (var i = 0; i < 256; i++) {
-  simpleEscapeCheck[i] = simpleEscapeSequence(i) ? 1 : 0;
-  simpleEscapeMap[i] = simpleEscapeSequence(i);
-}
-
-
-function State$1(input, options) {
-  this.input = input;
-
-  this.filename  = options['filename']  || null;
-  this.schema    = options['schema']    || _default;
-  this.onWarning = options['onWarning'] || null;
-  // (Hidden) Remove? makes the loader to expect YAML 1.1 documents
-  // if such documents have no explicit %YAML directive
-  this.legacy    = options['legacy']    || false;
-
-  this.json      = options['json']      || false;
-  this.listener  = options['listener']  || null;
-
-  this.implicitTypes = this.schema.compiledImplicit;
-  this.typeMap       = this.schema.compiledTypeMap;
-
-  this.length     = input.length;
-  this.position   = 0;
-  this.line       = 0;
-  this.lineStart  = 0;
-  this.lineIndent = 0;
-
-  // position of first leading tab in the current line,
-  // used to make sure there are no tabs in the indentation
-  this.firstTabInLine = -1;
-
-  this.documents = [];
-
-  /*
-  this.version;
-  this.checkLineBreaks;
-  this.tagMap;
-  this.anchorMap;
-  this.tag;
-  this.anchor;
-  this.kind;
-  this.result;*/
-
-}
-
-
-function generateError(state, message) {
-  var mark = {
-    name:     state.filename,
-    buffer:   state.input.slice(0, -1), // omit trailing \0
-    position: state.position,
-    line:     state.line,
-    column:   state.position - state.lineStart
-  };
-
-  mark.snippet = snippet(mark);
-
-  return new exception(message, mark);
-}
-
-function throwError(state, message) {
-  throw generateError(state, message);
-}
-
-function throwWarning(state, message) {
-  if (state.onWarning) {
-    state.onWarning.call(null, generateError(state, message));
-  }
-}
-
-
-var directiveHandlers = {
-
-  YAML: function handleYamlDirective(state, name, args) {
-
-    var match, major, minor;
-
-    if (state.version !== null) {
-      throwError(state, 'duplication of %YAML directive');
-    }
-
-    if (args.length !== 1) {
-      throwError(state, 'YAML directive accepts exactly one argument');
-    }
-
-    match = /^([0-9]+)\.([0-9]+)$/.exec(args[0]);
-
-    if (match === null) {
-      throwError(state, 'ill-formed argument of the YAML directive');
-    }
-
-    major = parseInt(match[1], 10);
-    minor = parseInt(match[2], 10);
-
-    if (major !== 1) {
-      throwError(state, 'unacceptable YAML version of the document');
-    }
-
-    state.version = args[0];
-    state.checkLineBreaks = (minor < 2);
-
-    if (minor !== 1 && minor !== 2) {
-      throwWarning(state, 'unsupported YAML version of the document');
-    }
-  },
-
-  TAG: function handleTagDirective(state, name, args) {
-
-    var handle, prefix;
-
-    if (args.length !== 2) {
-      throwError(state, 'TAG directive accepts exactly two arguments');
-    }
-
-    handle = args[0];
-    prefix = args[1];
-
-    if (!PATTERN_TAG_HANDLE.test(handle)) {
-      throwError(state, 'ill-formed tag handle (first argument) of the TAG directive');
-    }
-
-    if (_hasOwnProperty$1.call(state.tagMap, handle)) {
-      throwError(state, 'there is a previously declared suffix for "' + handle + '" tag handle');
-    }
-
-    if (!PATTERN_TAG_URI.test(prefix)) {
-      throwError(state, 'ill-formed tag prefix (second argument) of the TAG directive');
-    }
-
-    try {
-      prefix = decodeURIComponent(prefix);
-    } catch (err) {
-      throwError(state, 'tag prefix is malformed: ' + prefix);
-    }
-
-    state.tagMap[handle] = prefix;
-  }
-};
-
-
-function captureSegment(state, start, end, checkJson) {
-  var _position, _length, _character, _result;
-
-  if (start < end) {
-    _result = state.input.slice(start, end);
-
-    if (checkJson) {
-      for (_position = 0, _length = _result.length; _position < _length; _position += 1) {
-        _character = _result.charCodeAt(_position);
-        if (!(_character === 0x09 ||
-              (0x20 <= _character && _character <= 0x10FFFF))) {
-          throwError(state, 'expected valid JSON character');
-        }
-      }
-    } else if (PATTERN_NON_PRINTABLE.test(_result)) {
-      throwError(state, 'the stream contains non-printable characters');
-    }
-
-    state.result += _result;
-  }
-}
-
-function mergeMappings(state, destination, source, overridableKeys) {
-  var sourceKeys, key, index, quantity;
-
-  if (!common.isObject(source)) {
-    throwError(state, 'cannot merge mappings; the provided source object is unacceptable');
-  }
-
-  sourceKeys = Object.keys(source);
-
-  for (index = 0, quantity = sourceKeys.length; index < quantity; index += 1) {
-    key = sourceKeys[index];
-
-    if (!_hasOwnProperty$1.call(destination, key)) {
-      destination[key] = source[key];
-      overridableKeys[key] = true;
-    }
-  }
-}
-
-function storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode,
-  startLine, startLineStart, startPos) {
-
-  var index, quantity;
-
-  // The output is a plain object here, so keys can only be strings.
-  // We need to convert keyNode to a string, but doing so can hang the process
-  // (deeply nested arrays that explode exponentially using aliases).
-  if (Array.isArray(keyNode)) {
-    keyNode = Array.prototype.slice.call(keyNode);
-
-    for (index = 0, quantity = keyNode.length; index < quantity; index += 1) {
-      if (Array.isArray(keyNode[index])) {
-        throwError(state, 'nested arrays are not supported inside keys');
-      }
-
-      if (typeof keyNode === 'object' && _class(keyNode[index]) === '[object Object]') {
-        keyNode[index] = '[object Object]';
-      }
-    }
-  }
-
-  // Avoid code execution in load() via toString property
-  // (still use its own toString for arrays, timestamps,
-  // and whatever user schema extensions happen to have @@toStringTag)
-  if (typeof keyNode === 'object' && _class(keyNode) === '[object Object]') {
-    keyNode = '[object Object]';
-  }
-
-
-  keyNode = String(keyNode);
-
-  if (_result === null) {
-    _result = {};
-  }
-
-  if (keyTag === 'tag:yaml.org,2002:merge') {
-    if (Array.isArray(valueNode)) {
-      for (index = 0, quantity = valueNode.length; index < quantity; index += 1) {
-        mergeMappings(state, _result, valueNode[index], overridableKeys);
-      }
-    } else {
-      mergeMappings(state, _result, valueNode, overridableKeys);
-    }
-  } else {
-    if (!state.json &&
-        !_hasOwnProperty$1.call(overridableKeys, keyNode) &&
-        _hasOwnProperty$1.call(_result, keyNode)) {
-      state.line = startLine || state.line;
-      state.lineStart = startLineStart || state.lineStart;
-      state.position = startPos || state.position;
-      throwError(state, 'duplicated mapping key');
-    }
-
-    // used for this specific key only because Object.defineProperty is slow
-    if (keyNode === '__proto__') {
-      Object.defineProperty(_result, keyNode, {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        value: valueNode
-      });
-    } else {
-      _result[keyNode] = valueNode;
-    }
-    delete overridableKeys[keyNode];
-  }
-
-  return _result;
-}
-
-function readLineBreak(state) {
-  var ch;
-
-  ch = state.input.charCodeAt(state.position);
-
-  if (ch === 0x0A/* LF */) {
-    state.position++;
-  } else if (ch === 0x0D/* CR */) {
-    state.position++;
-    if (state.input.charCodeAt(state.position) === 0x0A/* LF */) {
-      state.position++;
-    }
-  } else {
-    throwError(state, 'a line break is expected');
-  }
-
-  state.line += 1;
-  state.lineStart = state.position;
-  state.firstTabInLine = -1;
-}
-
-function skipSeparationSpace(state, allowComments, checkIndent) {
-  var lineBreaks = 0,
-      ch = state.input.charCodeAt(state.position);
-
-  while (ch !== 0) {
-    while (is_WHITE_SPACE(ch)) {
-      if (ch === 0x09/* Tab */ && state.firstTabInLine === -1) {
-        state.firstTabInLine = state.position;
-      }
-      ch = state.input.charCodeAt(++state.position);
-    }
-
-    if (allowComments && ch === 0x23/* # */) {
-      do {
-        ch = state.input.charCodeAt(++state.position);
-      } while (ch !== 0x0A/* LF */ && ch !== 0x0D/* CR */ && ch !== 0);
-    }
-
-    if (is_EOL(ch)) {
-      readLineBreak(state);
-
-      ch = state.input.charCodeAt(state.position);
-      lineBreaks++;
-      state.lineIndent = 0;
-
-      while (ch === 0x20/* Space */) {
-        state.lineIndent++;
-        ch = state.input.charCodeAt(++state.position);
-      }
-    } else {
-      break;
-    }
-  }
-
-  if (checkIndent !== -1 && lineBreaks !== 0 && state.lineIndent < checkIndent) {
-    throwWarning(state, 'deficient indentation');
-  }
-
-  return lineBreaks;
-}
-
-function testDocumentSeparator(state) {
-  var _position = state.position,
-      ch;
-
-  ch = state.input.charCodeAt(_position);
-
-  // Condition state.position === state.lineStart is tested
-  // in parent on each call, for efficiency. No needs to test here again.
-  if ((ch === 0x2D/* - */ || ch === 0x2E/* . */) &&
-      ch === state.input.charCodeAt(_position + 1) &&
-      ch === state.input.charCodeAt(_position + 2)) {
-
-    _position += 3;
-
-    ch = state.input.charCodeAt(_position);
-
-    if (ch === 0 || is_WS_OR_EOL(ch)) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function writeFoldedLines(state, count) {
-  if (count === 1) {
-    state.result += ' ';
-  } else if (count > 1) {
-    state.result += common.repeat('\n', count - 1);
-  }
-}
-
-
-function readPlainScalar(state, nodeIndent, withinFlowCollection) {
-  var preceding,
-      following,
-      captureStart,
-      captureEnd,
-      hasPendingContent,
-      _line,
-      _lineStart,
-      _lineIndent,
-      _kind = state.kind,
-      _result = state.result,
-      ch;
-
-  ch = state.input.charCodeAt(state.position);
-
-  if (is_WS_OR_EOL(ch)      ||
-      is_FLOW_INDICATOR(ch) ||
-      ch === 0x23/* # */    ||
-      ch === 0x26/* & */    ||
-      ch === 0x2A/* * */    ||
-      ch === 0x21/* ! */    ||
-      ch === 0x7C/* | */    ||
-      ch === 0x3E/* > */    ||
-      ch === 0x27/* ' */    ||
-      ch === 0x22/* " */    ||
-      ch === 0x25/* % */    ||
-      ch === 0x40/* @ */    ||
-      ch === 0x60/* ` */) {
-    return false;
-  }
-
-  if (ch === 0x3F/* ? */ || ch === 0x2D/* - */) {
-    following = state.input.charCodeAt(state.position + 1);
-
-    if (is_WS_OR_EOL(following) ||
-        withinFlowCollection && is_FLOW_INDICATOR(following)) {
-      return false;
-    }
-  }
-
-  state.kind = 'scalar';
-  state.result = '';
-  captureStart = captureEnd = state.position;
-  hasPendingContent = false;
-
-  while (ch !== 0) {
-    if (ch === 0x3A/* : */) {
-      following = state.input.charCodeAt(state.position + 1);
-
-      if (is_WS_OR_EOL(following) ||
-          withinFlowCollection && is_FLOW_INDICATOR(following)) {
-        break;
-      }
-
-    } else if (ch === 0x23/* # */) {
-      preceding = state.input.charCodeAt(state.position - 1);
-
-      if (is_WS_OR_EOL(preceding)) {
-        break;
-      }
-
-    } else if ((state.position === state.lineStart && testDocumentSeparator(state)) ||
-               withinFlowCollection && is_FLOW_INDICATOR(ch)) {
-      break;
-
-    } else if (is_EOL(ch)) {
-      _line = state.line;
-      _lineStart = state.lineStart;
-      _lineIndent = state.lineIndent;
-      skipSeparationSpace(state, false, -1);
-
-      if (state.lineIndent >= nodeIndent) {
-        hasPendingContent = true;
-        ch = state.input.charCodeAt(state.position);
-        continue;
-      } else {
-        state.position = captureEnd;
-        state.line = _line;
-        state.lineStart = _lineStart;
-        state.lineIndent = _lineIndent;
-        break;
-      }
-    }
-
-    if (hasPendingContent) {
-      captureSegment(state, captureStart, captureEnd, false);
-      writeFoldedLines(state, state.line - _line);
-      captureStart = captureEnd = state.position;
-      hasPendingContent = false;
-    }
-
-    if (!is_WHITE_SPACE(ch)) {
-      captureEnd = state.position + 1;
-    }
-
-    ch = state.input.charCodeAt(++state.position);
-  }
-
-  captureSegment(state, captureStart, captureEnd, false);
-
-  if (state.result) {
-    return true;
-  }
-
-  state.kind = _kind;
-  state.result = _result;
-  return false;
-}
-
-function readSingleQuotedScalar(state, nodeIndent) {
-  var ch,
-      captureStart, captureEnd;
-
-  ch = state.input.charCodeAt(state.position);
-
-  if (ch !== 0x27/* ' */) {
-    return false;
-  }
-
-  state.kind = 'scalar';
-  state.result = '';
-  state.position++;
-  captureStart = captureEnd = state.position;
-
-  while ((ch = state.input.charCodeAt(state.position)) !== 0) {
-    if (ch === 0x27/* ' */) {
-      captureSegment(state, captureStart, state.position, true);
-      ch = state.input.charCodeAt(++state.position);
-
-      if (ch === 0x27/* ' */) {
-        captureStart = state.position;
-        state.position++;
-        captureEnd = state.position;
-      } else {
-        return true;
-      }
-
-    } else if (is_EOL(ch)) {
-      captureSegment(state, captureStart, captureEnd, true);
-      writeFoldedLines(state, skipSeparationSpace(state, false, nodeIndent));
-      captureStart = captureEnd = state.position;
-
-    } else if (state.position === state.lineStart && testDocumentSeparator(state)) {
-      throwError(state, 'unexpected end of the document within a single quoted scalar');
-
-    } else {
-      state.position++;
-      captureEnd = state.position;
-    }
-  }
-
-  throwError(state, 'unexpected end of the stream within a single quoted scalar');
-}
-
-function readDoubleQuotedScalar(state, nodeIndent) {
-  var captureStart,
-      captureEnd,
-      hexLength,
-      hexResult,
-      tmp,
-      ch;
-
-  ch = state.input.charCodeAt(state.position);
-
-  if (ch !== 0x22/* " */) {
-    return false;
-  }
-
-  state.kind = 'scalar';
-  state.result = '';
-  state.position++;
-  captureStart = captureEnd = state.position;
-
-  while ((ch = state.input.charCodeAt(state.position)) !== 0) {
-    if (ch === 0x22/* " */) {
-      captureSegment(state, captureStart, state.position, true);
-      state.position++;
-      return true;
-
-    } else if (ch === 0x5C/* \ */) {
-      captureSegment(state, captureStart, state.position, true);
-      ch = state.input.charCodeAt(++state.position);
-
-      if (is_EOL(ch)) {
-        skipSeparationSpace(state, false, nodeIndent);
-
-        // TODO: rework to inline fn with no type cast?
-      } else if (ch < 256 && simpleEscapeCheck[ch]) {
-        state.result += simpleEscapeMap[ch];
-        state.position++;
-
-      } else if ((tmp = escapedHexLen(ch)) > 0) {
-        hexLength = tmp;
-        hexResult = 0;
-
-        for (; hexLength > 0; hexLength--) {
-          ch = state.input.charCodeAt(++state.position);
-
-          if ((tmp = fromHexCode(ch)) >= 0) {
-            hexResult = (hexResult << 4) + tmp;
-
-          } else {
-            throwError(state, 'expected hexadecimal character');
-          }
-        }
-
-        state.result += charFromCodepoint(hexResult);
-
-        state.position++;
-
-      } else {
-        throwError(state, 'unknown escape sequence');
-      }
-
-      captureStart = captureEnd = state.position;
-
-    } else if (is_EOL(ch)) {
-      captureSegment(state, captureStart, captureEnd, true);
-      writeFoldedLines(state, skipSeparationSpace(state, false, nodeIndent));
-      captureStart = captureEnd = state.position;
-
-    } else if (state.position === state.lineStart && testDocumentSeparator(state)) {
-      throwError(state, 'unexpected end of the document within a double quoted scalar');
-
-    } else {
-      state.position++;
-      captureEnd = state.position;
-    }
-  }
-
-  throwError(state, 'unexpected end of the stream within a double quoted scalar');
-}
-
-function readFlowCollection(state, nodeIndent) {
-  var readNext = true,
-      _line,
-      _lineStart,
-      _pos,
-      _tag     = state.tag,
-      _result,
-      _anchor  = state.anchor,
-      following,
-      terminator,
-      isPair,
-      isExplicitPair,
-      isMapping,
-      overridableKeys = Object.create(null),
-      keyNode,
-      keyTag,
-      valueNode,
-      ch;
-
-  ch = state.input.charCodeAt(state.position);
-
-  if (ch === 0x5B/* [ */) {
-    terminator = 0x5D;/* ] */
-    isMapping = false;
-    _result = [];
-  } else if (ch === 0x7B/* { */) {
-    terminator = 0x7D;/* } */
-    isMapping = true;
-    _result = {};
-  } else {
-    return false;
-  }
-
-  if (state.anchor !== null) {
-    state.anchorMap[state.anchor] = _result;
-  }
-
-  ch = state.input.charCodeAt(++state.position);
-
-  while (ch !== 0) {
-    skipSeparationSpace(state, true, nodeIndent);
-
-    ch = state.input.charCodeAt(state.position);
-
-    if (ch === terminator) {
-      state.position++;
-      state.tag = _tag;
-      state.anchor = _anchor;
-      state.kind = isMapping ? 'mapping' : 'sequence';
-      state.result = _result;
-      return true;
-    } else if (!readNext) {
-      throwError(state, 'missed comma between flow collection entries');
-    } else if (ch === 0x2C/* , */) {
-      // "flow collection entries can never be completely empty", as per YAML 1.2, section 7.4
-      throwError(state, "expected the node content, but found ','");
-    }
-
-    keyTag = keyNode = valueNode = null;
-    isPair = isExplicitPair = false;
-
-    if (ch === 0x3F/* ? */) {
-      following = state.input.charCodeAt(state.position + 1);
-
-      if (is_WS_OR_EOL(following)) {
-        isPair = isExplicitPair = true;
-        state.position++;
-        skipSeparationSpace(state, true, nodeIndent);
-      }
-    }
-
-    _line = state.line; // Save the current line.
-    _lineStart = state.lineStart;
-    _pos = state.position;
-    composeNode(state, nodeIndent, CONTEXT_FLOW_IN, false, true);
-    keyTag = state.tag;
-    keyNode = state.result;
-    skipSeparationSpace(state, true, nodeIndent);
-
-    ch = state.input.charCodeAt(state.position);
-
-    if ((isExplicitPair || state.line === _line) && ch === 0x3A/* : */) {
-      isPair = true;
-      ch = state.input.charCodeAt(++state.position);
-      skipSeparationSpace(state, true, nodeIndent);
-      composeNode(state, nodeIndent, CONTEXT_FLOW_IN, false, true);
-      valueNode = state.result;
-    }
-
-    if (isMapping) {
-      storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode, _line, _lineStart, _pos);
-    } else if (isPair) {
-      _result.push(storeMappingPair(state, null, overridableKeys, keyTag, keyNode, valueNode, _line, _lineStart, _pos));
-    } else {
-      _result.push(keyNode);
-    }
-
-    skipSeparationSpace(state, true, nodeIndent);
-
-    ch = state.input.charCodeAt(state.position);
-
-    if (ch === 0x2C/* , */) {
-      readNext = true;
-      ch = state.input.charCodeAt(++state.position);
-    } else {
-      readNext = false;
-    }
-  }
-
-  throwError(state, 'unexpected end of the stream within a flow collection');
-}
-
-function readBlockScalar(state, nodeIndent) {
-  var captureStart,
-      folding,
-      chomping       = CHOMPING_CLIP,
-      didReadContent = false,
-      detectedIndent = false,
-      textIndent     = nodeIndent,
-      emptyLines     = 0,
-      atMoreIndented = false,
-      tmp,
-      ch;
-
-  ch = state.input.charCodeAt(state.position);
-
-  if (ch === 0x7C/* | */) {
-    folding = false;
-  } else if (ch === 0x3E/* > */) {
-    folding = true;
-  } else {
-    return false;
-  }
-
-  state.kind = 'scalar';
-  state.result = '';
-
-  while (ch !== 0) {
-    ch = state.input.charCodeAt(++state.position);
-
-    if (ch === 0x2B/* + */ || ch === 0x2D/* - */) {
-      if (CHOMPING_CLIP === chomping) {
-        chomping = (ch === 0x2B/* + */) ? CHOMPING_KEEP : CHOMPING_STRIP;
-      } else {
-        throwError(state, 'repeat of a chomping mode identifier');
-      }
-
-    } else if ((tmp = fromDecimalCode(ch)) >= 0) {
-      if (tmp === 0) {
-        throwError(state, 'bad explicit indentation width of a block scalar; it cannot be less than one');
-      } else if (!detectedIndent) {
-        textIndent = nodeIndent + tmp - 1;
-        detectedIndent = true;
-      } else {
-        throwError(state, 'repeat of an indentation width identifier');
-      }
-
-    } else {
-      break;
-    }
-  }
-
-  if (is_WHITE_SPACE(ch)) {
-    do { ch = state.input.charCodeAt(++state.position); }
-    while (is_WHITE_SPACE(ch));
-
-    if (ch === 0x23/* # */) {
-      do { ch = state.input.charCodeAt(++state.position); }
-      while (!is_EOL(ch) && (ch !== 0));
-    }
-  }
-
-  while (ch !== 0) {
-    readLineBreak(state);
-    state.lineIndent = 0;
-
-    ch = state.input.charCodeAt(state.position);
-
-    while ((!detectedIndent || state.lineIndent < textIndent) &&
-           (ch === 0x20/* Space */)) {
-      state.lineIndent++;
-      ch = state.input.charCodeAt(++state.position);
-    }
-
-    if (!detectedIndent && state.lineIndent > textIndent) {
-      textIndent = state.lineIndent;
-    }
-
-    if (is_EOL(ch)) {
-      emptyLines++;
-      continue;
-    }
-
-    // End of the scalar.
-    if (state.lineIndent < textIndent) {
-
-      // Perform the chomping.
-      if (chomping === CHOMPING_KEEP) {
-        state.result += common.repeat('\n', didReadContent ? 1 + emptyLines : emptyLines);
-      } else if (chomping === CHOMPING_CLIP) {
-        if (didReadContent) { // i.e. only if the scalar is not empty.
-          state.result += '\n';
-        }
-      }
-
-      // Break this `while` cycle and go to the funciton's epilogue.
-      break;
-    }
-
-    // Folded style: use fancy rules to handle line breaks.
-    if (folding) {
-
-      // Lines starting with white space characters (more-indented lines) are not folded.
-      if (is_WHITE_SPACE(ch)) {
-        atMoreIndented = true;
-        // except for the first content line (cf. Example 8.1)
-        state.result += common.repeat('\n', didReadContent ? 1 + emptyLines : emptyLines);
-
-      // End of more-indented block.
-      } else if (atMoreIndented) {
-        atMoreIndented = false;
-        state.result += common.repeat('\n', emptyLines + 1);
-
-      // Just one line break - perceive as the same line.
-      } else if (emptyLines === 0) {
-        if (didReadContent) { // i.e. only if we have already read some scalar content.
-          state.result += ' ';
-        }
-
-      // Several line breaks - perceive as different lines.
-      } else {
-        state.result += common.repeat('\n', emptyLines);
-      }
-
-    // Literal style: just add exact number of line breaks between content lines.
-    } else {
-      // Keep all line breaks except the header line break.
-      state.result += common.repeat('\n', didReadContent ? 1 + emptyLines : emptyLines);
-    }
-
-    didReadContent = true;
-    detectedIndent = true;
-    emptyLines = 0;
-    captureStart = state.position;
-
-    while (!is_EOL(ch) && (ch !== 0)) {
-      ch = state.input.charCodeAt(++state.position);
-    }
-
-    captureSegment(state, captureStart, state.position, false);
-  }
-
-  return true;
-}
-
-function readBlockSequence(state, nodeIndent) {
-  var _line,
-      _tag      = state.tag,
-      _anchor   = state.anchor,
-      _result   = [],
-      following,
-      detected  = false,
-      ch;
-
-  // there is a leading tab before this token, so it can't be a block sequence/mapping;
-  // it can still be flow sequence/mapping or a scalar
-  if (state.firstTabInLine !== -1) return false;
-
-  if (state.anchor !== null) {
-    state.anchorMap[state.anchor] = _result;
-  }
-
-  ch = state.input.charCodeAt(state.position);
-
-  while (ch !== 0) {
-    if (state.firstTabInLine !== -1) {
-      state.position = state.firstTabInLine;
-      throwError(state, 'tab characters must not be used in indentation');
-    }
-
-    if (ch !== 0x2D/* - */) {
-      break;
-    }
-
-    following = state.input.charCodeAt(state.position + 1);
-
-    if (!is_WS_OR_EOL(following)) {
-      break;
-    }
-
-    detected = true;
-    state.position++;
-
-    if (skipSeparationSpace(state, true, -1)) {
-      if (state.lineIndent <= nodeIndent) {
-        _result.push(null);
-        ch = state.input.charCodeAt(state.position);
-        continue;
-      }
-    }
-
-    _line = state.line;
-    composeNode(state, nodeIndent, CONTEXT_BLOCK_IN, false, true);
-    _result.push(state.result);
-    skipSeparationSpace(state, true, -1);
-
-    ch = state.input.charCodeAt(state.position);
-
-    if ((state.line === _line || state.lineIndent > nodeIndent) && (ch !== 0)) {
-      throwError(state, 'bad indentation of a sequence entry');
-    } else if (state.lineIndent < nodeIndent) {
-      break;
-    }
-  }
-
-  if (detected) {
-    state.tag = _tag;
-    state.anchor = _anchor;
-    state.kind = 'sequence';
-    state.result = _result;
-    return true;
-  }
-  return false;
-}
-
-function readBlockMapping(state, nodeIndent, flowIndent) {
-  var following,
-      allowCompact,
-      _line,
-      _keyLine,
-      _keyLineStart,
-      _keyPos,
-      _tag          = state.tag,
-      _anchor       = state.anchor,
-      _result       = {},
-      overridableKeys = Object.create(null),
-      keyTag        = null,
-      keyNode       = null,
-      valueNode     = null,
-      atExplicitKey = false,
-      detected      = false,
-      ch;
-
-  // there is a leading tab before this token, so it can't be a block sequence/mapping;
-  // it can still be flow sequence/mapping or a scalar
-  if (state.firstTabInLine !== -1) return false;
-
-  if (state.anchor !== null) {
-    state.anchorMap[state.anchor] = _result;
-  }
-
-  ch = state.input.charCodeAt(state.position);
-
-  while (ch !== 0) {
-    if (!atExplicitKey && state.firstTabInLine !== -1) {
-      state.position = state.firstTabInLine;
-      throwError(state, 'tab characters must not be used in indentation');
-    }
-
-    following = state.input.charCodeAt(state.position + 1);
-    _line = state.line; // Save the current line.
-
-    //
-    // Explicit notation case. There are two separate blocks:
-    // first for the key (denoted by "?") and second for the value (denoted by ":")
-    //
-    if ((ch === 0x3F/* ? */ || ch === 0x3A/* : */) && is_WS_OR_EOL(following)) {
-
-      if (ch === 0x3F/* ? */) {
-        if (atExplicitKey) {
-          storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
-          keyTag = keyNode = valueNode = null;
-        }
-
-        detected = true;
-        atExplicitKey = true;
-        allowCompact = true;
-
-      } else if (atExplicitKey) {
-        // i.e. 0x3A/* : */ === character after the explicit key.
-        atExplicitKey = false;
-        allowCompact = true;
-
-      } else {
-        throwError(state, 'incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line');
-      }
-
-      state.position += 1;
-      ch = following;
-
-    //
-    // Implicit notation case. Flow-style node as the key first, then ":", and the value.
-    //
-    } else {
-      _keyLine = state.line;
-      _keyLineStart = state.lineStart;
-      _keyPos = state.position;
-
-      if (!composeNode(state, flowIndent, CONTEXT_FLOW_OUT, false, true)) {
-        // Neither implicit nor explicit notation.
-        // Reading is done. Go to the epilogue.
-        break;
-      }
-
-      if (state.line === _line) {
-        ch = state.input.charCodeAt(state.position);
-
-        while (is_WHITE_SPACE(ch)) {
-          ch = state.input.charCodeAt(++state.position);
-        }
-
-        if (ch === 0x3A/* : */) {
-          ch = state.input.charCodeAt(++state.position);
-
-          if (!is_WS_OR_EOL(ch)) {
-            throwError(state, 'a whitespace character is expected after the key-value separator within a block mapping');
-          }
-
-          if (atExplicitKey) {
-            storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
-            keyTag = keyNode = valueNode = null;
-          }
-
-          detected = true;
-          atExplicitKey = false;
-          allowCompact = false;
-          keyTag = state.tag;
-          keyNode = state.result;
-
-        } else if (detected) {
-          throwError(state, 'can not read an implicit mapping pair; a colon is missed');
-
-        } else {
-          state.tag = _tag;
-          state.anchor = _anchor;
-          return true; // Keep the result of `composeNode`.
-        }
-
-      } else if (detected) {
-        throwError(state, 'can not read a block mapping entry; a multiline key may not be an implicit key');
-
-      } else {
-        state.tag = _tag;
-        state.anchor = _anchor;
-        return true; // Keep the result of `composeNode`.
-      }
-    }
-
-    //
-    // Common reading code for both explicit and implicit notations.
-    //
-    if (state.line === _line || state.lineIndent > nodeIndent) {
-      if (atExplicitKey) {
-        _keyLine = state.line;
-        _keyLineStart = state.lineStart;
-        _keyPos = state.position;
-      }
-
-      if (composeNode(state, nodeIndent, CONTEXT_BLOCK_OUT, true, allowCompact)) {
-        if (atExplicitKey) {
-          keyNode = state.result;
-        } else {
-          valueNode = state.result;
-        }
-      }
-
-      if (!atExplicitKey) {
-        storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode, _keyLine, _keyLineStart, _keyPos);
-        keyTag = keyNode = valueNode = null;
-      }
-
-      skipSeparationSpace(state, true, -1);
-      ch = state.input.charCodeAt(state.position);
-    }
-
-    if ((state.line === _line || state.lineIndent > nodeIndent) && (ch !== 0)) {
-      throwError(state, 'bad indentation of a mapping entry');
-    } else if (state.lineIndent < nodeIndent) {
-      break;
-    }
-  }
-
-  //
-  // Epilogue.
-  //
-
-  // Special case: last mapping's node contains only the key in explicit notation.
-  if (atExplicitKey) {
-    storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, null, _keyLine, _keyLineStart, _keyPos);
-  }
-
-  // Expose the resulting mapping.
-  if (detected) {
-    state.tag = _tag;
-    state.anchor = _anchor;
-    state.kind = 'mapping';
-    state.result = _result;
-  }
-
-  return detected;
-}
-
-function readTagProperty(state) {
-  var _position,
-      isVerbatim = false,
-      isNamed    = false,
-      tagHandle,
-      tagName,
-      ch;
-
-  ch = state.input.charCodeAt(state.position);
-
-  if (ch !== 0x21/* ! */) return false;
-
-  if (state.tag !== null) {
-    throwError(state, 'duplication of a tag property');
-  }
-
-  ch = state.input.charCodeAt(++state.position);
-
-  if (ch === 0x3C/* < */) {
-    isVerbatim = true;
-    ch = state.input.charCodeAt(++state.position);
-
-  } else if (ch === 0x21/* ! */) {
-    isNamed = true;
-    tagHandle = '!!';
-    ch = state.input.charCodeAt(++state.position);
-
-  } else {
-    tagHandle = '!';
-  }
-
-  _position = state.position;
-
-  if (isVerbatim) {
-    do { ch = state.input.charCodeAt(++state.position); }
-    while (ch !== 0 && ch !== 0x3E/* > */);
-
-    if (state.position < state.length) {
-      tagName = state.input.slice(_position, state.position);
-      ch = state.input.charCodeAt(++state.position);
-    } else {
-      throwError(state, 'unexpected end of the stream within a verbatim tag');
-    }
-  } else {
-    while (ch !== 0 && !is_WS_OR_EOL(ch)) {
-
-      if (ch === 0x21/* ! */) {
-        if (!isNamed) {
-          tagHandle = state.input.slice(_position - 1, state.position + 1);
-
-          if (!PATTERN_TAG_HANDLE.test(tagHandle)) {
-            throwError(state, 'named tag handle cannot contain such characters');
-          }
-
-          isNamed = true;
-          _position = state.position + 1;
-        } else {
-          throwError(state, 'tag suffix cannot contain exclamation marks');
-        }
-      }
-
-      ch = state.input.charCodeAt(++state.position);
-    }
-
-    tagName = state.input.slice(_position, state.position);
-
-    if (PATTERN_FLOW_INDICATORS.test(tagName)) {
-      throwError(state, 'tag suffix cannot contain flow indicator characters');
-    }
-  }
-
-  if (tagName && !PATTERN_TAG_URI.test(tagName)) {
-    throwError(state, 'tag name cannot contain such characters: ' + tagName);
-  }
-
-  try {
-    tagName = decodeURIComponent(tagName);
-  } catch (err) {
-    throwError(state, 'tag name is malformed: ' + tagName);
-  }
-
-  if (isVerbatim) {
-    state.tag = tagName;
-
-  } else if (_hasOwnProperty$1.call(state.tagMap, tagHandle)) {
-    state.tag = state.tagMap[tagHandle] + tagName;
-
-  } else if (tagHandle === '!') {
-    state.tag = '!' + tagName;
-
-  } else if (tagHandle === '!!') {
-    state.tag = 'tag:yaml.org,2002:' + tagName;
-
-  } else {
-    throwError(state, 'undeclared tag handle "' + tagHandle + '"');
-  }
-
-  return true;
-}
-
-function readAnchorProperty(state) {
-  var _position,
-      ch;
-
-  ch = state.input.charCodeAt(state.position);
-
-  if (ch !== 0x26/* & */) return false;
-
-  if (state.anchor !== null) {
-    throwError(state, 'duplication of an anchor property');
-  }
-
-  ch = state.input.charCodeAt(++state.position);
-  _position = state.position;
-
-  while (ch !== 0 && !is_WS_OR_EOL(ch) && !is_FLOW_INDICATOR(ch)) {
-    ch = state.input.charCodeAt(++state.position);
-  }
-
-  if (state.position === _position) {
-    throwError(state, 'name of an anchor node must contain at least one character');
-  }
-
-  state.anchor = state.input.slice(_position, state.position);
-  return true;
-}
-
-function readAlias(state) {
-  var _position, alias,
-      ch;
-
-  ch = state.input.charCodeAt(state.position);
-
-  if (ch !== 0x2A/* * */) return false;
-
-  ch = state.input.charCodeAt(++state.position);
-  _position = state.position;
-
-  while (ch !== 0 && !is_WS_OR_EOL(ch) && !is_FLOW_INDICATOR(ch)) {
-    ch = state.input.charCodeAt(++state.position);
-  }
-
-  if (state.position === _position) {
-    throwError(state, 'name of an alias node must contain at least one character');
-  }
-
-  alias = state.input.slice(_position, state.position);
-
-  if (!_hasOwnProperty$1.call(state.anchorMap, alias)) {
-    throwError(state, 'unidentified alias "' + alias + '"');
-  }
-
-  state.result = state.anchorMap[alias];
-  skipSeparationSpace(state, true, -1);
-  return true;
-}
-
-function composeNode(state, parentIndent, nodeContext, allowToSeek, allowCompact) {
-  var allowBlockStyles,
-      allowBlockScalars,
-      allowBlockCollections,
-      indentStatus = 1, // 1: this>parent, 0: this=parent, -1: this<parent
-      atNewLine  = false,
-      hasContent = false,
-      typeIndex,
-      typeQuantity,
-      typeList,
-      type,
-      flowIndent,
-      blockIndent;
-
-  if (state.listener !== null) {
-    state.listener('open', state);
-  }
-
-  state.tag    = null;
-  state.anchor = null;
-  state.kind   = null;
-  state.result = null;
-
-  allowBlockStyles = allowBlockScalars = allowBlockCollections =
-    CONTEXT_BLOCK_OUT === nodeContext ||
-    CONTEXT_BLOCK_IN  === nodeContext;
-
-  if (allowToSeek) {
-    if (skipSeparationSpace(state, true, -1)) {
-      atNewLine = true;
-
-      if (state.lineIndent > parentIndent) {
-        indentStatus = 1;
-      } else if (state.lineIndent === parentIndent) {
-        indentStatus = 0;
-      } else if (state.lineIndent < parentIndent) {
-        indentStatus = -1;
-      }
-    }
-  }
-
-  if (indentStatus === 1) {
-    while (readTagProperty(state) || readAnchorProperty(state)) {
-      if (skipSeparationSpace(state, true, -1)) {
-        atNewLine = true;
-        allowBlockCollections = allowBlockStyles;
-
-        if (state.lineIndent > parentIndent) {
-          indentStatus = 1;
-        } else if (state.lineIndent === parentIndent) {
-          indentStatus = 0;
-        } else if (state.lineIndent < parentIndent) {
-          indentStatus = -1;
-        }
-      } else {
-        allowBlockCollections = false;
-      }
-    }
-  }
-
-  if (allowBlockCollections) {
-    allowBlockCollections = atNewLine || allowCompact;
-  }
-
-  if (indentStatus === 1 || CONTEXT_BLOCK_OUT === nodeContext) {
-    if (CONTEXT_FLOW_IN === nodeContext || CONTEXT_FLOW_OUT === nodeContext) {
-      flowIndent = parentIndent;
-    } else {
-      flowIndent = parentIndent + 1;
-    }
-
-    blockIndent = state.position - state.lineStart;
-
-    if (indentStatus === 1) {
-      if (allowBlockCollections &&
-          (readBlockSequence(state, blockIndent) ||
-           readBlockMapping(state, blockIndent, flowIndent)) ||
-          readFlowCollection(state, flowIndent)) {
-        hasContent = true;
-      } else {
-        if ((allowBlockScalars && readBlockScalar(state, flowIndent)) ||
-            readSingleQuotedScalar(state, flowIndent) ||
-            readDoubleQuotedScalar(state, flowIndent)) {
-          hasContent = true;
-
-        } else if (readAlias(state)) {
-          hasContent = true;
-
-          if (state.tag !== null || state.anchor !== null) {
-            throwError(state, 'alias node should not have any properties');
-          }
-
-        } else if (readPlainScalar(state, flowIndent, CONTEXT_FLOW_IN === nodeContext)) {
-          hasContent = true;
-
-          if (state.tag === null) {
-            state.tag = '?';
-          }
-        }
-
-        if (state.anchor !== null) {
-          state.anchorMap[state.anchor] = state.result;
-        }
-      }
-    } else if (indentStatus === 0) {
-      // Special case: block sequences are allowed to have same indentation level as the parent.
-      // http://www.yaml.org/spec/1.2/spec.html#id2799784
-      hasContent = allowBlockCollections && readBlockSequence(state, blockIndent);
-    }
-  }
-
-  if (state.tag === null) {
-    if (state.anchor !== null) {
-      state.anchorMap[state.anchor] = state.result;
-    }
-
-  } else if (state.tag === '?') {
-    // Implicit resolving is not allowed for non-scalar types, and '?'
-    // non-specific tag is only automatically assigned to plain scalars.
-    //
-    // We only need to check kind conformity in case user explicitly assigns '?'
-    // tag, for example like this: "!<?> [0]"
-    //
-    if (state.result !== null && state.kind !== 'scalar') {
-      throwError(state, 'unacceptable node kind for !<?> tag; it should be "scalar", not "' + state.kind + '"');
-    }
-
-    for (typeIndex = 0, typeQuantity = state.implicitTypes.length; typeIndex < typeQuantity; typeIndex += 1) {
-      type = state.implicitTypes[typeIndex];
-
-      if (type.resolve(state.result)) { // `state.result` updated in resolver if matched
-        state.result = type.construct(state.result);
-        state.tag = type.tag;
-        if (state.anchor !== null) {
-          state.anchorMap[state.anchor] = state.result;
-        }
-        break;
-      }
-    }
-  } else if (state.tag !== '!') {
-    if (_hasOwnProperty$1.call(state.typeMap[state.kind || 'fallback'], state.tag)) {
-      type = state.typeMap[state.kind || 'fallback'][state.tag];
-    } else {
-      // looking for multi type
-      type = null;
-      typeList = state.typeMap.multi[state.kind || 'fallback'];
-
-      for (typeIndex = 0, typeQuantity = typeList.length; typeIndex < typeQuantity; typeIndex += 1) {
-        if (state.tag.slice(0, typeList[typeIndex].tag.length) === typeList[typeIndex].tag) {
-          type = typeList[typeIndex];
-          break;
-        }
-      }
-    }
-
-    if (!type) {
-      throwError(state, 'unknown tag !<' + state.tag + '>');
-    }
-
-    if (state.result !== null && type.kind !== state.kind) {
-      throwError(state, 'unacceptable node kind for !<' + state.tag + '> tag; it should be "' + type.kind + '", not "' + state.kind + '"');
-    }
-
-    if (!type.resolve(state.result, state.tag)) { // `state.result` updated in resolver if matched
-      throwError(state, 'cannot resolve a node with !<' + state.tag + '> explicit tag');
-    } else {
-      state.result = type.construct(state.result, state.tag);
-      if (state.anchor !== null) {
-        state.anchorMap[state.anchor] = state.result;
-      }
-    }
-  }
-
-  if (state.listener !== null) {
-    state.listener('close', state);
-  }
-  return state.tag !== null ||  state.anchor !== null || hasContent;
-}
-
-function readDocument(state) {
-  var documentStart = state.position,
-      _position,
-      directiveName,
-      directiveArgs,
-      hasDirectives = false,
-      ch;
-
-  state.version = null;
-  state.checkLineBreaks = state.legacy;
-  state.tagMap = Object.create(null);
-  state.anchorMap = Object.create(null);
-
-  while ((ch = state.input.charCodeAt(state.position)) !== 0) {
-    skipSeparationSpace(state, true, -1);
-
-    ch = state.input.charCodeAt(state.position);
-
-    if (state.lineIndent > 0 || ch !== 0x25/* % */) {
-      break;
-    }
-
-    hasDirectives = true;
-    ch = state.input.charCodeAt(++state.position);
-    _position = state.position;
-
-    while (ch !== 0 && !is_WS_OR_EOL(ch)) {
-      ch = state.input.charCodeAt(++state.position);
-    }
-
-    directiveName = state.input.slice(_position, state.position);
-    directiveArgs = [];
-
-    if (directiveName.length < 1) {
-      throwError(state, 'directive name must not be less than one character in length');
-    }
-
-    while (ch !== 0) {
-      while (is_WHITE_SPACE(ch)) {
-        ch = state.input.charCodeAt(++state.position);
-      }
-
-      if (ch === 0x23/* # */) {
-        do { ch = state.input.charCodeAt(++state.position); }
-        while (ch !== 0 && !is_EOL(ch));
-        break;
-      }
-
-      if (is_EOL(ch)) break;
-
-      _position = state.position;
-
-      while (ch !== 0 && !is_WS_OR_EOL(ch)) {
-        ch = state.input.charCodeAt(++state.position);
-      }
-
-      directiveArgs.push(state.input.slice(_position, state.position));
-    }
-
-    if (ch !== 0) readLineBreak(state);
-
-    if (_hasOwnProperty$1.call(directiveHandlers, directiveName)) {
-      directiveHandlers[directiveName](state, directiveName, directiveArgs);
-    } else {
-      throwWarning(state, 'unknown document directive "' + directiveName + '"');
-    }
-  }
-
-  skipSeparationSpace(state, true, -1);
-
-  if (state.lineIndent === 0 &&
-      state.input.charCodeAt(state.position)     === 0x2D/* - */ &&
-      state.input.charCodeAt(state.position + 1) === 0x2D/* - */ &&
-      state.input.charCodeAt(state.position + 2) === 0x2D/* - */) {
-    state.position += 3;
-    skipSeparationSpace(state, true, -1);
-
-  } else if (hasDirectives) {
-    throwError(state, 'directives end mark is expected');
-  }
-
-  composeNode(state, state.lineIndent - 1, CONTEXT_BLOCK_OUT, false, true);
-  skipSeparationSpace(state, true, -1);
-
-  if (state.checkLineBreaks &&
-      PATTERN_NON_ASCII_LINE_BREAKS.test(state.input.slice(documentStart, state.position))) {
-    throwWarning(state, 'non-ASCII line breaks are interpreted as content');
-  }
-
-  state.documents.push(state.result);
-
-  if (state.position === state.lineStart && testDocumentSeparator(state)) {
-
-    if (state.input.charCodeAt(state.position) === 0x2E/* . */) {
-      state.position += 3;
-      skipSeparationSpace(state, true, -1);
-    }
-    return;
-  }
-
-  if (state.position < (state.length - 1)) {
-    throwError(state, 'end of the stream or a document separator is expected');
-  } else {
-    return;
-  }
-}
-
-
-function loadDocuments(input, options) {
-  input = String(input);
-  options = options || {};
-
-  if (input.length !== 0) {
-
-    // Add tailing `\n` if not exists
-    if (input.charCodeAt(input.length - 1) !== 0x0A/* LF */ &&
-        input.charCodeAt(input.length - 1) !== 0x0D/* CR */) {
-      input += '\n';
-    }
-
-    // Strip BOM
-    if (input.charCodeAt(0) === 0xFEFF) {
-      input = input.slice(1);
-    }
-  }
-
-  var state = new State$1(input, options);
-
-  var nullpos = input.indexOf('\0');
-
-  if (nullpos !== -1) {
-    state.position = nullpos;
-    throwError(state, 'null byte is not allowed in input');
-  }
-
-  // Use 0 as string terminator. That significantly simplifies bounds check.
-  state.input += '\0';
-
-  while (state.input.charCodeAt(state.position) === 0x20/* Space */) {
-    state.lineIndent += 1;
-    state.position += 1;
-  }
-
-  while (state.position < (state.length - 1)) {
-    readDocument(state);
-  }
-
-  return state.documents;
-}
-
-
-function loadAll$1(input, iterator, options) {
-  if (iterator !== null && typeof iterator === 'object' && typeof options === 'undefined') {
-    options = iterator;
-    iterator = null;
-  }
-
-  var documents = loadDocuments(input, options);
-
-  if (typeof iterator !== 'function') {
-    return documents;
-  }
-
-  for (var index = 0, length = documents.length; index < length; index += 1) {
-    iterator(documents[index]);
-  }
-}
-
-
-function load$1(input, options) {
-  var documents = loadDocuments(input, options);
-
-  if (documents.length === 0) {
-    /*eslint-disable no-undefined*/
-    return undefined;
-  } else if (documents.length === 1) {
-    return documents[0];
-  }
-  throw new exception('expected a single document in the stream, but found more');
-}
-
-
-var loadAll_1 = loadAll$1;
-var load_1    = load$1;
-
-var loader = {
-	loadAll: loadAll_1,
-	load: load_1
-};
-
-/*eslint-disable no-use-before-define*/
-
-
-
-
-
-var _toString       = Object.prototype.toString;
-var _hasOwnProperty = Object.prototype.hasOwnProperty;
-
-var CHAR_BOM                  = 0xFEFF;
-var CHAR_TAB                  = 0x09; /* Tab */
-var CHAR_LINE_FEED            = 0x0A; /* LF */
-var CHAR_CARRIAGE_RETURN      = 0x0D; /* CR */
-var CHAR_SPACE                = 0x20; /* Space */
-var CHAR_EXCLAMATION          = 0x21; /* ! */
-var CHAR_DOUBLE_QUOTE         = 0x22; /* " */
-var CHAR_SHARP                = 0x23; /* # */
-var CHAR_PERCENT              = 0x25; /* % */
-var CHAR_AMPERSAND            = 0x26; /* & */
-var CHAR_SINGLE_QUOTE         = 0x27; /* ' */
-var CHAR_ASTERISK             = 0x2A; /* * */
-var CHAR_COMMA                = 0x2C; /* , */
-var CHAR_MINUS                = 0x2D; /* - */
-var CHAR_COLON                = 0x3A; /* : */
-var CHAR_EQUALS               = 0x3D; /* = */
-var CHAR_GREATER_THAN         = 0x3E; /* > */
-var CHAR_QUESTION             = 0x3F; /* ? */
-var CHAR_COMMERCIAL_AT        = 0x40; /* @ */
-var CHAR_LEFT_SQUARE_BRACKET  = 0x5B; /* [ */
-var CHAR_RIGHT_SQUARE_BRACKET = 0x5D; /* ] */
-var CHAR_GRAVE_ACCENT         = 0x60; /* ` */
-var CHAR_LEFT_CURLY_BRACKET   = 0x7B; /* { */
-var CHAR_VERTICAL_LINE        = 0x7C; /* | */
-var CHAR_RIGHT_CURLY_BRACKET  = 0x7D; /* } */
-
-var ESCAPE_SEQUENCES = {};
-
-ESCAPE_SEQUENCES[0x00]   = '\\0';
-ESCAPE_SEQUENCES[0x07]   = '\\a';
-ESCAPE_SEQUENCES[0x08]   = '\\b';
-ESCAPE_SEQUENCES[0x09]   = '\\t';
-ESCAPE_SEQUENCES[0x0A]   = '\\n';
-ESCAPE_SEQUENCES[0x0B]   = '\\v';
-ESCAPE_SEQUENCES[0x0C]   = '\\f';
-ESCAPE_SEQUENCES[0x0D]   = '\\r';
-ESCAPE_SEQUENCES[0x1B]   = '\\e';
-ESCAPE_SEQUENCES[0x22]   = '\\"';
-ESCAPE_SEQUENCES[0x5C]   = '\\\\';
-ESCAPE_SEQUENCES[0x85]   = '\\N';
-ESCAPE_SEQUENCES[0xA0]   = '\\_';
-ESCAPE_SEQUENCES[0x2028] = '\\L';
-ESCAPE_SEQUENCES[0x2029] = '\\P';
-
-var DEPRECATED_BOOLEANS_SYNTAX = [
-  'y', 'Y', 'yes', 'Yes', 'YES', 'on', 'On', 'ON',
-  'n', 'N', 'no', 'No', 'NO', 'off', 'Off', 'OFF'
-];
-
-var DEPRECATED_BASE60_SYNTAX = /^[-+]?[0-9_]+(?::[0-9_]+)+(?:\.[0-9_]*)?$/;
-
-function compileStyleMap(schema, map) {
-  var result, keys, index, length, tag, style, type;
-
-  if (map === null) return {};
-
-  result = {};
-  keys = Object.keys(map);
-
-  for (index = 0, length = keys.length; index < length; index += 1) {
-    tag = keys[index];
-    style = String(map[tag]);
-
-    if (tag.slice(0, 2) === '!!') {
-      tag = 'tag:yaml.org,2002:' + tag.slice(2);
-    }
-    type = schema.compiledTypeMap['fallback'][tag];
-
-    if (type && _hasOwnProperty.call(type.styleAliases, style)) {
-      style = type.styleAliases[style];
-    }
-
-    result[tag] = style;
-  }
-
-  return result;
-}
-
-function encodeHex(character) {
-  var string, handle, length;
-
-  string = character.toString(16).toUpperCase();
-
-  if (character <= 0xFF) {
-    handle = 'x';
-    length = 2;
-  } else if (character <= 0xFFFF) {
-    handle = 'u';
-    length = 4;
-  } else if (character <= 0xFFFFFFFF) {
-    handle = 'U';
-    length = 8;
-  } else {
-    throw new exception('code point within a string may not be greater than 0xFFFFFFFF');
-  }
-
-  return '\\' + handle + common.repeat('0', length - string.length) + string;
-}
-
-
-var QUOTING_TYPE_SINGLE = 1,
-    QUOTING_TYPE_DOUBLE = 2;
-
-function State(options) {
-  this.schema        = options['schema'] || _default;
-  this.indent        = Math.max(1, (options['indent'] || 2));
-  this.noArrayIndent = options['noArrayIndent'] || false;
-  this.skipInvalid   = options['skipInvalid'] || false;
-  this.flowLevel     = (common.isNothing(options['flowLevel']) ? -1 : options['flowLevel']);
-  this.styleMap      = compileStyleMap(this.schema, options['styles'] || null);
-  this.sortKeys      = options['sortKeys'] || false;
-  this.lineWidth     = options['lineWidth'] || 80;
-  this.noRefs        = options['noRefs'] || false;
-  this.noCompatMode  = options['noCompatMode'] || false;
-  this.condenseFlow  = options['condenseFlow'] || false;
-  this.quotingType   = options['quotingType'] === '"' ? QUOTING_TYPE_DOUBLE : QUOTING_TYPE_SINGLE;
-  this.forceQuotes   = options['forceQuotes'] || false;
-  this.replacer      = typeof options['replacer'] === 'function' ? options['replacer'] : null;
-
-  this.implicitTypes = this.schema.compiledImplicit;
-  this.explicitTypes = this.schema.compiledExplicit;
-
-  this.tag = null;
-  this.result = '';
-
-  this.duplicates = [];
-  this.usedDuplicates = null;
-}
-
-// Indents every line in a string. Empty lines (\n only) are not indented.
-function indentString(string, spaces) {
-  var ind = common.repeat(' ', spaces),
-      position = 0,
-      next = -1,
-      result = '',
-      line,
-      length = string.length;
-
-  while (position < length) {
-    next = string.indexOf('\n', position);
-    if (next === -1) {
-      line = string.slice(position);
-      position = length;
-    } else {
-      line = string.slice(position, next + 1);
-      position = next + 1;
-    }
-
-    if (line.length && line !== '\n') result += ind;
-
-    result += line;
-  }
-
-  return result;
-}
-
-function generateNextLine(state, level) {
-  return '\n' + common.repeat(' ', state.indent * level);
-}
-
-function testImplicitResolving(state, str) {
-  var index, length, type;
-
-  for (index = 0, length = state.implicitTypes.length; index < length; index += 1) {
-    type = state.implicitTypes[index];
-
-    if (type.resolve(str)) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-// [33] s-white ::= s-space | s-tab
-function isWhitespace(c) {
-  return c === CHAR_SPACE || c === CHAR_TAB;
-}
-
-// Returns true if the character can be printed without escaping.
-// From YAML 1.2: "any allowed characters known to be non-printable
-// should also be escaped. [However,] This isn’t mandatory"
-// Derived from nb-char - \t - #x85 - #xA0 - #x2028 - #x2029.
-function isPrintable(c) {
-  return  (0x00020 <= c && c <= 0x00007E)
-      || ((0x000A1 <= c && c <= 0x00D7FF) && c !== 0x2028 && c !== 0x2029)
-      || ((0x0E000 <= c && c <= 0x00FFFD) && c !== CHAR_BOM)
-      ||  (0x10000 <= c && c <= 0x10FFFF);
-}
-
-// [34] ns-char ::= nb-char - s-white
-// [27] nb-char ::= c-printable - b-char - c-byte-order-mark
-// [26] b-char  ::= b-line-feed | b-carriage-return
-// Including s-white (for some reason, examples doesn't match specs in this aspect)
-// ns-char ::= c-printable - b-line-feed - b-carriage-return - c-byte-order-mark
-function isNsCharOrWhitespace(c) {
-  return isPrintable(c)
-    && c !== CHAR_BOM
-    // - b-char
-    && c !== CHAR_CARRIAGE_RETURN
-    && c !== CHAR_LINE_FEED;
-}
-
-// [127]  ns-plain-safe(c) ::= c = flow-out  ⇒ ns-plain-safe-out
-//                             c = flow-in   ⇒ ns-plain-safe-in
-//                             c = block-key ⇒ ns-plain-safe-out
-//                             c = flow-key  ⇒ ns-plain-safe-in
-// [128] ns-plain-safe-out ::= ns-char
-// [129]  ns-plain-safe-in ::= ns-char - c-flow-indicator
-// [130]  ns-plain-char(c) ::=  ( ns-plain-safe(c) - “:” - “#” )
-//                            | ( /* An ns-char preceding */ “#” )
-//                            | ( “:” /* Followed by an ns-plain-safe(c) */ )
-function isPlainSafe(c, prev, inblock) {
-  var cIsNsCharOrWhitespace = isNsCharOrWhitespace(c);
-  var cIsNsChar = cIsNsCharOrWhitespace && !isWhitespace(c);
-  return (
-    // ns-plain-safe
-    inblock ? // c = flow-in
-      cIsNsCharOrWhitespace
-      : cIsNsCharOrWhitespace
-        // - c-flow-indicator
-        && c !== CHAR_COMMA
-        && c !== CHAR_LEFT_SQUARE_BRACKET
-        && c !== CHAR_RIGHT_SQUARE_BRACKET
-        && c !== CHAR_LEFT_CURLY_BRACKET
-        && c !== CHAR_RIGHT_CURLY_BRACKET
-  )
-    // ns-plain-char
-    && c !== CHAR_SHARP // false on '#'
-    && !(prev === CHAR_COLON && !cIsNsChar) // false on ': '
-    || (isNsCharOrWhitespace(prev) && !isWhitespace(prev) && c === CHAR_SHARP) // change to true on '[^ ]#'
-    || (prev === CHAR_COLON && cIsNsChar); // change to true on ':[^ ]'
-}
-
-// Simplified test for values allowed as the first character in plain style.
-function isPlainSafeFirst(c) {
-  // Uses a subset of ns-char - c-indicator
-  // where ns-char = nb-char - s-white.
-  // No support of ( ( “?” | “:” | “-” ) /* Followed by an ns-plain-safe(c)) */ ) part
-  return isPrintable(c) && c !== CHAR_BOM
-    && !isWhitespace(c) // - s-white
-    // - (c-indicator ::=
-    // “-” | “?” | “:” | “,” | “[” | “]” | “{” | “}”
-    && c !== CHAR_MINUS
-    && c !== CHAR_QUESTION
-    && c !== CHAR_COLON
-    && c !== CHAR_COMMA
-    && c !== CHAR_LEFT_SQUARE_BRACKET
-    && c !== CHAR_RIGHT_SQUARE_BRACKET
-    && c !== CHAR_LEFT_CURLY_BRACKET
-    && c !== CHAR_RIGHT_CURLY_BRACKET
-    // | “#” | “&” | “*” | “!” | “|” | “=” | “>” | “'” | “"”
-    && c !== CHAR_SHARP
-    && c !== CHAR_AMPERSAND
-    && c !== CHAR_ASTERISK
-    && c !== CHAR_EXCLAMATION
-    && c !== CHAR_VERTICAL_LINE
-    && c !== CHAR_EQUALS
-    && c !== CHAR_GREATER_THAN
-    && c !== CHAR_SINGLE_QUOTE
-    && c !== CHAR_DOUBLE_QUOTE
-    // | “%” | “@” | “`”)
-    && c !== CHAR_PERCENT
-    && c !== CHAR_COMMERCIAL_AT
-    && c !== CHAR_GRAVE_ACCENT;
-}
-
-// Simplified test for values allowed as the last character in plain style.
-function isPlainSafeLast(c) {
-  // just not whitespace or colon, it will be checked to be plain character later
-  return !isWhitespace(c) && c !== CHAR_COLON;
-}
-
-// Same as 'string'.codePointAt(pos), but works in older browsers.
-function codePointAt(string, pos) {
-  var first = string.charCodeAt(pos), second;
-  if (first >= 0xD800 && first <= 0xDBFF && pos + 1 < string.length) {
-    second = string.charCodeAt(pos + 1);
-    if (second >= 0xDC00 && second <= 0xDFFF) {
-      // https://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
-      return (first - 0xD800) * 0x400 + second - 0xDC00 + 0x10000;
-    }
-  }
-  return first;
-}
-
-// Determines whether block indentation indicator is required.
-function needIndentIndicator(string) {
-  var leadingSpaceRe = /^\n* /;
-  return leadingSpaceRe.test(string);
-}
-
-var STYLE_PLAIN   = 1,
-    STYLE_SINGLE  = 2,
-    STYLE_LITERAL = 3,
-    STYLE_FOLDED  = 4,
-    STYLE_DOUBLE  = 5;
-
-// Determines which scalar styles are possible and returns the preferred style.
-// lineWidth = -1 => no limit.
-// Pre-conditions: str.length > 0.
-// Post-conditions:
-//    STYLE_PLAIN or STYLE_SINGLE => no \n are in the string.
-//    STYLE_LITERAL => no lines are suitable for folding (or lineWidth is -1).
-//    STYLE_FOLDED => a line > lineWidth and can be folded (and lineWidth != -1).
-function chooseScalarStyle(string, singleLineOnly, indentPerLevel, lineWidth,
-  testAmbiguousType, quotingType, forceQuotes, inblock) {
-
-  var i;
-  var char = 0;
-  var prevChar = null;
-  var hasLineBreak = false;
-  var hasFoldableLine = false; // only checked if shouldTrackWidth
-  var shouldTrackWidth = lineWidth !== -1;
-  var previousLineBreak = -1; // count the first line correctly
-  var plain = isPlainSafeFirst(codePointAt(string, 0))
-          && isPlainSafeLast(codePointAt(string, string.length - 1));
-
-  if (singleLineOnly || forceQuotes) {
-    // Case: no block styles.
-    // Check for disallowed characters to rule out plain and single.
-    for (i = 0; i < string.length; char >= 0x10000 ? i += 2 : i++) {
-      char = codePointAt(string, i);
-      if (!isPrintable(char)) {
-        return STYLE_DOUBLE;
-      }
-      plain = plain && isPlainSafe(char, prevChar, inblock);
-      prevChar = char;
-    }
-  } else {
-    // Case: block styles permitted.
-    for (i = 0; i < string.length; char >= 0x10000 ? i += 2 : i++) {
-      char = codePointAt(string, i);
-      if (char === CHAR_LINE_FEED) {
-        hasLineBreak = true;
-        // Check if any line can be folded.
-        if (shouldTrackWidth) {
-          hasFoldableLine = hasFoldableLine ||
-            // Foldable line = too long, and not more-indented.
-            (i - previousLineBreak - 1 > lineWidth &&
-             string[previousLineBreak + 1] !== ' ');
-          previousLineBreak = i;
-        }
-      } else if (!isPrintable(char)) {
-        return STYLE_DOUBLE;
-      }
-      plain = plain && isPlainSafe(char, prevChar, inblock);
-      prevChar = char;
-    }
-    // in case the end is missing a \n
-    hasFoldableLine = hasFoldableLine || (shouldTrackWidth &&
-      (i - previousLineBreak - 1 > lineWidth &&
-       string[previousLineBreak + 1] !== ' '));
-  }
-  // Although every style can represent \n without escaping, prefer block styles
-  // for multiline, since they're more readable and they don't add empty lines.
-  // Also prefer folding a super-long line.
-  if (!hasLineBreak && !hasFoldableLine) {
-    // Strings interpretable as another type have to be quoted;
-    // e.g. the string 'true' vs. the boolean true.
-    if (plain && !forceQuotes && !testAmbiguousType(string)) {
-      return STYLE_PLAIN;
-    }
-    return quotingType === QUOTING_TYPE_DOUBLE ? STYLE_DOUBLE : STYLE_SINGLE;
-  }
-  // Edge case: block indentation indicator can only have one digit.
-  if (indentPerLevel > 9 && needIndentIndicator(string)) {
-    return STYLE_DOUBLE;
-  }
-  // At this point we know block styles are valid.
-  // Prefer literal style unless we want to fold.
-  if (!forceQuotes) {
-    return hasFoldableLine ? STYLE_FOLDED : STYLE_LITERAL;
-  }
-  return quotingType === QUOTING_TYPE_DOUBLE ? STYLE_DOUBLE : STYLE_SINGLE;
-}
-
-// Note: line breaking/folding is implemented for only the folded style.
-// NB. We drop the last trailing newline (if any) of a returned block scalar
-//  since the dumper adds its own newline. This always works:
-//    • No ending newline => unaffected; already using strip "-" chomping.
-//    • Ending newline    => removed then restored.
-//  Importantly, this keeps the "+" chomp indicator from gaining an extra line.
-function writeScalar(state, string, level, iskey, inblock) {
-  state.dump = (function () {
-    if (string.length === 0) {
-      return state.quotingType === QUOTING_TYPE_DOUBLE ? '""' : "''";
-    }
-    if (!state.noCompatMode) {
-      if (DEPRECATED_BOOLEANS_SYNTAX.indexOf(string) !== -1 || DEPRECATED_BASE60_SYNTAX.test(string)) {
-        return state.quotingType === QUOTING_TYPE_DOUBLE ? ('"' + string + '"') : ("'" + string + "'");
-      }
-    }
-
-    var indent = state.indent * Math.max(1, level); // no 0-indent scalars
-    // As indentation gets deeper, let the width decrease monotonically
-    // to the lower bound min(state.lineWidth, 40).
-    // Note that this implies
-    //  state.lineWidth ≤ 40 + state.indent: width is fixed at the lower bound.
-    //  state.lineWidth > 40 + state.indent: width decreases until the lower bound.
-    // This behaves better than a constant minimum width which disallows narrower options,
-    // or an indent threshold which causes the width to suddenly increase.
-    var lineWidth = state.lineWidth === -1
-      ? -1 : Math.max(Math.min(state.lineWidth, 40), state.lineWidth - indent);
-
-    // Without knowing if keys are implicit/explicit, assume implicit for safety.
-    var singleLineOnly = iskey
-      // No block styles in flow mode.
-      || (state.flowLevel > -1 && level >= state.flowLevel);
-    function testAmbiguity(string) {
-      return testImplicitResolving(state, string);
-    }
-
-    switch (chooseScalarStyle(string, singleLineOnly, state.indent, lineWidth,
-      testAmbiguity, state.quotingType, state.forceQuotes && !iskey, inblock)) {
-
-      case STYLE_PLAIN:
-        return string;
-      case STYLE_SINGLE:
-        return "'" + string.replace(/'/g, "''") + "'";
-      case STYLE_LITERAL:
-        return '|' + blockHeader(string, state.indent)
-          + dropEndingNewline(indentString(string, indent));
-      case STYLE_FOLDED:
-        return '>' + blockHeader(string, state.indent)
-          + dropEndingNewline(indentString(foldString(string, lineWidth), indent));
-      case STYLE_DOUBLE:
-        return '"' + escapeString(string) + '"';
-      default:
-        throw new exception('impossible error: invalid scalar style');
-    }
-  }());
-}
-
-// Pre-conditions: string is valid for a block scalar, 1 <= indentPerLevel <= 9.
-function blockHeader(string, indentPerLevel) {
-  var indentIndicator = needIndentIndicator(string) ? String(indentPerLevel) : '';
-
-  // note the special case: the string '\n' counts as a "trailing" empty line.
-  var clip =          string[string.length - 1] === '\n';
-  var keep = clip && (string[string.length - 2] === '\n' || string === '\n');
-  var chomp = keep ? '+' : (clip ? '' : '-');
-
-  return indentIndicator + chomp + '\n';
-}
-
-// (See the note for writeScalar.)
-function dropEndingNewline(string) {
-  return string[string.length - 1] === '\n' ? string.slice(0, -1) : string;
-}
-
-// Note: a long line without a suitable break point will exceed the width limit.
-// Pre-conditions: every char in str isPrintable, str.length > 0, width > 0.
-function foldString(string, width) {
-  // In folded style, $k$ consecutive newlines output as $k+1$ newlines—
-  // unless they're before or after a more-indented line, or at the very
-  // beginning or end, in which case $k$ maps to $k$.
-  // Therefore, parse each chunk as newline(s) followed by a content line.
-  var lineRe = /(\n+)([^\n]*)/g;
-
-  // first line (possibly an empty line)
-  var result = (function () {
-    var nextLF = string.indexOf('\n');
-    nextLF = nextLF !== -1 ? nextLF : string.length;
-    lineRe.lastIndex = nextLF;
-    return foldLine(string.slice(0, nextLF), width);
-  }());
-  // If we haven't reached the first content line yet, don't add an extra \n.
-  var prevMoreIndented = string[0] === '\n' || string[0] === ' ';
-  var moreIndented;
-
-  // rest of the lines
-  var match;
-  while ((match = lineRe.exec(string))) {
-    var prefix = match[1], line = match[2];
-    moreIndented = (line[0] === ' ');
-    result += prefix
-      + (!prevMoreIndented && !moreIndented && line !== ''
-        ? '\n' : '')
-      + foldLine(line, width);
-    prevMoreIndented = moreIndented;
-  }
-
-  return result;
-}
-
-// Greedy line breaking.
-// Picks the longest line under the limit each time,
-// otherwise settles for the shortest line over the limit.
-// NB. More-indented lines *cannot* be folded, as that would add an extra \n.
-function foldLine(line, width) {
-  if (line === '' || line[0] === ' ') return line;
-
-  // Since a more-indented line adds a \n, breaks can't be followed by a space.
-  var breakRe = / [^ ]/g; // note: the match index will always be <= length-2.
-  var match;
-  // start is an inclusive index. end, curr, and next are exclusive.
-  var start = 0, end, curr = 0, next = 0;
-  var result = '';
-
-  // Invariants: 0 <= start <= length-1.
-  //   0 <= curr <= next <= max(0, length-2). curr - start <= width.
-  // Inside the loop:
-  //   A match implies length >= 2, so curr and next are <= length-2.
-  while ((match = breakRe.exec(line))) {
-    next = match.index;
-    // maintain invariant: curr - start <= width
-    if (next - start > width) {
-      end = (curr > start) ? curr : next; // derive end <= length-2
-      result += '\n' + line.slice(start, end);
-      // skip the space that was output as \n
-      start = end + 1;                    // derive start <= length-1
-    }
-    curr = next;
-  }
-
-  // By the invariants, start <= length-1, so there is something left over.
-  // It is either the whole string or a part starting from non-whitespace.
-  result += '\n';
-  // Insert a break if the remainder is too long and there is a break available.
-  if (line.length - start > width && curr > start) {
-    result += line.slice(start, curr) + '\n' + line.slice(curr + 1);
-  } else {
-    result += line.slice(start);
-  }
-
-  return result.slice(1); // drop extra \n joiner
-}
-
-// Escapes a double-quoted string.
-function escapeString(string) {
-  var result = '';
-  var char = 0;
-  var escapeSeq;
-
-  for (var i = 0; i < string.length; char >= 0x10000 ? i += 2 : i++) {
-    char = codePointAt(string, i);
-    escapeSeq = ESCAPE_SEQUENCES[char];
-
-    if (!escapeSeq && isPrintable(char)) {
-      result += string[i];
-      if (char >= 0x10000) result += string[i + 1];
-    } else {
-      result += escapeSeq || encodeHex(char);
-    }
-  }
-
-  return result;
-}
-
-function writeFlowSequence(state, level, object) {
-  var _result = '',
-      _tag    = state.tag,
-      index,
-      length,
-      value;
-
-  for (index = 0, length = object.length; index < length; index += 1) {
-    value = object[index];
-
-    if (state.replacer) {
-      value = state.replacer.call(object, String(index), value);
-    }
-
-    // Write only valid elements, put null instead of invalid elements.
-    if (writeNode(state, level, value, false, false) ||
-        (typeof value === 'undefined' &&
-         writeNode(state, level, null, false, false))) {
-
-      if (_result !== '') _result += ',' + (!state.condenseFlow ? ' ' : '');
-      _result += state.dump;
-    }
-  }
-
-  state.tag = _tag;
-  state.dump = '[' + _result + ']';
-}
-
-function writeBlockSequence(state, level, object, compact) {
-  var _result = '',
-      _tag    = state.tag,
-      index,
-      length,
-      value;
-
-  for (index = 0, length = object.length; index < length; index += 1) {
-    value = object[index];
-
-    if (state.replacer) {
-      value = state.replacer.call(object, String(index), value);
-    }
-
-    // Write only valid elements, put null instead of invalid elements.
-    if (writeNode(state, level + 1, value, true, true, false, true) ||
-        (typeof value === 'undefined' &&
-         writeNode(state, level + 1, null, true, true, false, true))) {
-
-      if (!compact || _result !== '') {
-        _result += generateNextLine(state, level);
-      }
-
-      if (state.dump && CHAR_LINE_FEED === state.dump.charCodeAt(0)) {
-        _result += '-';
-      } else {
-        _result += '- ';
-      }
-
-      _result += state.dump;
-    }
-  }
-
-  state.tag = _tag;
-  state.dump = _result || '[]'; // Empty sequence if no valid values.
-}
-
-function writeFlowMapping(state, level, object) {
-  var _result       = '',
-      _tag          = state.tag,
-      objectKeyList = Object.keys(object),
-      index,
-      length,
-      objectKey,
-      objectValue,
-      pairBuffer;
-
-  for (index = 0, length = objectKeyList.length; index < length; index += 1) {
-
-    pairBuffer = '';
-    if (_result !== '') pairBuffer += ', ';
-
-    if (state.condenseFlow) pairBuffer += '"';
-
-    objectKey = objectKeyList[index];
-    objectValue = object[objectKey];
-
-    if (state.replacer) {
-      objectValue = state.replacer.call(object, objectKey, objectValue);
-    }
-
-    if (!writeNode(state, level, objectKey, false, false)) {
-      continue; // Skip this pair because of invalid key;
-    }
-
-    if (state.dump.length > 1024) pairBuffer += '? ';
-
-    pairBuffer += state.dump + (state.condenseFlow ? '"' : '') + ':' + (state.condenseFlow ? '' : ' ');
-
-    if (!writeNode(state, level, objectValue, false, false)) {
-      continue; // Skip this pair because of invalid value.
-    }
-
-    pairBuffer += state.dump;
-
-    // Both key and value are valid.
-    _result += pairBuffer;
-  }
-
-  state.tag = _tag;
-  state.dump = '{' + _result + '}';
-}
-
-function writeBlockMapping(state, level, object, compact) {
-  var _result       = '',
-      _tag          = state.tag,
-      objectKeyList = Object.keys(object),
-      index,
-      length,
-      objectKey,
-      objectValue,
-      explicitPair,
-      pairBuffer;
-
-  // Allow sorting keys so that the output file is deterministic
-  if (state.sortKeys === true) {
-    // Default sorting
-    objectKeyList.sort();
-  } else if (typeof state.sortKeys === 'function') {
-    // Custom sort function
-    objectKeyList.sort(state.sortKeys);
-  } else if (state.sortKeys) {
-    // Something is wrong
-    throw new exception('sortKeys must be a boolean or a function');
-  }
-
-  for (index = 0, length = objectKeyList.length; index < length; index += 1) {
-    pairBuffer = '';
-
-    if (!compact || _result !== '') {
-      pairBuffer += generateNextLine(state, level);
-    }
-
-    objectKey = objectKeyList[index];
-    objectValue = object[objectKey];
-
-    if (state.replacer) {
-      objectValue = state.replacer.call(object, objectKey, objectValue);
-    }
-
-    if (!writeNode(state, level + 1, objectKey, true, true, true)) {
-      continue; // Skip this pair because of invalid key.
-    }
-
-    explicitPair = (state.tag !== null && state.tag !== '?') ||
-                   (state.dump && state.dump.length > 1024);
-
-    if (explicitPair) {
-      if (state.dump && CHAR_LINE_FEED === state.dump.charCodeAt(0)) {
-        pairBuffer += '?';
-      } else {
-        pairBuffer += '? ';
-      }
-    }
-
-    pairBuffer += state.dump;
-
-    if (explicitPair) {
-      pairBuffer += generateNextLine(state, level);
-    }
-
-    if (!writeNode(state, level + 1, objectValue, true, explicitPair)) {
-      continue; // Skip this pair because of invalid value.
-    }
-
-    if (state.dump && CHAR_LINE_FEED === state.dump.charCodeAt(0)) {
-      pairBuffer += ':';
-    } else {
-      pairBuffer += ': ';
-    }
-
-    pairBuffer += state.dump;
-
-    // Both key and value are valid.
-    _result += pairBuffer;
-  }
-
-  state.tag = _tag;
-  state.dump = _result || '{}'; // Empty mapping if no valid pairs.
-}
-
-function detectType(state, object, explicit) {
-  var _result, typeList, index, length, type, style;
-
-  typeList = explicit ? state.explicitTypes : state.implicitTypes;
-
-  for (index = 0, length = typeList.length; index < length; index += 1) {
-    type = typeList[index];
-
-    if ((type.instanceOf  || type.predicate) &&
-        (!type.instanceOf || ((typeof object === 'object') && (object instanceof type.instanceOf))) &&
-        (!type.predicate  || type.predicate(object))) {
-
-      if (explicit) {
-        if (type.multi && type.representName) {
-          state.tag = type.representName(object);
-        } else {
-          state.tag = type.tag;
-        }
-      } else {
-        state.tag = '?';
-      }
-
-      if (type.represent) {
-        style = state.styleMap[type.tag] || type.defaultStyle;
-
-        if (_toString.call(type.represent) === '[object Function]') {
-          _result = type.represent(object, style);
-        } else if (_hasOwnProperty.call(type.represent, style)) {
-          _result = type.represent[style](object, style);
-        } else {
-          throw new exception('!<' + type.tag + '> tag resolver accepts not "' + style + '" style');
-        }
-
-        state.dump = _result;
-      }
-
-      return true;
-    }
-  }
-
-  return false;
-}
-
-// Serializes `object` and writes it to global `result`.
-// Returns true on success, or false on invalid object.
-//
-function writeNode(state, level, object, block, compact, iskey, isblockseq) {
-  state.tag = null;
-  state.dump = object;
-
-  if (!detectType(state, object, false)) {
-    detectType(state, object, true);
-  }
-
-  var type = _toString.call(state.dump);
-  var inblock = block;
-  var tagStr;
-
-  if (block) {
-    block = (state.flowLevel < 0 || state.flowLevel > level);
-  }
-
-  var objectOrArray = type === '[object Object]' || type === '[object Array]',
-      duplicateIndex,
-      duplicate;
-
-  if (objectOrArray) {
-    duplicateIndex = state.duplicates.indexOf(object);
-    duplicate = duplicateIndex !== -1;
-  }
-
-  if ((state.tag !== null && state.tag !== '?') || duplicate || (state.indent !== 2 && level > 0)) {
-    compact = false;
-  }
-
-  if (duplicate && state.usedDuplicates[duplicateIndex]) {
-    state.dump = '*ref_' + duplicateIndex;
-  } else {
-    if (objectOrArray && duplicate && !state.usedDuplicates[duplicateIndex]) {
-      state.usedDuplicates[duplicateIndex] = true;
-    }
-    if (type === '[object Object]') {
-      if (block && (Object.keys(state.dump).length !== 0)) {
-        writeBlockMapping(state, level, state.dump, compact);
-        if (duplicate) {
-          state.dump = '&ref_' + duplicateIndex + state.dump;
-        }
-      } else {
-        writeFlowMapping(state, level, state.dump);
-        if (duplicate) {
-          state.dump = '&ref_' + duplicateIndex + ' ' + state.dump;
-        }
-      }
-    } else if (type === '[object Array]') {
-      if (block && (state.dump.length !== 0)) {
-        if (state.noArrayIndent && !isblockseq && level > 0) {
-          writeBlockSequence(state, level - 1, state.dump, compact);
-        } else {
-          writeBlockSequence(state, level, state.dump, compact);
-        }
-        if (duplicate) {
-          state.dump = '&ref_' + duplicateIndex + state.dump;
-        }
-      } else {
-        writeFlowSequence(state, level, state.dump);
-        if (duplicate) {
-          state.dump = '&ref_' + duplicateIndex + ' ' + state.dump;
-        }
-      }
-    } else if (type === '[object String]') {
-      if (state.tag !== '?') {
-        writeScalar(state, state.dump, level, iskey, inblock);
-      }
-    } else if (type === '[object Undefined]') {
-      return false;
-    } else {
-      if (state.skipInvalid) return false;
-      throw new exception('unacceptable kind of an object to dump ' + type);
-    }
-
-    if (state.tag !== null && state.tag !== '?') {
-      // Need to encode all characters except those allowed by the spec:
-      //
-      // [35] ns-dec-digit    ::=  [#x30-#x39] /* 0-9 */
-      // [36] ns-hex-digit    ::=  ns-dec-digit
-      //                         | [#x41-#x46] /* A-F */ | [#x61-#x66] /* a-f */
-      // [37] ns-ascii-letter ::=  [#x41-#x5A] /* A-Z */ | [#x61-#x7A] /* a-z */
-      // [38] ns-word-char    ::=  ns-dec-digit | ns-ascii-letter | “-”
-      // [39] ns-uri-char     ::=  “%” ns-hex-digit ns-hex-digit | ns-word-char | “#”
-      //                         | “;” | “/” | “?” | “:” | “@” | “&” | “=” | “+” | “$” | “,”
-      //                         | “_” | “.” | “!” | “~” | “*” | “'” | “(” | “)” | “[” | “]”
-      //
-      // Also need to encode '!' because it has special meaning (end of tag prefix).
-      //
-      tagStr = encodeURI(
-        state.tag[0] === '!' ? state.tag.slice(1) : state.tag
-      ).replace(/!/g, '%21');
-
-      if (state.tag[0] === '!') {
-        tagStr = '!' + tagStr;
-      } else if (tagStr.slice(0, 18) === 'tag:yaml.org,2002:') {
-        tagStr = '!!' + tagStr.slice(18);
-      } else {
-        tagStr = '!<' + tagStr + '>';
-      }
-
-      state.dump = tagStr + ' ' + state.dump;
-    }
-  }
-
-  return true;
-}
-
-function getDuplicateReferences(object, state) {
-  var objects = [],
-      duplicatesIndexes = [],
-      index,
-      length;
-
-  inspectNode(object, objects, duplicatesIndexes);
-
-  for (index = 0, length = duplicatesIndexes.length; index < length; index += 1) {
-    state.duplicates.push(objects[duplicatesIndexes[index]]);
-  }
-  state.usedDuplicates = new Array(length);
-}
-
-function inspectNode(object, objects, duplicatesIndexes) {
-  var objectKeyList,
-      index,
-      length;
-
-  if (object !== null && typeof object === 'object') {
-    index = objects.indexOf(object);
-    if (index !== -1) {
-      if (duplicatesIndexes.indexOf(index) === -1) {
-        duplicatesIndexes.push(index);
-      }
-    } else {
-      objects.push(object);
-
-      if (Array.isArray(object)) {
-        for (index = 0, length = object.length; index < length; index += 1) {
-          inspectNode(object[index], objects, duplicatesIndexes);
-        }
-      } else {
-        objectKeyList = Object.keys(object);
-
-        for (index = 0, length = objectKeyList.length; index < length; index += 1) {
-          inspectNode(object[objectKeyList[index]], objects, duplicatesIndexes);
-        }
-      }
-    }
-  }
-}
-
-function dump$1(input, options) {
-  options = options || {};
-
-  var state = new State(options);
-
-  if (!state.noRefs) getDuplicateReferences(input, state);
-
-  var value = input;
-
-  if (state.replacer) {
-    value = state.replacer.call({ '': value }, '', value);
-  }
-
-  if (writeNode(state, 0, value, true, true)) return state.dump + '\n';
-
-  return '';
-}
-
-var dump_1 = dump$1;
-
-var dumper = {
-	dump: dump_1
-};
-
-function renamed(from, to) {
-  return function () {
-    throw new Error('Function yaml.' + from + ' is removed in js-yaml 4. ' +
-      'Use yaml.' + to + ' instead, which is now safe by default.');
-  };
-}
-
-
-var Type                = type;
-var Schema              = schema;
-var FAILSAFE_SCHEMA     = failsafe;
-var JSON_SCHEMA         = json;
-var CORE_SCHEMA         = core;
-var DEFAULT_SCHEMA      = _default;
-var load                = loader.load;
-var loadAll             = loader.loadAll;
-var dump                = dumper.dump;
-var YAMLException       = exception;
-
-// Re-export all types in case user wants to create custom schema
-var types = {
-  binary:    binary,
-  float:     float_1,
-  map:       map,
-  null:      _null,
-  pairs:     pairs,
-  set:       set,
-  timestamp: timestamp,
-  bool:      bool,
-  int:       int_1,
-  merge:     merge,
-  omap:      omap,
-  seq:       seq,
-  str:       str
-};
-
-// Removed functions from JS-YAML 3.0.x
-var safeLoad            = renamed('safeLoad', 'load');
-var safeLoadAll         = renamed('safeLoadAll', 'loadAll');
-var safeDump            = renamed('safeDump', 'dump');
-
-var jsYaml = {
-	Type: Type,
-	Schema: Schema,
-	FAILSAFE_SCHEMA: FAILSAFE_SCHEMA,
-	JSON_SCHEMA: JSON_SCHEMA,
-	CORE_SCHEMA: CORE_SCHEMA,
-	DEFAULT_SCHEMA: DEFAULT_SCHEMA,
-	load: load,
-	loadAll: loadAll,
-	dump: dump,
-	YAMLException: YAMLException,
-	types: types,
-	safeLoad: safeLoad,
-	safeLoadAll: safeLoadAll,
-	safeDump: safeDump
-};
-
 function onRenderLine(cm, line, el) {
-    var _this = this;
-    var parentElement = el.parentElement;
+    const parentElement = el.parentElement;
     if (!parentElement)
-        el.addEventListener("DOMNodeInserted", function (event) { return procLine(cm, line, el, event.relatedNode, _this); }, { once: true });
+        el.addEventListener("DOMNodeInserted", (event) => procLine(cm, line, el, event.relatedNode, this), { once: true });
 }
 function procLine(cm, line, el, parentEl, plugin) {
-    var _a, _b, _c, _d, _e, _f;
+    var _a, _b, _c, _d, _e;
     // for some reason, codemirror or hmd skips putting elements in a wrapping div
     // unsure what causes this to happen but try and account for it by falling back
     // if the parent is the root codemirror-code element
@@ -9854,61 +6633,57 @@ function procLine(cm, line, el, parentEl, plugin) {
     // clear existing data keys
     clearDataKeys(parentEl.dataset);
     // split child classes
-    var childClasses = (_b = (_a = line.styleClasses) === null || _a === void 0 ? void 0 : _a.textClass) === null || _b === void 0 ? void 0 : _b.split(" ");
+    const childClasses = (_b = (_a = line.styleClasses) === null || _a === void 0 ? void 0 : _a.textClass) === null || _b === void 0 ? void 0 : _b.split(" ");
     // line.styles is an array of multi-class strings
     // we combine all of the styles into a single string and then dedupe it
-    var childElementClasses = (_c = line.styles) === null || _c === void 0 ? void 0 : _c.filter(function (style) { return typeof style === "string"; }).join(" ").split(" ").filter(function (v, i, a) { return a.indexOf(v) === i; });
+    const childElementClasses = (_c = line.styles) === null || _c === void 0 ? void 0 : _c.filter((style) => typeof style === "string").join(" ").split(" ").filter((v, i, a) => a.indexOf(v) === i);
     // raise yaml frontmatter attributes up as CSS vars and attrs
     if (childElementClasses.contains("hmd-frontmatter") && line.text !== "---") {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         //@ts-ignore
-        var display = cm.display;
-        var viewEl_1 = (_e = (_d = display === null || display === void 0 ? void 0 : display.wrapper) === null || _d === void 0 ? void 0 : _d.parentElement) === null || _e === void 0 ? void 0 : _e.parentElement;
-        (_f = display === null || display === void 0 ? void 0 : display.scrollbars) === null || _f === void 0 ? void 0 : _f.vert;
-        var approvedAttrs_1 = plugin.settings.allowedYamlKeys.split(",").map(function (item) { return item.trim(); });
+        const display = cm.display;
+        const viewEl = (_e = (_d = display === null || display === void 0 ? void 0 : display.wrapper) === null || _d === void 0 ? void 0 : _d.parentElement) === null || _e === void 0 ? void 0 : _e.parentElement;
+        const approvedAttrs = plugin.settings.allowedYamlKeys.split(",").map(item => item.trim());
         if (plugin.settings.renderBanner) {
-            approvedAttrs_1.push("banner_x", "banner_y", "banner", "banner-height", "banner-style");
+            approvedAttrs.push("banner_x", "banner_y", "banner", "banner-height", "banner-style");
         }
         // try and parse the frontmatter into yaml key/value pairs
-        var kv = void 0;
+        let kv;
         try {
-            var parsedYaml = jsYaml.load(line.text);
-            kv = Object.entries(parsedYaml).map(function (_a) {
-                var key = _a[0], value = _a[1];
-                return ({ key: key, value: value });
-            });
+            const parsedYaml = require$$0.parseYaml(line.text);
+            kv = Object.entries(parsedYaml).map(([key, value]) => ({ key, value }));
         }
-        catch (_g) {
+        catch (_f) {
             kv = [];
         }
-        kv.forEach(function (item) {
+        kv.forEach(item => {
             // if the key is not registered, skip
-            if (!approvedAttrs_1.includes(item.key))
+            if (!approvedAttrs.includes(item.key))
                 return;
             // if the value looks like a file, try and resolve the full path
             if (/\.(jpg|jpeg|md|png|gif)$/.test(item.value)) {
-                var file = void 0, filePath = void 0;
+                let file, filePath;
                 try {
                     (file = plugin.app.metadataCache.getFirstLinkpathDest(decodeURIComponent(item.value), "")) &&
                         (filePath = plugin.app.vault.getResourcePath(file));
                 }
                 catch (_a) { }
                 if (file && filePath) {
-                    viewEl_1.style.setProperty("--" + item.key, "url(" + filePath + ")");
+                    viewEl.style.setProperty(`--${item.key}`, `url(${filePath})`);
                 }
                 else {
-                    viewEl_1.style.setProperty("--" + item.key, "" + item.value);
+                    viewEl.style.setProperty(`--${item.key}`, `${item.value}`);
                 }
             }
             else {
                 // special handling for the banner plugin to turn decimals into percents
                 if (/^banner_[xy]$/.test(item.key)) {
-                    item.value = item.value * 100 + "%";
+                    item.value = `${item.value * 100}%`;
                 }
-                viewEl_1.style.setProperty("--" + item.key, "" + item.value);
+                viewEl.style.setProperty(`--${item.key}`, `${item.value}`);
             }
             try {
-                viewEl_1.setAttribute("data-" + item.key, item.value);
+                viewEl.setAttribute(`data-${item.key}`, item.value);
             }
             catch (_b) { }
         });
@@ -9916,40 +6691,39 @@ function procLine(cm, line, el, parentEl, plugin) {
     // look for anything labeled as a header
     // extract its full text value (minus the initial hash)
     if (childClasses === null || childClasses === void 0 ? void 0 : childClasses.includes("HyperMD-header")) {
-        var _match = line.text.match(/^[#]+[\s]+(.+)/);
+        const _match = line.text.match(/^[#]+[\s]+(.+)/);
         parentEl.dataset["heading"] = (_match === null || _match === void 0 ? void 0 : _match.length) > 0 ? line.text.match(/^[#]+[\s]+(.+)/)[1].trim() : "";
     }
     // check line for any hashtags and add them to a new data key
-    var tokens = cm.getLineTokens(line.lineNo());
-    var parsedTokens = parseLineTokens(tokens);
+    const tokens = cm.getLineTokens(line.lineNo());
+    const parsedTokens = parseLineTokens(tokens);
     if (parsedTokens)
         parentEl.dataset["hashtags"] = parseLineTokens(tokens);
     // infer html tag type based on style classes
-    var htmlTag = childElementClasses ? lookupTag(childElementClasses) : null;
+    const htmlTag = childElementClasses ? lookupTag(childElementClasses) : null;
     if (htmlTag) {
         parentEl.dataset["tagName"] = htmlTag;
     }
 }
 function clearDataKeys(keys) {
     if (keys) {
-        Object.keys(keys).forEach(function (dataKey) {
+        Object.keys(keys).forEach(dataKey => {
             delete keys[dataKey];
         });
     }
 }
 function parseLineTokens(tokens) {
-    tokens = tokens.filter(function (token) { var _a; return (_a = token.type) === null || _a === void 0 ? void 0 : _a.includes("hashtag-end"); });
+    tokens = tokens.filter((token) => { var _a; return (_a = token.type) === null || _a === void 0 ? void 0 : _a.includes("hashtag-end"); });
     if (tokens.length) {
-        var hashtags = tokens.map(function (token) { return token.string; }).join(" ");
+        const hashtags = tokens.map((token) => token.string).join(" ");
         if (hashtags.length) {
-            return tokens.map(function (token) { return token.string; }).join(" ");
+            return tokens.map((token) => token.string).join(" ");
         }
     }
 }
 function lookupTag(classes) {
-    var htmlTag;
-    for (var _i = 0, classes_1 = classes; _i < classes_1.length; _i++) {
-        var className = classes_1[_i];
+    let htmlTag;
+    for (const className of classes) {
         switch (className) {
             case "formatting-list-ol":
                 htmlTag = "ol";
@@ -10026,80 +6800,98 @@ function around1(obj, method, createWrapper) {
     }
 }
 
-var ObsidianCodeMirrorOptionsPlugin = /** @class */ (function (_super) {
-    __extends(ObsidianCodeMirrorOptionsPlugin, _super);
-    function ObsidianCodeMirrorOptionsPlugin() {
-        var _this_1 = _super !== null && _super.apply(this, arguments) || this;
-        _this_1.onImageContextMenu = function (event, target) {
+class ObsidianCodeMirrorOptionsPlugin extends require$$0.Plugin {
+    constructor() {
+        super(...arguments);
+        this.onImageContextMenu = (event, target) => {
             // the "editor-menu" event does not include the MouseEvent or the target HTMLElement
             // so instead, we create this stanadard context menu event handler and hook it into
             // the "editor-menu" event temporarily
-            var boundFunc = _this_1.onEditorMenu.bind(_this_1, target);
-            _this_1.app.workspace.on("editor-menu", boundFunc);
-            setTimeout(function () {
-                _this_1.app.workspace.off("editor-menu", boundFunc);
+            const boundFunc = this.onEditorMenu.bind(this, target);
+            this.app.workspace.on("editor-menu", boundFunc);
+            setTimeout(() => {
+                this.app.workspace.off("editor-menu", boundFunc);
             }, 100);
         };
-        _this_1.onEditorMenu = function (target, menu) {
-            var file;
+        this.onEditorMenu = (target, menu) => {
+            let file;
             if (target.dataset.path) {
-                file = _this_1.app.vault.getAbstractFileByPath(target.dataset.path);
-                if (!(file instanceof obsidian.TFile))
+                file = this.app.vault.getAbstractFileByPath(target.dataset.path);
+                if (!(file instanceof require$$0.TFile))
                     return;
             }
             else if (/^http/i.test(target.getAttribute("src"))) {
                 file = target.getAttribute("src");
             }
             if (file)
-                _this_1.addContextMenuItem(menu, file);
+                this.addContextMenuItem(menu, file);
         };
-        _this_1.addContextMenuItem = function (menu, imageFile) {
-            menu.addItem(function (menuItem) {
+        this.addContextMenuItem = (menu, imageFile) => {
+            menu.addItem(menuItem => {
                 menuItem.setTitle("Copy Image to Clipboard");
                 menuItem.setIcon("image-file");
-                menuItem.onClick(function () { return __awaiter(_this_1, void 0, void 0, function () {
-                    var blob, buffer, arr, item;
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0:
-                                if (!(imageFile instanceof obsidian.TFile)) return [3 /*break*/, 2];
-                                return [4 /*yield*/, this.app.vault.adapter.readBinary(imageFile.path)];
-                            case 1:
-                                buffer = _a.sent();
-                                arr = new Uint8Array(buffer);
-                                blob = new Blob([arr], { type: "image/png" });
-                                return [3 /*break*/, 5];
-                            case 2: return [4 /*yield*/, fetch(imageFile)];
-                            case 3: return [4 /*yield*/, (_a.sent()).blob()];
-                            case 4:
-                                blob = _a.sent();
-                                _a.label = 5;
-                            case 5:
-                                item = new ClipboardItem({ "image/png": blob });
-                                //@ts-ignore
-                                window.navigator.clipboard.write([item]);
-                                return [2 /*return*/];
-                        }
-                    });
-                }); });
+                menuItem.onClick(() => __awaiter(this, void 0, void 0, function* () {
+                    let blob;
+                    if (imageFile instanceof require$$0.TFile) {
+                        const buffer = yield this.app.vault.adapter.readBinary(imageFile.path);
+                        const arr = new Uint8Array(buffer);
+                        blob = new Blob([arr], { type: "image/png" });
+                    }
+                    else {
+                        blob = yield (yield fetch(imageFile)).blob();
+                    }
+                    //@ts-ignore
+                    const item = new ClipboardItem({ "image/png": blob });
+                    //@ts-ignore
+                    window.navigator.clipboard.write([item]);
+                }));
             });
         };
-        _this_1.mdProcessor = function (el) { return __awaiter(_this_1, void 0, void 0, function () {
-            var _this_1 = this;
-            return __generator(this, function (_a) {
-                setTimeout(function () {
-                    _this_1.injectCM(el);
-                }, 100);
-                return [2 /*return*/];
-            });
-        }); };
-        _this_1.onRenderLineBound = onRenderLine.bind(_this_1);
-        _this_1.onImageClick = function (args) {
+        this.onFileLoad = (file, contentEl, editor, leaf) => {
+            editor.state.fileName = file.path;
+            if (this.settings.showBacklinks) {
+                this.addBackLinks(file, editor, leaf);
+            }
+        };
+        this.onFileUnload = (file, contentEl, editor, leaf) => {
+            try {
+                this.resetCodeMirrorState(file, contentEl, editor);
+                editor.doc.clearHistory();
+                editor.clearGutter("CodeMirror-foldgutter");
+                this.hideMathPreview();
+            }
+            catch (_a) {
+                // console.log("unable to clear editor");
+            }
+        };
+        this.onEditorClose = (file, contentEl, editor, leaf) => {
+            this.removeBackLinks(editor);
+            this.unsetCodeMirrorOptions(editor);
+            setTimeout(() => {
+                var _a, _b;
+                try {
+                    editor.display.renderedView = [];
+                    (_a = editor.display.lineDiv) === null || _a === void 0 ? void 0 : _a.empty();
+                    (_b = editor.display.currentWheelTarget) === null || _b === void 0 ? void 0 : _b.empty();
+                    editor.display = null;
+                    editor.blockHTMLObserver.disconnect();
+                    editor.blockHTMLObserver = null;
+                    Object.keys(editor._handlers).forEach(handler => (editor._handlers[handler] = null));
+                }
+                catch (_c) { }
+            }, 500);
+        };
+        this.mdProcessor = (el) => __awaiter(this, void 0, void 0, function* () {
+            setTimeout(() => {
+                this.injectCM(el);
+            }, 100);
+        });
+        this.onRenderLineBound = onRenderLine.bind(this);
+        this.onImageClick = args => {
             args.breakMark(args.editor, args.marker);
         };
-        _this_1.updateCodeMirrorOption = obsidian.debounce(function (optionKey, optionValue, refresh) {
-            if (refresh === void 0) { refresh = false; }
-            _this_1.app.workspace.iterateCodeMirrors(function (cm) {
+        this.updateCodeMirrorOption = require$$0.debounce((optionKey, optionValue, refresh = false) => {
+            this.app.workspace.iterateCodeMirrors(cm => {
                 if (cm && cm.getOption(optionKey) != optionValue) {
                     cm.setOption(optionKey, optionValue);
                     if (refresh)
@@ -10107,10 +6899,8 @@ var ObsidianCodeMirrorOptionsPlugin = /** @class */ (function (_super) {
                 }
             });
         }, 400, true);
-        _this_1.updateCodeMirrorHandlers = obsidian.debounce(function (eventType, callback, enable, refresh) {
-            if (enable === void 0) { enable = true; }
-            if (refresh === void 0) { refresh = false; }
-            _this_1.app.workspace.iterateCodeMirrors(function (cm) {
+        this.updateCodeMirrorHandlers = require$$0.debounce((eventType, callback, enable = true, refresh = false) => {
+            this.app.workspace.iterateCodeMirrors(cm => {
                 if (enable)
                     cm.on(eventType, callback);
                 else
@@ -10119,124 +6909,153 @@ var ObsidianCodeMirrorOptionsPlugin = /** @class */ (function (_super) {
                     cm.refresh();
             });
         }, 0, true);
-        return _this_1;
     }
-    ObsidianCodeMirrorOptionsPlugin.prototype.onload = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this_1 = this;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        // patch the default Obsidian methods, ASAP
-                        this.applyMonkeyPatches();
-                        // load settings
-                        return [4 /*yield*/, this.loadSettings()];
-                    case 1:
-                        // load settings
-                        _a.sent();
-                        // add the settings tab
-                        this.addSettingTab(new ObsidianCodeMirrorOptionsSettingsTab(this.app, this));
-                        this.app.workspace.onLayoutReady(function () {
-                            _this_1.registerCodeMirrorSettings();
-                            _this_1.applyBodyClasses();
-                            _this_1.registerCommands();
-                            setTimeout(function () {
-                                // workaround to ensure our plugin registers properly with Style Settings
-                                _this_1.app.workspace.trigger("css-change");
-                            }, 1000);
-                        });
-                        document.on("contextmenu", "img.hmd-image", this.onImageContextMenu, false);
-                        document.on("contextmenu", ".rendered-widget img:not(.hmd-image)", this.onImageContextMenu, false);
-                        return [2 /*return*/];
-                }
+    onload() {
+        return __awaiter(this, void 0, void 0, function* () {
+            // patch the default Obsidian methods, ASAP
+            //@ts-ignore
+            if (this.app.vault.getConfig("legacyEditor"))
+                this.applyMonkeyPatches();
+            // load settings
+            yield this.loadSettings();
+            // add the settings tab
+            this.addSettingTab(new ObsidianCodeMirrorOptionsSettingsTab(this.app, this));
+            //@ts-ignore
+            if (this.app.vault.getConfig("legacyEditor")) {
+                // initial-file-load is a custom event emitted by a patched MarkdownView.onLoadFile
+                this.registerEvent(this.app.workspace.on("initial-file-load", this.onFileLoad));
+                // file-unload is a custom event emitted by a patched MarkdownView.onUnloadFile
+                this.registerEvent(this.app.workspace.on("file-unload", this.onFileUnload));
+                // editor-close is a custom event emitted by a patched MarkdownView.onClose
+                this.registerEvent(this.app.workspace.on("editor-close", this.onEditorClose));
+                this.app.workspace.onLayoutReady(() => {
+                    this.registerCodeMirrorSettings();
+                    this.registerCommands();
+                    setTimeout(() => {
+                        // workaround to ensure our plugin registers properly with Style Settings
+                        this.app.workspace.trigger("css-change");
+                    }, 1000);
+                });
+                document.on("contextmenu", `img.hmd-image`, this.onImageContextMenu, false);
+                document.on("contextmenu", `.rendered-widget img:not(.hmd-image)`, this.onImageContextMenu, false);
+            }
+            this.app.workspace.onLayoutReady(() => {
+                this.applyBodyClasses();
+                setTimeout(() => {
+                    // workaround to ensure our plugin registers properly with Style Settings
+                    this.app.workspace.trigger("css-change");
+                }, 1000);
             });
         });
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.loadSettings = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var _a, _b, _c, _d;
-            return __generator(this, function (_e) {
-                switch (_e.label) {
-                    case 0:
-                        _a = this;
-                        _c = (_b = Object).assign;
-                        _d = [{}, DEFAULT_SETTINGS];
-                        return [4 /*yield*/, this.loadData()];
-                    case 1:
-                        _a.settings = _c.apply(_b, _d.concat([_e.sent()]));
-                        return [2 /*return*/];
-                }
-            });
+    }
+    loadSettings() {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.settings = Object.assign({}, DEFAULT_SETTINGS, yield this.loadData());
         });
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.applyMonkeyPatches = function () {
+    }
+    resetCodeMirrorState(file, contentEl, editor) {
+        // remove any attributes and styles created by the Container Attributes feature
+        if (contentEl) {
+            Object.keys(contentEl.dataset).forEach(el => contentEl.removeAttribute("data-" + el));
+            contentEl.style = null;
+        }
+        // add the current file path to the CodeMirror state for access by native CM methods
+        editor.hmd.Fold.clearAll();
+        editor.hmd.FoldCode.clearAll();
+    }
+    removeBackLinks(editor) {
+        if (editor.backlinksWidget) {
+            editor.backlinksWidget.unload();
+            editor.display.lineDiv.parentElement.removeChild(editor.backlinksWidget.contentEl);
+            editor.backlinksWidget = null;
+        }
+    }
+    removeBacklinksImmediately() {
+        try {
+            //@ts-ignore
+            this.app.workspace.iterateRootLeaves(leaf => this.removeBackLinks(leaf.view.editor.cm));
+        }
+        catch (err) {
+            // console.log(err);
+        }
+    }
+    addBacklinksImmediately() {
+        try {
+            //@ts-ignore
+            this.app.workspace.iterateRootLeaves(leaf => this.addBackLinks(leaf.view.file, leaf.view.editor.cm, leaf));
+        }
+        catch (_a) { }
+    }
+    addBackLinks(file, editor, leaf) {
+        if (!editor.backlinksWidget) {
+            //@ts-ignore
+            editor.backlinksWidget = this.app.viewRegistry.getViewCreatorByType("backlink")(leaf);
+            editor.backlinksWidget.contentEl.setAttribute("cm-ignore-events", "true");
+            editor.display.lineDiv.parentElement.appendChild(editor.backlinksWidget.contentEl);
+        }
+        editor.backlinksWidget.backlink.update = function () {
+            const e = file;
+            this.backlinkFile !== e && this.recomputeBacklink(e), this.unlinkedFile !== e && this.recomputeUnlinked(e);
+            this.updateHeaderTooltip(this.backlinkHeaderEl, this.backlinkCollapsed),
+                this.updateHeaderTooltip(this.unlinkedHeaderEl, this.unlinkedCollapsed);
+        };
+        if (!editor.backlinksWidget._loaded) {
+            editor.backlinksWidget.load();
+        }
+    }
+    hideMathPreview() {
+        const previewEl = document.querySelector("#math-preview");
+        if (previewEl && !previewEl.hasClass("float-win-hidden")) {
+            previewEl.addClass("float-win-hidden");
+        }
+    }
+    applyMonkeyPatches() {
         // patching onLoadFile to clear CM specific state in order to avoid fold related memory leaks
         // we also add the current file name to the CM state so that CM native actions have a reference
-        var patchOnLoadFile = around(obsidian.MarkdownView.prototype, {
-            onLoadFile: function (old) {
-                // old is the original onLoadFile function
+        const patchFileLifecycle = around(require$$0.MarkdownView.prototype, {
+            onLoadFile(old) {
                 return function (file) {
-                    var _a, _b, _c, _d;
-                    // TODO: emit a trigger and create event handlers instead of performing direct actions here
                     try {
-                        var previewEl = document.querySelector("#math-preview");
-                        if (previewEl && !previewEl.hasClass("float-win-hidden")) {
-                            previewEl.addClass("float-win-hidden");
-                        }
-                        var cm = (_a = this.sourceMode) === null || _a === void 0 ? void 0 : _a.editor.cm;
-                        if (cm) {
-                            var viewEl_1 = (_d = (_c = (_b = cm.display) === null || _b === void 0 ? void 0 : _b.wrapper) === null || _c === void 0 ? void 0 : _c.parentElement) === null || _d === void 0 ? void 0 : _d.parentElement;
-                            if (viewEl_1) {
-                                Object.keys(viewEl_1.dataset).forEach(function (el) { return viewEl_1.removeAttribute("data-" + el); });
-                                viewEl_1.style = null;
-                            }
-                            cm.state.fileName = file.path;
-                            cm.hmd.Fold.folded = {}; // these objects can hold references to detached elements
-                            cm.hmd.FoldCode.folded = {}; // these objects can hold references to detached elements
-                        }
+                        this.app.workspace.trigger("initial-file-load", file, this.contentEl, this.editor.cm, this.leaf);
                     }
-                    catch (_e) { }
-                    return old.call(this, file); // call the orignal function and bind the current scope to it
+                    catch (_a) { }
+                    return old.call(this, file);
                 };
             },
             // @ts-ignore
-            onClose: function (old) {
-                return function () {
-                    var _a, _b, _c, _d;
-                    // TODO: emit a trigger and create event handlers instead of performing direct actions here
+            onUnloadFile(old) {
+                return function (file) {
+                    const result = old.call(this);
                     try {
-                        var cm = (_a = this.sourceMode) === null || _a === void 0 ? void 0 : _a.editor.cm;
-                        if (cm) {
-                            var viewEl_2 = (_d = (_c = (_b = cm.display) === null || _b === void 0 ? void 0 : _b.wrapper) === null || _c === void 0 ? void 0 : _c.parentElement) === null || _d === void 0 ? void 0 : _d.parentElement;
-                            if (viewEl_2) {
-                                Object.keys(viewEl_2.dataset).forEach(function (el) { return viewEl_2.removeAttribute("data-" + el); });
-                                viewEl_2.style = null;
-                            }
-                            cm.hmd.Fold.folded = {}; // these objects can hold references to detached elements
-                            cm.hmd.FoldCode.folded = {}; // these objects can hold references to detached elements
-                        }
-                        var previewEl = document.querySelector("#math-preview");
-                        if (previewEl && !previewEl.hasClass("float-win-hidden")) {
-                            previewEl.addClass("float-win-hidden");
-                        }
+                        this.app.workspace.trigger("file-unload", this.file, this.contentEl, this.editor.cm, this.leaf);
                     }
-                    catch (_e) { }
+                    catch (_a) { }
+                    return result;
+                };
+            },
+            // @ts-ignore
+            onClose(old) {
+                return function () {
+                    try {
+                        this.app.workspace.trigger("editor-close", this.file, this.contentEl, this.editor.cm, this.leaf);
+                    }
+                    catch (_a) { }
                     return old.call(this);
                 };
             },
         });
-        this.register(patchOnLoadFile);
+        this.register(patchFileLifecycle);
         // patch the preview mode click handlers so that we get preview context menus on edit mode rendered widgets
-        var patchSourceView = around(obsidian.MarkdownSourceView.prototype, {
-            attachDomEvents: function (old) {
+        const patchSourceView = around(require$$0.MarkdownSourceView.prototype, {
+            attachDomEvents(old) {
                 return function () {
                     // eslint-disable-next-line @typescript-eslint/no-this-alias
-                    var _this = this, editorEl = this.editorEl;
+                    const _this = this, editorEl = this.editorEl;
                     editorEl.addEventListener("mousedown", this.onCodeMirrorMousedown.bind(this)),
                         editorEl.addEventListener("contextmenu", function (event) {
                             if (event &&
                                 event.path.length &&
-                                event.path.filter(function (el) { return el.hasClass && el.hasClass("rendered-widget"); }).length &&
+                                event.path.filter(el => el.hasClass && el.hasClass("rendered-widget")).length &&
                                 event.path[0].tagName !== "IMG") {
                                 return;
                             }
@@ -10247,48 +7066,47 @@ var ObsidianCodeMirrorOptionsPlugin = /** @class */ (function (_super) {
             },
         });
         this.register(patchSourceView);
-        var patchRenderer = around(obsidian.MarkdownPreviewRenderer.prototype, {
-            onInternalLinkContextMenu: function (old) {
+        const patchRenderer = around(require$$0.MarkdownPreviewRenderer.prototype, {
+            onInternalLinkContextMenu(old) {
                 return function (event, el) {
-                    var href = this.getInternalLinkHref(el);
+                    const href = this.getInternalLinkHref(el);
                     href && this.owner.onInternalLinkRightClick(event, el, href);
                 };
             },
-            onResize: function (old) {
+            onResize(old) {
                 return function () {
-                    var _this_1 = this;
-                    setTimeout(function () {
-                        var _a;
-                        var editor = (_a = _this_1.owner.app.workspace.activeLeaf) === null || _a === void 0 ? void 0 : _a.view.sourceMode.editorEl;
-                        if (editor && !_this_1.widgetHandlersRegistered && _this_1.owner.type === "preview") {
-                            _this_1.widgetHandlersRegistered = true;
-                            editor.on("click", ".rendered-widget a.internal-link", _this_1.onInternalLinkClick.bind(_this_1));
-                            editor.on("auxclick", ".rendered-widget a.internal-link", _this_1.onInternalLinkClick.bind(_this_1));
-                            editor.on("contextmenu", ".rendered-widget a.internal-link", _this_1.onInternalLinkContextMenu.bind(_this_1));
+                    setTimeout(() => {
+                        var _a, _b, _c;
+                        const editor = (_c = (_b = (_a = this.owner.app.workspace.activeLeaf) === null || _a === void 0 ? void 0 : _a.view) === null || _b === void 0 ? void 0 : _b.sourceMode) === null || _c === void 0 ? void 0 : _c.editorEl;
+                        if (editor && !this.widgetHandlersRegistered && this.owner.type === "preview") {
+                            this.widgetHandlersRegistered = true;
+                            editor.on("click", ".rendered-widget a.internal-link", this.onInternalLinkClick.bind(this));
+                            editor.on("auxclick", ".rendered-widget a.internal-link", this.onInternalLinkClick.bind(this));
+                            editor.on("contextmenu", ".rendered-widget a.internal-link", this.onInternalLinkContextMenu.bind(this));
                             // editor.on("mouseover", ".rendered-widget a.internal-link", this.onInternalLinkMouseover.bind(this));
-                            editor.on("click", ".rendered-widget a.external-link", _this_1.onExternalLinkClick.bind(_this_1));
-                            editor.on("click", ".rendered-widget a.footnote-link", _this_1.onFootnoteLinkClick.bind(_this_1));
-                            editor.on("click", ".rendered-widget .task-list-item-checkbox", _this_1.onCheckboxClick.bind(_this_1));
-                            editor.on("click", ".rendered-widget a.tag", _this_1.onTagClick.bind(_this_1));
-                            editor.on("click", ".rendered-widget a.internal-query", _this_1.onInternalQueryClick.bind(_this_1));
-                            editor.on("click", ".rendered-widget .heading-collapse-indicator", _this_1.onHeadingCollapseClick.bind(_this_1));
-                            editor.on("click", ".rendered-widget li > .list-collapse-indicator", _this_1.onListCollapseClick.bind(_this_1));
+                            editor.on("click", ".rendered-widget a.external-link", this.onExternalLinkClick.bind(this));
+                            editor.on("click", ".rendered-widget a.footnote-link", this.onFootnoteLinkClick.bind(this));
+                            editor.on("click", ".rendered-widget .task-list-item-checkbox", this.onCheckboxClick.bind(this));
+                            editor.on("click", ".rendered-widget a.tag", this.onTagClick.bind(this));
+                            editor.on("click", ".rendered-widget a.internal-query", this.onInternalQueryClick.bind(this));
+                            editor.on("click", ".rendered-widget .heading-collapse-indicator", this.onHeadingCollapseClick.bind(this));
+                            editor.on("click", ".rendered-widget li > .list-collapse-indicator", this.onListCollapseClick.bind(this));
                             // editor.on("click", ".rendered-widget img", this.onImageClick.bind(this));
                         }
                     }, 100);
                     return old.call(this);
                 };
             },
-            belongsToMe: function (old) {
+            belongsToMe(old) {
                 return function (el) {
                     // save the original element so we can pass it to the original method
-                    var _el = el;
+                    const _el = el;
                     // check to see if the element is a sibling of a rendered widget
                     for (; el;) {
                         if (el.hasClass("rendered-widget") && el.tagName !== "IMG") {
                             return true;
                         }
-                        var parentEl = el.parentElement;
+                        const parentEl = el.parentElement;
                         if (!parentEl)
                             return old.call(this, _el);
                         el = parentEl;
@@ -10297,119 +7115,131 @@ var ObsidianCodeMirrorOptionsPlugin = /** @class */ (function (_super) {
             },
         });
         this.register(patchRenderer);
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.registerCommands = function () {
-        var _this_1 = this;
+    }
+    getHmdOptions(type) {
+        switch (type) {
+            case "hmdFold":
+                return {
+                    image: this.settings.foldImages,
+                    link: this.settings.foldLinks,
+                    html: this.settings.renderHTML,
+                    code: this.settings.renderCode,
+                    math: this.settings.renderMath,
+                    embed: this.settings.renderEmbeds,
+                    emoji: this.settings.renderEmoji,
+                };
+            case "hmdFoldCode":
+                return {
+                    admonition: this.settings.renderAdmonition,
+                    chart: this.settings.renderChart,
+                    query: this.settings.renderQuery,
+                    dataview: this.settings.renderDataview,
+                    tasks: this.settings.renderTasks,
+                };
+            default:
+                assertNever(type);
+        }
+    }
+    updateHmdOptions(type) {
+        return this.updateCodeMirrorOption(type, this.getHmdOptions(type));
+    }
+    registerCommands() {
         this.addCommand({
             id: "toggle-openmd",
             name: "Toggle OpenMD Mode",
-            callback: function () {
-                _this_1.settings.enableOpenMD = !_this_1.settings.enableOpenMD;
-                _this_1.saveData(_this_1.settings);
-                _this_1.updateCodeMirrorOption("mode", _this_1.settings.enableOpenMD ? "openmd" : "hypermd");
+            callback: () => {
+                this.settings.enableOpenMD = !this.settings.enableOpenMD;
+                this.saveData(this.settings);
+                this.updateCodeMirrorOption("mode", this.settings.enableOpenMD ? "openmd" : "hypermd");
             },
         });
         this.addCommand({
             id: "toggle-hide-tokens",
             name: "Toggle Hide Markdown Tokens",
-            callback: function () {
-                _this_1.settings.editModeHideTokens = !_this_1.settings.editModeHideTokens;
-                _this_1.saveData(_this_1.settings);
-                _this_1.updateCodeMirrorOption("hmdHideToken", _this_1.settings.editModeHideTokens ? _this_1.settings.tokenList : false);
-                _this_1.applyBodyClasses();
+            callback: () => {
+                this.settings.editModeHideTokens = !this.settings.editModeHideTokens;
+                this.saveData(this.settings);
+                this.updateCodeMirrorOption("hmdHideToken", this.settings.editModeHideTokens ? this.settings.tokenList : false);
+                this.applyBodyClasses();
             },
         });
         this.addCommand({
             id: "toggle-click-handler",
             name: "Toggle Edit Mode Click Handler",
-            callback: function () {
-                _this_1.settings.editModeClickHandler = !_this_1.settings.editModeClickHandler;
-                _this_1.saveData(_this_1.settings);
-                _this_1.updateCodeMirrorOption("hmdClick", _this_1.settings.editModeClickHandler);
+            callback: () => {
+                this.settings.editModeClickHandler = !this.settings.editModeClickHandler;
+                this.saveData(this.settings);
+                this.updateCodeMirrorOption("hmdClick", this.settings.editModeClickHandler);
             },
         });
         this.addCommand({
             id: "toggle-collapse-links",
             name: "Toggle Collapse External Links",
-            callback: function () {
-                _this_1.settings.foldLinks = !_this_1.settings.foldLinks;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                _this_1.updateCodeMirrorOption("hmdFold", {
-                    image: _this_1.settings.foldImages,
-                    link: _this_1.settings.foldLinks,
-                    html: _this_1.settings.renderHTML,
-                    code: _this_1.settings.renderCode,
-                    math: _this_1.settings.renderMath,
-                });
+            callback: () => {
+                this.settings.foldLinks = !this.settings.foldLinks;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFold");
             },
         });
         this.addCommand({
             id: "toggle-render-images-inline",
             name: "Toggle Render Images Inline",
-            callback: function () {
-                _this_1.settings.foldImages = !_this_1.settings.foldImages;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                _this_1.updateCodeMirrorOption("hmdFold", {
-                    image: _this_1.settings.foldImages,
-                    link: _this_1.settings.foldLinks,
-                    html: _this_1.settings.renderHTML,
-                    code: _this_1.settings.renderCode,
-                    math: _this_1.settings.renderMath,
-                });
+            callback: () => {
+                this.settings.foldImages = !this.settings.foldImages;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFold");
             },
         });
         this.addCommand({
             id: "toggle-render-html",
             name: "Toggle Render HTML",
-            callback: function () {
-                _this_1.settings.renderHTML = !_this_1.settings.renderHTML;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                _this_1.updateCodeMirrorOption("hmdFold", {
-                    image: _this_1.settings.foldImages,
-                    link: _this_1.settings.foldLinks,
-                    html: _this_1.settings.renderHTML,
-                    code: _this_1.settings.renderCode,
-                    math: _this_1.settings.renderMath,
-                });
+            callback: () => {
+                this.settings.renderHTML = !this.settings.renderHTML;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFold");
+            },
+        });
+        this.addCommand({
+            id: "toggle-render-embeds",
+            name: "Toggle Render Embeds",
+            callback: () => {
+                this.settings.renderEmbeds = !this.settings.renderEmbeds;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFold");
             },
         });
         this.addCommand({
             id: "toggle-render-math",
             name: "Toggle Render Math",
-            callback: function () {
-                _this_1.settings.renderMath = !_this_1.settings.renderMath;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                _this_1.updateCodeMirrorOption("hmdFold", {
-                    image: _this_1.settings.foldImages,
-                    link: _this_1.settings.foldLinks,
-                    html: _this_1.settings.renderHTML,
-                    code: _this_1.settings.renderCode,
-                    math: _this_1.settings.renderMath,
-                });
+            callback: () => {
+                this.settings.renderMath = !this.settings.renderMath;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFold");
             },
         });
         this.addCommand({
             id: "toggle-render-math-preview",
             name: "Toggle Render Math Preview",
-            callback: function () {
-                _this_1.settings.renderMathPreview = !_this_1.settings.renderMathPreview;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                if (_this_1.settings.renderMathPreview) {
-                    _this_1.app.workspace.iterateCodeMirrors(function (cm) {
+            callback: () => {
+                this.settings.renderMathPreview = !this.settings.renderMathPreview;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                if (this.settings.renderMathPreview) {
+                    this.app.workspace.iterateCodeMirrors(cm => {
                         init_math_preview(cm);
                     });
                 }
                 else {
-                    var previewEl = document.querySelector("#math-preview");
+                    const previewEl = document.querySelector("#math-preview");
                     if (previewEl) {
                         document.querySelector("#math-preview").detach();
                     }
-                    _this_1.app.workspace.iterateCodeMirrors(function (cm) {
+                    this.app.workspace.iterateCodeMirrors(cm => {
                         unload_math_preview(cm);
                     });
                 }
@@ -10418,176 +7248,169 @@ var ObsidianCodeMirrorOptionsPlugin = /** @class */ (function (_super) {
         this.addCommand({
             id: "toggle-render-code",
             name: "Toggle Render Code",
-            callback: function () {
-                _this_1.settings.renderCode = !_this_1.settings.renderCode;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                _this_1.updateCodeMirrorOption("hmdFold", {
-                    image: _this_1.settings.foldImages,
-                    link: _this_1.settings.foldLinks,
-                    html: _this_1.settings.renderHTML,
-                    code: _this_1.settings.renderCode,
-                    math: _this_1.settings.renderMath,
-                });
+            callback: () => {
+                this.settings.renderCode = !this.settings.renderCode;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFold");
             },
         });
         this.addCommand({
             id: "toggle-render-dataview",
             name: "Toggle Render Dataview",
-            callback: function () {
-                _this_1.settings.renderDataview = !_this_1.settings.renderDataview;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                _this_1.updateCodeMirrorOption("hmdFoldCode", {
-                    admonition: _this_1.settings.renderAdmonition,
-                    chart: _this_1.settings.renderChart,
-                    query: _this_1.settings.renderQuery,
-                    dataview: _this_1.settings.renderDataview,
-                });
+            callback: () => {
+                this.settings.renderDataview = !this.settings.renderDataview;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFoldCode");
             },
         });
         this.addCommand({
             id: "toggle-render-chart",
             name: "Toggle Render Charts",
-            callback: function () {
-                _this_1.settings.renderChart = !_this_1.settings.renderChart;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                _this_1.updateCodeMirrorOption("hmdFoldCode", {
-                    admonition: _this_1.settings.renderAdmonition,
-                    chart: _this_1.settings.renderChart,
-                    query: _this_1.settings.renderQuery,
-                    dataview: _this_1.settings.renderDataview,
-                });
+            callback: () => {
+                this.settings.renderChart = !this.settings.renderChart;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFoldCode");
             },
         });
         this.addCommand({
             id: "toggle-render-admonition",
             name: "Toggle Render Admonitions",
-            callback: function () {
-                _this_1.settings.renderAdmonition = !_this_1.settings.renderAdmonition;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                _this_1.updateCodeMirrorOption("hmdFoldCode", {
-                    admonition: _this_1.settings.renderAdmonition,
-                    chart: _this_1.settings.renderChart,
-                    query: _this_1.settings.renderQuery,
-                    dataview: _this_1.settings.renderDataview,
-                });
+            callback: () => {
+                this.settings.renderAdmonition = !this.settings.renderAdmonition;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFoldCode");
             },
         });
         this.addCommand({
             id: "toggle-render-query",
             name: "Toggle Render Search Queries",
-            callback: function () {
-                _this_1.settings.renderQuery = !_this_1.settings.renderQuery;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses();
-                _this_1.updateCodeMirrorOption("hmdFoldCode", {
-                    admonition: _this_1.settings.renderAdmonition,
-                    chart: _this_1.settings.renderChart,
-                    query: _this_1.settings.renderQuery,
-                    dataview: _this_1.settings.renderDataview,
-                });
+            callback: () => {
+                this.settings.renderQuery = !this.settings.renderQuery;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFoldCode");
+            },
+        });
+        this.addCommand({
+            id: "toggle-render-tasks",
+            name: "Toggle Render Tasks",
+            callback: () => {
+                this.settings.renderTasks = !this.settings.renderTasks;
+                this.saveData(this.settings);
+                this.applyBodyClasses();
+                this.updateHmdOptions("hmdFoldCode");
+            },
+        });
+        this.addCommand({
+            id: "toggle-backlinks-in-editor",
+            name: "Toggle Backlinks in Editor",
+            callback: () => {
+                this.settings.showBacklinks = !this.settings.showBacklinks;
+                this.saveData(this.settings);
+                this.settings.showBacklinks ? this.addBacklinksImmediately() : this.removeBacklinksImmediately();
             },
         });
         this.addCommand({
             id: "toggle-container-attributes",
             name: "Toggle Container Attributes",
-            callback: function () {
-                _this_1.settings.containerAttributes = !_this_1.settings.containerAttributes;
-                _this_1.saveData(_this_1.settings);
-                _this_1.updateCodeMirrorHandlers("renderLine", _this_1.onRenderLineBound, _this_1.settings.containerAttributes, true);
+            callback: () => {
+                this.settings.containerAttributes = !this.settings.containerAttributes;
+                this.saveData(this.settings);
+                this.updateCodeMirrorHandlers("renderLine", this.onRenderLineBound, this.settings.containerAttributes, true);
             },
         });
         this.addCommand({
             id: "toggle-dynamic-cursor-size",
             name: "Toggle Dynamic Cursor Size",
-            callback: function () {
-                _this_1.settings.dynamicCursor = !_this_1.settings.dynamicCursor;
-                _this_1.saveData(_this_1.settings);
-                _this_1.updateCodeMirrorOption("singleCursorHeightPerLine", !_this_1.settings.dynamicCursor);
+            callback: () => {
+                this.settings.dynamicCursor = !this.settings.dynamicCursor;
+                this.saveData(this.settings);
+                this.updateCodeMirrorOption("singleCursorHeightPerLine", !this.settings.dynamicCursor);
             },
         });
         this.addCommand({
             id: "toggle-style-active-selection",
             name: "Toggle Style Active Selection",
-            callback: function () {
-                _this_1.settings.markSelection = !_this_1.settings.markSelection;
-                _this_1.saveData(_this_1.settings);
-                _this_1.updateCodeMirrorOption("styleSelectedText", _this_1.settings.markSelection);
-                _this_1.applyBodyClasses();
+            callback: () => {
+                this.settings.markSelection = !this.settings.markSelection;
+                this.saveData(this.settings);
+                this.updateCodeMirrorOption("styleSelectedText", this.settings.markSelection);
+                this.applyBodyClasses();
             },
         });
         this.addCommand({
             id: "toggle-retain-active-line",
             name: "Toggle Retain Active Line on Selection",
-            callback: function () {
-                _this_1.settings.activeLineOnSelect = !_this_1.settings.activeLineOnSelect;
-                _this_1.saveData(_this_1.settings);
-                _this_1.updateCodeMirrorOption("styleActiveLine", _this_1.settings.activeLineOnSelect ? { nonEmpty: true } : true);
+            callback: () => {
+                this.settings.activeLineOnSelect = !this.settings.activeLineOnSelect;
+                this.saveData(this.settings);
+                this.updateCodeMirrorOption("styleActiveLine", this.settings.activeLineOnSelect ? { nonEmpty: true } : true);
             },
         });
         this.addCommand({
             id: "toggle-edit-mode-syntax",
             name: "Toggle Edit Mode Syntax Highlighting",
-            callback: function () {
-                _this_1.settings.syntaxHighlighting = !_this_1.settings.syntaxHighlighting;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses(true);
+            callback: () => {
+                this.settings.syntaxHighlighting = !this.settings.syntaxHighlighting;
+                this.saveData(this.settings);
+                this.applyBodyClasses(true);
             },
         });
         this.addCommand({
             id: "toggle-preview-mode-syntax",
             name: "Toggle Preview Mode Syntax Highlighting",
-            callback: function () {
-                _this_1.settings.enablePrismJSStyling = !_this_1.settings.enablePrismJSStyling;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses(true);
+            callback: () => {
+                this.settings.enablePrismJSStyling = !this.settings.enablePrismJSStyling;
+                this.saveData(this.settings);
+                this.applyBodyClasses(true);
             },
         });
         this.addCommand({
             id: "toggle-codemirror-in-preview-mode",
             name: "Toggle CodeMirror in Preview Mode",
-            callback: function () {
-                _this_1.settings.enableCMinPreview = !_this_1.settings.enableCMinPreview;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses(true);
+            callback: () => {
+                this.settings.enableCMinPreview = !this.settings.enableCMinPreview;
+                this.saveData(this.settings);
+                this.applyBodyClasses(true);
             },
         });
         this.addCommand({
             id: "toggle-cm-line-numbers-in-preview-mode",
             name: "Toggle CM Line Numbers in Preview Mode",
-            callback: function () {
-                _this_1.settings.showLineNums = !_this_1.settings.showLineNums;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses(true);
+            callback: () => {
+                this.settings.showLineNums = !this.settings.showLineNums;
+                this.saveData(this.settings);
+                this.applyBodyClasses(true);
             },
         });
         this.addCommand({
             id: "toggle-cm-copy-button-in-preview-mode",
             name: "Toggle Copy Button in Preview Mode",
-            callback: function () {
-                _this_1.settings.copyButton = !_this_1.settings.copyButton;
-                _this_1.saveData(_this_1.settings);
-                _this_1.applyBodyClasses(true);
+            callback: () => {
+                this.settings.copyButton = !this.settings.copyButton;
+                this.saveData(this.settings);
+                this.applyBodyClasses(true);
             },
         });
         this.addCommand({
             id: "toggle-auto-align-table",
             name: "Toggle Auto Align Tables",
-            callback: function () {
-                _this_1.settings.autoAlignTables = !_this_1.settings.autoAlignTables;
-                _this_1.saveData(_this_1.settings);
-                _this_1.updateCodeMirrorOption("hmdTableAlign", _this_1.settings.autoAlignTables);
+            callback: () => {
+                this.settings.autoAlignTables = !this.settings.autoAlignTables;
+                this.saveData(this.settings);
+                this.updateCodeMirrorOption("hmdTableAlign", this.settings.autoAlignTables);
             },
         });
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.injectCM = function (el) {
+    }
+    injectCM(el) {
         var _a;
         // only get code block elements with a language but not any that have already been colorized
-        var preElement = el.firstChild;
-        var codeElement = (_a = el.firstChild) === null || _a === void 0 ? void 0 : _a.firstChild;
+        const preElement = el.firstChild;
+        const codeElement = (_a = el.firstChild) === null || _a === void 0 ? void 0 : _a.firstChild;
         if (!codeElement)
             return;
         if (codeElement.tagName !== "CODE")
@@ -10603,10 +7426,10 @@ var ObsidianCodeMirrorOptionsPlugin = /** @class */ (function (_super) {
         }
         if (preElement.classList.value.includes("cm-s-obsidian"))
             return;
-        codeElement.classList.forEach(function (className) {
+        codeElement.classList.forEach((className) => {
             if (className.startsWith("language-")) {
                 // set data-lang to the code block language for easier colorize usage
-                var language = className.replace("language-", "");
+                let language = className.replace("language-", "");
                 switch (language) {
                     case "html":
                         language = "htmlmixed";
@@ -10625,63 +7448,50 @@ var ObsidianCodeMirrorOptionsPlugin = /** @class */ (function (_super) {
         CodeMirror.colorize([codeElement], null, this.settings.showLineNums);
         preElement.querySelector(".copy-code-button").remove();
         this.addCopyButton(preElement);
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.addCopyButton = function (element) {
+    }
+    addCopyButton(element) {
         if (this.settings.copyButton) {
-            var codeBlock_1 = element;
-            var copyButton_1 = document.createElement("button");
-            copyButton_1.className = "copy";
-            copyButton_1.type = "button";
+            const codeBlock = element;
+            const copyButton = document.createElement("button");
+            copyButton.className = "copy";
+            copyButton.type = "button";
             // copyButton.ariaLabel = 'Copy code to clipboard';
-            copyButton_1.innerText = "Copy";
-            codeBlock_1.append(copyButton_1);
-            copyButton_1.addEventListener("click", function () {
+            copyButton.innerText = "Copy";
+            codeBlock.append(copyButton);
+            copyButton.addEventListener("click", function () {
                 // exclude line numbers when copying code to clipboard
-                var code = codeBlock_1.querySelector("code");
-                var clone = code.cloneNode(true);
-                clone.findAll("span.cm-linenumber").forEach(function (e) { return e.remove(); });
-                var codeText = clone.textContent.trim();
+                const code = codeBlock.querySelector("code");
+                const clone = code.cloneNode(true);
+                clone.findAll("span.cm-linenumber").forEach(e => e.remove());
+                const codeText = clone.textContent.trim();
                 window.navigator.clipboard.writeText(codeText);
-                copyButton_1.innerText = "Copied";
+                copyButton.innerText = "Copied";
                 setTimeout(function () {
-                    copyButton_1.innerText = "Copy";
+                    copyButton.innerText = "Copy";
                 }, 4000);
             });
         }
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.registerCodeMirrorSettings = function () {
-        var _this_1 = this;
-        this.registerCodeMirror(function (cm) {
-            cm.setOption("styleSelectedText", _this_1.settings.markSelection);
-            cm.setOption("singleCursorHeightPerLine", !_this_1.settings.dynamicCursor);
-            cm.setOption("styleActiveLine", _this_1.settings.activeLineOnSelect ? { nonEmpty: true } : true);
-            if (_this_1.settings.enableOpenMD)
+    }
+    registerCodeMirrorSettings() {
+        this.registerCodeMirror(cm => {
+            cm.setOption("styleSelectedText", this.settings.markSelection);
+            cm.setOption("singleCursorHeightPerLine", !this.settings.dynamicCursor);
+            cm.setOption("styleActiveLine", this.settings.activeLineOnSelect ? { nonEmpty: true } : true);
+            if (this.settings.enableOpenMD)
                 cm.setOption("mode", "openmd");
-            cm.setOption("hmdHideToken", _this_1.settings.editModeHideTokens ? _this_1.settings.tokenList : false);
-            cm.setOption("hmdClick", _this_1.settings.editModeClickHandler);
-            cm.setOption("hmdTableAlign", _this_1.settings.autoAlignTables);
-            cm.setOption("cursorBlinkRate", _this_1.settings.cursorBlinkRate);
-            cm.setOption("hmdFold", {
-                image: _this_1.settings.foldImages,
-                link: _this_1.settings.foldLinks,
-                html: _this_1.settings.renderHTML,
-                code: _this_1.settings.renderCode,
-                math: _this_1.settings.renderMath,
-            });
-            cm.setOption("hmdFoldCode", {
-                admonition: _this_1.settings.renderAdmonition,
-                chart: _this_1.settings.renderChart,
-                query: _this_1.settings.renderQuery,
-                dataview: _this_1.settings.renderDataview,
-            });
-            if (_this_1.settings.renderMathPreview)
+            cm.setOption("hmdHideToken", this.settings.editModeHideTokens ? this.settings.tokenList : false);
+            cm.setOption("hmdClick", this.settings.editModeClickHandler);
+            cm.setOption("hmdTableAlign", this.settings.autoAlignTables);
+            cm.setOption("cursorBlinkRate", this.settings.cursorBlinkRate);
+            cm.setOption("hmdFold", this.getHmdOptions("hmdFold"));
+            cm.setOption("hmdFoldCode", this.getHmdOptions("hmdFoldCode"));
+            if (this.settings.renderMathPreview)
                 init_math_preview(cm);
-            if (_this_1.settings.containerAttributes)
-                _this_1.updateCodeMirrorHandlers("renderLine", _this_1.onRenderLineBound, true, true);
+            if (this.settings.containerAttributes)
+                this.updateCodeMirrorHandlers("renderLine", this.onRenderLineBound, true, true);
         });
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.applyBodyClasses = function (refresh) {
-        if (refresh === void 0) { refresh = false; }
+    }
+    applyBodyClasses(refresh = false) {
         this.settings.editModeHideTokens
             ? !document.body.hasClass("hide-tokens")
                 ? document.body.addClass("hide-tokens")
@@ -10734,55 +7544,63 @@ var ObsidianCodeMirrorOptionsPlugin = /** @class */ (function (_super) {
             : document.body.removeClass("cm-render-banners");
         this.settings.enableCMinPreview
             ? this.registerMarkdownPostProcessor(this.mdProcessor)
-            : obsidian.MarkdownPreviewRenderer.unregisterPostProcessor(this.mdProcessor);
+            : require$$0.MarkdownPreviewRenderer.unregisterPostProcessor(this.mdProcessor);
         if (refresh)
             this.refreshPanes();
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.unsetCodeMirrorOptions = function () {
-        var _this_1 = this;
-        this.app.workspace.iterateCodeMirrors(function (cm) {
+    }
+    unsetCodeMirrorOptions(cm) {
+        cm.setOption("styleSelectedText", false);
+        cm.setOption("singleCursorHeightPerLine", true);
+        cm.setOption("styleActiveLine", true);
+        cm.setOption("mode", "hypermd");
+        cm.setOption("hmdHideToken", false);
+        cm.setOption("hmdFold", { image: false, link: false, html: false, code: false, math: false, emoji: false });
+        cm.setOption("hmdTableAlign", false);
+        cm.setOption("hmdClick", false);
+        cm.setOption("cursorBlinkRate", 530);
+        cm.off("renderLine", this.onRenderLineBound);
+        unload_math_preview(cm);
+        // cm.off("imageClicked", this.onImageClick);
+        cm.refresh();
+    }
+    unsetAllCodeMirrorOptions() {
+        this.app.workspace.iterateCodeMirrors(cm => {
             // revert CodeMirror options back to the CM/Obsidian defaults
-            cm.setOption("styleSelectedText", false);
-            cm.setOption("singleCursorHeightPerLine", true);
-            cm.setOption("styleActiveLine", true);
-            cm.setOption("mode", "hypermd");
-            cm.setOption("hmdHideToken", false);
-            cm.setOption("hmdFold", { image: false, link: false, html: false, code: false, math: false });
-            cm.setOption("hmdTableAlign", false);
-            cm.setOption("hmdClick", false);
-            cm.setOption("cursorBlinkRate", 530);
-            cm.off("renderLine", _this_1.onRenderLineBound);
-            unload_math_preview(cm);
-            // cm.off("imageClicked", this.onImageClick);
-            cm.refresh();
+            try {
+                //@ts-ignore
+                cm.hmd.Fold.clearAll();
+                //@ts-ignore
+                cm.hmd.FoldCode.clearAll();
+            }
+            catch (_a) { }
+            this.unsetCodeMirrorOptions(cm);
         });
         document.body.classList.remove("style-active-selection", "style-check-box", "hide-tokens", "fallback-highlighting");
         document.body.classList.remove("cm-render-banners", "cm-collapse-external-links", "cm-render-images-inline");
         document.body.classList.remove("unified-cm-highlighting", "cm-show-copy-button-on-pre", "cm-show-line-nums");
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.refreshPanes = function () {
-        this.app.workspace.getLeavesOfType("markdown").forEach(function (leaf) {
-            if (leaf.view instanceof obsidian.MarkdownView) {
+    }
+    refreshPanes() {
+        this.app.workspace.getLeavesOfType("markdown").forEach(leaf => {
+            if (leaf.view instanceof require$$0.MarkdownView) {
                 leaf.view.previewMode.rerender(true);
             }
         });
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.getActiveCmEditor = function () {
+    }
+    getActiveCmEditor() {
         var _a;
-        var view = this.app.workspace.getActiveViewOfType(obsidian.MarkdownView);
+        const view = this.app.workspace.getActiveViewOfType(require$$0.MarkdownView);
         //@ts-ignore
         if (view)
             return (_a = view.sourceMode) === null || _a === void 0 ? void 0 : _a.cmEditor;
         return null;
-    };
-    ObsidianCodeMirrorOptionsPlugin.prototype.onunload = function () {
-        this.unsetCodeMirrorOptions();
-        obsidian.MarkdownPreviewRenderer.unregisterPostProcessor(this.mdProcessor);
+    }
+    onunload() {
+        this.unsetAllCodeMirrorOptions();
+        require$$0.MarkdownPreviewRenderer.unregisterPostProcessor(this.mdProcessor);
         this.refreshPanes();
-        document.off("contextmenu", "img.hmd-image", this.onImageContextMenu, false);
-        document.off("contextmenu", ".rendered-widget img:not(.hmd-image)", this.onImageContextMenu, false);
-    };
-    return ObsidianCodeMirrorOptionsPlugin;
-}(obsidian.Plugin));
+        document.off("contextmenu", `img.hmd-image`, this.onImageContextMenu, false);
+        document.off("contextmenu", `.rendered-widget img:not(.hmd-image)`, this.onImageContextMenu, false);
+    }
+}
 
 module.exports = ObsidianCodeMirrorOptionsPlugin;

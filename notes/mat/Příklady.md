@@ -40,3 +40,14 @@ $$d = b/2 = 170/2 = 85$$
 
 ---
 Jedničku z matematiky má na vysvědčení celkem 9 studentů. Jedničku z fyziky má na vysvědčení celkem 10 studentů. Jedničku z matematiky, nebo z fyziky má na vysvědčení 16 studentů. Jedničku z matematiky má třikrát více studentů, než je studentů, kteří mají jedničku z obou předmětů. Celkem je ve třídě 18 studentů, kteří nemají jedničku z matematiky ani z fyziky. Kolik studentů má jedničku z obou předmětů? Kolik je ve třídě celkem studentů, za předpokladu, že všichni byli klasifikování z matematiky i fyziky? Vennův diagram zakreslete.
+
+---
+$$
+(\frac{5a+4}a-3):\frac{a+2}{7a^2}
+$$
+$$
+\frac{5a+4}a : \frac{a+2}{7a^2} = \frac{5a+4}a * \frac{7a^2}{a+2} = \frac{(5a+4)7a^2}{a^2 + 2}
+$$
+$$
+\frac{5a+4}a - \frac{a+2}{7a^2} = \frac{7a^2(5a+4) - (a+2)}{7a^2} = \frac{35a^3 + 28a^2 - a - 2}{7a^2}
+$$
