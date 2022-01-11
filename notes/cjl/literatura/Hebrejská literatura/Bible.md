@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/literatura]
+---
 # Bible
 $$\tau\alpha \space \beta \iota \beta \lambda \iota \alpha $$
 - písmo svaté

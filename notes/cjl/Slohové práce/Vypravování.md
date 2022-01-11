@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/sloh]
+---
 # Vypravování
 - barvité (přidávání přídavných jmen k podst. jm.)
 - dějová slovesa; vyhnout se být a mít

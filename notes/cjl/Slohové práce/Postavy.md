@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/sloh]
+---
 # Postavy
 ## Androidi
 Humanoidní roboti s prvky inteligence.
