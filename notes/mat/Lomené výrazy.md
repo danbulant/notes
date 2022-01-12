@@ -1,3 +1,6 @@
+---
+tags: [mat]
+---
 # Lomené výrazy
 - výraz ve tvaru zlomku
 ## Podmínky

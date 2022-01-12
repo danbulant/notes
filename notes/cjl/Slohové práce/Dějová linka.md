@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/sloh]
+---
 # Dějová linka
 ## 2040
 První androidi kteří jsou ekonomicky výhodní

@@ -1,3 +1,6 @@
+---
+tags: [mat]
+---
 # Mnohočlen
 Pouze přirozená čísla v exponentech.
 $$

@@ -1,3 +1,6 @@
+---
+tags: [ele]
+---
 # Vzorníček
 ## Vzorce
 | Název             | Zkratka | Výpočet            | Jednotka |
@@ -32,6 +35,15 @@ $W = U * Q$
 $[R] = \Omega$ ohm
 Brání průchodu proudu
 *Vlastnost spotřebiče či vodiče*
+#### Výpočty s rezistory
+##### Paralelně
+$$
+R=\frac{1}{\frac{1}{R_1}+\frac{1}{R_2}\dots}
+$$
+##### Sériově
+$$
+R = R_1 + R_2 \dots
+$$
 ### Výkon P
 $[P] = W$ watt
 $P = \frac{W}{t}$
