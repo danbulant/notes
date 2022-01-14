@@ -12,6 +12,7 @@ imagePrefix: 'data/'
 -  [[cjl/literatura/Hebrejská literatura/Hebrejská literatura|Hebrejská literatura]]
 -  [[cjl/literatura/poznávání žánrů|poznávání žánrů]]
 -  [[cjl/literatura/Řecká literatura/Řecká literatura|Řecká literatura]]
+-  [[cjl/literatura/slohy/slohy|slohy]]
 -  [[cjl/literatura/Slovní spojení|Slovní spojení]]
 -  [[cjl/literatura/Tropy a figury|Tropy a figury]]
 -  [[cjl/literatura/Základní literaturní pojmy|Základní literaturní pojmy]]
