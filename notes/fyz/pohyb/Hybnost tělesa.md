@@ -1,3 +1,6 @@
+---
+tags: [fyz]
+---
 # Hybnost tělesa
 $p$
 Součin hmotnosti a velikosti okamžité rychlosti se ve fyzice nazývá velikost hybnosti tělesa.

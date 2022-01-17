@@ -1,3 +1,6 @@
+---
+tags: [ech]
+---
 # Směsi
 - směs obsahuje více než jeden typ částic
 - skládá se ze dvou a více chemicky čistých látek, při jejichž smísení nedochází ke vzniku nebo zániku chemických vazeb, mísení není chemický děj.

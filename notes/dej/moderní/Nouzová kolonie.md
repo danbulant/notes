@@ -1,3 +1,6 @@
+---
+tags: [dej]
+---
 # Nouzová kolonie
 - v podstatě SLUM
 - na okraji města

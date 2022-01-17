@@ -1,3 +1,6 @@
+---
+tags: [dej, druhá-světová]
+---
 # Mnichovská dohoda
 1. Jak s mnichovskou dohodou souvisí pařížská mírová konference (roku 1919)?
 **Německo přišlo o území, mnichovská dohoda to měla vrátit.**

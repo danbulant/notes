@@ -1,5 +1,6 @@
 ---
 Date: 1935-09-05
+tags: [dej, druhá-světová]
 ---
 # Norimberské zákony
 - Norimberk
