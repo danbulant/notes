@@ -10,6 +10,7 @@ imagePrefix: 'data/'
 -  [[mat/Číselné obory|Číselné obory]]
 -  [[mat/Číselné soustavy|Číselné soustavy]]
 -  [[mat/Druhá odmocnina|Druhá odmocnina]]
+-  [[mat/Funkce/Funkce|Funkce]]
 -  [[mat/Intervaly|Intervaly]]
 -  [[mat/Lomené výrazy|Lomené výrazy]]
 -  [[mat/Matematika|Matematika]]
