@@ -1,3 +1,6 @@
+---
+tags: [dej]
+---
 # Nástup autoritativních režimů
 1. **Jaká byla hlavní příčina vypuknutí Velké hospodářské krize?** Nadprodukce
 2. **Proč během krize krachují mnohé bankovní domy?** Lidé si vybírají své vklady, banky nemají všechny peníze u sebe.

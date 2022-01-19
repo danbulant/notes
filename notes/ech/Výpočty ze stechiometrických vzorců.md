@@ -1,3 +1,6 @@
+---
+tags: [ech]
+---
 # Výpočty ze stechiometrických vzorců
 ## Hmotnostní zlomek
 - prvku v sloučenině

@@ -52,9 +52,17 @@ $P = \frac{W}{t}$
 $[W] = J$ Joule
 $W = P * t = U * I * t$
 $1J = 1Ws$; $3600J = Wh$; $3600000J = kWh$
-## Jednotky
+### Kapacita kodenzátoru C
+$[C] = F$ Farad
+$C = Q/u$; Q = elektrický náboj ($C$), U = elektrické napětí ($V$)
+$C = \epsilon * S/I$; S = plocha desek kondenzátoru (elektrod)($m^2$), I = tloušťka dielektrika (vzdálenost elektrod)($m$).
+### Permitivita dielektrika ε
+$[\epsilon] = F/m$ Farad/metr
+$\epsilon = \epsilon_r * \epsilon_0$
+$\epsilon_r$ = relativní permitivita (bez jednotek)
 ## Konstanty
-| Název             | Zkratka | Hodnota           | Jednotka | Popis                                                                      |
-| ----------------- | ------- | ----------------- | -------- | --------------------------------------------------------------------------- |
-| Elementární náboj | q       | $1.609 * 10^{19}$ | C        | Nejmenší možný elektrický náboj jedné samostatné částice volného elektronu. |
+| Název             | Zkratka      | Hodnota           | Jednotka | Popis                                                                       |
+| ----------------- | ------------ | ----------------- | -------- | --------------------------------------------------------------------------- |
+| Elementární náboj | q            | $1.609 * 10^{19}$ | C        | Nejmenší možný elektrický náboj jedné samostatné částice volného elektronu. |
+| Permitivita vakua | $\epsilon_0$ | $8.854*to^-12$    | $F/M$    |                                                                             |
 

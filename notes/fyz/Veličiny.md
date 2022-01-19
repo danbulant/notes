@@ -45,13 +45,13 @@ Gravitační konstanta, zaokrouhlena na 10
 ## Náboj elektronu
 $$ e = -1,602*10^{-19} C $$
 ## Jednotky Si
-- **P**etta
-- **T**erra
-- **G**iga
-- **M**ega
-- **k**ilo
-- **1**
-- **m**ili
-- **$\micro$** mikro
-- **n**ano
-- **p**iko
+- **P**etta $10^{15}$
+- **T**erra $10^{12}$
+- **G**iga $10^{9}$
+- **M**ega $10^{6}$
+- **k**ilo $10^{3}$
+- **1** $1$
+- **m**ili $10^{-3}$
+- **$\micro$** mikro $10^{-6}$
+- **n**ano $10^{-9}$
+- **p**iko $10^{-12}$

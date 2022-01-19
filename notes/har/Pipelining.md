@@ -1,3 +1,6 @@
+---
+tags: [har]
+---
 # Pipelining
 Zřetězené zpracování instrukcí
 

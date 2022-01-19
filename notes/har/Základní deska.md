@@ -1,3 +1,6 @@
+---
+tags: [har]
+---
 # Základní deska
 Propojuje komponenty.
 

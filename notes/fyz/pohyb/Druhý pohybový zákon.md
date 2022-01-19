@@ -1,3 +1,6 @@
+---
+tags: [fyz]
+---
 # Druhý pohybový zákon
 - Při rovnoměrném přímočarém pohybu nenastává **změna vektoru hybnosti s časem**.
 - Při rovnoměrně zrychleném či zpomaleném přímočarém pohybu nastává **změna velikosti vektoru hybnosti s časem**.
