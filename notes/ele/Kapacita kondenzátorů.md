@@ -42,7 +42,7 @@ $C = 355nF = 355 * 10^{-9} F$
 $U = 800V$
 $S = 455cm^2 = 455 * 10^{-2}m^2$
 $C = \frac{Q}{U} = 355 * 10^{-9}F = \frac{Q}{800}$
-$Q = \frac{800 * 355 * 10^{-9}}1 = 2.84 * 10^{-3}C$
+$Q = \frac{800 * 355 * 10^{-9}}1 = 2.84 * 10^{-4}C$
 
 3.  Vypočtěte napětí na kondenzátoru o kapacitě $2.2 nF$, na jehož elektrodách je náboj $7.88 C$. 
 
