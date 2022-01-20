@@ -28,5 +28,5 @@ $$
 \frac{x^3-x^2y}{y+y^2} : \frac{y^3-y^2x}{xy+x} = \frac{x^2(x-y) * x(1+y)}{y(1+y) * y^2(y-x)} = \frac{-x^3}{y^3}
 $$
 $$
-[x \neq 0] [y \neq 0]
+[x \neq 0] [y \neq 0] [y \neq y^2] [xy \neq -x]
 $$
