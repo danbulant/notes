@@ -29,7 +29,7 @@ $U = \frac{W}{Q}$
 *Práce vykonaná elektrickými silami při přemisťování kladného elektrického náboje.*
 ### Elektrická práce W
 $[W] = J$ Joule
-$W = U * Q$
+$W = U * Q = I * U$
 *Velikost tepla, které vzniká při průchodu elektrického proudu vodičem o odporu R (Joule-Lenzův zákon).*
 ### Odpor R
 $[R] = \Omega$ ohm
