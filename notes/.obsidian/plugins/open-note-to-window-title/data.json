@@ -1,0 +1,7 @@
+{
+  "titleTemplate": "{{basename}}~~{{vault}}",
+  "titleTemplateEmpty": "{{vault}}",
+  "titleSeparator": " - ",
+  "delimStr": "~~",
+  "overrideYamlField": "title"
+}

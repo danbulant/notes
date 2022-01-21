@@ -25,5 +25,8 @@
   "obsidian-activity-history",
   "juggl",
   "zoottelkeeper-obsidian-plugin",
-  "folder-note-plugin"
+  "folder-note-plugin",
+  "obsidian-icons-plugin",
+  "obsidian-emoji-toolbar",
+  "open-note-to-window-title"
 ]

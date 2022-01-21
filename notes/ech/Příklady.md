@@ -89,3 +89,5 @@ Ox: $Cl^{V} \rightarrow Cl^{VII}$ 2 1
 Red: $Cl^V \rightarrow Cl^{IV}$ 1 2
 
 ---
+
+$$HCl^1 + KMn^7O_4 \rightarrow Cl_2^0 + Mn^2Cl_2 + KCl + H_2O$$

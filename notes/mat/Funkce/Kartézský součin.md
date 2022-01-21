@@ -1,3 +1,8 @@
+---
+tags:
+  - mat
+  - mat/funkce
+---
 # Kartézský součin
 $$A = \{\circ;x;\triangle\}$$
 $$B = \{a;b;c;d\}$$
