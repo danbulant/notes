@@ -12,6 +12,7 @@ imagePrefix: 'data/'
 -  [[mat/Druhá odmocnina|Druhá odmocnina]]
 -  [[mat/Funkce/Funkce|Funkce]]
 -  [[mat/Intervaly|Intervaly]]
+-  [[mat/Lomené výrazy/Lomené výrazy|Lomené výrazy]]
 -  [[mat/Lomené výrazy|Lomené výrazy]]
 -  [[mat/Matematika|Matematika]]
 -  [[mat/Mnohočlen|Mnohočlen]]

@@ -1,5 +1,18 @@
 {
-  "userAdmonitions": {},
+  "userAdmonitions": {
+    "sentence": {
+      "type": "sentence",
+      "color": "253, 13, 13",
+      "icon": {
+        "name": "sticky-note",
+        "type": "font-awesome"
+      },
+      "command": true,
+      "title": null,
+      "injectColor": true,
+      "noTitle": true
+    }
+  },
   "syntaxHighlight": false,
   "copyButton": false,
   "version": "6.9.5",
