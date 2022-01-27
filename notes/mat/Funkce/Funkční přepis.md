@@ -1,3 +1,8 @@
+---
+tags:
+  - mat
+  - mat/funkce
+---
 # Funkční přepis
 Zápis funkce pomocí rovnice
 

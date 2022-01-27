@@ -44,8 +44,10 @@ $R = \frac1{\frac1{1+1} + \frac1{1+1}} = \frac1{\frac22} = \frac22 = 1k\ohm$
 Čtyři stejné rezistory jsou spojeny dvojím způsobem. Určete, při kterém spojení má obvod větší celkový odpor.
 ![](Pasted%20image%2020220124095434.png)
 
+$A \gt B$
+
 a:
-$R = R_1 + R_1 + \frac1{\frac1R_1 + \frac1R_1} = 2R_1 + \frac1{\frac2R_1} = 2R_1 + \frac{R_1}2 = 2.5R_1$
+$$R = R_1 + R_1 + \frac1{\frac1R_1 + \frac1R_1} = 2R_1 + \frac1{\frac2R_1} = 2R_1 + \frac{R_1}2 = 2.5R_1$$
 
 b:
-$R = R_1 + \frac1{\frac1R_1 + \frac1{R_1 + R_1}} = R_1 + \frac1{\frac{1 + R_1}{2R_1}} = R_1 + \frac{2R_1}{1 + R_1}$
+$$R = R_1 + \frac1{\frac1R_1 + \frac1{R_1 + R_1}} = R_1 + \frac1{\frac{3}{2R_1}} = \frac{5R_1}{3}$$

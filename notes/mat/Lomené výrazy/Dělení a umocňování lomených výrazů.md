@@ -1,3 +1,8 @@
+---
+tags:
+  - mat
+  - mat/lomeno
+---
 # Dělení a umocňování lomených výrazů
 ```ad-sentence
 Pro libovolné výrazy $V_1;V_2;V_3;V_4$ a pro všechny hodnoty proměnných, pro něž je $V_2 \neq 0; V_4 \neq 0$, platí: $\frac{V_1}{V_2}*\frac{V_3}{V_4} = \frac{V_1*V_2}{V_3*V_4}$

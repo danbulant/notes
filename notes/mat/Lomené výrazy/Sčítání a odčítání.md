@@ -1,3 +1,8 @@
+---
+tags:
+  - mat
+  - mat/lomeno
+---
 # Sčítání a odčítání
 ## Sčítání
 - musí se převést na společného jmenovatele

@@ -1,3 +1,9 @@
+---
+tags:
+  - cjl
+  - cjl/literatura
+  - cjl/literatura/středověk
+---
 # Žánry
 ## svítáníčko
 ranní milenecké básně a písně.

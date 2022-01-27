@@ -4,9 +4,10 @@ tags: [ele]
 # Měrení elektrických proudů a napětí
 ## Proud
 Na proud se používá [Ampérmetr](Ampérmetr.md).
+Přímé, nemusí se počítat.
 ## Napětí
 Na napětí se používá [Voltmetr](Voltmetr.md).
-
+Nepřímé, musí se počítat.
 ## Příklady
 ### Nakreslete a popište schéma zapojení ampérmetru.
 
@@ -31,3 +32,5 @@ $R_b = 50 * 5000$
 ### Voltmetr s odporem $R_V$ = $400 \Omega$ má rozsah do $10 V$. Jak velký musí být předřadný odpor $R_p$, aby se rozsah voltmetru zvětšil na $250 V$?
 
 ### Proč připojujeme bočník paralelně a předřadný odpor sériově? Vysvětlit můžete i pomocí schématu.
+Opačně než jak je zapojený do obvodu.
+U ampérmetru se rozdělí proud mezi rezistor a ampérmetr, a pak se celková hodnota získá násobením změřené hodnoty.
