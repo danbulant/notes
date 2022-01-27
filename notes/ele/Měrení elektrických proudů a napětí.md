@@ -8,6 +8,7 @@ Přímé, nemusí se počítat.
 ## Napětí
 Na napětí se používá [Voltmetr](Voltmetr.md).
 Nepřímé, musí se počítat.
+Voltmetr většinou počítá interně, takže se nemusí přímo počítat, ale dané zařízení to má předpočítané.
 ## Příklady
 ### Nakreslete a popište schéma zapojení ampérmetru.
 
