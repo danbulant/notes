@@ -8,3 +8,8 @@ Na obrázku je text špatně. Čísla a písmena mají mít všechny stejnou vel
 U kružnic se před kótou píše značka průměru $\oslash$, v kresbách chybí.
 
 ![[data/Kótování na strojařský výkres_2022-01-07 13.19.52.excalidraw.md]]
+
+---
+příklad
+
+![](kótování%20příklad%201%202.bmp)
