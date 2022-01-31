@@ -46,7 +46,9 @@ Kriemhilda nakonec sama setne Hagena Siegfriedovým mečem Balmungem, protože j
 Starý Hildebrand nato setne Kriemhildu.
 Jen Etzel, Hildebrand a Ditrich přežijí.
 ## Král Artuš
-Bájný král, rytíři kulatého stolu
+Bájný král, rytíři kulatého stolu (Lancelot, Percival).
+Svatý grál (hora Montsalvage).
+meč Excalibur.
 ## Píseň o Rolandovi
 Karel Veliký, boj se Saracény (Španělsko) - Zaragoza.
 Mocné zatroubení na roh Olifant ho zabije (praskne mu tepna na spánku).
