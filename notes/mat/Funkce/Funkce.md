@@ -10,6 +10,7 @@ imagePrefix: 'data/'
 -  [[mat/Funkce/Cosinus|Cosinus]]
 -  [[mat/Funkce/Cotangens|Cotangens]]
 -  [[mat/Funkce/Funkční přepis|Funkční přepis]]
+-  [[mat/Funkce/Inverzní funkce|Inverzní funkce]]
 -  [[mat/Funkce/Kartézský součin|Kartézský součin]]
 -  [[mat/Funkce/Sinus|Sinus]]
 -  [[mat/Funkce/Tangens|Tangens]]
