@@ -1,6 +1,36 @@
 # Test 1.2.2022
 ## Bible
 Konstantin a Metoděj jsou zakladateli slovanského písemnictví. Přicházejí na území Velké Moravy z řecké Konstantopoli, tehdy z říše Byzancké, v roce 863(864) na pozvání knížete Rastislava. Na základě slovanského dialektu vytvořili staroslověnštinu a Konstantin sestavil písmo hlaholici. Konstantin je také autorem Proglasu, který je veršovanou – prozaickou předmluvou k překladu evangelia. Život Konstantinův a Metodějův jsou životopisy. Jejich autory jsou žáci. Roku 867- 868 obdrželi pozvání do Říma, aby obhájili jazyk slovanský jako jazyk bohoslužebný – liturgický. Obhájili. Konstantin onemocněl, vstoupil zde kláštera a přijal jméno Cyril.
+
+Kniha knih
+Písmo svaté
+Překlad do Latiny
+
+### Starý zákon
+Judaismus
+Křesťanství
+9.-12. století př. n. l. až 2 století př. n. l
+knihy prorocké, dějepisné a mudroslovné
+Desatero božích přikázání
+1. V jednoho Boha věřiti budeš
+2. Nebudeš mít jiné bohy mimo mne
+3. Nevezmeš jména Božího nadarmo
+4. Pomni, abys den sváteční světil
+5. Cti otce svého i matku svou
+6. Nezabiješ
+7. Nezesmilníš
+8. Nepokradeš
+9. Nepožádáš manželky bližního svého
+10. Ani statku jeho
+
+### Nový zákon
+Křesťanství
+50 až 120 n.l.
+Evangelia - (Apoštolové: Marek, Matouš, Lukáš , Jan)
+Epištoly - dopisy, listy(Od apoštola Pavla)
+Zjevení svatého Jana
+
+
 ## Tristan a Isolda
 Milostný příběh.
 Tristan veze Isoldu, omylem vypijou nápoj lásky, zamilují se, ale musí se jí vzdát.
