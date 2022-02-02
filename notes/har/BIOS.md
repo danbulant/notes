@@ -12,6 +12,19 @@ Master boot record.
 Partition table na disku (rozdělení na části disků, umožňuje více file systému a další rozdělení)
 ## POST
 Power on self test
+Beep Code
+
+## 3 vrstvy
+### První vrstva
+Flash ROM, dříve EEP ROM
+musí být hned dostupná po startu.
+detekuje HW
+### Druhá vrstva
+CMOS čip, ukládá set nastavení BIOS a čas.
+### Třetí vrstva
+Ovladače jádra OS
+Jsou uloženy v základní desce, rozšiřující kartách, v pamětech, v procesoru
+zavádějí se v průběhu spouštění systému.
 
 # UEFI
 Novější verze BIOSu.
