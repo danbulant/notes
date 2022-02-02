@@ -1,6 +1,6 @@
 # Test 1.2.2022
 ## Bible
-Konstantin a Metoděj jsou zakladateli slovanského písemnictví. Přicházejí na území Velké Moravy z řecké Konstantopoli, tehdy z říše Byzancké, v roce 863(864) na pozvání knížete Rastislava. Na základě slovanského dialektu vytvořili staroslověnštinu a Konstantin sestavil písmo hlaholici. Konstantin je také autorem Proglasu, který je veršovanou – prozaickou předmluvou k překladu evangelia. Život Konstantinův a Metodějův jsou životopisy. Jejich autory jsou žáci. Roku 867- 868 obdrželi pozvání do Říma, aby obhájili jazyk slovanský jako jazyk bohoslužebný – liturgický. Obhájili. Konstantin onemocněl, vstoupil zde kláštera a přijal jméno Cyril.
+Konstantin a Metoděj jsou zakladateli slovanského písemnictví. Přicházejí na území Velké Moravy z řecké Konstantopoli, tehdy z říše Byzancké, v roce 863(864) na pozvání knížete Rastislava. Na základě slovanského dialektu vytvořili staroslověnštinu a Konstantin sestavil písmo hlaholici. Konstantin je také autorem Proglasu, který je veršovanou – prozaickou předmluvou k překladu evangelia. Život Konstantinův a Metodějův jsou životopisy. Jejich autory jsou žáci. Roku 867- 868 obdrželi pozvání do Říma, aby obhájili jazyk slovanský jako jazyk bohoslužebný – liturgický. Obhájili. Konstantin onemocněl, vstoupil zde kláštera a přijal jméno Cyril.\
 
 Kniha knih
 Písmo svaté
@@ -76,7 +76,7 @@ Kriemhilda nakonec sama setne Hagena Siegfriedovým mečem Balmungem, protože j
 Starý Hildebrand nato setne Kriemhildu.
 Jen Etzel, Hildebrand a Ditrich přežijí.
 ## Král Artuš
-Bájný král, rytíři kulatého stolu (Lancelot, Percival).
+Bájný král, rytíři kulatého stolu (Lancelot, Percival, Artuš, Robin).
 Svatý grál (hora Montsalvage).
 meč Excalibur.
 ## Píseň o Rolandovi
