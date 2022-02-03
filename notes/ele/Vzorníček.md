@@ -35,6 +35,12 @@ $W = U * Q = I * U$
 $[R] = \Omega$ ohm
 Brání průchodu proudu
 *Vlastnost spotřebiče či vodiče*
+#### Bočník
+Pararelně k ampérmetru.
+$R_B = \frac{R_A}{n-1}$
+#### Předřadník
+Sériově před voltmetr.
+$R_p = R_v * (n-1)$
 #### Výpočty s rezistory
 ##### Paralelně
 $$
