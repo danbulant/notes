@@ -12,6 +12,7 @@ imagePrefix: 'data/'
 -  [[mat/Funkce/Funkční přepis|Funkční přepis]]
 -  [[mat/Funkce/Inverzní funkce|Inverzní funkce]]
 -  [[mat/Funkce/Kartézský součin|Kartézský součin]]
+-  [[mat/Funkce/Příklady|Příklady]]
 -  [[mat/Funkce/Rovnost funkcí|Rovnost funkcí]]
 -  [[mat/Funkce/Sinus|Sinus]]
 -  [[mat/Funkce/Tangens|Tangens]]

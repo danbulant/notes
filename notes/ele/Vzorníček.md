@@ -37,6 +37,7 @@ Brání průchodu proudu
 *Vlastnost spotřebiče či vodiče*
 #### Bočník
 Pararelně k ampérmetru.
+n = násobek rozsahu.
 $R_B = \frac{R_A}{n-1}$
 #### Předřadník
 Sériově před voltmetr.

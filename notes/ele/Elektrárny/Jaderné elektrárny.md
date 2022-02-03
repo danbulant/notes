@@ -1,1 +1,0 @@
-# Jaderné elektrárny

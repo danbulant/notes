@@ -1,1 +1,0 @@
-# Tepelné elektrárny
