@@ -61,12 +61,20 @@ $0\not\in\mathbb{R}-\{0\}$
 ---
 $d=-4$
 $f_4:y=\frac{x+1}{x-2}$
-$f_4^{-1}:$
+$f_4^{-1}:2=\frac1y$
+$y = \frac{x+1}{x-2}$
+$y(x-2)=x+1$
+$y(x-2)-x=1$
+$x-2=\frac{(1+x)}y$
+
 
 ---
 $d=\frac12$
 $f_5:y=\frac1{x^2-1}$
-
+$f_5^{-1}: x=\sqrt{\frac1y+1}$
+$D_{f_5^{-1}} = H_{F_5} = (-1;\infty)$
+$\frac12 \in (-1; \infty)$
+✔️
 
 ---
 
@@ -74,16 +82,31 @@ $f_5:y=\frac1{x^2-1}$
 
 ---
 graf funkce $f:y=6x+b$, prochází bodem $A[0;4]$
+$f(0) = 4$
+$6*0 + b = 4$
+$b = 4$
 
 ---
 graf funkce $f:y=\frac32x+b$, prochází bodem $A[-2;9]$
+$f(-2) = 9$
+$\frac32*(-2)+b=9$
+$-3+b=9$
+$b=12$
 
 ---
 
 ## Určete číslo $a\in\mathbb{R}$ za předpokladu, že:
 
 ---
-graf funkce $f:y=ax+2, prochází bodem $A[-2;6]$
+graf funkce $f:y=ax+2$, prochází bodem $A[-2;6]$
+$f(-2) = 6$
+$-2a+2=6$
+$-2a=4$
+$-a=2$
+$a=-2$
 
 ---
 graf funkce $f:y=ax-2$, prochází bodem $A[1;2]$
+$f(1)=2$
+$1a-2=2$
+$a=4$
