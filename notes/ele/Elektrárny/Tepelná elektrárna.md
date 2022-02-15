@@ -1,3 +1,6 @@
+---
+tags: [ele]
+---
 # Tepelná elektrárna
 Spaluje nějaké palivo, vytvořené teplo převádí na elektrickou energii.
 Neekologické, spálený odpad, neobnovitelný zdroj.

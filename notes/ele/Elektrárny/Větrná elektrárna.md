@@ -1,3 +1,6 @@
+---
+tags: [ele]
+---
 # Větrná elektrárna
 Ekologická, dá se dát na hory i moře, obnovitelný zdroj
 

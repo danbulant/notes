@@ -1,3 +1,6 @@
+---
+tags: [ele]
+---
 # Vodní elektrárna
 Ekologická, dá se použít jako baterka (pomocí přesouvání vod), obnovitelný zdroj.
 
