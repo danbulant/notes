@@ -1,5 +1,5 @@
 ---
-tags: [MOC, README, generated, cjl]
+tags: [MOC, generated, cjl]
 ---
 # Hebrejská literatura
 ```ccard

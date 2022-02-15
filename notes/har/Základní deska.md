@@ -14,3 +14,15 @@ Plošný spoj je nejčastěji laminátová deska ze skelné tkaniny sycená epox
 Procesor, grafická karta
 ## Jižní můstek
 IO, SATA...
+
+## Beep codes
+Značí chyby, pípá přes pípák
+
+## Chipset
+Vnitřní hodiny.
+Taktovací signál pro CPU.
+Udává takt procesoru, sběrnici i periférií.
+řídí komunikaci na základní desce.
+
+## Sběrnice
+Soustava měděných obvodů.

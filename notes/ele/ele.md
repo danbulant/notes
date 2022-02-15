@@ -20,6 +20,7 @@ imagePrefix: 'data/'
 -  [[ele/Polovodiče|Polovodiče]]
 -  [[ele/Rezistory|Rezistory]]
 -  [[ele/Stejnosměrný proud|Stejnosměrný proud]]
+-  [[ele/Střídavý proudu|Střídavý proudu]]
 -  [[ele/Testy/Testy|Testy]]
 -  [[ele/Vodiče|Vodiče]]
 -  [[ele/Voltmetr|Voltmetr]]
