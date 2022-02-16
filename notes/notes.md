@@ -16,6 +16,7 @@ noteOnly: true
 -  [[har/har|har]]
 -  [[kbb/kbb|kbb]]
 -  [[mat/mat|mat]]
+-  [[Osobnosti|Osobnosti]]
 -  [[pdv/pdv|pdv]]
 -  [[preamble.sty|preamble.sty]]
 -  [[projects/projects|projects]]
