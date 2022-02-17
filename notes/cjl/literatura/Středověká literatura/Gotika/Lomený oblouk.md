@@ -1,3 +1,4 @@
 # Lomený oblouk
-Okno, častokrát s barevným sklem
+Typické okno v gotice.
+Na obrázku včetně kružeb.
 ![](Pasted%20image%2020220216103706.png)
