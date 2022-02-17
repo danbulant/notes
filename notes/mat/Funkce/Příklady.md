@@ -126,3 +126,61 @@ $$
 $$
 x=100
 $$
+
+
+---
+$$x + \frac2x - 1 = \frac{x + 6}{x + 2}$$
+$$x(x+2) + 4 - (x+2) = x + 6 \space | *(x+2)$$
+$[x\neq-2]$
+$$x^2+2x+4-x-2=x+6$$
+$$x^2+x+2=x+6$$
+$$x^2+x-4=x$$
+$$x^2-4=0$$
+$$2 = x$$
+
+	
+---
+
+$$\frac{x+2}{x-1}=\frac{x+6}{x+2} \space | *(x-1)(x+2)$$
+$[x\neq1]; [x\neq-2]$
+$$(x+2)^2 = (x+6)(x-1)$$
+$$x^2+4x+4=x^2+5x-6$$
+$$4x+4=5x-6$$
+$$x=10$$
+
+---
+
+$$\frac{2x+1}{x-3}=\frac{4x+2}{2x-1} \space | *(x-3)(2x-1)$$
+$[x\neq3]; [x\neq\frac12]$
+$$(2x+1)(2x-1)=(4x+2)(x-3)$$
+$$4x^2-1=4x^2-10x-6 \space|-4x^2$$
+$$-1=10x-6 \space |+6$$
+$$5=10x\space|:10$$
+$$x=0.5$$
+$$k=\{-\frac12\}$$
+
+---
+
+$$\frac{x+3}{x-2}=4+\frac5{x-2} \space | *(x-2)$$
+$[x\neq2]$
+$$x+3=4(x-2)+5$$
+$$x+3=4x-3 \space |-x$$
+$$3=3x-3 \space |+3$$
+$$6=3x \space | :3$$
+$$x=2$$
+$$k=\{\emptyset\}$$
+```ad-sentence
+Výsledné x nemá řešení, protože podmínka zakáže výslednou hodnotu (x nesmí být 2, ale x vyšlo 2)
+```
+
+---
+
+$$\frac{x+4}{x+5}=2-\frac1{x+5} \space | *(x+5)$$
+$[x\neq-5]$
+$$x+4=2(x+5)-1$$
+$$x+4=2x+9 \space | -x$$
+$$4=x+9 \space | -9$$
+$$x=-5$$
+$$k=\{\emptyset\}$$
+
+---
