@@ -18,6 +18,7 @@ imagePrefix: 'data/'
 -  [[ech/radioaktivita|radioaktivita]]
 -  [[ech/Ředění|Ředění]]
 -  [[ech/Směsi|Směsi]]
+-  [[ech/Stechiometrické výpočty|Stechiometrické výpočty]]
 -  [[ech/Vazby|Vazby]]
 -  [[ech/Veličiny|Veličiny]]
 -  [[ech/Výpočty ze stechiometrických vzorců|Výpočty ze stechiometrických vzorců]]
