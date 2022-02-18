@@ -157,7 +157,7 @@ $$4x^2-1=4x^2-10x-6 \space|-4x^2$$
 $$-1=10x-6 \space |+6$$
 $$5=10x\space|:10$$
 $$x=0.5$$
-$$k=\{-\frac12\}$$
+$$K=\{-\frac12\}$$
 
 ---
 
@@ -168,7 +168,7 @@ $$x+3=4x-3 \space |-x$$
 $$3=3x-3 \space |+3$$
 $$6=3x \space | :3$$
 $$x=2$$
-$$k=\{\emptyset\}$$
+$$K=\{\emptyset\}$$
 ```ad-sentence
 Výsledné x nemá řešení, protože podmínka zakáže výslednou hodnotu (x nesmí být 2, ale x vyšlo 2)
 ```
@@ -181,6 +181,49 @@ $$x+4=2(x+5)-1$$
 $$x+4=2x+9 \space | -x$$
 $$4=x+9 \space | -9$$
 $$x=-5$$
-$$k=\{\emptyset\}$$
+$$K=\{\emptyset\}$$
 
 ---
+
+$$\frac{x-2}{x+3}=2-\frac5{x+3} \space | * (x+3)$$
+$[x\neq-3]$
+$$x-2=2(x+3)-5$$
+$$x-2=2x+1 | -x-1$$
+$$x=-3$$
+$$K=\{\emptyset\}$$
+---
+
+$$\frac{x+8}{x+3}=1+\frac5{x+3} \space | *(x+3)$$
+$[x\neq-3]$
+$$x+8=1(x+3)+5$$
+$$x+8=x+8 \space | -8$$
+$$0x=0$$
+$$K=\{\mathbb{R} - \{-3\}\}$$
+
+---
+
+$$\frac{x+2}{x+5} = 1-\frac3{x+5} \space | * (x+5)$$
+$[x\neq-5]$
+$$x+2=x+2 \space | -2-x$$
+$$0x=0$$
+$$K=\{\mathbb{R}-\{-5\}\}$$
+
+---
+
+$$\frac{x-3}{x+2}=1-\frac6{x+2} \space | *(x+2)$$
+$[x\neq-2]$
+$$x-3=x-4 \space | -x+4$$
+$$1=0x$$
+$$K=\{\emptyset\}$$
+
+---
+
+$$\frac{2x-4}{x-2}=1-\frac2{x-2} \space | *(x-2)$$
+$[x\neq2]$
+$$2x-4=x-4 | +4$$
+$$2x=x \space |-x$$
+$$x=0$$
+$$K={0}$$
+
+---
+
