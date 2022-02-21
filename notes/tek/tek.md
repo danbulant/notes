@@ -10,6 +10,7 @@ imagePrefix: 'data/'
 -  [[tek/Kótování koule|Kótování koule]]
 -  [[tek/Kótování na strojařský výkres|Kótování na strojařský výkres]]
 -  [[tek/Kótování sražených hran|Kótování sražených hran]]
+-  [[tek/Metrický závit|Metrický závit]]
 -  [[tek/Opakující se prvky|Opakující se prvky]]
 -  [[tek/Přerušení|Přerušení]]
 -  [[tek/Struktura povrchu|Struktura povrchu]]
