@@ -39,3 +39,7 @@ $-x=66$
 $x=66$ ❌ $[66\not\in x<3]$
 
 $x \geq 3$
+---
+$$\textcolor{red}{|x+1|}+\textcolor{green}{|x-1|}=4$$
+$\textcolor{red}{nulový \space bod \dots -1}$          $\textcolor{green}{nulový \space bod \dots 1}$
+
