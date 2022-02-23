@@ -43,3 +43,4 @@ $x \geq 3$
 $$\textcolor{red}{|x+1|}+\textcolor{green}{|x-1|}=4$$
 $\textcolor{red}{nulový \space bod \dots -1}$          $\textcolor{green}{nulový \space bod \dots 1}$
 
+![[data/Absolutní hodnota_2022-02-23 09.05.43.excalidraw.md]]
