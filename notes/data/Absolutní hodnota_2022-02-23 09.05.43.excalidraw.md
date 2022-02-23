@@ -455,7 +455,7 @@ excalidraw-plugin: parsed
 			"angle": 0,
 			"strokeColor": "#5c940d",
 			"backgroundColor": "#82c91e",
-			"fillStyle": "hachure",
+			"fillStyle": "solid",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 0,
@@ -463,19 +463,19 @@ excalidraw-plugin: parsed
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"seed": 1428232121,
-			"version": 28,
-			"versionNonce": 2066341623,
+			"version": 29,
+			"versionNonce": 1067443767,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1645603689210
+			"updated": 1645603717145
 		},
 		{
 			"type": "ellipse",
-			"version": 30,
-			"versionNonce": 371610137,
+			"version": 33,
+			"versionNonce": 1588994327,
 			"isDeleted": false,
 			"id": "KZC8vwQaYU87GsgzPylAy",
-			"fillStyle": "hachure",
+			"fillStyle": "solid",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 0,
@@ -491,7 +491,7 @@ excalidraw-plugin: parsed
 			"groupIds": [],
 			"strokeSharpness": "sharp",
 			"boundElements": [],
-			"updated": 1645603711020
+			"updated": 1645603715480
 		}
 	],
 	"appState": {
@@ -499,7 +499,7 @@ excalidraw-plugin: parsed
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#e67700",
 		"currentItemBackgroundColor": "#fab005",
-		"currentItemFillStyle": "hachure",
+		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 1,
 		"currentItemStrokeStyle": "solid",
 		"currentItemRoughness": 0,
