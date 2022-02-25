@@ -82,3 +82,27 @@ Peripheral Component Interconnect
 - více nezávišlých PCI sběrnic na jednom počítači
 - synchronní sběrnice
 - nejvyšší teoretická propustnost 1066MB/s
+
+### PCI-E
+PIC Express
+- náhrada starších standardů
+- není sběrnice, jedná se o dvoubodové spoje
+- data jsou přenášena bez adresy (adresace zařízení)
+- seriálový přenos data
+- full duplex (oběma směry najednou přes dva vodiče)
+- verze jsou podle počtu linek (x1, x2, x4, x8, x16)
+- nejvyšší teoretická propustnost verze 3.0 je 16GB/s (v každém směru)
+
+## PC
+### PC/AT
+Advanced Technology
+### PC/ATX
+Advanced Technology eXtended
+- aktuálně používaný (od roku 1995)
+- od AT se liší napájením, nová napěťová větev 3.3V (a je napájen stále, ve standby mode)
+- SW řízení napájení i spínání (možnost [WOL](WOL.md))
+- změnily se rozměry a usporádání prakticky všech komponent počítače
+- vysoký výkon napájecích zdroju
+### PC/BTX
+- slepá vývojová větev firmy Intel z roku 2004/2005
+- byla lepší, ale neprosadila se
