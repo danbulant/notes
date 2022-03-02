@@ -12,6 +12,7 @@ imagePrefix: 'data/'
 -  [[har/CPU|CPU]]
 -  [[har/historie počítačů|historie počítačů]]
 -  [[har/IQRF|IQRF]]
+-  [[har/Konektory|Konektory]]
 -  [[har/Micro Controller Unit|Micro Controller Unit]]
 -  [[har/Pipelining|Pipelining]]
 -  [[har/WOL|WOL]]
