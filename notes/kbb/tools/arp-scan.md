@@ -1,3 +1,10 @@
+---
+tags:
+ - kbb
+ - command
+ - tldr.sh
+cmd: arp-scan
+---
 # arp-scan
 ```
 Send ARP packets to hosts (specified as IP addresses or hostnames) to scan the local network. More information: https://github.com/royhills/arp-scan.

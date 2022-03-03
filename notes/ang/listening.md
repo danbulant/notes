@@ -91,3 +91,11 @@ HR manager - looks after personnel and their conditions for employment - recruit
 4. don't think, think
 
 ---
+1. Ereys
+2. from a friend
+3. 1998
+4. he sent cakes
+5. cakes
+6. chocolate cake
+7. 14000$
+8. 5000 t-shirts

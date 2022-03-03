@@ -20,6 +20,7 @@ imagePrefix: 'data/'
 -  [[mat/Množiny|Množiny]]
 -  [[mat/Mocniny|Mocniny]]
 -  [[mat/Násobek a dělitel|Násobek a dělitel]]
+-  [[mat/Nerovnice|Nerovnice]]
 -  [[mat/Příklady|Příklady]]
 -  [[mat/Rovnice|Rovnice]]
 -  [[mat/Rozklad složených čísel na součin prvočísel|Rozklad složených čísel na součin prvočísel]]

@@ -1,3 +1,10 @@
+---
+tags:
+ - kbb
+ - command
+ - tldr.sh
+cmd: nmap
+---
 # nmap
 Network map
 
