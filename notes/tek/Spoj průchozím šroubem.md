@@ -1,3 +1,3 @@
 # Spoj průchozím šroubem
 
-![](spoj%20průchozím%20šroubem%201.bmp)
+![](spoj%20průchozím%20šroubem%202.bmp)
