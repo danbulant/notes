@@ -79,3 +79,15 @@ $$
 prej špatně??
 
 ---
+
+$$x_1,x_2 = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+
+$$\frac{1\pm\sqrt{(-1)^2-4*1*(-2)}}{2*1}$$
+$$\frac{1\pm\sqrt{1-4*(-2)}}{2}$$
+$$\frac{1\pm\sqrt{1+8}}2$$
+$$\frac{1\pm\sqrt9}2$$
+$$\frac{1\pm3}{2}$$
+
+---
+$$\frac{4\pm\sqrt{(-4)^2-4*2(-16)}}{2*2}$$
+$$\frac{4\pm\sqrt{144}}{4}$$

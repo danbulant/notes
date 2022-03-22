@@ -18,6 +18,7 @@ imagePrefix: 'data/'
 -  [[ele/Ohmův zákon|Ohmův zákon]]
 -  [[ele/PN přechod|PN přechod]]
 -  [[ele/Polovodiče|Polovodiče]]
+-  [[ele/Poruchy/Poruchy|Poruchy]]
 -  [[ele/Rezistory|Rezistory]]
 -  [[ele/Stejnosměrný proud|Stejnosměrný proud]]
 -  [[ele/Střídavý proudu|Střídavý proudu]]
