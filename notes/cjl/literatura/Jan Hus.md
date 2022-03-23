@@ -3,12 +3,14 @@ tags: [cjl, osobnosti]
 desc: Český kněz, ukřižován
 ---
 # Jan Hus
+- kázal v betlémské kapli
+
 ## Husův sbor
 Modlitebna v Dykově ulici v Praze 10
+Církev československá-husitská
 ## Žižkův dub
 Dub u hradu Lichnice
-## Jednota bratrská
-Protestantská církev v ČR
+![Jednota bratrská](Jednota%20bratrská.md)
 ## Tábor
 Město založené husity
 ## Církev si rozvracet nedáme
@@ -30,9 +32,10 @@ Protikomunistické demonstrace
 A etymologie toho slova, proč je v dětském filmu
 Kurev, protože to bylo napsané v knize
 ## Přenesení výrazu
-Z textu, dala pod video?
+?
 ## Přídomky
---||--
+Jeroným **Pražský**
+Jan z **Hus**
 ## Petr z Mladoňovic
 - bylo mu potupně odňato kněžství
 - nevzdal se a věřil v boha celou dobu až do své smrti

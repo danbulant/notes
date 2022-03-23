@@ -10,6 +10,7 @@ imagePrefix: 'data/'
 -  [[cjl/literatura/Cizí literatura/Cizí literatura|Cizí literatura]]
 -  [[cjl/literatura/Cizí literatura|Cizí literatura]]
 -  [[cjl/literatura/Jan Hus|Jan Hus]]
+-  [[cjl/literatura/Jednota bratrská|Jednota bratrská]]
 -  [[cjl/literatura/poznávání žánrů|poznávání žánrů]]
 -  [[cjl/literatura/slohy/slohy|slohy]]
 -  [[cjl/literatura/Slovní spojení|Slovní spojení]]

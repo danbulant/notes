@@ -41,3 +41,41 @@ kapacita roste směrem od procesoru
 - CD
 - DVD
 - BD
+
+## Vnitřní a vnější
+SSD může být obojí, například
+### Vnitřní
+- energeticky závislé (RWM) a nezávislé (ROM)
+RWM - read write memory
+ROM - read only memory
+- SRAM vs DRAM
+statická
+dynamická - musí se obnovovat až 1000x za vteřinu
+- polovodičové
+
+## Vnější
+- energeticky nezávislé
+- magnetické a hybridní (HDD, SSHDD, datová páska)
+- optické (CD DVD Blu-ray)
+- polovodičové (SSD, flash)
+
+## Druhy
+### ROM
+Read only memory
+### PROM
+Programmable read only memory
+(Read only memory, přes speciální zařízení se dá změnit)
+### EPROM
+PROM přes ultrafialové záření
+
+### EEPROM
+dá se mazat elektrickým proudem (předchůdce flash)
+
+### RAM
+- unipolární tranzistory a kondenzátory
+- volatilní
+### DRAM
+- samovolné vybíjení, nutnost obnovy informací
+- nižší cena
+### SRAM
+- vyšší cena, stabilnější, nemusí se refreshovat, rychlejší
