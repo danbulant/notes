@@ -91,3 +91,8 @@ Red: $Cl^V \rightarrow Cl^{IV}$ 1 2
 ---
 
 $$HCl^1 + KMn^7O_4 \rightarrow Cl_2^0 + Mn^2Cl_2 + KCl + H_2O$$
+---
+
+## Alkany
+
+2,2,3,3-tetramethylhexan
