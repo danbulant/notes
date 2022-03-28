@@ -1,3 +1,6 @@
+---
+tags: [mat, mat/funkce]
+---
 # Rovnost funkcí
 ```ad-sentence
 O dvou funkcích říkáme, že jsou si rovny (psáno $f=g$), právě když mají týž definiční obor $D(f)=D(g)$ a v každém bodě $x$ tohoto definičního oboru je $f(x)=g(x)$.

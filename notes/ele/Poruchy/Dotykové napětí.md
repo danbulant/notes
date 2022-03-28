@@ -1,3 +1,6 @@
+---
+tags: [ele, ele/poruchy]
+---
 # Dotykové napětí
 - při poruchových stavech může dojít ke vzniku nebezpečných dotykových napětí na neživých částech el. zařízení
 - živá část - vodivá část aby při obvyklém uživání byla pod napětím

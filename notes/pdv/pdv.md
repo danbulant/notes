@@ -1,8 +1,5 @@
 ---
-tags: [MOC]
-  - pdv
-  - generated
-  - index
+tags: [MOC, pdv, generated, index]
 ---
 # pdv
 ```ccard

@@ -1,3 +1,6 @@
+---
+tags: [ele, ele/poruchy]
+---
 # Úrazy
 dochází průchodem proudu, nikoliv napětím.
 - 10mA je ok, 20mA je silně bolestivý, 50mA je nebezpečný, 100 mA je smrtelný

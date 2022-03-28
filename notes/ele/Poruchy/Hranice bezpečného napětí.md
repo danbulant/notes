@@ -1,3 +1,6 @@
+---
+tags: [ele, ele/poruchy]
+---
 # Hranice bezpečného napětí
 - 50V - místa bezpečná/suchá
 - 24V - místa nebezpečná/mokrá

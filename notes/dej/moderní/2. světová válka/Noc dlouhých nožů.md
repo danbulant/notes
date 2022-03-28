@@ -1,3 +1,6 @@
+---
+tags: [dej, druhá-světová]
+---
 # Noc dlouhých nožů
 - 30. června až 2. července
 - Operace kolibřík

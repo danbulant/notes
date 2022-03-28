@@ -1,3 +1,6 @@
+---
+tags: [mat]
+---
 # Nerovnice
 
 ## Příklady

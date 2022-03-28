@@ -1,3 +1,6 @@
+---
+tags: [dej, druhá-světová]
+---
 # Začátek
 ## Jakou si Němci vytvořili záminku pro napadení Polska?
 Falešné napadení Německa z polské strany.

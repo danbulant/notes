@@ -1,5 +1,5 @@
 ---
-tags: [MOC, mat, mat/rovnice]
+tags: [mat, mat/rovnice]
 ---
 # Soustavy rovnic
 
@@ -32,3 +32,21 @@ výsledek $y=-14$
 první $4x-2y=24$
 druhá $3x+2y=25$
 výsledek $7x=49|x=7$
+
+---
+ ## DÚ 28.3.2022
+ 
+
+### A (sčítací)
+
+$3x-\frac4{y-2}=13$
+$5x+3(y+2)=20$
+
+
+$3x-\frac4{y-2}=13$
+$3x(y-2)-4=13(y-2)$
+$3xy-6x-4=13y-26$
+$3xy-19y=30$
+
+$5x+3(y+2)=20$
+$5x+3y=14$

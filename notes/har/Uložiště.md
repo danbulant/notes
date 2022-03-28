@@ -1,3 +1,6 @@
+---
+tags: [har]
+---
 # Uložiště
 1 buňka = 1 bit
 1 byte = 8 bitů

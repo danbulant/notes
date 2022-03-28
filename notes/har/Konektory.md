@@ -1,3 +1,6 @@
+---
+tags: [har]
+---
 # Konektory
 ## PS/2
 - ❌ hotplug

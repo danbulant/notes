@@ -1,3 +1,6 @@
+---
+tags: [mat, mat/funkce]
+---
 # Funkce vs Rovnice
 (dle názoru pana Tkáče)
 

@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/gotika]
+---
 # Lomený oblouk
 Typické okno v gotice.
 Na obrázku včetně kružeb.

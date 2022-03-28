@@ -15,6 +15,7 @@ imagePrefix: 'data/'
 -  [[ele/Měrení elektrických proudů a napětí|Měrení elektrických proudů a napětí]]
 -  [[ele/N a P|N a P]]
 -  [[ele/Náboj, proud, napětí a odpor|Náboj, proud, napětí a odpor]]
+-  [[ele/Ochrana|Ochrana]]
 -  [[ele/Ohmův zákon|Ohmův zákon]]
 -  [[ele/PN přechod|PN přechod]]
 -  [[ele/Polovodiče|Polovodiče]]

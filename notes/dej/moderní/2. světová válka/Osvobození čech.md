@@ -1,3 +1,6 @@
+---
+tags: [dej, druhá-světová]
+---
 # Osvobození čech
 ## Americká vojska
 - západ a jihozápad čech (demarkační linie)

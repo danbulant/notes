@@ -1,3 +1,6 @@
+---
+tags: [mat, mat/funkce]
+---
 # Vlastnosti funkcí
 ## Monotónost
 Jak jde posloupnost čísel na části (nebo celku) oboru hodnot.

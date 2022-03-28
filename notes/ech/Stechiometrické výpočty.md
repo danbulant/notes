@@ -1,3 +1,6 @@
+---
+tags: [ech]
+---
 # Stechiometrické výpočty
 $1Zn + 2HCl \rightarrow H_2 + ZnCl_2$
 

@@ -1,3 +1,6 @@
+---
+tags: [dej, druhá-světová]
+---
 # charakteristika
 1. V čem je pozoruhodná postava Emanuela Moravce? **nejznámnější kolaborant**
 2. Jaký byl osud Romů, kteří u nás žili před druhou světovou válkou? **pracovní tábory, vyhlazení**

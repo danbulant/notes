@@ -1,3 +1,6 @@
+---
+tags: [ele]
+---
 # Střídavý proudu
 - proud, měnící v času svůj směr a velikost
 - časové úseky/periody se značí T(s)

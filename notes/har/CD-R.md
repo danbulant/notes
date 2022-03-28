@@ -1,3 +1,6 @@
+---
+tags: [har]
+---
 # CD-R
 - CD Recordable
 - data lze zapsat pouze jedenkrát

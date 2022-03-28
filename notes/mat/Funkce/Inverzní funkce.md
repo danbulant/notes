@@ -1,3 +1,6 @@
+---
+tags: [mat, mat/funkce]
+---
 # Inverzní funkce
 Značíme $f^{-1}$
 "Prohození os" na grafu

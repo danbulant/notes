@@ -1,3 +1,6 @@
+---
+tags: [ele]
+---
 # Ohmův zákon
 $I = \frac{U}{R}$
 $I$ = [Proud](Vzorníček.md#Proud%20I)

@@ -1,3 +1,6 @@
+---
+tags: [ech]
+---
 # Ředění
 ## Příklad
 - koncentrát 2t 45% $\odot$

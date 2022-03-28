@@ -1,3 +1,6 @@
+---
+tags: [ele, ele/poruchy]
+---
 # Přepětí
 - zvýšení napětí nad dovolenou mez.
 - Způsobuje poškození a rychlé stárnutí izolace, zvětšené nebezpečí zkratu

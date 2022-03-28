@@ -1,3 +1,6 @@
+---
+tags: [mat]
+---
 # Absolutní hodnota
 $|x|$
 ```ad-sentence

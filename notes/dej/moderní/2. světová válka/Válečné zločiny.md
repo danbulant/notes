@@ -1,3 +1,6 @@
+---
+tags: [dej, druhá-světová]
+---
 # Válečné zločiny
 ## O jaké objekty se intenzivně bojovalo během Pražského povstání?
 Rozhlas
