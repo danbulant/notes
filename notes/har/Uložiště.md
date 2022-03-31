@@ -82,3 +82,27 @@ dá se mazat elektrickým proudem (předchůdce flash)
 - nižší cena
 ### SRAM
 - vyšší cena, stabilnější, nemusí se refreshovat, rychlejší
+
+
+---
+## SIMM
+single inline memory module
+## DIMM
+dual inline memory module
+## SDR
+single data rate
+využívá synchroní signál s kmitočtem základní desky
+## DDR
+double data rate
+během jednoho cyklu jsou data přenášena dvakrát
+
+---
+## CL
+CAS Latency
+## RAS
+row access strobe
+## CAS
+column access strobe
+
+## CACHE
+asociotivní paměť
