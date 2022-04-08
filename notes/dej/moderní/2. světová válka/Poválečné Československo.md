@@ -24,3 +24,24 @@ Ztvůrce heydrichiády a lidic
 Protože byly povinné volby
 ## Jaké argumenty obhajovaly zestátňování průmyslu?
 Ekonomika je rozložená, a pod státní kontrolou se rychleji nastartuje
+
+---
+
+## Zjistěte a uveďte, kteří ministři dostali roku 1947 zásilky s výbušninou.
+Prokop Drtina, Petr Zenkl
+## S jakým záměrem podává v únoru 1948 dvanáct nekomunistických ministrů demisi?
+aby padla vláda a byly předčasné volby
+## Jakých nátlakových prostředků komunisti v únoru 1948 pro dosažení svých cílů použili?
+lidové demonstrace
+ustanovení lidové milice
+generální stávka
+## Jakou roli sehrála v rámci komunistického převratu sociální demokracie?
+pomohla komunistům
+## Jak komunistický režim později nazývá události druhého měsíce roku 1948 a jak je interpretuje?
+Vítězný únor
+## V jakém objektu sídlilo ministerstvo zahraničí ČSR, čím je tento objekt architektonicky zajímavý? Co se zde odehrálo 10. března 1948?
+Černinský palác
+Prvorepubliková dostavba
+Jan masaryk byl vyhozen z okna, nejspíše
+## Jaká dvě největší dilemata musel prezident Beneš v průběhu své kariéry řešit? Jak se k nim postavil a proč?
+Demise ministrů, doplnění vlády komunisty
