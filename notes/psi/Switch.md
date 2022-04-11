@@ -22,3 +22,15 @@ Full-duplex nebo half-duplex, pokud nejsou na obou stranách linek stejné tak j
 
 ## Auto MDIX
 Detekuje křížový či přímý kabel a automaticky nastaví.
+
+## Vlan
+
+`(configure)# vlan 10` 
+`(configure-vlan)# name something`
+
+`(configure)# interface vlan 99`
+`(configure-if)# mode trunk`
+
+`(configure)# interface FastEthernet/0`
+`(configure-if)# mode access`
+`(configure-if)# access vlan 10`
