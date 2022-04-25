@@ -178,6 +178,13 @@ var getCurrentHeaderDepth = (headings, cursor) => {
 var getSubsequentHeadings = (headings, cursor) => {
   return headings.filter((heading) => heading.position.end.line > cursor.line);
 };
+var getPreviousLevelHeading = (headings, currentHeading) => {
+  const index = headings.indexOf(currentHeading);
+  const targetHeadings = headings.slice(0, index).reverse();
+  return targetHeadings.find((item, _index, _array) => {
+    return item.level == currentHeading.level - 1;
+  });
+};
 var createToc = ({headings = []}, cursor, settings) => {
   const currentDepth = getCurrentHeaderDepth(headings, cursor);
   const subsequentHeadings = getSubsequentHeadings(headings, cursor);
@@ -201,7 +208,12 @@ var createToc = ({headings = []}, cursor, settings) => {
   const links = includedHeadings.map((heading) => {
     const itemIndication = settings.listStyle === "number" && "1." || "-";
     const indent = new Array(Math.max(0, heading.level - firstHeadingDepth)).fill("	").join("");
-    return `${indent}${itemIndication} [[#${heading.heading}|${heading.heading}]]`;
+    const previousLevelHeading = getPreviousLevelHeading(includedHeadings, heading);
+    if (typeof previousLevelHeading == "undefined") {
+      return `${indent}${itemIndication} [[#${heading.heading}|${heading.heading}]]`;
+    } else {
+      return `${indent}${itemIndication} [[#${previousLevelHeading.heading}#${heading.heading}|${heading.heading}]]`;
+    }
   });
   return import_endent.default`
     ${settings.title ? `${settings.title}
