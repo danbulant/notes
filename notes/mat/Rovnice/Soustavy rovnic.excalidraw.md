@@ -32,7 +32,8 @@ excalidraw-plugin: parsed
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemLinearStrokeSharpness": "round",
-		"gridSize": null
+		"gridSize": null,
+		"colorPalette": {}
 	},
 	"files": {}
 }
