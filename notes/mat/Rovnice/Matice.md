@@ -24,3 +24,6 @@ $a_{31}x+a_{32}y+a_{33}z=b_3$
 Nepočítá se.
 ## Hodnost
 Počet nenulových řádků v matici.
+## Determinant
+U matice se sečtou násobky diagonal (xyz..) a odečtou násobky opačných diagonál (...zyx).
+Pokud je hodnota 0, je rovnice singulární (nekonečně mnoho řešení, nebo žádné)
