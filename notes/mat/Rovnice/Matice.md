@@ -1,4 +1,4 @@
-# Matice
+s# Matice
 Slouží k řešení [Soustavy rovnic](Soustavy%20rovnic.md).
 
 Například:
