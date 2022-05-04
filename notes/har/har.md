@@ -10,6 +10,7 @@ imagePrefix: 'data/'
 -  [[har/BIOS|BIOS]]
 -  [[har/CD-R|CD-R]]
 -  [[har/CPU|CPU]]
+-  [[har/Grafika|Grafika]]
 -  [[har/HDD|HDD]]
 -  [[har/historie počítačů|historie počítačů]]
 -  [[har/IQRF|IQRF]]
