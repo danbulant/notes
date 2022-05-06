@@ -10,6 +10,7 @@ imagePrefix: 'data/'
 -  [[ele/Ampérmetr|Ampérmetr]]
 -  [[ele/Cívky|Cívky]]
 -  [[ele/Elektrárny/Elektrárny|Elektrárny]]
+-  [[ele/Elektrochemické zdroje a Elektrické teplo|Elektrochemické zdroje a Elektrické teplo]]
 -  [[ele/Kapacita kondenzátorů|Kapacita kondenzátorů]]
 -  [[ele/Kondenzátory|Kondenzátory]]
 -  [[ele/Měrení elektrických proudů a napětí|Měrení elektrických proudů a napětí]]
