@@ -102,11 +102,31 @@ $9y=3y-17$
 $6y=-17$
 $y=-\frac{17}6$
 
+nevýchází dobře
 
 ## D
 
 $\frac3{x+1}+\frac2{y-2}=-1$
 $\frac1{x+1}+\frac1{y-2}=-\frac23$
+
+$3(y-2) + 2(x+1) = -1(x+1)(y-2)$
+$3y-6+x+2=-1(xy-2x+1y-2)$
+$3y+x-4=-xy+2x-1y+2$
+$4y-x+xy=6$
+
+$y-2+x+1=-\frac23(x+1)(y-2)$
+$x+y-1=-\frac23(xy-2x+y-2)$
+$x+y-1=-\frac23xy + \frac232x-\frac23y+\frac232$
+$x+y-1=\frac{-2xy +4x-2y+4}3$
+
+$3t+2y=-1$
+$t+y=-\frac23$
+$(t;u)=(\frac13;-1)$
+$\frac1{x+1}=\frac13$
+$\frac1{y-2}=-1$
+$x_1=2$
+$y_1=1$
+$K=\{(2;1)\}$
 
 ---
 
