@@ -15,6 +15,7 @@ imagePrefix: 'data/'
 -  [[tek/Metrický závit|Metrický závit]]
 -  [[tek/Opakující se prvky|Opakující se prvky]]
 -  [[tek/Přerušení|Přerušení]]
+-  [[tek/půdorys|půdorys]]
 -  [[tek/Spoj kantavým šroubem, sestava|Spoj kantavým šroubem, sestava]]
 -  [[tek/Spoj průchozím šroubem|Spoj průchozím šroubem]]
 -  [[tek/Struktura povrchu|Struktura povrchu]]

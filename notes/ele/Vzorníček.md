@@ -68,8 +68,9 @@ $[\epsilon] = F/m$ Farad/metr
 $\epsilon = \epsilon_r * \epsilon_0$
 $\epsilon_r$ = relativní permitivita (bez jednotek)
 ## Konstanty
-| Název             | Zkratka      | Hodnota           | Jednotka | Popis                                                                       |
-| ----------------- | ------------ | ----------------- | -------- | --------------------------------------------------------------------------- |
-| Elementární náboj | q            | $1.609 * 10^{19}$ | C        | Nejmenší možný elektrický náboj jedné samostatné částice volného elektronu. |
-| Permitivita vakua | $\epsilon_0$ | $8.854*to^-12$    | $F/M$    |                                                                             |
+| Název               | Zkratka      | Hodnota           | Jednotka | Popis                                                                       |
+| ------------------- | ------------ | ----------------- | -------- | --------------------------------------------------------------------------- |
+| Elementární náboj   | q            | $1.609 * 10^{19}$ | C        | Nejmenší možný elektrický náboj jedné samostatné částice volného elektronu. |
+| Permitivita vakua   | $\epsilon_0$ | $8.854*to^-12$    | $F/M$    |                                                                             |
+| Odpor lidského těla | -            | $1000$            | $\ohm$   |                                                                             |
 

@@ -51,3 +51,60 @@ $$
 $$
 \frac{5a+4}a - \frac{a+2}{7a^2} = \frac{7a^2(5a+4) - (a+2)}{7a^2} = \frac{35a^3 + 28a^2 - a - 2}{7a^2}
 $$
+
+----
+
+Součet čísla $x$ a jeho druhé mocniny je $3.75$. Vypočítejte číslo $x$.
+$x+x^2=3.75$
+$x^2+x-3.75=0$
+$x_1=-\frac52$
+$x_2=\frac32$
+
+---
+
+Součet čísla $x$ a jeho převrácené hodnoty je $4.25$. Vypočítejte číslo $x$.
+$x+\frac1x=4.25$
+$x^2+x=4.25x$
+$x^2-3.25x=0$
+$x_1=\frac14$
+$x_2=4$
+
+---
+
+Součet čísel $x$ a $y$ je $\frac76$ a jejich součin je $\frac13$. Vypočítejte čísla $x$, $y$.
+
+$x+y=\frac76$
+$x*y=\frac13$
+
+$x_1=y_2=\frac23$
+$x_2=y_1=\frac12$
+
+---
+
+Dvojciferné číslo má ciferný součet $7$, když vyměníme navzájem jeho cifry, vznikne číslo o $27$ větší než bylo původní číslo. Vypočítejte původní číslo.
+
+```sh
+#!/bin/fish
+for i in 16 25 34 43 52 61 70;
+	if [ (math $i + 27) = (echo $i | rev) ];
+		echo $i;
+	end;
+end
+```
+
+25
+
+---
+
+Jestliže napíšeme před dvojciferné číslo číslici $3$, dostaneme číslo třináctkrát větší, než bylo číslo původní. Určete původní číslo.
+
+```sh
+#!/bin/fish
+for i in (seq 10 99);
+	if [ (math 13 \* $i) = 3$i ];
+		echo $i;
+	end;
+end
+```
+
+25
