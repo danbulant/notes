@@ -57,17 +57,30 @@ $$
 Součet čísla $x$ a jeho druhé mocniny je $3.75$. Vypočítejte číslo $x$.
 $x+x^2=3.75$
 $x^2+x-3.75=0$
+$4x^2+4x-15$
+$D=b^2-4ac$
+$D=4^2-4*4*(-15)=16+240=256$
+$\sqrt{D}=16$
+$x=\frac{b\pm\sqrt{D}}{2a}$
+$x_1=\frac{4-16}{2*4}$
 $x_1=-\frac52$
-$x_2=\frac32$
+$x_2=\frac{4+16}{2*4}=\frac32$
 
 ---
 
 Součet čísla $x$ a jeho převrácené hodnoty je $4.25$. Vypočítejte číslo $x$.
+
 $x+\frac1x=4.25$
 $x^2+x=4.25x$
-$x^2-3.25x=0$
-$x_1=\frac14$
-$x_2=4$
+$x^2-3.25x+0=0$
+$D=b^2-4ac$
+$D=(-3.25)^2-4*1*0$
+$D=(-3.25)^2$
+$\sqrt{D}=3.25$
+
+$x=\frac{-b\pm\sqrt{D}}{2a}$
+$x_1=\frac{3.25+3.25}{2}=0$
+$x_2=\frac{3.25-3.25}{2}=-\frac{13}4$
 
 ---
 
