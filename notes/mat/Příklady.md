@@ -197,15 +197,35 @@ $z=9$
 ---
 
 Rozdíl čísla x a jeho druhé odmocniny je -0.24.
-$x - \sqrt{x}=-0.24$ | $^2$
-$x^2-x+0=0.0576$
-$x^2-x+0.0576=0$
-$10000x^2-10000x+576=0$
+$x - \sqrt{x}=-0.24$
+$-\sqrt{x}=-0.24-x$
+$x=(0.24+x)^2$
+$x=0.0576+2x0.24+x^2$
+$x=0.0576+0.48x+x^2$
+$x^2+0.52+0.0576=0$
 $D=b^2-4ac$
-$D=10000^2-4*10000*576$
-$D=100000000-23040000$
-$D=76960000$
-$\sqrt{D}=8772.6848797845$
+$D=0.52^2-4*1*0.0576$
+$D=0.2704-0.2304$
+$D=0.04$
+$\sqrt{D}=0.2$
 $x=\frac{-b^2\pm\sqrt{D}}{2a}$
-$x=\frac{10000\pm8772.6848797845}{20000}$
-$x_1=
+$x=\frac{-0.52\pm0.2}2$
+$x_1=\frac{-0.32}2=-0.16$
+$x_2=\frac{-0.72}2=-0.36$
+
+---
+
+Součet x a jeho druhé odmocniny $3.75$
+
+$x+\sqrt{x}=3.75$
+$\sqrt{x}=3.75-x$
+$x=14.0625-2x3.75+x^2$
+$x=14.0625-7.5x+x^2$
+$14.0625-8.5x+x^2=0$
+
+---
+
+Aleš, Bohouš a Ctibor vykonají společně práci za 6 hodin.
+Aleš ji vykoná za 15h
+Bohouš za 18h
+Za jak dlouho ji udělá Bohouš s Ctiborem.
