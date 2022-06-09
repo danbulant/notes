@@ -66,3 +66,8 @@ $R=\frac{1}{2.88047k\ohm}=347.165\ohm$
 
 ![[Rezistory 2022-06-09 11.29.33.excalidraw]]
 
+$R=4+8+\frac{1}{\frac1{10}+\frac1{10}}$
+$R=12+\frac1{\frac2{10}}$
+$R=12+\frac{10}2$
+$R=12+5$
+$R=17$
