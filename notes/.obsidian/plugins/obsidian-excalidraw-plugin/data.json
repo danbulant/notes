@@ -53,7 +53,7 @@
   "fieldSuggester": true,
   "compatibilityMode": false,
   "drawingOpenCount": 0,
-  "library": "{\"type\":\"excalidrawlib\",\"version\":1,\"library\":[]}",
+  "library": "deprecated",
   "library2": {
     "type": "excalidrawlib",
     "version": 2,

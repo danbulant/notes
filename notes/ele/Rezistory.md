@@ -60,3 +60,9 @@ $R=\frac{1}{\frac{1}{1.2k\ohm} + \frac{1}{1.5k\ohm} + \frac{1}{1.8k\ohm} + \frac
 $R=\frac{1}{2.88047k\ohm}=347.165\ohm$
 
 ![](Pasted%20image%2020220103085740.png)
+
+
+---
+
+![[Rezistory 2022-06-09 11.29.33.excalidraw]]
+

@@ -146,3 +146,50 @@ $-26x\ge-14$
 $26x\le14$
 $x\le\frac{14}{26}$
 $x\le\frac{7}{13}$
+
+---
+
+$(x+2)^2=x^2+40$
+$x^2+2x2+2^2=x^2+40$
+$x^2+4x+4=x^2+40$
+$x^2+4x-36=x^2$
+$4x-36=0$
+$4x=36$
+$x=9$
+
+---
+
+Pokud se obě strany zvětší o $2 cm$, obsah se zvětší o $34cm^2$.
+Jestliže stranu A zmenšíme o $1 cm$, a stranu B zvětšíme o 1 cm, zmenší se o $6cm^2$.
+Jaký je obvod
+
+$(x+2)(y+2)=xy+34$
+$(x-1)(y+1)=xy-6$
+
+$xy+2y+2x=xy+34$
+$xy+x-y=xy-6$
+
+$2y+2x=34$; Obvod
+$x-y=-6$
+
+---
+
+Maturity
+
+A+C = 37
+B+C = 35
+D = 30
+C = 12
+
+
+---
+
+Trojciferný číslo má součet cifer 22. Když vyměníme první a třetí cifru, dostaneme číslo o 297 větší než bylo původní číslo. A když vyměním u původního čísla třetí a druhou cifru, dostaneme číslo o 18 větší než původní.
+
+$x+y+z=22$
+$x+10y+100z=100x+10y+z+297$
+$100x+y+10z=100x+10y+z+18$
+
+$x=6$
+$y=7$
+$z=9$
