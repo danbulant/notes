@@ -193,3 +193,19 @@ $100x+y+10z=100x+10y+z+18$
 $x=6$
 $y=7$
 $z=9$
+
+---
+
+Rozdíl čísla x a jeho druhé odmocniny je -0.24.
+$x - \sqrt{x}=-0.24$ | $^2$
+$x^2-x+0=0.0576$
+$D=b^2-4ac$
+$D=(-1)^2-4*1*0$
+$D=1$
+$\sqrt{D}=1$
+$x=\frac{-b\pm\sqrt{D}}{2a}$
+$x=\frac{1\pm1}2$
+$x_1=1$
+$x_2=0$
+
+$K=\emptyset$
