@@ -10,6 +10,7 @@ imagePrefix: 'data/'
 -  [[fyz/pohyb/Druhý pohybový zákon|Druhý pohybový zákon]]
 -  [[fyz/pohyb/Gravitace|Gravitace]]
 -  [[fyz/pohyb/Hybnost tělesa|Hybnost tělesa]]
+-  [[fyz/pohyb/Moment síly k ose otáčení|Moment síly k ose otáčení]]
 -  [[fyz/pohyb/Příklady|Příklady]]
 -  [[fyz/pohyb/Rovnoměrně zrychlený či zpomalený pohyb|Rovnoměrně zrychlený či zpomalený pohyb]]
 -  [[fyz/pohyb/Rovnoměrný pohyb po kružnici|Rovnoměrný pohyb po kružnici]]

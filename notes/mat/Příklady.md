@@ -229,3 +229,20 @@ Aleš, Bohouš a Ctibor vykonají společně práci za 6 hodin.
 Aleš ji vykoná za 15h
 Bohouš za 18h
 Za jak dlouho ji udělá Bohouš s Ctiborem.
+
+---
+
+(hlavolamikon 60; str 94)
+Kód k trezoru tvoří sekvence čísel 1,2,3,4,5,6, přičemž každé číslo se použije právě jednou. První dvě čísla kódu tvoří dvojciferné číslo, které když vynasobíme třetí číslicí kódu, dostaneme trojciferné číslo, které tvoří druhou polovinu kódu. Jaký je kód?
+
+543162
+
+---
+
+(hlavolamikon 61G; str 94)
+Haně a Daně je dohromady 52 let. Haně je třikrát tolik let, než bylo Daně, když bylo Haně dvakrát tolik, než je Daně dnes. Kolik let jim je?
+
+$H+D=52$
+
+$H=36$
+$D=16$

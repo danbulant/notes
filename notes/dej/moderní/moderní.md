@@ -12,6 +12,7 @@ imagePrefix: 'data/'
 -  [[dej/moderní/2. světová válka/2. světová válka|2. světová válka]]
 -  [[dej/moderní/14.3.2022|14.3.2022]]
 -  [[dej/moderní/21.3.2022|21.3.2022]]
+-  [[dej/moderní/Izrealsko-palestinský konflikt|Izrealsko-palestinský konflikt]]
 -  [[dej/moderní/komunismus/komunismus|komunismus]]
 -  [[dej/moderní/Nouzová kolonie|Nouzová kolonie]]
 -  [[dej/moderní/První republika/První republika|První republika]]
