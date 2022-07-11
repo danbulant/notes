@@ -246,3 +246,16 @@ $H+D=52$
 
 $H=36$
 $D=16$
+
+---
+
+Robot Emil se pohybuje po čtvercové síti s šedými překážkami následujícím způsobem
+- pokud je před Emilem volno, postoupí o jedno políčko.
+- pokud je před ním políčko, otočí se o $90\degree$. Pokud je volno, posune se, jinak se zastaví
+| 0             | 0   | 0   | 0   |
+| ------------- | --- | --- | --- |
+| 0             | 1   | 0   | 0   |
+| $\rightarrow$ | 0   | 1   | 0   |
+| 0             | 0   | 1   | 0   |
+
+Robot Emil stojí na čtverci A2 ve směru šipky. Na kterém čtverci se roboot zastaví.
