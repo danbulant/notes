@@ -35,6 +35,7 @@ Módy:
 `(config-line)# password XX` nastaví heslo pro vybraný terminal
 
 pro CCNA1 PTSA se musí nastavit `console 0`, `vty 0 4` (@SSH), `aux 0`
+[CCNA1 v7.0: ITN Practice PT Skills Assessment (PTSA) Answers](https://itexamanswers.net/ccna-1-v7-0-itn-practice-pt-skills-assessment-ptsa-answers.html)
 
 ### SSH
 
