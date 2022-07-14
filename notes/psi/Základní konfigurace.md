@@ -21,7 +21,7 @@ Módy:
 `(config)# service password-encryption` zapne šifrování hesel
 `(config)# banner motd XYYX` X znak odděluje zprávu (nesmí se objevit jinde ve zprávě), YY je banner co se bude zobrazovat
 `(config)# login block-for 120 attempts 2 within 30` fail2ban
-`(config)# no ipdomain-lookup` vypne DNS lookup v user mode (ctrl+shift+6 zruší)
+`(config)# no ip domain-lookup` vypne DNS lookup v user mode (ctrl+shift+6 zruší)
 `(config)# security passwords min-length 10` nastaví minimální délku hesla
 `(config)# exit`
 `# copy running-config startup-config` uložení (running-config v paměti, startup-config)
