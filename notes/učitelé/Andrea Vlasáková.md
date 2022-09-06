@@ -3,7 +3,7 @@ name: Mgr. Andrea Vlasáková
 shortName: Vl
 kabinet: 205
 mail: andrea.vlasakova@ssps.cz
-class: ang
+class: 1-ang
 tags:
   - ang
   - učitelé

@@ -22,6 +22,7 @@ imagePrefix: 'data/'
 -  [[mat/Násobek a dělitel|Násobek a dělitel]]
 -  [[mat/Nerovnice|Nerovnice]]
 -  [[mat/Příklady|Příklady]]
+-  [[mat/README|README]]
 -  [[mat/Rovnice/Rovnice|Rovnice]]
 -  [[mat/Rozklad složených čísel na součin prvočísel|Rozklad složených čísel na součin prvočísel]]
 -  [[mat/Výroky/Výroky|Výroky]]

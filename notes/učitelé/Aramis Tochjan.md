@@ -3,7 +3,7 @@ name: Ing. Aramis Tochjan
 shortName: Tn
 kabinet: 204
 mail: aramis.tochjan@ssps.cz
-class: har
+class: 1-har
 tags:
   - har
   - učitelé

@@ -35,7 +35,7 @@ dv.table(["Předmět", "Popis"], dv.pages("#README").map(t => [
 function highlightDate(date) {
 	if(!date) return date;
 	const text = dv.date(date).toFormat("dd. MM. yyyy");
-	if(DateTime.now() < dv.date(date) && dv.date(date).diff(DateTime.now(), "days").as("days") < 7) return `&nbsp;==${text}==`;
+	if(DateTime.now() < dv.date(date) && dv.date(date).diff(DateTime.now(), "days").as("days") < 14) return `&nbsp;==${text}==`;
 	return "&nbsp;" + text;
 }
 

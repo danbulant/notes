@@ -3,7 +3,7 @@ name: Šárka Pražáková
 kabinet: 104
 mail: sarka.prazakova@ssps.cz
 shortName: Pa
-class: har
+class: 2-har
 tags:
  - har
  - učitelé

@@ -3,7 +3,7 @@ name: Ing. Ladislav Trnka
 shortName: Ta
 kabinet: 209
 mail: ladislav.trnka@ssps.cz
-class: ech
+class: 1-ech
 tags:
   - ech
   - učitelé
