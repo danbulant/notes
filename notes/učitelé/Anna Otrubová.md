@@ -1,7 +1,7 @@
 ---
 name: Mgr. Anna Otrubová
 shortName: Ot
-kabinet:
+kabinet: 323
 mail: anna.otrubova@ssps.cz
 class: 2-mat
 tags:
