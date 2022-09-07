@@ -1,6 +1,7 @@
 # README
 
 - sehnat si učebnici J. Petáková
+- sehnat šablonu grafů a funkcí
 
 ## Čtvrtletní práce
 

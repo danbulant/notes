@@ -2,7 +2,7 @@
 tags:
   - mat
 ---
-# Příklady
+# Příklady 1
 ---
 Třída 1.K odjížděla na lyžařský kurs do Krkonoš, na který byly, jako povinné vybavení, předepsány běžecké a sjezdové lyže. Škola nabídla žákům možnost zapůjčení obou druhů lyží ze školního skladu. Alespoň jeden druh lyží si vypůjčilo celkem 14 studentů. Běžky si vypůjčilo o 5 studentů více, než bylo studentů, kteří se vypůjčili sjezdovky. Pouze jeden druh lyží si vypůjčilo o 4 studenty více, než bylo studentů, kteří si vypůjčili oba druhy lyží. Studentů, kteří si vypůjčili pouze běžky, bylo o 3 méně, než studentů, kteří měli vlastní vybavení a nemuseli si vypůjčit nic. Kolik studentů se zúčastnilo lyžařského kurzu?
 $$a+b+c=14$$
