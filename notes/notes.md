@@ -17,6 +17,7 @@ noteOnly: true
 -  [[kbb/kbb|kbb]]
 -  [[mat/mat|mat]]
 -  [[Misc/Misc|Misc]]
+-  [[OSE/OSE|OSE]]
 -  [[Osobnosti|Osobnosti]]
 -  [[pdv/pdv|pdv]]
 -  [[preamble.sty|preamble.sty]]

@@ -13,6 +13,7 @@ imagePrefix: 'data/'
 -  [[učitelé/Andrea Vlasáková|Andrea Vlasáková]]
 -  [[učitelé/Anna Otrubová|Anna Otrubová]]
 -  [[učitelé/Aramis Tochjan|Aramis Tochjan]]
+-  [[učitelé/Dušan Ďurďovič|Dušan Ďurďovič]]
 -  [[učitelé/Ivona Vítová|Ivona Vítová]]
 -  [[učitelé/Ladislav Trnka|Ladislav Trnka]]
 -  [[učitelé/Šárka Pražáková|Šárka Pražáková]]
