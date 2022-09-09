@@ -1,0 +1,18 @@
+# Hamlet
+- strýc Claudius mu zabije otce jedem do ucha
+- Hamletovi se zjeví duch jeho otce a řekne mu kdo ho zabil a jak
+- Cladius se stal králem
+- Za pomocí herců si ověřil že Claudius zabil otce (vložil scénu která zrekonstruuje scénu vraždy)
+- Cladius uteče a potvrdí tak jeho čin
+- Claudius lituje svých činů, Hamlet váhá
+- Hamlet si všimne že ho někdo poslouchá za závěsem
+- Myslí si, že to je Claudius, probodne osobu, zjistí že to byl otec jeho milované Ofélie
+- Hamlet je nucen odjet do Anglie s jeho spolužáky, měl být popraven ale upravil dopis aby byli popraveni ti co měli dopis donést
+- Hamlet se vrátí a zjistí že Ofélie spáchala sebevraždu po smrti otce
+- Claudius doporučí souboj Laerta (bratra Ofélie, který se chce pomstít) a Hamleta
+- Hamlet dostane tupý meč, Laert dostane meč namočený do jedu
+- Číše pro vítěze byla s jedem
+- Hamlet zvítězí ale je zraněn
+- Hamletova matka vypije číši
+- Hamlet umírá na jed, ale nejdřív stihne zabít Claudia otrávenou číši která zabila královnu Gertrudu
+- Horacio, kamarád Hamleta, chce spáchat sebevraždu ale Hamlet ho na poslední chvíly zastaví aby mohl vyprávět pravdivý příběh
