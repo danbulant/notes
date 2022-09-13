@@ -106,3 +106,6 @@ Je to pravda dodnes.
 - IBM
 - Microsoft
 - 2 členy (+ Paul Allen)
+
+---
+
