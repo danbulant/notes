@@ -1,5 +1,6 @@
 ---
 Date: 2022-03-02
+tags: [mat, mat/funkce]
 ---
 # Příklady
 
