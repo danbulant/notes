@@ -25029,6 +25029,11 @@ var ObsidianGitSettingsTab = class extends import_obsidian5.PluginSettingTab {
       plugin.settings.refreshSourceControl = value;
       plugin.saveSettings();
     }));
+    new import_obsidian5.Setting(containerEl).setName("Source Control View refresh interval").setDesc("Milliseconds two wait after file change before refreshing the Source Control View").addText((toggle) => toggle.setValue(plugin.settings.refreshSourceControlTimer.toString()).setPlaceholder("7000").onChange((value) => {
+      plugin.settings.refreshSourceControlTimer = Math.max(parseInt(value), 500);
+      plugin.saveSettings();
+      plugin.setRefreshDebouncer();
+    }));
     new import_obsidian5.Setting(containerEl).setName("Disable notifications").setDesc("Disable notifications for git operations to minimize distraction (refer to status bar for updates). Errors are still shown as notifications even if you enable this setting").addToggle((toggle) => toggle.setValue(plugin.settings.disablePopups).onChange((value) => {
       plugin.settings.disablePopups = value;
       plugin.saveSettings();
@@ -25100,6 +25105,15 @@ var ObsidianGitSettingsTab = class extends import_obsidian5.PluginSettingTab {
         plugin.gitManager.updateBasePath(value || "");
       });
     });
+    new import_obsidian5.Setting(containerEl).setName("Disable on this device").addToggle((toggle) => toggle.setValue(plugin.localStorage.getPluginDisabled()).onChange((value) => {
+      plugin.localStorage.setPluginDisabled(value);
+      if (value) {
+        plugin.unloadPlugin();
+      } else {
+        plugin.loadPlugin();
+      }
+      new import_obsidian5.Notice("Obsidian must be restarted for the changes to take affect");
+    }));
     new import_obsidian5.Setting(containerEl).setName("Donate").setDesc("If you like this Plugin, consider donating to support continued development.").addButton((bt) => {
       bt.buttonEl.outerHTML = "<a href='https://ko-fi.com/F1F195IQ5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>";
     });
@@ -25321,7 +25335,8 @@ var DEFAULT_SETTINGS = {
   differentIntervalCommitAndPush: false,
   changedFilesInStatusBar: false,
   username: "",
-  showedMobileNotice: false
+  showedMobileNotice: false,
+  refreshSourceControlTimer: 7e3
 };
 var GIT_VIEW_CONFIG = {
   type: "git-view",
@@ -25382,6 +25397,12 @@ var LocalStorageSettings = class {
   }
   setGitPath(value) {
     return localStorage.setItem(this.prefix + ":gitPath", value);
+  }
+  getPluginDisabled() {
+    return localStorage.getItem(this.prefix + ":pluginDisabled") == "true";
+  }
+  setPluginDisabled(value) {
+    return localStorage.setItem(this.prefix + ":pluginDisabled", `${value}`);
   }
 };
 
@@ -30990,11 +31011,6 @@ var ObsidianGit = class extends import_obsidian21.Plugin {
     this.conflictOutputFile = "conflict-files-obsidian-git.md";
     this.offlineMode = false;
     this.loading = false;
-    this.debRefresh = (0, import_obsidian21.debounce)(() => {
-      if (this.settings.refreshSourceControl) {
-        this.refresh();
-      }
-    }, 7e3, true);
   }
   setState(state) {
     var _a2;
@@ -31025,6 +31041,14 @@ var ObsidianGit = class extends import_obsidian21.Plugin {
       this.localStorage = new LocalStorageSettings(this);
       yield this.loadSettings();
       this.migrateSettings();
+      this.addSettingTab(new ObsidianGitSettingsTab(this.app, this));
+      if (!this.localStorage.getPluginDisabled()) {
+        this.loadPlugin();
+      }
+    });
+  }
+  loadPlugin() {
+    return __async(this, null, function* () {
       addEventListener("git-refresh", this.refresh.bind(this));
       this.registerView(GIT_VIEW_CONFIG.type, (leaf) => {
         return new GitView2(leaf, this);
@@ -31036,7 +31060,7 @@ var ObsidianGit = class extends import_obsidian21.Plugin {
         display: "Git View",
         defaultMod: true
       });
-      this.addSettingTab(new ObsidianGitSettingsTab(this.app, this));
+      this.setRefreshDebouncer();
       this.addCommand({
         id: "edit-gitignore",
         name: "Edit .gitignore",
@@ -31236,6 +31260,15 @@ var ObsidianGit = class extends import_obsidian21.Plugin {
       }
       this.app.workspace.onLayoutReady(() => this.init());
     });
+  }
+  setRefreshDebouncer() {
+    var _a2;
+    (_a2 = this.debRefresh) == null ? void 0 : _a2.cancel();
+    this.debRefresh = (0, import_obsidian21.debounce)(() => {
+      if (this.settings.refreshSourceControl) {
+        this.refresh();
+      }
+    }, this.settings.refreshSourceControlTimer, true);
   }
   showNotices() {
     return __async(this, null, function* () {
