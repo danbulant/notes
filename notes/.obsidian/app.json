@@ -5,5 +5,10 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "spellcheckLanguages": [
+    "en-US",
+    "cs"
+  ],
+  "spellcheck": true
 }
