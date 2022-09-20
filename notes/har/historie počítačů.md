@@ -63,14 +63,14 @@ tags:
 #### Maniac
 - Mathematical analyzer 
 - Matematické výpočty fyzikálních dějů
-#### Univac
-- Remington
 ### Druhá generace (1951 - 1965)
 - polovodičové prvky
 	- tranzistory (1948)
 	- diody
 - zvýšení kapacity paměti
 - zvýšení rychlosti přenosu dat
+#### Univac
+- Remington
 #### USA - Bell Laboratories
 - první samočinný počítač na světě
 - elektronky nahrazené tranzistory
