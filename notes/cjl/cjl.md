@@ -11,6 +11,7 @@ imagePrefix: 'data/'
 -  [[cjl/jazyky/jazyky|jazyky]]
 -  [[cjl/jména|jména]]
 -  [[cjl/literatura/literatura|literatura]]
+-  [[cjl/Pedagog a didaktik|Pedagog a didaktik]]
 -  [[cjl/Povinné knihy|Povinné knihy]]
 -  [[cjl/Slohové práce/Slohové práce|Slohové práce]]
 -  [[cjl/testy/testy|testy]]

@@ -23,6 +23,12 @@ prostá není (některých/všech hodnot nabývá vícekrát, např 1 a -1 má s
 $D=\mathbb{R}$
 $H=\langle0;\infty)\in\mathbb{R}^+_o$
 
+příklad
+$y=x^4$
+o 2 doleva a o 5 dolů
+$y=(x+4)^2-5$
+
+
 ---
 
 $n > 0$ liché
