@@ -24,6 +24,19 @@ $y=\frac{3x+1}{x-5}$
 $y=\frac1x$
 ![](Pasted%20image%2020220920141533.png)
 
+## Převedení ze zlomku na jednodušší zlomek
+
+$(2x+3):(x-1)$
+
+$2x:x=2$
+
+$x*2=2x$
+$-1*2=-2$
+ → $(2x-2)$
+
+$(2x+3)-(2x-2)$;
+zb. 5
+
 ---
 
 a) $y=\frac{2x+3}{x-1}=(2x+3):(x-1)=2+\frac5{x-1}$
@@ -45,3 +58,12 @@ $D_a=R\backslash\{2\}$
 
 monotonie: klesající v $(-\infty;1)$ a klesající v $(1;\infty)$
 je prostá
+
+omezená není
+maximum nemá
+
+---
+
+$b: y=\frac{-4x+3}{x-1}$
+
+$y=(-4x+3):(x-1)=-4
