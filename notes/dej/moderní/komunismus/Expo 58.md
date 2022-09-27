@@ -16,11 +16,11 @@ jediné city v tomto ocelovém stroji
 ## Co má asi autor komentáře na mysli pomluvami o Maďarsku?
 
 ## Jak na výstavě uspěl československý pavilon?
-
+Ukazovalo hezké poválečné československo
 ## Jaké naše umělecké obory se na výstavě nejvíce prosadily?
-
+hudba, sklářství, literatura
 ## V čem byla ve své době zcela převratná Laterna Magica?
-
+díky filmové projekci
 ## Jaké architektonické počiny výstavy vás nejvíce zaujaly?
 
 ## Kdo napsal komentář k této reportáži? Zjistěte, čím je tento člověk významný. Jaké postoje v komentáři projevují?
