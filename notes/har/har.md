@@ -17,6 +17,7 @@ imagePrefix: 'data/'
 -  [[har/IQRF|IQRF]]
 -  [[har/Konektory|Konektory]]
 -  [[har/Micro Controller Unit|Micro Controller Unit]]
+-  [[har/otázky|otázky]]
 -  [[har/Pipelining|Pipelining]]
 -  [[har/Uložiště|Uložiště]]
 -  [[har/USB|USB]]

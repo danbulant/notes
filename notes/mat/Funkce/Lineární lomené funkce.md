@@ -53,4 +53,43 @@ maximum nemá
 
 $b: y=\frac{-4x+3}{x-1}$
 
-$y=(-4x+3):(x-1)=-4
+$y=(-4x+3):(x-1)=-4+\frac{-1}{x-1}$
+
+![](Pasted%20image%2020220922112018.png)
+
+$o'=[1;-4]$
+kreslíme $-\frac1x$
+
+| x   | 1   | 2    | -1  | -2  |
+| --- | --- | ---- | --- | --- |
+| y   | -1  | -0.5 | 1   | 0.5 |
+
+![](Pasted%20image%2020220922111932.png)
+
+[Prostá funkce](Prostá funkce.md) 
+monotonie: rostoucí v $(-\infty;1)$ $(1;\infty)$
+není sudá ani lichá
+omezená není
+maximum nemá
+$D=\mathbb{R}-\{1\}$
+$H=\mathbb{R}-\{-4\}$
+
+---
+
+$c: y=\frac{-3x-23}{x+8}=(-3x-23):(x+8)=-3+\frac1{x+8}$
+
+![](Pasted%20image%2020220922112549.png)
+
+$o'=[-8;-3]$
+
+kreslíme $-\frac1x$
+$D=\mathbb{R}-\{-8\}$
+$H=\mathbb{R}-\{-3\}$
+
+![](Pasted%20image%2020220922113158.png)
+
+[Prostá funkce](Prostá funkce.md) 
+maximum ani minimum nemá
+omezená není
+není sudá ani lichá
+klesající v $(-\infty;-8)$ a v $(-8;\infty)$
