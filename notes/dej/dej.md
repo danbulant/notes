@@ -1,4 +1,6 @@
-	---
+---
+tags: [MOC, dej, generated, index]
+---	---
 tags: [MOC, dej, generated, index]
 ---
 # dej

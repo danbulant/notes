@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/literatura, cjl/renesance]
+---
 # Zkrocení zlé ženy
 Kateřina - zlá
 Bianka - druhá dcera

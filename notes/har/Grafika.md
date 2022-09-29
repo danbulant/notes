@@ -1,3 +1,6 @@
+---
+tags: [har]
+---
 # Grafika
 - GPU procesor - AMD (ATI)/nVidia
 - GPU karty - ASUS, Gigabyte, další

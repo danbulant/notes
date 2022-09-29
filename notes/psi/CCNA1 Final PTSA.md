@@ -1,3 +1,6 @@
+---
+tags: [psi]
+---
 # CCNA1 Final PTSA
 
 `192.168.10.0/24` 

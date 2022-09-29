@@ -1,5 +1,5 @@
 ---
-tags: [MCD, generated, index, ele, ele/elektrárny]
+tags: [MCD, generated, index, ele, ele/elektrárny, MOC]
 ---
 # Jaderná elektrárna
 Nejšetrnější neobnovitelný zdroj, největší výkon, problémy s radioaktivitou.

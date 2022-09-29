@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/literatura, cjl/renesance]
+---
 # Humanismus
 - myšlenkový proud
 - humanus - lidský

@@ -1,5 +1,5 @@
 ---
-tags: [ele, ele/poruchy]
+tags: [ele, ele/poruchy, MOC]
 ---
 # Poruchy
 ```ccard

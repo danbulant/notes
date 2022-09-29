@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/literatura ]
+---
 # Díla, postavy, vlastnosti
 - Don Quijote -  - snílek
 - Vergillius - autor?

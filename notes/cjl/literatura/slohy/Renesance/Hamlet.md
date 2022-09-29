@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/literatura, cjl/renesance]
+---
 # Hamlet
 - strýc Claudius mu zabije otce jedem do ucha
 - Hamletovi se zjeví duch jeho otce a řekne mu kdo ho zabil a jak

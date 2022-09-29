@@ -1,3 +1,6 @@
+---
+tags: [cjl, testy]
+---
 # Hamlet
 1. (děj se odehrává v) dánsko ✔️
 2. (o smrti otce a způsobu ho informuje) duch jeho otce ✔️

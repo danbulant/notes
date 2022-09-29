@@ -9,9 +9,11 @@
   "folderEmoji": ":card_index_dividers:",
   "fileEmoji": ":page_facing_up:",
   "enableEmojis": false,
-  "foldersExcluded": "",
+  "foldersExcluded": "notes/",
   "foldersIncluded": "",
   "sortOrder": "asc",
   "addSquareBrackets": true,
-  "embedSubIndex": false
+  "embedSubIndex": false,
+  "templateFile": "",
+  "frontMatterSeparator": "---"
 }

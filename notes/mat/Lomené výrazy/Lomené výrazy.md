@@ -1,5 +1,5 @@
 ---
-tags:
+tags: [MOC]
   - mat
   - mat/lomeno
 ---

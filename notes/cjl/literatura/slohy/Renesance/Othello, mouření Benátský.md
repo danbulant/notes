@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/literatura, cjl/renesance]
+---
 # Othello, mouření Benátský
 Odehrává se v Benátkách a na kypru
 Jargon mu namluvil že ho podvádí žena Desdemona

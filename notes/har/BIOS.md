@@ -1,5 +1,5 @@
 ---
-tags: [HAR]
+tags: [har]
 ---
 # BIOS
 Basic input output system

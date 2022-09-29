@@ -1,3 +1,6 @@
+---
+tags: [har]
+---
 # otázky
 ## Co jsou to vstupní zařízení + příklady
 zařízení který dávají vstup do počítače

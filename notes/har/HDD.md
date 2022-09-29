@@ -1,3 +1,6 @@
+---
+tags: [har]
+---
 # HDD
 - mechanický disk
 - elektromagnetický princip

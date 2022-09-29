@@ -1,5 +1,5 @@
 ---
-tags: [kbb, generated, index]
+tags: [kbb, generated, index, MOC]
 ---
 # haxagon
 ```ccard
