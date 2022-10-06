@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny]
+---
 # Hydrostatický paradox
 
 Velikost tlakové síly kapaliny na dno nádoby nezávisí na hmotnosti kapaliny v nádobě.

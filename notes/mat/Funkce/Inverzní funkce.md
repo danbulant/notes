@@ -6,6 +6,8 @@ Značíme $f^{-1}$
 "Prohození os" na grafu
 grafy jsou osově souměrné podle přímky $y=x$ (vlevo dole doprava nahoru)
 musí být prosté
+inverzní funkce inverzní funkce je původní funkce 
+ → $f^{-1}(f^{-1}(x))=f(x)$
 
 $f$ → $x$ na $y$
 $f^{-1}$ → $y$ na $x$
@@ -64,3 +66,22 @@ $y(x+3)=1$
 $x+3=\frac1y$
 $x=\frac1y-3$
 
+
+---
+
+$k: y=(x-4)^2$
+$y=x^2-16$
+
+není prostá
+na celém $D_f$ →
+→ vybereme pouze $<4;\infty)$ kde prostá je
+
+$k^{-1}: x=(y-4)^2$
+$x=y^2-16$
+$\sqrt{x}=y-4$
+$-y=-\sqrt{x}-4$
+$y=\sqrt{x}+4$
+
+![](Pasted%20image%2020221004140412.png)
+
+inverzní funkce modře

@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny]
+---
 # Atmosférický tlak
 
 $h=75cm$

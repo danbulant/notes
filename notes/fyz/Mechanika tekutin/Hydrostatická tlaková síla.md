@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny]
+---
 # Hydrostatická tlaková síla
 ![](Pasted%20image%2020221004125503.png)
 
