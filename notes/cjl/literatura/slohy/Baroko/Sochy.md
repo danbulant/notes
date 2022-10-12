@@ -1,0 +1,2 @@
+# Sochy
+Alegorické (skryté nápady)
