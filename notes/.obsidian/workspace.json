@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "6f2b93cd39b41df9",
+    "type": "split",
+    "children": [
+      {
+        "id": "47e02b11d16c6d54",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b84261086a4e144",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Funkce/Exponenciální funkce.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2d94e1f7d4d6314d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f35cd9ee6228f2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c976bdcdc74c84c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "39ffc89df674b064",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "osobnosti",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d22ff97dba49a6cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d295f5465925757",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95710984799e1bd1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "mat/Funkce/Exponenciální funkce.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "29b5a5743ef827b8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "mat/Funkce/Exponenciální funkce.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7b67e09726d5a2d3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3d3ad46039e1d656",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "63297f34a233fb8a",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "29ac01a73a580525",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
+          },
+          {
+            "id": "45e31990ae5d52cd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "mat/Funkce/Exponenciální funkce.md"
+              }
+            }
+          },
+          {
+            "id": "7bf4fe7c53f74604",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "24182783470757f3",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
+              "state": {}
+            }
+          },
+          {
+            "id": "ce11575e5eafa954",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "478e61537eb995fc",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "3b84261086a4e144",
+  "lastOpenFiles": [
+    "mat/Funkce/Exponenciální funkce.md",
+    "mat/Funkce/Lineární lomené funkce.md",
+    "mat/Funkce/Kartézský součin.md",
+    "mat/Funkce/Inverzní funkce.md",
+    "mat/Funkce/Funkční přepis.md",
+    "mat/Funkce/Funkce vs Rovnice.md",
+    "mat/Funkce/Funkce.md",
+    "mat/Funkce/Cosinus.md",
+    "mat/mat.md",
+    "cjl/cjl.md"
+  ]
+}
