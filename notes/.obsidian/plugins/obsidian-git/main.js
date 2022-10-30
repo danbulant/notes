@@ -18665,7 +18665,7 @@ var index = {
 var isomorphic_git_default = index;
 
 // src/main.ts
-var import_obsidian22 = __toModule(require("obsidian"));
+var import_obsidian23 = __toModule(require("obsidian"));
 
 // src/promiseQueue.ts
 init_polyfill_buffer();
@@ -18695,6 +18695,496 @@ var import_obsidian7 = __toModule(require("obsidian"));
 
 // src/isomorphicGit.ts
 init_polyfill_buffer();
+
+// node_modules/diff/lib/index.mjs
+init_polyfill_buffer();
+function Diff() {
+}
+Diff.prototype = {
+  diff: function diff(oldString, newString) {
+    var options = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
+    var callback = options.callback;
+    if (typeof options === "function") {
+      callback = options;
+      options = {};
+    }
+    this.options = options;
+    var self3 = this;
+    function done(value) {
+      if (callback) {
+        setTimeout(function() {
+          callback(void 0, value);
+        }, 0);
+        return true;
+      } else {
+        return value;
+      }
+    }
+    oldString = this.castInput(oldString);
+    newString = this.castInput(newString);
+    oldString = this.removeEmpty(this.tokenize(oldString));
+    newString = this.removeEmpty(this.tokenize(newString));
+    var newLen = newString.length, oldLen = oldString.length;
+    var editLength = 1;
+    var maxEditLength = newLen + oldLen;
+    if (options.maxEditLength) {
+      maxEditLength = Math.min(maxEditLength, options.maxEditLength);
+    }
+    var bestPath = [{
+      newPos: -1,
+      components: []
+    }];
+    var oldPos = this.extractCommon(bestPath[0], newString, oldString, 0);
+    if (bestPath[0].newPos + 1 >= newLen && oldPos + 1 >= oldLen) {
+      return done([{
+        value: this.join(newString),
+        count: newString.length
+      }]);
+    }
+    function execEditLength() {
+      for (var diagonalPath = -1 * editLength; diagonalPath <= editLength; diagonalPath += 2) {
+        var basePath = void 0;
+        var addPath = bestPath[diagonalPath - 1], removePath = bestPath[diagonalPath + 1], _oldPos = (removePath ? removePath.newPos : 0) - diagonalPath;
+        if (addPath) {
+          bestPath[diagonalPath - 1] = void 0;
+        }
+        var canAdd = addPath && addPath.newPos + 1 < newLen, canRemove = removePath && 0 <= _oldPos && _oldPos < oldLen;
+        if (!canAdd && !canRemove) {
+          bestPath[diagonalPath] = void 0;
+          continue;
+        }
+        if (!canAdd || canRemove && addPath.newPos < removePath.newPos) {
+          basePath = clonePath(removePath);
+          self3.pushComponent(basePath.components, void 0, true);
+        } else {
+          basePath = addPath;
+          basePath.newPos++;
+          self3.pushComponent(basePath.components, true, void 0);
+        }
+        _oldPos = self3.extractCommon(basePath, newString, oldString, diagonalPath);
+        if (basePath.newPos + 1 >= newLen && _oldPos + 1 >= oldLen) {
+          return done(buildValues(self3, basePath.components, newString, oldString, self3.useLongestToken));
+        } else {
+          bestPath[diagonalPath] = basePath;
+        }
+      }
+      editLength++;
+    }
+    if (callback) {
+      (function exec() {
+        setTimeout(function() {
+          if (editLength > maxEditLength) {
+            return callback();
+          }
+          if (!execEditLength()) {
+            exec();
+          }
+        }, 0);
+      })();
+    } else {
+      while (editLength <= maxEditLength) {
+        var ret = execEditLength();
+        if (ret) {
+          return ret;
+        }
+      }
+    }
+  },
+  pushComponent: function pushComponent(components, added, removed) {
+    var last2 = components[components.length - 1];
+    if (last2 && last2.added === added && last2.removed === removed) {
+      components[components.length - 1] = {
+        count: last2.count + 1,
+        added,
+        removed
+      };
+    } else {
+      components.push({
+        count: 1,
+        added,
+        removed
+      });
+    }
+  },
+  extractCommon: function extractCommon(basePath, newString, oldString, diagonalPath) {
+    var newLen = newString.length, oldLen = oldString.length, newPos = basePath.newPos, oldPos = newPos - diagonalPath, commonCount = 0;
+    while (newPos + 1 < newLen && oldPos + 1 < oldLen && this.equals(newString[newPos + 1], oldString[oldPos + 1])) {
+      newPos++;
+      oldPos++;
+      commonCount++;
+    }
+    if (commonCount) {
+      basePath.components.push({
+        count: commonCount
+      });
+    }
+    basePath.newPos = newPos;
+    return oldPos;
+  },
+  equals: function equals(left, right) {
+    if (this.options.comparator) {
+      return this.options.comparator(left, right);
+    } else {
+      return left === right || this.options.ignoreCase && left.toLowerCase() === right.toLowerCase();
+    }
+  },
+  removeEmpty: function removeEmpty(array) {
+    var ret = [];
+    for (var i = 0; i < array.length; i++) {
+      if (array[i]) {
+        ret.push(array[i]);
+      }
+    }
+    return ret;
+  },
+  castInput: function castInput(value) {
+    return value;
+  },
+  tokenize: function tokenize(value) {
+    return value.split("");
+  },
+  join: function join2(chars) {
+    return chars.join("");
+  }
+};
+function buildValues(diff2, components, newString, oldString, useLongestToken) {
+  var componentPos = 0, componentLen = components.length, newPos = 0, oldPos = 0;
+  for (; componentPos < componentLen; componentPos++) {
+    var component = components[componentPos];
+    if (!component.removed) {
+      if (!component.added && useLongestToken) {
+        var value = newString.slice(newPos, newPos + component.count);
+        value = value.map(function(value2, i) {
+          var oldValue = oldString[oldPos + i];
+          return oldValue.length > value2.length ? oldValue : value2;
+        });
+        component.value = diff2.join(value);
+      } else {
+        component.value = diff2.join(newString.slice(newPos, newPos + component.count));
+      }
+      newPos += component.count;
+      if (!component.added) {
+        oldPos += component.count;
+      }
+    } else {
+      component.value = diff2.join(oldString.slice(oldPos, oldPos + component.count));
+      oldPos += component.count;
+      if (componentPos && components[componentPos - 1].added) {
+        var tmp = components[componentPos - 1];
+        components[componentPos - 1] = components[componentPos];
+        components[componentPos] = tmp;
+      }
+    }
+  }
+  var lastComponent = components[componentLen - 1];
+  if (componentLen > 1 && typeof lastComponent.value === "string" && (lastComponent.added || lastComponent.removed) && diff2.equals("", lastComponent.value)) {
+    components[componentLen - 2].value += lastComponent.value;
+    components.pop();
+  }
+  return components;
+}
+function clonePath(path2) {
+  return {
+    newPos: path2.newPos,
+    components: path2.components.slice(0)
+  };
+}
+var characterDiff = new Diff();
+function diffChars(oldStr, newStr, options) {
+  return characterDiff.diff(oldStr, newStr, options);
+}
+var extendedWordChars = /^[A-Za-z\xC0-\u02C6\u02C8-\u02D7\u02DE-\u02FF\u1E00-\u1EFF]+$/;
+var reWhitespace = /\S/;
+var wordDiff = new Diff();
+wordDiff.equals = function(left, right) {
+  if (this.options.ignoreCase) {
+    left = left.toLowerCase();
+    right = right.toLowerCase();
+  }
+  return left === right || this.options.ignoreWhitespace && !reWhitespace.test(left) && !reWhitespace.test(right);
+};
+wordDiff.tokenize = function(value) {
+  var tokens = value.split(/([^\S\r\n]+|[()[\]{}'"\r\n]|\b)/);
+  for (var i = 0; i < tokens.length - 1; i++) {
+    if (!tokens[i + 1] && tokens[i + 2] && extendedWordChars.test(tokens[i]) && extendedWordChars.test(tokens[i + 2])) {
+      tokens[i] += tokens[i + 2];
+      tokens.splice(i + 1, 2);
+      i--;
+    }
+  }
+  return tokens;
+};
+function diffWordsWithSpace(oldStr, newStr, options) {
+  return wordDiff.diff(oldStr, newStr, options);
+}
+var lineDiff = new Diff();
+lineDiff.tokenize = function(value) {
+  var retLines = [], linesAndNewlines = value.split(/(\n|\r\n)/);
+  if (!linesAndNewlines[linesAndNewlines.length - 1]) {
+    linesAndNewlines.pop();
+  }
+  for (var i = 0; i < linesAndNewlines.length; i++) {
+    var line = linesAndNewlines[i];
+    if (i % 2 && !this.options.newlineIsToken) {
+      retLines[retLines.length - 1] += line;
+    } else {
+      if (this.options.ignoreWhitespace) {
+        line = line.trim();
+      }
+      retLines.push(line);
+    }
+  }
+  return retLines;
+};
+function diffLines(oldStr, newStr, callback) {
+  return lineDiff.diff(oldStr, newStr, callback);
+}
+var sentenceDiff = new Diff();
+sentenceDiff.tokenize = function(value) {
+  return value.split(/(\S.+?[.!?])(?=\s+|$)/);
+};
+var cssDiff = new Diff();
+cssDiff.tokenize = function(value) {
+  return value.split(/([{}:;,]|\s+)/);
+};
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function(obj2) {
+      return typeof obj2;
+    };
+  } else {
+    _typeof = function(obj2) {
+      return obj2 && typeof Symbol === "function" && obj2.constructor === Symbol && obj2 !== Symbol.prototype ? "symbol" : typeof obj2;
+    };
+  }
+  return _typeof(obj);
+}
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr))
+    return _arrayLikeToArray(arr);
+}
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter))
+    return Array.from(iter);
+}
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o)
+    return;
+  if (typeof o === "string")
+    return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor)
+    n = o.constructor.name;
+  if (n === "Map" || n === "Set")
+    return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))
+    return _arrayLikeToArray(o, minLen);
+}
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length)
+    len = arr.length;
+  for (var i = 0, arr2 = new Array(len); i < len; i++)
+    arr2[i] = arr[i];
+  return arr2;
+}
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+var objectPrototypeToString = Object.prototype.toString;
+var jsonDiff = new Diff();
+jsonDiff.useLongestToken = true;
+jsonDiff.tokenize = lineDiff.tokenize;
+jsonDiff.castInput = function(value) {
+  var _this$options = this.options, undefinedReplacement = _this$options.undefinedReplacement, _this$options$stringi = _this$options.stringifyReplacer, stringifyReplacer = _this$options$stringi === void 0 ? function(k, v) {
+    return typeof v === "undefined" ? undefinedReplacement : v;
+  } : _this$options$stringi;
+  return typeof value === "string" ? value : JSON.stringify(canonicalize(value, null, null, stringifyReplacer), stringifyReplacer, "  ");
+};
+jsonDiff.equals = function(left, right) {
+  return Diff.prototype.equals.call(jsonDiff, left.replace(/,([\r\n])/g, "$1"), right.replace(/,([\r\n])/g, "$1"));
+};
+function canonicalize(obj, stack, replacementStack, replacer, key2) {
+  stack = stack || [];
+  replacementStack = replacementStack || [];
+  if (replacer) {
+    obj = replacer(key2, obj);
+  }
+  var i;
+  for (i = 0; i < stack.length; i += 1) {
+    if (stack[i] === obj) {
+      return replacementStack[i];
+    }
+  }
+  var canonicalizedObj;
+  if (objectPrototypeToString.call(obj) === "[object Array]") {
+    stack.push(obj);
+    canonicalizedObj = new Array(obj.length);
+    replacementStack.push(canonicalizedObj);
+    for (i = 0; i < obj.length; i += 1) {
+      canonicalizedObj[i] = canonicalize(obj[i], stack, replacementStack, replacer, key2);
+    }
+    stack.pop();
+    replacementStack.pop();
+    return canonicalizedObj;
+  }
+  if (obj && obj.toJSON) {
+    obj = obj.toJSON();
+  }
+  if (_typeof(obj) === "object" && obj !== null) {
+    stack.push(obj);
+    canonicalizedObj = {};
+    replacementStack.push(canonicalizedObj);
+    var sortedKeys = [], _key;
+    for (_key in obj) {
+      if (obj.hasOwnProperty(_key)) {
+        sortedKeys.push(_key);
+      }
+    }
+    sortedKeys.sort();
+    for (i = 0; i < sortedKeys.length; i += 1) {
+      _key = sortedKeys[i];
+      canonicalizedObj[_key] = canonicalize(obj[_key], stack, replacementStack, replacer, _key);
+    }
+    stack.pop();
+    replacementStack.pop();
+  } else {
+    canonicalizedObj = obj;
+  }
+  return canonicalizedObj;
+}
+var arrayDiff = new Diff();
+arrayDiff.tokenize = function(value) {
+  return value.slice();
+};
+arrayDiff.join = arrayDiff.removeEmpty = function(value) {
+  return value;
+};
+function structuredPatch(oldFileName, newFileName, oldStr, newStr, oldHeader, newHeader, options) {
+  if (!options) {
+    options = {};
+  }
+  if (typeof options.context === "undefined") {
+    options.context = 4;
+  }
+  var diff2 = diffLines(oldStr, newStr, options);
+  if (!diff2) {
+    return;
+  }
+  diff2.push({
+    value: "",
+    lines: []
+  });
+  function contextLines(lines) {
+    return lines.map(function(entry) {
+      return " " + entry;
+    });
+  }
+  var hunks = [];
+  var oldRangeStart = 0, newRangeStart = 0, curRange = [], oldLine = 1, newLine = 1;
+  var _loop = function _loop2(i2) {
+    var current = diff2[i2], lines = current.lines || current.value.replace(/\n$/, "").split("\n");
+    current.lines = lines;
+    if (current.added || current.removed) {
+      var _curRange;
+      if (!oldRangeStart) {
+        var prev = diff2[i2 - 1];
+        oldRangeStart = oldLine;
+        newRangeStart = newLine;
+        if (prev) {
+          curRange = options.context > 0 ? contextLines(prev.lines.slice(-options.context)) : [];
+          oldRangeStart -= curRange.length;
+          newRangeStart -= curRange.length;
+        }
+      }
+      (_curRange = curRange).push.apply(_curRange, _toConsumableArray(lines.map(function(entry) {
+        return (current.added ? "+" : "-") + entry;
+      })));
+      if (current.added) {
+        newLine += lines.length;
+      } else {
+        oldLine += lines.length;
+      }
+    } else {
+      if (oldRangeStart) {
+        if (lines.length <= options.context * 2 && i2 < diff2.length - 2) {
+          var _curRange2;
+          (_curRange2 = curRange).push.apply(_curRange2, _toConsumableArray(contextLines(lines)));
+        } else {
+          var _curRange3;
+          var contextSize = Math.min(lines.length, options.context);
+          (_curRange3 = curRange).push.apply(_curRange3, _toConsumableArray(contextLines(lines.slice(0, contextSize))));
+          var hunk = {
+            oldStart: oldRangeStart,
+            oldLines: oldLine - oldRangeStart + contextSize,
+            newStart: newRangeStart,
+            newLines: newLine - newRangeStart + contextSize,
+            lines: curRange
+          };
+          if (i2 >= diff2.length - 2 && lines.length <= options.context) {
+            var oldEOFNewline = /\n$/.test(oldStr);
+            var newEOFNewline = /\n$/.test(newStr);
+            var noNlBeforeAdds = lines.length == 0 && curRange.length > hunk.oldLines;
+            if (!oldEOFNewline && noNlBeforeAdds && oldStr.length > 0) {
+              curRange.splice(hunk.oldLines, 0, "\\ No newline at end of file");
+            }
+            if (!oldEOFNewline && !noNlBeforeAdds || !newEOFNewline) {
+              curRange.push("\\ No newline at end of file");
+            }
+          }
+          hunks.push(hunk);
+          oldRangeStart = 0;
+          newRangeStart = 0;
+          curRange = [];
+        }
+      }
+      oldLine += lines.length;
+      newLine += lines.length;
+    }
+  };
+  for (var i = 0; i < diff2.length; i++) {
+    _loop(i);
+  }
+  return {
+    oldFileName,
+    newFileName,
+    oldHeader,
+    newHeader,
+    hunks
+  };
+}
+function formatPatch(diff2) {
+  var ret = [];
+  if (diff2.oldFileName == diff2.newFileName) {
+    ret.push("Index: " + diff2.oldFileName);
+  }
+  ret.push("===================================================================");
+  ret.push("--- " + diff2.oldFileName + (typeof diff2.oldHeader === "undefined" ? "" : "	" + diff2.oldHeader));
+  ret.push("+++ " + diff2.newFileName + (typeof diff2.newHeader === "undefined" ? "" : "	" + diff2.newHeader));
+  for (var i = 0; i < diff2.hunks.length; i++) {
+    var hunk = diff2.hunks[i];
+    if (hunk.oldLines === 0) {
+      hunk.oldStart -= 1;
+    }
+    if (hunk.newLines === 0) {
+      hunk.newStart -= 1;
+    }
+    ret.push("@@ -" + hunk.oldStart + "," + hunk.oldLines + " +" + hunk.newStart + "," + hunk.newLines + " @@");
+    ret.push.apply(ret, hunk.lines);
+  }
+  return ret.join("\n") + "\n";
+}
+function createTwoFilesPatch(oldFileName, newFileName, oldStr, newStr, oldHeader, newHeader, options) {
+  return formatPatch(structuredPatch(oldFileName, newFileName, oldStr, newStr, oldHeader, newHeader, options));
+}
+function createPatch(fileName, oldStr, newStr, oldHeader, newHeader, options) {
+  return createTwoFilesPatch(fileName, fileName, oldStr, newStr, oldHeader, newHeader, options);
+}
+
+// src/isomorphicGit.ts
 var import_obsidian5 = __toModule(require("obsidian"));
 
 // src/gitManager.ts
@@ -18714,8 +19204,8 @@ var GitManager = class {
   getPath(path2, relativeToVault) {
     return relativeToVault && this.plugin.settings.basePath.length > 0 ? path2.substring(this.plugin.settings.basePath.length + 1) : path2;
   }
-  getTreeStructure(children2, beginLength = 0) {
-    let list = [];
+  _getTreeStructure(children2, beginLength = 0) {
+    const list = [];
     children2 = [...children2];
     while (children2.length > 0) {
       const first2 = children2.first();
@@ -18726,22 +19216,71 @@ var GitManager = class {
           return item.path.substring(beginLength).startsWith(title + "/");
         });
         childrenWithSameTitle.forEach((item) => children2.remove(item));
+        const path2 = first2.path.substring(0, restPath.indexOf("/") + beginLength);
         list.push({
           title,
-          children: this.getTreeStructure(childrenWithSameTitle, (beginLength > 0 ? beginLength + title.length : title.length) + 1)
+          path: path2,
+          vaultPath: this.getVaultPath(path2),
+          children: this._getTreeStructure(childrenWithSameTitle, (beginLength > 0 ? beginLength + title.length : title.length) + 1)
         });
       } else {
-        list.push({ title: restPath, statusResult: first2 });
+        list.push({
+          title: restPath,
+          statusResult: first2,
+          path: first2.path,
+          vaultPath: this.getVaultPath(first2.path)
+        });
         children2.remove(first2);
       }
     }
     return list;
   }
+  simplify(tree) {
+    var _a2, _b, _c, _d;
+    for (const node of tree) {
+      while (true) {
+        const singleChild = ((_a2 = node.children) == null ? void 0 : _a2.length) == 1;
+        const singleChildIsDir = ((_c = (_b = node.children) == null ? void 0 : _b.first()) == null ? void 0 : _c.statusResult) == void 0;
+        if (!(node.children != void 0 && singleChild && singleChildIsDir))
+          break;
+        const child = node.children.first();
+        node.title += "/" + child.title;
+        node.statusResult = child.statusResult;
+        node.path = child.path;
+        node.vaultPath = child.vaultPath;
+        node.children = child.children;
+      }
+      if (node.children != void 0) {
+        this.simplify(node.children);
+      }
+      (_d = node.children) == null ? void 0 : _d.sort((a, b) => {
+        const dirCompare = (b.statusResult == void 0 ? 1 : 0) - (a.statusResult == void 0 ? 1 : 0);
+        if (dirCompare != 0) {
+          return dirCompare;
+        } else {
+          return a.title.localeCompare(b.title);
+        }
+      });
+    }
+    return tree.sort((a, b) => {
+      const dirCompare = (b.statusResult == void 0 ? 1 : 0) - (a.statusResult == void 0 ? 1 : 0);
+      if (dirCompare != 0) {
+        return dirCompare;
+      } else {
+        return a.title.localeCompare(b.title);
+      }
+    });
+  }
+  getTreeStructure(children2) {
+    const tree = this._getTreeStructure(children2);
+    const res = this.simplify(tree);
+    return res;
+  }
   async formatCommitMessage(template) {
     let status2;
     if (template.includes("{{numFiles}}")) {
       status2 = await this.status();
-      let numFiles = status2.staged.length;
+      const numFiles = status2.staged.length;
       template = template.replace("{{numFiles}}", String(numFiles));
     }
     if (template.includes("{{hostname}}")) {
@@ -18750,7 +19289,7 @@ var GitManager = class {
     }
     if (template.includes("{{files}}")) {
       status2 = status2 != null ? status2 : await this.status();
-      let changeset = {};
+      const changeset = {};
       status2.staged.forEach((value) => {
         if (value.index in changeset) {
           changeset[value.index].push(value.path);
@@ -18758,14 +19297,14 @@ var GitManager = class {
           changeset[value.index] = [value.path];
         }
       });
-      let chunks = [];
-      for (let [action, files2] of Object.entries(changeset)) {
+      const chunks = [];
+      for (const [action, files2] of Object.entries(changeset)) {
         chunks.push(action + " " + files2.join(" "));
       }
-      let files = chunks.join(", ");
+      const files = chunks.join(", ");
       template = template.replace("{{files}}", files);
     }
-    let moment = window.moment;
+    const moment = window.moment;
     template = template.replace("{{date}}", moment().format(this.plugin.settings.commitDateFormat));
     if (this.plugin.settings.listChangedFilesInMessageBody) {
       template = template + "\n\nAffected files:\n" + (status2 != null ? status2 : await this.status()).staged.map((e) => e.path).join("\n");
@@ -18972,17 +19511,25 @@ var FileType;
 // src/ui/modals/generalModal.ts
 init_polyfill_buffer();
 var import_obsidian3 = __toModule(require("obsidian"));
+var generalModalConfigDefaults = {
+  options: [],
+  placeholder: "",
+  allowEmpty: false,
+  onlySelection: false,
+  initialValue: void 0
+};
 var GeneralModal = class extends import_obsidian3.SuggestModal {
-  constructor(app2, options, placeholder, allowEmpty = false, onlySelection = false) {
-    super(app2);
-    this.options = options;
-    this.allowEmpty = allowEmpty;
-    this.onlySelection = onlySelection;
-    this.resolve = null;
-    this.setPlaceholder(placeholder);
+  constructor(config) {
+    super(app);
+    this.config = { ...generalModalConfigDefaults, ...config };
+    this.setPlaceholder(this.config.placeholder);
   }
   open() {
     super.open();
+    if (this.config.initialValue != void 0) {
+      this.inputEl.value = this.config.initialValue;
+      this.inputEl.dispatchEvent(new Event("input"));
+    }
     return new Promise((resolve) => {
       this.resolve = resolve;
     });
@@ -18990,7 +19537,7 @@ var GeneralModal = class extends import_obsidian3.SuggestModal {
   selectSuggestion(value, evt) {
     if (this.resolve) {
       let res;
-      if (this.allowEmpty && value === " ")
+      if (this.config.allowEmpty && value === " ")
         res = "";
       else if (value === "...")
         res = void 0;
@@ -19005,18 +19552,18 @@ var GeneralModal = class extends import_obsidian3.SuggestModal {
       this.resolve(void 0);
   }
   getSuggestions(query) {
-    if (this.onlySelection) {
-      return this.options;
-    } else if (this.allowEmpty) {
-      return [query.length > 0 ? query : " ", ...this.options];
+    if (this.config.onlySelection) {
+      return this.config.options;
+    } else if (this.config.allowEmpty) {
+      return [query.length > 0 ? query : " ", ...this.config.options];
     } else {
-      return [query.length > 0 ? query : "...", ...this.options];
+      return [query.length > 0 ? query : "...", ...this.config.options];
     }
   }
   renderSuggestion(value, el) {
-    el.innerText = value;
+    el.setText(value);
   }
-  onChooseSuggestion(item, _) {
+  onChooseSuggestion(item, evt) {
   }
 };
 
@@ -19033,12 +19580,15 @@ var worthWalking2 = (filepath, root) => {
     return filepath.startsWith(root);
   }
 };
-function getNewLeaf() {
+function getNewLeaf(event) {
   let leaf;
-  if ((0, import_obsidian4.requireApiVersion)("0.16.0")) {
-    leaf = app.workspace.getLeaf("tab");
+  if (event) {
+    if (event.button === 0 || event.button === 1) {
+      const type = import_obsidian4.Keymap.isModEvent(event);
+      leaf = app.workspace.getLeaf(type);
+    }
   } else {
-    leaf = app.workspace.createLeafInParent(app.workspace.rootSplit, 0);
+    leaf = app.workspace.getLeaf(false);
   }
   return leaf;
 }
@@ -19075,16 +19625,17 @@ var IsomorphicGit = class extends GitManager {
       fs: this.fs,
       dir: this.plugin.settings.basePath,
       onAuth: () => {
+        var _a2;
         return {
           username: this.plugin.settings.username,
-          password: this.plugin.localStorage.getPassword()
+          password: (_a2 = this.plugin.localStorage.getPassword()) != null ? _a2 : void 0
         };
       },
       onAuthFailure: async () => {
         new import_obsidian5.Notice("Authentication failed. Please try with different credentials");
-        const username = await new GeneralModal(app, [], "Specify your username").open();
+        const username = await new GeneralModal({ placeholder: "Specify your username" }).open();
         if (username) {
-          const password = await new GeneralModal(app, [], "Specify your password/personal access token").open();
+          const password = await new GeneralModal({ placeholder: "Specify your password/personal access token" }).open();
           if (password) {
             this.plugin.settings.username = username;
             await this.plugin.saveSettings();
@@ -19230,7 +19781,7 @@ var IsomorphicGit = class extends GitManager {
         const res = await this.getStagedFiles(dir != null ? dir : ".");
         staged = res.map(({ filepath }) => filepath);
       }
-      await Promise.all(staged.map((file) => this.unstage(file, false)));
+      await this.wrapFS(Promise.all(staged.map((file) => isomorphic_git_default.resetIndex({ ...this.getRepo(), filepath: file }))));
     } catch (error) {
       this.plugin.displayError(error);
       throw error;
@@ -19240,6 +19791,24 @@ var IsomorphicGit = class extends GitManager {
     try {
       this.plugin.setState(PluginState.add);
       await this.wrapFS(isomorphic_git_default.checkout({ ...this.getRepo(), filepaths: [filepath], force: true }));
+    } catch (error) {
+      this.plugin.displayError(error);
+      throw error;
+    }
+  }
+  async discardAll({ dir, status: status2 }) {
+    let files = [];
+    if (status2) {
+      if (dir != void 0) {
+        files = status2.changed.filter((file) => file.path.startsWith(dir)).map((file) => file.path);
+      } else {
+        files = status2.changed.map((file) => file.path);
+      }
+    } else {
+      files = (await this.getUnstagedFiles(dir)).map(({ filepath }) => filepath);
+    }
+    try {
+      await this.wrapFS(isomorphic_git_default.checkout({ ...this.getRepo(), filepaths: files, force: true }));
     } catch (error) {
       this.plugin.displayError(error);
       throw error;
@@ -19347,7 +19916,7 @@ var IsomorphicGit = class extends GitManager {
       const branches = await isomorphic_git_default.listBranches(this.getRepo());
       const remote = (_a2 = await this.getConfig(`branch.${current}.remote`)) != null ? _a2 : "origin";
       const trackingBranch = (_b = await this.getConfig(`branch.${current}.merge`)) == null ? void 0 : _b.split("refs/heads")[1];
-      let tracking = trackingBranch ? remote + trackingBranch : void 0;
+      const tracking = trackingBranch ? remote + trackingBranch : void 0;
       return {
         current,
         tracking,
@@ -19375,6 +19944,25 @@ var IsomorphicGit = class extends GitManager {
       this.plugin.displayError(error);
       throw error;
     }
+  }
+  async createBranch(branch2) {
+    try {
+      await this.wrapFS(isomorphic_git_default.branch({ ...this.getRepo(), ref: branch2, checkout: true }));
+    } catch (error) {
+      this.plugin.displayError(error);
+      throw error;
+    }
+  }
+  async deleteBranch(branch2) {
+    try {
+      await this.wrapFS(isomorphic_git_default.deleteBranch({ ...this.getRepo(), ref: branch2 }));
+    } catch (error) {
+      this.plugin.displayError(error);
+      throw error;
+    }
+  }
+  async branchIsMerged(branch2) {
+    return true;
   }
   async init() {
     try {
@@ -19482,10 +20070,10 @@ var IsomorphicGit = class extends GitManager {
   async getFileChangesCount(commitHash1, commitHash2) {
     return this.walkDifference({ walkers: [isomorphic_git_default.TREE({ ref: commitHash1 }), isomorphic_git_default.TREE({ ref: commitHash2 })] });
   }
-  async walkDifference({ walkers: walker, dir: base }) {
+  async walkDifference({ walkers, dir: base }) {
     const res = await this.wrapFS(isomorphic_git_default.walk({
       ...this.getRepo(),
-      trees: walker,
+      trees: walkers,
       map: async function(filepath, [A, B]) {
         if (!worthWalking2(filepath, base)) {
           return null;
@@ -19594,8 +20182,35 @@ var IsomorphicGit = class extends GitManager {
       throw error;
     }
   }
-  async getDiffString(filePath) {
-    throw new Error("Method not implemented.");
+  async getDiffString(filePath, stagedChanges = false) {
+    const map = async (file, [A]) => {
+      if (filePath == file) {
+        const oid = await A.oid();
+        const contents = await isomorphic_git_default.readBlob({ ...this.getRepo(), oid });
+        return contents.blob;
+      }
+    };
+    const stagedBlob = (await isomorphic_git_default.walk({
+      ...this.getRepo(),
+      trees: [isomorphic_git_default.STAGE()],
+      map
+    })).first();
+    const stagedContent = new TextDecoder().decode(stagedBlob);
+    if (stagedChanges) {
+      const headBlob = await readBlob({ ...this.getRepo(), filepath: filePath, oid: await this.resolveRef("HEAD") });
+      const headContent = new TextDecoder().decode(headBlob.blob);
+      const diff2 = createPatch(filePath, headContent, stagedContent);
+      return diff2;
+    } else {
+      let workdirContent;
+      if (await app.vault.adapter.exists(filePath)) {
+        workdirContent = await app.vault.adapter.read(filePath);
+      } else {
+        workdirContent = "";
+      }
+      const diff2 = createPatch(filePath, stagedContent, workdirContent);
+      return diff2;
+    }
   }
   getFileStatusResult(row) {
     const status2 = this.status_mapping[`${row[this.HEAD]}${row[this.WORKDIR]}${row[this.STAGE]}`];
@@ -20068,7 +20683,7 @@ var init_task_options = __esm2({
 function callTaskParser(parser3, streams) {
   return parser3(streams.stdOut, streams.stdErr);
 }
-function parseStringResponse(result, parsers11, texts, trim = true) {
+function parseStringResponse(result, parsers12, texts, trim = true) {
   asArray(texts).forEach((text2) => {
     for (let lines = toLinesWithContent(text2, trim), i = 0, max = lines.length; i < max; i++) {
       const line = (offset = 0) => {
@@ -20077,7 +20692,7 @@ function parseStringResponse(result, parsers11, texts, trim = true) {
         }
         return lines[i + offset];
       };
-      parsers11.some(({ parse: parse2 }) => parse2(line, result));
+      parsers12.some(({ parse: parse2 }) => parse2(line, result));
     }
   });
   return result;
@@ -22064,7 +22679,7 @@ function versionResponse(major = 0, minor = 0, patch = 0, agent = "", installed 
     installed
   }, "toString", {
     value() {
-      return `${major}.${minor}.${patch}`;
+      return `${this.major}.${this.minor}.${this.patch}`;
     },
     configurable: false,
     enumerable: false
@@ -22079,16 +22694,7 @@ function version_default() {
       return this._runTask({
         commands: ["--version"],
         format: "utf-8",
-        parser(stdOut) {
-          if (stdOut === NOT_INSTALLED) {
-            return notInstalledResponse();
-          }
-          const version2 = /version (\d+)\.(\d+)\.(\d+)(?:\s*\((.+)\))?/.exec(stdOut);
-          if (!version2) {
-            return versionResponse(0, 0, 0, stdOut);
-          }
-          return versionResponse(asNumber(version2[1]), asNumber(version2[2]), asNumber(version2[3]), version2[4] || "");
-        },
+        parser: versionParser,
         onError(result, error, done, fail) {
           if (result.exitCode === -2) {
             return done(Buffer2.from(NOT_INSTALLED));
@@ -22099,11 +22705,26 @@ function version_default() {
     }
   };
 }
+function versionParser(stdOut) {
+  if (stdOut === NOT_INSTALLED) {
+    return notInstalledResponse();
+  }
+  return parseStringResponse(versionResponse(0, 0, 0, stdOut), parsers7, stdOut);
+}
 var NOT_INSTALLED;
+var parsers7;
 var init_version = __esm2({
   "src/lib/tasks/version.ts"() {
     init_utils();
     NOT_INSTALLED = "installed=false";
+    parsers7 = [
+      new LineParser(/version (\d+)\.(\d+)\.(\d+)(?:\s*\((.+)\))?/, (result, [major, minor, patch, agent = ""]) => {
+        Object.assign(result, versionResponse(asNumber(major), asNumber(minor), asNumber(patch), agent));
+      }),
+      new LineParser(/version (\d+)\.(\d+)\.(\D+)(.+)?$/, (result, [major, minor, patch, agent = ""]) => {
+        Object.assign(result, versionResponse(asNumber(major), asNumber(minor), patch, agent));
+      })
+    ];
   }
 });
 var simple_git_api_exports = {};
@@ -22290,7 +22911,7 @@ function hasBranchDeletionError(data, processExitCode) {
 }
 var deleteSuccessRegex;
 var deleteErrorRegex;
-var parsers7;
+var parsers8;
 var parseBranchDeletions;
 var init_parse_branch_delete = __esm2({
   "src/lib/parsers/parse-branch-delete.ts"() {
@@ -22298,7 +22919,7 @@ var init_parse_branch_delete = __esm2({
     init_utils();
     deleteSuccessRegex = /(\S+)\s+\(\S+\s([^)]+)\)/;
     deleteErrorRegex = /^error[^']+'([^']+)'/m;
-    parsers7 = [
+    parsers8 = [
       new LineParser(deleteSuccessRegex, (result, [branch2, hash2]) => {
         const deletion = branchDeletionSuccess(branch2, hash2);
         result.all.push(deletion);
@@ -22312,7 +22933,7 @@ var init_parse_branch_delete = __esm2({
       })
     ];
     parseBranchDeletions = (stdOut, stdErr) => {
-      return parseStringResponse(new BranchDeletionBatch(), parsers7, [stdOut, stdErr]);
+      return parseStringResponse(new BranchDeletionBatch(), parsers8, [stdOut, stdErr]);
     };
   }
 });
@@ -22347,14 +22968,14 @@ function branchStatus(input) {
   return input ? input.charAt(0) : "";
 }
 function parseBranchSummary(stdOut) {
-  return parseStringResponse(new BranchSummaryResult(), parsers8, stdOut);
+  return parseStringResponse(new BranchSummaryResult(), parsers9, stdOut);
 }
-var parsers8;
+var parsers9;
 var init_parse_branch = __esm2({
   "src/lib/parsers/parse-branch.ts"() {
     init_BranchSummary();
     init_utils();
-    parsers8 = [
+    parsers9 = [
       new LineParser(/^([*+]\s)?\((?:HEAD )?detached (?:from|at) (\S+)\)\s+([a-z0-9]+)\s(.*)$/, (result, [current, name, commit2, label]) => {
         result.push(branchStatus(current), true, name, commit2, label);
       }),
@@ -22504,13 +23125,13 @@ function parseFetchResult(stdOut, stdErr) {
     updated: [],
     deleted: []
   };
-  return parseStringResponse(result, parsers9, [stdOut, stdErr]);
+  return parseStringResponse(result, parsers10, [stdOut, stdErr]);
 }
-var parsers9;
+var parsers10;
 var init_parse_fetch = __esm2({
   "src/lib/parsers/parse-fetch.ts"() {
     init_utils();
-    parsers9 = [
+    parsers10 = [
       new LineParser(/From (.+)$/, (result, [remote]) => {
         result.remote = remote;
       }),
@@ -22571,13 +23192,13 @@ var init_fetch = __esm2({
   }
 });
 function parseMoveResult(stdOut) {
-  return parseStringResponse({ moves: [] }, parsers10, stdOut);
+  return parseStringResponse({ moves: [] }, parsers11, stdOut);
 }
-var parsers10;
+var parsers11;
 var init_parse_move = __esm2({
   "src/lib/parsers/parse-move.ts"() {
     init_utils();
-    parsers10 = [
+    parsers11 = [
       new LineParser(/^Renaming (.+) to (.+)$/, (result, [from, to]) => {
         result.moves.push({ from, to });
       })
@@ -23463,12 +24084,7 @@ var SimpleGit = class extends GitManager {
           vault_path: this.getVaultPath(res.path)
         };
       }),
-      conflicted: status2.conflicted.map((e) => this.formatPath({
-        path: e,
-        from: void 0,
-        index: void 0,
-        working_dir: void 0
-      }).path)
+      conflicted: status2.conflicted.map((path2) => this.formatPath({ path: path2 }).path)
     };
   }
   formatPath(path2, renamed = false) {
@@ -23500,20 +24116,20 @@ var SimpleGit = class extends GitManager {
           if (!(args.contains("submodule") && args.contains("foreach")))
             return;
           let body = "";
-          let root = this.app.vault.adapter.getBasePath() + (this.plugin.settings.basePath ? "/" + this.plugin.settings.basePath : "");
+          const root = this.app.vault.adapter.getBasePath() + (this.plugin.settings.basePath ? "/" + this.plugin.settings.basePath : "");
           stdout.on("data", (chunk) => {
             body += chunk.toString("utf8");
           });
           stdout.on("end", async () => {
-            let submods = body.split("\n");
-            submods = submods.map((i) => {
-              let submod = i.match(/'([^']*)'/);
+            const submods = body.split("\n");
+            const strippedSubmods = submods.map((i) => {
+              const submod = i.match(/'([^']*)'/);
               if (submod != void 0) {
                 return root + "/" + submod[1] + import_path.sep;
               }
             });
-            submods.reverse();
-            for (const item of submods) {
+            strippedSubmods.reverse();
+            for (const item of strippedSubmods) {
               if (item != void 0) {
                 await this.git.cwd({ path: item, root: false }).add("-A", (err) => this.onError(err));
                 await this.git.cwd({ path: item, root: false }).commit(await this.formatCommitMessage(message), (err) => this.onError(err));
@@ -23549,9 +24165,9 @@ var SimpleGit = class extends GitManager {
     await this.git.add(dir != null ? dir : "-A", (err) => this.onError(err));
     this.plugin.setState(PluginState.idle);
   }
-  async unstageAll() {
+  async unstageAll({ dir }) {
     this.plugin.setState(PluginState.add);
-    await this.git.reset([], (err) => this.onError(err));
+    await this.git.reset(dir != void 0 ? ["--", dir] : [], (err) => this.onError(err));
     this.plugin.setState(PluginState.idle);
   }
   async unstage(path2, relativeToVault) {
@@ -23564,6 +24180,9 @@ var SimpleGit = class extends GitManager {
     this.plugin.setState(PluginState.add);
     await this.git.checkout(["--", filepath], (err) => this.onError(err));
     this.plugin.setState(PluginState.idle);
+  }
+  async discardAll({ dir }) {
+    return this.discard(dir != null ? dir : ".");
   }
   async pull() {
     this.plugin.setState(PluginState.pull);
@@ -23590,7 +24209,7 @@ var SimpleGit = class extends GitManager {
       } else if (this.plugin.settings.syncMethod === "reset") {
         try {
           await this.git.raw(["update-ref", `refs/heads/${branchInfo.current}`, upstreamCommit], (err) => this.onError(err));
-          await this.unstageAll();
+          await this.unstageAll({});
         } catch (err) {
           this.plugin.displayError(`Sync failed (${this.plugin.settings.syncMethod}): ${err.message}`);
         }
@@ -23613,7 +24232,7 @@ var SimpleGit = class extends GitManager {
     const status2 = await this.git.status();
     const trackingBranch = status2.tracking;
     const currentBranch2 = status2.current;
-    const remoteChangedFiles = (await this.git.diffSummary([currentBranch2, trackingBranch], (err) => this.onError(err))).changed;
+    const remoteChangedFiles = (await this.git.diffSummary([currentBranch2, trackingBranch, "--"], (err) => this.onError(err))).changed;
     this.plugin.setState(PluginState.push);
     if (this.plugin.settings.updateSubmodules) {
       await this.git.env({ ...process.env, "OBSIDIAN_GIT": 1 }).subModule(["foreach", "--recursive", `tracking=$(git for-each-ref --format='%(upstream:short)' "$(git symbolic-ref -q HEAD)"); echo $tracking; if [ ! -z "$(git diff --shortstat $tracking)" ]; then git push; fi`], (err) => this.onError(err));
@@ -23628,7 +24247,7 @@ var SimpleGit = class extends GitManager {
     const status2 = await this.git.status((err) => this.onError(err));
     const trackingBranch = status2.tracking;
     const currentBranch2 = status2.current;
-    const remoteChangedFiles = (await this.git.diffSummary([currentBranch2, trackingBranch])).changed;
+    const remoteChangedFiles = (await this.git.diffSummary([currentBranch2, trackingBranch, "--"])).changed;
     return remoteChangedFiles !== 0;
   }
   async checkRequirements() {
@@ -23644,8 +24263,8 @@ var SimpleGit = class extends GitManager {
     const status2 = await this.git.status((err) => this.onError(err));
     const branches = await this.git.branch(["--no-color"], (err) => this.onError(err));
     return {
-      current: status2.current,
-      tracking: status2.tracking,
+      current: status2.current || void 0,
+      tracking: status2.tracking || void 0,
       branches: branches.all
     };
   }
@@ -23663,6 +24282,16 @@ var SimpleGit = class extends GitManager {
   }
   async checkout(branch2) {
     await this.git.checkout(branch2, (err) => this.onError(err));
+  }
+  async createBranch(branch2) {
+    await this.git.checkout(["-b", branch2], (err) => this.onError(err));
+  }
+  async deleteBranch(branch2, force) {
+    await this.git.branch([force ? "-D" : "-d", branch2], (err) => this.onError(err));
+  }
+  async branchIsMerged(branch2) {
+    const notMergedBranches = await this.git.branch(["--no-merged"], (err) => this.onError(err));
+    return !notMergedBranches.all.contains(branch2);
   }
   async init() {
     await this.git.init(false, (err) => this.onError(err));
@@ -23692,7 +24321,7 @@ var SimpleGit = class extends GitManager {
     console.log(remote);
     console.log(res);
     const list = [];
-    for (var item in res.branches) {
+    for (const item in res.branches) {
       list.push(res.branches[item].name);
     }
     return list;
@@ -23748,7 +24377,7 @@ var SimpleGit = class extends GitManager {
   }
   onError(error) {
     if (error) {
-      let networkFailure = error.message.contains("Could not resolve host") || error.message.match(/ssh: connect to host .*? port .*?: Operation timed out/);
+      const networkFailure = error.message.contains("Could not resolve host") || error.message.match(/ssh: connect to host .*? port .*?: Operation timed out/);
       if (!networkFailure) {
         this.plugin.displayError(error.message);
         this.plugin.setState(PluginState.idle);
@@ -23766,7 +24395,7 @@ var SimpleGit = class extends GitManager {
 // src/settings.ts
 var ObsidianGitSettingsTab = class extends import_obsidian7.PluginSettingTab {
   display() {
-    let { containerEl } = this;
+    const { containerEl } = this;
     const plugin = this.plugin;
     const commitOrBackup = plugin.settings.differentIntervalCommitAndPush ? "commit" : "backup";
     const gitReady = plugin.gitReady;
@@ -23864,11 +24493,14 @@ var ObsidianGitSettingsTab = class extends import_obsidian7.PluginSettingTab {
         plugin.settings.commitDateFormat = value;
         await plugin.saveSettings();
       }));
-      new import_obsidian7.Setting(containerEl).setName("{{hostname}} placeholder replacement").setDesc("Specify custom hostname for every device.").addText((text2) => text2.setValue(plugin.localStorage.getHostname()).onChange(async (value) => {
-        plugin.localStorage.setHostname(value);
-      }));
+      new import_obsidian7.Setting(containerEl).setName("{{hostname}} placeholder replacement").setDesc("Specify custom hostname for every device.").addText((text2) => {
+        var _a2;
+        return text2.setValue((_a2 = plugin.localStorage.getHostname()) != null ? _a2 : "").onChange(async (value) => {
+          plugin.localStorage.setHostname(value);
+        });
+      });
       new import_obsidian7.Setting(containerEl).setName("Preview commit message").addButton((button) => button.setButtonText("Preview").onClick(async () => {
-        let commitMessagePreview = await plugin.gitManager.formatCommitMessage(plugin.settings.commitMessage);
+        const commitMessagePreview = await plugin.gitManager.formatCommitMessage(plugin.settings.commitMessage);
         new import_obsidian7.Notice(`${commitMessagePreview}`);
       }));
       new import_obsidian7.Setting(containerEl).setName("List filenames affected by commit in the commit body").addToggle((toggle) => toggle.setValue(plugin.settings.listChangedFilesInMessageBody).onChange((value) => {
@@ -23906,23 +24538,11 @@ var ObsidianGitSettingsTab = class extends import_obsidian7.PluginSettingTab {
     }
     containerEl.createEl("br");
     containerEl.createEl("h3", { text: "Miscellaneous" });
-    if (gitReady)
-      new import_obsidian7.Setting(containerEl).setName("Current branch").setDesc("Switch to a different branch").addDropdown(async (dropdown) => {
-        const branchInfo = await plugin.gitManager.branchInfo();
-        for (const branch2 of branchInfo.branches) {
-          dropdown.addOption(branch2, branch2);
-        }
-        dropdown.setValue(branchInfo.current);
-        dropdown.onChange(async (option) => {
-          await plugin.gitManager.checkout(option);
-          new import_obsidian7.Notice(`Checked out to ${option}`);
-        });
-      });
     new import_obsidian7.Setting(containerEl).setName("Automatically refresh Source Control View on file changes").setDesc("On slower machines this may cause lags. If so, just disable this option").addToggle((toggle) => toggle.setValue(plugin.settings.refreshSourceControl).onChange((value) => {
       plugin.settings.refreshSourceControl = value;
       plugin.saveSettings();
     }));
-    new import_obsidian7.Setting(containerEl).setName("Source Control View refresh interval").setDesc("Milliseconds two wait after file change before refreshing the Source Control View").addText((toggle) => toggle.setValue(plugin.settings.refreshSourceControlTimer.toString()).setPlaceholder("7000").onChange((value) => {
+    new import_obsidian7.Setting(containerEl).setName("Source Control View refresh interval").setDesc("Milliseconds to wait after file change before refreshing the Source Control View").addText((toggle) => toggle.setValue(plugin.settings.refreshSourceControlTimer.toString()).setPlaceholder("7000").onChange((value) => {
       plugin.settings.refreshSourceControlTimer = Math.max(parseInt(value), 500);
       plugin.saveSettings();
       plugin.setRefreshDebouncer();
@@ -23933,6 +24553,10 @@ var ObsidianGitSettingsTab = class extends import_obsidian7.PluginSettingTab {
     }));
     new import_obsidian7.Setting(containerEl).setName("Show status bar").setDesc("Obsidian must be restarted for the changes to take affect").addToggle((toggle) => toggle.setValue(plugin.settings.showStatusBar).onChange((value) => {
       plugin.settings.showStatusBar = value;
+      plugin.saveSettings();
+    }));
+    new import_obsidian7.Setting(containerEl).setName("Show branch status bar").setDesc("Obsidian must be restarted for the changes to take affect").addToggle((toggle) => toggle.setValue(plugin.settings.showBranchStatusBar).onChange((value) => {
+      plugin.settings.showBranchStatusBar = value;
       plugin.saveSettings();
     }));
     new import_obsidian7.Setting(containerEl).setName("Show changes files count in status bar").addToggle((toggle) => toggle.setValue(plugin.settings.changedFilesInStatusBar).onChange((value) => {
@@ -23948,7 +24572,8 @@ var ObsidianGitSettingsTab = class extends import_obsidian7.PluginSettingTab {
       }));
     if (plugin.gitManager instanceof SimpleGit)
       new import_obsidian7.Setting(containerEl).setName("Custom Git binary path").addText((cb) => {
-        cb.setValue(plugin.localStorage.getGitPath());
+        var _a2;
+        cb.setValue((_a2 = plugin.localStorage.getGitPath()) != null ? _a2 : "");
         cb.setPlaceholder("git");
         cb.onChange((value) => {
           plugin.localStorage.setGitPath(value);
@@ -24229,7 +24854,8 @@ var DEFAULT_SETTINGS = {
   changedFilesInStatusBar: false,
   username: "",
   showedMobileNotice: false,
-  refreshSourceControlTimer: 7e3
+  refreshSourceControlTimer: 7e3,
+  showBranchStatusBar: true
 };
 var GIT_VIEW_CONFIG = {
   type: "git-view",
@@ -24247,55 +24873,67 @@ init_polyfill_buffer();
 var LocalStorageSettings = class {
   constructor(plugin) {
     this.plugin = plugin;
-    this.prefix = this.plugin.manifest.id;
+    this.prefix = this.plugin.manifest.id + ":";
+  }
+  migrate() {
+    const keys = ["password", "hostname", "conflict", "lastAutoPull", "lastAutoBackup", "lastAutoPush", "gitPath", "pluginDisabled"];
+    for (const key2 of keys) {
+      const old = localStorage.getItem(this.prefix + key2);
+      if (app.loadLocalStorage(this.prefix + key2) == null && old != null) {
+        if (old != null) {
+          app.saveLocalStorage(this.prefix + key2, old);
+          localStorage.removeItem(this.prefix + key2);
+        }
+      }
+    }
   }
   getPassword() {
-    return localStorage.getItem(this.prefix + ":password");
+    return app.loadLocalStorage(this.prefix + "password");
   }
   setPassword(value) {
-    return localStorage.setItem(this.prefix + ":password", value);
+    return app.saveLocalStorage(this.prefix + "password", value);
   }
   getHostname() {
-    return localStorage.getItem(this.prefix + ":hostname");
+    return app.loadLocalStorage(this.prefix + "hostname");
   }
   setHostname(value) {
-    return localStorage.setItem(this.prefix + ":hostname", value);
+    return app.saveLocalStorage(this.prefix + "hostname", value);
   }
   getConflict() {
-    return localStorage.getItem(this.prefix + ":conflict");
+    return app.loadLocalStorage(this.prefix + "conflict");
   }
   setConflict(value) {
-    return localStorage.setItem(this.prefix + ":conflict", value);
+    return app.saveLocalStorage(this.prefix + "conflict", value);
   }
   getLastAutoPull() {
-    return localStorage.getItem(this.prefix + ":lastAutoPull");
+    return app.loadLocalStorage(this.prefix + "lastAutoPull");
   }
   setLastAutoPull(value) {
-    return localStorage.setItem(this.prefix + ":lastAutoPull", value);
+    return app.saveLocalStorage(this.prefix + "lastAutoPull", value);
   }
   getLastAutoBackup() {
-    return localStorage.getItem(this.prefix + ":lastAutoBackup");
+    return app.loadLocalStorage(this.prefix + "lastAutoBackup");
   }
   setLastAutoBackup(value) {
-    return localStorage.setItem(this.prefix + ":lastAutoBackup", value);
+    return app.saveLocalStorage(this.prefix + "lastAutoBackup", value);
   }
   getLastAutoPush() {
-    return localStorage.getItem(this.prefix + ":lastAutoPush");
+    return app.loadLocalStorage(this.prefix + "lastAutoPush");
   }
   setLastAutoPush(value) {
-    return localStorage.setItem(this.prefix + ":lastAutoPush", value);
+    return app.saveLocalStorage(this.prefix + "lastAutoPush", value);
   }
   getGitPath() {
-    return localStorage.getItem(this.prefix + ":gitPath");
+    return app.loadLocalStorage(this.prefix + "gitPath");
   }
   setGitPath(value) {
-    return localStorage.setItem(this.prefix + ":gitPath", value);
+    return app.saveLocalStorage(this.prefix + "gitPath", value);
   }
   getPluginDisabled() {
-    return localStorage.getItem(this.prefix + ":pluginDisabled") == "true";
+    return app.loadLocalStorage(this.prefix + "pluginDisabled") == "true";
   }
   setPluginDisabled(value) {
-    return localStorage.setItem(this.prefix + ":pluginDisabled", `${value}`);
+    return app.saveLocalStorage(this.prefix + "pluginDisabled", `${value}`);
   }
 };
 
@@ -24480,7 +25118,7 @@ function parse(diffInput, config) {
   var combinedMode = /^mode (\d{6}),(\d{6})\.\.(\d{6})/;
   var combinedNewFile = /^new file mode (\d{6})/;
   var combinedDeletedFile = /^deleted file mode (\d{6}),(\d{6})/;
-  var diffLines = diffInput.replace(/\\ No newline at end of file/g, "").replace(/\r\n?/g, "\n").split("\n");
+  var diffLines2 = diffInput.replace(/\\ No newline at end of file/g, "").replace(/\r\n?/g, "\n").split("\n");
   function saveBlock() {
     if (currentBlock !== null && currentFile !== null) {
       currentFile.blocks.push(currentBlock);
@@ -24569,25 +25207,25 @@ function parse(diffInput, config) {
   }
   function existHunkHeader(line, lineIdx) {
     var idx = lineIdx;
-    while (idx < diffLines.length - 3) {
+    while (idx < diffLines2.length - 3) {
       if (line.startsWith("diff")) {
         return false;
       }
-      if (diffLines[idx].startsWith(oldFileNameHeader) && diffLines[idx + 1].startsWith(newFileNameHeader) && diffLines[idx + 2].startsWith(hunkHeaderPrefix)) {
+      if (diffLines2[idx].startsWith(oldFileNameHeader) && diffLines2[idx + 1].startsWith(newFileNameHeader) && diffLines2[idx + 2].startsWith(hunkHeaderPrefix)) {
         return true;
       }
       idx++;
     }
     return false;
   }
-  diffLines.forEach(function(line, lineIndex) {
+  diffLines2.forEach(function(line, lineIndex) {
     if (!line || line.startsWith("*")) {
       return;
     }
     var values;
-    var prevLine = diffLines[lineIndex - 1];
-    var nxtLine = diffLines[lineIndex + 1];
-    var afterNxtLine = diffLines[lineIndex + 2];
+    var prevLine = diffLines2[lineIndex - 1];
+    var nxtLine = diffLines2[lineIndex + 1];
+    var afterNxtLine = diffLines2[lineIndex + 2];
     if (line.startsWith("diff")) {
       startFile();
       var gitDiffStart = /^diff --git "?([a-ciow]\/.+)"? "?([a-ciow]\/.+)"?/;
@@ -24711,337 +25349,6 @@ init_polyfill_buffer();
 
 // node_modules/diff2html/lib-esm/render-utils.js
 init_polyfill_buffer();
-
-// node_modules/diff/lib/index.mjs
-init_polyfill_buffer();
-function Diff() {
-}
-Diff.prototype = {
-  diff: function diff(oldString, newString) {
-    var options = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
-    var callback = options.callback;
-    if (typeof options === "function") {
-      callback = options;
-      options = {};
-    }
-    this.options = options;
-    var self3 = this;
-    function done(value) {
-      if (callback) {
-        setTimeout(function() {
-          callback(void 0, value);
-        }, 0);
-        return true;
-      } else {
-        return value;
-      }
-    }
-    oldString = this.castInput(oldString);
-    newString = this.castInput(newString);
-    oldString = this.removeEmpty(this.tokenize(oldString));
-    newString = this.removeEmpty(this.tokenize(newString));
-    var newLen = newString.length, oldLen = oldString.length;
-    var editLength = 1;
-    var maxEditLength = newLen + oldLen;
-    if (options.maxEditLength) {
-      maxEditLength = Math.min(maxEditLength, options.maxEditLength);
-    }
-    var bestPath = [{
-      newPos: -1,
-      components: []
-    }];
-    var oldPos = this.extractCommon(bestPath[0], newString, oldString, 0);
-    if (bestPath[0].newPos + 1 >= newLen && oldPos + 1 >= oldLen) {
-      return done([{
-        value: this.join(newString),
-        count: newString.length
-      }]);
-    }
-    function execEditLength() {
-      for (var diagonalPath = -1 * editLength; diagonalPath <= editLength; diagonalPath += 2) {
-        var basePath = void 0;
-        var addPath = bestPath[diagonalPath - 1], removePath = bestPath[diagonalPath + 1], _oldPos = (removePath ? removePath.newPos : 0) - diagonalPath;
-        if (addPath) {
-          bestPath[diagonalPath - 1] = void 0;
-        }
-        var canAdd = addPath && addPath.newPos + 1 < newLen, canRemove = removePath && 0 <= _oldPos && _oldPos < oldLen;
-        if (!canAdd && !canRemove) {
-          bestPath[diagonalPath] = void 0;
-          continue;
-        }
-        if (!canAdd || canRemove && addPath.newPos < removePath.newPos) {
-          basePath = clonePath(removePath);
-          self3.pushComponent(basePath.components, void 0, true);
-        } else {
-          basePath = addPath;
-          basePath.newPos++;
-          self3.pushComponent(basePath.components, true, void 0);
-        }
-        _oldPos = self3.extractCommon(basePath, newString, oldString, diagonalPath);
-        if (basePath.newPos + 1 >= newLen && _oldPos + 1 >= oldLen) {
-          return done(buildValues(self3, basePath.components, newString, oldString, self3.useLongestToken));
-        } else {
-          bestPath[diagonalPath] = basePath;
-        }
-      }
-      editLength++;
-    }
-    if (callback) {
-      (function exec() {
-        setTimeout(function() {
-          if (editLength > maxEditLength) {
-            return callback();
-          }
-          if (!execEditLength()) {
-            exec();
-          }
-        }, 0);
-      })();
-    } else {
-      while (editLength <= maxEditLength) {
-        var ret = execEditLength();
-        if (ret) {
-          return ret;
-        }
-      }
-    }
-  },
-  pushComponent: function pushComponent(components, added, removed) {
-    var last2 = components[components.length - 1];
-    if (last2 && last2.added === added && last2.removed === removed) {
-      components[components.length - 1] = {
-        count: last2.count + 1,
-        added,
-        removed
-      };
-    } else {
-      components.push({
-        count: 1,
-        added,
-        removed
-      });
-    }
-  },
-  extractCommon: function extractCommon(basePath, newString, oldString, diagonalPath) {
-    var newLen = newString.length, oldLen = oldString.length, newPos = basePath.newPos, oldPos = newPos - diagonalPath, commonCount = 0;
-    while (newPos + 1 < newLen && oldPos + 1 < oldLen && this.equals(newString[newPos + 1], oldString[oldPos + 1])) {
-      newPos++;
-      oldPos++;
-      commonCount++;
-    }
-    if (commonCount) {
-      basePath.components.push({
-        count: commonCount
-      });
-    }
-    basePath.newPos = newPos;
-    return oldPos;
-  },
-  equals: function equals(left, right) {
-    if (this.options.comparator) {
-      return this.options.comparator(left, right);
-    } else {
-      return left === right || this.options.ignoreCase && left.toLowerCase() === right.toLowerCase();
-    }
-  },
-  removeEmpty: function removeEmpty(array) {
-    var ret = [];
-    for (var i = 0; i < array.length; i++) {
-      if (array[i]) {
-        ret.push(array[i]);
-      }
-    }
-    return ret;
-  },
-  castInput: function castInput(value) {
-    return value;
-  },
-  tokenize: function tokenize(value) {
-    return value.split("");
-  },
-  join: function join3(chars) {
-    return chars.join("");
-  }
-};
-function buildValues(diff2, components, newString, oldString, useLongestToken) {
-  var componentPos = 0, componentLen = components.length, newPos = 0, oldPos = 0;
-  for (; componentPos < componentLen; componentPos++) {
-    var component = components[componentPos];
-    if (!component.removed) {
-      if (!component.added && useLongestToken) {
-        var value = newString.slice(newPos, newPos + component.count);
-        value = value.map(function(value2, i) {
-          var oldValue = oldString[oldPos + i];
-          return oldValue.length > value2.length ? oldValue : value2;
-        });
-        component.value = diff2.join(value);
-      } else {
-        component.value = diff2.join(newString.slice(newPos, newPos + component.count));
-      }
-      newPos += component.count;
-      if (!component.added) {
-        oldPos += component.count;
-      }
-    } else {
-      component.value = diff2.join(oldString.slice(oldPos, oldPos + component.count));
-      oldPos += component.count;
-      if (componentPos && components[componentPos - 1].added) {
-        var tmp = components[componentPos - 1];
-        components[componentPos - 1] = components[componentPos];
-        components[componentPos] = tmp;
-      }
-    }
-  }
-  var lastComponent = components[componentLen - 1];
-  if (componentLen > 1 && typeof lastComponent.value === "string" && (lastComponent.added || lastComponent.removed) && diff2.equals("", lastComponent.value)) {
-    components[componentLen - 2].value += lastComponent.value;
-    components.pop();
-  }
-  return components;
-}
-function clonePath(path2) {
-  return {
-    newPos: path2.newPos,
-    components: path2.components.slice(0)
-  };
-}
-var characterDiff = new Diff();
-function diffChars(oldStr, newStr, options) {
-  return characterDiff.diff(oldStr, newStr, options);
-}
-var extendedWordChars = /^[A-Za-z\xC0-\u02C6\u02C8-\u02D7\u02DE-\u02FF\u1E00-\u1EFF]+$/;
-var reWhitespace = /\S/;
-var wordDiff = new Diff();
-wordDiff.equals = function(left, right) {
-  if (this.options.ignoreCase) {
-    left = left.toLowerCase();
-    right = right.toLowerCase();
-  }
-  return left === right || this.options.ignoreWhitespace && !reWhitespace.test(left) && !reWhitespace.test(right);
-};
-wordDiff.tokenize = function(value) {
-  var tokens = value.split(/([^\S\r\n]+|[()[\]{}'"\r\n]|\b)/);
-  for (var i = 0; i < tokens.length - 1; i++) {
-    if (!tokens[i + 1] && tokens[i + 2] && extendedWordChars.test(tokens[i]) && extendedWordChars.test(tokens[i + 2])) {
-      tokens[i] += tokens[i + 2];
-      tokens.splice(i + 1, 2);
-      i--;
-    }
-  }
-  return tokens;
-};
-function diffWordsWithSpace(oldStr, newStr, options) {
-  return wordDiff.diff(oldStr, newStr, options);
-}
-var lineDiff = new Diff();
-lineDiff.tokenize = function(value) {
-  var retLines = [], linesAndNewlines = value.split(/(\n|\r\n)/);
-  if (!linesAndNewlines[linesAndNewlines.length - 1]) {
-    linesAndNewlines.pop();
-  }
-  for (var i = 0; i < linesAndNewlines.length; i++) {
-    var line = linesAndNewlines[i];
-    if (i % 2 && !this.options.newlineIsToken) {
-      retLines[retLines.length - 1] += line;
-    } else {
-      if (this.options.ignoreWhitespace) {
-        line = line.trim();
-      }
-      retLines.push(line);
-    }
-  }
-  return retLines;
-};
-var sentenceDiff = new Diff();
-sentenceDiff.tokenize = function(value) {
-  return value.split(/(\S.+?[.!?])(?=\s+|$)/);
-};
-var cssDiff = new Diff();
-cssDiff.tokenize = function(value) {
-  return value.split(/([{}:;,]|\s+)/);
-};
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function(obj2) {
-      return typeof obj2;
-    };
-  } else {
-    _typeof = function(obj2) {
-      return obj2 && typeof Symbol === "function" && obj2.constructor === Symbol && obj2 !== Symbol.prototype ? "symbol" : typeof obj2;
-    };
-  }
-  return _typeof(obj);
-}
-var objectPrototypeToString = Object.prototype.toString;
-var jsonDiff = new Diff();
-jsonDiff.useLongestToken = true;
-jsonDiff.tokenize = lineDiff.tokenize;
-jsonDiff.castInput = function(value) {
-  var _this$options = this.options, undefinedReplacement = _this$options.undefinedReplacement, _this$options$stringi = _this$options.stringifyReplacer, stringifyReplacer = _this$options$stringi === void 0 ? function(k, v) {
-    return typeof v === "undefined" ? undefinedReplacement : v;
-  } : _this$options$stringi;
-  return typeof value === "string" ? value : JSON.stringify(canonicalize(value, null, null, stringifyReplacer), stringifyReplacer, "  ");
-};
-jsonDiff.equals = function(left, right) {
-  return Diff.prototype.equals.call(jsonDiff, left.replace(/,([\r\n])/g, "$1"), right.replace(/,([\r\n])/g, "$1"));
-};
-function canonicalize(obj, stack, replacementStack, replacer, key2) {
-  stack = stack || [];
-  replacementStack = replacementStack || [];
-  if (replacer) {
-    obj = replacer(key2, obj);
-  }
-  var i;
-  for (i = 0; i < stack.length; i += 1) {
-    if (stack[i] === obj) {
-      return replacementStack[i];
-    }
-  }
-  var canonicalizedObj;
-  if (objectPrototypeToString.call(obj) === "[object Array]") {
-    stack.push(obj);
-    canonicalizedObj = new Array(obj.length);
-    replacementStack.push(canonicalizedObj);
-    for (i = 0; i < obj.length; i += 1) {
-      canonicalizedObj[i] = canonicalize(obj[i], stack, replacementStack, replacer, key2);
-    }
-    stack.pop();
-    replacementStack.pop();
-    return canonicalizedObj;
-  }
-  if (obj && obj.toJSON) {
-    obj = obj.toJSON();
-  }
-  if (_typeof(obj) === "object" && obj !== null) {
-    stack.push(obj);
-    canonicalizedObj = {};
-    replacementStack.push(canonicalizedObj);
-    var sortedKeys = [], _key;
-    for (_key in obj) {
-      if (obj.hasOwnProperty(_key)) {
-        sortedKeys.push(_key);
-      }
-    }
-    sortedKeys.sort();
-    for (i = 0; i < sortedKeys.length; i += 1) {
-      _key = sortedKeys[i];
-      canonicalizedObj[_key] = canonicalize(obj[_key], stack, replacementStack, replacer, _key);
-    }
-    stack.pop();
-    replacementStack.pop();
-  } else {
-    canonicalizedObj = obj;
-  }
-  return canonicalizedObj;
-}
-var arrayDiff = new Diff();
-arrayDiff.tokenize = function(value) {
-  return value.slice();
-};
-arrayDiff.join = arrayDiff.removeEmpty = function(value) {
-  return value;
-};
 
 // node_modules/diff2html/lib-esm/rematch.js
 init_polyfill_buffer();
@@ -26234,6 +26541,7 @@ var DiffView = class extends import_obsidian13.ItemView {
     this.plugin = plugin;
     this.gettingDiff = false;
     this.parser = new DOMParser();
+    this.navigation = true;
     addEventListener("git-refresh", this.refresh.bind(this));
   }
   getViewType() {
@@ -26281,10 +26589,41 @@ var DiffView = class extends import_obsidian13.ItemView {
   }
 };
 
-// src/ui/modals/ignoreModal.ts
+// src/ui/modals/branchModal.ts
 init_polyfill_buffer();
 var import_obsidian14 = __toModule(require("obsidian"));
-var IgnoreModal = class extends import_obsidian14.Modal {
+var BranchModal = class extends import_obsidian14.FuzzySuggestModal {
+  constructor(branches) {
+    super(app);
+    this.branches = branches;
+    this.setPlaceholder("Select branch to checkout");
+  }
+  getItems() {
+    return this.branches;
+  }
+  getItemText(item) {
+    return item;
+  }
+  onChooseItem(item, evt) {
+    this.resolve(item);
+  }
+  open() {
+    super.open();
+    return new Promise((resolve) => {
+      this.resolve = resolve;
+    });
+  }
+  async onClose() {
+    await new Promise((resolve) => setTimeout(resolve, 10));
+    if (this.resolve)
+      this.resolve(void 0);
+  }
+};
+
+// src/ui/modals/ignoreModal.ts
+init_polyfill_buffer();
+var import_obsidian15 = __toModule(require("obsidian"));
+var IgnoreModal = class extends import_obsidian15.Modal {
   constructor(app2, content) {
     super(app2);
     this.content = content;
@@ -26297,7 +26636,7 @@ var IgnoreModal = class extends import_obsidian14.Modal {
     });
   }
   onOpen() {
-    let { contentEl, titleEl } = this;
+    const { contentEl, titleEl } = this;
     titleEl.setText("Edit .gitignore");
     const div = contentEl.createDiv();
     const text2 = div.createEl("textarea", {
@@ -26314,7 +26653,7 @@ var IgnoreModal = class extends import_obsidian14.Modal {
     });
   }
   onClose() {
-    let { contentEl } = this;
+    const { contentEl } = this;
     this.resolve(void 0);
     contentEl.empty();
   }
@@ -26322,7 +26661,7 @@ var IgnoreModal = class extends import_obsidian14.Modal {
 
 // src/ui/sidebar/sidebarView.ts
 init_polyfill_buffer();
-var import_obsidian21 = __toModule(require("obsidian"));
+var import_obsidian22 = __toModule(require("obsidian"));
 
 // src/ui/sidebar/gitView.svelte
 init_polyfill_buffer();
@@ -26464,6 +26803,13 @@ function set_data(text2, data) {
 }
 function set_input_value(input, value) {
   input.value = value == null ? "" : value;
+}
+function set_style(node, key2, value, important) {
+  if (value === null) {
+    node.style.removeProperty(key2);
+  } else {
+    node.style.setProperty(key2, value, important ? "important" : "");
+  }
 }
 function toggle_class(element2, name, toggle) {
   element2.classList[toggle ? "add" : "remove"](name);
@@ -26768,7 +27114,9 @@ var boolean_attributes = new Set([
   "disabled",
   "formnovalidate",
   "hidden",
+  "inert",
   "ismap",
+  "itemscope",
   "loop",
   "multiple",
   "muted",
@@ -26785,13 +27133,13 @@ function create_component(block) {
   block && block.c();
 }
 function mount_component(component, target, anchor, customElement) {
-  const { fragment, on_mount, on_destroy, after_update } = component.$$;
+  const { fragment, after_update } = component.$$;
   fragment && fragment.m(target, anchor);
   if (!customElement) {
     add_render_callback(() => {
-      const new_on_destroy = on_mount.map(run).filter(is_function);
-      if (on_destroy) {
-        on_destroy.push(...new_on_destroy);
+      const new_on_destroy = component.$$.on_mount.map(run).filter(is_function);
+      if (component.$$.on_destroy) {
+        component.$$.on_destroy.push(...new_on_destroy);
       } else {
         run_all(new_on_destroy);
       }
@@ -26822,7 +27170,7 @@ function init2(component, options, instance6, create_fragment6, not_equal, props
   set_current_component(component);
   const $$ = component.$$ = {
     fragment: null,
-    ctx: null,
+    ctx: [],
     props,
     update: noop,
     not_equal,
@@ -26839,19 +27187,19 @@ function init2(component, options, instance6, create_fragment6, not_equal, props
     root: options.target || parent_component.$$.root
   };
   append_styles2 && append_styles2($$.root);
-  let ready2 = false;
+  let ready = false;
   $$.ctx = instance6 ? instance6(component, options.props || {}, (i, ret, ...rest) => {
     const value = rest.length ? rest[0] : ret;
     if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
       if (!$$.skip_bound && $$.bound[i])
         $$.bound[i](value);
-      if (ready2)
+      if (ready)
         make_dirty(component, i);
     }
     return ret;
   }) : [];
   $$.update();
-  ready2 = true;
+  ready = true;
   run_all($$.before_update);
   $$.fragment = create_fragment6 ? create_fragment6($$.ctx) : false;
   if (options.target) {
@@ -26896,6 +27244,9 @@ if (typeof HTMLElement === "function") {
       this.$destroy = noop;
     }
     $on(type, callback) {
+      if (!is_function(callback)) {
+        return noop;
+      }
       const callbacks = this.$$.callbacks[type] || (this.$$.callbacks[type] = []);
       callbacks.push(callback);
       return () => {
@@ -26919,6 +27270,9 @@ var SvelteComponent = class {
     this.$destroy = noop;
   }
   $on(type, callback) {
+    if (!is_function(callback)) {
+      return noop;
+    }
     const callbacks = this.$$.callbacks[type] || (this.$$.callbacks[type] = []);
     callbacks.push(callback);
     return () => {
@@ -26937,7 +27291,7 @@ var SvelteComponent = class {
 };
 
 // src/ui/sidebar/gitView.svelte
-var import_obsidian20 = __toModule(require("obsidian"));
+var import_obsidian21 = __toModule(require("obsidian"));
 
 // node_modules/svelte/index.mjs
 init_polyfill_buffer();
@@ -26971,61 +27325,6 @@ function slide(node, { delay: delay2 = 0, duration = 400, easing = cubicOut } = 
   };
 }
 
-// src/ui/sidebar/components/fileComponent.svelte
-init_polyfill_buffer();
-var import_obsidian17 = __toModule(require("obsidian"));
-
-// node_modules/obsidian-community-lib/dist/index.js
-init_polyfill_buffer();
-
-// node_modules/obsidian-community-lib/dist/utils.js
-init_polyfill_buffer();
-var feather = __toModule(require_feather());
-var import_obsidian15 = __toModule(require("obsidian"));
-function hoverPreview(event, view, to) {
-  const targetEl = event.target;
-  app.workspace.trigger("hover-link", {
-    event,
-    source: view.getViewType(),
-    hoverParent: view,
-    targetEl,
-    linktext: to
-  });
-}
-async function createNewMDNote(newName, currFilePath = "") {
-  const newFileFolder = app.fileManager.getNewFileParent(currFilePath).path;
-  const newFilePath = (0, import_obsidian15.normalizePath)(`${newFileFolder}${newFileFolder === "/" ? "" : "/"}${addMD(newName)}`);
-  return await app.vault.create(newFilePath, "");
-}
-var addMD = (noteName) => {
-  return noteName.match(/\.MD$|\.md$/m) ? noteName : noteName + ".md";
-};
-async function openOrSwitch(dest, event, options = { createNewFile: true }) {
-  const { workspace } = app;
-  let destFile = app.metadataCache.getFirstLinkpathDest(dest, "");
-  if (!destFile && options.createNewFile) {
-    destFile = await createNewMDNote(dest);
-  } else if (!destFile && !options.createNewFile)
-    return;
-  const leavesWithDestAlreadyOpen = [];
-  workspace.iterateAllLeaves((leaf) => {
-    var _a2;
-    if (leaf.view instanceof import_obsidian15.MarkdownView) {
-      const file = (_a2 = leaf.view) === null || _a2 === void 0 ? void 0 : _a2.file;
-      if (file && file.basename + "." + file.extension === dest) {
-        leavesWithDestAlreadyOpen.push(leaf);
-      }
-    }
-  });
-  if (leavesWithDestAlreadyOpen.length > 0) {
-    workspace.setActiveLeaf(leavesWithDestAlreadyOpen[0]);
-  } else {
-    const mode = app.vault.getConfig("defaultViewMode");
-    const leaf = event.ctrlKey || event.getModifierState("Meta") ? workspace.splitActiveLeaf() : workspace.getUnpinnedLeaf();
-    await leaf.openFile(destFile, { active: true, mode });
-  }
-}
-
 // src/ui/modals/discardModal.ts
 init_polyfill_buffer();
 var import_obsidian16 = __toModule(require("obsidian"));
@@ -27043,19 +27342,27 @@ var DiscardModal = class extends import_obsidian16.Modal {
     });
   }
   onOpen() {
-    let { contentEl, titleEl } = this;
+    const { contentEl, titleEl } = this;
     titleEl.setText(`${this.deletion ? "Delete" : "Discard"} this file?`);
     contentEl.createEl("h4").setText(`Do you really want to ${this.deletion ? "delete" : "discard the changes of"} "${this.filename}"`);
     const div = contentEl.createDiv();
     div.addClass("obsidian-git-center");
-    div.createEl("button", { text: "Cancel" }).addEventListener("click", () => {
+    div.createEl("button", {
+      text: "Cancel",
+      attr: {
+        style: "margin: 0 10px"
+      }
+    }).addEventListener("click", () => {
       if (this.resolve)
         this.resolve(false);
       return this.close();
     });
     div.createEl("button", {
       cls: "mod-cta",
-      text: "Confirm"
+      text: "Confirm",
+      attr: {
+        style: "margin: 0 10px"
+      }
     }).addEventListener("click", async () => {
       if (this.resolve)
         this.resolve(true);
@@ -27063,14 +27370,36 @@ var DiscardModal = class extends import_obsidian16.Modal {
     });
   }
   onClose() {
-    let { contentEl } = this;
+    const { contentEl } = this;
     contentEl.empty();
   }
 };
 
 // src/ui/sidebar/components/fileComponent.svelte
+init_polyfill_buffer();
+var import_obsidian18 = __toModule(require("obsidian"));
+
+// node_modules/obsidian-community-lib/dist/index.js
+init_polyfill_buffer();
+
+// node_modules/obsidian-community-lib/dist/utils.js
+init_polyfill_buffer();
+var feather = __toModule(require_feather());
+var import_obsidian17 = __toModule(require("obsidian"));
+function hoverPreview(event, view, to) {
+  const targetEl = event.target;
+  app.workspace.trigger("hover-link", {
+    event,
+    source: view.getViewType(),
+    hoverParent: view,
+    targetEl,
+    linktext: to
+  });
+}
+
+// src/ui/sidebar/components/fileComponent.svelte
 function add_css(target) {
-  append_styles(target, "svelte-1furf50", "main.svelte-1furf50.svelte-1furf50.svelte-1furf50{cursor:pointer;background-color:var(--background-secondary);border-radius:4px;width:98%;display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:2px}main.svelte-1furf50 .path.svelte-1furf50.svelte-1furf50{color:var(--text-muted);white-space:nowrap;max-width:75%;overflow:hidden;text-overflow:ellipsis}main.svelte-1furf50:hover .path.svelte-1furf50.svelte-1furf50{color:var(--text-normal);transition:all 200ms}main.svelte-1furf50 .tools.svelte-1furf50.svelte-1furf50{display:flex;align-items:center}main.svelte-1furf50 .tools .type.svelte-1furf50.svelte-1furf50{height:16px;width:16px;margin:0;display:flex;align-items:center;justify-content:center}main.svelte-1furf50 .tools .type[data-type=M].svelte-1furf50.svelte-1furf50{color:orange}main.svelte-1furf50 .tools .type[data-type=D].svelte-1furf50.svelte-1furf50{color:red}main.svelte-1furf50 .tools .buttons.svelte-1furf50.svelte-1furf50{display:flex}main.svelte-1furf50 .tools .buttons.svelte-1furf50>.svelte-1furf50{color:var(--text-faint);height:16px;width:16px;margin:0;transition:all 0.2s;border-radius:2px;margin-right:1px}main.svelte-1furf50 .tools .buttons.svelte-1furf50>.svelte-1furf50:hover{color:var(--text-normal);background-color:var(--interactive-accent)}");
+  append_styles(target, "svelte-wn85nz", "main.svelte-wn85nz .nav-file-title-content.svelte-wn85nz.svelte-wn85nz{display:flex;align-items:center}main.svelte-wn85nz .tools.svelte-wn85nz.svelte-wn85nz{display:flex;margin-left:auto}main.svelte-wn85nz .tools .type.svelte-wn85nz.svelte-wn85nz{padding-left:var(--size-2-1);width:11px;display:flex;align-items:center;justify-content:center}main.svelte-wn85nz .tools .type[data-type=M].svelte-wn85nz.svelte-wn85nz{color:orange}main.svelte-wn85nz .tools .type[data-type=D].svelte-wn85nz.svelte-wn85nz{color:red}main.svelte-wn85nz .tools .buttons.svelte-wn85nz.svelte-wn85nz{display:flex}main.svelte-wn85nz .tools .buttons.svelte-wn85nz>.svelte-wn85nz{padding:0 0;height:auto}");
 }
 function create_if_block(ctx) {
   let div;
@@ -27081,13 +27410,16 @@ function create_if_block(ctx) {
       div = element("div");
       attr(div, "data-icon", "go-to-file");
       attr(div, "aria-label", "Open File");
-      attr(div, "class", "svelte-1furf50");
+      attr(div, "class", "clickable-icon svelte-wn85nz");
     },
     m(target, anchor) {
       insert(target, div, anchor);
-      ctx[12](div);
+      ctx[11](div);
       if (!mounted) {
-        dispose = listen(div, "click", ctx[5]);
+        dispose = [
+          listen(div, "auxclick", ctx[5]),
+          listen(div, "click", ctx[5])
+        ];
         mounted = true;
       }
     },
@@ -27095,105 +27427,108 @@ function create_if_block(ctx) {
     d(detaching) {
       if (detaching)
         detach(div);
-      ctx[12](null);
+      ctx[11](null);
       mounted = false;
-      dispose();
+      run_all(dispose);
     }
   };
 }
 function create_fragment(ctx) {
+  var _a2;
   let main;
-  let span0;
-  let t0_value = ctx[0].vault_path.split("/").last().replace(".md", "") + "";
+  let div6;
+  let div0;
+  let t0_value = ((_a2 = ctx[0].vault_path.split("/").last()) == null ? void 0 : _a2.replace(".md", "")) + "";
   let t0;
-  let span0_aria_label_value;
   let t1;
+  let div5;
   let div3;
-  let div2;
   let show_if = ctx[1].app.vault.getAbstractFileByPath(ctx[0].vault_path);
   let t2;
-  let div0;
-  let t3;
   let div1;
+  let t3;
+  let div2;
   let t4;
-  let span1;
+  let div4;
   let t5_value = ctx[0].working_dir + "";
   let t5;
-  let span1_data_type_value;
+  let div4_data_type_value;
+  let div6_aria_label_value;
   let mounted;
   let dispose;
   let if_block = show_if && create_if_block(ctx);
   return {
     c() {
       main = element("main");
-      span0 = element("span");
+      div6 = element("div");
+      div0 = element("div");
       t0 = text(t0_value);
       t1 = space();
+      div5 = element("div");
       div3 = element("div");
-      div2 = element("div");
       if (if_block)
         if_block.c();
       t2 = space();
-      div0 = element("div");
-      t3 = space();
       div1 = element("div");
+      t3 = space();
+      div2 = element("div");
       t4 = space();
-      span1 = element("span");
+      div4 = element("div");
       t5 = text(t5_value);
-      attr(span0, "class", "path svelte-1furf50");
-      attr(span0, "aria-label-position", ctx[3]);
-      attr(span0, "aria-label", span0_aria_label_value = ctx[0].vault_path.split("/").last() != ctx[0].vault_path ? ctx[0].vault_path : "");
-      attr(div0, "data-icon", "skip-back");
-      attr(div0, "aria-label", "Discard");
-      attr(div0, "class", "svelte-1furf50");
-      attr(div1, "data-icon", "plus");
-      attr(div1, "aria-label", "Stage");
-      attr(div1, "class", "svelte-1furf50");
-      attr(div2, "class", "buttons svelte-1furf50");
-      attr(span1, "class", "type svelte-1furf50");
-      attr(span1, "data-type", span1_data_type_value = ctx[0].working_dir);
-      attr(div3, "class", "tools svelte-1furf50");
-      attr(main, "class", "svelte-1furf50");
+      attr(div0, "class", "nav-file-title-content svelte-wn85nz");
+      attr(div1, "data-icon", "undo");
+      attr(div1, "aria-label", "Discard");
+      attr(div1, "class", "clickable-icon svelte-wn85nz");
+      attr(div2, "data-icon", "plus");
+      attr(div2, "aria-label", "Stage");
+      attr(div2, "class", "clickable-icon svelte-wn85nz");
+      attr(div3, "class", "buttons svelte-wn85nz");
+      attr(div4, "class", "type svelte-wn85nz");
+      attr(div4, "data-type", div4_data_type_value = ctx[0].working_dir);
+      attr(div5, "class", "tools svelte-wn85nz");
+      attr(div6, "class", "nav-file-title");
+      attr(div6, "aria-label-position", ctx[3]);
+      attr(div6, "aria-label", div6_aria_label_value = ctx[0].vault_path.split("/").last() != ctx[0].vault_path ? ctx[0].vault_path : "");
+      attr(main, "class", "nav-file svelte-wn85nz");
     },
     m(target, anchor) {
       insert(target, main, anchor);
-      append2(main, span0);
-      append2(span0, t0);
-      append2(main, t1);
-      append2(main, div3);
-      append2(div3, div2);
+      append2(main, div6);
+      append2(div6, div0);
+      append2(div0, t0);
+      append2(div6, t1);
+      append2(div6, div5);
+      append2(div5, div3);
       if (if_block)
-        if_block.m(div2, null);
-      append2(div2, t2);
-      append2(div2, div0);
-      ctx[13](div0);
-      append2(div2, t3);
-      append2(div2, div1);
-      ctx[14](div1);
-      append2(div3, t4);
-      append2(div3, span1);
-      append2(span1, t5);
+        if_block.m(div3, null);
+      append2(div3, t2);
+      append2(div3, div1);
+      ctx[12](div1);
+      append2(div3, t3);
+      append2(div3, div2);
+      ctx[13](div2);
+      append2(div5, t4);
+      append2(div5, div4);
+      append2(div4, t5);
       if (!mounted) {
         dispose = [
-          listen(span0, "click", self2(ctx[7])),
-          listen(div0, "click", ctx[8]),
-          listen(div1, "click", ctx[6]),
+          listen(div0, "click", ctx[7]),
+          listen(div0, "auxclick", ctx[7]),
+          listen(div1, "click", ctx[8]),
+          listen(div2, "click", ctx[6]),
+          listen(div6, "click", self2(ctx[7])),
+          listen(div6, "auxclick", self2(ctx[7])),
           listen(main, "mouseover", ctx[4]),
           listen(main, "click", self2(ctx[7])),
-          listen(main, "focus", ctx[11])
+          listen(main, "focus", ctx[10])
         ];
         mounted = true;
       }
     },
     p(ctx2, [dirty]) {
-      if (dirty & 1 && t0_value !== (t0_value = ctx2[0].vault_path.split("/").last().replace(".md", "") + ""))
+      var _a3;
+      if (dirty & 1 && t0_value !== (t0_value = ((_a3 = ctx2[0].vault_path.split("/").last()) == null ? void 0 : _a3.replace(".md", "")) + ""))
         set_data(t0, t0_value);
-      if (dirty & 8) {
-        attr(span0, "aria-label-position", ctx2[3]);
-      }
-      if (dirty & 1 && span0_aria_label_value !== (span0_aria_label_value = ctx2[0].vault_path.split("/").last() != ctx2[0].vault_path ? ctx2[0].vault_path : "")) {
-        attr(span0, "aria-label", span0_aria_label_value);
-      }
       if (dirty & 3)
         show_if = ctx2[1].app.vault.getAbstractFileByPath(ctx2[0].vault_path);
       if (show_if) {
@@ -27202,7 +27537,7 @@ function create_fragment(ctx) {
         } else {
           if_block = create_if_block(ctx2);
           if_block.c();
-          if_block.m(div2, t2);
+          if_block.m(div3, t2);
         }
       } else if (if_block) {
         if_block.d(1);
@@ -27210,8 +27545,14 @@ function create_fragment(ctx) {
       }
       if (dirty & 1 && t5_value !== (t5_value = ctx2[0].working_dir + ""))
         set_data(t5, t5_value);
-      if (dirty & 1 && span1_data_type_value !== (span1_data_type_value = ctx2[0].working_dir)) {
-        attr(span1, "data-type", span1_data_type_value);
+      if (dirty & 1 && div4_data_type_value !== (div4_data_type_value = ctx2[0].working_dir)) {
+        attr(div4, "data-type", div4_data_type_value);
+      }
+      if (dirty & 8) {
+        attr(div6, "aria-label-position", ctx2[3]);
+      }
+      if (dirty & 1 && div6_aria_label_value !== (div6_aria_label_value = ctx2[0].vault_path.split("/").last() != ctx2[0].vault_path ? ctx2[0].vault_path : "")) {
+        attr(div6, "aria-label", div6_aria_label_value);
       }
     },
     i: noop,
@@ -27221,8 +27562,8 @@ function create_fragment(ctx) {
         detach(main);
       if (if_block)
         if_block.d();
+      ctx[12](null);
       ctx[13](null);
-      ctx[14](null);
       mounted = false;
       run_all(dispose);
     }
@@ -27233,17 +27574,19 @@ function instance($$self, $$props, $$invalidate) {
   let { change } = $$props;
   let { view } = $$props;
   let { manager } = $$props;
-  let { workspace } = $$props;
   let buttons = [];
-  window.setTimeout(() => buttons.forEach((b) => (0, import_obsidian17.setIcon)(b, b.getAttr("data-icon"), 16)), 0);
+  window.setTimeout(() => buttons.forEach((b) => (0, import_obsidian18.setIcon)(b, b.getAttr("data-icon"))), 0);
   function hover(event) {
     if (!change.path.startsWith(view.app.vault.configDir) || !change.path.startsWith(".")) {
       hoverPreview(event, view, change.vault_path.split("/").last().replace(".md", ""));
     }
   }
   function open(event) {
-    if (!(change.path.startsWith(view.app.vault.configDir) || change.path.startsWith(".") || change.working_dir === "D")) {
-      openOrSwitch(change.vault_path, event);
+    var _a2;
+    const file = view.app.vault.getAbstractFileByPath(change.vault_path);
+    console.log(event);
+    if (file instanceof import_obsidian18.TFile) {
+      (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.openFile(file);
     }
   }
   function stage() {
@@ -27252,19 +27595,12 @@ function instance($$self, $$props, $$invalidate) {
     });
   }
   function showDiff(event) {
-    const leaf = workspace.getMostRecentLeaf(workspace.rootSplit);
-    if (leaf && !leaf.getViewState().pinned && !(event.ctrlKey || event.getModifierState("Meta"))) {
-      leaf.setViewState({
-        type: DIFF_VIEW_CONFIG.type,
-        state: { file: change.path, staged: false }
-      });
-    } else {
-      getNewLeaf().setViewState({
-        type: DIFF_VIEW_CONFIG.type,
-        active: true,
-        state: { file: change.path, staged: false }
-      });
-    }
+    var _a2;
+    (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.setViewState({
+      type: DIFF_VIEW_CONFIG.type,
+      active: true,
+      state: { file: change.path, staged: false }
+    });
   }
   function discard() {
     const deleteFile = change.working_dir == "U";
@@ -27291,13 +27627,13 @@ function instance($$self, $$props, $$invalidate) {
       $$invalidate(2, buttons);
     });
   }
-  function div0_binding($$value) {
+  function div1_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       buttons[0] = $$value;
       $$invalidate(2, buttons);
     });
   }
-  function div1_binding($$value) {
+  function div2_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       buttons[2] = $$value;
       $$invalidate(2, buttons);
@@ -27310,8 +27646,6 @@ function instance($$self, $$props, $$invalidate) {
       $$invalidate(1, view = $$props2.view);
     if ("manager" in $$props2)
       $$invalidate(9, manager = $$props2.manager);
-    if ("workspace" in $$props2)
-      $$invalidate(10, workspace = $$props2.workspace);
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & 2) {
@@ -27330,94 +27664,93 @@ function instance($$self, $$props, $$invalidate) {
     showDiff,
     discard,
     manager,
-    workspace,
     focus_handler,
     div_binding,
-    div0_binding,
-    div1_binding
+    div1_binding,
+    div2_binding
   ];
 }
 var FileComponent = class extends SvelteComponent {
   constructor(options) {
     super();
-    init2(this, options, instance, create_fragment, safe_not_equal, {
-      change: 0,
-      view: 1,
-      manager: 9,
-      workspace: 10
-    }, add_css);
+    init2(this, options, instance, create_fragment, safe_not_equal, { change: 0, view: 1, manager: 9 }, add_css);
   }
 };
 var fileComponent_default = FileComponent;
 
 // src/ui/sidebar/components/pulledFileComponent.svelte
 init_polyfill_buffer();
-var import_obsidian18 = __toModule(require("obsidian"));
+var import_obsidian19 = __toModule(require("obsidian"));
 function add_css2(target) {
-  append_styles(target, "svelte-1pr4yz5", "main.svelte-1pr4yz5.svelte-1pr4yz5{cursor:pointer;background-color:var(--background-secondary);border-radius:4px;width:98%;display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:2px}main.svelte-1pr4yz5 .path.svelte-1pr4yz5{color:var(--text-muted);white-space:nowrap;max-width:75%;overflow:hidden;text-overflow:ellipsis}main.svelte-1pr4yz5:hover .path.svelte-1pr4yz5{color:var(--text-normal);transition:all 200ms}main.svelte-1pr4yz5 .tools.svelte-1pr4yz5{display:flex;align-items:center}main.svelte-1pr4yz5 .tools .type.svelte-1pr4yz5{height:16px;width:16px;margin:0;display:flex;align-items:center;justify-content:center}main.svelte-1pr4yz5 .tools .type[data-type=M].svelte-1pr4yz5{color:orange}main.svelte-1pr4yz5 .tools .type[data-type=D].svelte-1pr4yz5{color:red}");
+  append_styles(target, "svelte-sajhpp", "main.svelte-sajhpp .nav-file-title-content.svelte-sajhpp{display:flex;align-items:center}main.svelte-sajhpp .tools.svelte-sajhpp{display:flex;margin-left:auto}main.svelte-sajhpp .tools .type.svelte-sajhpp{padding-left:var(--size-2-1);display:flex;align-items:center;justify-content:center}main.svelte-sajhpp .tools .type[data-type=M].svelte-sajhpp{color:orange}main.svelte-sajhpp .tools .type[data-type=D].svelte-sajhpp{color:red}");
 }
 function create_fragment2(ctx) {
+  var _a2;
   let main;
-  let span0;
-  let t0_value = ctx[0].vault_path.split("/").last().replace(".md", "") + "";
+  let div2;
+  let div0;
+  let t0_value = ((_a2 = ctx[0].vault_path.split("/").last()) == null ? void 0 : _a2.replace(".md", "")) + "";
   let t0;
-  let span0_aria_label_value;
   let t1;
-  let div;
-  let span1;
+  let div1;
+  let span;
   let t2_value = ctx[0].working_dir + "";
   let t2;
-  let span1_data_type_value;
+  let span_data_type_value;
+  let div2_aria_label_value;
   let mounted;
   let dispose;
   return {
     c() {
       main = element("main");
-      span0 = element("span");
+      div2 = element("div");
+      div0 = element("div");
       t0 = text(t0_value);
       t1 = space();
-      div = element("div");
-      span1 = element("span");
+      div1 = element("div");
+      span = element("span");
       t2 = text(t2_value);
-      attr(span0, "class", "path svelte-1pr4yz5");
-      attr(span0, "aria-label-position", ctx[1]);
-      attr(span0, "aria-label", span0_aria_label_value = ctx[0].vault_path.split("/").last() != ctx[0].vault_path ? ctx[0].vault_path : "");
-      attr(span1, "class", "type svelte-1pr4yz5");
-      attr(span1, "data-type", span1_data_type_value = ctx[0].working_dir);
-      attr(div, "class", "tools svelte-1pr4yz5");
-      attr(main, "class", "svelte-1pr4yz5");
+      attr(div0, "class", "nav-file-title-content svelte-sajhpp");
+      attr(span, "class", "type svelte-sajhpp");
+      attr(span, "data-type", span_data_type_value = ctx[0].working_dir);
+      attr(div1, "class", "tools svelte-sajhpp");
+      attr(div2, "class", "nav-file-title");
+      attr(div2, "aria-label-position", ctx[1]);
+      attr(div2, "aria-label", div2_aria_label_value = ctx[0].vault_path.split("/").last() != ctx[0].vault_path ? ctx[0].vault_path : "");
+      attr(main, "class", "nav-file svelte-sajhpp");
     },
     m(target, anchor) {
       insert(target, main, anchor);
-      append2(main, span0);
-      append2(span0, t0);
-      append2(main, t1);
-      append2(main, div);
-      append2(div, span1);
-      append2(span1, t2);
+      append2(main, div2);
+      append2(div2, div0);
+      append2(div0, t0);
+      append2(div2, t1);
+      append2(div2, div1);
+      append2(div1, span);
+      append2(span, t2);
       if (!mounted) {
         dispose = [
-          listen(span0, "click", self2(ctx[3])),
           listen(main, "mouseover", ctx[2]),
-          listen(main, "click", self2(ctx[3])),
+          listen(main, "click", ctx[3]),
           listen(main, "focus", ctx[5])
         ];
         mounted = true;
       }
     },
     p(ctx2, [dirty]) {
-      if (dirty & 1 && t0_value !== (t0_value = ctx2[0].vault_path.split("/").last().replace(".md", "") + ""))
+      var _a3;
+      if (dirty & 1 && t0_value !== (t0_value = ((_a3 = ctx2[0].vault_path.split("/").last()) == null ? void 0 : _a3.replace(".md", "")) + ""))
         set_data(t0, t0_value);
-      if (dirty & 2) {
-        attr(span0, "aria-label-position", ctx2[1]);
-      }
-      if (dirty & 1 && span0_aria_label_value !== (span0_aria_label_value = ctx2[0].vault_path.split("/").last() != ctx2[0].vault_path ? ctx2[0].vault_path : "")) {
-        attr(span0, "aria-label", span0_aria_label_value);
-      }
       if (dirty & 1 && t2_value !== (t2_value = ctx2[0].working_dir + ""))
         set_data(t2, t2_value);
-      if (dirty & 1 && span1_data_type_value !== (span1_data_type_value = ctx2[0].working_dir)) {
-        attr(span1, "data-type", span1_data_type_value);
+      if (dirty & 1 && span_data_type_value !== (span_data_type_value = ctx2[0].working_dir)) {
+        attr(span, "data-type", span_data_type_value);
+      }
+      if (dirty & 2) {
+        attr(div2, "aria-label-position", ctx2[1]);
+      }
+      if (dirty & 1 && div2_aria_label_value !== (div2_aria_label_value = ctx2[0].vault_path.split("/").last() != ctx2[0].vault_path ? ctx2[0].vault_path : "")) {
+        attr(div2, "aria-label", div2_aria_label_value);
       }
     },
     i: noop,
@@ -27440,8 +27773,10 @@ function instance2($$self, $$props, $$invalidate) {
     }
   }
   function open(event) {
-    if (!(change.path.startsWith(view.app.vault.configDir) || change.path.startsWith(".") || change.working_dir === "D")) {
-      openOrSwitch(change.vault_path, event);
+    var _a2;
+    const file = view.app.vault.getAbstractFileByPath(change.vault_path);
+    if (file instanceof import_obsidian19.TFile) {
+      (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.openFile(file);
     }
   }
   function focus_handler(event) {
@@ -27471,9 +27806,9 @@ var pulledFileComponent_default = PulledFileComponent;
 
 // src/ui/sidebar/components/stagedFileComponent.svelte
 init_polyfill_buffer();
-var import_obsidian19 = __toModule(require("obsidian"));
+var import_obsidian20 = __toModule(require("obsidian"));
 function add_css3(target) {
-  append_styles(target, "svelte-15heedx", "main.svelte-15heedx.svelte-15heedx.svelte-15heedx{cursor:pointer;background-color:var(--background-secondary);border-radius:4px;width:98%;display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:2px}main.svelte-15heedx .path.svelte-15heedx.svelte-15heedx{color:var(--text-muted);white-space:nowrap;max-width:75%;overflow:hidden;text-overflow:ellipsis}main.svelte-15heedx:hover .path.svelte-15heedx.svelte-15heedx{color:var(--text-normal);transition:all 200ms}main.svelte-15heedx .tools.svelte-15heedx.svelte-15heedx{display:flex;align-items:center}main.svelte-15heedx .tools .type.svelte-15heedx.svelte-15heedx{height:16px;width:16px;margin:0;display:flex;align-items:center;justify-content:center}main.svelte-15heedx .tools .type[data-type=M].svelte-15heedx.svelte-15heedx{color:orange}main.svelte-15heedx .tools .type[data-type=D].svelte-15heedx.svelte-15heedx{color:red}main.svelte-15heedx .tools .type[data-type=A].svelte-15heedx.svelte-15heedx{color:yellowgreen}main.svelte-15heedx .tools .type[data-type=R].svelte-15heedx.svelte-15heedx{color:violet}main.svelte-15heedx .tools .buttons.svelte-15heedx.svelte-15heedx{display:flex}main.svelte-15heedx .tools .buttons.svelte-15heedx>.svelte-15heedx{color:var(--text-faint);height:16px;width:16px;margin:0;transition:all 0.2s;border-radius:2px;margin-right:1px}main.svelte-15heedx .tools .buttons.svelte-15heedx>.svelte-15heedx:hover{color:var(--text-normal);background-color:var(--interactive-accent)}");
+  append_styles(target, "svelte-wn85nz", "main.svelte-wn85nz .nav-file-title-content.svelte-wn85nz.svelte-wn85nz{display:flex;align-items:center}main.svelte-wn85nz .tools.svelte-wn85nz.svelte-wn85nz{display:flex;margin-left:auto}main.svelte-wn85nz .tools .type.svelte-wn85nz.svelte-wn85nz{padding-left:var(--size-2-1);width:11px;display:flex;align-items:center;justify-content:center}main.svelte-wn85nz .tools .type[data-type=M].svelte-wn85nz.svelte-wn85nz{color:orange}main.svelte-wn85nz .tools .type[data-type=D].svelte-wn85nz.svelte-wn85nz{color:red}main.svelte-wn85nz .tools .buttons.svelte-wn85nz.svelte-wn85nz{display:flex}main.svelte-wn85nz .tools .buttons.svelte-wn85nz>.svelte-wn85nz{padding:0 0;height:auto}");
 }
 function create_if_block2(ctx) {
   let div;
@@ -27484,7 +27819,7 @@ function create_if_block2(ctx) {
       div = element("div");
       attr(div, "data-icon", "go-to-file");
       attr(div, "aria-label", "Open File");
-      attr(div, "class", "svelte-15heedx");
+      attr(div, "class", "clickable-icon svelte-wn85nz");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -27505,71 +27840,78 @@ function create_if_block2(ctx) {
   };
 }
 function create_fragment3(ctx) {
+  var _a2;
   let main;
-  let span0;
-  let t0_value = ctx[3].split("/").last().replace(".md", "") + "";
+  let div5;
+  let div0;
+  let t0_value = ((_a2 = ctx[3].split("/").last()) == null ? void 0 : _a2.replace(".md", "")) + "";
   let t0;
-  let span0_aria_label_value;
   let t1;
+  let div4;
   let div2;
-  let div1;
   let show_if = ctx[1].app.vault.getAbstractFileByPath(ctx[3]);
   let t2;
-  let div0;
+  let div1;
   let t3;
-  let span1;
+  let div3;
   let t4_value = ctx[0].index + "";
   let t4;
-  let span1_data_type_value;
+  let div3_data_type_value;
+  let div5_aria_label_value;
   let mounted;
   let dispose;
   let if_block = show_if && create_if_block2(ctx);
   return {
     c() {
       main = element("main");
-      span0 = element("span");
+      div5 = element("div");
+      div0 = element("div");
       t0 = text(t0_value);
       t1 = space();
+      div4 = element("div");
       div2 = element("div");
-      div1 = element("div");
       if (if_block)
         if_block.c();
       t2 = space();
-      div0 = element("div");
+      div1 = element("div");
       t3 = space();
-      span1 = element("span");
+      div3 = element("div");
       t4 = text(t4_value);
-      attr(span0, "class", "path svelte-15heedx");
-      attr(span0, "aria-label-position", ctx[4]);
-      attr(span0, "aria-label", span0_aria_label_value = ctx[3].split("/").last() != ctx[3] ? ctx[3] : "");
-      attr(div0, "data-icon", "minus");
-      attr(div0, "aria-label", "Unstage");
-      attr(div0, "class", "svelte-15heedx");
-      attr(div1, "class", "buttons svelte-15heedx");
-      attr(span1, "class", "type svelte-15heedx");
-      attr(span1, "data-type", span1_data_type_value = ctx[0].index);
-      attr(div2, "class", "tools svelte-15heedx");
-      attr(main, "class", "svelte-15heedx");
+      attr(div0, "class", "nav-file-title-content svelte-wn85nz");
+      attr(div1, "data-icon", "minus");
+      attr(div1, "aria-label", "Unstage");
+      attr(div1, "class", "clickable-icon svelte-wn85nz");
+      attr(div2, "class", "buttons svelte-wn85nz");
+      attr(div3, "class", "type svelte-wn85nz");
+      attr(div3, "data-type", div3_data_type_value = ctx[0].index);
+      attr(div4, "class", "tools svelte-wn85nz");
+      attr(div5, "class", "nav-file-title");
+      attr(div5, "aria-label-position", ctx[4]);
+      attr(div5, "aria-label", div5_aria_label_value = ctx[3].split("/").last() != ctx[3] ? ctx[3] : "");
+      attr(main, "class", "nav-file svelte-wn85nz");
     },
     m(target, anchor) {
       insert(target, main, anchor);
-      append2(main, span0);
-      append2(span0, t0);
-      append2(main, t1);
-      append2(main, div2);
-      append2(div2, div1);
+      append2(main, div5);
+      append2(div5, div0);
+      append2(div0, t0);
+      append2(div5, t1);
+      append2(div5, div4);
+      append2(div4, div2);
       if (if_block)
-        if_block.m(div1, null);
-      append2(div1, t2);
-      append2(div1, div0);
-      ctx[12](div0);
-      append2(div2, t3);
-      append2(div2, span1);
-      append2(span1, t4);
+        if_block.m(div2, null);
+      append2(div2, t2);
+      append2(div2, div1);
+      ctx[12](div1);
+      append2(div4, t3);
+      append2(div4, div3);
+      append2(div3, t4);
       if (!mounted) {
         dispose = [
-          listen(span0, "click", ctx[7]),
-          listen(div0, "click", ctx[8]),
+          listen(div0, "click", ctx[7]),
+          listen(div0, "auxclick", ctx[7]),
+          listen(div1, "click", ctx[8]),
+          listen(div5, "click", self2(ctx[7])),
           listen(main, "mouseover", ctx[5]),
           listen(main, "focus", ctx[10]),
           listen(main, "click", self2(ctx[7]))
@@ -27578,14 +27920,9 @@ function create_fragment3(ctx) {
       }
     },
     p(ctx2, [dirty]) {
-      if (dirty & 8 && t0_value !== (t0_value = ctx2[3].split("/").last().replace(".md", "") + ""))
+      var _a3;
+      if (dirty & 8 && t0_value !== (t0_value = ((_a3 = ctx2[3].split("/").last()) == null ? void 0 : _a3.replace(".md", "")) + ""))
         set_data(t0, t0_value);
-      if (dirty & 16) {
-        attr(span0, "aria-label-position", ctx2[4]);
-      }
-      if (dirty & 8 && span0_aria_label_value !== (span0_aria_label_value = ctx2[3].split("/").last() != ctx2[3] ? ctx2[3] : "")) {
-        attr(span0, "aria-label", span0_aria_label_value);
-      }
       if (dirty & 10)
         show_if = ctx2[1].app.vault.getAbstractFileByPath(ctx2[3]);
       if (show_if) {
@@ -27594,7 +27931,7 @@ function create_fragment3(ctx) {
         } else {
           if_block = create_if_block2(ctx2);
           if_block.c();
-          if_block.m(div1, t2);
+          if_block.m(div2, t2);
         }
       } else if (if_block) {
         if_block.d(1);
@@ -27602,8 +27939,14 @@ function create_fragment3(ctx) {
       }
       if (dirty & 1 && t4_value !== (t4_value = ctx2[0].index + ""))
         set_data(t4, t4_value);
-      if (dirty & 1 && span1_data_type_value !== (span1_data_type_value = ctx2[0].index)) {
-        attr(span1, "data-type", span1_data_type_value);
+      if (dirty & 1 && div3_data_type_value !== (div3_data_type_value = ctx2[0].index)) {
+        attr(div3, "data-type", div3_data_type_value);
+      }
+      if (dirty & 16) {
+        attr(div5, "aria-label-position", ctx2[4]);
+      }
+      if (dirty & 8 && div5_aria_label_value !== (div5_aria_label_value = ctx2[3].split("/").last() != ctx2[3] ? ctx2[3] : "")) {
+        attr(div5, "aria-label", div5_aria_label_value);
       }
     },
     i: noop,
@@ -27626,33 +27969,26 @@ function instance3($$self, $$props, $$invalidate) {
   let { view } = $$props;
   let { manager } = $$props;
   let buttons = [];
-  window.setTimeout(() => buttons.forEach((b) => (0, import_obsidian19.setIcon)(b, b.getAttr("data-icon"), 16)), 0);
+  window.setTimeout(() => buttons.forEach((b) => (0, import_obsidian20.setIcon)(b, b.getAttr("data-icon"), 16)), 0);
   function hover(event) {
     if (!change.path.startsWith(view.app.vault.configDir) || !change.path.startsWith(".")) {
       hoverPreview(event, view, formattedPath.split("/").last().replace(".md", ""));
     }
   }
   function open(event) {
-    if (!(change.path.startsWith(view.app.vault.configDir) || change.path.startsWith(".") || change.index === "D")) {
-      openOrSwitch(formattedPath, event);
+    var _a2;
+    const file = view.app.vault.getAbstractFileByPath(change.vault_path);
+    if (file instanceof import_obsidian20.TFile) {
+      (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.openFile(file);
     }
   }
   function showDiff(event) {
-    const workspace = view.app.workspace;
-    const leaf = workspace.getMostRecentLeaf(workspace.rootSplit);
-    if (leaf && !leaf.getViewState().pinned && !(event.ctrlKey || event.getModifierState("Meta"))) {
-      leaf.setViewState({
-        type: DIFF_VIEW_CONFIG.type,
-        state: { file: change.path, staged: true }
-      });
-      workspace.setActiveLeaf(leaf, true, true);
-    } else {
-      getNewLeaf().setViewState({
-        type: DIFF_VIEW_CONFIG.type,
-        active: true,
-        state: { file: change.path, staged: true }
-      });
-    }
+    var _a2;
+    (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.setViewState({
+      type: DIFF_VIEW_CONFIG.type,
+      active: true,
+      state: { file: change.path, staged: true }
+    });
   }
   function unstage() {
     manager.unstage(change.path, false).finally(() => {
@@ -27668,7 +28004,7 @@ function instance3($$self, $$props, $$invalidate) {
       $$invalidate(2, buttons);
     });
   }
-  function div0_binding($$value) {
+  function div1_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       buttons[0] = $$value;
       $$invalidate(2, buttons);
@@ -27705,7 +28041,7 @@ function instance3($$self, $$props, $$invalidate) {
     manager,
     focus_handler,
     div_binding,
-    div0_binding
+    div1_binding
   ];
 }
 var StagedFileComponent = class extends SvelteComponent {
@@ -27719,115 +28055,177 @@ var stagedFileComponent_default = StagedFileComponent;
 // src/ui/sidebar/components/treeComponent.svelte
 init_polyfill_buffer();
 function add_css4(target) {
-  append_styles(target, "svelte-pgmdei", '@charset "UTF-8";main.svelte-pgmdei.svelte-pgmdei:not(.topLevel){margin-left:5px}.opener.svelte-pgmdei.svelte-pgmdei{display:flex;justify-content:space-between;align-items:center;padding:0 4px}.opener.svelte-pgmdei .collapse-icon.svelte-pgmdei::after{content:"\xA0"}.opener.svelte-pgmdei div.svelte-pgmdei{display:flex}.opener.svelte-pgmdei svg.svelte-pgmdei{transform:rotate(-90deg)}.opener.open.svelte-pgmdei svg.svelte-pgmdei{transform:rotate(0)}.opener.svelte-pgmdei span.svelte-pgmdei{font-size:0.8rem}.file-view.svelte-pgmdei.svelte-pgmdei{margin-left:5px}');
+  append_styles(target, "svelte-148wteu", "main.svelte-148wteu .nav-folder-title-content.svelte-148wteu.svelte-148wteu{display:flex;align-items:center}main.svelte-148wteu .tools.svelte-148wteu.svelte-148wteu{display:flex;margin-left:auto}main.svelte-148wteu .tools .buttons.svelte-148wteu.svelte-148wteu{display:flex}main.svelte-148wteu .tools .buttons.svelte-148wteu>.svelte-148wteu{padding:0 0;height:auto}");
 }
 function get_each_context(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[7] = list[i];
+  child_ctx[17] = list[i];
   return child_ctx;
 }
 function create_else_block(ctx) {
-  let div2;
-  let div1;
+  let div7;
+  let div6;
   let div0;
   let t0;
-  let span;
-  let t1_value = ctx[7].title + "";
+  let div1;
   let t1;
+  let div2;
+  let t2_value = ctx[17].title + "";
   let t2;
-  let if_block_anchor;
+  let t3;
+  let div5;
+  let div4;
+  let t4;
+  let div3;
+  let div6_aria_label_value;
+  let t5;
+  let t6;
   let current;
   let mounted;
   let dispose;
   function click_handler() {
-    return ctx[6](ctx[7]);
+    return ctx[11](ctx[17]);
   }
-  let if_block = !ctx[5][ctx[7].title] && create_if_block_4(ctx);
+  function click_handler_1() {
+    return ctx[12](ctx[17]);
+  }
+  function select_block_type_2(ctx2, dirty) {
+    if (ctx2[3] == FileType.staged)
+      return create_if_block_5;
+    return create_else_block_1;
+  }
+  let current_block_type = select_block_type_2(ctx, -1);
+  let if_block0 = current_block_type(ctx);
+  function click_handler_5() {
+    return ctx[16](ctx[17]);
+  }
+  let if_block1 = !ctx[5][ctx[17].title] && create_if_block_4(ctx);
   return {
     c() {
-      div2 = element("div");
-      div1 = element("div");
+      div7 = element("div");
+      div6 = element("div");
       div0 = element("div");
-      div0.innerHTML = `<svg viewBox="0 0 100 100" class="right-triangle svelte-pgmdei" width="8" height="8"><path fill="currentColor" stroke="currentColor" d="M94.9,20.8c-1.4-2.5-4.1-4.1-7.1-4.1H12.2c-3,0-5.7,1.6-7.1,4.1c-1.3,2.4-1.2,5.2,0.2,7.6L43.1,88c1.5,2.3,4,3.7,6.9,3.7 s5.4-1.4,6.9-3.7l37.8-59.6C96.1,26,96.2,23.2,94.9,20.8L94.9,20.8z"></path></svg>`;
       t0 = space();
-      span = element("span");
-      t1 = text(t1_value);
-      t2 = space();
-      if (if_block)
-        if_block.c();
-      if_block_anchor = empty();
-      attr(div0, "class", "tree-item-icon collapse-icon svelte-pgmdei");
-      attr(div0, "style", "");
-      attr(span, "class", "svelte-pgmdei");
-      attr(div1, "class", "svelte-pgmdei");
-      attr(div2, "class", "opener tree-item-self is-clickable svelte-pgmdei");
-      toggle_class(div2, "open", !ctx[5][ctx[7].title]);
+      div1 = element("div");
+      div1.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg>`;
+      t1 = space();
+      div2 = element("div");
+      t2 = text(t2_value);
+      t3 = space();
+      div5 = element("div");
+      div4 = element("div");
+      if_block0.c();
+      t4 = space();
+      div3 = element("div");
+      t5 = space();
+      if (if_block1)
+        if_block1.c();
+      t6 = space();
+      attr(div0, "data-icon", "folder");
+      set_style(div0, "padding-right", "5px");
+      set_style(div0, "display", "flex");
+      attr(div1, "class", "nav-folder-collapse-indicator collapse-icon");
+      attr(div2, "class", "nav-folder-title-content svelte-148wteu");
+      set_style(div3, "width", "11px");
+      attr(div3, "class", "svelte-148wteu");
+      attr(div4, "class", "buttons svelte-148wteu");
+      attr(div5, "class", "tools svelte-148wteu");
+      attr(div6, "class", "nav-folder-title");
+      attr(div6, "aria-label-position", ctx[6]);
+      attr(div6, "aria-label", div6_aria_label_value = ctx[17].vaultPath.split("/").last() != ctx[17].vaultPath ? ctx[17].vaultPath : "");
+      attr(div7, "class", "nav-folder");
+      toggle_class(div7, "is-collapsed", ctx[5][ctx[17].title]);
     },
     m(target, anchor) {
-      insert(target, div2, anchor);
-      append2(div2, div1);
-      append2(div1, div0);
-      append2(div1, t0);
-      append2(div1, span);
-      append2(span, t1);
-      insert(target, t2, anchor);
-      if (if_block)
-        if_block.m(target, anchor);
-      insert(target, if_block_anchor, anchor);
+      insert(target, div7, anchor);
+      append2(div7, div6);
+      append2(div6, div0);
+      append2(div6, t0);
+      append2(div6, div1);
+      append2(div6, t1);
+      append2(div6, div2);
+      append2(div2, t2);
+      append2(div6, t3);
+      append2(div6, div5);
+      append2(div5, div4);
+      if_block0.m(div4, null);
+      append2(div4, t4);
+      append2(div4, div3);
+      append2(div7, t5);
+      if (if_block1)
+        if_block1.m(div7, null);
+      append2(div7, t6);
       current = true;
       if (!mounted) {
-        dispose = listen(div2, "click", click_handler);
+        dispose = [
+          listen(div1, "click", click_handler),
+          listen(div2, "click", click_handler_1),
+          listen(div6, "click", self2(click_handler_5))
+        ];
         mounted = true;
       }
     },
     p(new_ctx, dirty) {
       ctx = new_ctx;
-      if ((!current || dirty & 1) && t1_value !== (t1_value = ctx[7].title + ""))
-        set_data(t1, t1_value);
-      if (!current || dirty & 33) {
-        toggle_class(div2, "open", !ctx[5][ctx[7].title]);
+      if ((!current || dirty & 1) && t2_value !== (t2_value = ctx[17].title + ""))
+        set_data(t2, t2_value);
+      if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block0) {
+        if_block0.p(ctx, dirty);
+      } else {
+        if_block0.d(1);
+        if_block0 = current_block_type(ctx);
+        if (if_block0) {
+          if_block0.c();
+          if_block0.m(div4, t4);
+        }
       }
-      if (!ctx[5][ctx[7].title]) {
-        if (if_block) {
-          if_block.p(ctx, dirty);
+      if (!current || dirty & 64) {
+        attr(div6, "aria-label-position", ctx[6]);
+      }
+      if (!current || dirty & 1 && div6_aria_label_value !== (div6_aria_label_value = ctx[17].vaultPath.split("/").last() != ctx[17].vaultPath ? ctx[17].vaultPath : "")) {
+        attr(div6, "aria-label", div6_aria_label_value);
+      }
+      if (!ctx[5][ctx[17].title]) {
+        if (if_block1) {
+          if_block1.p(ctx, dirty);
           if (dirty & 33) {
-            transition_in(if_block, 1);
+            transition_in(if_block1, 1);
           }
         } else {
-          if_block = create_if_block_4(ctx);
-          if_block.c();
-          transition_in(if_block, 1);
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+          if_block1 = create_if_block_4(ctx);
+          if_block1.c();
+          transition_in(if_block1, 1);
+          if_block1.m(div7, t6);
         }
-      } else if (if_block) {
+      } else if (if_block1) {
         group_outros();
-        transition_out(if_block, 1, 1, () => {
-          if_block = null;
+        transition_out(if_block1, 1, 1, () => {
+          if_block1 = null;
         });
         check_outros();
+      }
+      if (!current || dirty & 33) {
+        toggle_class(div7, "is-collapsed", ctx[5][ctx[17].title]);
       }
     },
     i(local) {
       if (current)
         return;
-      transition_in(if_block);
+      transition_in(if_block1);
       current = true;
     },
     o(local) {
-      transition_out(if_block);
+      transition_out(if_block1);
       current = false;
     },
     d(detaching) {
       if (detaching)
-        detach(div2);
-      if (detaching)
-        detach(t2);
-      if (if_block)
-        if_block.d(detaching);
-      if (detaching)
-        detach(if_block_anchor);
+        detach(div7);
+      if_block0.d();
+      if (if_block1)
+        if_block1.d();
       mounted = false;
-      dispose();
+      run_all(dispose);
     }
   };
 }
@@ -27857,7 +28255,6 @@ function create_if_block3(ctx) {
       if (if_block)
         if_block.c();
       t = space();
-      attr(div, "class", "file-view svelte-pgmdei");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -27916,15 +28313,100 @@ function create_if_block3(ctx) {
     }
   };
 }
+function create_else_block_1(ctx) {
+  let div0;
+  let t;
+  let div1;
+  let mounted;
+  let dispose;
+  function click_handler_3() {
+    return ctx[14](ctx[17]);
+  }
+  function click_handler_4() {
+    return ctx[15](ctx[17]);
+  }
+  return {
+    c() {
+      div0 = element("div");
+      div0.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-undo"><path d="M3 7v6h6"></path><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"></path></svg>`;
+      t = space();
+      div1 = element("div");
+      div1.innerHTML = `<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-plus"><line x1="9" y1="4" x2="9" y2="14"></line><line x1="4" y1="9" x2="14" y2="9"></line></svg>`;
+      attr(div0, "data-icon", "undo");
+      attr(div0, "aria-label", "Discard");
+      attr(div0, "class", "clickable-icon svelte-148wteu");
+      attr(div1, "data-icon", "plus");
+      attr(div1, "aria-label", "Stage");
+      attr(div1, "class", "clickable-icon svelte-148wteu");
+    },
+    m(target, anchor) {
+      insert(target, div0, anchor);
+      insert(target, t, anchor);
+      insert(target, div1, anchor);
+      if (!mounted) {
+        dispose = [
+          listen(div0, "click", click_handler_3),
+          listen(div1, "click", click_handler_4)
+        ];
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div0);
+      if (detaching)
+        detach(t);
+      if (detaching)
+        detach(div1);
+      mounted = false;
+      run_all(dispose);
+    }
+  };
+}
+function create_if_block_5(ctx) {
+  let div;
+  let mounted;
+  let dispose;
+  function click_handler_2() {
+    return ctx[13](ctx[17]);
+  }
+  return {
+    c() {
+      div = element("div");
+      div.innerHTML = `<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-minus"><line x1="4" y1="9" x2="14" y2="9"></line></svg>`;
+      attr(div, "data-icon", "minus");
+      attr(div, "aria-label", "Unstage");
+      attr(div, "class", "clickable-icon svelte-148wteu");
+    },
+    m(target, anchor) {
+      insert(target, div, anchor);
+      if (!mounted) {
+        dispose = listen(div, "click", click_handler_2);
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      mounted = false;
+      dispose();
+    }
+  };
+}
 function create_if_block_4(ctx) {
   let div;
   let treecomponent;
-  let t;
   let div_transition;
   let current;
   treecomponent = new TreeComponent({
     props: {
-      hierarchy: ctx[7],
+      hierarchy: ctx[17],
       plugin: ctx[1],
       view: ctx[2],
       fileType: ctx[3]
@@ -27934,19 +28416,17 @@ function create_if_block_4(ctx) {
     c() {
       div = element("div");
       create_component(treecomponent.$$.fragment);
-      t = space();
-      attr(div, "class", "file-view svelte-pgmdei");
+      attr(div, "class", "nav-folder-children");
     },
     m(target, anchor) {
       insert(target, div, anchor);
       mount_component(treecomponent, div, null);
-      append2(div, t);
       current = true;
     },
     p(ctx2, dirty) {
       const treecomponent_changes = {};
       if (dirty & 1)
-        treecomponent_changes.hierarchy = ctx2[7];
+        treecomponent_changes.hierarchy = ctx2[17];
       if (dirty & 2)
         treecomponent_changes.plugin = ctx2[1];
       if (dirty & 4)
@@ -27962,7 +28442,7 @@ function create_if_block_4(ctx) {
       if (local) {
         add_render_callback(() => {
           if (!div_transition)
-            div_transition = create_bidirectional_transition(div, slide, { duration: 75 }, true);
+            div_transition = create_bidirectional_transition(div, slide, { duration: 150 }, true);
           div_transition.run(1);
         });
       }
@@ -27972,7 +28452,7 @@ function create_if_block_4(ctx) {
       transition_out(treecomponent.$$.fragment, local);
       if (local) {
         if (!div_transition)
-          div_transition = create_bidirectional_transition(div, slide, { duration: 75 }, false);
+          div_transition = create_bidirectional_transition(div, slide, { duration: 150 }, false);
         div_transition.run(0);
       }
       current = false;
@@ -27991,7 +28471,7 @@ function create_if_block_3(ctx) {
   let current;
   pulledfilecomponent = new pulledFileComponent_default({
     props: {
-      change: ctx[7].statusResult,
+      change: ctx[17].statusResult,
       view: ctx[2]
     }
   });
@@ -28006,7 +28486,7 @@ function create_if_block_3(ctx) {
     p(ctx2, dirty) {
       const pulledfilecomponent_changes = {};
       if (dirty & 1)
-        pulledfilecomponent_changes.change = ctx2[7].statusResult;
+        pulledfilecomponent_changes.change = ctx2[17].statusResult;
       if (dirty & 4)
         pulledfilecomponent_changes.view = ctx2[2];
       pulledfilecomponent.$set(pulledfilecomponent_changes);
@@ -28031,10 +28511,9 @@ function create_if_block_2(ctx) {
   let current;
   filecomponent = new fileComponent_default({
     props: {
-      change: ctx[7].statusResult,
+      change: ctx[17].statusResult,
       manager: ctx[1].gitManager,
-      view: ctx[2],
-      workspace: ctx[1].app.workspace
+      view: ctx[2]
     }
   });
   return {
@@ -28048,13 +28527,11 @@ function create_if_block_2(ctx) {
     p(ctx2, dirty) {
       const filecomponent_changes = {};
       if (dirty & 1)
-        filecomponent_changes.change = ctx2[7].statusResult;
+        filecomponent_changes.change = ctx2[17].statusResult;
       if (dirty & 2)
         filecomponent_changes.manager = ctx2[1].gitManager;
       if (dirty & 4)
         filecomponent_changes.view = ctx2[2];
-      if (dirty & 2)
-        filecomponent_changes.workspace = ctx2[1].app.workspace;
       filecomponent.$set(filecomponent_changes);
     },
     i(local) {
@@ -28077,7 +28554,7 @@ function create_if_block_1(ctx) {
   let current;
   stagedfilecomponent = new stagedFileComponent_default({
     props: {
-      change: ctx[7].statusResult,
+      change: ctx[17].statusResult,
       manager: ctx[1].gitManager,
       view: ctx[2]
     }
@@ -28093,7 +28570,7 @@ function create_if_block_1(ctx) {
     p(ctx2, dirty) {
       const stagedfilecomponent_changes = {};
       if (dirty & 1)
-        stagedfilecomponent_changes.change = ctx2[7].statusResult;
+        stagedfilecomponent_changes.change = ctx2[17].statusResult;
       if (dirty & 2)
         stagedfilecomponent_changes.manager = ctx2[1].gitManager;
       if (dirty & 4)
@@ -28123,7 +28600,7 @@ function create_each_block(ctx) {
   const if_block_creators = [create_if_block3, create_else_block];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
-    if (ctx2[7].statusResult)
+    if (ctx2[17].statusResult)
       return 0;
     return 1;
   }
@@ -28195,7 +28672,7 @@ function create_fragment4(ctx) {
       for (let i = 0; i < each_blocks.length; i += 1) {
         each_blocks[i].c();
       }
-      attr(main, "class", "svelte-pgmdei");
+      attr(main, "class", "svelte-148wteu");
       toggle_class(main, "topLevel", ctx[4]);
     },
     m(target, anchor) {
@@ -28206,7 +28683,7 @@ function create_fragment4(ctx) {
       current = true;
     },
     p(ctx2, [dirty]) {
-      if (dirty & 47) {
+      if (dirty & 2031) {
         each_value = ctx2[0].children;
         let i;
         for (i = 0; i < each_value.length; i += 1) {
@@ -28254,15 +28731,44 @@ function create_fragment4(ctx) {
   };
 }
 function instance4($$self, $$props, $$invalidate) {
+  let side;
   let { hierarchy } = $$props;
   let { plugin } = $$props;
   let { view } = $$props;
   let { fileType } = $$props;
   let { topLevel = false } = $$props;
   const closed = {};
-  const click_handler = (entity) => {
-    $$invalidate(5, closed[entity.title] = !closed[entity.title], closed);
-  };
+  function stage(path2) {
+    plugin.gitManager.stageAll({ dir: path2 }).finally(() => {
+      dispatchEvent(new CustomEvent("git-refresh"));
+    });
+  }
+  function unstage(path2) {
+    plugin.gitManager.unstageAll({ dir: path2 }).finally(() => {
+      dispatchEvent(new CustomEvent("git-refresh"));
+    });
+  }
+  function discard(item) {
+    new DiscardModal(view.app, false, item.vaultPath).myOpen().then((shouldDiscard) => {
+      if (shouldDiscard === true) {
+        plugin.gitManager.discardAll({
+          dir: item.path,
+          status: plugin.cachedStatus
+        }).finally(() => {
+          dispatchEvent(new CustomEvent("git-refresh"));
+        });
+      }
+    });
+  }
+  function fold(item) {
+    $$invalidate(5, closed[item.title] = !closed[item.title], closed);
+  }
+  const click_handler = (entity) => fold(entity);
+  const click_handler_1 = (entity) => fold(entity);
+  const click_handler_2 = (entity) => unstage(entity.path);
+  const click_handler_3 = (entity) => discard(entity);
+  const click_handler_4 = (entity) => stage(entity.path);
+  const click_handler_5 = (entity) => fold(entity);
   $$self.$$set = ($$props2) => {
     if ("hierarchy" in $$props2)
       $$invalidate(0, hierarchy = $$props2.hierarchy);
@@ -28275,7 +28781,31 @@ function instance4($$self, $$props, $$invalidate) {
     if ("topLevel" in $$props2)
       $$invalidate(4, topLevel = $$props2.topLevel);
   };
-  return [hierarchy, plugin, view, fileType, topLevel, closed, click_handler];
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & 4) {
+      $:
+        $$invalidate(6, side = view.leaf.getRoot().side == "left" ? "right" : "left");
+    }
+  };
+  return [
+    hierarchy,
+    plugin,
+    view,
+    fileType,
+    topLevel,
+    closed,
+    side,
+    stage,
+    unstage,
+    discard,
+    fold,
+    click_handler,
+    click_handler_1,
+    click_handler_2,
+    click_handler_3,
+    click_handler_4,
+    click_handler_5
+  ];
 }
 var TreeComponent = class extends SvelteComponent {
   constructor(options) {
@@ -28293,21 +28823,21 @@ var treeComponent_default = TreeComponent;
 
 // src/ui/sidebar/gitView.svelte
 function add_css5(target) {
-  append_styles(target, "svelte-1f0ksxd", '@charset "UTF-8";.commit-msg.svelte-1f0ksxd.svelte-1f0ksxd{width:100%;min-height:1.9em;height:1.9em;resize:vertical;padding:2px 5px;background-color:var(--background-modifier-form-field)}.search-input-container.svelte-1f0ksxd.svelte-1f0ksxd{width:100%}.file-view.svelte-1f0ksxd.svelte-1f0ksxd{margin-left:5px}.opener.svelte-1f0ksxd.svelte-1f0ksxd{display:flex;justify-content:space-between;align-items:center;padding:0 4px}.opener.svelte-1f0ksxd .collapse-icon.svelte-1f0ksxd::after{content:"\xA0"}.opener.svelte-1f0ksxd div.svelte-1f0ksxd{display:flex}.opener.svelte-1f0ksxd svg.svelte-1f0ksxd{transform:rotate(-90deg)}.opener.open.svelte-1f0ksxd svg.svelte-1f0ksxd{transform:rotate(0)}.git-view-body.svelte-1f0ksxd.svelte-1f0ksxd{overflow-y:auto;padding-left:10px}main.svelte-1f0ksxd.svelte-1f0ksxd{display:flex;flex-direction:column;height:100%;overflow-y:hidden}.nav-buttons-container.svelte-1f0ksxd.svelte-1f0ksxd{justify-content:space-between}.group.svelte-1f0ksxd.svelte-1f0ksxd{display:flex}');
+  append_styles(target, "svelte-fnxzfa", `.commit-msg-input.svelte-fnxzfa.svelte-fnxzfa.svelte-fnxzfa{width:100%;overflow:hidden;resize:none;padding:7px 5px;background-color:var(--background-modifier-form-field)}.git-commit-msg.svelte-fnxzfa.svelte-fnxzfa.svelte-fnxzfa{position:relative;padding:0;width:calc(100% - var(--size-4-8));margin:4px auto}main.svelte-fnxzfa .tools.svelte-fnxzfa.svelte-fnxzfa{display:flex;margin-left:auto}main.svelte-fnxzfa .tools .buttons.svelte-fnxzfa.svelte-fnxzfa{display:flex}main.svelte-fnxzfa .tools .buttons.svelte-fnxzfa>.svelte-fnxzfa{padding:0 0;height:auto}main.svelte-fnxzfa .tools .files-count.svelte-fnxzfa.svelte-fnxzfa{padding-left:var(--size-2-1);width:11px;display:flex;align-items:center;justify-content:center}.git-commit-msg-clear-button.svelte-fnxzfa.svelte-fnxzfa.svelte-fnxzfa{position:absolute;background:transparent;border-radius:50%;color:var(--search-clear-button-color);cursor:var(--cursor);top:-4px;right:2px;bottom:0px;line-height:0;height:var(--input-height);width:28px;margin:auto;padding:0 0;text-align:center;display:flex;justify-content:center;align-items:center;transition:color 0.15s ease-in-out}.git-commit-msg-clear-button.svelte-fnxzfa.svelte-fnxzfa.svelte-fnxzfa:after{content:"";height:var(--search-clear-button-size);width:var(--search-clear-button-size);display:block;background-color:currentColor;-webkit-mask-image:url("data:image/svg+xml,<svg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM3.8705 3.09766L6.00003 5.22718L8.12955 3.09766L8.9024 3.8705L6.77287 6.00003L8.9024 8.12955L8.12955 8.9024L6.00003 6.77287L3.8705 8.9024L3.09766 8.12955L5.22718 6.00003L3.09766 3.8705L3.8705 3.09766Z' fill='currentColor'/></svg>");-webkit-mask-repeat:no-repeat}.tree-item-flair.svelte-fnxzfa.svelte-fnxzfa.svelte-fnxzfa{margin-left:auto;align-items:center}`);
 }
 function get_each_context2(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[34] = list[i];
+  child_ctx[43] = list[i];
   return child_ctx;
 }
 function get_each_context_1(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[34] = list[i];
+  child_ctx[43] = list[i];
   return child_ctx;
 }
 function get_each_context_2(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[39] = list[i];
+  child_ctx[48] = list[i];
   return child_ctx;
 }
 function create_if_block_8(ctx) {
@@ -28318,13 +28848,13 @@ function create_if_block_8(ctx) {
   return {
     c() {
       div = element("div");
-      attr(div, "class", "search-input-clear-button");
+      attr(div, "class", "git-commit-msg-clear-button svelte-fnxzfa");
       attr(div, "aria-label", div_aria_label_value = "Clear");
     },
     m(target, anchor) {
       insert(target, div, anchor);
       if (!mounted) {
-        dispose = listen(div, "click", ctx[29]);
+        dispose = listen(div, "click", ctx[31]);
         mounted = true;
       }
     },
@@ -28338,110 +28868,181 @@ function create_if_block_8(ctx) {
   };
 }
 function create_if_block4(ctx) {
-  let div3;
-  let div2;
-  let div1;
-  let t2;
-  let span1;
-  let t3_value = ctx[5].staged.length + "";
-  let t3;
-  let t4;
-  let t5;
+  let div18;
+  let div17;
   let div7;
   let div6;
+  let div0;
+  let t0;
+  let div1;
+  let t2;
   let div5;
-  let t8;
-  let span3;
-  let t9_value = ctx[5].changed.length + "";
+  let div3;
+  let div2;
+  let t3;
+  let div4;
+  let t4_value = ctx[6].staged.length + "";
+  let t4;
+  let t5;
+  let t6;
+  let div16;
+  let div15;
+  let div8;
+  let t7;
+  let div9;
   let t9;
+  let div14;
+  let div12;
+  let div10;
   let t10;
+  let div11;
   let t11;
-  let if_block2_anchor;
+  let div13;
+  let t12_value = ctx[6].changed.length + "";
+  let t12;
+  let t13;
+  let t14;
   let current;
   let mounted;
   let dispose;
   let if_block0 = ctx[13] && create_if_block_6(ctx);
   let if_block1 = ctx[12] && create_if_block_42(ctx);
-  let if_block2 = ctx[6].length > 0 && create_if_block_12(ctx);
+  let if_block2 = ctx[7].length > 0 && create_if_block_12(ctx);
   return {
     c() {
-      div3 = element("div");
-      div2 = element("div");
-      div1 = element("div");
-      div1.innerHTML = `<div class="tree-item-icon collapse-icon svelte-1f0ksxd" style=""><svg viewBox="0 0 100 100" class="right-triangle svelte-1f0ksxd" width="8" height="8"><path fill="currentColor" stroke="currentColor" d="M94.9,20.8c-1.4-2.5-4.1-4.1-7.1-4.1H12.2c-3,0-5.7,1.6-7.1,4.1c-1.3,2.4-1.2,5.2,0.2,7.6L43.1,88c1.5,2.3,4,3.7,6.9,3.7 s5.4-1.4,6.9-3.7l37.8-59.6C96.1,26,96.2,23.2,94.9,20.8L94.9,20.8z"></path></svg></div> 
-            <span>Staged Changes</span>`;
-      t2 = space();
-      span1 = element("span");
-      t3 = text(t3_value);
-      t4 = space();
-      if (if_block0)
-        if_block0.c();
-      t5 = space();
+      div18 = element("div");
+      div17 = element("div");
       div7 = element("div");
       div6 = element("div");
+      div0 = element("div");
+      div0.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg>`;
+      t0 = space();
+      div1 = element("div");
+      div1.textContent = "Staged Changes";
+      t2 = space();
       div5 = element("div");
-      div5.innerHTML = `<div class="tree-item-icon collapse-icon svelte-1f0ksxd" style=""><svg viewBox="0 0 100 100" class="right-triangle svelte-1f0ksxd" width="8" height="8"><path fill="currentColor" stroke="currentColor" d="M94.9,20.8c-1.4-2.5-4.1-4.1-7.1-4.1H12.2c-3,0-5.7,1.6-7.1,4.1c-1.3,2.4-1.2,5.2,0.2,7.6L43.1,88c1.5,2.3,4,3.7,6.9,3.7 s5.4-1.4,6.9-3.7l37.8-59.6C96.1,26,96.2,23.2,94.9,20.8L94.9,20.8z"></path></svg></div> 
-            <span>Changes</span>`;
-      t8 = space();
-      span3 = element("span");
-      t9 = text(t9_value);
+      div3 = element("div");
+      div2 = element("div");
+      div2.innerHTML = `<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-minus"><line x1="4" y1="9" x2="14" y2="9"></line></svg>`;
+      t3 = space();
+      div4 = element("div");
+      t4 = text(t4_value);
+      t5 = space();
+      if (if_block0)
+        if_block0.c();
+      t6 = space();
+      div16 = element("div");
+      div15 = element("div");
+      div8 = element("div");
+      div8.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg>`;
+      t7 = space();
+      div9 = element("div");
+      div9.textContent = "Changes";
+      t9 = space();
+      div14 = element("div");
+      div12 = element("div");
+      div10 = element("div");
+      div10.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-undo"><path d="M3 7v6h6"></path><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"></path></svg>`;
       t10 = space();
+      div11 = element("div");
+      div11.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>`;
+      t11 = space();
+      div13 = element("div");
+      t12 = text(t12_value);
+      t13 = space();
       if (if_block1)
         if_block1.c();
-      t11 = space();
+      t14 = space();
       if (if_block2)
         if_block2.c();
-      if_block2_anchor = empty();
-      attr(div1, "class", "svelte-1f0ksxd");
-      attr(span1, "class", "tree-item-flair");
-      attr(div2, "class", "opener tree-item-self is-clickable svelte-1f0ksxd");
-      toggle_class(div2, "open", ctx[13]);
-      attr(div3, "class", "staged");
-      attr(div5, "class", "svelte-1f0ksxd");
-      attr(span3, "class", "tree-item-flair");
-      attr(div6, "class", "opener tree-item-self is-clickable svelte-1f0ksxd");
-      toggle_class(div6, "open", ctx[12]);
-      attr(div7, "class", "changes");
+      attr(div0, "class", "nav-folder-collapse-indicator collapse-icon");
+      attr(div1, "class", "nav-folder-title-content");
+      attr(div2, "data-icon", "minus");
+      attr(div2, "aria-label", "Unstage");
+      attr(div2, "class", "clickable-icon svelte-fnxzfa");
+      attr(div3, "class", "buttons svelte-fnxzfa");
+      attr(div4, "class", "files-count svelte-fnxzfa");
+      attr(div5, "class", "tools svelte-fnxzfa");
+      attr(div6, "class", "nav-folder-title");
+      attr(div7, "class", "staged nav-folder");
+      toggle_class(div7, "is-collapsed", !ctx[13]);
+      attr(div8, "class", "nav-folder-collapse-indicator collapse-icon");
+      attr(div9, "class", "nav-folder-title-content");
+      attr(div10, "data-icon", "undo");
+      attr(div10, "aria-label", "Discard");
+      attr(div10, "class", "clickable-icon svelte-fnxzfa");
+      attr(div11, "data-icon", "plus");
+      attr(div11, "aria-label", "Stage");
+      attr(div11, "class", "clickable-icon svelte-fnxzfa");
+      attr(div12, "class", "buttons svelte-fnxzfa");
+      attr(div13, "class", "files-count svelte-fnxzfa");
+      attr(div14, "class", "tools svelte-fnxzfa");
+      attr(div15, "class", "nav-folder-title");
+      attr(div16, "class", "changes nav-folder");
+      toggle_class(div16, "is-collapsed", !ctx[12]);
+      attr(div17, "class", "nav-folder-children");
+      attr(div18, "class", "nav-folder mod-root");
     },
     m(target, anchor) {
-      insert(target, div3, anchor);
-      append2(div3, div2);
-      append2(div2, div1);
-      append2(div2, t2);
-      append2(div2, span1);
-      append2(span1, t3);
-      append2(div3, t4);
-      if (if_block0)
-        if_block0.m(div3, null);
-      insert(target, t5, anchor);
-      insert(target, div7, anchor);
+      insert(target, div18, anchor);
+      append2(div18, div17);
+      append2(div17, div7);
       append2(div7, div6);
+      append2(div6, div0);
+      append2(div6, t0);
+      append2(div6, div1);
+      append2(div6, t2);
       append2(div6, div5);
-      append2(div6, t8);
-      append2(div6, span3);
-      append2(span3, t9);
-      append2(div7, t10);
+      append2(div5, div3);
+      append2(div3, div2);
+      ctx[34](div2);
+      append2(div5, t3);
+      append2(div5, div4);
+      append2(div4, t4);
+      append2(div7, t5);
+      if (if_block0)
+        if_block0.m(div7, null);
+      append2(div17, t6);
+      append2(div17, div16);
+      append2(div16, div15);
+      append2(div15, div8);
+      append2(div15, t7);
+      append2(div15, div9);
+      append2(div15, t9);
+      append2(div15, div14);
+      append2(div14, div12);
+      append2(div12, div10);
+      append2(div12, t10);
+      append2(div12, div11);
+      ctx[39](div11);
+      append2(div14, t11);
+      append2(div14, div13);
+      append2(div13, t12);
+      append2(div16, t13);
       if (if_block1)
-        if_block1.m(div7, null);
-      insert(target, t11, anchor);
+        if_block1.m(div16, null);
+      append2(div17, t14);
       if (if_block2)
-        if_block2.m(target, anchor);
-      insert(target, if_block2_anchor, anchor);
+        if_block2.m(div17, null);
       current = true;
       if (!mounted) {
         dispose = [
-          listen(div2, "click", ctx[30]),
-          listen(div6, "click", ctx[31])
+          listen(div0, "click", ctx[32]),
+          listen(div1, "click", ctx[33]),
+          listen(div2, "click", ctx[18]),
+          listen(div6, "click", self2(ctx[35])),
+          listen(div8, "click", ctx[36]),
+          listen(div9, "click", ctx[37]),
+          listen(div10, "click", ctx[38]),
+          listen(div11, "click", ctx[17]),
+          listen(div15, "click", self2(ctx[40]))
         ];
         mounted = true;
       }
     },
     p(ctx2, dirty) {
-      if ((!current || dirty[0] & 32) && t3_value !== (t3_value = ctx2[5].staged.length + ""))
-        set_data(t3, t3_value);
-      if (!current || dirty[0] & 8192) {
-        toggle_class(div2, "open", ctx2[13]);
-      }
+      if ((!current || dirty[0] & 64) && t4_value !== (t4_value = ctx2[6].staged.length + ""))
+        set_data(t4, t4_value);
       if (ctx2[13]) {
         if (if_block0) {
           if_block0.p(ctx2, dirty);
@@ -28452,7 +29053,7 @@ function create_if_block4(ctx) {
           if_block0 = create_if_block_6(ctx2);
           if_block0.c();
           transition_in(if_block0, 1);
-          if_block0.m(div3, null);
+          if_block0.m(div7, null);
         }
       } else if (if_block0) {
         group_outros();
@@ -28461,11 +29062,11 @@ function create_if_block4(ctx) {
         });
         check_outros();
       }
-      if ((!current || dirty[0] & 32) && t9_value !== (t9_value = ctx2[5].changed.length + ""))
-        set_data(t9, t9_value);
-      if (!current || dirty[0] & 4096) {
-        toggle_class(div6, "open", ctx2[12]);
+      if (!current || dirty[0] & 8192) {
+        toggle_class(div7, "is-collapsed", !ctx2[13]);
       }
+      if ((!current || dirty[0] & 64) && t12_value !== (t12_value = ctx2[6].changed.length + ""))
+        set_data(t12, t12_value);
       if (ctx2[12]) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
@@ -28476,7 +29077,7 @@ function create_if_block4(ctx) {
           if_block1 = create_if_block_42(ctx2);
           if_block1.c();
           transition_in(if_block1, 1);
-          if_block1.m(div7, null);
+          if_block1.m(div16, null);
         }
       } else if (if_block1) {
         group_outros();
@@ -28485,17 +29086,20 @@ function create_if_block4(ctx) {
         });
         check_outros();
       }
-      if (ctx2[6].length > 0) {
+      if (!current || dirty[0] & 4096) {
+        toggle_class(div16, "is-collapsed", !ctx2[12]);
+      }
+      if (ctx2[7].length > 0) {
         if (if_block2) {
           if_block2.p(ctx2, dirty);
-          if (dirty[0] & 64) {
+          if (dirty[0] & 128) {
             transition_in(if_block2, 1);
           }
         } else {
           if_block2 = create_if_block_12(ctx2);
           if_block2.c();
           transition_in(if_block2, 1);
-          if_block2.m(if_block2_anchor.parentNode, if_block2_anchor);
+          if_block2.m(div17, null);
         }
       } else if (if_block2) {
         group_outros();
@@ -28521,21 +29125,15 @@ function create_if_block4(ctx) {
     },
     d(detaching) {
       if (detaching)
-        detach(div3);
+        detach(div18);
+      ctx[34](null);
       if (if_block0)
         if_block0.d();
-      if (detaching)
-        detach(t5);
-      if (detaching)
-        detach(div7);
+      ctx[39](null);
       if (if_block1)
         if_block1.d();
-      if (detaching)
-        detach(t11);
       if (if_block2)
-        if_block2.d(detaching);
-      if (detaching)
-        detach(if_block2_anchor);
+        if_block2.d();
       mounted = false;
       run_all(dispose);
     }
@@ -28550,7 +29148,7 @@ function create_if_block_6(ctx) {
   const if_block_creators = [create_if_block_7, create_else_block_2];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
-    if (ctx2[2])
+    if (ctx2[3])
       return 0;
     return 1;
   }
@@ -28560,7 +29158,7 @@ function create_if_block_6(ctx) {
     c() {
       div = element("div");
       if_block.c();
-      attr(div, "class", "file-view svelte-1f0ksxd");
+      attr(div, "class", "nav-folder-children");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -28623,7 +29221,7 @@ function create_if_block_6(ctx) {
 function create_else_block_2(ctx) {
   let each_1_anchor;
   let current;
-  let each_value_2 = ctx[5].staged;
+  let each_value_2 = ctx[6].staged;
   let each_blocks = [];
   for (let i = 0; i < each_value_2.length; i += 1) {
     each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
@@ -28646,8 +29244,8 @@ function create_else_block_2(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty[0] & 35) {
-        each_value_2 = ctx2[5].staged;
+      if (dirty[0] & 67) {
+        each_value_2 = ctx2[6].staged;
         let i;
         for (i = 0; i < each_value_2.length; i += 1) {
           const child_ctx = get_each_context_2(ctx2, each_value_2, i);
@@ -28740,7 +29338,7 @@ function create_each_block_2(ctx) {
   let current;
   stagedfilecomponent = new stagedFileComponent_default({
     props: {
-      change: ctx[39],
+      change: ctx[48],
       view: ctx[1],
       manager: ctx[0].gitManager
     }
@@ -28755,8 +29353,8 @@ function create_each_block_2(ctx) {
     },
     p(ctx2, dirty) {
       const stagedfilecomponent_changes = {};
-      if (dirty[0] & 32)
-        stagedfilecomponent_changes.change = ctx2[39];
+      if (dirty[0] & 64)
+        stagedfilecomponent_changes.change = ctx2[48];
       if (dirty[0] & 2)
         stagedfilecomponent_changes.view = ctx2[1];
       if (dirty[0] & 1)
@@ -28784,10 +29382,10 @@ function create_if_block_42(ctx) {
   let if_block;
   let div_transition;
   let current;
-  const if_block_creators = [create_if_block_5, create_else_block_1];
+  const if_block_creators = [create_if_block_52, create_else_block_12];
   const if_blocks = [];
   function select_block_type_1(ctx2, dirty) {
-    if (ctx2[2])
+    if (ctx2[3])
       return 0;
     return 1;
   }
@@ -28797,7 +29395,7 @@ function create_if_block_42(ctx) {
     c() {
       div = element("div");
       if_block.c();
-      attr(div, "class", "file-view svelte-1f0ksxd");
+      attr(div, "class", "nav-folder-children");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -28857,10 +29455,10 @@ function create_if_block_42(ctx) {
     }
   };
 }
-function create_else_block_1(ctx) {
+function create_else_block_12(ctx) {
   let each_1_anchor;
   let current;
-  let each_value_1 = ctx[5].changed;
+  let each_value_1 = ctx[6].changed;
   let each_blocks = [];
   for (let i = 0; i < each_value_1.length; i += 1) {
     each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
@@ -28883,8 +29481,8 @@ function create_else_block_1(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty[0] & 35) {
-        each_value_1 = ctx2[5].changed;
+      if (dirty[0] & 67) {
+        each_value_1 = ctx2[6].changed;
         let i;
         for (i = 0; i < each_value_1.length; i += 1) {
           const child_ctx = get_each_context_1(ctx2, each_value_1, i);
@@ -28927,7 +29525,7 @@ function create_else_block_1(ctx) {
     }
   };
 }
-function create_if_block_5(ctx) {
+function create_if_block_52(ctx) {
   let treecomponent;
   let current;
   treecomponent = new treeComponent_default({
@@ -28977,10 +29575,9 @@ function create_each_block_1(ctx) {
   let current;
   filecomponent = new fileComponent_default({
     props: {
-      change: ctx[34],
+      change: ctx[43],
       view: ctx[1],
-      manager: ctx[0].gitManager,
-      workspace: ctx[0].app.workspace
+      manager: ctx[0].gitManager
     }
   });
   filecomponent.$on("git-refresh", triggerRefresh);
@@ -28994,14 +29591,12 @@ function create_each_block_1(ctx) {
     },
     p(ctx2, dirty) {
       const filecomponent_changes = {};
-      if (dirty[0] & 32)
-        filecomponent_changes.change = ctx2[34];
+      if (dirty[0] & 64)
+        filecomponent_changes.change = ctx2[43];
       if (dirty[0] & 2)
         filecomponent_changes.view = ctx2[1];
       if (dirty[0] & 1)
         filecomponent_changes.manager = ctx2[0].gitManager;
-      if (dirty[0] & 1)
-        filecomponent_changes.workspace = ctx2[0].app.workspace;
       filecomponent.$set(filecomponent_changes);
     },
     i(local) {
@@ -29022,10 +29617,12 @@ function create_each_block_1(ctx) {
 function create_if_block_12(ctx) {
   let div3;
   let div2;
+  let div0;
+  let t0;
   let div1;
   let t2;
-  let span1;
-  let t3_value = ctx[6].length + "";
+  let span;
+  let t3_value = ctx[7].length + "";
   let t3;
   let t4;
   let current;
@@ -29036,43 +29633,45 @@ function create_if_block_12(ctx) {
     c() {
       div3 = element("div");
       div2 = element("div");
+      div0 = element("div");
+      div0.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg>`;
+      t0 = space();
       div1 = element("div");
-      div1.innerHTML = `<div class="tree-item-icon collapse-icon svelte-1f0ksxd" style=""><svg viewBox="0 0 100 100" class="right-triangle svelte-1f0ksxd" width="8" height="8"><path fill="currentColor" stroke="currentColor" d="M94.9,20.8c-1.4-2.5-4.1-4.1-7.1-4.1H12.2c-3,0-5.7,1.6-7.1,4.1c-1.3,2.4-1.2,5.2,0.2,7.6L43.1,88c1.5,2.3,4,3.7,6.9,3.7 s5.4-1.4,6.9-3.7l37.8-59.6C96.1,26,96.2,23.2,94.9,20.8L94.9,20.8z"></path></svg></div> 
-              <span>Recently Pulled Changes</span>`;
+      div1.textContent = "Recently Pulled Files";
       t2 = space();
-      span1 = element("span");
+      span = element("span");
       t3 = text(t3_value);
       t4 = space();
       if (if_block)
         if_block.c();
-      attr(div1, "class", "svelte-1f0ksxd");
-      attr(span1, "class", "tree-item-flair");
-      attr(div2, "class", "opener tree-item-self is-clickable svelte-1f0ksxd");
-      toggle_class(div2, "open", ctx[14]);
-      attr(div3, "class", "pulled");
+      attr(div0, "class", "nav-folder-collapse-indicator collapse-icon");
+      attr(div1, "class", "nav-folder-title-content");
+      attr(span, "class", "tree-item-flair svelte-fnxzfa");
+      attr(div2, "class", "nav-folder-title");
+      attr(div3, "class", "pulled nav-folder");
+      toggle_class(div3, "is-collapsed", !ctx[14]);
     },
     m(target, anchor) {
       insert(target, div3, anchor);
       append2(div3, div2);
+      append2(div2, div0);
+      append2(div2, t0);
       append2(div2, div1);
       append2(div2, t2);
-      append2(div2, span1);
-      append2(span1, t3);
+      append2(div2, span);
+      append2(span, t3);
       append2(div3, t4);
       if (if_block)
         if_block.m(div3, null);
       current = true;
       if (!mounted) {
-        dispose = listen(div2, "click", ctx[32]);
+        dispose = listen(div2, "click", ctx[41]);
         mounted = true;
       }
     },
     p(ctx2, dirty) {
-      if ((!current || dirty[0] & 64) && t3_value !== (t3_value = ctx2[6].length + ""))
+      if ((!current || dirty[0] & 128) && t3_value !== (t3_value = ctx2[7].length + ""))
         set_data(t3, t3_value);
-      if (!current || dirty[0] & 16384) {
-        toggle_class(div2, "open", ctx2[14]);
-      }
       if (ctx2[14]) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -29091,6 +29690,9 @@ function create_if_block_12(ctx) {
           if_block = null;
         });
         check_outros();
+      }
+      if (!current || dirty[0] & 16384) {
+        toggle_class(div3, "is-collapsed", !ctx2[14]);
       }
     },
     i(local) {
@@ -29122,7 +29724,7 @@ function create_if_block_22(ctx) {
   const if_block_creators = [create_if_block_32, create_else_block2];
   const if_blocks = [];
   function select_block_type_2(ctx2, dirty) {
-    if (ctx2[2])
+    if (ctx2[3])
       return 0;
     return 1;
   }
@@ -29132,7 +29734,7 @@ function create_if_block_22(ctx) {
     c() {
       div = element("div");
       if_block.c();
-      attr(div, "class", "file-view svelte-1f0ksxd");
+      attr(div, "class", "nav-folder-children");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -29195,7 +29797,7 @@ function create_if_block_22(ctx) {
 function create_else_block2(ctx) {
   let each_1_anchor;
   let current;
-  let each_value = ctx[6];
+  let each_value = ctx[7];
   let each_blocks = [];
   for (let i = 0; i < each_value.length; i += 1) {
     each_blocks[i] = create_each_block2(get_each_context2(ctx, each_value, i));
@@ -29218,8 +29820,8 @@ function create_else_block2(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty[0] & 66) {
-        each_value = ctx2[6];
+      if (dirty[0] & 130) {
+        each_value = ctx2[7];
         let i;
         for (i = 0; i < each_value.length; i += 1) {
           const child_ctx = get_each_context2(ctx2, each_value, i);
@@ -29312,7 +29914,7 @@ function create_each_block2(ctx) {
   let current;
   pulledfilecomponent = new pulledFileComponent_default({
     props: {
-      change: ctx[34],
+      change: ctx[43],
       view: ctx[1]
     }
   });
@@ -29327,8 +29929,8 @@ function create_each_block2(ctx) {
     },
     p(ctx2, dirty) {
       const pulledfilecomponent_changes = {};
-      if (dirty[0] & 64)
-        pulledfilecomponent_changes.change = ctx2[34];
+      if (dirty[0] & 128)
+        pulledfilecomponent_changes.change = ctx2[43];
       if (dirty[0] & 2)
         pulledfilecomponent_changes.view = ctx2[1];
       pulledfilecomponent.$set(pulledfilecomponent_changes);
@@ -29350,8 +29952,8 @@ function create_each_block2(ctx) {
 }
 function create_fragment5(ctx) {
   let main;
-  let div9;
-  let div6;
+  let div8;
+  let div7;
   let div0;
   let t0;
   let div1;
@@ -29364,9 +29966,9 @@ function create_fragment5(ctx) {
   let t4;
   let div5;
   let t5;
-  let div7;
+  let div6;
   let t6;
-  let div8;
+  let div9;
   let textarea;
   let t7;
   let t8;
@@ -29374,13 +29976,13 @@ function create_fragment5(ctx) {
   let current;
   let mounted;
   let dispose;
-  let if_block0 = ctx[7] && create_if_block_8(ctx);
-  let if_block1 = ctx[5] && create_if_block4(ctx);
+  let if_block0 = ctx[2] && create_if_block_8(ctx);
+  let if_block1 = ctx[6] && ctx[10] && ctx[9] && create_if_block4(ctx);
   return {
     c() {
       main = element("main");
-      div9 = element("div");
-      div6 = element("div");
+      div8 = element("div");
+      div7 = element("div");
       div0 = element("div");
       t0 = space();
       div1 = element("div");
@@ -29393,9 +29995,9 @@ function create_fragment5(ctx) {
       t4 = space();
       div5 = element("div");
       t5 = space();
-      div7 = element("div");
+      div6 = element("div");
       t6 = space();
-      div8 = element("div");
+      div9 = element("div");
       textarea = element("textarea");
       t7 = space();
       if (if_block0)
@@ -29406,73 +30008,76 @@ function create_fragment5(ctx) {
         if_block1.c();
       attr(div0, "id", "commit-btn");
       attr(div0, "data-icon", "check");
-      attr(div0, "class", "nav-action-button");
+      attr(div0, "class", "clickable-icon nav-action-button");
       attr(div0, "aria-label", "Commit");
       attr(div1, "id", "stage-all");
-      attr(div1, "class", "nav-action-button");
+      attr(div1, "class", "clickable-icon nav-action-button");
       attr(div1, "data-icon", "plus-circle");
       attr(div1, "aria-label", "Stage all");
       attr(div2, "id", "unstage-all");
-      attr(div2, "class", "nav-action-button");
+      attr(div2, "class", "clickable-icon nav-action-button");
       attr(div2, "data-icon", "minus-circle");
       attr(div2, "aria-label", "Unstage all");
       attr(div3, "id", "push");
-      attr(div3, "class", "nav-action-button");
+      attr(div3, "class", "clickable-icon nav-action-button");
       attr(div3, "data-icon", "upload");
       attr(div3, "aria-label", "Push");
       attr(div4, "id", "pull");
-      attr(div4, "class", "nav-action-button");
+      attr(div4, "class", "clickable-icon nav-action-button");
       attr(div4, "data-icon", "download");
       attr(div4, "aria-label", "Pull");
       attr(div5, "id", "layoutChange");
-      attr(div5, "class", "nav-action-button");
+      attr(div5, "class", "clickable-icon nav-action-button");
       attr(div5, "aria-label", "Change Layout");
-      attr(div6, "class", "group svelte-1f0ksxd");
-      attr(div7, "id", "refresh");
-      attr(div7, "class", "nav-action-button");
-      attr(div7, "data-icon", "refresh-cw");
-      attr(div7, "aria-label", "Refresh");
-      toggle_class(div7, "loading", ctx[4]);
-      attr(textarea, "class", "commit-msg svelte-1f0ksxd");
+      attr(div6, "id", "refresh");
+      attr(div6, "class", "clickable-icon nav-action-button");
+      attr(div6, "data-icon", "refresh-cw");
+      attr(div6, "aria-label", "Refresh");
+      set_style(div6, "margin", "1px");
+      toggle_class(div6, "loading", ctx[5]);
+      attr(div7, "class", "nav-buttons-container");
+      attr(div8, "class", "nav-header");
+      attr(textarea, "rows", ctx[15]);
+      attr(textarea, "class", "commit-msg-input svelte-fnxzfa");
       attr(textarea, "type", "text");
       attr(textarea, "spellcheck", "true");
       attr(textarea, "placeholder", "Commit Message");
-      attr(div8, "class", "search-input-container svelte-1f0ksxd");
-      attr(div9, "class", "nav-buttons-container svelte-1f0ksxd");
-      attr(div10, "class", "git-view-body svelte-1f0ksxd");
-      attr(main, "class", "svelte-1f0ksxd");
+      attr(div9, "class", "git-commit-msg svelte-fnxzfa");
+      attr(div10, "class", "nav-files-container");
+      set_style(div10, "position", "relative");
+      attr(main, "class", "svelte-fnxzfa");
     },
     m(target, anchor) {
       insert(target, main, anchor);
+      append2(main, div8);
+      append2(div8, div7);
+      append2(div7, div0);
+      ctx[22](div0);
+      append2(div7, t0);
+      append2(div7, div1);
+      ctx[23](div1);
+      append2(div7, t1);
+      append2(div7, div2);
+      ctx[24](div2);
+      append2(div7, t2);
+      append2(div7, div3);
+      ctx[25](div3);
+      append2(div7, t3);
+      append2(div7, div4);
+      ctx[26](div4);
+      append2(div7, t4);
+      append2(div7, div5);
+      ctx[27](div5);
+      append2(div7, t5);
+      append2(div7, div6);
+      ctx[29](div6);
+      append2(main, t6);
       append2(main, div9);
-      append2(div9, div6);
-      append2(div6, div0);
-      ctx[20](div0);
-      append2(div6, t0);
-      append2(div6, div1);
-      ctx[21](div1);
-      append2(div6, t1);
-      append2(div6, div2);
-      ctx[22](div2);
-      append2(div6, t2);
-      append2(div6, div3);
-      ctx[23](div3);
-      append2(div6, t3);
-      append2(div6, div4);
-      ctx[24](div4);
-      append2(div6, t4);
-      append2(div6, div5);
-      ctx[25](div5);
-      append2(div9, t5);
-      append2(div9, div7);
-      ctx[27](div7);
-      append2(div9, t6);
-      append2(div9, div8);
-      append2(div8, textarea);
-      set_input_value(textarea, ctx[7]);
-      append2(div8, t7);
+      append2(div9, textarea);
+      set_input_value(textarea, ctx[2]);
+      append2(div9, t7);
       if (if_block0)
-        if_block0.m(div8, null);
+        if_block0.m(div9, null);
       append2(main, t8);
       append2(main, div10);
       if (if_block1)
@@ -29480,41 +30085,44 @@ function create_fragment5(ctx) {
       current = true;
       if (!mounted) {
         dispose = [
-          listen(div0, "click", ctx[15]),
-          listen(div1, "click", ctx[16]),
-          listen(div2, "click", ctx[17]),
-          listen(div3, "click", ctx[18]),
-          listen(div4, "click", ctx[19]),
-          listen(div5, "click", ctx[26]),
-          listen(div7, "click", triggerRefresh),
-          listen(textarea, "input", ctx[28])
+          listen(div0, "click", ctx[16]),
+          listen(div1, "click", ctx[17]),
+          listen(div2, "click", ctx[18]),
+          listen(div3, "click", ctx[19]),
+          listen(div4, "click", ctx[20]),
+          listen(div5, "click", ctx[28]),
+          listen(div6, "click", triggerRefresh),
+          listen(textarea, "input", ctx[30])
         ];
         mounted = true;
       }
     },
     p(ctx2, dirty) {
-      if (!current || dirty[0] & 16) {
-        toggle_class(div7, "loading", ctx2[4]);
+      if (!current || dirty[0] & 32) {
+        toggle_class(div6, "loading", ctx2[5]);
       }
-      if (dirty[0] & 128) {
-        set_input_value(textarea, ctx2[7]);
+      if (!current || dirty[0] & 32768) {
+        attr(textarea, "rows", ctx2[15]);
       }
-      if (ctx2[7]) {
+      if (dirty[0] & 4) {
+        set_input_value(textarea, ctx2[2]);
+      }
+      if (ctx2[2]) {
         if (if_block0) {
           if_block0.p(ctx2, dirty);
         } else {
           if_block0 = create_if_block_8(ctx2);
           if_block0.c();
-          if_block0.m(div8, null);
+          if_block0.m(div9, null);
         }
       } else if (if_block0) {
         if_block0.d(1);
         if_block0 = null;
       }
-      if (ctx2[5]) {
+      if (ctx2[6] && ctx2[10] && ctx2[9]) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
-          if (dirty[0] & 32) {
+          if (dirty[0] & 1600) {
             transition_in(if_block1, 1);
           }
         } else {
@@ -29544,13 +30152,13 @@ function create_fragment5(ctx) {
     d(detaching) {
       if (detaching)
         detach(main);
-      ctx[20](null);
-      ctx[21](null);
       ctx[22](null);
       ctx[23](null);
       ctx[24](null);
       ctx[25](null);
+      ctx[26](null);
       ctx[27](null);
+      ctx[29](null);
       if (if_block0)
         if_block0.d();
       if (if_block1)
@@ -29564,6 +30172,7 @@ function triggerRefresh() {
   dispatchEvent(new CustomEvent("git-refresh"));
 }
 function instance5($$self, $$props, $$invalidate) {
+  let rows;
   let { plugin } = $$props;
   let { view } = $$props;
   let loading;
@@ -29582,51 +30191,64 @@ function instance5($$self, $$props, $$invalidate) {
   addEventListener("git-view-refresh", refresh);
   plugin.app.workspace.onLayoutReady(() => {
     window.setTimeout(() => {
-      buttons.forEach((btn) => (0, import_obsidian20.setIcon)(btn, btn.getAttr("data-icon"), 16));
-      (0, import_obsidian20.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
+      buttons.forEach((btn) => (0, import_obsidian21.setIcon)(btn, btn.getAttr("data-icon"), 16));
+      (0, import_obsidian21.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
     }, 0);
   });
   onDestroy(() => {
     removeEventListener("git-view-refresh", refresh);
   });
   async function commit2() {
-    $$invalidate(4, loading = true);
-    if (await plugin.hasTooBigFiles(status2.staged)) {
-      plugin.setState(PluginState.idle);
-      return false;
-    }
-    plugin.gitManager.commit(commitMessage).then(() => {
-      if (commitMessage !== plugin.settings.commitMessage) {
-        $$invalidate(7, commitMessage = "");
+    $$invalidate(5, loading = true);
+    if (status2) {
+      if (await plugin.hasTooBigFiles(status2.staged)) {
+        plugin.setState(PluginState.idle);
+        return false;
       }
-    }).finally(triggerRefresh);
+      plugin.gitManager.commit(commitMessage).then(() => {
+        if (commitMessage !== plugin.settings.commitMessage) {
+          $$invalidate(2, commitMessage = "");
+        }
+      }).finally(triggerRefresh);
+    }
   }
   async function refresh() {
     if (!plugin.gitReady) {
-      $$invalidate(5, status2 = void 0);
+      $$invalidate(6, status2 = void 0);
       return;
     }
-    $$invalidate(5, status2 = plugin.cachedStatus);
+    $$invalidate(6, status2 = plugin.cachedStatus);
     if (plugin.lastPulledFiles && plugin.lastPulledFiles != lastPulledFiles) {
-      $$invalidate(6, lastPulledFiles = plugin.lastPulledFiles);
+      $$invalidate(7, lastPulledFiles = plugin.lastPulledFiles);
       $$invalidate(11, lastPulledFilesHierarchy = {
         title: "",
+        path: "",
+        vaultPath: "",
         children: plugin.gitManager.getTreeStructure(lastPulledFiles)
       });
     }
     if (status2) {
+      const sort = (a, b) => {
+        return a.vault_path.split("/").last().localeCompare(b.vault_path.split("/").last());
+      };
+      status2.changed.sort(sort);
+      status2.staged.sort(sort);
       if (status2.changed.length + status2.staged.length > 500) {
-        $$invalidate(5, status2 = void 0);
+        $$invalidate(6, status2 = void 0);
         if (!plugin.loading) {
           plugin.displayError("Too many changes to display");
         }
       } else {
         $$invalidate(9, changeHierarchy = {
           title: "",
+          path: "",
+          vaultPath: "",
           children: plugin.gitManager.getTreeStructure(status2.changed)
         });
         $$invalidate(10, stagedHierarchy = {
           title: "",
+          path: "",
+          vaultPath: "",
           children: plugin.gitManager.getTreeStructure(status2.staged)
         });
       }
@@ -29634,25 +30256,32 @@ function instance5($$self, $$props, $$invalidate) {
       $$invalidate(9, changeHierarchy = void 0);
       $$invalidate(10, stagedHierarchy = void 0);
     }
-    $$invalidate(4, loading = plugin.loading);
+    $$invalidate(5, loading = plugin.loading);
   }
   function stageAll() {
-    $$invalidate(4, loading = true);
+    $$invalidate(5, loading = true);
     plugin.gitManager.stageAll({ status: status2 }).finally(triggerRefresh);
   }
   function unstageAll() {
-    $$invalidate(4, loading = true);
+    $$invalidate(5, loading = true);
     plugin.gitManager.unstageAll({ status: status2 }).finally(triggerRefresh);
   }
   function push2() {
-    $$invalidate(4, loading = true);
-    if (ready) {
-      plugin.push().finally(triggerRefresh);
-    }
+    $$invalidate(5, loading = true);
+    plugin.push().finally(triggerRefresh);
   }
   function pull2() {
-    $$invalidate(4, loading = true);
+    $$invalidate(5, loading = true);
     plugin.pullChangesFromRemote().finally(triggerRefresh);
+  }
+  function discard() {
+    new DiscardModal(view.app, false, plugin.gitManager.getVaultPath("/")).myOpen().then((shouldDiscard) => {
+      if (shouldDiscard === true) {
+        plugin.gitManager.discardAll({ status: plugin.cachedStatus }).finally(() => {
+          dispatchEvent(new CustomEvent("git-refresh"));
+        });
+      }
+    });
   }
   function div0_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
@@ -29687,15 +30316,15 @@ function instance5($$self, $$props, $$invalidate) {
   function div5_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       layoutBtn = $$value;
-      $$invalidate(3, layoutBtn);
+      $$invalidate(4, layoutBtn);
     });
   }
   const click_handler = () => {
-    $$invalidate(2, showTree = !showTree);
+    $$invalidate(3, showTree = !showTree);
     $$invalidate(0, plugin.settings.treeStructure = showTree, plugin);
     plugin.saveSettings();
   };
-  function div7_binding($$value) {
+  function div6_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       buttons[6] = $$value;
       $$invalidate(8, buttons);
@@ -29703,12 +30332,29 @@ function instance5($$self, $$props, $$invalidate) {
   }
   function textarea_input_handler() {
     commitMessage = this.value;
-    $$invalidate(7, commitMessage);
+    $$invalidate(2, commitMessage);
   }
-  const click_handler_1 = () => $$invalidate(7, commitMessage = "");
+  const click_handler_1 = () => $$invalidate(2, commitMessage = "");
   const click_handler_2 = () => $$invalidate(13, stagedOpen = !stagedOpen);
-  const click_handler_3 = () => $$invalidate(12, changesOpen = !changesOpen);
-  const click_handler_4 = () => $$invalidate(14, lastPulledFilesOpen = !lastPulledFilesOpen);
+  const click_handler_3 = () => $$invalidate(13, stagedOpen = !stagedOpen);
+  function div2_binding_1($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      buttons[8] = $$value;
+      $$invalidate(8, buttons);
+    });
+  }
+  const click_handler_4 = () => $$invalidate(13, stagedOpen = !stagedOpen);
+  const click_handler_5 = () => $$invalidate(12, changesOpen = !changesOpen);
+  const click_handler_6 = () => $$invalidate(12, changesOpen = !changesOpen);
+  const click_handler_7 = () => discard();
+  function div11_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      buttons[9] = $$value;
+      $$invalidate(8, buttons);
+    });
+  }
+  const click_handler_8 = () => $$invalidate(12, changesOpen = !changesOpen);
+  const click_handler_9 = () => $$invalidate(14, lastPulledFilesOpen = !lastPulledFilesOpen);
   $$self.$$set = ($$props2) => {
     if ("plugin" in $$props2)
       $$invalidate(0, plugin = $$props2.plugin);
@@ -29716,24 +30362,28 @@ function instance5($$self, $$props, $$invalidate) {
       $$invalidate(1, view = $$props2.view);
   };
   $$self.$$.update = () => {
-    if ($$self.$$.dirty[0] & 12) {
+    if ($$self.$$.dirty[0] & 24) {
       $: {
         if (layoutBtn) {
           layoutBtn.empty();
-          (0, import_obsidian20.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
+          (0, import_obsidian21.setIcon)(layoutBtn, showTree ? "list" : "folder", 16);
         }
       }
+    }
+    if ($$self.$$.dirty[0] & 4) {
+      $:
+        $$invalidate(15, rows = (commitMessage.match(/\n/g) || []).length + 1 || 1);
     }
   };
   return [
     plugin,
     view,
+    commitMessage,
     showTree,
     layoutBtn,
     loading,
     status2,
     lastPulledFiles,
-    commitMessage,
     buttons,
     changeHierarchy,
     stagedHierarchy,
@@ -29741,11 +30391,13 @@ function instance5($$self, $$props, $$invalidate) {
     changesOpen,
     stagedOpen,
     lastPulledFilesOpen,
+    rows,
     commit2,
     stageAll,
     unstageAll,
     push2,
     pull2,
+    discard,
     div0_binding,
     div1_binding,
     div2_binding,
@@ -29753,12 +30405,19 @@ function instance5($$self, $$props, $$invalidate) {
     div4_binding,
     div5_binding,
     click_handler,
-    div7_binding,
+    div6_binding,
     textarea_input_handler,
     click_handler_1,
     click_handler_2,
     click_handler_3,
-    click_handler_4
+    div2_binding_1,
+    click_handler_4,
+    click_handler_5,
+    click_handler_6,
+    click_handler_7,
+    div11_binding,
+    click_handler_8,
+    click_handler_9
   ];
 }
 var GitView = class extends SvelteComponent {
@@ -29770,7 +30429,7 @@ var GitView = class extends SvelteComponent {
 var gitView_default = GitView;
 
 // src/ui/sidebar/sidebarView.ts
-var GitView2 = class extends import_obsidian21.ItemView {
+var GitView2 = class extends import_obsidian22.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
@@ -29800,8 +30459,33 @@ var GitView2 = class extends import_obsidian21.ItemView {
   }
 };
 
+// src/ui/statusBar/branchStatusBar.ts
+init_polyfill_buffer();
+var BranchStatusBar = class {
+  constructor(statusBarEl, plugin) {
+    this.statusBarEl = statusBarEl;
+    this.plugin = plugin;
+    this.statusBarEl.addClass("mod-clickable");
+    this.statusBarEl.onClickEvent((e) => {
+      this.plugin.switchBranch();
+    });
+  }
+  async display() {
+    if (this.plugin.gitReady) {
+      const branchInfo = await this.plugin.gitManager.branchInfo();
+      if (branchInfo.current != void 0) {
+        this.statusBarEl.setText(branchInfo.current);
+      } else {
+        this.statusBarEl.empty();
+      }
+    } else {
+      this.statusBarEl.empty();
+    }
+  }
+};
+
 // src/main.ts
-var ObsidianGit = class extends import_obsidian22.Plugin {
+var ObsidianGit = class extends import_obsidian23.Plugin {
   constructor() {
     super(...arguments);
     this.gitReady = false;
@@ -29832,6 +30516,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
   async onload() {
     console.log("loading " + this.manifest.name + " plugin");
     this.localStorage = new LocalStorageSettings(this);
+    this.localStorage.migrate();
     await this.loadSettings();
     this.migrateSettings();
     this.addSettingTab(new ObsidianGitSettingsTab(this.app, this));
@@ -29856,11 +30541,15 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
       id: "edit-gitignore",
       name: "Edit .gitignore",
       callback: async () => {
-        const content = await this.app.vault.adapter.read(this.gitManager.getVaultPath(".gitignore"));
+        const path2 = this.gitManager.getVaultPath(".gitignore");
+        if (!await this.app.vault.adapter.exists(path2)) {
+          this.app.vault.adapter.write(path2, "");
+        }
+        const content = await this.app.vault.adapter.read(path2);
         const modal = new IgnoreModal(this.app, content);
         const res = await modal.open();
         if (res !== void 0) {
-          await this.app.vault.adapter.write(this.gitManager.getVaultPath(".gitignore"), res);
+          await this.app.vault.adapter.write(path2, res);
           this.refresh();
         }
       }
@@ -29869,20 +30558,31 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
       id: "open-git-view",
       name: "Open source control view",
       callback: async () => {
-        if (this.app.workspace.getLeavesOfType(GIT_VIEW_CONFIG.type).length === 0) {
-          await this.app.workspace.getRightLeaf(false).setViewState({
+        const leafs = this.app.workspace.getLeavesOfType(GIT_VIEW_CONFIG.type);
+        let leaf;
+        if (leafs.length === 0) {
+          leaf = this.app.workspace.getRightLeaf(false);
+          await leaf.setViewState({
             type: GIT_VIEW_CONFIG.type
           });
+        } else {
+          leaf = leafs.first();
         }
-        this.app.workspace.revealLeaf(this.app.workspace.getLeavesOfType(GIT_VIEW_CONFIG.type).first());
+        this.app.workspace.revealLeaf(leaf);
         dispatchEvent(new CustomEvent("git-refresh"));
       }
     });
     this.addCommand({
       id: "open-diff-view",
       name: "Open diff view",
-      editorCallback: async (editor, view) => {
-        getNewLeaf().setViewState({ type: DIFF_VIEW_CONFIG.type, state: { staged: false, file: view.file.path } });
+      checkCallback: (checking) => {
+        var _a2;
+        const file = this.app.workspace.getActiveFile();
+        if (checking) {
+          return file !== null;
+        } else {
+          (_a2 = getNewLeaf()) == null ? void 0 : _a2.setViewState({ type: DIFF_VIEW_CONFIG.type, state: { staged: false, file: file.path } });
+        }
       }
     });
     this.addCommand({
@@ -29906,7 +30606,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
       checkCallback: (checking) => {
         const file = app.workspace.getActiveFile();
         if (checking) {
-          return file !== void 0;
+          return file !== null;
         } else {
           app.vault.adapter.append(this.gitManager.getVaultPath(".gitignore"), "\n" + this.gitManager.getPath(file.path, true)).then(() => {
             this.refresh();
@@ -29961,10 +30661,11 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
       id: "stage-current-file",
       name: "Stage current file",
       checkCallback: (checking) => {
+        const file = this.app.workspace.getActiveFile();
         if (checking) {
-          return this.app.workspace.getActiveFile() !== null;
+          return file !== null;
         } else {
-          this.promiseQueue.addTask(() => this.stageCurrentFile());
+          this.promiseQueue.addTask(() => this.stageFile(file));
         }
       }
     });
@@ -29972,10 +30673,11 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
       id: "unstage-current-file",
       name: "Unstage current file",
       checkCallback: (checking) => {
+        const file = this.app.workspace.getActiveFile();
         if (checking) {
-          return this.app.workspace.getActiveFile() !== null;
+          return file !== null;
         } else {
-          this.promiseQueue.addTask(() => this.unstageCurrentFile());
+          this.promiseQueue.addTask(() => this.unstageFile(file));
         }
       }
     });
@@ -29995,16 +30697,16 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
       callback: async () => {
         const repoExists = await this.app.vault.adapter.exists(`${this.settings.basePath}/.git`);
         if (repoExists) {
-          const modal = new GeneralModal(this.app, ["NO", "YES"], "Do you really want to delete the repository (.git directory)? This action cannot be undone.", false, true);
+          const modal = new GeneralModal({ options: ["NO", "YES"], placeholder: "Do you really want to delete the repository (.git directory)? This action cannot be undone.", onlySelection: true });
           const shouldDelete = await modal.open() === "YES";
           if (shouldDelete) {
             await this.app.vault.adapter.rmdir(`${this.settings.basePath}/.git`, true);
-            new import_obsidian22.Notice("Successfully deleted repository. Reloading plugin...");
+            new import_obsidian23.Notice("Successfully deleted repository. Reloading plugin...");
             this.unloadPlugin();
             this.init();
           }
         } else {
-          new import_obsidian22.Notice("No repository found");
+          new import_obsidian23.Notice("No repository found");
         }
       }
     });
@@ -30033,20 +30735,52 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
         new ChangedFilesModal(this, status2.changed).open();
       }
     });
+    this.addCommand({
+      id: "switch-branch",
+      name: "Switch branch",
+      callback: () => {
+        this.switchBranch();
+      }
+    });
+    this.addCommand({
+      id: "create-branch",
+      name: "Create new branch",
+      callback: () => {
+        this.createBranch();
+      }
+    });
+    this.addCommand({
+      id: "delete-branch",
+      name: "Delete branch",
+      callback: () => {
+        this.deleteBranch();
+      }
+    });
     this.registerEvent(this.app.workspace.on("file-menu", (menu, file, source) => {
       this.handleFileMenu(menu, file, source);
     }));
     if (this.settings.showStatusBar) {
-      let statusBarEl = this.addStatusBarItem();
+      const statusBarEl = this.addStatusBarItem();
       this.statusBar = new StatusBar(statusBarEl, this);
-      this.registerInterval(window.setInterval(() => this.statusBar.display(), 1e3));
+      this.registerInterval(window.setInterval(() => {
+        var _a2;
+        return (_a2 = this.statusBar) == null ? void 0 : _a2.display();
+      }, 1e3));
+    }
+    if (import_obsidian23.Platform.isDesktop && this.settings.showBranchStatusBar) {
+      const branchStatusBarEl = this.addStatusBarItem();
+      this.branchBar = new BranchStatusBar(branchStatusBarEl, this);
+      this.registerInterval(window.setInterval(() => {
+        var _a2;
+        return (_a2 = this.branchBar) == null ? void 0 : _a2.display();
+      }, 6e4));
     }
     this.app.workspace.onLayoutReady(() => this.init());
   }
   setRefreshDebouncer() {
     var _a2;
     (_a2 = this.debRefresh) == null ? void 0 : _a2.cancel();
-    this.debRefresh = (0, import_obsidian22.debounce)(() => {
+    this.debRefresh = (0, import_obsidian23.debounce)(() => {
       if (this.settings.refreshSourceControl) {
         this.refresh();
       }
@@ -30054,13 +30788,13 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
   }
   async showNotices() {
     const length = 1e4;
-    if (this.manifest.id === "obsidian-git" && import_obsidian22.Platform.isDesktopApp && !this.settings.showedMobileNotice) {
-      new import_obsidian22.Notice("Obsidian Git is now available on mobile! Please read the plugin's README for more information.", length);
+    if (this.manifest.id === "obsidian-git" && import_obsidian23.Platform.isDesktopApp && !this.settings.showedMobileNotice) {
+      new import_obsidian23.Notice("Obsidian Git is now available on mobile! Please read the plugin's README for more information.", length);
       this.settings.showedMobileNotice = true;
       await this.saveSettings();
     }
     if (this.manifest.id === "obsidian-git-isomorphic") {
-      new import_obsidian22.Notice("Obsidian Git Mobile is now deprecated. Please uninstall it and install Obsidian Git instead.", length);
+      new import_obsidian23.Notice("Obsidian Git Mobile is now deprecated. Please uninstall it and install Obsidian Git instead.", length);
     }
   }
   handleFileMenu(menu, file, source) {
@@ -30075,7 +30809,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     menu.addItem((item) => {
       item.setTitle(`Git: Stage`).setIcon("plus-circle").setSection("action").onClick((_) => {
         this.promiseQueue.addTask(async () => {
-          if (file instanceof import_obsidian22.TFile) {
+          if (file instanceof import_obsidian23.TFile) {
             await this.gitManager.stage(file.path, true);
           } else {
             await this.gitManager.stageAll({ dir: this.gitManager.getPath(file.path, true) });
@@ -30087,7 +30821,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     menu.addItem((item) => {
       item.setTitle(`Git: Unstage`).setIcon("minus-circle").setSection("action").onClick((_) => {
         this.promiseQueue.addTask(async () => {
-          if (file instanceof import_obsidian22.TFile) {
+          if (file instanceof import_obsidian23.TFile) {
             await this.gitManager.unstage(file.path, true);
           } else {
             await this.gitManager.unstageAll({ dir: this.gitManager.getPath(file.path, true) });
@@ -30097,20 +30831,20 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
       });
     });
   }
-  migrateSettings() {
+  async migrateSettings() {
     if (this.settings.mergeOnPull != void 0) {
       this.settings.syncMethod = this.settings.mergeOnPull ? "merge" : "rebase";
       this.settings.mergeOnPull = void 0;
-      return this.saveSettings();
+      await this.saveSettings();
     }
     if (this.settings.autoCommitMessage === void 0) {
       this.settings.autoCommitMessage = this.settings.commitMessage;
-      this.saveSettings();
+      await this.saveSettings();
     }
     if (this.settings.gitPath != void 0) {
       this.localStorage.setGitPath(this.settings.gitPath);
       this.settings.gitPath = void 0;
-      this.saveSettings();
+      await this.saveSettings();
     }
   }
   unloadPlugin() {
@@ -30128,8 +30862,6 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
   }
   async onunload() {
     this.app.workspace.unregisterHoverLinkSource(GIT_VIEW_CONFIG.type);
-    this.app.workspace.detachLeavesOfType(GIT_VIEW_CONFIG.type);
-    this.app.workspace.detachLeavesOfType(DIFF_VIEW_CONFIG.type);
     this.unloadPlugin();
     console.log("unloading " + this.manifest.name + " plugin");
   }
@@ -30161,9 +30893,10 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     };
   }
   async init() {
+    var _a2;
     this.showNotices();
     try {
-      if (import_obsidian22.Platform.isDesktopApp) {
+      if (import_obsidian23.Platform.isDesktopApp) {
         this.gitManager = new SimpleGit(this);
         await this.gitManager.setGitInstance();
       } else {
@@ -30175,7 +30908,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
           this.displayError("Cannot run git command");
           break;
         case "missing-repo":
-          new import_obsidian22.Notice("Can't find a valid git repository. Please create one via the given command or clone an existing repo.");
+          new import_obsidian23.Notice("Can't find a valid git repository. Please create one via the given command or clone an existing repo.");
           break;
         case "valid":
           this.gitReady = true;
@@ -30196,6 +30929,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
           this.registerEvent(this.deleteEvent);
           this.registerEvent(this.createEvent);
           this.registerEvent(this.renameEvent);
+          (_a2 = this.branchBar) == null ? void 0 : _a2.display();
           dispatchEvent(new CustomEvent("git-refresh"));
           if (this.settings.autoPullOnBoot) {
             this.promiseQueue.addTask(() => this.pullChangesFromRemote());
@@ -30227,45 +30961,49 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
   }
   async createNewRepo() {
     await this.gitManager.init();
-    new import_obsidian22.Notice("Initialized new repo");
+    new import_obsidian23.Notice("Initialized new repo");
     await this.init();
   }
   async cloneNewRepo() {
-    const modal = new GeneralModal(this.app, [], "Enter remote URL");
+    const modal = new GeneralModal({ placeholder: "Enter remote URL" });
     const url = await modal.open();
     if (url) {
       const confirmOption = "Vault Root";
-      let dir = await new GeneralModal(this.app, [confirmOption], "Enter directory for clone. It needs to be empty or not existent.", this.gitManager instanceof IsomorphicGit).open();
+      let dir = await new GeneralModal({
+        options: [confirmOption],
+        placeholder: "Enter directory for clone. It needs to be empty or not existent.",
+        allowEmpty: this.gitManager instanceof IsomorphicGit
+      }).open();
       if (dir !== void 0) {
         if (dir === confirmOption) {
           dir = ".";
         }
-        dir = (0, import_obsidian22.normalizePath)(dir);
+        dir = (0, import_obsidian23.normalizePath)(dir);
         if (dir === "/") {
           dir = ".";
         }
         if (dir === ".") {
-          const modal2 = new GeneralModal(this.app, ["NO", "YES"], `Does your remote repo contain a ${app.vault.configDir} directory at the root?`, false, true);
+          const modal2 = new GeneralModal({ options: ["NO", "YES"], placeholder: `Does your remote repo contain a ${app.vault.configDir} directory at the root?`, onlySelection: true });
           const containsConflictDir = await modal2.open();
           if (containsConflictDir === void 0) {
-            new import_obsidian22.Notice("Aborted clone");
+            new import_obsidian23.Notice("Aborted clone");
             return;
           } else if (containsConflictDir === "YES") {
             const confirmOption2 = "DELETE ALL YOUR LOCAL CONFIG AND PLUGINS";
-            const modal3 = new GeneralModal(this.app, ["Abort clone", confirmOption2], `To avoid conflicts, the local ${app.vault.configDir} directory needs to be deleted.`, false, true);
+            const modal3 = new GeneralModal({ options: ["Abort clone", confirmOption2], placeholder: `To avoid conflicts, the local ${app.vault.configDir} directory needs to be deleted.`, onlySelection: true });
             const shouldDelete = await modal3.open() === confirmOption2;
             if (shouldDelete) {
               await this.app.vault.adapter.rmdir(app.vault.configDir, true);
             } else {
-              new import_obsidian22.Notice("Aborted clone");
+              new import_obsidian23.Notice("Aborted clone");
               return;
             }
           }
         }
-        new import_obsidian22.Notice(`Cloning new repo into "${dir}"`);
+        new import_obsidian23.Notice(`Cloning new repo into "${dir}"`);
         await this.gitManager.clone(url, dir);
-        new import_obsidian22.Notice("Cloned new repo.");
-        new import_obsidian22.Notice("Please restart Obsidian");
+        new import_obsidian23.Notice("Cloned new repo.");
+        new import_obsidian23.Notice("Please restart Obsidian");
         if (dir && dir !== ".") {
           this.settings.basePath = dir;
           this.saveSettings();
@@ -30300,11 +31038,14 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
   async createBackup(fromAutoBackup, requestCustomMessage = false) {
     if (!await this.isAllInitialized())
       return;
+    if (this.settings.syncMethod == "reset" && this.settings.pullBeforePush) {
+      await this.pull();
+    }
     if (!await this.commit(fromAutoBackup, requestCustomMessage))
       return;
     if (!this.settings.disablePush) {
       if (await this.gitManager.canPush()) {
-        if (this.settings.pullBeforePush) {
+        if (this.settings.syncMethod != "reset" && this.settings.pullBeforePush) {
           await this.pull();
         }
         await this.push();
@@ -30323,21 +31064,23 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     let unstagedFiles;
     if (this.gitManager instanceof SimpleGit) {
       const file = this.app.vault.getAbstractFileByPath(this.conflictOutputFile);
-      await this.app.vault.delete(file);
+      if (file != null)
+        await this.app.vault.delete(file);
       status2 = await this.updateCachedStatus();
       if (fromAutoBackup && status2.conflicted.length > 0) {
         this.displayError(`Did not commit, because you have ${status2.conflicted.length} conflict ${status2.conflicted.length > 1 ? "files" : "file"}. Please resolve them and commit per command.`);
         this.handleConflict(status2.conflicted);
-        return;
+        return false;
       }
       changedFiles = [...status2.changed, ...status2.staged];
     } else if (fromAutoBackup && hadConflict) {
       this.setState(PluginState.conflicted);
       this.displayError(`Did not commit, because you have conflict files. Please resolve them and commit per command.`);
-      return;
+      return false;
     } else if (hadConflict) {
       const file = this.app.vault.getAbstractFileByPath(this.conflictOutputFile);
-      await this.app.vault.delete(file);
+      if (file != null)
+        await this.app.vault.delete(file);
       status2 = await this.updateCachedStatus();
       changedFiles = [...status2.changed, ...status2.staged];
     } else {
@@ -30356,7 +31099,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
       let commitMessage = fromAutoBackup ? this.settings.autoCommitMessage : this.settings.commitMessage;
       if (fromAutoBackup && this.settings.customMessageOnAutoBackup || requestCustomMessage) {
         if (!this.settings.disablePopups && fromAutoBackup) {
-          new import_obsidian22.Notice("Auto backup: Please enter a custom commit message. Leave empty to abort");
+          new import_obsidian23.Notice("Auto backup: Please enter a custom commit message. Leave empty to abort");
         }
         const tempMessage = await new CustomMessageModal(this, true).open();
         if (tempMessage != void 0 && tempMessage != "" && tempMessage != "...") {
@@ -30391,10 +31134,10 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     const remote = (_a2 = branchInfo.tracking) == null ? void 0 : _a2.split("/")[0];
     if (remote) {
       const remoteUrl = await this.gitManager.getRemoteUrl(remote);
-      if (remoteUrl.includes("github.com")) {
+      if (remoteUrl == null ? void 0 : remoteUrl.includes("github.com")) {
         const tooBigFiles = files.filter((f) => {
           const file = this.app.vault.getAbstractFileByPath(f.vault_path);
-          if (file instanceof import_obsidian22.TFile) {
+          if (file instanceof import_obsidian23.TFile) {
             return file.stat.size >= 1e8;
           }
           return false;
@@ -30446,7 +31189,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     if (!await this.remotesAreSet()) {
       return false;
     }
-    const pulledFiles = await this.gitManager.pull();
+    const pulledFiles = await this.gitManager.pull() || [];
     this.offlineMode = false;
     if (pulledFiles.length > 0) {
       this.displayMessage(`Pulled ${pulledFiles.length} ${pulledFiles.length > 1 ? "files" : "file"} from remote`);
@@ -30454,29 +31197,75 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     }
     return pulledFiles.length != 0;
   }
-  async stageCurrentFile() {
+  async stageFile(file) {
     if (!await this.isAllInitialized())
       return false;
-    const file = this.app.workspace.getActiveFile();
     await this.gitManager.stage(file.path, true);
     this.displayMessage(`Staged ${file.path}`);
     dispatchEvent(new CustomEvent("git-refresh"));
     this.setState(PluginState.idle);
     return true;
   }
-  async unstageCurrentFile() {
+  async unstageFile(file) {
     if (!await this.isAllInitialized())
       return false;
-    const file = this.app.workspace.getActiveFile();
     await this.gitManager.unstage(file.path, true);
     this.displayMessage(`Unstaged ${file.path}`);
     dispatchEvent(new CustomEvent("git-refresh"));
     this.setState(PluginState.idle);
     return true;
   }
+  async switchBranch() {
+    var _a2;
+    if (!await this.isAllInitialized())
+      return;
+    const branchInfo = await this.gitManager.branchInfo();
+    const selectedBranch = await new BranchModal(branchInfo.branches).open();
+    if (selectedBranch != void 0) {
+      await this.gitManager.checkout(selectedBranch);
+      this.displayMessage(`Switched to ${selectedBranch}`);
+      (_a2 = this.branchBar) == null ? void 0 : _a2.display();
+      return selectedBranch;
+    }
+  }
+  async createBranch() {
+    var _a2;
+    if (!await this.isAllInitialized())
+      return;
+    const newBranch = await new GeneralModal({ placeholder: "Create new branch" }).open();
+    if (newBranch != void 0) {
+      await this.gitManager.createBranch(newBranch);
+      this.displayMessage(`Created new branch ${newBranch}`);
+      (_a2 = this.branchBar) == null ? void 0 : _a2.display();
+      return newBranch;
+    }
+  }
+  async deleteBranch() {
+    var _a2;
+    if (!await this.isAllInitialized())
+      return;
+    const branchInfo = await this.gitManager.branchInfo();
+    if (branchInfo.current)
+      branchInfo.branches.remove(branchInfo.current);
+    const branch2 = await new GeneralModal({ options: branchInfo.branches, placeholder: "Delete branch", onlySelection: true }).open();
+    if (branch2 != void 0) {
+      let force = false;
+      if (!await this.gitManager.branchIsMerged(branch2)) {
+        const forceAnswer = await new GeneralModal({ options: ["YES", "NO"], placeholder: "This branch isn't merged into HEAD. Force delete?", onlySelection: true }).open();
+        if (forceAnswer !== "YES") {
+          return;
+        }
+        force = forceAnswer === "YES";
+      }
+      await this.gitManager.deleteBranch(branch2, force);
+      this.displayMessage(`Deleted branch ${branch2}`);
+      (_a2 = this.branchBar) == null ? void 0 : _a2.display();
+      return branch2;
+    }
+  }
   async remotesAreSet() {
     if (!(await this.gitManager.branchInfo()).tracking) {
-      new import_obsidian22.Notice("No upstream branch is set. Please select one.");
+      new import_obsidian23.Notice("No upstream branch is set. Please select one.");
       const remoteBranch = await this.selectRemoteBranch();
       if (remoteBranch == void 0) {
         this.displayError("Aborted. No upstream-branch is set!", 1e4);
@@ -30496,7 +31285,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
         this.doAutoBackup();
       } else {
         this.onFileModifyEventRef = this.app.vault.on("modify", () => this.autoBackupDebouncer());
-        this.autoBackupDebouncer = (0, import_obsidian22.debounce)(() => this.doAutoBackup(), time, true);
+        this.autoBackupDebouncer = (0, import_obsidian23.debounce)(() => this.doAutoBackup(), time, true);
       }
     } else {
       this.timeoutIDBackup = window.setTimeout(() => this.doAutoBackup(), time);
@@ -30572,7 +31361,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
         "Please resolve them and commit per command (This file will be deleted before the commit).",
         ...conflicted.map((e) => {
           const file = this.app.vault.getAbstractFileByPath(e);
-          if (file instanceof import_obsidian22.TFile) {
+          if (file instanceof import_obsidian23.TFile) {
             const link = this.app.metadataCache.fileToLinktext(file, "/");
             return `- [[${link}]]`;
           } else {
@@ -30587,10 +31376,14 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     if (!await this.isAllInitialized())
       return;
     const remotes = await this.gitManager.getRemotes();
-    const nameModal = new GeneralModal(this.app, remotes, "Select or create a new remote by typing its name and selecting it");
+    const nameModal = new GeneralModal({
+      options: remotes,
+      placeholder: "Select or create a new remote by typing its name and selecting it"
+    });
     const remoteName = await nameModal.open();
     if (remoteName) {
-      const urlModal = new GeneralModal(this.app, [], "Enter the remote URL");
+      const oldUrl = await this.gitManager.getRemoteUrl(remoteName);
+      const urlModal = new GeneralModal({ initialValue: oldUrl });
       const remoteURL = await urlModal.open();
       if (remoteURL) {
         await this.gitManager.setRemote(remoteName, remoteURL);
@@ -30607,13 +31400,13 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
         remotes = await this.gitManager.getRemotes();
       }
     }
-    const nameModal = new GeneralModal(this.app, remotes, "Select or create a new remote by typing its name and selecting it");
+    const nameModal = new GeneralModal({ options: remotes, placeholder: "Select or create a new remote by typing its name and selecting it" });
     const remoteName = selectedRemote != null ? selectedRemote : await nameModal.open();
     if (remoteName) {
       this.displayMessage("Fetching remote branches");
       await this.gitManager.fetch(remoteName);
       const branches = await this.gitManager.getRemoteBranches(remoteName);
-      const branchModal = new GeneralModal(this.app, branches, "Select or create a new remote branch by typing its name and selecting it");
+      const branchModal = new GeneralModal({ options: branches, placeholder: "Select or create a new remote branch by typing its name and selecting it" });
       return await branchModal.open();
     }
   }
@@ -30621,7 +31414,7 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     if (!await this.isAllInitialized())
       return;
     const remotes = await this.gitManager.getRemotes();
-    const nameModal = new GeneralModal(this.app, remotes, "Select a remote");
+    const nameModal = new GeneralModal({ options: remotes, placeholder: "Select a remote" });
     const remoteName = await nameModal.open();
     if (remoteName) {
       this.gitManager.removeRemote(remoteName);
@@ -30645,18 +31438,18 @@ var ObsidianGit = class extends import_obsidian22.Plugin {
     var _a2;
     (_a2 = this.statusBar) == null ? void 0 : _a2.displayMessage(message.toLowerCase(), timeout);
     if (!this.settings.disablePopups) {
-      new import_obsidian22.Notice(message, 5 * 1e3);
+      new import_obsidian23.Notice(message, 5 * 1e3);
     }
     console.log(`git obsidian message: ${message}`);
   }
   displayError(message, timeout = 10 * 1e3) {
     var _a2;
     if (message instanceof Errors.UserCanceledError) {
-      new import_obsidian22.Notice("Aborted");
+      new import_obsidian23.Notice("Aborted");
       return;
     }
     message = message.toString();
-    new import_obsidian22.Notice(message, timeout);
+    new import_obsidian23.Notice(message, timeout);
     console.log(`git obsidian error: ${message}`);
     (_a2 = this.statusBar) == null ? void 0 : _a2.displayMessage(message.toLowerCase(), timeout);
   }

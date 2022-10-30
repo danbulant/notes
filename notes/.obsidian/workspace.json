@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "47e02b11d16c6d54",
+        "id": "e1911a7496a24cb9",
         "type": "tabs",
         "children": [
           {
-            "id": "3b84261086a4e144",
+            "id": "1d37952aa674e567",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Exponenciální funkce.md",
+                "file": "fyz/Mechanika tekutin/Tekutiny.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Exponenciální funkce.md",
+                "file": "fyz/Mechanika tekutin/Tekutiny.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Exponenciální funkce.md",
+                "file": "fyz/Mechanika tekutin/Tekutiny.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,32 +141,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Funkce/Exponenciální funkce.md"
+                "file": "fyz/Mechanika tekutin/Tekutiny.md"
               }
-            }
-          },
-          {
-            "id": "7bf4fe7c53f74604",
-            "type": "leaf",
-            "state": {
-              "type": "BC-matrix",
-              "state": {}
-            }
-          },
-          {
-            "id": "24182783470757f3",
-            "type": "leaf",
-            "state": {
-              "type": "BC-tree",
-              "state": {}
-            }
-          },
-          {
-            "id": "ce11575e5eafa954",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
             }
           },
           {
@@ -176,9 +152,33 @@
               "type": "review-queue-list-view",
               "state": {}
             }
+          },
+          {
+            "id": "6646a36080fd99c0",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "3e78ff74b952253b",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "4a578facd3fdc8b7",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
@@ -188,17 +188,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "3b84261086a4e144",
+  "active": "1d37952aa674e567",
   "lastOpenFiles": [
-    "mat/Funkce/Exponenciální funkce.md",
-    "mat/Funkce/Lineární lomené funkce.md",
-    "mat/Funkce/Kartézský součin.md",
-    "mat/Funkce/Inverzní funkce.md",
-    "mat/Funkce/Funkční přepis.md",
-    "mat/Funkce/Funkce vs Rovnice.md",
-    "mat/Funkce/Funkce.md",
-    "mat/Funkce/Cosinus.md",
-    "mat/mat.md",
-    "cjl/cjl.md"
+    "fyz/Mechanika tekutin/Mechanika tekutin.md",
+    "fyz/Mechanika tekutin/Hydrostatický paradox.md",
+    "fyz/Mechanika tekutin/Hydrostatická tlaková síla.md",
+    "fyz/Mechanika tekutin/Hydraulická zařízení.md",
+    "fyz/Mechanika tekutin/Atmosférický tlak.md",
+    "fyz/Mechanika tekutin/Archimédův zákon.md",
+    "fyz/fyz.md",
+    "cjl/cjl.md",
+    "cjl/literatura/slohy/slohy.md",
+    "cjl/literatura/slohy/Románské umění.md"
   ]
 }
