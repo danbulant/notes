@@ -13,6 +13,7 @@ imagePrefix: 'data/'
 -  [[psi/Adresace|Adresace]]
 -  [[psi/CCNA1 Final PTSA|CCNA1 Final PTSA]]
 -  [[psi/Data Center Tier|Data Center Tier]]
+-  [[psi/DHCP|DHCP]]
 -  [[psi/IPv6|IPv6]]
 -  [[psi/Sítě|Sítě]]
 -  [[psi/Switch|Switch]]

@@ -1886,6 +1886,7 @@ var require_lib = __commonJS({
       }
       this.timeout = opts.timeout || AsyncLock2.DEFAULT_TIMEOUT;
       this.maxOccupationTime = opts.maxOccupationTime || AsyncLock2.DEFAULT_MAX_OCCUPATION_TIME;
+      this.maxExecutionTime = opts.maxExecutionTime || AsyncLock2.DEFAULT_MAX_EXECUTION_TIME;
       if (opts.maxPending === Infinity || Number.isInteger(opts.maxPending) && opts.maxPending >= 0) {
         this.maxPending = opts.maxPending;
       } else {
@@ -1894,6 +1895,7 @@ var require_lib = __commonJS({
     };
     AsyncLock2.DEFAULT_TIMEOUT = 0;
     AsyncLock2.DEFAULT_MAX_OCCUPATION_TIME = 0;
+    AsyncLock2.DEFAULT_MAX_EXECUTION_TIME = 0;
     AsyncLock2.DEFAULT_MAX_PENDING = 1e3;
     AsyncLock2.prototype.acquire = function(key2, fn, cb, opts) {
       if (Array.isArray(key2)) {
@@ -1917,11 +1919,16 @@ var require_lib = __commonJS({
       var resolved = false;
       var timer = null;
       var occupationTimer = null;
+      var executionTimer = null;
       var self3 = this;
       var done = function(locked, err, ret) {
         if (occupationTimer) {
           clearTimeout(occupationTimer);
           occupationTimer = null;
+        }
+        if (executionTimer) {
+          clearTimeout(executionTimer);
+          executionTimer = null;
         }
         if (locked) {
           if (!!self3.queues[key2] && self3.queues[key2].length === 0) {
@@ -1961,6 +1968,14 @@ var require_lib = __commonJS({
         }
         if (self3.domainReentrant && locked) {
           self3.domains[key2] = process.domain;
+        }
+        var maxExecutionTime = opts.maxExecutionTime || self3.maxExecutionTime;
+        if (maxExecutionTime) {
+          executionTimer = setTimeout(function() {
+            if (!!self3.queues[key2]) {
+              done(locked, new Error("Maximum execution time is exceeded " + key2));
+            }
+          }, maxExecutionTime);
         }
         if (fn.length === 1) {
           var called = false;
@@ -19625,10 +19640,10 @@ var IsomorphicGit = class extends GitManager {
       fs: this.fs,
       dir: this.plugin.settings.basePath,
       onAuth: () => {
-        var _a2;
+        var _a2, _b;
         return {
-          username: this.plugin.settings.username,
-          password: (_a2 = this.plugin.localStorage.getPassword()) != null ? _a2 : void 0
+          username: (_a2 = this.plugin.localStorage.getUsername()) != null ? _a2 : void 0,
+          password: (_b = this.plugin.localStorage.getPassword()) != null ? _b : void 0
         };
       },
       onAuthFailure: async () => {
@@ -19637,8 +19652,7 @@ var IsomorphicGit = class extends GitManager {
         if (username) {
           const password = await new GeneralModal({ placeholder: "Specify your password/personal access token" }).open();
           if (password) {
-            this.plugin.settings.username = username;
-            await this.plugin.saveSettings();
+            this.plugin.localStorage.setUsername(username);
             this.plugin.localStorage.setPassword(password);
             return {
               username,
@@ -24058,6 +24072,10 @@ var SimpleGit = class extends GitManager {
         binary: this.plugin.localStorage.getGitPath() || void 0,
         config: ["core.quotepath=off"]
       });
+      const env = this.plugin.localStorage.getPATHPaths();
+      if (env) {
+        this.git.env("PATH", process.env["PATH"] + ":" + env.join(":"));
+      }
       this.git.cwd(await this.git.revparse("--show-toplevel"));
     }
   }
@@ -24435,7 +24453,7 @@ var ObsidianGitSettingsTab = class extends import_obsidian7.PluginSettingTab {
           new import_obsidian7.Notice("Please specify a valid number.");
         }
       }));
-      new import_obsidian7.Setting(containerEl).setName(`If turned on, do auto ${commitOrBackup} every X minutes after last change. Prevents auto ${commitOrBackup} while editing a file. If turned off, do auto ${commitOrBackup} every X minutes. It's independent from last change.`).addToggle((toggle) => toggle.setValue(plugin.settings.autoBackupAfterFileChange).onChange((value) => {
+      new import_obsidian7.Setting(containerEl).setName(`Auto Backup after Filechange`).setDesc(`If turned on, do auto ${commitOrBackup} every ${plugin.settings.autoSaveInterval} minutes after last change. This also prevents auto ${commitOrBackup} while editing a file. If turned off, it's independent from last the change.`).addToggle((toggle) => toggle.setValue(plugin.settings.autoBackupAfterFileChange).onChange((value) => {
         plugin.settings.autoBackupAfterFileChange = value;
         plugin.saveSettings();
         plugin.clearAutoBackup();
@@ -24580,12 +24598,27 @@ var ObsidianGitSettingsTab = class extends import_obsidian7.PluginSettingTab {
           plugin.gitManager.updateGitPath(value || "git");
         });
       });
+    if (plugin.gitManager instanceof SimpleGit)
+      new import_obsidian7.Setting(containerEl).setName("Additional PATH environment variable paths").setDesc("Use each line for one path").addTextArea((cb) => {
+        cb.setValue(plugin.localStorage.getPATHPaths().join("\n"));
+        cb.onChange((value) => {
+          plugin.localStorage.setPATHPaths(value.split("\n"));
+        });
+      });
+    if (plugin.gitManager instanceof SimpleGit)
+      new import_obsidian7.Setting(containerEl).setName("Reload with new PATH environment variable").addButton((cb) => {
+        cb.setButtonText("Reload");
+        cb.setCta();
+        cb.onClick(() => {
+          plugin.gitManager.setGitInstance();
+        });
+      });
     if (plugin.gitManager instanceof IsomorphicGit)
       new import_obsidian7.Setting(containerEl).setName("Username on your git server. E.g. your username on GitHub").addText((cb) => {
-        cb.setValue(plugin.settings.username);
+        var _a2;
+        cb.setValue((_a2 = plugin.localStorage.getUsername()) != null ? _a2 : "");
         cb.onChange((value) => {
-          plugin.settings.username = value;
-          plugin.saveSettings();
+          plugin.localStorage.setUsername(value);
         });
       });
     if (plugin.gitManager instanceof IsomorphicGit)
@@ -24852,7 +24885,6 @@ var DEFAULT_SETTINGS = {
   basePath: "",
   differentIntervalCommitAndPush: false,
   changedFilesInStatusBar: false,
-  username: "",
   showedMobileNotice: false,
   refreshSourceControlTimer: 7e3,
   showBranchStatusBar: true
@@ -24893,6 +24925,12 @@ var LocalStorageSettings = class {
   setPassword(value) {
     return app.saveLocalStorage(this.prefix + "password", value);
   }
+  getUsername() {
+    return app.loadLocalStorage(this.prefix + "username");
+  }
+  setUsername(value) {
+    return app.saveLocalStorage(this.prefix + "username", value);
+  }
   getHostname() {
     return app.loadLocalStorage(this.prefix + "hostname");
   }
@@ -24928,6 +24966,13 @@ var LocalStorageSettings = class {
   }
   setGitPath(value) {
     return app.saveLocalStorage(this.prefix + "gitPath", value);
+  }
+  getPATHPaths() {
+    var _a2, _b;
+    return (_b = (_a2 = app.loadLocalStorage(this.prefix + "PATHPaths")) == null ? void 0 : _a2.split(":")) != null ? _b : [];
+  }
+  setPATHPaths(value) {
+    return app.saveLocalStorage(this.prefix + "PATHPaths", value.join(":"));
   }
   getPluginDisabled() {
     return app.loadLocalStorage(this.prefix + "pluginDisabled") == "true";
@@ -30844,6 +30889,11 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
     if (this.settings.gitPath != void 0) {
       this.localStorage.setGitPath(this.settings.gitPath);
       this.settings.gitPath = void 0;
+      await this.saveSettings();
+    }
+    if (this.settings.username != void 0) {
+      this.localStorage.setPassword(this.settings.username);
+      this.settings.username = void 0;
       await this.saveSettings();
     }
   }

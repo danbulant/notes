@@ -3993,7 +3993,7 @@ var Templater = class {
         }
         yield templater.write_template_to_file(template_file, file);
       } else {
-        if (file.stat.size <= 1e4) {
+        if (file.stat.size <= 1e5) {
           yield templater.overwrite_file_commands(file);
         } else {
           console.log(`Templater skipped parsing ${file.path} because file size exceeds 10000`);

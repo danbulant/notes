@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e1911a7496a24cb9",
+        "id": "01a3a560d5dcc28e",
         "type": "tabs",
         "children": [
           {
-            "id": "1d37952aa674e567",
+            "id": "bd8e9d6c853aa424",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Mechanika tekutin/Tekutiny.md",
+                "file": "psi/psi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3b581a8277d37e1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "psi/IPv6.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "osobnosti",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Mechanika tekutin/Tekutiny.md",
+                "file": "psi/IPv6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Mechanika tekutin/Tekutiny.md",
+                "file": "psi/IPv6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Mechanika tekutin/Tekutiny.md"
+                "file": "psi/IPv6.md"
               }
             }
           },
@@ -185,20 +198,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "1d37952aa674e567",
+  "active": "8c976bdcdc74c84c",
   "lastOpenFiles": [
-    "fyz/Mechanika tekutin/Mechanika tekutin.md",
-    "fyz/Mechanika tekutin/Hydrostatický paradox.md",
-    "fyz/Mechanika tekutin/Hydrostatická tlaková síla.md",
-    "fyz/Mechanika tekutin/Hydraulická zařízení.md",
-    "fyz/Mechanika tekutin/Atmosférický tlak.md",
-    "fyz/Mechanika tekutin/Archimédův zákon.md",
-    "fyz/fyz.md",
-    "cjl/cjl.md",
-    "cjl/literatura/slohy/slohy.md",
-    "cjl/literatura/slohy/Románské umění.md"
+    "psi/Sítě.md",
+    "psi/Základní konfigurace.md",
+    "psi/DHCP.md",
+    "psi/psi.md",
+    "mat/mat.md",
+    "mat/Funkce/Mocninné funkce.md",
+    "mat/Funkce/Příklady.md",
+    "dej/dej.md",
+    "mat/Lomené výrazy/Sčítání a odčítání.md",
+    "dej/moderní/komunismus/The Beatles.md"
   ]
 }

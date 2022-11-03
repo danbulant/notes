@@ -41,101 +41,17 @@
   "enableFrontMatterComplement": true,
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
+  "intelligentSuggestionPrioritization": {
+    "maxDaysToKeepHistory": 30,
+    "maxNumberOfHistoryToKeep": 0
+  },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "Příklad": {
-      "Příklad": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1663751627799
-        }
-      }
-    },
-    "Atomium": {
-      "Atomium": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1663754905023
-        }
-      }
-    },
-    "Prostá funkce": {
-      "Prostá funkce": {
-        "internalLink": {
-          "count": 3,
-          "lastUpdated": 1663839259194
-        }
-      }
-    },
-    "monotonie": {
-      "monotonie": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1663838426835
-        }
-      }
-    },
-    "lichá": {
-      "lichá": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1663839370547
-        }
-      }
-    },
     "Příklady": {
       "Příklady": {
         "internalLink": {
           "count": 2,
           "lastUpdated": 1664881036402
-        }
-      }
-    },
-    "klávesnice": {
-      "klávesnice": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1664260820795
-        }
-      }
-    },
-    "tablet": {
-      "tablet": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1664260831723
-        }
-      }
-    },
-    "membránou": {
-      "membránou": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1664260865590
-        }
-      }
-    },
-    "H_{f^{-1}}": {
-      "H_{f^{-1}}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1664280400285
-        }
-      }
-    },
-    "D_{f^{-1}}": {
-      "D_{f^{-1}}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1664280426435
-        }
-      }
-    },
-    "cjl/literatura": {
-      "cjl/literatura": {
-        "frontMatter": {
-          "count": 3,
-          "lastUpdated": 1664452694456
         }
       }
     },
@@ -176,6 +92,38 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1665566593983
+        }
+      }
+    },
+    "Dělení": {
+      "Dělení": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667304080225
+        }
+      }
+    },
+    "mat/lomeno": {
+      "mat/lomeno": {
+        "frontMatter": {
+          "count": 1,
+          "lastUpdated": 1667304264734
+        }
+      }
+    },
+    "Harrison": {
+      "Harrison": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1667380287405
+        }
+      }
+    },
+    "dhcp-config": {
+      "dhcp-config": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1667473930985
         }
       }
     }
