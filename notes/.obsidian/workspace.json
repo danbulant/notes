@@ -4,28 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "01a3a560d5dcc28e",
+        "id": "1bcc616119b935a1",
         "type": "tabs",
         "children": [
           {
-            "id": "bd8e9d6c853aa424",
+            "id": "2650c4ee010b61f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "psi/psi.md",
+                "file": "cjl/literatura/slohy/Klasicismus/Empír.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3b581a8277d37e1e",
+            "id": "8b6f1bd94588c9e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "psi/IPv6.md",
+                "file": "cjl/literatura/slohy/Klasicismus/Osvícenství.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a3ba915ee70c70aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d1940805ce7779c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cjl/literatura/slohy/Klasicismus/Hudba.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "psi/IPv6.md",
+                "file": "cjl/literatura/slohy/Klasicismus/Osvícenství.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "psi/IPv6.md",
+                "file": "cjl/literatura/slohy/Klasicismus/Osvícenství.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "psi/IPv6.md"
+                "file": "cjl/literatura/slohy/Klasicismus/Osvícenství.md"
               }
             }
           },
@@ -198,17 +222,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8c976bdcdc74c84c",
+  "active": "8b6f1bd94588c9e2",
   "lastOpenFiles": [
-    "psi/Sítě.md",
-    "psi/Základní konfigurace.md",
-    "psi/DHCP.md",
-    "psi/psi.md",
-    "mat/mat.md",
-    "mat/Funkce/Mocninné funkce.md",
-    "mat/Funkce/Příklady.md",
-    "dej/dej.md",
-    "mat/Lomené výrazy/Sčítání a odčítání.md",
-    "dej/moderní/komunismus/The Beatles.md"
+    "cjl/literatura/slohy/Klasicismus/Empír.md",
+    "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md",
+    "cjl/literatura/slohy/Klasicismus/Hudba.md",
+    "cjl/literatura/slohy/Klacisismus/Klacisismus a osvícení.md",
+    "cjl/literatura/slohy/Klasicismus/Klasicismus.md",
+    "cjl/literatura/Jednota bratrská.md",
+    "cjl/literatura/literatura.md",
+    "cjl/cjl.md",
+    "ONA/Rasy, Etnika, Národy.md",
+    "psi/IPv6.md"
   ]
 }
