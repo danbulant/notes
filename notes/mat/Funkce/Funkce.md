@@ -15,6 +15,7 @@ imagePrefix: 'data/'
 -  [[mat/Funkce/Inverzní funkce|Inverzní funkce]]
 -  [[mat/Funkce/Kartézský součin|Kartézský součin]]
 -  [[mat/Funkce/Lineární lomené funkce|Lineární lomené funkce]]
+-  [[mat/Funkce/Logaritmus|Logaritmus]]
 -  [[mat/Funkce/Mocninné funkce|Mocninné funkce]]
 -  [[mat/Funkce/Příklady|Příklady]]
 -  [[mat/Funkce/Prostá funkce|Prostá funkce]]
