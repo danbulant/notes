@@ -1,3 +1,6 @@
+---
+tags: [mat, mat/rovnice ]
+---
 # Soustava kvadratických rovnic
 $(x-3)^2+(y-2)^2-25=0$
 $4x-3y-31=0$

@@ -1,3 +1,6 @@
+---
+tags: [dej]
+---
 # Test 16.3.
 ## Co se dnes nachází na místě nacisty zničených Lidic?
 Nachází se zde památník obětem Lidic; také se zde nachází památník dětem, které později zemřely v koncentračních táborech; také se nedaleko postavila nová obec Lidice, nachází se zde Lidická galerie.

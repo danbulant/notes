@@ -1,3 +1,6 @@
+---
+tags: [psi]
+---
 # DHCP
 v `(config)#`
 

@@ -1,3 +1,6 @@
+---
+tags: [mat, mat/funkce]
+---
 # Logaritmus
 
 $$

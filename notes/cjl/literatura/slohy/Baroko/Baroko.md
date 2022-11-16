@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/slohy/baroko]
+---
 # Baroko
 Oblé
 Nelogické

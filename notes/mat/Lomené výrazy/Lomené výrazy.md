@@ -1,7 +1,9 @@
 ---
-tags: [MOC]
+tags:
   - mat
-  - mat/lomeno
+  - mat/lomeno 
+  - MOC
+  - generated 
 ---
 # Lomené výrazy
 ```ccard

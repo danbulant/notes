@@ -1,3 +1,6 @@
+---
+tags: [dej]
+---
 # Izrealsko-palestinský konflikt
 ## Proč se konflikty na Blízkém východě často týkaly Jeruzaléma?
 Hlavní město 3 velkých náboženství

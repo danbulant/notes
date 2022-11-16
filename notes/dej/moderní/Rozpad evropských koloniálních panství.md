@@ -1,3 +1,6 @@
+---
+tags: [dej]
+---
 # Rozpad evropských koloniálních panství
 ## Z jakého důvodu se koloniální systém začíná po druhé světové válce hroutit?
 - růst nacionalismu

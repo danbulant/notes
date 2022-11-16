@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/pohyb]
+---
 # Gravitace
 ## Gravitační síla
 ### Newtonův gravitační zákon

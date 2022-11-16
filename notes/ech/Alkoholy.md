@@ -1,3 +1,6 @@
+---
+tags: [ech]
+---
 # Alkoholy
 Konvcovka: -ol
 Předpona: -hydroxy

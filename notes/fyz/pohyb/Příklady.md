@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/pohyb]
+---
 # Příklady
 ---
 

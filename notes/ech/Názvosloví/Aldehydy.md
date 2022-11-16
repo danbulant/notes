@@ -1,3 +1,6 @@
+---
+tags: [ech]
+---
 # Aldehydy
 ## Aldehyd
 koncovka -al

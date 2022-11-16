@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/slohy/klacisismus]
+---
 # Hudba
 ## Wolfgang Amadeus Mozart
 - ukolébavka - nesložil ji, je mu přisuzována. Ve filmu Adéla ještě nevečeřela

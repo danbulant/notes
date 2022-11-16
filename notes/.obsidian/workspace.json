@@ -14,18 +14,6 @@
               "type": "graph",
               "state": {}
             }
-          },
-          {
-            "id": "f3a096721684be1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dej/moderní/komunismus/Milada Horáková.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -199,15 +187,15 @@
   },
   "active": "4d13807c1cbcce1e",
   "lastOpenFiles": [
-    "cjl/Témata projevu.md",
-    "cjl/cjl.md",
-    "dej/dej.md",
-    "dej/moderní/komunismus/Milada Horáková.md",
-    "dej/moderní/komunismus/The Beatles.md",
-    "dej/moderní/komunismus/komunismus.md",
-    "dej/moderní/komunismus/Expo 58.md",
-    "dej/moderní/komunismus/České století, Všechnu moc lidu Stalinovi.md",
-    "dej/moderní/komunismus/Brutalismus.md",
-    "dej/moderní/1. světová válka.md"
+    "dej/quiz/Test 16.3..md",
+    "dej/quiz/23.3..md",
+    "dej/moderní/50. léta.md",
+    "dej/moderní/Izrealsko-palestinský konflikt.md",
+    "dej/moderní/Rozpad evropských koloniálních panství.md",
+    "dej/moderní/21.3.2022.md",
+    "mat/Rovnice/Matice.md",
+    "mat/Rovnice/Soustavy rovnic.excalidraw.md",
+    "mat/Rovnice/Soustava kvadratických rovnic.md",
+    "mat/Lomené výrazy/Lomené výrazy.md"
   ]
 }

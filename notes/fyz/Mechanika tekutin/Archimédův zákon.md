@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny]
+---
 # Archimédův zákon
 ![](Pasted%20image%2020221011130332.png)
 

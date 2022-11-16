@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/pohyb]
+---
 # Moment síly k ose otáčení
 ## Test
 1. c

@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/slohy/klacisismus]
+---
 # Klasicismus a osvícení
 - 17. a 18. století
 - Franci

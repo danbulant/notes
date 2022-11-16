@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/slohy/klacisismus]
+---
 # Osvícenství
 - myšlenkový proud
 - kult rozumu

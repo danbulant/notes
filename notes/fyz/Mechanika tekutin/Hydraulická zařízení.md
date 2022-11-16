@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny]
+---
 # Hydraulická zařízení
 ![](Pasted%20image%2020220920130334.png)
 

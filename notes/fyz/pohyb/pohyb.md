@@ -1,5 +1,5 @@
 ---
-tags: [MOC, generated, index, fyz]
+tags: [MOC, generated, index, fyz, fyz/pohyb]
 ---
 # pohyb
 ```ccard
