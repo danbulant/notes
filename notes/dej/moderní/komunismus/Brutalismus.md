@@ -1,3 +1,6 @@
+---
+tags: [dej, dej/komunismus]
+---
 # Brutalismus
 - holý beton
 - minimalismus

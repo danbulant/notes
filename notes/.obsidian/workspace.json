@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dej/moderní/komunismus/Brutalismus.md",
+                "file": "dej/moderní/komunismus/Milada Horáková.md",
                 "mode": "source",
                 "source": false
               }
@@ -180,9 +180,17 @@
               "type": "BC-tree",
               "state": {}
             }
+          },
+          {
+            "id": "52e50d5da98fbc86",
+            "type": "leaf",
+            "state": {
+              "type": "graph-analysis",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "horizontal",
@@ -191,15 +199,15 @@
   },
   "active": "4d13807c1cbcce1e",
   "lastOpenFiles": [
-    "dej/moderní/komunismus/Brutalismus.md",
-    "dej/moderní/komunismus/2.k 1.test.md",
-    "dej/dej.md",
+    "cjl/Témata projevu.md",
     "cjl/cjl.md",
-    "cjl/literatura/slohy/Klasicismus/Hudba.md",
-    "cjl/literatura/slohy/Klasicismus/Osvícenství.md",
-    "cjl/literatura/slohy/Klasicismus/Empír.md",
-    "cjl/literatura/slohy/Klasicismus/Untitled.md",
-    "cjl/literatura/slohy/Klasicismus/Klasicismus.md",
-    "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md"
+    "dej/dej.md",
+    "dej/moderní/komunismus/Milada Horáková.md",
+    "dej/moderní/komunismus/The Beatles.md",
+    "dej/moderní/komunismus/komunismus.md",
+    "dej/moderní/komunismus/Expo 58.md",
+    "dej/moderní/komunismus/České století, Všechnu moc lidu Stalinovi.md",
+    "dej/moderní/komunismus/Brutalismus.md",
+    "dej/moderní/1. světová válka.md"
   ]
 }

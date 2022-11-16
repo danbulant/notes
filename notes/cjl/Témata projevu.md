@@ -1,3 +1,6 @@
+---
+tags: [cjl]
+---
 # Témata projevu
 ## Projev
 kandidát ana zástupce třídy - proč ho zvolit

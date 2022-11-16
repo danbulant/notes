@@ -1,3 +1,6 @@
+---
+tags: [dej, dej/komunismus]
+---
 # Expo 58
 
 ## V čem asi byla světová výstava Expo 58 v Brusselu zcela unikátní?

@@ -1,0 +1,1970 @@
+{
+  "nodePositions": [
+    {
+      "id": "Excalidraw/Excalidraw.md",
+      "x": -780.2193603515625,
+      "y": 0.7324597239494324
+    },
+    {
+      "id": "Excalidraw/Rezistor-example1.excalidraw.md",
+      "x": -1038.4678955078125,
+      "y": 30.12185287475586
+    },
+    {
+      "id": "Excalidraw/tek-preruseni-jedna.excalidraw.md",
+      "x": -913.7311401367188,
+      "y": -257.79656982421875
+    },
+    {
+      "id": "Misc/Misc.md",
+      "x": -226.6035919189453,
+      "y": -409.32379150390625
+    },
+    {
+      "id": "Misc/Nástroje/Assety/Assety.md",
+      "x": 57.532405853271484,
+      "y": -1347.9609375
+    },
+    {
+      "id": "Misc/Nástroje/Assety/Coverr - videa zdarma.md",
+      "x": -170.71348571777344,
+      "y": -1408.669189453125
+    },
+    {
+      "id": "Misc/Nástroje/Assety/Freesound - audio zdarma.md",
+      "x": 299.2723083496094,
+      "y": -1289.2862548828125
+    },
+    {
+      "id": "Misc/Nástroje/Assety/Mixkit - různé assety zdarma (videa, audio, grafika).md",
+      "x": 165.22328186035156,
+      "y": -1634.775390625
+    },
+    {
+      "id": "Misc/Nástroje/Assety/Musmus.md",
+      "x": -19.55694007873535,
+      "y": -1608.0838623046875
+    },
+    {
+      "id": "Misc/Nástroje/Assety/Pexels - Obrázky a videa.md",
+      "x": 291.5079650878906,
+      "y": -1495.732177734375
+    },
+    {
+      "id": "Misc/Nástroje/Nástroje.md",
+      "x": -117.76798248291016,
+      "y": -1001.3927001953125
+    },
+    {
+      "id": "ONA/ONA.md",
+      "x": -198.28494262695312,
+      "y": 92.37865447998047
+    },
+    {
+      "id": "ONA/Rasy, Etnika, Národy.md",
+      "x": 47.30496597290039,
+      "y": -33.04738998413086
+    },
+    {
+      "id": "Osobnosti.md",
+      "x": -581.4384765625,
+      "y": 300.3119812011719
+    },
+    {
+      "id": "README.md",
+      "x": -367.54498291015625,
+      "y": 329.2599182128906
+    },
+    {
+      "id": "ang/Testy.md",
+      "x": -465.9665832519531,
+      "y": -523.357666015625
+    },
+    {
+      "id": "ang/ang.md",
+      "x": -405.134033203125,
+      "y": -250.66714477539062
+    },
+    {
+      "id": "ang/listening.md",
+      "x": -151.68994140625,
+      "y": -231.24411010742188
+    },
+    {
+      "id": "ang/slovesa.md",
+      "x": -280.2884521484375,
+      "y": -570.4879760742188
+    },
+    {
+      "id": "cjl/Pedagog a didaktik.md",
+      "x": 1147.3477783203125,
+      "y": 1262.497314453125
+    },
+    {
+      "id": "cjl/Povinné knihy.md",
+      "x": 1398.8851318359375,
+      "y": 1184.056640625
+    },
+    {
+      "id": "cjl/Slohové práce/Dějová linka.md",
+      "x": 2734.68603515625,
+      "y": 1458.1353759765625
+    },
+    {
+      "id": "cjl/Slohové práce/Postavy.md",
+      "x": 2515.93212890625,
+      "y": 1320.68115234375
+    },
+    {
+      "id": "cjl/Slohové práce/Slohové práce.md",
+      "x": 2259.49072265625,
+      "y": 1405.2933349609375
+    },
+    {
+      "id": "cjl/Slohové práce/Vypravování.md",
+      "x": 2567.144775390625,
+      "y": 1584.2330322265625
+    },
+    {
+      "id": "cjl/Témata projevu.md",
+      "x": 965.613037109375,
+      "y": 940.0556030273438
+    },
+    {
+      "id": "cjl/cjl.md",
+      "x": 1182.230224609375,
+      "y": 1036.289306640625
+    },
+    {
+      "id": "cjl/hodiny.md",
+      "x": 1459.7911376953125,
+      "y": 1456.6903076171875
+    },
+    {
+      "id": "cjl/jazyky/Polština.md",
+      "x": 1941.0262451171875,
+      "y": 1447.598388671875
+    },
+    {
+      "id": "cjl/jazyky/Ruština.md",
+      "x": 2064.76123046875,
+      "y": 1308.380126953125
+    },
+    {
+      "id": "cjl/jazyky/Slověnština.md",
+      "x": 1998.4671630859375,
+      "y": 1006.4818725585938
+    },
+    {
+      "id": "cjl/jazyky/jazyky.md",
+      "x": 1812.6494140625,
+      "y": 1198.4552001953125
+    },
+    {
+      "id": "cjl/jazyky/Český jazyk.md",
+      "x": 2122.179931640625,
+      "y": 1122.44970703125
+    },
+    {
+      "id": "cjl/jména.md",
+      "x": 1421.68505859375,
+      "y": 1015.2556762695312
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura.md",
+      "x": 1976.68701171875,
+      "y": 109.98409271240234
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Arabská literatura.md",
+      "x": 1806.4991455078125,
+      "y": -81.33594512939453
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Cizí literatura.md",
+      "x": 1401.6885986328125,
+      "y": -185.3320770263672
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Hebrejská literatura/Bible.md",
+      "x": 916.4105224609375,
+      "y": 42.68257141113281
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Hebrejská literatura/Hebrejská literatura.md",
+      "x": 1090.185791015625,
+      "y": -133.57339477539062
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Indická literatura.md",
+      "x": 1737.92578125,
+      "y": -293.58709716796875
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Perská literatura.md",
+      "x": 1942.606201171875,
+      "y": -173.9415740966797
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Společensko-historické pozadí.md",
+      "x": 1703.0484619140625,
+      "y": 97.92911529541016
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Staroegyptská literatura.md",
+      "x": 1553.5174560546875,
+      "y": -10.79011058807373
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Sumerská literatura.md",
+      "x": 1500.5987548828125,
+      "y": 131.2137451171875
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Čínská literatura.md",
+      "x": 1659.1123046875,
+      "y": -155.20364379882812
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Řecká literatura/Období.md",
+      "x": 1110.91552734375,
+      "y": -706.107666015625
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Řecká literatura/Ukázky.md",
+      "x": 1081.273193359375,
+      "y": -489.3866271972656
+    },
+    {
+      "id": "cjl/literatura/Cizí literatura/Řecká literatura/Řecká literatura.md",
+      "x": 1320.4945068359375,
+      "y": -543.3467407226562
+    },
+    {
+      "id": "cjl/literatura/Díla, postavy, vlastnosti.md",
+      "x": 1909.2177734375,
+      "y": 764.277099609375
+    },
+    {
+      "id": "cjl/literatura/Jan Hus.md",
+      "x": 1412.322021484375,
+      "y": 863.66748046875
+    },
+    {
+      "id": "cjl/literatura/Jednota bratrská.md",
+      "x": 1374.96044921875,
+      "y": 624.0540771484375
+    },
+    {
+      "id": "cjl/literatura/Slovní spojení.md",
+      "x": 1968.9139404296875,
+      "y": 590.7214965820312
+    },
+    {
+      "id": "cjl/literatura/Středověká literatura/Chronica Boemorum.md",
+      "x": 1064.9866943359375,
+      "y": 1729.4842529296875
+    },
+    {
+      "id": "cjl/literatura/Středověká literatura/Konstantin a Metoděj.md",
+      "x": 1012.9970703125,
+      "y": 1986.2152099609375
+    },
+    {
+      "id": "cjl/literatura/Středověká literatura/Kristánova legenda.md",
+      "x": 1609.5145263671875,
+      "y": 1914.3304443359375
+    },
+    {
+      "id": "cjl/literatura/Středověká literatura/Nomokánon.md",
+      "x": 784.038330078125,
+      "y": 1910.7818603515625
+    },
+    {
+      "id": "cjl/literatura/Středověká literatura/Proglas.md",
+      "x": 1241.3543701171875,
+      "y": 2071.611572265625
+    },
+    {
+      "id": "cjl/literatura/Středověká literatura/Středověká literatura.md",
+      "x": 1294.265625,
+      "y": 1732.485595703125
+    },
+    {
+      "id": "cjl/literatura/Středověká literatura/Zákon sudnyj ljudem.md",
+      "x": 840.5491943359375,
+      "y": 1709.8970947265625
+    },
+    {
+      "id": "cjl/literatura/Středověká literatura/sv. Václav a sv. Ludmila.md",
+      "x": 1447.075927734375,
+      "y": 2042.380859375
+    },
+    {
+      "id": "cjl/literatura/Středověká literatura/Žánry.md",
+      "x": 1123.208251953125,
+      "y": 1538.37158203125
+    },
+    {
+      "id": "cjl/literatura/Tropy a figury.md",
+      "x": 1841.718994140625,
+      "y": 480.0368957519531
+    },
+    {
+      "id": "cjl/literatura/Základní literaturní pojmy.md",
+      "x": 1231.5574951171875,
+      "y": 462.0536804199219
+    },
+    {
+      "id": "cjl/literatura/literatura.md",
+      "x": 1665.054443359375,
+      "y": 698.8386840820312
+    },
+    {
+      "id": "cjl/literatura/poznávání žánrů.md",
+      "x": 1592.2132568359375,
+      "y": 471.903564453125
+    },
+    {
+      "id": "cjl/literatura/slohy/Baroko/Baroko.md",
+      "x": 2469.369140625,
+      "y": 496.6759338378906
+    },
+    {
+      "id": "cjl/literatura/slohy/Baroko/Sochy.md",
+      "x": 2514.3076171875,
+      "y": 221.62254333496094
+    },
+    {
+      "id": "cjl/literatura/slohy/Gotika/Chrlič.md",
+      "x": 2975.550537109375,
+      "y": -181.98904418945312
+    },
+    {
+      "id": "cjl/literatura/slohy/Gotika/Fiála.md",
+      "x": 3321.905029296875,
+      "y": -29.536191940307617
+    },
+    {
+      "id": "cjl/literatura/slohy/Gotika/Gotika.md",
+      "x": 3006.146484375,
+      "y": 211.37966918945312
+    },
+    {
+      "id": "cjl/literatura/slohy/Gotika/Lomený oblouk.md",
+      "x": 3125.35107421875,
+      "y": -8.884676933288574
+    },
+    {
+      "id": "cjl/literatura/slohy/Gotika/Vitráž.md",
+      "x": 3281.958740234375,
+      "y": 143.95887756347656
+    },
+    {
+      "id": "cjl/literatura/slohy/Gotika/Znaky.md",
+      "x": 3210.227294921875,
+      "y": -245.8113555908203
+    },
+    {
+      "id": "cjl/literatura/slohy/Gotika/Žebrová klenba.md",
+      "x": 2897.409912109375,
+      "y": -39.44407653808594
+    },
+    {
+      "id": "cjl/literatura/slohy/Klacisismus/Klacisismus a osvícení.md",
+      "x": 2802.248046875,
+      "y": 433.0665588378906
+    },
+    {
+      "id": "cjl/literatura/slohy/Klacisismus/Klacisismus.md",
+      "x": 2669.03125,
+      "y": 652.881103515625
+    },
+    {
+      "id": "cjl/literatura/slohy/Klasicismus/Empír.md",
+      "x": 3187.493408203125,
+      "y": 1019.2672119140625
+    },
+    {
+      "id": "cjl/literatura/slohy/Klasicismus/Hudba.md",
+      "x": 3212.318603515625,
+      "y": 792.2171020507812
+    },
+    {
+      "id": "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md",
+      "x": 3021.524658203125,
+      "y": 1157.3292236328125
+    },
+    {
+      "id": "cjl/literatura/slohy/Klasicismus/Klasicismus.md",
+      "x": 2953.011474609375,
+      "y": 898.1278076171875
+    },
+    {
+      "id": "cjl/literatura/slohy/Klasicismus/Osvícenství.md",
+      "x": 3052.927001953125,
+      "y": 659.8133544921875
+    },
+    {
+      "id": "cjl/literatura/slohy/Renesance/Hamlet.md",
+      "x": 2581.490478515625,
+      "y": 1862.334716796875
+    },
+    {
+      "id": "cjl/literatura/slohy/Renesance/Humanismus.md",
+      "x": 2610.708984375,
+      "y": 2044.5594482421875
+    },
+    {
+      "id": "cjl/literatura/slohy/Renesance/Othello, mouření Benátský.md",
+      "x": 2407.121826171875,
+      "y": 2328.87109375
+    },
+    {
+      "id": "cjl/literatura/slohy/Renesance/Renesance.md",
+      "x": 2344.248779296875,
+      "y": 1979.2288818359375
+    },
+    {
+      "id": "cjl/literatura/slohy/Renesance/Romeo a Julie.md",
+      "x": 2069.662841796875,
+      "y": 2285.69140625
+    },
+    {
+      "id": "cjl/literatura/slohy/Renesance/Sonety.md",
+      "x": 2107.645751953125,
+      "y": 2127.7607421875
+    },
+    {
+      "id": "cjl/literatura/slohy/Renesance/William Shakespear.md",
+      "x": 2021.259033203125,
+      "y": 2515.3310546875
+    },
+    {
+      "id": "cjl/literatura/slohy/Renesance/Zimní pohádka.md",
+      "x": 2255.013916015625,
+      "y": 2271.017822265625
+    },
+    {
+      "id": "cjl/literatura/slohy/Renesance/Zkrocení zlé ženy.md",
+      "x": 2273.334228515625,
+      "y": 2460.360107421875
+    },
+    {
+      "id": "cjl/literatura/slohy/Románské umění.md",
+      "x": 2672.629150390625,
+      "y": 980.4445190429688
+    },
+    {
+      "id": "cjl/literatura/slohy/slohy.md",
+      "x": 2475.202880859375,
+      "y": 853.585693359375
+    },
+    {
+      "id": "cjl/testy/Hamlet.md",
+      "x": 1790.8702392578125,
+      "y": 2203.31640625
+    },
+    {
+      "id": "cjl/testy/Test 1.2.2022.md",
+      "x": 1875.3670654296875,
+      "y": 1778.729736328125
+    },
+    {
+      "id": "cjl/testy/testy.md",
+      "x": 1635.110595703125,
+      "y": 1630.3251953125
+    },
+    {
+      "id": "data/Absolutní hodnota_2022-02-23 09.05.43.excalidraw.md",
+      "x": -652.3312377929688,
+      "y": -1482.421142578125
+    },
+    {
+      "id": "data/Gravitace.excalidraw.md",
+      "x": -1665.715576171875,
+      "y": -1371.6275634765625
+    },
+    {
+      "id": "data/Kartézský součin_2022-01-19 09.25.49.excalidraw.md",
+      "x": -1076.537841796875,
+      "y": -1676.59912109375
+    },
+    {
+      "id": "data/Kótování koule_2022-01-07 12.14.15.excalidraw.md",
+      "x": -1282.212158203125,
+      "y": -1029.58154296875
+    },
+    {
+      "id": "data/Kótování koule_2022-01-07 12.54.53.excalidraw.md",
+      "x": -1407.5782470703125,
+      "y": -1133.1619873046875
+    },
+    {
+      "id": "data/Kótování na strojařský výkres_2021-11-26 12.00.18.excalidraw.md",
+      "x": -1156.368408203125,
+      "y": -1428.104248046875
+    },
+    {
+      "id": "data/Kótování na strojařský výkres_2021-11-26 12.08.43.excalidraw.md",
+      "x": -1407.832275390625,
+      "y": -1368.3438720703125
+    },
+    {
+      "id": "data/Kótování na strojařský výkres_2021-11-26 12.12.45.excalidraw.md",
+      "x": -1246.0166015625,
+      "y": -1279.9166259765625
+    },
+    {
+      "id": "data/Kótování na strojařský výkres_2022-01-07 13.19.52.excalidraw.md",
+      "x": -1321.59716796875,
+      "y": -1506.0693359375
+    },
+    {
+      "id": "data/Opakující se prvky_2021-11-26 12.28.49.excalidraw.md",
+      "x": -702.9349975585938,
+      "y": -1113.032958984375
+    },
+    {
+      "id": "data/Rezistory 2022-06-09 11.29.33.excalidraw.md",
+      "x": -677.5314331054688,
+      "y": -341.5467529296875
+    },
+    {
+      "id": "data/Struktura povrchu_označení.excalidraw.md",
+      "x": -887.859130859375,
+      "y": -864.6195678710938
+    },
+    {
+      "id": "data/Text Elements.md",
+      "x": -1077.8438720703125,
+      "y": -1012.5921020507812
+    },
+    {
+      "id": "data/data.md",
+      "x": -922.9439086914062,
+      "y": -1212.261962890625
+    },
+    {
+      "id": "data/tek-preruseni-dva.excalidraw.md",
+      "x": -688.7882080078125,
+      "y": -917.1246948242188
+    },
+    {
+      "id": "dej/Data.md",
+      "x": 1213.5291748046875,
+      "y": -987.2255249023438
+    },
+    {
+      "id": "dej/dej.md",
+      "x": 1002.5731811523438,
+      "y": -1063.646728515625
+    },
+    {
+      "id": "dej/hodiny.md",
+      "x": 1524.5106201171875,
+      "y": -1273.5872802734375
+    },
+    {
+      "id": "dej/moderní/1. světová válka.md",
+      "x": 1431.800048828125,
+      "y": -1490.698974609375
+    },
+    {
+      "id": "dej/moderní/1. světová válka/1. světová válka.md",
+      "x": 1066.288330078125,
+      "y": -1919.776611328125
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Bitva u Zborova.md",
+      "x": 1221.5013427734375,
+      "y": -2121.304931640625
+    },
+    {
+      "id": "dej/moderní/1. světová válka/František Ferdinand d`Este.md",
+      "x": 756.4204711914062,
+      "y": -1809.4638671875
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Nástup autoritativních režimů.md",
+      "x": 1051.3150634765625,
+      "y": -2193.538330078125
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Použití plynů.md",
+      "x": 1429.34912109375,
+      "y": -2203.067138671875
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Rasputin.md",
+      "x": 642.55322265625,
+      "y": -2043.9541015625
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Ruský převrat.md",
+      "x": 677.1710205078125,
+      "y": -2284.3857421875
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Sarajevský atentát.md",
+      "x": 1024.072021484375,
+      "y": -1640.81298828125
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Vladimír Iljič Lenin.md",
+      "x": 900.8836059570312,
+      "y": -2329.8876953125
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Východní fronta.md",
+      "x": 1364.9593505859375,
+      "y": -1776.098876953125
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Zbraně.md",
+      "x": 1486.2332763671875,
+      "y": -1952.9215087890625
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Západní fronta.md",
+      "x": 1227.59326171875,
+      "y": -1654.7574462890625
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Čeljabický incident.md",
+      "x": 851.926513671875,
+      "y": -2058.390625
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Český zahraniční odboj.md",
+      "x": 801.7306518554688,
+      "y": -1619.83447265625
+    },
+    {
+      "id": "dej/moderní/1. světová válka/Čeští vojáci na bojištích světové války.md",
+      "x": 1043.3450927734375,
+      "y": -1461.6112060546875
+    },
+    {
+      "id": "dej/moderní/14.3.2022.md",
+      "x": 1804.3310546875,
+      "y": -1169.9163818359375
+    },
+    {
+      "id": "dej/moderní/2. světová válka/2. světová válka.md",
+      "x": 2200.496337890625,
+      "y": -2101.738525390625
+    },
+    {
+      "id": "dej/moderní/2. světová válka/2. část.md",
+      "x": 2404.3984375,
+      "y": -1864.5924072265625
+    },
+    {
+      "id": "dej/moderní/2. světová válka/3. část.md",
+      "x": 2444.689697265625,
+      "y": -2071.18359375
+    },
+    {
+      "id": "dej/moderní/2. světová válka/Hooverville.md",
+      "x": 2556.350341796875,
+      "y": -1960.82275390625
+    },
+    {
+      "id": "dej/moderní/2. světová válka/Mnichovská dohoda.md",
+      "x": 1957.734130859375,
+      "y": -2054.352783203125
+    },
+    {
+      "id": "dej/moderní/2. světová válka/Noc dlouhých nožů.md",
+      "x": 2117.610107421875,
+      "y": -2366.822021484375
+    },
+    {
+      "id": "dej/moderní/2. světová válka/Norimberské zákony.md",
+      "x": 1959.7685546875,
+      "y": -2256.7998046875
+    },
+    {
+      "id": "dej/moderní/2. světová válka/Norimberský proces.md",
+      "x": 2195.10302734375,
+      "y": -1855.8369140625
+    },
+    {
+      "id": "dej/moderní/2. světová válka/Osvobození čech.md",
+      "x": 2542.572509765625,
+      "y": -2190.2333984375
+    },
+    {
+      "id": "dej/moderní/2. světová válka/Poválečné Československo.md",
+      "x": 1883.492919921875,
+      "y": -1734.6624755859375
+    },
+    {
+      "id": "dej/moderní/2. světová válka/Válečné zločiny.md",
+      "x": 1958.789306640625,
+      "y": -2539.059814453125
+    },
+    {
+      "id": "dej/moderní/2. světová válka/Začátek.md",
+      "x": 2273.00048828125,
+      "y": -2421.892578125
+    },
+    {
+      "id": "dej/moderní/2. světová válka/charakteristika.md",
+      "x": 2410.186279296875,
+      "y": -2319.81884765625
+    },
+    {
+      "id": "dej/moderní/21.3.2022.md",
+      "x": 1751.390625,
+      "y": -1417.11328125
+    },
+    {
+      "id": "dej/moderní/50. léta.md",
+      "x": 2299.90869140625,
+      "y": -1358.13427734375
+    },
+    {
+      "id": "dej/moderní/Izrealsko-palestinský konflikt.md",
+      "x": 2243.01708984375,
+      "y": -1206.1927490234375
+    },
+    {
+      "id": "dej/moderní/Nouzová kolonie.md",
+      "x": 2227.234130859375,
+      "y": -1506.855712890625
+    },
+    {
+      "id": "dej/moderní/První republika/Hospodářství a kultura.md",
+      "x": 2901.861328125,
+      "y": -1292.8765869140625
+    },
+    {
+      "id": "dej/moderní/První republika/Politika první republiky.md",
+      "x": 2876.244140625,
+      "y": -1478.9537353515625
+    },
+    {
+      "id": "dej/moderní/První republika/První republika.md",
+      "x": 2607.064453125,
+      "y": -1360.80078125
+    },
+    {
+      "id": "dej/moderní/Rozpad evropských koloniálních panství.md",
+      "x": 2080.0576171875,
+      "y": -1148.4708251953125
+    },
+    {
+      "id": "dej/moderní/komunismus/Brutalismus.md",
+      "x": 3015.562744140625,
+      "y": -897.2175903320312
+    },
+    {
+      "id": "dej/moderní/komunismus/Expo 58.md",
+      "x": 2632.2841796875,
+      "y": -683.3885498046875
+    },
+    {
+      "id": "dej/moderní/komunismus/Milada Horáková.md",
+      "x": 2944.1806640625,
+      "y": -755.2196044921875
+    },
+    {
+      "id": "dej/moderní/komunismus/The Beatles.md",
+      "x": 2931.007080078125,
+      "y": -1039.697998046875
+    },
+    {
+      "id": "dej/moderní/komunismus/komunismus.md",
+      "x": 2679.149169921875,
+      "y": -941.2659301757812
+    },
+    {
+      "id": "dej/moderní/komunismus/České století, Všechnu moc lidu Stalinovi.md",
+      "x": 2809.100830078125,
+      "y": -660.7893676757812
+    },
+    {
+      "id": "dej/moderní/moderní.md",
+      "x": 1988.849609375,
+      "y": -1404.773681640625
+    },
+    {
+      "id": "dej/quiz/23.3..md",
+      "x": 1658.0931396484375,
+      "y": -2704.487060546875
+    },
+    {
+      "id": "dej/quiz/24.11.md",
+      "x": 1002.7874755859375,
+      "y": -2692.2265625
+    },
+    {
+      "id": "dej/quiz/Test 11.10..md",
+      "x": 1217.4500732421875,
+      "y": -2890.33642578125
+    },
+    {
+      "id": "dej/quiz/Test 16.3..md",
+      "x": 1453.91064453125,
+      "y": -2715.522705078125
+    },
+    {
+      "id": "dej/quiz/Uherské králostviví a Maďarsko.md",
+      "x": 1068.89013671875,
+      "y": -2848.835205078125
+    },
+    {
+      "id": "dej/quiz/quiz.md",
+      "x": 1256.065673828125,
+      "y": -2557.896728515625
+    },
+    {
+      "id": "dej/quiz/Úkoly.md",
+      "x": 1375.22607421875,
+      "y": -2868.932861328125
+    },
+    {
+      "id": "dej/starší/Hrad Kalich.md",
+      "x": 2194.867431640625,
+      "y": -513.7454833984375
+    },
+    {
+      "id": "dej/starší/Jeskyně pod Býčí skálou.md",
+      "x": 1998.1534423828125,
+      "y": -545.2162475585938
+    },
+    {
+      "id": "dej/starší/Stonehenge.md",
+      "x": 2236.248291015625,
+      "y": -700.6826782226562
+    },
+    {
+      "id": "dej/starší/starší.md",
+      "x": 1772.5904541015625,
+      "y": -730.3570556640625
+    },
+    {
+      "id": "dej/starší/úvod.md",
+      "x": 2020.0645751953125,
+      "y": -782.4806518554688
+    },
+    {
+      "id": "dej/Úvod.md",
+      "x": 1470.606689453125,
+      "y": -1001.714599609375
+    },
+    {
+      "id": "ech/Alkoholy.md",
+      "x": -2447.64013671875,
+      "y": 1323.1934814453125
+    },
+    {
+      "id": "ech/Biochemie.md",
+      "x": -2396.40673828125,
+      "y": 1111.7391357421875
+    },
+    {
+      "id": "ech/Mendělejev.md",
+      "x": -2607.047607421875,
+      "y": 1364.2315673828125
+    },
+    {
+      "id": "ech/Názvosloví.md",
+      "x": -2755.73779296875,
+      "y": 1542.939453125
+    },
+    {
+      "id": "ech/Názvosloví/Aldehydy.md",
+      "x": -1867.4227294921875,
+      "y": 2127.094970703125
+    },
+    {
+      "id": "ech/Názvosloví/Bezkyslíkaté kyseliny.md",
+      "x": -2158.392333984375,
+      "y": 2150.617919921875
+    },
+    {
+      "id": "ech/Názvosloví/Hydroxidy.md",
+      "x": -1651.666015625,
+      "y": 2406.9541015625
+    },
+    {
+      "id": "ech/Názvosloví/Iontové hydridy.md",
+      "x": -1873.0494384765625,
+      "y": 2805.05322265625
+    },
+    {
+      "id": "ech/Názvosloví/Koncovky.md",
+      "x": -1633.5,
+      "y": 2832.91162109375
+    },
+    {
+      "id": "ech/Názvosloví/Kovalentní hydridy.md",
+      "x": -2283.96484375,
+      "y": 2339.639404296875
+    },
+    {
+      "id": "ech/Názvosloví/Kyslíkaté kyseliny.md",
+      "x": -1623.494384765625,
+      "y": 2597.756591796875
+    },
+    {
+      "id": "ech/Názvosloví/Názvosloví Trnka.md",
+      "x": -2466.078857421875,
+      "y": 2146.033935546875
+    },
+    {
+      "id": "ech/Názvosloví/Názvosloví.md",
+      "x": -2010.30712890625,
+      "y": 2355.068603515625
+    },
+    {
+      "id": "ech/Názvosloví/Oxidy.md",
+      "x": -1781.8424072265625,
+      "y": 2504.493408203125
+    },
+    {
+      "id": "ech/Názvosloví/Peroxidy.md",
+      "x": -1871.197021484375,
+      "y": 2639.333984375
+    },
+    {
+      "id": "ech/Názvosloví/Předpony.md",
+      "x": -2267.72412109375,
+      "y": 2555.456298828125
+    },
+    {
+      "id": "ech/Názvosloví/Soli kyslíkatých kyselin.md",
+      "x": -2067.059326171875,
+      "y": 2717.36669921875
+    },
+    {
+      "id": "ech/Prvky/Kyslík.md",
+      "x": -1506.430419921875,
+      "y": 1208.564208984375
+    },
+    {
+      "id": "ech/Prvky/Prvky.md",
+      "x": -1726.3897705078125,
+      "y": 1312.3236083984375
+    },
+    {
+      "id": "ech/Prvky/Vodík.md",
+      "x": -1487.421630859375,
+      "y": 1477.8463134765625
+    },
+    {
+      "id": "ech/Příklady.md",
+      "x": -1857.442138671875,
+      "y": 1515.4437255859375
+    },
+    {
+      "id": "ech/Směsi.md",
+      "x": -2262.106201171875,
+      "y": 1704.17822265625
+    },
+    {
+      "id": "ech/Stechiometrické výpočty.md",
+      "x": -2512.9736328125,
+      "y": 1519.1962890625
+    },
+    {
+      "id": "ech/Vazby.md",
+      "x": -2417.369384765625,
+      "y": 1647.19091796875
+    },
+    {
+      "id": "ech/Veličiny.md",
+      "x": -1897.6793212890625,
+      "y": 1710.060546875
+    },
+    {
+      "id": "ech/Vitaminy.md",
+      "x": -2543.402099609375,
+      "y": 1184.05224609375
+    },
+    {
+      "id": "ech/Výpočty ze stechiometrických vzorců.md",
+      "x": -2071.646240234375,
+      "y": 1145.046142578125
+    },
+    {
+      "id": "ech/ech.md",
+      "x": -2219.41845703125,
+      "y": 1410.587646484375
+    },
+    {
+      "id": "ech/hmota.md",
+      "x": -2086.55712890625,
+      "y": 1628.371826171875
+    },
+    {
+      "id": "ech/obal atomu.md",
+      "x": -2860.5693359375,
+      "y": 1150.300048828125
+    },
+    {
+      "id": "ech/prvky.md",
+      "x": -2667.01513671875,
+      "y": 1803.6483154296875
+    },
+    {
+      "id": "ech/radioaktivita.md",
+      "x": -1985.640625,
+      "y": 1313.2510986328125
+    },
+    {
+      "id": "ech/Ředění.md",
+      "x": -2240.124267578125,
+      "y": 1118.5877685546875
+    },
+    {
+      "id": "ele/Ampérmetr.md",
+      "x": 199.06642150878906,
+      "y": 1609.7213134765625
+    },
+    {
+      "id": "ele/Cívky.md",
+      "x": -492.2968444824219,
+      "y": 1804.1607666015625
+    },
+    {
+      "id": "ele/Elektrochemické zdroje a Elektrické teplo.md",
+      "x": -28.394487380981445,
+      "y": 1731.9918212890625
+    },
+    {
+      "id": "ele/Elektrárny/Elektrárny.md",
+      "x": -967.8511352539062,
+      "y": 2234.108642578125
+    },
+    {
+      "id": "ele/Elektrárny/Geotermální elektrárna.md",
+      "x": -1144.75146484375,
+      "y": 2471.250244140625
+    },
+    {
+      "id": "ele/Elektrárny/Jaderná elektrárna/Fukušima.md",
+      "x": -1088.0628662109375,
+      "y": 3053.037841796875
+    },
+    {
+      "id": "ele/Elektrárny/Jaderná elektrárna/Jaderná elektrárna.md",
+      "x": -1066.1436767578125,
+      "y": 2760.765869140625
+    },
+    {
+      "id": "ele/Elektrárny/Sluneční elektrárna.md",
+      "x": -1240.240234375,
+      "y": 2299.498046875
+    },
+    {
+      "id": "ele/Elektrárny/Tepelná elektrárna.md",
+      "x": -964.10888671875,
+      "y": 2517.392333984375
+    },
+    {
+      "id": "ele/Elektrárny/Vodní elektrárna.md",
+      "x": -1231.19970703125,
+      "y": 2096.583251953125
+    },
+    {
+      "id": "ele/Elektrárny/Větrná elektrárna.md",
+      "x": -1090.456298828125,
+      "y": 1991.194091796875
+    },
+    {
+      "id": "ele/Kapacita kondenzátorů.md",
+      "x": -338.0181579589844,
+      "y": 1205.905029296875
+    },
+    {
+      "id": "ele/Kondenzátory.md",
+      "x": -593.7833251953125,
+      "y": 1361.79052734375
+    },
+    {
+      "id": "ele/Měrení elektrických proudů a napětí.md",
+      "x": 212.83924865722656,
+      "y": 1887.3536376953125
+    },
+    {
+      "id": "ele/N a P.md",
+      "x": -410.5034484863281,
+      "y": 1404.427734375
+    },
+    {
+      "id": "ele/Náboj, proud, napětí a odpor.md",
+      "x": -2.7480294704437256,
+      "y": 1203.672119140625
+    },
+    {
+      "id": "ele/Ochrana.md",
+      "x": -354.0692443847656,
+      "y": 1901.170166015625
+    },
+    {
+      "id": "ele/Ohmův zákon.md",
+      "x": -771.5811157226562,
+      "y": 1555.926025390625
+    },
+    {
+      "id": "ele/PN přechod.md",
+      "x": -167.39547729492188,
+      "y": 1371.17724609375
+    },
+    {
+      "id": "ele/Polovodiče.md",
+      "x": 61.69533157348633,
+      "y": 1476.5457763671875
+    },
+    {
+      "id": "ele/Poruchy/Dotykové napětí.md",
+      "x": -513.5568237304688,
+      "y": 3058.6904296875
+    },
+    {
+      "id": "ele/Poruchy/Hranice bezpečného napětí.md",
+      "x": -264.29071044921875,
+      "y": 3090.379150390625
+    },
+    {
+      "id": "ele/Poruchy/Jističe.md",
+      "x": -391.2782287597656,
+      "y": 3171.1396484375
+    },
+    {
+      "id": "ele/Poruchy/Poruchy.md",
+      "x": -274.0924987792969,
+      "y": 2819.72900390625
+    },
+    {
+      "id": "ele/Poruchy/Přepětí.md",
+      "x": -28.51535415649414,
+      "y": 3015.5791015625
+    },
+    {
+      "id": "ele/Poruchy/Tavné a elektronické pojistky.md",
+      "x": -549.8737182617188,
+      "y": 2903.562744140625
+    },
+    {
+      "id": "ele/Poruchy/Zkrat.md",
+      "x": -12.822673797607422,
+      "y": 2828.2021484375
+    },
+    {
+      "id": "ele/Poruchy/Úrazy.md",
+      "x": -122.92986297607422,
+      "y": 3156.79052734375
+    },
+    {
+      "id": "ele/Rezistory.md",
+      "x": -340.3587951660156,
+      "y": 854.9464111328125
+    },
+    {
+      "id": "ele/Stejnosměrný proud.md",
+      "x": -535.2080688476562,
+      "y": 1619.6072998046875
+    },
+    {
+      "id": "ele/Střídavý proudu.md",
+      "x": -178.73016357421875,
+      "y": 1884.752685546875
+    },
+    {
+      "id": "ele/Testy/14.3 opakování.md",
+      "x": -661.352294921875,
+      "y": 2284.2080078125
+    },
+    {
+      "id": "ele/Testy/17.3. Test.md",
+      "x": -129.1577911376953,
+      "y": 2348.991943359375
+    },
+    {
+      "id": "ele/Testy/23.5..md",
+      "x": -441.5439453125,
+      "y": 2526.779296875
+    },
+    {
+      "id": "ele/Testy/Oprava rezistorů.md",
+      "x": -252.74270629882812,
+      "y": 2481.29296875
+    },
+    {
+      "id": "ele/Testy/Pololetní opakování.md",
+      "x": -612.3593139648438,
+      "y": 2484.989013671875
+    },
+    {
+      "id": "ele/Testy/Testy.md",
+      "x": -404.4046630859375,
+      "y": 2243.204345703125
+    },
+    {
+      "id": "ele/Vodiče.md",
+      "x": 311.8223571777344,
+      "y": 1403.845703125
+    },
+    {
+      "id": "ele/Voltmetr.md",
+      "x": 3.6833133697509766,
+      "y": 1988.3851318359375
+    },
+    {
+      "id": "ele/Vzorníček.md",
+      "x": -731.23779296875,
+      "y": 1772.181396484375
+    },
+    {
+      "id": "ele/ele.md",
+      "x": -265.60888671875,
+      "y": 1623.4715576171875
+    },
+    {
+      "id": "fyz/Exponencionální zápis.md",
+      "x": -2338.86962890625,
+      "y": -61.16153335571289
+    },
+    {
+      "id": "fyz/Jednotky SI.md",
+      "x": -2703.803955078125,
+      "y": -300.7852783203125
+    },
+    {
+      "id": "fyz/Mechanika tekutin/Archimédův zákon.md",
+      "x": -3283.834716796875,
+      "y": 88.02904510498047
+    },
+    {
+      "id": "fyz/Mechanika tekutin/Atmosférický tlak.md",
+      "x": -2883.385498046875,
+      "y": 332.6154479980469
+    },
+    {
+      "id": "fyz/Mechanika tekutin/Hydraulická zařízení.md",
+      "x": -3026.2412109375,
+      "y": 435.1686706542969
+    },
+    {
+      "id": "fyz/Mechanika tekutin/Hydrostatická tlaková síla.md",
+      "x": -3176.802001953125,
+      "y": 392.5120544433594
+    },
+    {
+      "id": "fyz/Mechanika tekutin/Hydrostatický paradox.md",
+      "x": -3075.063720703125,
+      "y": -151.1660919189453
+    },
+    {
+      "id": "fyz/Mechanika tekutin/Mechanika tekutin.md",
+      "x": -3000.303955078125,
+      "y": 108.81778717041016
+    },
+    {
+      "id": "fyz/Mechanika tekutin/Tekutiny.md",
+      "x": -3238.613525390625,
+      "y": -85.04965209960938
+    },
+    {
+      "id": "fyz/Mechanika tekutin/Torricelliho pokus.md",
+      "x": -3255.594970703125,
+      "y": 257.2785339355469
+    },
+    {
+      "id": "fyz/Pohyb.md",
+      "x": -2773.90234375,
+      "y": -588.6655883789062
+    },
+    {
+      "id": "fyz/Příklad.md",
+      "x": -2498.802001953125,
+      "y": -218.0532684326172
+    },
+    {
+      "id": "fyz/Rychlost.md",
+      "x": -2483.29443359375,
+      "y": -451.11566162109375
+    },
+    {
+      "id": "fyz/Tření a třecí síla.md",
+      "x": -2312.592041015625,
+      "y": -560.9971313476562
+    },
+    {
+      "id": "fyz/Veličiny.md",
+      "x": -2637.25732421875,
+      "y": -69.99259185791016
+    },
+    {
+      "id": "fyz/fyz.md",
+      "x": -2265.8818359375,
+      "y": -292.8168029785156
+    },
+    {
+      "id": "fyz/pohyb/Druhý pohybový zákon.md",
+      "x": -2637.781494140625,
+      "y": -1314.873046875
+    },
+    {
+      "id": "fyz/pohyb/Gravitace.md",
+      "x": -3029.7265625,
+      "y": -984.7345581054688
+    },
+    {
+      "id": "fyz/pohyb/Hybnost tělesa.md",
+      "x": -2962.876953125,
+      "y": -1289.864501953125
+    },
+    {
+      "id": "fyz/pohyb/Moment síly k ose otáčení.md",
+      "x": -3047.4150390625,
+      "y": -1143.0777587890625
+    },
+    {
+      "id": "fyz/pohyb/Příklady.md",
+      "x": -2814.088623046875,
+      "y": -1373.782958984375
+    },
+    {
+      "id": "fyz/pohyb/Rovnoměrný pohyb po kružnici.md",
+      "x": -3038.099365234375,
+      "y": -755.2993774414062
+    },
+    {
+      "id": "fyz/pohyb/Rovnoměrný pohyb.md",
+      "x": -2591.283935546875,
+      "y": -880.2733764648438
+    },
+    {
+      "id": "fyz/pohyb/Rovnoměrně zrychlený či zpomalený pohyb.md",
+      "x": -2843.43310546875,
+      "y": -834.5501708984375
+    },
+    {
+      "id": "fyz/pohyb/Volný pád.md",
+      "x": -2322.669677734375,
+      "y": -1245.9273681640625
+    },
+    {
+      "id": "fyz/pohyb/pohyb.md",
+      "x": -2745.27587890625,
+      "y": -1078.47265625
+    },
+    {
+      "id": "har/BIOS.md",
+      "x": 1109.9622802734375,
+      "y": 3124.037109375
+    },
+    {
+      "id": "har/CD-R.md",
+      "x": 523.841552734375,
+      "y": 2493.33056640625
+    },
+    {
+      "id": "har/CPU.md",
+      "x": 782.2351684570312,
+      "y": 3124.31982421875
+    },
+    {
+      "id": "har/GPU.md",
+      "x": 842.6264038085938,
+      "y": 2897.37939453125
+    },
+    {
+      "id": "har/Grafika.md",
+      "x": 677.8403930664062,
+      "y": 2881.009765625
+    },
+    {
+      "id": "har/HDD.md",
+      "x": 530.4771118164062,
+      "y": 2801.91357421875
+    },
+    {
+      "id": "har/IQRF.md",
+      "x": 637.0467529296875,
+      "y": 2362.33154296875
+    },
+    {
+      "id": "har/Konektory.md",
+      "x": 484.509521484375,
+      "y": 2652.4072265625
+    },
+    {
+      "id": "har/Micro Controller Unit.md",
+      "x": 552.5977172851562,
+      "y": 3074.71826171875
+    },
+    {
+      "id": "har/Pipelining.md",
+      "x": 827.43359375,
+      "y": 2351.61279296875
+    },
+    {
+      "id": "har/USB.md",
+      "x": 993.2874755859375,
+      "y": 2853.65234375
+    },
+    {
+      "id": "har/Uložiště.md",
+      "x": 1059.687744140625,
+      "y": 2710.24169921875
+    },
+    {
+      "id": "har/WOL.md",
+      "x": 1331.42724609375,
+      "y": 2667.999755859375
+    },
+    {
+      "id": "har/Základní deska.md",
+      "x": 1262.648681640625,
+      "y": 2876.8291015625
+    },
+    {
+      "id": "har/har.md",
+      "x": 790.52197265625,
+      "y": 2611.716796875
+    },
+    {
+      "id": "har/historie počítačů.md",
+      "x": 1009.6634521484375,
+      "y": 2429.923095703125
+    },
+    {
+      "id": "har/otázky.md",
+      "x": 1112.5936279296875,
+      "y": 2562.480224609375
+    },
+    {
+      "id": "kbb/haxagon/Terminals.md",
+      "x": 601.15576171875,
+      "y": 451.4942321777344
+    },
+    {
+      "id": "kbb/haxagon/haxagon.md",
+      "x": 302.0724182128906,
+      "y": 557.2544555664062
+    },
+    {
+      "id": "kbb/kbb.md",
+      "x": -71.77143096923828,
+      "y": 520.6140747070312
+    },
+    {
+      "id": "kbb/tools/SQLMap.md",
+      "x": 465.253662109375,
+      "y": 1064.8570556640625
+    },
+    {
+      "id": "kbb/tools/arp-scan.md",
+      "x": 149.1040496826172,
+      "y": 885.8631591796875
+    },
+    {
+      "id": "kbb/tools/arpspoof.md",
+      "x": 601.9849243164062,
+      "y": 930.0187377929688
+    },
+    {
+      "id": "kbb/tools/nmap.md",
+      "x": 620.108154296875,
+      "y": 715.2742309570312
+    },
+    {
+      "id": "kbb/tools/tools.md",
+      "x": 361.0038146972656,
+      "y": 807.3229370117188
+    },
+    {
+      "id": "mat/Absolutní hodnota.md",
+      "x": -542.5897827148438,
+      "y": -1861.39111328125
+    },
+    {
+      "id": "mat/Druhá odmocnina.md",
+      "x": -758.9402465820312,
+      "y": -2610.8095703125
+    },
+    {
+      "id": "mat/Funkce/Cosinus.md",
+      "x": -2084.34912109375,
+      "y": -1802.502685546875
+    },
+    {
+      "id": "mat/Funkce/Cotangens.md",
+      "x": -2566.014892578125,
+      "y": -1988.870361328125
+    },
+    {
+      "id": "mat/Funkce/Exponenciální funkce.md",
+      "x": -1686.2410888671875,
+      "y": -2149.84326171875
+    },
+    {
+      "id": "mat/Funkce/Funkce vs Rovnice.md",
+      "x": -1818.759765625,
+      "y": -2473.267333984375
+    },
+    {
+      "id": "mat/Funkce/Funkce.md",
+      "x": -1961.3626708984375,
+      "y": -2124.460693359375
+    },
+    {
+      "id": "mat/Funkce/Funkční přepis.md",
+      "x": -2291.4072265625,
+      "y": -2305.679931640625
+    },
+    {
+      "id": "mat/Funkce/Inverzní funkce.md",
+      "x": -1919.600341796875,
+      "y": -2363.439453125
+    },
+    {
+      "id": "mat/Funkce/Kartézský součin.md",
+      "x": -1503.9381103515625,
+      "y": -1974.83984375
+    },
+    {
+      "id": "mat/Funkce/Lineární lomené funkce.md",
+      "x": -2237.043212890625,
+      "y": -2170.10009765625
+    },
+    {
+      "id": "mat/Funkce/Logaritmus.md",
+      "x": -1708.7677001953125,
+      "y": -2324.354736328125
+    },
+    {
+      "id": "mat/Funkce/Mocninné funkce.md",
+      "x": -1777.5203857421875,
+      "y": -1936.695556640625
+    },
+    {
+      "id": "mat/Funkce/Prostá funkce.md",
+      "x": -2168.8896484375,
+      "y": -1927.390380859375
+    },
+    {
+      "id": "mat/Funkce/Příklady.md",
+      "x": -2150.31884765625,
+      "y": -2378.240966796875
+    },
+    {
+      "id": "mat/Funkce/Rovnost funkcí.md",
+      "x": -2295.51318359375,
+      "y": -2032.1240234375
+    },
+    {
+      "id": "mat/Funkce/Sinus.md",
+      "x": -1920.2100830078125,
+      "y": -1832.7010498046875
+    },
+    {
+      "id": "mat/Funkce/Tangens.md",
+      "x": -2448.109619140625,
+      "y": -1784.4898681640625
+    },
+    {
+      "id": "mat/Funkce/Vlastnosti funkcí.md",
+      "x": -2034.669677734375,
+      "y": -2483.54931640625
+    },
+    {
+      "id": "mat/Intervaly.md",
+      "x": -831.6597290039062,
+      "y": -2334.73583984375
+    },
+    {
+      "id": "mat/Lomené výrazy.md",
+      "x": -1133.197509765625,
+      "y": -2794.155517578125
+    },
+    {
+      "id": "mat/Lomené výrazy/Dělení a umocňování lomených výrazů.md",
+      "x": -1242.033935546875,
+      "y": -3071.183837890625
+    },
+    {
+      "id": "mat/Lomené výrazy/Krácení a rozšiřování lomených výrazů.md",
+      "x": -1090.5982666015625,
+      "y": -3185.378662109375
+    },
+    {
+      "id": "mat/Lomené výrazy/Lomené výrazy.md",
+      "x": -915.9144287109375,
+      "y": -3023.015869140625
+    },
+    {
+      "id": "mat/Lomené výrazy/Příklady.md",
+      "x": -759.6044921875,
+      "y": -3269.458984375
+    },
+    {
+      "id": "mat/Lomené výrazy/Sčítání a odčítání.md",
+      "x": -1347.82568359375,
+      "y": -2929.6943359375
+    },
+    {
+      "id": "mat/Matematika.md",
+      "x": -895.1168823242188,
+      "y": -2551.22119140625
+    },
+    {
+      "id": "mat/Mnohočlen.md",
+      "x": -352.657470703125,
+      "y": -2294.14453125
+    },
+    {
+      "id": "mat/Množiny.md",
+      "x": -445.98760986328125,
+      "y": -2886.241455078125
+    },
+    {
+      "id": "mat/Mocniny.md",
+      "x": -264.368408203125,
+      "y": -2480.687255859375
+    },
+    {
+      "id": "mat/Nerovnice.md",
+      "x": -430.4722900390625,
+      "y": -2103.9697265625
+    },
+    {
+      "id": "mat/Násobek a dělitel.md",
+      "x": -594.4380493164062,
+      "y": -2111.1201171875
+    },
+    {
+      "id": "mat/Příklady 1.md",
+      "x": -528.3681030273438,
+      "y": -2664.32080078125
+    },
+    {
+      "id": "mat/Příklady 2.md",
+      "x": -383.2530212402344,
+      "y": -2585.0615234375
+    },
+    {
+      "id": "mat/README.md",
+      "x": -897.815673828125,
+      "y": -2202.15673828125
+    },
+    {
+      "id": "mat/Rovnice/Matice.md",
+      "x": 501.9002380371094,
+      "y": -3029.993408203125
+    },
+    {
+      "id": "mat/Rovnice/Rovnice.md",
+      "x": 154.5572509765625,
+      "y": -2709.26806640625
+    },
+    {
+      "id": "mat/Rovnice/Soustava kvadratických rovnic.md",
+      "x": 288.87420654296875,
+      "y": -2913.672119140625
+    },
+    {
+      "id": "mat/Rovnice/Soustavy rovnic.excalidraw.md",
+      "x": 363.7064208984375,
+      "y": -2571.893798828125
+    },
+    {
+      "id": "mat/Rovnice/Soustavy rovnic.md",
+      "x": 516.7123413085938,
+      "y": -2812.349609375
+    },
+    {
+      "id": "mat/Rozklad složených čísel na součin prvočísel.md",
+      "x": -970.6578369140625,
+      "y": -2411.686279296875
+    },
+    {
+      "id": "mat/Tahák.md",
+      "x": -268.0700988769531,
+      "y": -2160.473876953125
+    },
+    {
+      "id": "mat/Výroky/Kvantifikované výroky.md",
+      "x": 265.68316650390625,
+      "y": -3218.97412109375
+    },
+    {
+      "id": "mat/Výroky/Příklady.md",
+      "x": -135.85272216796875,
+      "y": -3288.75830078125
+    },
+    {
+      "id": "mat/Výroky/Výroková logika.md",
+      "x": 101.22854614257812,
+      "y": -3334.748046875
+    },
+    {
+      "id": "mat/Výroky/Výroky.md",
+      "x": -105.04953002929688,
+      "y": -3031.50048828125
+    },
+    {
+      "id": "mat/Zakrouhlení.md",
+      "x": -188.55642700195312,
+      "y": -2340.480712890625
+    },
+    {
+      "id": "mat/Zlomky.md",
+      "x": -678.8637084960938,
+      "y": -2740.36767578125
+    },
+    {
+      "id": "mat/mat.md",
+      "x": -591.4188232421875,
+      "y": -2386.517578125
+    },
+    {
+      "id": "mat/Číselné obory.md",
+      "x": -243.4886016845703,
+      "y": -2742.789794921875
+    },
+    {
+      "id": "mat/Číselné soustavy.md",
+      "x": -750.8880004882812,
+      "y": -2098.699951171875
+    },
+    {
+      "id": "notes.md",
+      "x": -476.7017822265625,
+      "y": 89.63135528564453
+    },
+    {
+      "id": "pdv/30 let linuxu.md",
+      "x": 252.295166015625,
+      "y": 344.0057067871094
+    },
+    {
+      "id": "pdv/Procesory AMD x Intel.md",
+      "x": 379.19696044921875,
+      "y": 182.65614318847656
+    },
+    {
+      "id": "pdv/Taekwondo.md",
+      "x": 299.7486267089844,
+      "y": 28.882261276245117
+    },
+    {
+      "id": "pdv/pdv.md",
+      "x": 45.933624267578125,
+      "y": 209.82786560058594
+    },
+    {
+      "id": "projects/arcade/Menu.md",
+      "x": 516.167236328125,
+      "y": -871.1995849609375
+    },
+    {
+      "id": "projects/arcade/Ovladač.md",
+      "x": 318.254638671875,
+      "y": -940.5625610351562
+    },
+    {
+      "id": "projects/arcade/Tech.md",
+      "x": 121.83006286621094,
+      "y": -813.6452026367188
+    },
+    {
+      "id": "projects/arcade/arcade.md",
+      "x": 316.74261474609375,
+      "y": -674.0154418945312
+    },
+    {
+      "id": "projects/conos/Login system.md",
+      "x": 733.627685546875,
+      "y": -327.95379638671875
+    },
+    {
+      "id": "projects/conos/Terminology.md",
+      "x": 623.3138427734375,
+      "y": -576.888671875
+    },
+    {
+      "id": "projects/conos/conos.md",
+      "x": 497.7019958496094,
+      "y": -355.2784118652344
+    },
+    {
+      "id": "projects/projects.md",
+      "x": 107.4395523071289,
+      "y": -313.17547607421875
+    },
+    {
+      "id": "psi/Adresace.md",
+      "x": -2112.49462890625,
+      "y": 406.0432434082031
+    },
+    {
+      "id": "psi/CCNA1 Final PTSA.md",
+      "x": -1743.7587890625,
+      "y": 595.6721801757812
+    },
+    {
+      "id": "psi/DHCP.md",
+      "x": -1906.72900390625,
+      "y": 139.68142700195312
+    },
+    {
+      "id": "psi/Data Center Tier.md",
+      "x": -1676.4791259765625,
+      "y": 270.6488342285156
+    },
+    {
+      "id": "psi/IPv6.md",
+      "x": -2231.596435546875,
+      "y": 568.4426879882812
+    },
+    {
+      "id": "psi/Switch.md",
+      "x": -2231.251953125,
+      "y": 240.9729461669922
+    },
+    {
+      "id": "psi/Sítě.md",
+      "x": -1952.23486328125,
+      "y": 649.6473999023438
+    },
+    {
+      "id": "psi/Základní konfigurace.md",
+      "x": -2430.236572265625,
+      "y": 395.72906494140625
+    },
+    {
+      "id": "psi/Základy komunikace.md",
+      "x": -2474.7431640625,
+      "y": 622.1574096679688
+    },
+    {
+      "id": "psi/psi.md",
+      "x": -1888.7119140625,
+      "y": 386.5694885253906
+    },
+    {
+      "id": "tek/Kótování koule.md",
+      "x": -1695.943359375,
+      "y": -917.992431640625
+    },
+    {
+      "id": "tek/Kótování na strojařský výkres.md",
+      "x": -1655.621826171875,
+      "y": -1191.9112548828125
+    },
+    {
+      "id": "tek/Kótování sražených hran.md",
+      "x": -1435.9910888671875,
+      "y": -780.2597045898438
+    },
+    {
+      "id": "tek/Matice.md",
+      "x": -1902.91259765625,
+      "y": -735.4593505859375
+    },
+    {
+      "id": "tek/Metrický závit.md",
+      "x": -1576.9007568359375,
+      "y": -261.6525573730469
+    },
+    {
+      "id": "tek/Opakující se prvky.md",
+      "x": -1141.817138671875,
+      "y": -739.0635986328125
+    },
+    {
+      "id": "tek/Přerušení.md",
+      "x": -977.0665893554688,
+      "y": -548.3992919921875
+    },
+    {
+      "id": "tek/Spoj kantavým šroubem, sestava.md",
+      "x": -1725.0565185546875,
+      "y": -583.5047607421875
+    },
+    {
+      "id": "tek/Spoj průchozím šroubem.md",
+      "x": -1795.99853515625,
+      "y": -323.8662109375
+    },
+    {
+      "id": "tek/Struktura povrchu.md",
+      "x": -1194.736083984375,
+      "y": -510.21746826171875
+    },
+    {
+      "id": "tek/hodiny.md",
+      "x": -1957.475341796875,
+      "y": -508.2367248535156
+    },
+    {
+      "id": "tek/půdorys.md",
+      "x": -1384.4727783203125,
+      "y": -270.7914733886719
+    },
+    {
+      "id": "tek/tek.md",
+      "x": -1486.250244140625,
+      "y": -524.1361694335938
+    },
+    {
+      "id": "učitelé/Alena Rybáková.md",
+      "x": -823.5728759765625,
+      "y": 863.2688598632812
+    },
+    {
+      "id": "učitelé/Andrea Vlasáková.md",
+      "x": -1278.1094970703125,
+      "y": 674.011474609375
+    },
+    {
+      "id": "učitelé/Anna Otrubová.md",
+      "x": -872.7678833007812,
+      "y": 439.17840576171875
+    },
+    {
+      "id": "učitelé/Aramis Tochjan.md",
+      "x": -1247.5419921875,
+      "y": 834.5940551757812
+    },
+    {
+      "id": "učitelé/Dušan Ďurďovič.md",
+      "x": -1110.53515625,
+      "y": 399.4718933105469
+    },
+    {
+      "id": "učitelé/Ivona Vítová.md",
+      "x": -1125.8206787109375,
+      "y": 942.5496826171875
+    },
+    {
+      "id": "učitelé/Ladislav Trnka.md",
+      "x": -736.4295043945312,
+      "y": 673.123046875
+    },
+    {
+      "id": "učitelé/Tomáš Tkáč.md",
+      "x": -974.2742919921875,
+      "y": 954.3046264648438
+    },
+    {
+      "id": "učitelé/učitelé.md",
+      "x": -994.810546875,
+      "y": 647.3406982421875
+    },
+    {
+      "id": "učitelé/Šárka Pražáková.md",
+      "x": -1259.1541748046875,
+      "y": 502.2174072265625
+    }
+  ],
+  "automaticallyRestoreNodePositions": false
+}

@@ -1,3 +1,6 @@
+---
+tags: [dej, dej/komunismus]
+---
 # The Beatles
 - John Lennon
 - Paul McCartney

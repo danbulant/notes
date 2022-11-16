@@ -1,3 +1,6 @@
+---
+tags: [dej, dej/komunismus]
+---
 # České století, Všechnu moc lidu Stalinovi
 ## Jaké osobnosti spojené s únorem 1948 jste v ukázce poznali?
 Gottwald
