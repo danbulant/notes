@@ -1,5 +1,4 @@
 # Klasicismus a osvícení
-- umělecký směr
 - 17. a 18. století
 - Franci
 - z lat. classicus = vynikající, vzorový
