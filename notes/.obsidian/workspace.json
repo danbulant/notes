@@ -13,86 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Mechanika tekutin/Mechanika tekutin.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "94e4bf225ee1329f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Mechanika tekutin/Proudění/Proudění.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ea7a9fbd43b793c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Mechanika tekutin/Proudění/Objemový tok.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84c18e90a8a7f1a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Mechanika tekutin/Proudění/Proudění.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "19bb50c4dd821c18",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Mechanika tekutin/Proudění/Proudění.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40803b4873652a36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Mechanika tekutin/Proudění/Proudění.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2592a9fb4ab27d74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Mechanika tekutin/Příklady 14.11..md",
+                "file": "mat/Funkce/Logaritmus.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -150,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Mechanika tekutin/Příklady 14.11..md",
+                "file": "mat/Funkce/Logaritmus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Mechanika tekutin/Příklady 14.11..md",
+                "file": "mat/Funkce/Logaritmus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Mechanika tekutin/Příklady 14.11..md"
+                "file": "mat/Funkce/Logaritmus.md"
               }
             }
           },
@@ -266,17 +193,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2592a9fb4ab27d74",
+  "active": "4d13807c1cbcce1e",
   "lastOpenFiles": [
-    "fyz/Mechanika tekutin/Proudění/Bernoulliho rovnice.md",
-    "fyz/Mechanika tekutin/Proudění/Objemový tok.md",
+    "mat/mat.md",
+    "fyz/fyz.md",
+    "fyz/Mechanika tekutin/Mechanika tekutin.md",
     "fyz/Mechanika tekutin/Proudění/Proudění.md",
+    "fyz/Mechanika tekutin/Proudění/Objemový tok.md",
     "fyz/Mechanika tekutin/Příklady 14.11..md",
+    "fyz/Mechanika tekutin/Proudění/Bernoulliho rovnice.md",
     "fyz/Mechanika tekutin/Proudění/Proudnice.md",
     "fyz/Mechanika tekutin/Proudění/Rozdělení.md",
-    "fyz/Mechanika tekutin/Proudění/Hmotnostní tok.md",
-    "fyz/Mechanika tekutin/Mechanika tekutin.md",
-    "fyz/fyz.md",
-    "psi/vlan.md"
+    "fyz/Mechanika tekutin/Proudění/Hmotnostní tok.md"
   ]
 }
