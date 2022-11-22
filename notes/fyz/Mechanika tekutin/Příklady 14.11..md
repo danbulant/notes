@@ -119,3 +119,27 @@ $v_2=\frac{60}{20}$
 $v_2=3ms^{-1}$
 
 Zúženou částí voda protéká rychlostí $3ms^{-1}$.
+
+---
+
+Potrubím s průřezem $50cm^2$ proudí voda rychlostí $4ms^{-1}$ při tlaku $200kPa$. Určete rychlost a tlak vody v zúženém průřezu $10cm^2$
+
+$S_1v_1=S_2v_2$
+$v_2=\frac{S_1v_2}{S_2}$
+$v_2=\frac{50*10*4}{10*10^{-4}}=20ms^{-1}$
+$p_2=\frac12\rho v_1^2+p_1-\frac12\rho v_2^2$
+$p_2=\frac12\rho(v_1^2-v_2^2)+p_1$
+$p_2=\frac12*1000(4^2-20^2)+2*10^{5}$
+$p_2=8kPa$
+
+---
+
+Ve vodorovné trubici proudí voda rychlostí $2.24ms^{-1}$ při tlaku $100kPa$. Jakou rychlostí proudí v zúženém místě, kde byl naměřen tlak $90kPa$?
+
+$v_1=2.24ms^{-1}$
+$p_1=100kPa$
+$p_2=90kPa$
+
+$\frac12\rho v_1^2+p_1=\frac12\rho v_2^2+p_2 \space|*2$
+$\rho v_1^2+2p_1-2p_2=\rho v_2^2$
+$v_2=\sqrt{v_1^2+\frac{2(p_1p_2)}{\rho}}$
