@@ -23,16 +23,42 @@ $log_2x$ je roustoucí
 
 $log_2x$ posunutý o 3 →
 $log_2(x-3)$
+jedničkový bod: $[4;0]$
 
 $log_2x$ posunutý o 3 ←
 $log_2(x+3)$
+jedničkový bod: $[-2;0]$
 
 $log_2x$ posunutý o 3 $\uparrow$ 
 $log_2x+3$
+jedničkový bod: $[1;3]$
 
 $log_2x$ posunutý o 3 $\downarrow$
 $log_2x-3$
+jedničkový bod: $[1;-3]$
 
 ![](Pasted%20image%2020221123111325.png)
 [Calculator Suite - GeoGebra](https://www.geogebra.org/calculator/rvbswpyq)
 
+$log_2(x-5)+3$
+5 →
+3 $\uparrow$
+
+Jedničkový bod: $[6;3]$
+
+![](Pasted%20image%2020221123113129.png)
+
+$log_2(-x)-4$
+
+převrácená přes osu x
+4 $\downarrow$
+
+Jedničkový bod: $[1;-4]$
+
+![](Pasted%20image%2020221123113224.png)
+
+$log_{10}(x+3)-\frac12$
+
+$log_{10}(x-3.5)$
+
+$log_{10}(-x)+7$
