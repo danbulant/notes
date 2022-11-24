@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "77981171556de4a7",
+        "id": "b9c2bc58accbe4b0",
         "type": "tabs",
         "children": [
           {
-            "id": "7e5abeecdf739d4b",
+            "id": "a257ab9f498baece",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Logaritmus.md",
+                "file": "ONA/Úvaha - Rasismus.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Logaritmus.md",
+                "file": "ONA/Úvaha - Rasismus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Logaritmus.md",
+                "file": "ONA/Úvaha - Rasismus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Funkce/Logaritmus.md"
+                "file": "ONA/Úvaha - Rasismus.md"
               }
             }
           },
@@ -193,17 +193,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7e5abeecdf739d4b",
+  "active": "a257ab9f498baece",
   "lastOpenFiles": [
+    "ONA/ONA.md",
     "mat/mat.md",
+    "mat/Funkce/Untitled.md",
     "mat/Funkce/Logaritmus.md",
     "dej/moderní/komunismus/Vylodění v zátoce Sviní.md",
     "dej/moderní/komunismus/Karibská krize.md",
     "dej/moderní/komunismus/Expo 58.md",
     "dej/dej.md",
     "cjl/cjl.md",
-    "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md",
-    "cjl/literatura/Bajky/Býci a čápi.md",
-    "cjl/literatura/Bajky/Bajky.md"
+    "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md"
   ]
 }
