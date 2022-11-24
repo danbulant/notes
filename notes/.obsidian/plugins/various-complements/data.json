@@ -302,6 +302,34 @@
           "lastUpdated": 1669199405571
         }
       }
+    },
+    "EtherChannel": {
+      "EtherChannel": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1669309232254
+        },
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1669309797225
+        }
+      }
+    },
+    "moderní": {
+      "moderní": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1669309782046
+        }
+      }
+    },
+    "Desirable": {
+      "Desirable": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669309866833
+        }
+      }
     }
   }
 }

@@ -11,5 +11,6 @@
     "cs"
   ],
   "spellcheck": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showLineNumber": false
 }
