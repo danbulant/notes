@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ce2713e00100b91c",
+        "id": "77981171556de4a7",
         "type": "tabs",
         "children": [
           {
-            "id": "6a09a5f1f77a8368",
+            "id": "7e5abeecdf739d4b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -193,9 +193,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6a09a5f1f77a8368",
+  "active": "7e5abeecdf739d4b",
   "lastOpenFiles": [
     "mat/mat.md",
+    "mat/Funkce/Logaritmus.md",
     "dej/moderní/komunismus/Vylodění v zátoce Sviní.md",
     "dej/moderní/komunismus/Karibská krize.md",
     "dej/moderní/komunismus/Expo 58.md",
@@ -203,7 +204,6 @@
     "cjl/cjl.md",
     "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md",
     "cjl/literatura/Bajky/Býci a čápi.md",
-    "cjl/literatura/Bajky/Bajky.md",
-    "cjl/literatura/slohy/Klasicismus/del Art.md"
+    "cjl/literatura/Bajky/Bajky.md"
   ]
 }
