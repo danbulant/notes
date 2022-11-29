@@ -3,5 +3,8 @@
   "theme": "obsidian",
   "cssTheme": "Atom",
   "translucency": false,
-  "accentColor": ""
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "file-length"
+  ]
 }

@@ -330,6 +330,46 @@
           "lastUpdated": 1669309866833
         }
       }
+    },
+    "Rychlost": {
+      "Rychlost": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1669709846577
+        }
+      }
+    },
+    "Jehličková": {
+      "Jehličková": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669710271278
+        }
+      }
+    },
+    "Termální": {
+      "Termální": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669710430672
+        }
+      }
+    },
+    "inkoustová": {
+      "inkoustová": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1669710496684
+        }
+      }
+    },
+    "piezoelektrické": {
+      "piezoelektrické": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669710582167
+        }
+      }
     }
   }
 }

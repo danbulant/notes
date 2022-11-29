@@ -19,6 +19,7 @@ imagePrefix: 'data/'
 -  [[har/Micro Controller Unit|Micro Controller Unit]]
 -  [[har/otázky|otázky]]
 -  [[har/Pipelining|Pipelining]]
+-  [[har/Tiskárny|Tiskárny]]
 -  [[har/Uložiště|Uložiště]]
 -  [[har/USB|USB]]
 -  [[har/WOL|WOL]]
