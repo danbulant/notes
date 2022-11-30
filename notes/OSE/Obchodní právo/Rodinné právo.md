@@ -57,17 +57,18 @@ smrtí jednoho z manželů (nebo prohlášením o smrti. Když vstane z mrtvých
 
 ## Patří do SJM:
 
-- [ ] Byt, který si manželé společně koupili
+- [x] Byt, který si manželé společně koupili
 - [ ] Snubní prstýnek manželky
 - [ ] Zubní kartáček manžela
 - [ ] Výplata manžela
-- [ ] Dům, který manžel dostal od svých rodičů
-- [ ] Nájemné plynoucí z pronájmu výše uvedeného domu
-- [ ] Peníze z prodeje výše uvedeného domu
+- [x] Dům, který manžel dostal od svých rodičů
+- [x] Nájemné plynoucí z pronájmu výše uvedeného domu
+- [x] Peníze z prodeje výše uvedeného domu
 - [ ] Nezaplacená faktura za mobilní služby
 
 ## Co je registrovaná partnerství? Jak vzníká?
-
+partnerství dvou partnerů stejného pohlaví.
+vzniká oznámením úřadu.
 ## Jak se podle našeho práva určuje rodičovství k dítěti?
 
 ## Jaké jsou povinnosti rodičů vůči dětem a dětí vůči rodičům?
