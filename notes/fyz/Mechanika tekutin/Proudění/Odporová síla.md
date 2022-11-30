@@ -37,7 +37,7 @@ $v=8ms^{-1}\dot=29kmh^{-1}$
 
 ---
 
-Vodovodní potrubí o průměru $4cm$ proudí voda rychlostí $1.2ms^{-1}$. Na konci potrubí vystřikuje z trisky o průměru $1cm$. Určete tlak vody v potrubí.
+Vodovodní potrubí o průměru $4cm$ proudí voda rychlostí $1.2ms^{-1}$. Na konci potrubí vystřikuje z trysky o průměru $1cm$. Určete tlak vody v potrubí.
 
 $d_1=4cm$
 $v_1=1.25ms^{-1}$
