@@ -47,51 +47,11 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "Dělení": {
-      "Dělení": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667304080225
-        }
-      }
-    },
     "mat/lomeno": {
       "mat/lomeno": {
         "frontMatter": {
           "count": 2,
           "lastUpdated": 1668593581917
-        }
-      }
-    },
-    "Harrison": {
-      "Harrison": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1667380287405
-        }
-      }
-    },
-    "dhcp-config": {
-      "dhcp-config": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1667473930985
-        }
-      }
-    },
-    "normy": {
-      "normy": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667561440436
-        }
-      }
-    },
-    "rozumu": {
-      "rozumu": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1667561721851
         }
       }
     },
@@ -186,8 +146,8 @@
     "Objemový tok": {
       "Objemový tok": {
         "internalLink": {
-          "count": 1,
-          "lastUpdated": 1669024374468
+          "count": 2,
+          "lastUpdated": 1670270305450
         }
       }
     },
@@ -392,6 +352,62 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1669807511792
+        }
+      }
+    },
+    "Dotykové napětí": {
+      "Dotykové napětí": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1669817646770
+        }
+      }
+    },
+    "Export": {
+      "Export": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669818080842
+        }
+      }
+    },
+    "uteče": {
+      "uteče": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669979190811
+        }
+      }
+    },
+    "Pátek": {
+      "Pátek": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1669979276476
+        }
+      }
+    },
+    "Bernoulliho rovnice": {
+      "Bernoulliho rovnice": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670270220331
+        }
+      }
+    },
+    "Odporová síla": {
+      "Odporová síla": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670270330953
+        }
+      }
+    },
+    "Hmotnostní tok": {
+      "Hmotnostní tok": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670270345439
         }
       }
     }

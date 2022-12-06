@@ -6,6 +6,17 @@ tags:
   - cjl/literatura/žánry
 ---
 # Základní literaturní pojmy
+## Typy
+### Vyšší
+- poezie
+- epos
+- óda
+### Nižší
+- próza
+- bajka
+- román
+- komedie
+- tragedie
 ## Literatura
 - soubor všech zapsaných textů
 ### Typy

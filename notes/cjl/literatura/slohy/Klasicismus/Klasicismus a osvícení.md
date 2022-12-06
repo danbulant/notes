@@ -10,3 +10,5 @@ tags: [cjl, cjl/slohy/klacisismus]
 - kázeň a střídmost
 - pravda a rozumnnost
 - společenské normy 
+- encyklopedie
+- povinná školní docházka (Marie Terezie)
