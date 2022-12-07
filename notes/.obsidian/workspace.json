@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2c0a53a26a140c14",
+        "id": "c6ef793280838334",
         "type": "tabs",
         "children": [
           {
-            "id": "f7d9932211c6b72c",
+            "id": "86f2a9e8e80fe66b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md"
-              }
+              "state": {}
             }
           },
           {
@@ -201,17 +193,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f7d9932211c6b72c",
+  "active": "86f2a9e8e80fe66b",
   "lastOpenFiles": [
+    "cjl/literatura/slohy/Klasicismus/Tartuffe.md",
+    "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md",
+    "cjl/literatura/slohy/Klasicismus/Klasicismus.md",
+    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
     "fyz/Mechanika tekutin/Termodynamika/Termodynamika.md",
     "fyz/Mechanika tekutin/Proudění/Rozdělení.md",
     "fyz/Mechanika tekutin/Termodynamika/Celsiova teplotní stupnice.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
     "fyz/Mechanika tekutin/Proudění/Proudění.md",
     "fyz/Mechanika tekutin/Proudění/Hmotnostní tok.md",
-    "fyz/Mechanika tekutin/Proudění/Bernoulliho rovnice.md",
-    "fyz/Mechanika tekutin/Proudění/Proudnice.md",
-    "har/har.md",
-    "har/Tiskárny.md"
+    "fyz/Mechanika tekutin/Proudění/Bernoulliho rovnice.md"
   ]
 }
