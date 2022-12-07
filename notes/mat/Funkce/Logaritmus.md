@@ -223,3 +223,13 @@ $\log\sqrt{3+x}>0$
 $\sqrt{3+x}=0 \Leftrightarrow 3+x=0$ 
                        $x=-3$
 
+$D=(-3;\infty)$
+
+---
+
+$y=\frac1{\log x-1}$
+
+$\log x$
+$x\in\mathbb{R}^+$
+
+$\log x-1\ne0$
