@@ -233,3 +233,9 @@ $\log x$
 $x\in\mathbb{R}^+$
 
 $\log x-1\ne0$
+
+$\log x -1=0$
+$\log x=1$
+$x=10$
+
+$D=\mathbb{R}^+\backslash\{10\}$
