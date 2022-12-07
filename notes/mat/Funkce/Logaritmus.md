@@ -6,6 +6,9 @@ tags: [mat, mat/funkce]
 Na kalkulačce je <kbd>log</kbd> $= log_{10}x$
 <kbd>ln</kbd> $= log_ex$
 
+$\log\frac{a}b=\log a - \log b$
+$\log a^2=2\log a$
+
 
 $$
 \log_ab=x
@@ -110,3 +113,113 @@ $a^4=3^4$
 $a=3$
 
 $log_a8=-3$
+
+---
+
+$l=log^3\sqrt{\frac{a}b}=\frac{\log a}3-\frac{\log b}3$
+$l=\log^3\sqrt\frac{a}b=\log(\frac{a}b)^\frac13=\frac13\log\frac{a}b=\frac13(\log a - \log b)=\frac{\log a}3-\frac{\log b}3$
+
+---
+
+$4\log_63+5\log_62-\log_612=v$
+$\log_63^4+\log_62^5-\log_612=v$
+$log_6(\frac{3^4*2^5}{12})=v$
+$\log_6(\frac{3^4*2^5}{3*4})=v$
+$\log_6(\frac{3^3*2^5}{2^2})=v$
+$\log_6(3^3*2^3)=v$
+$\log_6(3^3*2^3)=v$
+$\log_6(6^3)=v$
+$v=3$
+
+---
+
+$\log_{10}20+\log_{10}50=v$
+$log_{10}(20*50)=v$
+$log_{10}(1000)=v$
+$v=3$
+
+---
+
+$\log_550-\log_52=v$
+$\log_5(50/2)=v$
+$\log_5(25)=v$
+$\log_5(5^2)=v$
+$v=2$
+
+---
+
+$\log_37+\log_3\frac{81}7=v$
+$\log_3(7*81/7)=v$
+$\log_3(81)=v$
+$log_3(9^2)=v$
+$log_3({3^2}^2)=v$
+$v=4$
+
+---
+
+$\log_28-4\log_22+\log_232=v$
+$\log_28-\log_22^4+\log_232=v$
+$\log_2(2^3*2^5/2^4)=v$
+$\log_2(2^8/2^4)=v$
+$\log_2(2^4)=v$
+$v=4$
+
+---
+
+### Definiční obory
+$y=\log(x+3)$
+
+$x+3>0$
+$x>-3$
+$D=(-3, \infty)$
+
+---
+$y=\log_3(x^2+4x-5)$
+
+$x^2+4x-5>0$
+
+$x>1$
+
+$D=(-\infty;-5)\cup(1; \infty)$
+
+---
+
+$y=\log_5(8-x)-\log_5(x+5)$
+
+$8-x>0$
+$x+5>0$
+
+$-x>-8$
+$x<8$
+
+$x>-5$
+
+$D=(-\infty;8)\cap(-5;\infty)$
+$D=(-5;8)$
+
+---
+
+$y=\log_\frac35(4-x^2)$
+$y=\log_3(4-x^2)/\log_5(4-x^2)$
+
+$4-x^2>0$
+$-x^2>-4$
+$x^2<4$
+$x^2<2^2$
+$x<2$
+
+$D=(\infty;2)$
+
+---
+
+$y=\log_7\sqrt{3+x}$
+
+$3+x\le0$
+$x\le-3$
+$x\in\langle-3;\infty)$
+
+$\log\sqrt{3+x}>0$
+
+$\sqrt{3+x}=0 \Leftrightarrow 3+x=0$ 
+                       $x=-3$
+
