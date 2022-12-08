@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c6ef793280838334",
+        "id": "2c0a53a26a140c14",
         "type": "tabs",
         "children": [
           {
-            "id": "86f2a9e8e80fe66b",
+            "id": "f7d9932211c6b72c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ech/Názvosloví/Soli kyslíkatých kyselin.md",
+                "file": "mat/Funkce/Logaritmus.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ech/Názvosloví/Soli kyslíkatých kyselin.md",
+                "file": "mat/Funkce/Logaritmus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ech/Názvosloví/Soli kyslíkatých kyselin.md",
+                "file": "mat/Funkce/Logaritmus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ech/Názvosloví/Soli kyslíkatých kyselin.md"
+                "file": "mat/Funkce/Logaritmus.md"
               }
             }
           },
@@ -201,17 +201,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "86f2a9e8e80fe66b",
+  "active": "f7d9932211c6b72c",
   "lastOpenFiles": [
-    "ech/Názvosloví/Hydroxidy.md",
-    "ech/Názvosloví/Soli kyslíkatých kyselin.md",
-    "ech/Názvosloví/Bezkyslíkaté kyseliny.md",
-    "ech/Názvosloví/Kyslíkaté kyseliny.md",
+    "conflict-files-obsidian-git.md",
+    "mat/Funkce/Logaritmus.md",
     "mat/mat.md",
-    "mat/Lomené výrazy/Sčítání a odčítání.md",
-    "mat/Lomené výrazy/Lomené výrazy.md",
-    "mat/Lomené výrazy/Krácení a rozšiřování lomených výrazů.md",
-    "mat/Lomené výrazy/Dělení a umocňování lomených výrazů.md",
-    "mat/Funkce/Logaritmus.md"
+    "dej/dej.md",
+    "dej/moderní/komunismus/Brutalismus.md",
+    "dej/moderní/komunismus/České století, Všechnu moc lidu Stalinovi.md",
+    "fyz/fyz.md",
+    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
+    "fyz/Mechanika tekutin/Termodynamika/Termodynamika.md",
+    "fyz/Mechanika tekutin/Proudění/Rozdělení.md"
   ]
 }
