@@ -11,8 +11,12 @@
             "id": "86f2a9e8e80fe66b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ech/Názvosloví/Soli kyslíkatých kyselin.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ech/Názvosloví/Soli kyslíkatých kyselin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ech/Názvosloví/Soli kyslíkatých kyselin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ech/Názvosloví/Soli kyslíkatých kyselin.md"
+              }
             }
           },
           {
@@ -195,15 +203,15 @@
   },
   "active": "86f2a9e8e80fe66b",
   "lastOpenFiles": [
-    "cjl/literatura/slohy/Klasicismus/Tartuffe.md",
-    "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md",
-    "cjl/literatura/slohy/Klasicismus/Klasicismus.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamika.md",
-    "fyz/Mechanika tekutin/Proudění/Rozdělení.md",
-    "fyz/Mechanika tekutin/Termodynamika/Celsiova teplotní stupnice.md",
-    "fyz/Mechanika tekutin/Proudění/Proudění.md",
-    "fyz/Mechanika tekutin/Proudění/Hmotnostní tok.md",
-    "fyz/Mechanika tekutin/Proudění/Bernoulliho rovnice.md"
+    "ech/Názvosloví/Hydroxidy.md",
+    "ech/Názvosloví/Soli kyslíkatých kyselin.md",
+    "ech/Názvosloví/Bezkyslíkaté kyseliny.md",
+    "ech/Názvosloví/Kyslíkaté kyseliny.md",
+    "mat/mat.md",
+    "mat/Lomené výrazy/Sčítání a odčítání.md",
+    "mat/Lomené výrazy/Lomené výrazy.md",
+    "mat/Lomené výrazy/Krácení a rozšiřování lomených výrazů.md",
+    "mat/Lomené výrazy/Dělení a umocňování lomených výrazů.md",
+    "mat/Funkce/Logaritmus.md"
   ]
 }
