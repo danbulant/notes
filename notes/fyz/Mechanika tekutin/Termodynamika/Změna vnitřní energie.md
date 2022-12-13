@@ -1,0 +1,2 @@
+# Změna vnitřní energie
+

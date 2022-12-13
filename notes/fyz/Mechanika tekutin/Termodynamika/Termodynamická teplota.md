@@ -8,6 +8,11 @@ $[T]=K$ … kelvin
 $T_r$ trojný bod vody, rovnovážný stav vody led+voda+nasycená pára
 $T_r=273.16K$ (stačí si pamatovat $T_r=273K$)
 
+
+| $T[K]$         | 200 | $268$    | 300 | $304$    |
+| -------------- | --- | --- | --- | --- |
+| $t[\degree C]$ | $-73$    | -5  | $27$    | 31    |
+
 kelvin ($K$) definujeme jako $1/273.16$ termodynamické teploty trojného bodu vody
 
 $t=(\{T\}-273)\degree C$
