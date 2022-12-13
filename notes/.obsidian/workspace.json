@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Změna vnitřní energie.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Změna vnitřní energie.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Změna vnitřní energie.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,16 +153,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Změna vnitřní energie.md"
+                "file": "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie.md"
               }
-            }
-          },
-          {
-            "id": "478e61537eb995fc",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
             }
           },
           {
@@ -204,6 +196,14 @@
               "type": "graph-analysis",
               "state": {}
             }
+          },
+          {
+            "id": "6781ba7464fb5e5f",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
         ],
         "currentTab": 12
@@ -217,7 +217,7 @@
   "lastOpenFiles": [
     "fyz/Mechanika tekutin/Mechanika tekutin.md",
     "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
-    "fyz/Mechanika tekutin/Termodynamika/Změna vnitřní energie.md",
+    "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie.md",
     "cjl/literatura/slohy/Klasicismus/Osvícenství.md",
     "cjl/literatura/slohy/Klasicismus/Robinson Crusoe.md",
     "cjl/literatura/slohy/Klasicismus/Tartuffe.md",

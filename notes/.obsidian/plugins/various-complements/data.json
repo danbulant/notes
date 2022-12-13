@@ -410,6 +410,46 @@
           "lastUpdated": 1670270345439
         }
       }
+    },
+    "energie": {
+      "energie": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670929153960
+        }
+      }
+    },
+    "Změna vnitřní energie": {
+      "Změna vnitřní energie": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1670929277135
+        }
+      }
+    },
+    "výměna": {
+      "výměna": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670929586664
+        }
+      }
+    },
+    "\\Delta": {
+      "\\Delta": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670930348796
+        }
+      }
+    },
+    "mc\\Delta": {
+      "mc\\Delta": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1670930689216
+        }
+      }
     }
   }
 }
