@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/bajky]
+---
 # Sluha dvou pánu
 
 Truffaldino je ten sluha.

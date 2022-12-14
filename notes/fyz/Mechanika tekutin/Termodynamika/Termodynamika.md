@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/termodynamika, MOC, generated]
+---
 # Termodynamika
 $[T]=K$
 $[t]=\degree C$

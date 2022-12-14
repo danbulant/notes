@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/slohy/klacisismus]
+---
 # del Art
 - komedie
 - improvizovaná

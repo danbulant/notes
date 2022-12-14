@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/termodynamika]
+---
 # Vnitřní energie
 
 $U$ … vnitřní energie

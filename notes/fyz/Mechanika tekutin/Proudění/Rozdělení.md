@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/proudění]
+---
 # Rozdělení
 
 ## Ustálené proudění

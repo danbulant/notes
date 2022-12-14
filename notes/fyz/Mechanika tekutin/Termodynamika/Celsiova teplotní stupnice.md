@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/termodynamika]
+---
 # Celsiova teplotní stupnice
 ## Celsiova teplotní stupnice
 $t$ - Celsiova teplota

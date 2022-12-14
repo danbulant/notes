@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/termodynamika]
+---
 # Termodynamická teplota
 Alternativa pro [Celsiova teplotní stupnice](Celsiova%20teplotní%20stupnice.md).
 Rozdíl teplot ve stejných jednotkách je roven, i.e. $t_1-t_2=T_1-T_2$

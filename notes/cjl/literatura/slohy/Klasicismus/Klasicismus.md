@@ -1,5 +1,5 @@
 ---
-tags: [cjl, cjl/slohy/klacisismus, MOC]
+tags: [cjl, cjl/slohy/klacisismus, MOC, generated]
 ---
 # Klasicismus
 - umělecký směr

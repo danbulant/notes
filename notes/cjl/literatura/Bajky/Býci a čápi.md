@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/bajky]
+---
 # Býci a čápi
 
 když existuje problém, je dobré ho vyřešit a ne hádat se zda existuje.

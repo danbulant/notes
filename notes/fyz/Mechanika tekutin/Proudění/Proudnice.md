@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/proudění]
+---
 # Proudnice
 myšlená čára, jejíž tečna sestrojená v libovolném bodě má směr okamžité rychlosti pohybující se částice
 

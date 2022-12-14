@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/slohy/klacisismus]
+---
 # Tartuffe
 ![](Pasted%20image%2020221207081311.png)
 

@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/proudění]
+---
 # Hmotnostní tok
 ![](Pasted%20image%2020221121105111.png)
 $$

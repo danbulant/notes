@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/slohy/klacisismus]
+---
 # Robinson Crusoe
 - osvícenství
 - dobrodružný román

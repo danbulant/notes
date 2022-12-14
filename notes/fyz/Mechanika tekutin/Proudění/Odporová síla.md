@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/proudění]
+---
 # Odporová síla
 
 $$F_o=\frac12C\rho Sv^2$$
