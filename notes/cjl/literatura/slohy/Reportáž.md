@@ -27,4 +27,4 @@ Od některých dívek se naopak objevovali závistivé pohledy, zvlášť od sle
 A kdo že to vlastně tančil s princem? Ani sám princ neví, nechala pouze po sobě střevíček.
 Po skončení tance a utečení před princem chvilku před půlnocí za sebou nechala střevíček, který se nacházel na pátém schodu za vchodem do sálu, který se jí zasekl o schod a zůstal tam.
 Princ pátrá po identitě slečny - “Komu padne střevíček, toho si vezmu,” vyhlásil.
-Střevíček byl spíše menší velikosti a světle stříbrné barvy, takový hezký se běžně nevidí ani u větších šlechticů, natož u neznámých slečen.
+Střevíček je spíše menší velikosti a světle stříbrné barvy, takový hezký se běžně nevidí ani u větších šlechticů, natož u neznámých slečen.
