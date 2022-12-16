@@ -4,24 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "3a131db453bef181",
+        "id": "198ecca9fddb3682",
         "type": "tabs",
         "children": [
           {
-            "id": "fb11158e5a8c86ef",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "8bfcc919731ed25c",
+            "id": "61f97a9274a19043",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dej/moderní/komunismus/Československo v šedesátých letech.md",
+                "file": "cjl/literatura/slohy/Preromantismus/Goethe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8880195645bcddc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cjl/literatura/slohy/Reportáž.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dej/moderní/komunismus/Československo v šedesátých letech.md",
+                "file": "cjl/literatura/slohy/Reportáž.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dej/moderní/komunismus/Československo v šedesátých letech.md",
+                "file": "cjl/literatura/slohy/Reportáž.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dej/moderní/komunismus/Československo v šedesátých letech.md"
+                "file": "cjl/literatura/slohy/Reportáž.md"
               }
             }
           },
@@ -210,17 +214,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8bfcc919731ed25c",
+  "active": "8880195645bcddc8",
   "lastOpenFiles": [
-    "dej/moderní/komunismus/Československo v šedesátých letech.md",
-    "cjl/literatura/slohy/Klasicismus/Tartuffe.md",
-    "cjl/literatura/slohy/Klasicismus/Robinson Crusoe.md",
-    "cjl/literatura/slohy/Klasicismus/poznámky.md",
-    "cjl/literatura/slohy/Klasicismus/Osvícenství.md",
-    "cjl/literatura/slohy/Klasicismus/Klasicismus a osvícení.md",
-    "cjl/literatura/slohy/Klasicismus/Hudba.md",
-    "cjl/literatura/slohy/Klasicismus/Empír.md",
-    "cjl/literatura/slohy/Klasicismus/del Art.md",
-    "cjl/literatura/slohy/Klasicismus/Klasicismus.md"
+    "cjl/literatura/slohy/Preromantismus/Goethe.md",
+    "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
+    "cjl/cjl.md",
+    "ONA/Úvaha - Rasismus.md",
+    "ONA/Rasy, Etnika, Národy.md",
+    "ONA/ONA.md",
+    "psi/psi.md",
+    "psi/CCNA2/DHCP.md",
+    "psi/CCNA2/EtherChannel.md",
+    "psi/CCNA2/CCNA2.md"
   ]
 }

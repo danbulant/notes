@@ -47,67 +47,11 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "mat/lomeno": {
-      "mat/lomeno": {
-        "frontMatter": {
-          "count": 2,
-          "lastUpdated": 1668593581917
-        }
-      }
-    },
-    "radost": {
-      "radost": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1668582941697
-        }
-      }
-    },
-    "dej/komunismus": {
-      "dej/komunismus": {
-        "frontMatter": {
-          "count": 1,
-          "lastUpdated": 1668591866640
-        }
-      }
-    },
-    "cjl/sloh": {
-      "cjl/sloh": {
-        "frontMatter": {
-          "count": 1,
-          "lastUpdated": 1668593333301
-        }
-      }
-    },
-    "fyz/pohyb": {
-      "fyz/pohyb": {
-        "frontMatter": {
-          "count": 1,
-          "lastUpdated": 1668593541495
-        }
-      }
-    },
-    "mat/funkce": {
-      "mat/funkce": {
-        "frontMatter": {
-          "count": 1,
-          "lastUpdated": 1668593570156
-        }
-      }
-    },
     "generated": {
       "generated": {
         "frontMatter": {
           "count": 2,
           "lastUpdated": 1671009118104
-        }
-      }
-    },
-    "mat/rovnice": {
-      "mat/rovnice": {
-        "frontMatter": {
-          "count": 1,
-          "lastUpdated": 1668593600090
         }
       }
     },
@@ -480,6 +424,14 @@
         "internalLink": {
           "count": 1,
           "lastUpdated": 1671009932254
+        }
+      }
+    },
+    "novin": {
+      "novin": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1671188950497
         }
       }
     }
