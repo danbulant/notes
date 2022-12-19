@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "198ecca9fddb3682",
+        "id": "95c0e75cff09fc32",
         "type": "tabs",
         "children": [
           {
-            "id": "61f97a9274a19043",
+            "id": "ebc343413641e530",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cjl/literatura/slohy/Preromantismus/Goethe.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8880195645bcddc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cjl/literatura/slohy/Reportáž.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cjl/literatura/slohy/Reportáž.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cjl/literatura/slohy/Reportáž.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cjl/literatura/slohy/Reportáž.md"
+                "file": "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md"
               }
             }
           },
@@ -214,17 +201,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8880195645bcddc8",
+  "active": "ebc343413641e530",
   "lastOpenFiles": [
-    "cjl/literatura/slohy/Preromantismus/Goethe.md",
-    "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
+    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
+    "fyz/Mechanika tekutin/Termodynamika/Termodynamika.md",
+    "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md",
+    "fyz/fyz.md",
     "cjl/cjl.md",
+    "cjl/literatura/slohy/Preromantismus/Goethe.md",
+    "cjl/literatura/slohy/Reportáž.md",
+    "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
     "ONA/Úvaha - Rasismus.md",
-    "ONA/Rasy, Etnika, Národy.md",
-    "ONA/ONA.md",
-    "psi/psi.md",
-    "psi/CCNA2/DHCP.md",
-    "psi/CCNA2/EtherChannel.md",
-    "psi/CCNA2/CCNA2.md"
+    "ONA/Rasy, Etnika, Národy.md"
   ]
 }
