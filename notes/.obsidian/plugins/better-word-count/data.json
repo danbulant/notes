@@ -1,0 +1,32 @@
+{
+  "statusBar": [
+    {
+      "prefix": "",
+      "suffix": "w",
+      "metric": {
+        "type": 0,
+        "counter": 0
+      }
+    },
+    {
+      "prefix": " ",
+      "suffix": "ch",
+      "metric": {
+        "type": 0,
+        "counter": 1
+      }
+    }
+  ],
+  "altBar": [
+    {
+      "prefix": "",
+      "suffix": "files",
+      "metric": {
+        "type": 2,
+        "counter": 3
+      }
+    }
+  ],
+  "countComments": false,
+  "collectStats": false
+}
