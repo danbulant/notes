@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "de291758ddf78dd6",
+        "id": "85dbe803f744ad2d",
         "type": "tabs",
         "children": [
           {
-            "id": "d3ed84bd773ec349",
+            "id": "994500a08f1de9cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
+                "file": "mat/Funkce/Příklady.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
+                "file": "mat/Funkce/Příklady.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
+                "file": "mat/Funkce/Příklady.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cjl/literatura/slohy/Preromantismus/Preromantismus.md"
+                "file": "mat/Funkce/Příklady.md"
               }
             }
           },
@@ -216,17 +216,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "d3ed84bd773ec349",
+  "active": "994500a08f1de9cd",
   "lastOpenFiles": [
-    "cjl/Slohové práce/Reportáž - V Kotli.md",
+    "mat/mat.md",
     "cjl/cjl.md",
+    "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
+    "cjl/Slohové práce/Reportáž - V Kotli.md",
     "mat/Funkce/Logaritmus.md",
     "mat/Funkce/Příklady.md",
-    "mat/mat.md",
     "fyz/fyz.md",
     "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie, teplo - řešení příkladů.md",
     "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md",
-    "fyz/Mechanika tekutin/Termodynamika/Celsiova teplotní stupnice.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md"
+    "fyz/Mechanika tekutin/Termodynamika/Celsiova teplotní stupnice.md"
   ]
 }
