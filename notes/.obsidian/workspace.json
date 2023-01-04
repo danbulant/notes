@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "634eb8302c62db31",
+        "id": "de291758ddf78dd6",
         "type": "tabs",
         "children": [
           {
-            "id": "8465cc060418bcc7",
+            "id": "d3ed84bd773ec349",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Příklady.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7898c486801e86ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Funkce/Logaritmus.md",
+                "file": "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Příklady.md",
+                "file": "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Příklady.md",
+                "file": "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Funkce/Příklady.md"
+                "file": "cjl/literatura/slohy/Preromantismus/Preromantismus.md"
               }
             }
           },
@@ -228,8 +216,10 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "8465cc060418bcc7",
+  "active": "d3ed84bd773ec349",
   "lastOpenFiles": [
+    "cjl/Slohové práce/Reportáž - V Kotli.md",
+    "cjl/cjl.md",
     "mat/Funkce/Logaritmus.md",
     "mat/Funkce/Příklady.md",
     "mat/mat.md",
@@ -237,8 +227,6 @@
     "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie, teplo - řešení příkladů.md",
     "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md",
     "fyz/Mechanika tekutin/Termodynamika/Celsiova teplotní stupnice.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamika.md",
-    "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie.md"
+    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md"
   ]
 }
