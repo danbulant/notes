@@ -1,3 +1,6 @@
+---
+tags: [mat, tahak]
+---
 # Tahák
 
 $D=b^2-4ac$

@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/termodynamika]
+---
 # Vnitřní energie, teplo - řešení příkladů
 
 ![](Pasted%20image%2020230103120432.png)

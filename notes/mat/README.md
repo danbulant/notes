@@ -1,3 +1,6 @@
+---
+tags: [mat]
+---
 # README
 
 - sehnat si učebnici J. Petáková

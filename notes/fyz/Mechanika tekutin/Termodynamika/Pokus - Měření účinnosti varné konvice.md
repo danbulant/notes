@@ -1,3 +1,6 @@
+---
+tags: [fyz, fyz/tekutiny, fyz/termodynamika, pokus]
+---
 # Pokus - Měření účinnosti varné konvice
 
 | č. měření  | $t_1 (\degree C)$ | $t_v (\degree C)$ | $\tau (s)$ | $Q (J)$ | $P (W)$ | $n$   |

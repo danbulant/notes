@@ -3,7 +3,7 @@ tags: [cjl/slohy, cjl]
 aliases: [Reportáž, V Kotli]
 date: 2023-01-01
 ---
-# Reportáž - V Kotli
+# Reportáž - Rekonstrukce první husitské bitvy s vozovou hradbou
 (Bitva je upravena pro účely slohové práce a není kompletně založena na faktech. Nečetl jsem o žádné reálné rekonstrukci bitvy)
 
 Dnes proběhla rekonstrukce husitské bitvy u Nekmíře, tvrze (dnes vesnice) vzdálená přibližně 17 kilometrů od Plzně. Husité pod velením Jana Žižky zde na začátku roku 1420 porazili početnější vojsko krajského landfrýdu pod velením Bohuslava ze Švamberka.

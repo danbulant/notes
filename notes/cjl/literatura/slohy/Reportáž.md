@@ -1,3 +1,6 @@
+---
+tags: [cjl, cjl/slohy]
+---
 # Reportáž
 
 - publicistický útvar
