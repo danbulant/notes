@@ -40,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/První termodynamický zákon.md",
+                "file": "cjl/literatura/slohy/Preromantismus/Goethe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/První termodynamický zákon.md",
+                "file": "cjl/literatura/slohy/Preromantismus/Goethe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/První termodynamický zákon.md"
+                "file": "cjl/literatura/slohy/Preromantismus/Goethe.md"
               }
             }
           },
@@ -237,10 +237,10 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "ede8f1697e964c61",
+  "active": "2c4e57f5ccf2149c",
   "lastOpenFiles": [
-    "cjl/literatura/slohy/Reportáž.md",
     "fyz/Mechanika tekutin/Termodynamika/První termodynamický zákon.md",
+    "cjl/literatura/slohy/Reportáž.md",
     "cjl/literatura/slohy/Preromantismus/Goethe.md",
     "mat/Tahák.md",
     "mat/README.md",
