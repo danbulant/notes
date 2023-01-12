@@ -18,6 +18,8 @@ imagePrefix: 'data/'
 -  [[mat/Funkce/Logaritmus - Substituce|Logaritmus - Substituce]]
 -  [[mat/Funkce/Logaritmus|Logaritmus]]
 -  [[mat/Funkce/Mocninné funkce|Mocninné funkce]]
+-  [[mat/Funkce/Orientovaný úhel|Orientovaný úhel]]
+-  [[mat/Funkce/Převody stupňů na radiány|Převody stupňů na radiány]]
 -  [[mat/Funkce/Příklady|Příklady]]
 -  [[mat/Funkce/Prostá funkce|Prostá funkce]]
 -  [[mat/Funkce/Rovnost funkcí|Rovnost funkcí]]

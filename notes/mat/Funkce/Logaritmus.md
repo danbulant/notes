@@ -1,5 +1,6 @@
 ---
 tags: [mat, mat/funkce]
+learn-date: 2023-01-01
 ---
 # Logaritmus
 - inverzní funkce pro [Exponenciální funkce](Exponenciální%20funkce.md).

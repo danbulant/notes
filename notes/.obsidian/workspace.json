@@ -4,36 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "508ec662230510f7",
+        "id": "7a3626b92fb0be3d",
         "type": "tabs",
         "children": [
           {
-            "id": "9bd170d6c92bd826",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "2c4e57f5ccf2149c",
+            "id": "3e845f332698836d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cjl/literatura/slohy/Preromantismus/Goethe.md",
+                "file": "mat/Funkce/Převody stupňů na radiány.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ede8f1697e964c61",
+            "id": "21b527554bf208e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/První termodynamický zákon.md",
+                "file": "mat/Funkce/Orientovaný úhel.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cjl/literatura/slohy/Preromantismus/Goethe.md",
+                "file": "mat/Funkce/Orientovaný úhel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cjl/literatura/slohy/Preromantismus/Goethe.md",
+                "file": "mat/Funkce/Orientovaný úhel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cjl/literatura/slohy/Preromantismus/Goethe.md"
+                "file": "mat/Funkce/Orientovaný úhel.md"
               }
             }
           },
@@ -237,17 +229,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "2c4e57f5ccf2149c",
+  "active": "21b527554bf208e1",
   "lastOpenFiles": [
+    "mat/Funkce/Převody stupňů na radiány.md",
+    "mat/Funkce/Logaritmus - Substituce.md",
+    "mat/Funkce/Logaritmus.md",
+    "mat/Funkce/Orientovaný úhel.md",
+    "mat/Matematika.md",
+    "cjl/literatura/slohy/Preromantismus/Goethe.md",
     "fyz/Mechanika tekutin/Termodynamika/První termodynamický zákon.md",
     "cjl/literatura/slohy/Reportáž.md",
-    "cjl/literatura/slohy/Preromantismus/Goethe.md",
     "mat/Tahák.md",
-    "mat/README.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamika.md",
-    "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie.md",
-    "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md",
-    "fyz/Mechanika tekutin/Termodynamika/Celsiova teplotní stupnice.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md"
+    "mat/README.md"
   ]
 }

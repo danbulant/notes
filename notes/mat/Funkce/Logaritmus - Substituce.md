@@ -1,3 +1,7 @@
+---
+tags: [mat, mat/logaritmus]
+learn-date: 2023-01-01
+---
 # Logaritmus - Substituce
 
 $\log^2x=(\log x)(\log x)=(\log x)^2$
