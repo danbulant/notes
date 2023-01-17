@@ -4,47 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "7a3626b92fb0be3d",
+        "id": "5dfad947bc9a2c00",
         "type": "tabs",
         "children": [
           {
-            "id": "3e845f332698836d",
+            "id": "0c0d2d72bc49179c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Převody stupňů na radiány.md",
+                "file": "fyz/fyz.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "21b527554bf208e1",
+            "id": "f48f7dc6676987ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "psi/CCNA2/vlan.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "feb9683b44543e19",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "psi/CCNA2/RIP.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "psi/CCNA2/RIP.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "psi/CCNA2/RIP.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "psi/CCNA2/RIP.md"
+                "file": "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md"
               }
             }
           },
@@ -241,17 +229,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "feb9683b44543e19",
+  "active": "f48f7dc6676987ee",
   "lastOpenFiles": [
+    "fyz/fyz.md",
+    "cjl/cjl.md",
+    "cjl/literatura/slohy/Preromantismus/Utrpení mladého Werthera.md",
+    "cjl/literatura/slohy/Preromantismus/Goethe.md",
+    "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
+    "psi/CCNA2/RIP.md",
     "psi/CCNA2/vlan.md",
     "psi/CCNA2/DHCP.md",
     "psi/CCNA2/Route.md",
-    "psi/CCNA2/EtherChannel.md",
-    "mat/Funkce/Převody stupňů na radiány.md",
-    "mat/Funkce/Orientovaný úhel.md",
-    "mat/Funkce/Logaritmus - Substituce.md",
-    "mat/Funkce/Logaritmus.md",
-    "mat/Matematika.md",
-    "cjl/literatura/slohy/Preromantismus/Goethe.md"
+    "psi/CCNA2/EtherChannel.md"
   ]
 }

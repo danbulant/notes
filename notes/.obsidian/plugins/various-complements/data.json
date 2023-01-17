@@ -55,91 +55,11 @@
         }
       }
     },
-    "generated": {
-      "generated": {
-        "frontMatter": {
-          "count": 2,
-          "lastUpdated": 1671009118104
-        }
-      }
-    },
-    "energie": {
-      "energie": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670929153960
-        }
-      }
-    },
-    "Změna vnitřní energie": {
-      "Změna vnitřní energie": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1670929277135
-        }
-      }
-    },
-    "výměna": {
-      "výměna": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670929586664
-        }
-      }
-    },
-    "\\Delta": {
-      "\\Delta": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670930348796
-        }
-      }
-    },
-    "mc\\Delta": {
-      "mc\\Delta": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1670930689216
-        }
-      }
-    },
-    "Goethe": {
-      "Goethe": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1671001631504
-        }
-      }
-    },
-    "cjl/literatura": {
-      "cjl/literatura": {
-        "frontMatter": {
-          "count": 1,
-          "lastUpdated": 1671008862147
-        }
-      }
-    },
     "cjl/slohy": {
       "cjl/slohy": {
         "frontMatter": {
           "count": 3,
           "lastUpdated": 1673350080656
-        }
-      }
-    },
-    "Expo 58": {
-      "Expo 58": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1671009932254
-        }
-      }
-    },
-    "novin": {
-      "novin": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1671188950497
         }
       }
     },
@@ -172,6 +92,30 @@
         "frontMatter": {
           "count": 1,
           "lastUpdated": 1673519112200
+        }
+      }
+    },
+    "plynu": {
+      "plynu": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1673950374552
+        }
+      }
+    },
+    "Veličiny": {
+      "Veličiny": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1673950488373
+        }
+      }
+    },
+    "Rovnice": {
+      "Rovnice": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1673951109303
         }
       }
     }
