@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/fyz.md",
+                "file": "mat/Funkce/Převody stupňů na radiány.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md",
+                "file": "mat/Funkce/Orientovaný úhel.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md",
+                "file": "mat/Funkce/Převody stupňů na radiány.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md",
+                "file": "mat/Funkce/Převody stupňů na radiány.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md"
+                "file": "mat/Funkce/Převody stupňů na radiány.md"
               }
             }
           },
@@ -225,20 +224,21 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "f48f7dc6676987ee",
+  "active": "0c0d2d72bc49179c",
   "lastOpenFiles": [
     "fyz/fyz.md",
+    "mat/Funkce/Orientovaný úhel.md",
+    "mat/Funkce/Převody stupňů na radiány.md",
+    "mat/Funkce/Logaritmus.md",
+    "mat/mat.md",
+    "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md",
     "cjl/cjl.md",
     "cjl/literatura/slohy/Preromantismus/Utrpení mladého Werthera.md",
     "cjl/literatura/slohy/Preromantismus/Goethe.md",
-    "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
-    "psi/CCNA2/RIP.md",
-    "psi/CCNA2/vlan.md",
-    "psi/CCNA2/DHCP.md",
-    "psi/CCNA2/Route.md",
-    "psi/CCNA2/EtherChannel.md"
+    "cjl/literatura/slohy/Preromantismus/Preromantismus.md"
   ]
 }
