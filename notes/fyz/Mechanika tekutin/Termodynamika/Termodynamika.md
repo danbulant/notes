@@ -11,6 +11,7 @@ $T=273K$ … $t=0\degree C$
 -  [[fyz/Mechanika tekutin/Termodynamika/Ideální plyn|Ideální plyn]]
 -  [[fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice|Pokus - Měření účinnosti varné konvice]]
 -  [[fyz/Mechanika tekutin/Termodynamika/První termodynamický zákon|První termodynamický zákon]]
+-  [[fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu|Tepelné děje Ideálního plynu]]
 -  [[fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota|Termodynamická teplota]]
 -  [[fyz/Mechanika tekutin/Termodynamika/Vnitřní energie, teplo - řešení příkladů|Vnitřní energie, teplo - řešení příkladů]]
 -  [[fyz/Mechanika tekutin/Termodynamika/Vnitřní energie|Vnitřní energie]]

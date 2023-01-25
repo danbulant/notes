@@ -12,6 +12,7 @@ imagePrefix: 'data/'
 -  [[mat/Funkce/Exponenciální funkce|Exponenciální funkce]]
 -  [[mat/Funkce/Funkce vs Rovnice|Funkce vs Rovnice]]
 -  [[mat/Funkce/Funkční přepis|Funkční přepis]]
+-  [[mat/Funkce/Goniometrické funkce|Goniometrické funkce]]
 -  [[mat/Funkce/Inverzní funkce|Inverzní funkce]]
 -  [[mat/Funkce/Kartézský součin|Kartézský součin]]
 -  [[mat/Funkce/Lineární lomené funkce|Lineární lomené funkce]]
