@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e460d9cf8cbc587c",
+        "id": "7a491a44055c43a8",
         "type": "tabs",
         "children": [
           {
-            "id": "3182872335244074",
+            "id": "8a5742d8430e1937",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md",
+                "file": "psi/CCNA2/vlan.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md",
+                "file": "psi/CCNA2/vlan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md",
+                "file": "psi/CCNA2/vlan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md"
+                "file": "psi/CCNA2/vlan.md"
               }
             }
           },
@@ -216,17 +216,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "3182872335244074",
+  "active": "8a5742d8430e1937",
   "lastOpenFiles": [
+    "psi/CCNA2/DHCP.md",
+    "psi/psi.md",
+    "mat/Funkce/Goniometrické funkce.md",
     "mat/mat.md",
     "cjl/literatura/slohy/Romantismus/Romantismus.md",
     "cjl/literatura/slohy/Romantismus/Václav Matěj Kramerius.md",
     "cjl/literatura/slohy/Romantismus/Divadlo.md",
     "cjl/cjl.md",
     "cjl/literatura/slohy/Romantismus/Hudba.md",
-    "cjl/literatura/slohy/Romantismus/Národní obrozeni.md",
-    "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
-    "fyz/Mechanika tekutin/Termodynamika/Ideální plyn.md",
-    "fyz/fyz.md"
+    "cjl/literatura/slohy/Romantismus/Národní obrozeni.md"
   ]
 }
