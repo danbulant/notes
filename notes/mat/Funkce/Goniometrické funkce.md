@@ -38,5 +38,29 @@ $\cos\beta=\frac{x_B}1=x_B$
 | $\alpha$     | $0\degree/0$ | $30\degree/\frac\pi6$ | $45\degree/\frac\pi4$ | $60\degree/\frac\pi3$ | $90\degree/\frac\pi2$ |
 | ------------ | ------------ | --------------------- | --------------------- | --------------------- | --------------------- |
 | $\sin\alpha$ | $0$          | $\frac12$             | $\frac{\sqrt2}2$      | $\frac{\sqrt3}2$      | $1$                   |
-| $\cos\alpha$ | $1$          | $\frac{\sqrt3}2$      | $\frac{\sqrt2}2$      | 0                     |                       |
+| $\cos\alpha$ | $1$          | $\frac{\sqrt3}2$      | $\frac{\sqrt2}2$      |  $\frac12$                    |   0                    |
 
+
+---
+
+40/6.3/8 (petakova)
+
+a)
+$\sin\frac56\pi=\sin\frac{5*\pi*6}6=\sin(5\frac\pi6)=\sin(5*30\degree)=\sin(150\degree)=\sin(30\degree)=\frac12$
+$\sin\frac{15}3\pi=\sin(15*60\degree)=\sin900\degree=0$
+$\sin(-\frac74\pi)=\sin(-7*45\degree)=\sin(450-135\degree)=\sin(315\degree)=-\sin(45\degree)=\frac{\sqrt2}2$
+
+b)
+$\cos\frac34\pi=\cos(3*45\degree)=\cos(135\degree)=\sin(45\degree)=\frac{\sqrt2}2$
+$\cos\frac76\pi=\cos(7*30\degree)=\cos(300-90)=\cos(210\degree)=-\sin(60\degree)=$
+$\cos(-\frac43\pi)$
+
+c)
+$\sin210\degree=-\sin30\degree=-\frac12$
+$\sin330\degree=-\sin30\degree=-\frac12$
+$\sin720\degree=0$
+
+d)
+$\cos(-180\degree)=1$
+$\cos120\degree=\sin60\degree=\frac{\sqrt3}2$
+$\cos240\degree=-\sin30\degree=-\frac12$

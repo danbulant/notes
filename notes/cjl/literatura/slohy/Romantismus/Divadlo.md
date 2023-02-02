@@ -13,11 +13,14 @@
 - 1783
 - Německé
 - 1798 přejmenováno na stavovské
+- tylovo divadlo
 
 - Jan Nepomuk Štěpánek (1783-1844)
 - Dramatik, dramaturg, spoluředitel
 - Čech a Němec
 
+## Klicperovo divadlo
+- v hradci
 - Václav Kliment Klicpera (1792-1859)
 - Dramatik (princip kuklení, postava se představí ale ve zkušenosti to je někdo jiný)
 - Veselohra na mostě
