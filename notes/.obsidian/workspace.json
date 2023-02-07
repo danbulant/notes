@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "5ea8bf9219eaed57",
+        "id": "817f519095997e5f",
         "type": "tabs",
         "children": [
           {
-            "id": "50fe0c34474c1bf4",
+            "id": "a484175f0886a564",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md"
-              }
+              "state": {}
             }
           },
           {
@@ -216,17 +208,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "50fe0c34474c1bf4",
+  "active": "a484175f0886a564",
   "lastOpenFiles": [
-    "mat/mat.md",
-    "cjl/cjl.md",
-    "cjl/literatura/slohy/Romantismus/Národní obrozeni.md",
-    "cjl/literatura/slohy/Romantismus/Frantisek Palacky.md",
-    "cjl/literatura/slohy/Romantismus/Divadlo.md",
-    "cjl/literatura/slohy/Romantismus/Václav Matěj Kramerius.md",
-    "cjl/literatura/slohy/Romantismus/Romantismus.md",
-    "psi/psi.md",
-    "psi/CCNA2/vlan.md",
-    "psi/CCNA2/DHCP.md"
+    "kbb/tools/arp-scan.md",
+    "kbb/tools/aircrack-ng.md",
+    "kbb/tools/john.md",
+    "kbb/tools/tools.md",
+    "kbb/tools/SQLMap.md",
+    "kbb/tools/nmap.md",
+    "kbb/tools/arpspoof.md",
+    "kbb/kbb.md",
+    "mat/Funkce/Goniometrické funkce.md",
+    "mat/mat.md"
   ]
 }
