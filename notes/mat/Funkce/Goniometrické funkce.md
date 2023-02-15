@@ -8,6 +8,8 @@ $\cos\alpha=\frac{b}c$ ($\sin\beta=\frac{a}c$)
 $\tg\alpha=\frac{a}b$
 $\cotg\alpha=\frac{b}a$
 
+![](Pasted%20image%2020230215114031.png)
+
 ---
 
 V pravoúhlem $\triangle ABC$  ($C$): $\beta=38\degree$; $a=7cm$, ostatní úhly a strany?

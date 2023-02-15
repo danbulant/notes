@@ -1,0 +1,11 @@
+# Zvukova karta
+- co dela zvukova karta, k cemu slouzi
+- jakym zpusobem funguje digitalizace zvuku
+- na jakem principu funguje reproduktor
+- dulezite parametry u reproduktoru
+- podle jakych parametru by jste si vybrali sluchatka
+- jake tri druhy mikrofonu znate
+- kde/pro co vyuzijete dynamicky mikrofon
+- kde najdete elektronove mikrofony
+- k cemu slouzi smer mikrofonu
+- jake parametry mikrofonu urcujeme

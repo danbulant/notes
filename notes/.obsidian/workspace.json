@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "817f519095997e5f",
+        "id": "bff99b47cce9d1cd",
         "type": "tabs",
         "children": [
           {
-            "id": "a484175f0886a564",
+            "id": "aabbc9ef4eb756f1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "mat/Funkce/Goniometrické funkce.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "osob",
+                "query": "matice",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "mat/Funkce/Goniometrické funkce.md"
+              }
             }
           },
           {
@@ -208,17 +216,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "a484175f0886a564",
+  "active": "aabbc9ef4eb756f1",
   "lastOpenFiles": [
-    "kbb/tools/arp-scan.md",
-    "kbb/tools/aircrack-ng.md",
-    "kbb/tools/john.md",
-    "kbb/tools/tools.md",
-    "kbb/tools/SQLMap.md",
-    "kbb/tools/nmap.md",
-    "kbb/tools/arpspoof.md",
-    "kbb/kbb.md",
-    "mat/Funkce/Goniometrické funkce.md",
-    "mat/mat.md"
+    "mat/Funkce/Tangens.md",
+    "mat/Funkce/Příklady.md",
+    "mat/Funkce/Sinus.md",
+    "mat/Funkce/Cotangens.md",
+    "mat/Funkce/Cosinus.md",
+    "dej/dej.md",
+    "dej/moderní/komunismus/Untitled.md",
+    "fyz/fyz.md",
+    "cjl/cjl.md",
+    "ang/Essay - Description of our school.md"
   ]
 }

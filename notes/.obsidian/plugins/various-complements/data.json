@@ -55,14 +55,6 @@
         }
       }
     },
-    "mat/geometrie": {
-      "mat/geometrie": {
-        "frontMatter": {
-          "count": 1,
-          "lastUpdated": 1673519112200
-        }
-      }
-    },
     "plynu": {
       "plynu": {
         "currentFile": {
@@ -156,6 +148,14 @@
         "internalLink": {
           "count": 1,
           "lastUpdated": 1674632664293
+        }
+      }
+    },
+    "teplo": {
+      "teplo": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1676372910354
         }
       }
     }
