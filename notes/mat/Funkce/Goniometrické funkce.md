@@ -10,6 +10,8 @@ $\cotg\alpha=\frac{b}a$
 
 ![](Pasted%20image%2020230215114031.png)
 
+![](Pasted%20image%2020230216110440.png)
+
 ---
 
 V pravoúhlem $\triangle ABC$  ($C$): $\beta=38\degree$; $a=7cm$, ostatní úhly a strany?
@@ -66,3 +68,38 @@ d)
 $\cos(-180\degree)=1$
 $\cos120\degree=\sin60\degree=\frac{\sqrt3}2$
 $\cos240\degree=-\sin30\degree=-\frac12$
+
+---
+
+
+
+$f_1: y=\sin x$
+$f_1(0)=0$
+$f_1(\frac\pi2)=1$
+$f_1(\frac\pi3)=0.5$
+
+![](Pasted%20image%2020230216113442.png)
+
+---
+
+$f_2:u=\sin x+2$
+$f_1(0)=2$
+$f_1(\frac\pi2)=3$
+$f_1(\frac\pi3)=2.5$
+
+![](Pasted%20image%2020230216113554.png)
+
+---
+
+$f_3: y=\sin(x+2)$
+
+![](Pasted%20image%2020230216113714.png)
+
+---
+
+$f_4: y=2\sin x$
+$f_4(0)=0$
+$f_4(\frac\pi2)=2$
+$f_4(\frac\pi3)=1$
+
+![](Pasted%20image%2020230216114136.png)
