@@ -55,30 +55,6 @@
         }
       }
     },
-    "plynu": {
-      "plynu": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1673950374552
-        }
-      }
-    },
-    "Veličiny": {
-      "Veličiny": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1673950488373
-        }
-      }
-    },
-    "Rovnice": {
-      "Rovnice": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1673951109303
-        }
-      }
-    },
     "Objemový tok": {
       "Objemový tok": {
         "internalLink": {
@@ -164,6 +140,14 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1676542464088
+        }
+      }
+    },
+    "\\eta_{\\max}": {
+      "\\eta_{\\max}": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1676978600753
         }
       }
     }
