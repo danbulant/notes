@@ -27,3 +27,20 @@ $Q_1\dot=276kJ$
 $W'=Q_1-Q_2$
 $Q_2=Q_1-W'$
 $Q_2=202kJ$
+
+---
+
+Plyn uzavřený v nádobě s pohyblivým pístem má objem $1m^3$, teplota $0\degree C$ a tlak $200kPa$. Jakou práci plyn vykoná, jestliže při stálém tlaku zvýšíme jeho teplotu na $20\degree C$
+
+Isobarický děj
+
+$W'=p*\Delta V=p(V_2-V_1)$
+$\frac{V_1}{T_1}=\frac{V_2}{T_2}\Rightarrow V_2=\frac{V_1}{T_1}*T_2$
+
+$W'=p(\frac{V_1}{T_1}*T_2-V_1)=pV_1(\frac{T_2}{T_1}-1)$
+
+$p=2*10^5$ ($200kPa$)
+$T_2=293K$
+$T_1=273K$
+
+$W'=2*10^5*1(\frac{293}{273}-1)=14650J$

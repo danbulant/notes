@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "92925f9d9c0b6d7e",
+        "id": "887658f6e8ed514c",
         "type": "tabs",
         "children": [
           {
-            "id": "254889ac9d7fbb00",
+            "id": "679de776d0f05c82",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Chladící stroj.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1346ce4babe32305",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md"
+                "file": "mat/Funkce/Goniometrické funkce.md"
               }
             }
           },
@@ -229,17 +216,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "1346ce4babe32305",
+  "active": "679de776d0f05c82",
   "lastOpenFiles": [
+    "mat/Funkce/Příklady.md",
+    "mat/Funkce/Goniometrické funkce.md",
+    "mat/mat.md",
+    "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
     "fyz/Mechanika tekutin/Termodynamika/Chladící stroj.md",
     "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md",
-    "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
     "fyz/Mechanika tekutin/Termodynamika/První termodynamický zákon.md",
     "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
-    "mat/mat.md",
     "psi/CCNA2/EtherChannel.md",
-    "psi/psi.md",
-    "mat/Funkce/Goniometrické funkce.md",
-    "mat/Funkce/Funkční přepis.md"
+    "psi/psi.md"
   ]
 }

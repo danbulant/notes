@@ -103,3 +103,44 @@ $f_4(\frac\pi2)=2$
 $f_4(\frac\pi3)=1$
 
 ![](Pasted%20image%2020230216114136.png)
+
+---
+
+$h_3: y=sin(\frac{\pi}3-\frac14x)$
+$y=-sin(\frac14x-\frac\pi3)$
+
+$y=sin(\frac{x}4)$
+
+$\frac{x}4=\frac\pi2 \Leftrightarrow x=2\pi$
+$\sin(\frac{2\pi}4)=sin(\frac\pi2)=1$
+$[2\pi,1]$
+
+$\frac{x}4=\frac\pi2\Leftrightarrow x=-2\pi$
+$sin(-\frac{2\pi}4)=sin(-\frac\pi2)=-1$
+$[2\pi,-1]$
+
+---
+
+$h_5: y=\sin2\pi x$
+
+![](Pasted%20image%2020230221131736.png)
+
+perioda 1
+s y se protne v x0
+obor hodnot: $\langle-1;1\rangle$
+
+---
+
+$y=sin(2\pi+x)$
+$y=sin(x)$
+
+![](Pasted%20image%2020230221132458.png)
+
+s y se protne v x0
+obor hodnot $\langle -1;1\rangle$
+perioda $2\pi$
+
+---
+
+$y=\sin(\frac14x-\frac\pi3$)
+
