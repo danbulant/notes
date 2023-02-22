@@ -8,27 +8,23 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8ee2b5c6c230eefc",
+            "id": "d9eb311d93d8f113",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
+                "file": "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d9eb311d93d8f113",
+            "id": "726155ca4a6decca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cjl/literatura/Tropy a figury.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -90,7 +86,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cjl/literatura/Tropy a figury.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +102,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cjl/literatura/Tropy a figury.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,9 +147,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "cjl/literatura/Tropy a figury.md"
-              }
+              "state": {}
             }
           },
           {
@@ -229,17 +221,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "d9eb311d93d8f113",
+  "active": "726155ca4a6decca",
   "lastOpenFiles": [
+    "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
     "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
+    "fyz/fyz.md",
     "cjl/cjl.md",
     "cjl/literatura/Tropy a figury.md",
     "mat/Funkce/Goniometrické funkce.md",
     "mat/Funkce/Příklady.md",
     "mat/mat.md",
     "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
-    "fyz/Mechanika tekutin/Termodynamika/Chladící stroj.md",
-    "fyz/Mechanika tekutin/Termodynamika/Pokus - Měření účinnosti varné konvice.md",
-    "fyz/Mechanika tekutin/Termodynamika/První termodynamický zákon.md"
+    "fyz/Mechanika tekutin/Termodynamika/Chladící stroj.md"
   ]
 }
