@@ -22,7 +22,7 @@ tags:
 - nevytáhl paty z domu -> epanastrocea
 - domy vytřeštily oči -> personifikace
 - to bych mohl čekat sto let -> hyperbola
-- pojďme, pojďme, ale zticha -> epizeuxis
+- pojďme, pojďme, ale zticha -> epizeuxis (opakování v rámci verše)
 - nad ouvalem sova houká -> onomutopie
 - hladový jako vlk -> přirovnávání
 - její modré pomněnky na mě hleděly -> personifikace
@@ -48,6 +48,7 @@ tags:
 - kapka štěstí -> metafora
 - bojovat za kalich -> metonimie
 - pojďme, pojďme, ale zticha -> epizeuxis
+- byl pozdní večer, první máj - ; veření máj - byl lásky čas → epanostrofa (opakování na konci a začátku verše (; odděluje řádek))
 
 **lyrika**
 1. epizeuxis (a když bude pršet zmokneme, zmokneme)
