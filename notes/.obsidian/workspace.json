@@ -23,12 +23,28 @@
             "id": "726155ca4a6decca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "cjl/cjl.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "570e22d9980a0f5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cjl/literatura/slohy/Romantismus/Příprava na test.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,6 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "cjl/literatura/slohy/Romantismus/Příprava na test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,6 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "cjl/literatura/slohy/Romantismus/Příprava na test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +165,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "cjl/literatura/slohy/Romantismus/Příprava na test.md"
+              }
             }
           },
           {
@@ -221,12 +241,14 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "726155ca4a6decca",
+  "active": "570e22d9980a0f5c",
   "lastOpenFiles": [
+    "cjl/cjl.md",
+    "cjl/literatura/slohy/Romantismus/Příprava na test.md",
+    "data/data.md",
+    "fyz/fyz.md",
     "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
     "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
-    "fyz/fyz.md",
-    "cjl/cjl.md",
     "cjl/literatura/Tropy a figury.md",
     "mat/Funkce/Goniometrické funkce.md",
     "mat/Funkce/Příklady.md",
