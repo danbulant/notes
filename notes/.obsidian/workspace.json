@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "3cb7511d20d754b0",
+        "id": "c4cf3f75c72f4cb2",
         "type": "tabs",
         "children": [
           {
-            "id": "d9eb311d93d8f113",
+            "id": "493912e1c66c4464",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "726155ca4a6decca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cjl/cjl.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "570e22d9980a0f5c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cjl/literatura/slohy/Romantismus/Příprava na test.md",
+                "file": "mat/Funkce/Cotangens.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cjl/literatura/slohy/Romantismus/Příprava na test.md",
+                "file": "mat/Funkce/Cotangens.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cjl/literatura/slohy/Romantismus/Příprava na test.md",
+                "file": "mat/Funkce/Cotangens.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cjl/literatura/slohy/Romantismus/Příprava na test.md"
+                "file": "mat/Funkce/Cotangens.md"
               }
             }
           },
@@ -241,18 +216,22 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "570e22d9980a0f5c",
+  "active": "493912e1c66c4464",
   "lastOpenFiles": [
+    "mat/Funkce/Tangens.md",
+    "data/Pasted image 20230302110903.png",
+    "mat/mat.md",
     "cjl/cjl.md",
+    "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
+    "psi/CCNA2/Port security.md",
+    "psi/psi.md",
     "cjl/literatura/slohy/Romantismus/Příprava na test.md",
     "data/data.md",
     "fyz/fyz.md",
-    "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
     "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
     "cjl/literatura/Tropy a figury.md",
     "mat/Funkce/Goniometrické funkce.md",
     "mat/Funkce/Příklady.md",
-    "mat/mat.md",
     "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
     "fyz/Mechanika tekutin/Termodynamika/Chladící stroj.md"
   ]

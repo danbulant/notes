@@ -33,6 +33,12 @@ $\tan(x+k\pi)=\tan x$
 
 ve 3. kv. je $\frac--=+$
 
+
+![](Pasted%20image%2020230302110903.png)
+
+
+
+
 ---
 
 $x=\frac{\pi}4=45\degree$
