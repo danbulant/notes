@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c4cf3f75c72f4cb2",
+        "id": "0111a1bc9ac38a42",
         "type": "tabs",
         "children": [
           {
-            "id": "493912e1c66c4464",
+            "id": "3b72681fe46d1d0e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Funkce/Cotangens.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Cotangens.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Cotangens.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "mat/Funkce/Cotangens.md"
-              }
+              "state": {}
             }
           },
           {
@@ -216,11 +208,13 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "493912e1c66c4464",
+  "active": "8c976bdcdc74c84c",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "mat/mat.md",
+    "mat/Funkce/Cotangens.md",
     "mat/Funkce/Tangens.md",
     "data/Pasted image 20230302110903.png",
-    "mat/mat.md",
     "cjl/cjl.md",
     "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
     "psi/CCNA2/Port security.md",
