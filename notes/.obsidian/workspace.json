@@ -20,7 +20,31 @@
             }
           },
           {
+            "id": "e2420feff8894862",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Funkce/Samostudium 15.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "84a4caaefb7062c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Funkce/Příklady.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23b5b5bb8f644b0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Samostudium 17..md",
+                "file": "mat/Funkce/Samostudium 15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Samostudium 17..md",
+                "file": "mat/Funkce/Samostudium 15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Funkce/Samostudium 17..md"
+                "file": "mat/Funkce/Samostudium 15.md"
               }
             }
           },
@@ -228,11 +253,12 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "7df29fdf3742280a",
+  "active": "e2420feff8894862",
   "lastOpenFiles": [
-    "mat/Funkce/Goniometrické funkce.md",
-    "mat/Funkce/Samostudium 17..md",
     "mat/Funkce/Příklady.md",
+    "mat/Funkce/Goniometrické funkce.md",
+    "mat/Funkce/Samostudium 15.md",
+    "mat/Funkce/Samostudium 17..md",
     "mat/Funkce/Převody stupňů na radiány.md",
     "mat/mat.md",
     "cjl/cjl.md",

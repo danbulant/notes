@@ -24,6 +24,7 @@ imagePrefix: 'data/'
 -  [[mat/Funkce/Příklady|Příklady]]
 -  [[mat/Funkce/Prostá funkce|Prostá funkce]]
 -  [[mat/Funkce/Rovnost funkcí|Rovnost funkcí]]
+-  [[mat/Funkce/Samostudium 15|Samostudium 15]]
 -  [[mat/Funkce/Samostudium 17.|Samostudium 17.]]
 -  [[mat/Funkce/Sinus|Sinus]]
 -  [[mat/Funkce/Tangens|Tangens]]
