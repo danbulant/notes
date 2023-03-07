@@ -47,30 +47,6 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "cjl/slohy": {
-      "cjl/slohy": {
-        "frontMatter": {
-          "count": 4,
-          "lastUpdated": 1674631178064
-        }
-      }
-    },
-    "Objemový tok": {
-      "Objemový tok": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1674555407566
-        }
-      }
-    },
-    "\\frac{p_2V_2}{T_2}": {
-      "\\frac{p_2V_2}{T_2}": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674557552976
-        }
-      }
-    },
     "Dějová linka": {
       "Dějová linka": {
         "internalLink": {
@@ -79,51 +55,11 @@
         }
       }
     },
-    "Kramerius": {
-      "Kramerius": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674630993511
-        }
-      }
-    },
-    "Knihkupectví": {
-      "Knihkupectví": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674631137330
-        }
-      }
-    },
     "cjl/slohy/romantismus": {
       "cjl/slohy/romantismus": {
         "frontMatter": {
           "count": 4,
           "lastUpdated": 1675796871087
-        }
-      }
-    },
-    "hrají": {
-      "hrají": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674631807272
-        }
-      }
-    },
-    "Německé": {
-      "Německé": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1674632124708
-        }
-      }
-    },
-    "Šárka Pražáková": {
-      "Šárka Pražáková": {
-        "internalLink": {
-          "count": 1,
-          "lastUpdated": 1674632664293
         }
       }
     },
@@ -156,6 +92,54 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1677049823397
+        }
+      }
+    },
+    "2x-\\frac\\pi4": {
+      "2x-\\frac\\pi4": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678175910376
+        }
+      }
+    },
+    "strukturu": {
+      "strukturu": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678187766010
+        }
+      }
+    },
+    "stavu": {
+      "stavu": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678187906558
+        }
+      }
+    },
+    "k\\frac{F}S": {
+      "k\\frac{F}S": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678188601234
+        }
+      }
+    },
+    "Zákon sudnyj ljudem": {
+      "Zákon sudnyj ljudem": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1678188734961
+        }
+      }
+    },
+    "k\\in\\mathbb{Z}\\}": {
+      "k\\in\\mathbb{Z}\\}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1678194179087
         }
       }
     }

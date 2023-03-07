@@ -445,3 +445,128 @@ $2n\log6+\log5=n\log7+\log56$
 $2n\log6-n\log7=\log5+\log56$
 $n(2\log6-\log7)=\log5+\log56$
 $n=\frac{\log5+\log56}{2\log6-\log7}$
+
+---
+
+### Goniometricke rovnice
+
+52/6 a
+$\sin3x=1$
+$t=3x$
+$\sin t=1$
+$t=\pi+2k\pi$
+$t=3x$
+$3x=\pi+2k\pi$
+$x=\frac{\pi+2k\pi}3$
+
+$K=\{\frac{\pi+2k\pi}3;k\in\mathbb{Z}\}$
+
+52/6 b
+$\cos 10x=\frac{\sqrt2}2$
+$t=10x$
+$\cos t=\frac{\sqrt2}2$
+$t=45\degree=\frac14\pi$
+$x=t/10$
+$x=\frac{\frac14\pi}{10}$
+
+$k=\frac{\pi}{40}$
+
+52/6 c
+$\cos\frac52x=0$
+$t=\frac52x$
+$\cos t=0$
+$t_1=2k\pi$
+$t_2=2k\pi+\pi$
+
+$K=\{2k\pi+\pi;k\in\mathbb{Z}\}$
+
+$\frac52x=2k\pi$
+$x_1=\frac{4k\pi}5$
+$x_2=\frac{4k\pi+\pi}5$
+
+$K=\{\frac{4k\pi+\pi}5;k\in\mathbb{Z}\}$
+
+52/6 d
+$\sin(2x-\frac\pi4)=\frac{\sqrt2}2$
+$t=2x-\frac\pi4$
+$\sin t=\frac{\sqrt2}2$
+$t=45\degree=\frac14\pi$
+$\frac14\pi=2x-\frac\pi4$
+$2x=\frac14\pi+\frac14\pi$
+$x=\frac14\pi$
+$K={\frac14\pi}$
+
+
+71a
+
+a) $2\sin(3x+\pi)=-1$
+$t=3x+\pi$
+$2sin(t)=-1$
+$\sin(t)=-\frac12$
+$t_1=210\degree C=\frac76\pi+2k\pi$
+$t_2=330\degree C=\frac{11}6\pi+2k\pi$
+
+$t=3x+\pi$
+$x=\frac{t-\pi}3$
+$x_1=\frac{-\pi+\frac76\pi+2k\pi}3=\frac{\frac16\pi+2k\pi}3$
+$x_2=\frac{-\pi+\frac{11}6\pi+2k\pi}3=\frac{\frac{5}6\pi+2k\pi}3$
+
+$K=\cup_{k\in\mathbb{Z}}\{\frac{\frac16\pi+2k\pi}3;\frac{\frac{5}6\pi+2k\pi}3\}$
+
+b)
+
+$\sin(2x)=\cos(3x)*\sin(2x)$
+
+$\cos(3x)=1$
+$t=3x$
+
+$\cos(t)=1$
+$t=2k\pi$
+
+$x=\frac{2k\pi}3$
+
+$K=\{\frac{2k\pi}3;k\in\mathbb{Z}\}$
+
+alt:
+
+$0=\cos(3x)\sin(2x)-\sin(2x)$
+$0=\sin(2x)(\cos(3x)-1)$
+
+$\sin(2x)=0$
+$2x=k\pi$
+$x=\frac12k\pi$
+
+nebo
+$cos(3x)-1=0$
+$t=3x$
+$\cos(t)=1$
+$3x=0+2k\pi$
+$x=\frac23k\pi$
+
+$x=\{\frac12k\pi\}\cup\{\frac23k\pi\};k\in\mathbb{Z}$
+
+---
+
+$\tg^2x+2\tg x=3$
+$m^2+2m-3=0$
+$(m-1)(m+3)=0$
+$m=1$
+$m=-3$
+
+$\tg x=1$
+$x=\frac{1}4\pi+k\pi$
+
+$\tg x=-3$
+$x=\tg^{-1}(-3)$
+$x=-71\degree33'$
+
+---
+
+42/22 a
+
+$\tg\frac76\pi=\frac{\sqrt3}2$
+$\tg4\pi=1$
+$\tg\frac54\pi=\frac{\sqrt2}2$
+
+42/22 b
+
