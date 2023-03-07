@@ -561,12 +561,3 @@ $x=\tg^{-1}(-3)$
 $x=-71\degree33'$
 
 ---
-
-42/22 a
-
-$\tg\frac76\pi=\frac{\sqrt3}2$
-$\tg4\pi=1$
-$\tg\frac54\pi=\frac{\sqrt2}2$
-
-42/22 b
-

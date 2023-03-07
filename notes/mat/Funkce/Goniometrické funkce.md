@@ -39,10 +39,12 @@ $\cos\beta=\frac{x_B}1=x_B$
 
 ## Tabulka význačných hodnot 
 
-| $\alpha$     | $0\degree/0$ | $30\degree/\frac\pi6$ | $45\degree/\frac\pi4$ | $60\degree/\frac\pi3$ | $90\degree/\frac\pi2$ |
-| ------------ | ------------ | --------------------- | --------------------- | --------------------- | --------------------- |
-| $\sin\alpha$ | $0$          | $\frac12$             | $\frac{\sqrt2}2$      | $\frac{\sqrt3}2$      | $1$                   |
-| $\cos\alpha$ | $1$          | $\frac{\sqrt3}2$      | $\frac{\sqrt2}2$      |  $\frac12$                    |   0                    |
+| $\alpha$       | $0\degree/0$ | $30\degree/\frac\pi6$ | $45\degree/\frac\pi4$ | $60\degree/\frac\pi3$ | $90\degree/\frac\pi2$ |
+| -------------- | ------------ | --------------------- | --------------------- | --------------------- | --------------------- |
+| $\sin\alpha$   | $0$          | $\frac12$             | $\frac{\sqrt2}2$      | $\frac{\sqrt3}2$      | $1$                   |
+| $\cos\alpha$   | $1$          | $\frac{\sqrt3}2$      | $\frac{\sqrt2}2$      | $\frac12$             | 0                     |
+| $\tg \alpha$   | 0            | $\frac{\sqrt3}3$      | $1$                   | $\sqrt3$              | -                      |
+| $\cotg \alpha$ | -            | $\sqrt3$              | $1$                   | $\frac{\sqrt3}3$      | 0                     |
 
 
 ---
