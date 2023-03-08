@@ -12,3 +12,10 @@ Před čím dítě matka chránila zatím není známo, je více pracovních teo
 Podle sousedů dítě neposlouchalo vždy svou matku a občas, včetně dneška, byl slyšet křik mířený na dítě.
 
 Záchranáři by chtěli poděkovat za rychlé jednání manžela a jeho spolupráci, díky které se podařilo matku oživit.
+
+----
+
+
+Antonín Dvořák - symfonické básně
+- Polednice, Holoubek, Zlatý kolovrat, Vodník
+

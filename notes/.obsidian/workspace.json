@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Samostudium 15.md",
+                "file": "cjl/cjl.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "60971bc725cf3316",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Funkce/Samostudium 18.md",
                 "mode": "source",
                 "source": false
               }
@@ -54,9 +66,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d47c72de1b77f8b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cjl/literatura/slohy/Romantismus/Kytice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -114,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Samostudium 15.md",
+                "file": "mat/Funkce/Samostudium 18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Samostudium 15.md",
+                "file": "mat/Funkce/Samostudium 18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Funkce/Samostudium 15.md"
+                "file": "mat/Funkce/Samostudium 18.md"
               }
             }
           },
@@ -253,17 +277,21 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "e2420feff8894862",
+  "active": "60971bc725cf3316",
   "lastOpenFiles": [
-    "mat/Funkce/Příklady.md",
-    "mat/Funkce/Goniometrické funkce.md",
+    "data/Pasted image 20230308104205.png",
+    "data/Pasted image 20230308104129.png",
+    "data/Pasted image 20230308103659.png",
+    "cjl/cjl.md",
+    "mat/Funkce/Samostudium 18.md",
     "mat/Funkce/Samostudium 15.md",
     "mat/Funkce/Samostudium 17..md",
+    "cjl/literatura/slohy/Romantismus/Kytice.md",
+    "mat/Funkce/Příklady.md",
+    "mat/Funkce/Goniometrické funkce.md",
     "mat/Funkce/Převody stupňů na radiány.md",
     "mat/mat.md",
-    "cjl/cjl.md",
     "cjl/jazyky/jazyky.md",
-    "cjl/literatura/slohy/Romantismus/Kytice.md",
     "cjl/literatura/slohy/Romantismus/Untitled.md",
     "fyz/fyz.md",
     "fyz/Mechanika tekutin/Mechanika tekutin.md",
@@ -280,7 +308,6 @@
     "Untitled.canvas",
     "mat/Funkce/Cotangens.md",
     "mat/Funkce/Tangens.md",
-    "data/Pasted image 20230302110903.png",
     "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
     "psi/CCNA2/Port security.md",
     "psi/psi.md",
@@ -288,7 +315,6 @@
     "data/data.md",
     "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
     "cjl/literatura/Tropy a figury.md",
-    "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
-    "fyz/Mechanika tekutin/Termodynamika/Chladící stroj.md"
+    "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md"
   ]
 }

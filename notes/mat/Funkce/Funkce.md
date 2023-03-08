@@ -26,6 +26,7 @@ imagePrefix: 'data/'
 -  [[mat/Funkce/Rovnost funkcí|Rovnost funkcí]]
 -  [[mat/Funkce/Samostudium 15|Samostudium 15]]
 -  [[mat/Funkce/Samostudium 17.|Samostudium 17.]]
+-  [[mat/Funkce/Samostudium 18|Samostudium 18]]
 -  [[mat/Funkce/Sinus|Sinus]]
 -  [[mat/Funkce/Tangens|Tangens]]
 -  [[mat/Funkce/Vlastnosti funkcí|Vlastnosti funkcí]]
