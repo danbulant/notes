@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7df29fdf3742280a",
+            "id": "e2420feff8894862",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Samostudium 17..md",
+                "file": "mat/Funkce/Samostudium 15.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e2420feff8894862",
+            "id": "7df29fdf3742280a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cjl/cjl.md",
+                "file": "mat/Funkce/Samostudium 17..md",
                 "mode": "source",
                 "source": false
               }
@@ -66,21 +66,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d47c72de1b77f8b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cjl/literatura/slohy/Romantismus/Kytice.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -138,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Samostudium 18.md",
+                "file": "mat/Funkce/Příklady.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Samostudium 18.md",
+                "file": "mat/Funkce/Příklady.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Funkce/Samostudium 18.md"
+                "file": "mat/Funkce/Příklady.md"
               }
             }
           },
@@ -277,18 +265,18 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "60971bc725cf3316",
+  "active": "84a4caaefb7062c3",
   "lastOpenFiles": [
+    "mat/Funkce/Goniometrické funkce.md",
+    "mat/Funkce/Příklady.md",
+    "mat/Funkce/Samostudium 18.md",
+    "mat/Funkce/Samostudium 17..md",
+    "mat/Funkce/Samostudium 15.md",
+    "cjl/cjl.md",
     "data/Pasted image 20230308104205.png",
     "data/Pasted image 20230308104129.png",
     "data/Pasted image 20230308103659.png",
-    "cjl/cjl.md",
-    "mat/Funkce/Samostudium 18.md",
-    "mat/Funkce/Samostudium 15.md",
-    "mat/Funkce/Samostudium 17..md",
     "cjl/literatura/slohy/Romantismus/Kytice.md",
-    "mat/Funkce/Příklady.md",
-    "mat/Funkce/Goniometrické funkce.md",
     "mat/Funkce/Převody stupňů na radiány.md",
     "mat/mat.md",
     "cjl/jazyky/jazyky.md",
@@ -303,7 +291,6 @@
     "data/Pasted image 20230307122109.png",
     "data/Pasted image 20230307121956.png",
     "data/Pasted image 20230307121620.png",
-    "data/Pasted image 20230307121603.png",
     "fyz/Mechanika tekutin/Termodynamika/Termodynamika.md",
     "Untitled.canvas",
     "mat/Funkce/Cotangens.md",

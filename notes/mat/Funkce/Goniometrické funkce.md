@@ -46,6 +46,7 @@ $\cos\beta=\frac{x_B}1=x_B$
 | $\tg \alpha$   | 0            | $\frac{\sqrt3}3$      | $1$                   | $\sqrt3$              | -                      |
 | $\cotg \alpha$ | -            | $\sqrt3$              | $1$                   | $\frac{\sqrt3}3$      | 0                     |
 
+$\sin^2x+\cos^2x=1$
 
 ---
 

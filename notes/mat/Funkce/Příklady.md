@@ -561,3 +561,86 @@ $x=\tg^{-1}(-3)$
 $x=-71\degree33'$
 
 ---
+
+
+52/6 i
+
+$\sqrt2\cos(4\pi+2x)=-1$
+$t=4\pi+2x$
+$\cos(t)=-\frac1{\sqrt2}$
+
+$\frac{\sqrt2}2=\frac{1}{\sqrt2}$ … rozšířit $*\frac{\sqrt2}{\sqrt2}=\frac{\sqrt2}2$
+
+$\cos(t)=-\frac{\sqrt2}2$
+$t_1=\frac34\pi+2k\pi$
+$4\pi+2x=\frac34\pi+2k\pi$
+$2x=\frac34\pi+2k\pi-4\pi$
+$2x=-3\frac14\pi+2k\pi$
+
+$\underline{x=\frac{13}8\pi+k\pi}$
+
+$t_2=\frac54\pi+2k\pi$
+$4\pi+2x=\frac54\pi+2k\pi$
+$2x=-\frac{11}4\pi+2k\pi$
+
+$\underline{x=-\frac{11}8\pi+k\pi}$
+
+
+---
+
+$2\tg(x)\sin(3x)=\sqrt3\tg x$
+$2\tg(x)\sin(3x)-\sqrt3\tg x=0$
+$\tg(x)(2\sin(3x)-\sqrt3)=0$
+
+$\tg(x)=0$
+$\underline{x=k\pi}$
+
+$2\sin(3x)-\sqrt3=0$
+$2\sin(3x)=\sqrt3$
+$sin(3x)=\frac{\sqrt3}2$
+$t=3x$
+
+$t=\frac\pi3+2k\pi$
+$3x=\frac\pi3+2k\pi$
+
+$\underline{x=\frac\pi9+\frac23k\pi}$
+
+$\underline{x=\frac{2\pi}9+\frac23k\pi}$
+
+3 sady řešení 
+
+---
+
+$2\sin x\cos5x=\sqrt2\sin x$
+$2\sin x\cos5x-\sqrt2\sin x=0$
+$\sin x(2\cos5x-\sqrt2)=0$
+
+$\sin x=0$
+$x=0\degree+k180\degree$
+
+$2\cos5x-\sqrt2=0$
+$2\cos 5x=\sqrt2$
+$\cos5x=\frac{\sqrt2}2$
+$\cos t=\frac{\sqrt2}2$
+$t_1=45\degree+k360\degree=5x$
+$x_1=9\degree+k72\degree$
+$t_2=315\degree=5x$
+$x_2=63\degree+k72\degree$
+
+---
+
+$1-4\cos^2x=4\sin x$
+$1-4\cos x\cos x=4\sin x$
+$1-4\cos x\cos x-4\sin x=0$
+$4\cos^2 x-4\sin x-1=0$
+$4\cos^2x-4\cos(x-\frac12\pi)-1=0$
+
+$\sin^2x+\cos^2x=1^2$
+$\cos^2x=1-\sin^x$
+
+$1=4\sin x+4\cos^2x$
+
+$1=4\sin x+4(1-\sin^2x)$
+$1=4\sin x+4-4\sin^2x$
+$k=\sin x$
+$4k^2-4k-3=0$
