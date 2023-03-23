@@ -11,8 +11,12 @@
             "id": "e0bf05276f7aadee",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "mat/Funkce/Cosinus.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "mat/Funkce/Cosinus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "mat/Funkce/Cosinus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "mat/Funkce/Cosinus.md"
+              }
             }
           },
           {
@@ -210,6 +218,12 @@
   },
   "active": "e0bf05276f7aadee",
   "lastOpenFiles": [
+    "mat/Funkce/Cotangens.md",
+    "mat/Funkce/Sinus.md",
+    "mat/Funkce/Cosinus.md",
+    "mat/Funkce/Tangens.md",
+    "mat/Funkce/Příklady.md",
+    "mat/mat.md",
     "cjl/literatura/slohy/slohy.md",
     "cjl/literatura/Bachorka.md",
     "cjl/cjl.md",
@@ -230,13 +244,7 @@
     "fyz/Mechanika tekutin/Proudění/Odporová síla.md",
     "Untitled.md",
     "fyz/Pevne blbosti/Deformace.md",
-    "fyz/Pevne blbosti/Pevne blbosti.md",
-    "fyz/Mechanika tekutin/Příklady 14.11..md",
     "fyz/Pevne blbosti",
-    "mat/Funkce/Goniometrické funkce.md",
-    "mat/Funkce/Samostudium 15.md",
-    "mat/Funkce/Samostudium 17..md",
-    "mat/Funkce/Samostudium 18.md",
     "data/Pasted image 20230308104205.png",
     "data/Pasted image 20230308104129.png",
     "data/Pasted image 20230308103659.png",

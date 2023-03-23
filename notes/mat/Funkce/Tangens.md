@@ -37,6 +37,17 @@ ve 3. kv. je $\frac--=+$
 ![](Pasted%20image%2020230302110903.png)
 
 
+---
+
+$\tg x=0$
+$x=k\pi,k\in\mathbb{Z}$
+
+$\tg x=1$
+$x=\frac\pi4+k\pi$
+
+$\tg x=-1$
+$x=\frac{3\pi}4+k\pi$
+
 
 
 ---

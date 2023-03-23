@@ -142,6 +142,30 @@
           "lastUpdated": 1679396268129
         }
       }
+    },
+    "k\\in\\mathbb{Z}": {
+      "k\\in\\mathbb{Z}": {
+        "currentFile": {
+          "count": 9,
+          "lastUpdated": 1679566996452
+        }
+      }
+    },
+    "\\frac\\pi2+2k\\pi": {
+      "\\frac\\pi2+2k\\pi": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679566397372
+        }
+      }
+    },
+    "\\frac{3\\pi}2+2k\\pi": {
+      "\\frac{3\\pi}2+2k\\pi": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1679566408311
+        }
+      }
     }
   }
 }
