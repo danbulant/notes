@@ -47,30 +47,6 @@
   },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "Dějová linka": {
-      "Dějová linka": {
-        "internalLink": {
-          "count": 2,
-          "lastUpdated": 1676979031652
-        }
-      }
-    },
-    "\\eta_{\\max}": {
-      "\\eta_{\\max}": {
-        "currentFile": {
-          "count": 2,
-          "lastUpdated": 1676978600753
-        }
-      }
-    },
-    "Bezdězu": {
-      "Bezdězu": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1677049823397
-        }
-      }
-    },
     "2x-\\frac\\pi4": {
       "2x-\\frac\\pi4": {
         "currentFile": {
@@ -164,6 +140,38 @@
         "currentFile": {
           "count": 1,
           "lastUpdated": 1679566408311
+        }
+      }
+    },
+    "povrchu": {
+      "povrchu": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680360458980
+        }
+      }
+    },
+    "\\frac{F}l": {
+      "\\frac{F}l": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680360832053
+        }
+      }
+    },
+    "\\sigma2l\\Delta": {
+      "\\sigma2l\\Delta": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680360850876
+        }
+      }
+    },
+    "42mNm^{-1}": {
+      "42mNm^{-1}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680361994371
         }
       }
     }

@@ -16,7 +16,7 @@
 
 ![](Pasted%20image%2020230307121620.png)
 
-- kolem částice jsou přibližně pravidlně, dál od částice už spíše nepravidelně
+- kolem částice jsou přibližně pravidelně, dál od částice už spíše nepravidelně
 
 ## Druhy deformace
 
