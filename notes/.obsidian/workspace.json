@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Pevne blbosti/Povrchová síla.md",
+                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Pevne blbosti/Povrchová síla.md",
+                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Pevne blbosti/Povrchová síla.md",
+                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Pevne blbosti/Povrchová síla.md"
+                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md"
               }
             }
           },
@@ -212,20 +212,32 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
   "active": "e0bf05276f7aadee",
   "lastOpenFiles": [
+    "data/Pasted image 20230402153918.png",
+    "data/Pasted image 20230402153743.png",
+    "data/Pasted image 20230402153409.png",
+    "data/Pasted image 20230402153209.png",
+    "data/Pasted image 20230402153147.png",
+    "data/Screenshot_20230402_150549.png",
+    "data/Screenshot_20230402_150005.png",
+    "fyz/pohyb/pohyb.md",
+    "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
+    "fyz/Mechanika tekutin/Mechanika tekutin.md",
+    "data/data.md",
+    "data/Pasted image 20230402145902.png",
+    "data/Pasted image 20230402145720.png",
+    "data/Pasted image 20230402145615.png",
+    "data/Pasted image 20230402145238.png",
+    "fyz/Pevne blbosti/Povrchová síla.md",
     "fyz/Pevne blbosti/Vzorky.md",
     "fyz/Pevne blbosti/Priklady.md",
-    "fyz/Pevne blbosti/Povrchová síla.md",
-    "data/Pasted image 20230401170332.png",
     "fyz/Pevne blbosti/Deformace.md",
     "fyz/Pevne blbosti/^f.md",
-    "data/Pasted image 20230401163323.png",
-    "data/Pasted image 20230401162905.png",
-    "data/Pasted image 20230401162611.png",
     "fyz/fyz.md",
     "mat/Funkce/Cosinus.md",
     "mat/Funkce/Cotangens.md",
@@ -242,17 +254,7 @@
     "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
     "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
     "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamika.md",
-    "fyz/Mechanika tekutin/Hydraulická zařízení.md",
-    "fyz/Mechanika tekutin/Hydrostatická tlaková síla.md",
-    "fyz/Mechanika tekutin/Hydrostatický paradox.md",
     "fyz/Pevne blbosti",
-    "data/Pasted image 20230308104205.png",
-    "data/Pasted image 20230308104129.png",
-    "data/Pasted image 20230308103659.png",
-    "data/Pasted image 20230307123141.png",
-    "data/Pasted image 20230307122841.png",
-    "data/Pasted image 20230307122120.png",
     "Untitled.canvas"
   ]
 }
