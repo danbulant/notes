@@ -247,7 +247,7 @@ var TableOfContentsSettingsTab = class extends import_obsidian2.PluginSettingTab
       this.plugin.saveData(this.plugin.settings);
     }));
     new import_obsidian2.Setting(containerEl).setName("Maximum Header Depth").setDesc("The highest header depth to add to the table of contents. Defaults to 6").addSlider((text) => text.setValue(this.plugin.settings.maximumDepth).setDynamicTooltip().setLimits(1, 6, 1).onChange((value) => {
-      this.plugin.settings.minimumDepth = value;
+      this.plugin.settings.maximumDepth = value;
       this.plugin.saveData(this.plugin.settings);
     }));
   }

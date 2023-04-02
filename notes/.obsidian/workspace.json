@@ -178,18 +178,18 @@
             }
           },
           {
-            "id": "6781ba7464fb5e5f",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
-          },
-          {
             "id": "a3ceebcf2fd4cef0",
             "type": "leaf",
             "state": {
               "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "f67c3695a56603f0",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
               "state": {}
             }
           }
@@ -205,7 +205,6 @@
     "hiddenItems": {
       "templater-obsidian:Templater": false,
       "juggl:Juggl global graph": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -213,10 +212,11 @@
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false
+      "breadcrumbs:Breadcrumbs Visualisation": false,
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "e0bf05276f7aadee",
+  "active": "f67c3695a56603f0",
   "lastOpenFiles": [
     "data/Pasted image 20230402153918.png",
     "data/Pasted image 20230402153743.png",

@@ -63,6 +63,10 @@
   justify-content: center;
 }
 
+.obsidian-icon-folder-icon-preview {
+  font-size: 22px;
+}
+
 .obsidian-icon-folder-icon-preview img {
   width: 16px;
   height: 16px;
@@ -88,4 +92,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Custom rule modal. */
+.obsidian-icon-folder-custom-rule-modal .modal-title h3 {
+  margin: 0;
+}
+
+.obsidian-icon-folder-custom-rule-modal .modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.obsidian-icon-folder-custom-rule-modal .modal-content input {
+  width: 100%;
+  margin-right: 0.5rem;
 }
