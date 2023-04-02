@@ -6,6 +6,7 @@
       {
         "id": "b3a1f6f8a8c6e16f",
         "type": "tabs",
+        "dimension": 85.9138533178114,
         "children": [
           {
             "id": "e0bf05276f7aadee",
@@ -17,7 +18,26 @@
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "e96a7ff1517d25b2"
+          }
+        ]
+      },
+      {
+        "id": "4163434766f0d7dc",
+        "type": "tabs",
+        "dimension": 14.086146682188591,
+        "children": [
+          {
+            "id": "312cde2b80e58872",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md"
+              }
+            },
+            "group": "e96a7ff1517d25b2"
           }
         ]
       }
@@ -211,12 +231,13 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "breadcrumbs:Breadcrumbs Visualisation": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "f67c3695a56603f0",
+  "active": "e0bf05276f7aadee",
   "lastOpenFiles": [
     "data/Pasted image 20230402153918.png",
     "data/Pasted image 20230402153743.png",
