@@ -4,41 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "b3a1f6f8a8c6e16f",
-        "type": "tabs",
-        "dimension": 85.9138533178114,
-        "children": [
-          {
-            "id": "e0bf05276f7aadee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "e96a7ff1517d25b2"
-          },
-          {
-            "id": "5b6d92596ec2f2a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Pevne blbosti/Povrchová síla.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "4163434766f0d7dc",
         "type": "tabs",
-        "dimension": 14.086146682188591,
         "children": [
           {
             "id": "312cde2b80e58872",
@@ -46,12 +13,36 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md"
+                "file": "mat/Funkce/Goniometrické vzorce.md"
               }
-            },
-            "group": "e96a7ff1517d25b2"
+            }
+          },
+          {
+            "id": "dc5763b0511370a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Funkce/Příklady.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc469018d40bf1ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Funkce/Goniometrické vzorce.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
+                "file": "mat/Funkce/Goniometrické vzorce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
+                "file": "mat/Funkce/Goniometrické vzorce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md"
+                "file": "mat/Funkce/Goniometrické vzorce.md"
               }
             }
           },
@@ -249,8 +240,13 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "e0bf05276f7aadee",
+  "active": "cc469018d40bf1ef",
   "lastOpenFiles": [
+    "mat/Funkce/Příklady.md",
+    "mat/Funkce/Goniometrické vzorce.md",
+    "mat/Funkce/Funkce.md",
+    "mat/mat.md",
+    "fyz/fyz.md",
     "fyz/Pevne blbosti/Povrchová síla.md",
     "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
     "fyz/Pevne blbosti/Pevne blbosti.md",
@@ -271,13 +267,10 @@
     "fyz/Pevne blbosti/Priklady.md",
     "fyz/Pevne blbosti/Deformace.md",
     "fyz/Pevne blbosti/^f.md",
-    "fyz/fyz.md",
     "mat/Funkce/Cosinus.md",
     "mat/Funkce/Cotangens.md",
     "mat/Funkce/Sinus.md",
     "mat/Funkce/Tangens.md",
-    "mat/Funkce/Příklady.md",
-    "mat/mat.md",
     "cjl/literatura/slohy/slohy.md",
     "cjl/literatura/Bachorka.md",
     "cjl/cjl.md",
@@ -285,8 +278,6 @@
     "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
     "fyz/Mechanika tekutin/Tekutiny.md",
     "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
-    "fyz/Mechanika tekutin/Termodynamika/Termodynamická teplota.md",
-    "fyz/Mechanika tekutin/Termodynamika/Vnitřní energie.md",
     "fyz/Pevne blbosti",
     "Untitled.canvas"
   ]
