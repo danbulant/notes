@@ -8,6 +8,9 @@ $W=\Delta E$ - Práce vyk. působením vnějších sil je rovna přírůstku pov
 $2F\Delta x=\sigma2l\Delta x$
 $F=\sigma l$ [ref](#^fl)
 
+$l=\pi d$ u kruznice
+
+
 [Příklady](#Příklady)
 
 ![](Pasted%20image%2020230401162611.png)
@@ -49,11 +52,10 @@ $\Delta x=2cm=2*10^{-2}$
 
 $\sigma=\frac{F}l$
 $\Delta E=\sigma2l\Delta x$
-$\sigma=\frac{2*10^{-3}}{5*10^{-2}}=\frac{2*10^{-1}}5=\frac2{50}$
-$\Delta E=\frac1{25}*2*10^{-2}*2*10^{-2}$
+$\Delta E=W=F\Delta x*2$ - z hodiny
+$\Delta E=2*10^{-3}*2*10^{-2}*2$*
 
-$\Delta E=\frac{4*10^{-4}}{25}$
-Blbě - zeptat se na hodině
+$\Delta E=80\micro J$
 
 ---
 
@@ -63,4 +65,23 @@ Kruhová smyčka z nitě o průměru $1cm$ je vytvořena na mydlinové bláně. 
 
 $F=\sigma l$
 $\sigma=42mNm^{-1}=42*10^{-3}Nm^{-1}$
-???
+
+$l=\pi d$
+$F=\sigma \pi d2$ - dva povrchy
+$F=42*10^{-3}\pi 1*10^{-2}*2$
+$F=2.64*10^{-3}N$
+
+---
+
+Tlustostěnnou kapilárou vnějšího průměru $3,41mm$ odkapalo $100$ kapek vody teploty $15\degree C$ o celkové hmotnosti $8.11g$. Vypočtěte povrchové napětí vody se vzduchem při dané teplotě.
+
+$F_g=F_P$
+$m_1g=\sigma l$
+$m_1g=\sigma\pi d$
+$m_1$ … hmotnost jedné kapky
+
+$\sigma=\frac{m_1g}{\pi d}$
+$m_1=8.11/100$
+$\sigma=\frac{\frac{m}kg}{\pi d}=\frac{mg}{k\pi d}$
+$\sigma=\frac{8.11*10}{100\pi 3.41*10^{-3}}$
+$\sigma=74.3mNm^{-1}$

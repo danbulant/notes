@@ -20,6 +20,18 @@
               }
             },
             "group": "e96a7ff1517d25b2"
+          },
+          {
+            "id": "5b6d92596ec2f2a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fyz/Pevne blbosti/Povrchová síla.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       },
@@ -231,14 +243,17 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
   "active": "e0bf05276f7aadee",
   "lastOpenFiles": [
+    "fyz/Pevne blbosti/Povrchová síla.md",
+    "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
+    "fyz/Pevne blbosti/Pevne blbosti.md",
     "data/Pasted image 20230402153918.png",
     "data/Pasted image 20230402153743.png",
     "data/Pasted image 20230402153409.png",
@@ -247,14 +262,11 @@
     "data/Screenshot_20230402_150549.png",
     "data/Screenshot_20230402_150005.png",
     "fyz/pohyb/pohyb.md",
-    "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
     "fyz/Mechanika tekutin/Mechanika tekutin.md",
     "data/data.md",
     "data/Pasted image 20230402145902.png",
     "data/Pasted image 20230402145720.png",
     "data/Pasted image 20230402145615.png",
-    "data/Pasted image 20230402145238.png",
-    "fyz/Pevne blbosti/Povrchová síla.md",
     "fyz/Pevne blbosti/Vzorky.md",
     "fyz/Pevne blbosti/Priklady.md",
     "fyz/Pevne blbosti/Deformace.md",
