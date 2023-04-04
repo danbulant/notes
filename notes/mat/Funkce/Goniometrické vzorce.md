@@ -29,3 +29,21 @@ $x=k\frac{\pi}3+\frac\pi6$
 $\sin(-2x)=0$
 $-2x=k\pi$
 $x=-k\frac{\pi}2$
+
+---
+
+$\cos x+\cos(3x)=0$
+$\cos\alpha+\cos\beta=2\cos\frac{\alpha+\beta}2\sin\frac{\alpha-\beta}2$
+
+$0=2\cos\frac{x+3x}2\sin\frac{x-3x}2$
+$0=2\cos\frac{4x}2\sin\frac{-2x}2$
+$0=2\cos(2x)\sin(-x)$
+$0=\cos(2x)\sin(-x)$
+
+$\sin(-x)=0$
+$-x=k\pi$
+$x=-k\pi$
+
+$\cos(2x)=0$
+$2x=k\pi+\frac\pi2$
+$x=k\frac\pi2+\frac\pi4$
