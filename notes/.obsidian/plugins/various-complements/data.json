@@ -234,8 +234,24 @@
     "2\\cos\\frac{\\alpha+\\beta}2\\sin\\frac{\\alpha-\\beta}2": {
       "2\\cos\\frac{\\alpha+\\beta}2\\sin\\frac{\\alpha-\\beta}2": {
         "currentFile": {
+          "count": 2,
+          "lastUpdated": 1680607216706
+        }
+      }
+    },
+    "\\cos\\alpha+\\cos\\beta": {
+      "\\cos\\alpha+\\cos\\beta": {
+        "currentFile": {
           "count": 1,
-          "lastUpdated": 1680606991534
+          "lastUpdated": 1680607228733
+        }
+      }
+    },
+    "2\\sin\\frac{\\alpha+\\beta}2\\cos\\frac{\\alpha-\\beta}2": {
+      "2\\sin\\frac{\\alpha+\\beta}2\\cos\\frac{\\alpha-\\beta}2": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1680607233106
         }
       }
     }

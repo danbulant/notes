@@ -6,17 +6,8 @@
       {
         "id": "4163434766f0d7dc",
         "type": "tabs",
+        "dimension": 83.42303552206674,
         "children": [
-          {
-            "id": "312cde2b80e58872",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "mat/Funkce/Goniometrické vzorce.md"
-              }
-            }
-          },
           {
             "id": "dc5763b0511370a4",
             "type": "leaf",
@@ -42,7 +33,24 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
+      },
+      {
+        "id": "87d8591d352266dc",
+        "type": "tabs",
+        "dimension": 16.576964477933263,
+        "children": [
+          {
+            "id": "312cde2b80e58872",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "mat/Funkce/Goniometrické vzorce.md"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"

@@ -8,7 +8,8 @@ Následující vzorce lze mít k písemkám:
 součtové vzorce:
 $\sin\alpha+\sin\beta=2\sin\frac{\alpha+\beta}2\cos\frac{\alpha-\beta}2$
 $\sin\alpha-\sin\beta=2\cos\frac{\alpha+\beta}2\sin\frac{\alpha-\beta}2$
-
+$\cos\alpha+\cos\beta=2\cos\frac{\alpha+\beta}2\cos\frac{\alpha-\beta}2$
+$\cos\alpha-\cos\beta=2\sin\frac{\alpha+\beta}2\sin\frac{\alpha-\beta}2$
 
 ---
 
