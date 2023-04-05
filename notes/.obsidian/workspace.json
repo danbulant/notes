@@ -4,49 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "4163434766f0d7dc",
+        "id": "0a792ff8d299b631",
         "type": "tabs",
-        "dimension": 83.42303552206674,
         "children": [
           {
-            "id": "dc5763b0511370a4",
+            "id": "9c84c01d8cf9f600",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Příklady.md",
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cc469018d40bf1ef",
+            "id": "63cc8e944adb215b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Goniometrické vzorce.md",
+                "file": "dej/moderní/komunismus/Jaroslav Seifert.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "87d8591d352266dc",
-        "type": "tabs",
-        "dimension": 16.576964477933263,
-        "children": [
-          {
-            "id": "312cde2b80e58872",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "mat/Funkce/Goniometrické vzorce.md"
               }
             }
           }
@@ -79,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "husto",
+                "query": "\\pm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Goniometrické vzorce.md",
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Goniometrické vzorce.md",
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Funkce/Goniometrické vzorce.md"
+                "file": "mat/Funkce/Goniometrické funkce.md"
               }
             }
           },
@@ -248,16 +229,36 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "cc469018d40bf1ef",
+  "active": "9c84c01d8cf9f600",
   "lastOpenFiles": [
+    "dej/moderní/komunismus/Jaroslav Seifert.md",
+    "dej/moderní/komunismus/Milada Horáková.md",
+    "dej/dej.md",
+    "data/data.md",
+    "mat/Funkce/Untitled.md",
+    "mat/Funkce/Logaritmus - Substituce.md",
+    "mat/Funkce/Exponenciální funkce.md",
     "mat/Funkce/Příklady.md",
+    "mat/Funkce/Goniometrické funkce.md",
+    "mat/mat.md",
+    "cjl/cjl.md",
+    "cjl/literatura/slohy/Realismus/Realismus.md",
+    "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
+    "cjl/literatura/slohy/Romantismus/Kytice.md",
+    "cjl/literatura/poznávání žánrů.md",
+    "cjl/literatura/slohy/Realismus/Untitled.md",
+    "cjl/literatura/slohy/Realismus",
+    "cjl/literatura/slohy/Romantismus/Romantismus.md",
+    "cjl/literatura/slohy/Poetismus/Poetismus.md",
+    "cjl/literatura/literatura.md",
+    "cjl/literatura/slohy/Poetismus/Poetismu.md",
+    "cjl/literatura/slohy/Poetismus",
+    "cjl/literatura/slohy/slohy.md",
+    "cjl/literatura/Cizí literatura/Cizí literatura.md",
+    "cjl/literatura/Středověká literatura/Středověká literatura.md",
     "mat/Funkce/Goniometrické vzorce.md",
     "mat/Funkce/Funkce.md",
-    "mat/mat.md",
     "fyz/fyz.md",
-    "fyz/Pevne blbosti/Povrchová síla.md",
-    "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
-    "fyz/Pevne blbosti/Pevne blbosti.md",
     "data/Pasted image 20230402153918.png",
     "data/Pasted image 20230402153743.png",
     "data/Pasted image 20230402153409.png",
@@ -265,27 +266,9 @@
     "data/Pasted image 20230402153147.png",
     "data/Screenshot_20230402_150549.png",
     "data/Screenshot_20230402_150005.png",
-    "fyz/pohyb/pohyb.md",
-    "fyz/Mechanika tekutin/Mechanika tekutin.md",
-    "data/data.md",
     "data/Pasted image 20230402145902.png",
     "data/Pasted image 20230402145720.png",
     "data/Pasted image 20230402145615.png",
-    "fyz/Pevne blbosti/Vzorky.md",
-    "fyz/Pevne blbosti/Priklady.md",
-    "fyz/Pevne blbosti/Deformace.md",
-    "fyz/Pevne blbosti/^f.md",
-    "mat/Funkce/Cosinus.md",
-    "mat/Funkce/Cotangens.md",
-    "mat/Funkce/Sinus.md",
-    "mat/Funkce/Tangens.md",
-    "cjl/literatura/slohy/slohy.md",
-    "cjl/literatura/Bachorka.md",
-    "cjl/cjl.md",
-    "fyz/Mechanika tekutin/Povrchove napeti.md",
-    "fyz/Mechanika tekutin/Termodynamika/Tepelné čerpadlo.md",
-    "fyz/Mechanika tekutin/Tekutiny.md",
-    "fyz/Mechanika tekutin/Termodynamika/Tepelné děje Ideálního plynu.md",
     "fyz/Pevne blbosti",
     "Untitled.canvas"
   ]

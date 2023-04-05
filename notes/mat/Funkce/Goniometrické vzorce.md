@@ -47,4 +47,6 @@ $x=-k\pi$
 
 $\cos(2x)=0$
 $2x=k\pi+\frac\pi2$
+$2x=90\degree+k180\degree$
 $x=k\frac\pi2+\frac\pi4$
+$x=k90\d
