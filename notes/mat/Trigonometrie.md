@@ -47,3 +47,9 @@ $a=\sqrt{c_ac}$
 $c_a=c-c_b=\frac{32}3$
 $a=\sqrt{\frac{32}3\frac{50}3}$
 $a=\sqrt{\frac{1600}9}=\underline{\frac{40}3cm}$
+
+---
+
+Narýsujte úsečku délky
+a) $\sqrt{18}cm$
+b) $\sqrt{17}cm$
