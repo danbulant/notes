@@ -4,34 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "0a792ff8d299b631",
+        "id": "151ef7f648c682ab",
         "type": "tabs",
         "children": [
           {
-            "id": "9c84c01d8cf9f600",
+            "id": "cd9ab46cc57b5e2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md",
+                "file": "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "63cc8e944adb215b",
+            "id": "433b297153589146",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dej/moderní/komunismus/Jaroslav Seifert.md",
+                "file": "fyz/Změny skupenství.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "2e9de13d6368c59f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Změny skupenství 2023-04-11 11.58.21.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\\pm",
+                "query": "sigma",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md",
+                "file": "fyz/Změny skupenství.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md",
+                "file": "fyz/Změny skupenství.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Funkce/Goniometrické funkce.md"
+                "file": "fyz/Změny skupenství.md"
               }
             }
           },
@@ -229,8 +240,20 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "9c84c01d8cf9f600",
+  "active": "433b297153589146",
   "lastOpenFiles": [
+    "data/Změny skupenství 2023-04-11 11.58.21.excalidraw.md",
+    "fyz/Změny skupenství.md",
+    "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
+    "fyz/Pevne blbosti/Povrchová síla.md",
+    "fyz/Pevne blbosti/Deformace.md",
+    "fyz/Mechanika tekutin/Mechanika tekutin.md",
+    "fyz/Pevne blbosti/Priklady.md",
+    "fyz/Pevne blbosti/Vzorky.md",
+    "fyz/Pevne blbosti/Pevne blbosti.md",
+    "fyz/fyz.md",
+    "mat/mat.md",
+    "mat/Funkce/Goniometrické funkce.md",
     "dej/moderní/komunismus/Jaroslav Seifert.md",
     "dej/moderní/komunismus/Milada Horáková.md",
     "dej/dej.md",
@@ -239,8 +262,6 @@
     "mat/Funkce/Logaritmus - Substituce.md",
     "mat/Funkce/Exponenciální funkce.md",
     "mat/Funkce/Příklady.md",
-    "mat/Funkce/Goniometrické funkce.md",
-    "mat/mat.md",
     "cjl/cjl.md",
     "cjl/literatura/slohy/Realismus/Realismus.md",
     "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
@@ -248,17 +269,7 @@
     "cjl/literatura/poznávání žánrů.md",
     "cjl/literatura/slohy/Realismus/Untitled.md",
     "cjl/literatura/slohy/Realismus",
-    "cjl/literatura/slohy/Romantismus/Romantismus.md",
-    "cjl/literatura/slohy/Poetismus/Poetismus.md",
-    "cjl/literatura/literatura.md",
-    "cjl/literatura/slohy/Poetismus/Poetismu.md",
     "cjl/literatura/slohy/Poetismus",
-    "cjl/literatura/slohy/slohy.md",
-    "cjl/literatura/Cizí literatura/Cizí literatura.md",
-    "cjl/literatura/Středověká literatura/Středověká literatura.md",
-    "mat/Funkce/Goniometrické vzorce.md",
-    "mat/Funkce/Funkce.md",
-    "fyz/fyz.md",
     "data/Pasted image 20230402153918.png",
     "data/Pasted image 20230402153743.png",
     "data/Pasted image 20230402153409.png",
