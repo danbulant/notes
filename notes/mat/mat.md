@@ -27,6 +27,7 @@ imagePrefix: 'data/'
 -  [[mat/Rovnice/Rovnice|Rovnice]]
 -  [[mat/Rozklad složených čísel na součin prvočísel|Rozklad složených čísel na součin prvočísel]]
 -  [[mat/Tahák|Tahák]]
+-  [[mat/Trigonometrie|Trigonometrie]]
 -  [[mat/Výroky/Výroky|Výroky]]
 -  [[mat/Zakrouhlení|Zakrouhlení]]
 -  [[mat/Zlomky|Zlomky]]
