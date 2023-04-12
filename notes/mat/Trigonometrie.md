@@ -21,6 +21,7 @@ $P$ … pata výšky
 
 $c_b=|AP|$
 $c_a=|PB|$
+$v=|PC|$
 
 $c_b*c_a=v^2$
 $c_bc=b^2$
@@ -52,4 +53,24 @@ $a=\sqrt{\frac{1600}9}=\underline{\frac{40}3cm}$
 
 Narýsujte úsečku délky
 a) $\sqrt{18}cm$
+![](Pasted%20image%2020230412111312.png)
+![](Pasted%20image%2020230412111323.png)
+
 b) $\sqrt{17}cm$
+![](Pasted%20image%2020230412112119.png)
+
+
+---
+
+Je dán obdélník $ABCD$ o rozměrech $6cmx8cm$ s vepsanou kružnicí nad průměrem $AB$ ($|AB|>|CD|$).
+Dále viz obrázek.
+
+![](Pasted%20image%2020230412112525.png)
+![](Pasted%20image%2020230412113342.png)
+
+---
+
+## Hosínová věta
+Dopočítejte zbývající prvky v trojúhelníku.
+
+![](Pasted%20image%2020230412113817.png)

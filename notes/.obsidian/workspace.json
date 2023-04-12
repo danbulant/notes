@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/mat.md",
+                "file": "cjl/literatura/slohy/Realismus/Realismus.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7c6e9c29679e7ec4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
                 "mode": "source",
                 "source": false
               }
@@ -32,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sigma",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -232,10 +244,20 @@
   },
   "active": "7da30d7b50ee03bc",
   "lastOpenFiles": [
-    "data/Pasted image 20230411141819.png",
-    "data/Pasted image 20230411141429.png",
+    "data/Pasted image 20230412113817.png",
+    "data/Pasted image 20230412113342.png",
+    "data/Pasted image 20230412112525.png",
+    "data/Pasted image 20230412112119.png",
+    "data/Pasted image 20230412111323.png",
+    "data/Pasted image 20230412111312.png",
+    "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
+    "cjl/literatura/slohy/Realismus/Realismus.md",
+    "cjl/literatura/slohy/Romantismus/Romantismus.md",
+    "cjl/cjl.md",
     "mat/mat.md",
     "mat/Trigonometrie.md",
+    "data/Pasted image 20230411141819.png",
+    "data/Pasted image 20230411141429.png",
     "mat/Untitled",
     "fyz/fyz.md",
     "data/Změny skupenství 2023-04-11 11.58.21.excalidraw.md",
@@ -256,21 +278,11 @@
     "mat/Funkce/Logaritmus - Substituce.md",
     "mat/Funkce/Exponenciální funkce.md",
     "mat/Funkce/Příklady.md",
-    "cjl/cjl.md",
-    "cjl/literatura/slohy/Realismus/Realismus.md",
-    "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
-    "cjl/literatura/slohy/Romantismus/Kytice.md",
     "cjl/literatura/slohy/Realismus",
     "cjl/literatura/slohy/Poetismus",
     "data/Pasted image 20230402153918.png",
     "data/Pasted image 20230402153743.png",
     "data/Pasted image 20230402153409.png",
-    "data/Pasted image 20230402153209.png",
-    "data/Pasted image 20230402153147.png",
-    "data/Screenshot_20230402_150549.png",
-    "data/Screenshot_20230402_150005.png",
-    "data/Pasted image 20230402145902.png",
-    "data/Pasted image 20230402145720.png",
     "fyz/Pevne blbosti",
     "Untitled.canvas"
   ]

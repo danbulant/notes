@@ -206,6 +206,22 @@
           "lastUpdated": 1681207226362
         }
       }
+    },
+    "společnosti": {
+      "společnosti": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1681280516237
+        }
+      }
+    },
+    "Větrná elektrárna": {
+      "Větrná elektrárna": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1681292148733
+        }
+      }
     }
   }
 }
