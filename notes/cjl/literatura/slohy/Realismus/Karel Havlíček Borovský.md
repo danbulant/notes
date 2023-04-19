@@ -1,0 +1,23 @@
+# Karel Havlíček Borovský
+- žurnalista
+	- pražské noviny - žurnalista
+	- národní noviny - zakladatel
+	- slovan - zakladatel
+- epigramy
+	- krátké
+	- básnické
+	- kritické
+		- vůči vládě
+		- církve
+	- aktuální
+	- satirické
+	- nadsázka
+- satirické skladby
+	- král lávra
+		- král s oslýma ušima
+		- jednou za čas ho někdo ostříhá, ale jeho kadeřník je potom popraven
+	- holič kukulín
+	- tyrolské elegie
+	- 1851 brixen
+	- křest sv. Vladimíra
+	- Perun

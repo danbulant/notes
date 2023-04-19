@@ -8,19 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5ff518a7ba282ce5",
+            "id": "7da30d7b50ee03bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cjl/literatura/slohy/Realismus/Realismus.md",
+                "file": "mat/Trigonometrie/Trigonometrie.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7c6e9c29679e7ec4",
+            "id": "f9de6481f4e4039a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Trigonometrie/Kosinová věta.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3570bb768b136343",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,19 +44,43 @@
             }
           },
           {
-            "id": "7da30d7b50ee03bc",
+            "id": "43af55e72c60957c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Trigonometrie.md",
+                "file": "cjl/literatura/slohy/Realismus/Realismus.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a734a5655dee3ea4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Trigonometrie/Trigonometrie.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0bb0521fe1f40480",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Trigonometrie/Kosinová věta.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -102,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Trigonometrie.md",
+                "file": "mat/Trigonometrie/Kosinová věta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Trigonometrie.md",
+                "file": "mat/Trigonometrie/Kosinová věta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Trigonometrie.md"
+                "file": "mat/Trigonometrie/Kosinová věta.md"
               }
             }
           },
@@ -242,23 +278,29 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "7da30d7b50ee03bc",
+  "active": "0bb0521fe1f40480",
   "lastOpenFiles": [
+    "mat/Trigonometrie/Trigonometrie.md",
+    "data/Pasted image 20230419091807.png",
+    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
+    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
+    "cjl/literatura/slohy/Realismus/Realismus.md",
+    "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
+    "cjl/literatura/slohy/Renesance/Renesance.md",
+    "mat/Trigonometrie/Kosinová věta.md",
+    "data/Pasted image 20230417192048.png",
+    "mat/Trigonometrie",
     "data/Pasted image 20230412113817.png",
     "data/Pasted image 20230412113342.png",
     "data/Pasted image 20230412112525.png",
     "data/Pasted image 20230412112119.png",
     "data/Pasted image 20230412111323.png",
     "data/Pasted image 20230412111312.png",
-    "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
-    "cjl/literatura/slohy/Realismus/Realismus.md",
     "cjl/literatura/slohy/Romantismus/Romantismus.md",
     "cjl/cjl.md",
     "mat/mat.md",
-    "mat/Trigonometrie.md",
     "data/Pasted image 20230411141819.png",
     "data/Pasted image 20230411141429.png",
-    "mat/Untitled",
     "fyz/fyz.md",
     "data/Změny skupenství 2023-04-11 11.58.21.excalidraw.md",
     "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
@@ -274,15 +316,8 @@
     "dej/moderní/komunismus/Milada Horáková.md",
     "dej/dej.md",
     "data/data.md",
-    "mat/Funkce/Untitled.md",
-    "mat/Funkce/Logaritmus - Substituce.md",
-    "mat/Funkce/Exponenciální funkce.md",
-    "mat/Funkce/Příklady.md",
     "cjl/literatura/slohy/Realismus",
     "cjl/literatura/slohy/Poetismus",
-    "data/Pasted image 20230402153918.png",
-    "data/Pasted image 20230402153743.png",
-    "data/Pasted image 20230402153409.png",
     "fyz/Pevne blbosti",
     "Untitled.canvas"
   ]

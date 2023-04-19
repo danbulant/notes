@@ -222,6 +222,54 @@
           "lastUpdated": 1681292148733
         }
       }
+    },
+    "Přerušení": {
+      "Přerušení": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1681885511788
+        }
+      }
+    },
+    "b^2+c^2-2bc\\cos\\alpha": {
+      "b^2+c^2-2bc\\cos\\alpha": {
+        "currentFile": {
+          "count": 2,
+          "lastUpdated": 1681891082349
+        }
+      }
+    },
+    "a^2+b^2-2ab\\cos\\gamma": {
+      "a^2+b^2-2ab\\cos\\gamma": {
+        "currentFile": {
+          "count": 3,
+          "lastUpdated": 1681891573711
+        }
+      }
+    },
+    "\\cos\\alpha": {
+      "\\cos\\alpha": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1681891086747
+        }
+      }
+    },
+    "\\frac{b^2+c^2-a^2}{2bc}": {
+      "\\frac{b^2+c^2-a^2}{2bc}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1681891095567
+        }
+      }
+    },
+    "\\frac{a^2+b^2-c^2}{2ab}": {
+      "\\frac{a^2+b^2-c^2}{2ab}": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1681891398296
+        }
+      }
     }
   }
 }
