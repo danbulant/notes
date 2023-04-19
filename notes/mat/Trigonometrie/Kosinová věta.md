@@ -72,4 +72,14 @@ $b^2=a^2+c^2-2ac\cos\beta$
 $b^2=7^2+12^2-2*7*12\cos124\degree$
 $b^2=49+144-168*(-0.5)$
 $b^2=277$
-$b=16.6cm$
+$b\dot=16.6cm$
+
+$\cos\gamma=\frac{a^2+b^2-c^2}{2ab}$
+$\cos\gamma=\frac{7^2+16.6^2-12^2}{2*7*16.6}$
+$\cos\gamma=\frac{180.56}{232.4}$
+$\gamma\dot=39\degree$
+
+$\cos\alpha=\frac{b^2+c^2-a^2}{2bc}$
+$\cos\alpha=\frac{16.6^2+12^2-7^2}{2*16.6*12}$
+$\cos\alpha=\frac{370.56}{398.4}$
+$\alpha\dot=21\degree$
