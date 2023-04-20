@@ -48,6 +48,7 @@ $\cos\beta=\frac{x_B}1=x_B$
 
 $\sin^2x+\cos^2x=1$
 [Goniometrické vzorce](Goniometrické%20vzorce.md)
+[čtvrtletka tahák](čtvrtletka%20tahák.md)
 
 ---
 

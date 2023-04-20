@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Trigonometrie/Sinová věta.md",
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Funkce/čtvrtletka tahak.md",
+                "file": "mat/Funkce/čtvrtletka tahák.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Trigonometrie/Sinová věta.md",
+                "file": "mat/Funkce/čtvrtletka tahák.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Trigonometrie/Sinová věta.md",
+                "file": "mat/Funkce/čtvrtletka tahák.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Trigonometrie/Sinová věta.md"
+                "file": "mat/Funkce/čtvrtletka tahák.md"
               }
             }
           },
@@ -254,21 +254,23 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "17a42bea61d77b12",
+  "active": "255de86181e3ea8e",
   "lastOpenFiles": [
+    "mat/Funkce/Goniometrické funkce.md",
+    "mat/Funkce/čtvrtletka tahák.md",
     "mat/Trigonometrie/Kosinová věta.md",
+    "mat/Funkce/Sinus.md",
+    "mat/Trigonometrie/Sinová věta.md",
+    "data/Pasted image 20230419111526.png",
+    "data/Pasted image 20230419111454.png",
     "cjl/literatura/slohy/Realismus/Realismus.md",
     "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
-    "mat/Trigonometrie/Sinová věta.md",
-    "mat/Funkce/čtvrtletka tahak.md",
     "mat/Funkce/Tangens.md",
     "mat/Trigonometrie/Trigonometrie.md",
-    "mat/Funkce/Sinus.md",
     "mat/Funkce/Cotangens.md",
     "mat/Funkce/Cosinus.md",
     "mat/Funkce/Goniometrické vzorce.md",
     "mat/Funkce/Inverzní funkce.md",
-    "mat/Funkce/Goniometrické funkce.md",
     "mat/Funkce/Funkce.md",
     "data/Pasted image 20230419091807.png",
     "cjl/literatura/slohy/Realismus/Božena Němcová.md",
@@ -285,14 +287,11 @@
     "cjl/literatura/slohy/Romantismus/Romantismus.md",
     "cjl/cjl.md",
     "mat/mat.md",
-    "data/Pasted image 20230411141819.png",
-    "data/Pasted image 20230411141429.png",
     "fyz/fyz.md",
     "data/Změny skupenství 2023-04-11 11.58.21.excalidraw.md",
     "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
     "fyz/Změny skupenství.md",
     "fyz/Pevne blbosti/Povrchová síla.md",
-    "fyz/Pevne blbosti/Deformace.md",
     "cjl/literatura/slohy/Realismus",
     "cjl/literatura/slohy/Poetismus",
     "fyz/Pevne blbosti",
