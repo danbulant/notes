@@ -9,13 +9,22 @@ $[\sigma_n]=N*m^{-2}=Pa$
 $\Delta l=E*\frac{F}S*l_0$
 $\frac{\Delta l}{l_0}=E\frac{F}{S}$
 
-$\epsilon=\frac{\Delta l}{l_0}=E*\sigma_n$
-$\sigma_n=E*\epsilon$
+Hookuv zakon:
+$\epsilon=\frac{\Delta l}{l_0}=\frac{\sigma_n}E=\frac{\frac{F}S}E=\frac1E\frac{F}S$
+$\sigma_n=E*\epsilon=\frac{F}S$
 
 $E=$ modul pružnosti (jednotka $Pa$)
 
+povrchové napětí:
+$F=\sigma l=\frac{F_G}2$
+kde $l$ je pohyblivá strana či strany, může být celý obvod
+
 ---
 
+$\Delta V=\beta V_0\Delta t$
+$\beta=3\alpha$
+
+$\alpha$ = teplotní roztažnost
 Krychle $a_0$
 $V_0=a_0^3$
 Zahřeje se…
@@ -28,6 +37,14 @@ $a=V_0(1+3\alpha\Delta T+\cancel{3(\alpha\Delta T)^2}+\cancel{(\alpha\Delta T)^3
 → daji se zanedbat, male hodnoty
 
 $a=V_0(1+3\alpha\Delta T)$
+
+$\Delta V=\beta V_0\Delta t$
+$\beta=3\alpha$
+$V_0=0.25m^3$
+$\Delta V=0.00045m^3=45*10^{-5}m^3$
+$\alpha=1.2*10^{-5}K^-1$
+
+$\Delta t=\frac{\Delta V}{3\alpha V_0}$
 
 ---
 
@@ -46,3 +63,6 @@ Změna skupenství
 
 $Q=Q_1+L_t+Q_2$
 $Q=mC_l(t_t-t_1)+ml_t+mC_v(t_2-t_t)$
+
+---
+
