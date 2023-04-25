@@ -63,38 +63,6 @@
   "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
-    "1+3\\alpha\\Delta": {
-      "1+3\\alpha\\Delta": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679396268129
-        }
-      }
-    },
-    "k\\in\\mathbb{Z}": {
-      "k\\in\\mathbb{Z}": {
-        "currentFile": {
-          "count": 9,
-          "lastUpdated": 1679566996452
-        }
-      }
-    },
-    "\\frac\\pi2+2k\\pi": {
-      "\\frac\\pi2+2k\\pi": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679566397372
-        }
-      }
-    },
-    "\\frac{3\\pi}2+2k\\pi": {
-      "\\frac{3\\pi}2+2k\\pi": {
-        "currentFile": {
-          "count": 1,
-          "lastUpdated": 1679566408311
-        }
-      }
-    },
     "povrchu": {
       "povrchu": {
         "currentFile": {
@@ -290,8 +258,16 @@
     "\\frac{a}{\\sin\\alpha}": {
       "\\frac{a}{\\sin\\alpha}": {
         "currentFile": {
-          "count": 2,
-          "lastUpdated": 1681896423503
+          "count": 4,
+          "lastUpdated": 1682407572787
+        }
+      }
+    },
+    "180-\\alpha-\\beta": {
+      "180-\\alpha-\\beta": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1682405853443
         }
       }
     }
