@@ -11,6 +11,7 @@ imagePrefix: 'data/'
 -  [[fyz/pohyb/Gravitace|Gravitace]]
 -  [[fyz/pohyb/Hybnost tělesa|Hybnost tělesa]]
 -  [[fyz/pohyb/Moment síly k ose otáčení|Moment síly k ose otáčení]]
+-  [[fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý|Periodický a kmitavý]]
 -  [[fyz/pohyb/Příklady|Příklady]]
 -  [[fyz/pohyb/Rovnoměrně zrychlený či zpomalený pohyb|Rovnoměrně zrychlený či zpomalený pohyb]]
 -  [[fyz/pohyb/Rovnoměrný pohyb po kružnici|Rovnoměrný pohyb po kružnici]]

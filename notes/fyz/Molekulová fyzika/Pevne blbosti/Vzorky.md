@@ -15,9 +15,13 @@ $\sigma_n=E*\epsilon=\frac{F}S$
 
 $E=$ modul pružnosti (jednotka $Pa$)
 
-povrchové napětí:
+povrchové napětí $\sigma$ (ano je to víc věcí :)):
 $F=\sigma l=\frac{F_G}2$
 kde $l$ je pohyblivá strana či strany, může být celý obvod
+
+kapilára blbosti
+$h=\frac{2\sigma}{\rho g r}$
+$P_h=2\sigma$
 
 ---
 

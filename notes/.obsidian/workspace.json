@@ -13,9 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Změny skupenství.md",
+                "file": "fyz/pohyb/pohyb.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "c9fa1cc75604bda2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b33ec870f526e0ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5b9b52057e08d20b",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Kmitový pohyb 2023-04-25 12.31.10.excalidraw.md"
               }
             }
           },
@@ -25,7 +59,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/Pevne blbosti/Vzorky.md",
+                "file": "fyz/Molekulová fyzika/Pevne blbosti/Vzorky.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Trigonometrie/Příklady.md",
+                "file": "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Trigonometrie/Příklady.md",
+                "file": "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Trigonometrie/Příklady.md"
+                "file": "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md"
               }
             }
           },
@@ -266,17 +300,28 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "df9a840e537b500f",
+  "active": "b33ec870f526e0ef",
   "lastOpenFiles": [
+    "data/Kmitový pohyb 2023-04-25 12.31.10.excalidraw.md",
+    "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
+    "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
+    "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
+    "fyz/pohyb/Periodický a kmitavý",
+    "data/Pasted image 20230425122807.png",
+    "fyz/Příklad.md",
+    "fyz/Molekulová fyzika/Molekulová fyzika.md",
+    "fyz/Molekulová fyzika",
+    "fyz/pohyb/pohyb.md",
+    "fyz/Molekulová fyzika/Pevne blbosti/Pevne blbosti.md",
+    "fyz/Molekulová fyzika/Změny skupenství.md",
+    "mat/Funkce/Tangens.md",
     "mat/Trigonometrie/Sinová věta.md",
+    "fyz/Molekulová fyzika/Pevne blbosti/Vzorky.md",
     "mat/Trigonometrie/Příklady.md",
     "mat/Funkce/čtvrtletka tahák.md",
     "mat/Trigonometrie/Kosinová věta.md",
-    "mat/Funkce/Tangens.md",
-    "fyz/Pevne blbosti/Vzorky.md",
     "mat/Funkce/Goniometrické funkce.md",
-    "fyz/Změny skupenství.md",
-    "fyz/Jevy mezi pevnýma tělesama a kapalinama.md",
+    "fyz/Molekulová fyzika/Jevy mezi pevnýma tělesama a kapalinama.md",
     "fyz/fyz.md",
     "mat/Funkce/Sinus.md",
     "data/Pasted image 20230419111526.png",
@@ -288,11 +333,7 @@
     "mat/Funkce/Cosinus.md",
     "mat/Funkce/Goniometrické vzorce.md",
     "mat/Funkce/Inverzní funkce.md",
-    "mat/Funkce/Funkce.md",
     "data/Pasted image 20230419091807.png",
-    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
-    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
-    "cjl/literatura/slohy/Renesance/Renesance.md",
     "data/Pasted image 20230417192048.png",
     "mat/Trigonometrie",
     "data/Pasted image 20230412113817.png",
@@ -300,14 +341,9 @@
     "data/Pasted image 20230412112525.png",
     "data/Pasted image 20230412112119.png",
     "data/Pasted image 20230412111323.png",
-    "data/Pasted image 20230412111312.png",
-    "cjl/literatura/slohy/Romantismus/Romantismus.md",
-    "cjl/cjl.md",
-    "mat/mat.md",
-    "data/Změny skupenství 2023-04-11 11.58.21.excalidraw.md",
     "cjl/literatura/slohy/Realismus",
     "cjl/literatura/slohy/Poetismus",
-    "fyz/Pevne blbosti",
+    "fyz/Molekulová fyzika/Pevne blbosti",
     "Untitled.canvas"
   ]
 }
