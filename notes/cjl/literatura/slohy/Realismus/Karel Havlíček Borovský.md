@@ -16,8 +16,15 @@
 	- král lávra
 		- král s oslýma ušima
 		- jednou za čas ho někdo ostříhá, ale jeho kadeřník je potom popraven
+		- film od karla zemana
 	- holič kukulín
 	- tyrolské elegie
+		- autobiografie, o deportaci do rakouska
+		- do alp
+		- do brixenu
 	- 1851 brixen
 	- křest sv. Vladimíra
+		- kritika církve a carského ruska
+		- utopí boha protože ho neposlechl
+		- lidé se blbě bez boha ovládají, a tak vypisuje konkurz na nového boha
 	- Perun

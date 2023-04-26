@@ -8,77 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a734a5655dee3ea4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/pohyb/pohyb.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c9fa1cc75604bda2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b33ec870f526e0ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5b9b52057e08d20b",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "data/Kmitový pohyb 2023-04-25 12.31.10.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "17a42bea61d77b12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Molekulová fyzika/Pevne blbosti/Vzorky.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0bb0521fe1f40480",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Funkce/Tangens.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "df9a840e537b500f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -95,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Trigonometrie/Sinová věta.md",
+                "file": "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7df3be4c55a85160",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cjl/literatura/slohy/Realismus/Božena Němcová.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,10 +73,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "/76",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -160,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
+                "file": "cjl/literatura/slohy/Realismus/Božena Němcová.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
+                "file": "cjl/literatura/slohy/Realismus/Božena Němcová.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -224,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md"
+                "file": "cjl/literatura/slohy/Realismus/Božena Němcová.md"
               }
             }
           },
@@ -300,29 +242,32 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "b33ec870f526e0ef",
+  "active": "7df3be4c55a85160",
   "lastOpenFiles": [
+    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
+    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
+    "mat/Trigonometrie/Sinová věta.md",
+    "mat/Trigonometrie/Příklady.md",
+    "mat/mat.md",
+    "fyz/fyz.md",
+    "mat/Trigonometrie/Kosinová věta.md",
+    "mat/Funkce/Goniometrické funkce.md",
+    "mat/Funkce/Tangens.md",
+    "fyz/Molekulová fyzika/Pevne blbosti/Vzorky.md",
     "data/Kmitový pohyb 2023-04-25 12.31.10.excalidraw.md",
+    "fyz/pohyb/pohyb.md",
+    "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
     "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
     "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
-    "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
     "fyz/pohyb/Periodický a kmitavý",
     "data/Pasted image 20230425122807.png",
     "fyz/Příklad.md",
     "fyz/Molekulová fyzika/Molekulová fyzika.md",
     "fyz/Molekulová fyzika",
-    "fyz/pohyb/pohyb.md",
     "fyz/Molekulová fyzika/Pevne blbosti/Pevne blbosti.md",
     "fyz/Molekulová fyzika/Změny skupenství.md",
-    "mat/Funkce/Tangens.md",
-    "mat/Trigonometrie/Sinová věta.md",
-    "fyz/Molekulová fyzika/Pevne blbosti/Vzorky.md",
-    "mat/Trigonometrie/Příklady.md",
     "mat/Funkce/čtvrtletka tahák.md",
-    "mat/Trigonometrie/Kosinová věta.md",
-    "mat/Funkce/Goniometrické funkce.md",
     "fyz/Molekulová fyzika/Jevy mezi pevnýma tělesama a kapalinama.md",
-    "fyz/fyz.md",
     "mat/Funkce/Sinus.md",
     "data/Pasted image 20230419111526.png",
     "data/Pasted image 20230419111454.png",
@@ -330,9 +275,6 @@
     "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
     "mat/Trigonometrie/Trigonometrie.md",
     "mat/Funkce/Cotangens.md",
-    "mat/Funkce/Cosinus.md",
-    "mat/Funkce/Goniometrické vzorce.md",
-    "mat/Funkce/Inverzní funkce.md",
     "data/Pasted image 20230419091807.png",
     "data/Pasted image 20230417192048.png",
     "mat/Trigonometrie",

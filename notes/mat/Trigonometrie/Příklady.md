@@ -99,9 +99,15 @@ $\frac{b}{\sin \beta}=\frac{c}{\sin \gamma}$
 $\frac{sin \gamma\ b}{c} = \sin \beta$
 $\frac{0,45 * 8}{5}=\sin \beta$
 $\sin \beta = 0,72$
-$\beta =  46,1°$
-$\gamma= 107° 5'$
+
+dvě varianty:
+$\beta =  46\degree25'$
+$\gamma= 107\degree 5'$
 $\frac{\sin \gamma b}{\sin \beta} = 10,6$
+
+$\beta=133\degree25'$
+$\gamma=180\degree-133\degree35'-26\degree55'=19\degree30'$
+$\frac{\sin\gamma b}{\sin\beta}=3.7$
 
 d)
 
@@ -110,5 +116,57 @@ $b=3cm$
 $\beta = 124\degree$
 
 $\frac{\sin \beta a}{b}=\sin \alpha$
-$\frac{0,82*6}{3}=0,82*2$
+$\frac{0,82*6}{3}=\sin\alpha$
 nemá řešení
+
+49/76
+
+1)
+
+$a^2 = b^2 + c^2 -2bc*cos \alpha$
+$cos \alpha = \frac{a^2 - b^2 - c^2}{-2ab}$
+$cos \alpha = \frac{4-9-16}{-24}$
+$cos \alpha = \frac{-23}{-24}$
+$cos \alpha = 23/24$
+$\alpha = 16,6°$
+
+$b^2 = a^2+c^1 - 2ac * cos \beta$
+$cos \beta = \frac{9-4-16}{-16}$
+$cos \beta = \frac{-11}{-16}$
+$\beta = 46,6°$
+$180 - 46,6 - 16,6 = \gamma$
+$\gamma = 116,8$
+
+2)
+nesplňuje trojúhelníkovou nerovnost
+
+
+3)
+$a=5$
+$b=7$
+$\gamma=29,23\degree$
+
+$c^2 = a^2+b^2-2ab*cos\gamma$
+$c^2 = 25 + 49 - 70*cos(29,23°)$
+$c^2 = 12,91334$
+$c^2 = 3,6cm$
+
+$a^2 = b^2 + c^2 -2bc*cos \alpha$
+$cos \alpha = \frac{a^2 - b^2 - c^2}{-2bc}$
+$cos \alpha = \frac{25-3,6-49}{-2*5*3,6}$
+$cos \alpha = \frac{23}{30}$
+$\alpha = 39,9°$
+$\beta = 180° - \alpha - \gamma$
+$\beta = 180° - 39,9 - 29,23$
+$\beta = 110,87°$
+
+4)
+
+$a=7cm$
+$b=12cm$
+$\beta=124\degree$
+
+$b^2 = a^2 + c^2- 2a c * cos\beta$
+$b^2 = 49 + 144 - 336*cos(124)$
+$b^2 = 224,1728$
+$b \dot= 19,5cm$
