@@ -23,3 +23,9 @@ $AC\approx BF$ ❌
 ![](Pasted%20image%2020230426112709.png)
 $|BS|=|SF|;S\in BF$ ✅
 
+## Za jakých okolností jsou shodné dvě úsečky
+Mají stejnou velikost
+## Za jakých okolností jsou shodné dvě přímky
+Sdílí mezi sebou všechny své body
+## Za jakých okolností jsou shodné dvě polopřímky
+

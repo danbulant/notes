@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Trigonometrie/Příklady.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "767dd8d2c7585fdb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Trigonometrie/Geometrie/Přímka.md",
+                "file": "mat/Trigonometrie/Geometrie/Úhel.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,6 +56,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "38d6aa45e6f03b53",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -90,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Přímka.md",
+                "file": "mat/Trigonometrie/Geometrie/Úhel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Přímka.md",
+                "file": "mat/Trigonometrie/Geometrie/Úhel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Přímka.md"
+                "file": "mat/Trigonometrie/Geometrie/Úhel.md"
               }
             }
           },
@@ -230,8 +225,25 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "767dd8d2c7585fdb",
+  "active": "0bb0521fe1f40480",
   "lastOpenFiles": [
+    "mat/Trigonometrie/Geometrie/Přímka.md",
+    "mat/Trigonometrie/Geometrie/Polorovina.md",
+    "mat/Trigonometrie/Geometrie/Geometrie.md",
+    "mat/Trigonometrie/Geometrie/Úhel.md",
+    "mat/Trigonometrie/Geometrie/Eukleidés a jeho postuláty.md",
+    "mat/Trigonometrie/Příklady.md",
+    "projects/conos/Interesting tech.md",
+    "projects/conos/DesignDesign.md",
+    "data/Pasted image 20230502210329.png",
+    "data/Pasted image 20230502210302.png",
+    "projects/conos/Terminology.md",
+    "projects/conos/Login system.md",
+    "projects/conos/conos.md",
+    "projects/projects.md",
+    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
+    "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
+    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
     "data/Pasted image 20230426112709.png",
     "data/Pasted image 20230426112637.png",
     "data/Pasted image 20230426112218.png",
@@ -240,13 +252,7 @@
     "data/Pasted image 20230426111746.png",
     "data/Pasted image 20230426111715.png",
     "data/Pasted image 20230426111635.png",
-    "data/Pasted image 20230426111615.png",
-    "mat/Trigonometrie/Geometrie/Geometrie.md",
-    "mat/Trigonometrie/Příklady.md",
-    "mat/Trigonometrie/Geometrie/Přímka.md",
     "mat/Trigonometrie/Geometrie",
-    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
-    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
     "mat/Trigonometrie/Sinová věta.md",
     "mat/mat.md",
     "fyz/fyz.md",
@@ -258,19 +264,8 @@
     "fyz/pohyb/pohyb.md",
     "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
     "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
-    "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
     "fyz/pohyb/Periodický a kmitavý",
-    "data/Pasted image 20230425122807.png",
-    "fyz/Příklad.md",
-    "fyz/Molekulová fyzika/Molekulová fyzika.md",
     "fyz/Molekulová fyzika",
-    "fyz/Molekulová fyzika/Pevne blbosti/Pevne blbosti.md",
-    "fyz/Molekulová fyzika/Změny skupenství.md",
-    "mat/Funkce/čtvrtletka tahák.md",
-    "fyz/Molekulová fyzika/Jevy mezi pevnýma tělesama a kapalinama.md",
-    "mat/Funkce/Sinus.md",
-    "data/Pasted image 20230419111526.png",
-    "cjl/literatura/slohy/Realismus/Realismus.md",
     "mat/Trigonometrie",
     "cjl/literatura/slohy/Realismus",
     "cjl/literatura/slohy/Poetismus",
