@@ -4,7 +4,7 @@ $b^2=c^2+a^2-2ca\cos\beta$
 $c^2=a^2+b^2-2ab\cos\gamma$
 
 $b_c=c\cos\alpha$
-$b_c$ … část $a$ rozdělená výškou $v_a$ a bližší straně $b$.
+$b_c$ … část $b$ rozdělená výškou $v_b$ a bližší straně $c$.
 $a_c=c\cos\beta$
 
 ![](Pasted%20image%2020230417192048.png)

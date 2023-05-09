@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "bd2caacaf6b63690",
+        "id": "8e4917a90e1d2832",
         "type": "tabs",
         "children": [
           {
-            "id": "0bb0521fe1f40480",
+            "id": "4965e0184562b8f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Úhel.md",
+                "file": "fyz/pohyb/Periodický a kmitavý/Fáze.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Úhel.md",
+                "file": "fyz/pohyb/Periodický a kmitavý/Fáze.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Úhel.md",
+                "file": "fyz/pohyb/Periodický a kmitavý/Fáze.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Úhel.md"
+                "file": "fyz/pohyb/Periodický a kmitavý/Fáze.md"
               }
             }
           },
@@ -225,45 +225,45 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "0bb0521fe1f40480",
+  "active": "4965e0184562b8f7",
   "lastOpenFiles": [
+    "fyz/pohyb/Periodický a kmitavý/Rychlost a zrychlení.md",
+    "fyz/pohyb/Periodický a kmitavý/Fáze.md",
+    "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
+    "data/Pasted image 20230509115651.png",
+    "data/Pasted image 20230509115446.png",
+    "data/Pasted image 20230509115436.png",
+    "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
+    "fyz/pohyb/Druhý pohybový zákon.md",
+    "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
+    "fyz/fyz.md",
+    "cjl/literatura/slohy/Realismus/Rozchod.md",
+    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
+    "cjl/cjl.md",
+    "projects/projects.md",
+    "mat/mat.md",
+    "mat/Trigonometrie/Geometrie/Priklady.md",
+    "mat/Trigonometrie/Příklady.md",
+    "mat/Trigonometrie/Kosinová věta.md",
+    "mat/Trigonometrie/Euklidovy věty.md",
+    "mat/Trigonometrie/Sinová věta.md",
+    "data/Pasted image 20230503211421.png",
+    "mat/Trigonometrie/Geometrie/Úhel.md",
     "mat/Trigonometrie/Geometrie/Přímka.md",
     "mat/Trigonometrie/Geometrie/Polorovina.md",
     "mat/Trigonometrie/Geometrie/Geometrie.md",
-    "mat/Trigonometrie/Geometrie/Úhel.md",
     "mat/Trigonometrie/Geometrie/Eukleidés a jeho postuláty.md",
-    "mat/Trigonometrie/Příklady.md",
     "projects/conos/Interesting tech.md",
     "projects/conos/DesignDesign.md",
     "data/Pasted image 20230502210329.png",
     "data/Pasted image 20230502210302.png",
     "projects/conos/Terminology.md",
     "projects/conos/Login system.md",
-    "projects/conos/conos.md",
-    "projects/projects.md",
-    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
-    "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
-    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
     "data/Pasted image 20230426112709.png",
     "data/Pasted image 20230426112637.png",
     "data/Pasted image 20230426112218.png",
     "data/Pasted image 20230426112004.png",
-    "data/Pasted image 20230426111821.png",
-    "data/Pasted image 20230426111746.png",
-    "data/Pasted image 20230426111715.png",
-    "data/Pasted image 20230426111635.png",
     "mat/Trigonometrie/Geometrie",
-    "mat/Trigonometrie/Sinová věta.md",
-    "mat/mat.md",
-    "fyz/fyz.md",
-    "mat/Trigonometrie/Kosinová věta.md",
-    "mat/Funkce/Goniometrické funkce.md",
-    "mat/Funkce/Tangens.md",
-    "fyz/Molekulová fyzika/Pevne blbosti/Vzorky.md",
-    "data/Kmitový pohyb 2023-04-25 12.31.10.excalidraw.md",
-    "fyz/pohyb/pohyb.md",
-    "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
-    "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
     "fyz/pohyb/Periodický a kmitavý",
     "fyz/Molekulová fyzika",
     "mat/Trigonometrie",
