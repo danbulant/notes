@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Fáze.md",
+                "file": "mat/Trigonometrie/Geometrie/Úhel.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Fáze.md",
+                "file": "mat/Trigonometrie/Geometrie/Úhel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Fáze.md",
+                "file": "mat/Trigonometrie/Geometrie/Úhel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Fáze.md"
+                "file": "mat/Trigonometrie/Geometrie/Úhel.md"
               }
             }
           },
@@ -225,40 +225,40 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "dbddec9c14a6f939",
+  "active": "4965e0184562b8f7",
   "lastOpenFiles": [
-    "fyz/pohyb/Periodický a kmitavý/Rychlost a zrychlení.md",
-    "fyz/pohyb/Periodický a kmitavý/Fáze.md",
+    "data/Úhel 2023-05-09 14.22.06.excalidraw.md",
+    "mat/Trigonometrie/Geometrie/Úhel.md",
+    "data/Úhel 2023-05-09 14.21.30.excalidraw.md",
+    "data/Úhel 2023-05-09 14.20.59.excalidraw.md",
+    "data/Úhel 2023-05-09 14.20.13.excalidraw.md",
+    "data/Úhel 2023-05-09 14.18.29.excalidraw.md",
+    "data/Úhel 2023-05-09 14.12.35.excalidraw.md",
+    "data/Úhel 2023-05-09 14.14.21.excalidraw.md",
+    "data/Úhel 2023-05-09 14.13.23.excalidraw.md",
+    "data/Úhel 2023-05-09 14.15.38.excalidraw.md",
+    "data/Úhel 2023-05-09 14.11.37.excalidraw.md",
+    "data/Úhel 2023-05-09 14.05.40.excalidraw.md",
     "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
+    "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
+    "fyz/pohyb/Periodický a kmitavý/Rychlost a zrychlení.md",
+    "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
+    "mat/Trigonometrie/Geometrie/Eukleidés a jeho postuláty.md",
+    "mat/mat.md",
+    "fyz/pohyb/Periodický a kmitavý/Fáze.md",
     "data/Pasted image 20230509115651.png",
     "data/Pasted image 20230509115446.png",
     "data/Pasted image 20230509115436.png",
-    "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
     "fyz/pohyb/Druhý pohybový zákon.md",
-    "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
     "fyz/fyz.md",
     "cjl/literatura/slohy/Realismus/Rozchod.md",
     "cjl/literatura/slohy/Realismus/Božena Němcová.md",
     "cjl/cjl.md",
     "projects/projects.md",
-    "mat/mat.md",
     "mat/Trigonometrie/Geometrie/Priklady.md",
-    "mat/Trigonometrie/Příklady.md",
-    "mat/Trigonometrie/Kosinová věta.md",
-    "mat/Trigonometrie/Euklidovy věty.md",
-    "mat/Trigonometrie/Sinová věta.md",
     "data/Pasted image 20230503211421.png",
-    "mat/Trigonometrie/Geometrie/Úhel.md",
-    "mat/Trigonometrie/Geometrie/Přímka.md",
-    "mat/Trigonometrie/Geometrie/Polorovina.md",
-    "mat/Trigonometrie/Geometrie/Geometrie.md",
-    "mat/Trigonometrie/Geometrie/Eukleidés a jeho postuláty.md",
-    "projects/conos/Interesting tech.md",
-    "projects/conos/DesignDesign.md",
     "data/Pasted image 20230502210329.png",
     "data/Pasted image 20230502210302.png",
-    "projects/conos/Terminology.md",
-    "projects/conos/Login system.md",
     "data/Pasted image 20230426112709.png",
     "data/Pasted image 20230426112637.png",
     "data/Pasted image 20230426112218.png",
