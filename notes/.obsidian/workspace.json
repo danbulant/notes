@@ -194,7 +194,7 @@
             }
           },
           {
-            "id": "f67c3695a56603f0",
+            "id": "dbddec9c14a6f939",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -219,13 +219,13 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false
+      "breadcrumbs:Breadcrumbs Visualisation": false,
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "4965e0184562b8f7",
+  "active": "dbddec9c14a6f939",
   "lastOpenFiles": [
     "fyz/pohyb/Periodický a kmitavý/Rychlost a zrychlení.md",
     "fyz/pohyb/Periodický a kmitavý/Fáze.md",
