@@ -49,28 +49,49 @@
 	- kupony se mohly dát (pouze) do privatizačních fondů
 		- mohla se využít i část
 	- fondů bylo stovky
-		- PPF
+		- PPF (První privatizační fond)
+		- Istrokapitál (vlastní jej 3. nejbohatší čech)
 		- Trend
 		- Kvanto
 		- Česká Spořitelna (spořitelní privatizační, a.s.)
 		- Harvardské podílové fondy
 		- Čechy, Morava
 		- Expandia
+		- CS Fondy (10. nejbohatší čech, investigován policií, nedostatek důkazů)
 	- fondy poté dávali své akcie účastníkům. 
 		- počet akcií, podílových listů a jejich hodnotu určoval fond
 	- ne všechny obchodovaly seriózně
 		- různé podvody
 	- knížky se dali různě prodávat (byli lidé co si stoupli před poštu a lidem co si koupili knížku za 1000 dávali na ruku třeba 1500)
-		- Harvard akce:
+		- IPF Harvard ak(okradl je takový blbý, půlka z nich by to třeba ani nevyužice:
 			- vložte knížku, a ihned dostanete půjčku 3000kč
-			- 
+			- jistota desetinásobku
+			- nemají nic společného s Harvard University
+			- symbol tunelování
+			- dostal milion knížek
+			- zmizelo z nich 16mld korun 
+			- vlastník Viktor Kožený, utekl, odsouzen na 10let
+			- mezinárodní zatykač
+			- irský občan, žijící na bahamách
+			- 1994 se přesunul do daňového exilu na Bahamy
+			- 1995 koupil irské občanství
+			- udělal podobný podvod i v Ázerbájdžánu, podplatil prý i prezidenta.
+- Rozdělení kuponů
+	- první
+		- 71.4% do fondů
+		- 28.6% individuálně
+	- druhá
+		- 63.5% do fondů
+		- 36.5% individuálně 
 - “autoři”:
-	- Tomáš Ježek
-	- Dušan Tříska
+	- Václav Klaus - (tehdy) ministr financí, během první vlny se stal republikovým (pro čechy) premiérem
+	- Tomáš Ježek - ministr pro privatizaci
+	- Dušan Tříska - náměstek ministra financí
 - zdroje:
-	- Ekonomická fakulta VŠB-TUO (rozhovory profesorů ses tudenty)
+	- Ekonomická fakulta VŠB-TUO (rozhovory profesorů se studenty)
 	- Investweb
-	- Česká televize (Události 2.10.2021)
+	- Česká televize (+archív)
+	- Wikipedia
 
 Kvanto:
 ![](Pasted%20image%2020230509173614.png)

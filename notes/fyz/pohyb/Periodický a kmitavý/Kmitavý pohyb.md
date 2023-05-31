@@ -1,4 +1,4 @@
-# Kmitový pohyb
+# Kmitavý pohyb
 ## Mechanický oscilátor
 “na pružině, nahoru/dolů” 
 - přímočarý
@@ -67,4 +67,6 @@ $y=0.2\sin\frac{2\pi}T\frac{T}4=0.2\sin\frac\pi2=0.2m$
 $y=0.2\sin\frac{2\pi}T\frac{T}3=0.2\sin\frac{2\pi}3=0.2\frac{\sqrt3}2m\dot=0.17m$
 
 $y=0.2\sin\frac{2\pi}T\frac{T}2=0.2\sin\pi=0m$
+
+---
 

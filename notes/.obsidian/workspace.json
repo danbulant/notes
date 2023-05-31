@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "0c36184286a546a6",
+        "id": "0fdcef1cb69971bf",
         "type": "tabs",
         "children": [
           {
-            "id": "05b0b68a4b546c6a",
+            "id": "2ee732f9113c00b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dej/moderní/postkomunismus/Kupónová privatizace.md",
+                "file": "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e835a74c578e7ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fyz/pohyb/Periodický a kmitavý/Samostudium.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "197dc09117e014a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fyz/pohyb/Periodický a kmitavý/Dynamika kmitavého pohybu.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0acbafb9ffa68e98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cjl/literatura/slohy/Romantismus/Pracovní list.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -69,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 353.50418853759766
   },
   "right": {
     "id": "d22ff97dba49a6cc",
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dej/moderní/postkomunismus/Kupónová privatizace.md",
+                "file": "cjl/literatura/slohy/Romantismus/Pracovní list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dej/moderní/postkomunismus/Kupónová privatizace.md",
+                "file": "cjl/literatura/slohy/Romantismus/Pracovní list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dej/moderní/postkomunismus/Kupónová privatizace.md"
+                "file": "cjl/literatura/slohy/Romantismus/Pracovní list.md"
               }
             }
           },
@@ -221,49 +258,49 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "05b0b68a4b546c6a",
+  "active": "0acbafb9ffa68e98",
   "lastOpenFiles": [
-    "data/Pasted image 20230509173614.png",
-    "data/Pasted image 20230509164048.png",
-    "data/Pasted image 20230509164021.png",
-    "data/Pasted image 20230509164005.png",
-    "data/Pasted image 20230509163952.png",
-    "data/Pasted image 20230509163936.png",
-    "data/Pasted image 20230509163923.png",
-    "data/Pasted image 20230509163908.png",
-    "data/Pasted image 20230509163858.png",
-    "data/Pasted image 20230509163843.png",
-    "dej/moderní/postkomunismus/postkomunismus.md",
-    "dej/moderní/komunismus/komunismus.md",
-    "dej/moderní/postkomunismus/Kupónová privatizace.md",
-    "dej/moderní/postkomunismus",
-    "dej/dej.md",
+    "data/Pasted image 20230531074650.png",
+    "cjl/literatura/slohy/Romantismus/Národní obrozeni.md",
+    "cjl/literatura/slohy/Romantismus/Havran.md",
+    "fyz/pohyb/Periodický a kmitavý/Dynamika kmitavého pohybu.md",
+    "cjl/literatura/slohy/Romantismus/Pracovní list.md",
+    "data/Pasted image 20230531073512.png",
+    "data/Pasted image 20230531073501.png",
+    "data/Pasted image 20230531073456.png",
+    "data/Pasted image 20230531073446.png",
+    "data/Pasted image 20230531071539.png",
+    "data/Pasted image 20230531071533.png",
+    "data/Pasted image 20230531071526.png",
+    "data/Pasted image 20230531071518.png",
+    "cjl/literatura/slohy/Romantismus/Romantismus.md",
+    "cjl/literatura/slohy/Realismus/Realismus.md",
     "cjl/cjl.md",
-    "fyz/fyz.md",
-    "mat/mat.md",
-    "mat/Trigonometrie/Geometrie/Úhel.md",
-    "data/Úhel 2023-05-09 14.22.06.excalidraw.md",
-    "data/Úhel 2023-05-09 14.21.30.excalidraw.md",
-    "data/Úhel 2023-05-09 14.20.59.excalidraw.md",
-    "data/Úhel 2023-05-09 14.20.13.excalidraw.md",
-    "data/Úhel 2023-05-09 14.18.29.excalidraw.md",
-    "data/Úhel 2023-05-09 14.12.35.excalidraw.md",
-    "data/Úhel 2023-05-09 14.14.21.excalidraw.md",
-    "data/Úhel 2023-05-09 14.13.23.excalidraw.md",
-    "data/Úhel 2023-05-09 14.15.38.excalidraw.md",
-    "data/Úhel 2023-05-09 14.11.37.excalidraw.md",
-    "data/Úhel 2023-05-09 14.05.40.excalidraw.md",
-    "fyz/pohyb/Periodický a kmitavý/Kmitový pohyb.md",
-    "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
-    "fyz/pohyb/Periodický a kmitavý/Rychlost a zrychlení.md",
     "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
-    "mat/Trigonometrie/Geometrie/Eukleidés a jeho postuláty.md",
+    "fyz/pohyb/Periodický a kmitavý/Samostudium.md",
+    "data/Pasted image 20230530122049.png",
+    "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
+    "fyz/pohyb/Periodický a kmitavý/Kmitavý pohyb.md",
     "fyz/pohyb/Periodický a kmitavý/Fáze.md",
-    "data/Pasted image 20230509115651.png",
+    "data/Pasted image 20230530121828.png",
+    "fyz/pohyb/Periodický a kmitavý/Princip superpozice.md",
+    "fyz/fyz.md",
+    "ele/Náboj, proud, napětí a odpor.md",
+    "ele/ele.md",
+    "dej/moderní/postkomunismus/Kupónová privatizace.md",
+    "ech/ech.md",
+    "ech/Názvosloví/Soli kyslíkatých kyselin.md",
+    "ech/Názvosloví/Peroxidy.md",
+    "ech/Názvosloví/Názvosloví Trnka.md",
+    "ech/Názvosloví/Kyslíkaté kyseliny.md",
+    "ech/Názvosloví/Názvosloví.md",
+    "ech/Názvosloví/Kovalentní hydridy.md",
+    "ech/Názvosloví/Koncovky.md",
+    "dej/moderní/postkomunismus",
     "mat/Trigonometrie/Geometrie",
     "fyz/pohyb/Periodický a kmitavý",
     "fyz/Molekulová fyzika",
