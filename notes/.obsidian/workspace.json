@@ -54,6 +54,38 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "aa5da899a2aab9fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Trigonometrie/Geometrie/Geometrie.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "87d82a972b3c8f82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Trigonometrie/Geometrie/Kruznice a trojuhelnik.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2fcdc6cda4579289",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
         "currentTab": 3
@@ -264,11 +296,18 @@
   },
   "active": "0acbafb9ffa68e98",
   "lastOpenFiles": [
+    "mat/Trigonometrie/Geometrie/Kruznice a trojuhelnik.md",
+    "data/Pasted image 20230531112600.png",
+    "mat/Trigonometrie/Geometrie/Geometrie.md",
+    "mat/Trigonometrie/Geometrie/Eukleidés a jeho postuláty.md",
+    "mat/Trigonometrie/Geometrie/Polorovina.md",
+    "mat/Funkce/Cosinus.md",
+    "mat/mat.md",
+    "cjl/literatura/slohy/Romantismus/Pracovní list.md",
     "data/Pasted image 20230531074650.png",
     "cjl/literatura/slohy/Romantismus/Národní obrozeni.md",
     "cjl/literatura/slohy/Romantismus/Havran.md",
     "fyz/pohyb/Periodický a kmitavý/Dynamika kmitavého pohybu.md",
-    "cjl/literatura/slohy/Romantismus/Pracovní list.md",
     "data/Pasted image 20230531073512.png",
     "data/Pasted image 20230531073501.png",
     "data/Pasted image 20230531073456.png",
@@ -282,11 +321,9 @@
     "cjl/cjl.md",
     "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
     "fyz/pohyb/Periodický a kmitavý/Samostudium.md",
-    "data/Pasted image 20230530122049.png",
     "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
     "fyz/pohyb/Periodický a kmitavý/Kmitavý pohyb.md",
     "fyz/pohyb/Periodický a kmitavý/Fáze.md",
-    "data/Pasted image 20230530121828.png",
     "fyz/pohyb/Periodický a kmitavý/Princip superpozice.md",
     "fyz/fyz.md",
     "ele/Náboj, proud, napětí a odpor.md",
@@ -294,12 +331,6 @@
     "dej/moderní/postkomunismus/Kupónová privatizace.md",
     "ech/ech.md",
     "ech/Názvosloví/Soli kyslíkatých kyselin.md",
-    "ech/Názvosloví/Peroxidy.md",
-    "ech/Názvosloví/Názvosloví Trnka.md",
-    "ech/Názvosloví/Kyslíkaté kyseliny.md",
-    "ech/Názvosloví/Názvosloví.md",
-    "ech/Názvosloví/Kovalentní hydridy.md",
-    "ech/Názvosloví/Koncovky.md",
     "dej/moderní/postkomunismus",
     "mat/Trigonometrie/Geometrie",
     "fyz/pohyb/Periodický a kmitavý",

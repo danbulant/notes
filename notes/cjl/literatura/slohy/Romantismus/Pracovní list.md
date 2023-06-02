@@ -64,38 +64,39 @@ V první, pro větší “vtažení” do příběhu, pro větší možnost vyj�
 
 ## K následujícím obrázkům doplňte názvy slavných děl z období romantismu
 ![](Pasted%20image%2020230531073446.png)
-
+evzen onegin
 ![](Pasted%20image%2020230531073456.png)
 [Havran](Havran.md) 
 ![](Pasted%20image%2020230531073501.png)
 Tři mušketýři
 ![](Pasted%20image%2020230531073512.png)
+pad domu usheru
 
 ## Rozbor textu
 ### Které postupy autor v ukázce střídá
 popis, vyprávěcí
 ### Jak se nazývá citově zaujatý popis, kterým autor popisuje krajinu a dům?
-
+rceni
 ### Kterými epitety a metaforami popisuje vyprávěč svůj duševní stav?
-
+tisnive mraky
 ## Z následujících pojmů zathrněte ty, které jsou typický pro romantismus.
 - [ ] důraz na rozumové poznání
-- [x] hlavním hrdinou je obyčejně člověk
+- [ ] hlavním hrdinou je obyčejně člověk
 - [ ] zájem o politické dění
 - [x] subjektivní líčení venkova
 - [ ] hrdina toužící po slávě
 - [ ] vědecké vysvětlení jevů
 - [x] hrdinou je často vrah nebo zločinec
-- [x] tajemnou, mystika a ezoterika
+- [x] tajemno, mystika a ezoterika
 - [x] nespoutanost přírody
 - [x] inspirace středověkými pověstmi
 - [x] téma bouře 
 - [ ] objektivní popis vztahů v rodině
-- [ ] osamocenost
+- [x] osamocenost
 - [ ] šťastný konec
 - [x] téma nešťastné lásky
 - [ ] přesné vylíčení života na venkově
-- [ ] záliba v historii
+- [x] záliba v historii
 
 ## Smrt básníka
 ### O kterém básnikovi se zde píše
