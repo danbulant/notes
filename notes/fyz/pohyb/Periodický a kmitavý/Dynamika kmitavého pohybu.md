@@ -49,3 +49,55 @@ $f_0=\frac1{2\pi}\sqrt{\frac{k}m}$
 $f_0=\frac1{2\pi}\sqrt{\frac{\frac{mg}{\Delta l}}{\frac{m}1}}=\frac1{\frac2\pi}\sqrt{\frac{g}{\Delta l}}$
 $f_0=\frac1{2\pi}\sqrt{\frac{9.8}{0.025}}$
 $f_0=?Hz$
+
+----
+
+$E_K=\frac12mv^2$
+kinetická
+$E_p=\frac12ky^2$
+potencionální - energie pružnosti
+
+krajní poloha:
+- $E_K=J$
+- $E_p=\frac12ky^2_m$ - maximální
+- $E=E_p$
+
+rovnovážná poloha:
+- $E_p=0J$
+- $E_K=\frac12mv^2_m$ - maximální
+- $E=E_K$
+
+Mezi poloha:
+- $E=E_K+E_p$
+
+
+---
+
+Pružina se po zavěšení tělesa o hmotnosti $40g$ prodloužila o $15mm$. Určete energii kmitání tohoto oscilátoru po vychýlení z rovnovážné polohy o $15cm$.
+$g=9.8ms^{-2}$
+
+$m=40g$
+$\Delta l=15mm$
+$E=?$
+$y=15cm$
+$k=\frac{F_g}{\Delta l}$
+$E_p=\frac12ky^2$
+$E_p=\frac12\frac{F_g}{\Delta l}y^2$
+$E_p=\frac12\frac{0.04*9.8}{0.015}*0.15^2$
+$E_p=0.294J$
+
+---
+
+Na pružinu bylo zavěšeno závaží o hmotnosti $10kg$ a pružina se přitom prodloužila o $15cm$. Po uvedení do pohybu závaží kmitalo s amplitudou výchylky $10cm$. Vypočtěte dobu kmitu a celkovou energii kmitajícího závaží.
+$m=10kg$
+$\Delta l=15cm$
+$y_m=10cm$
+$T=?$
+$E=?$
+$T=2\pi\sqrt{\frac{m}k}$
+$T=2\pi\sqrt{\frac{m}{\frac{G_g}{\Delta l}}}$
+$T=2\pi\sqrt{\frac{m}{\frac{mg}{\Delta l}}}$
+$T=2\pi\sqrt{\frac{\Delta l}{g}}$
+$T=2\pi\sqrt{\frac{0.15}{9.8}}$
+$T=0.77s$
+
