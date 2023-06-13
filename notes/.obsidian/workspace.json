@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Kmitavý pohyb.md",
+                "file": "fyz/pohyb/Periodický a kmitavý/Přeměny energie v kyvadlu.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Priklady.md",
+                "file": "fyz/pohyb/Periodický a kmitavý/Přeměny energie v kyvadlu.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Priklady.md",
+                "file": "fyz/pohyb/Periodický a kmitavý/Přeměny energie v kyvadlu.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Priklady.md"
+                "file": "fyz/pohyb/Periodický a kmitavý/Přeměny energie v kyvadlu.md"
               }
             }
           },
@@ -310,8 +310,13 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "f0d84c4416b767c3",
+  "active": "87d82a972b3c8f82",
   "lastOpenFiles": [
+    "data/Pasted image 20230613122350.png",
+    "fyz/pohyb/Periodický a kmitavý/Kmitavý pohyb.md",
+    "fyz/pohyb/Periodický a kmitavý/Přeměny energie v kyvadlu.md",
+    "data/Pasted image 20230613121341.png",
+    "mat/Trigonometrie/Geometrie/Priklady.md",
     "data/Pasted image 20230608114007.png",
     "data/Pasted image 20230607114133.png",
     "data/Pasted image 20230607114014.png",
@@ -320,15 +325,11 @@
     "data/Pasted image 20230607111239.png",
     "cjl/literatura/slohy/Romantismus/Pracovní list 2.md",
     "cjl/literatura/slohy/Romantismus/Pracovní list.md",
-    "mat/Trigonometrie/Geometrie/Priklady.md",
     "data/Pasted image 20230606142547.png",
     "data/Pasted image 20230606141616.png",
     "data/Pasted image 20230606140851.png",
-    "data/Pasted image 20230606140002.png",
-    "data/Pasted image 20230606135400.png",
     "mat/Trigonometrie/Geometrie/Geometrie.md",
     "fyz/pohyb/Periodický a kmitavý/Dynamika kmitavého pohybu.md",
-    "fyz/pohyb/Periodický a kmitavý/Kmitavý pohyb.md",
     "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
     "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
     "fyz/pohyb/Periodický a kmitavý/Fáze.md",
@@ -347,7 +348,6 @@
     "fyz/pohyb/Periodický a kmitavý/Samostudium.md",
     "fyz/fyz.md",
     "ele/Náboj, proud, napětí a odpor.md",
-    "ele/ele.md",
     "dej/moderní/postkomunismus",
     "mat/Trigonometrie/Geometrie",
     "fyz/pohyb/Periodický a kmitavý",

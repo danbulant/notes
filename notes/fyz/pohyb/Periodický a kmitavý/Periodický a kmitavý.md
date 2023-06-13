@@ -4,6 +4,7 @@
 -  [[fyz/pohyb/Periodický a kmitavý/Fáze|Fáze]]
 -  [[fyz/pohyb/Periodický a kmitavý/Kmitavý pohyb|Kmitavý pohyb]]
 -  [[fyz/pohyb/Periodický a kmitavý/Periodický pohyb|Periodický pohyb]]
+-  [[fyz/pohyb/Periodický a kmitavý/Přeměny energie v kyvadlu|Přeměny energie v kyvadlu]]
 -  [[fyz/pohyb/Periodický a kmitavý/Princip superpozice|Princip superpozice]]
 -  [[fyz/pohyb/Periodický a kmitavý/Rychlost a zrychlení|Rychlost a zrychlení]]
 -  [[fyz/pohyb/Periodický a kmitavý/Samostudium|Samostudium]]

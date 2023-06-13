@@ -70,3 +70,4 @@ $y=0.2\sin\frac{2\pi}T\frac{T}2=0.2\sin\pi=0m$
 
 ---
 
+![](Pasted%20image%2020230613121341.png)
