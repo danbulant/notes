@@ -4,107 +4,32 @@
     "type": "split",
     "children": [
       {
-        "id": "0fdcef1cb69971bf",
+        "id": "e8c85168bd6931bc",
         "type": "tabs",
         "children": [
           {
-            "id": "2ee732f9113c00b2",
+            "id": "6e566f78a5489c29",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
+                "file": "fyz/Světlo.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6e835a74c578e7ac",
+            "id": "7e650d3c0e5b3b44",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Samostudium.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "197dc09117e014a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Dynamika kmitavého pohybu.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0acbafb9ffa68e98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cjl/literatura/slohy/Romantismus/Pracovní list.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa5da899a2aab9fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Trigonometrie/Geometrie/Geometrie.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "87d82a972b3c8f82",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Přeměny energie v kyvadlu.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2fcdc6cda4579289",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/pohyb/Periodický a kmitavý/Dynamika kmitavého pohybu.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0d84c4416b767c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Trigonometrie/Geometrie/Mnohoúhelníky.md",
-                "mode": "source",
-                "source": false
+                "file": "data/Světlo 2023-09-07 14.20.26.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "omega",
+                "query": "note",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -170,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Mnohoúhelníky.md",
+                "file": "fyz/Světlo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Mnohoúhelníky.md",
+                "file": "fyz/Světlo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Trigonometrie/Geometrie/Mnohoúhelníky.md"
+                "file": "fyz/Světlo.md"
               }
             }
           },
@@ -310,44 +235,47 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "f0d84c4416b767c3",
+  "active": "6e566f78a5489c29",
   "lastOpenFiles": [
+    "data/Světlo 2023-09-07 14.20.26.excalidraw.md",
+    "fyz/Světlo.md",
+    "fyz/pohyb/pohyb.md",
+    "fyz/fyz.md",
+    "PRA/Sbírka zákonů.md",
+    "PRA/PRA.md",
+    "učitelé/učitelé.md",
+    "mat/mat.md",
+    "PRA",
+    "Maturitni cetba/Fahrenheit 451.md",
+    "Maturitni cetba/Maturitni cetba.md",
+    "projects/projects.md",
+    "projects/dvop/dvop.md",
+    "projects/dvop/Učební plán.md",
+    "Maturitni cetba",
+    "projects/dvop",
+    "mat/Trigonometrie/Geometrie/Pravidelný n-úhelník.md",
+    "mat/Trigonometrie/Geometrie/Mnohoúhelníky.md",
+    "mat/Funkce/Mocninné funkce.md",
+    "ele/Kapacita kondenzátorů.md",
+    "notes.md",
+    "har/BIOS.md",
+    "fyz/Jednotky SI.md",
+    "fyz/Pohyb.md",
+    "fyz/Příklad.md",
+    "fyz/Rychlost.md",
+    "fyz/Tření a třecí síla.md",
+    "mat/Funkce/Sinus.md",
+    "mat/Funkce/Funkce.md",
     "data/Pasted image 20230613140233.png",
     "data/Pasted image 20230613140100.png",
     "data/Pasted image 20230613135723.png",
-    "mat/Trigonometrie/Geometrie/Priklady.md",
-    "mat/Trigonometrie/Geometrie/Mnohoúhelníky.md",
-    "fyz/pohyb/Periodický a kmitavý/Přeměny energie v kyvadlu.md",
     "data/Pasted image 20230613122350.png",
-    "fyz/pohyb/Periodický a kmitavý/Kmitavý pohyb.md",
     "data/Pasted image 20230613121341.png",
     "data/Pasted image 20230608114007.png",
     "data/Pasted image 20230607114133.png",
     "data/Pasted image 20230607114014.png",
     "data/Pasted image 20230607113346.png",
     "data/Pasted image 20230607113344.png",
-    "data/Pasted image 20230607111239.png",
-    "cjl/literatura/slohy/Romantismus/Pracovní list 2.md",
-    "cjl/literatura/slohy/Romantismus/Pracovní list.md",
-    "mat/Trigonometrie/Geometrie/Geometrie.md",
-    "fyz/pohyb/Periodický a kmitavý/Dynamika kmitavého pohybu.md",
-    "fyz/pohyb/Periodický a kmitavý/Periodický pohyb.md",
-    "fyz/pohyb/Periodický a kmitavý/Periodický a kmitavý.md",
-    "fyz/pohyb/Periodický a kmitavý/Fáze.md",
-    "fyz/pohyb/Periodický a kmitavý/Rychlost a zrychlení.md",
-    "fyz/pohyb/Periodický a kmitavý/Princip superpozice.md",
-    "mat/Trigonometrie/Geometrie/Kruznice a trojuhelnik.md",
-    "mat/Trigonometrie/Geometrie/Eukleidés a jeho postuláty.md",
-    "mat/Trigonometrie/Geometrie/Polorovina.md",
-    "mat/Funkce/Cosinus.md",
-    "mat/mat.md",
-    "cjl/literatura/slohy/Romantismus/Národní obrozeni.md",
-    "cjl/literatura/slohy/Romantismus/Havran.md",
-    "cjl/literatura/slohy/Romantismus/Romantismus.md",
-    "cjl/literatura/slohy/Realismus/Realismus.md",
-    "cjl/cjl.md",
-    "fyz/pohyb/Periodický a kmitavý/Samostudium.md",
-    "fyz/fyz.md",
     "dej/moderní/postkomunismus",
     "mat/Trigonometrie/Geometrie",
     "fyz/pohyb/Periodický a kmitavý",
@@ -355,7 +283,6 @@
     "mat/Trigonometrie",
     "cjl/literatura/slohy/Realismus",
     "cjl/literatura/slohy/Poetismus",
-    "fyz/Molekulová fyzika/Pevne blbosti",
     "Untitled.canvas"
   ]
 }

@@ -9,4 +9,4 @@
 
 ## Sféra
 Neplatí 5. postulát
-- přímkou je pouze poledníky, rovník, a všechny “přímky” který prochází středem
+- přímkou jsou pouze poledníky, rovník, a všechny “přímky” ktere prochází středem

@@ -6,10 +6,7 @@
   "promptDelete": false,
   "legacyEditor": false,
   "livePreview": true,
-  "spellcheckLanguages": [
-    "en-US",
-    "cs"
-  ],
+  "spellcheckLanguages": null,
   "spellcheck": true,
   "showInlineTitle": false,
   "showLineNumber": false

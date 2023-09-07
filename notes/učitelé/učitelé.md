@@ -1,7 +1,8 @@
 ---
-tags: [MOC]
-  - generated
-  - index
+tags:
+	- moc
+	- generated
+	- index 
 ---
 # učitelé
 ```ccard
