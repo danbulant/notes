@@ -4,33 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fda7ab8bd5c67d8a",
+        "id": "ff266977414daff9",
         "type": "tabs",
         "children": [
           {
-            "id": "c048cb6e0f3dd778",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Ekvigonala.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "415c3f543fd8a862",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "data/Ekvigonala 2023-09-08 12.31.39.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "064234e3b247a160",
+            "id": "8229a4ab223baeba",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -42,32 +20,14 @@
             }
           },
           {
-            "id": "bf5e2d3cfe0213b8",
+            "id": "720cc98eefa4f236",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "data/Ekvigonala 2023-09-08 12.19.22.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "5a75523faae3d83f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "data/Konstrukční úlohy 2023-09-08 12.09.54.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "d97024c1ba757073",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "data/Konstrukční úlohy 2023-09-08 11.36.28.excalidraw.md"
+                "file": "mat/Ekvigonala.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -100,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "note",
+                "query": "$$",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -137,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Ekvigonala.md",
+                "file": "mat/Konstrukční úlohy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Ekvigonala.md",
+                "file": "mat/Konstrukční úlohy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Ekvigonala.md"
+                "file": "mat/Konstrukční úlohy.md"
               }
             }
           },
@@ -252,6 +212,16 @@
               "type": "review-queue-list-view",
               "state": {}
             }
+          },
+          {
+            "id": "81e7f0ab40ee1d2f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ],
         "currentTab": 12
@@ -277,37 +247,37 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "c048cb6e0f3dd778",
+  "active": "8229a4ab223baeba",
   "lastOpenFiles": [
-    "data/Ekvigonala 2023-09-08 12.31.39.excalidraw.md",
     "mat/Ekvigonala.md",
     "mat/Konstrukční úlohy.md",
+    "README.md",
+    "mat/Nerovnice.md",
+    "mat/Absolutní hodnota.md",
+    "ech/Názvosloví/Aldehydy.md",
+    "ech/Názvosloví/Soli kyslíkatých kyselin.md",
+    "mat/Funkce/Tangens.md",
+    "fyz/pohyb/Volný pád.md",
+    "ele/Voltmetr.md",
+    "ele/Vzorníček.md",
+    "mat/Zlomky.md",
+    "ech/Prvky/Kyslík.md",
+    "mat/Příklady 1.md",
+    "mat/Funkce/Příklady.md",
+    "mat/Funkce/Kartézský součin.md",
+    "ele/Ampérmetr.md",
+    "mat/mat.md",
+    "data/Ekvigonala 2023-09-08 12.31.39.excalidraw.md",
     "data/Ekvigonala 2023-09-08 12.19.22.excalidraw.md",
     "data/Konstrukční úlohy 2023-09-08 12.09.54.excalidraw.md",
     "data/Konstrukční úlohy 2023-09-08 11.36.28.excalidraw.md",
     "data/Konstrukční úlohy 2023-09-08 11.27.10.excalidraw.md",
-    "mat/mat.md",
     "mat/Rovnice/Substituce.md",
     "mat/Rovnice/Rovnice.md",
     "mat/Trigonometrie/Trigonometrie.md",
-    "PRA/PRA.md",
-    "cjl/cjl.md",
-    "fyz/fyz.md",
-    "fyz/Světlo.md",
-    "data/Světlo 2023-09-07 14.20.26.excalidraw.md",
-    "fyz/pohyb/pohyb.md",
-    "PRA/Sbírka zákonů.md",
-    "učitelé/učitelé.md",
     "PRA",
-    "Maturitni cetba/Fahrenheit 451.md",
-    "Maturitni cetba/Maturitni cetba.md",
-    "projects/projects.md",
-    "projects/dvop/dvop.md",
-    "projects/dvop/Učební plán.md",
     "Maturitni cetba",
     "projects/dvop",
-    "mat/Trigonometrie/Geometrie/Pravidelný n-úhelník.md",
-    "mat/Trigonometrie/Geometrie/Mnohoúhelníky.md",
     "data/Pasted image 20230613140233.png",
     "data/Pasted image 20230613140100.png",
     "data/Pasted image 20230613135723.png",

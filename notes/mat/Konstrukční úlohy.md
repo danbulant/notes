@@ -18,3 +18,22 @@ $v_c=3cm$
 ![[Konstrukční úlohy 2023-09-08 12.09.54.excalidraw]]
 
 použije se [Ekvigonala](Ekvigonala.md) 
+
+
+---
+
+
+D: $AB$, $|AB|=4cm$
+U: $\triangle ABC$, $|\sphericalangle ACB|=45\degree$
+
+$AB, |AB|=4cm$
+$\circ k;k(B; 5cm)$
+$O;|AO|=|OB|$
+$X; X\ne O; |AX| = |BX|$
+$|\rightarrow OX$
+$Y;Y\in OX;|\sphericalangle ABY|=45\degree$
+$\circ l;l(Y;|YB|)$
+$C\in l\cap k$
+$\triangle ABC$
+
+Uloha ma dve reseni v polorovine AB
