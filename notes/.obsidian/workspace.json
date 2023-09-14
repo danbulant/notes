@@ -30,8 +30,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f43592e6e0c6fc7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fyz/Svetlo/Odraz světla.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9026f04f34351055",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Odraz světla 2023-09-14 13.19.17.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -97,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Konstrukční úlohy.md",
+                "file": "fyz/Svetlo/Odraz světla.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Konstrukční úlohy.md",
+                "file": "fyz/Svetlo/Odraz světla.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Konstrukční úlohy.md"
+                "file": "fyz/Svetlo/Odraz světla.md"
               }
             }
           },
@@ -247,10 +270,15 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "8229a4ab223baeba",
+  "active": "f43592e6e0c6fc7f",
   "lastOpenFiles": [
-    "mat/Ekvigonala.md",
+    "data/Odraz světla 2023-09-14 13.19.17.excalidraw.md",
+    "fyz/Svetlo/Odraz světla.md",
+    "fyz/Svetlo/Svetlo.md",
+    "fyz/fyz.md",
+    "fyz/Svetlo",
     "mat/Konstrukční úlohy.md",
+    "mat/Ekvigonala.md",
     "README.md",
     "mat/Nerovnice.md",
     "mat/Absolutní hodnota.md",
@@ -271,10 +299,6 @@
     "data/Ekvigonala 2023-09-08 12.19.22.excalidraw.md",
     "data/Konstrukční úlohy 2023-09-08 12.09.54.excalidraw.md",
     "data/Konstrukční úlohy 2023-09-08 11.36.28.excalidraw.md",
-    "data/Konstrukční úlohy 2023-09-08 11.27.10.excalidraw.md",
-    "mat/Rovnice/Substituce.md",
-    "mat/Rovnice/Rovnice.md",
-    "mat/Trigonometrie/Trigonometrie.md",
     "PRA",
     "Maturitni cetba",
     "projects/dvop",
@@ -294,7 +318,6 @@
     "fyz/Molekulová fyzika",
     "mat/Trigonometrie",
     "cjl/literatura/slohy/Realismus",
-    "cjl/literatura/slohy/Poetismus",
     "Untitled.canvas"
   ]
 }

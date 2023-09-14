@@ -14,6 +14,7 @@ imagePrefix: 'data/'
 -  [[fyz/Pohyb|Pohyb]]
 -  [[fyz/Příklad|Příklad]]
 -  [[fyz/Rychlost|Rychlost]]
+-  [[fyz/Svetlo/Svetlo|Svetlo]]
 -  [[fyz/Světlo|Světlo]]
 -  [[fyz/Tření a třecí síla|Tření a třecí síla]]
 -  [[fyz/Veličiny|Veličiny]]
