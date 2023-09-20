@@ -4,57 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "ff266977414daff9",
+        "id": "aa84ae38fae741da",
         "type": "tabs",
         "children": [
           {
-            "id": "8229a4ab223baeba",
+            "id": "a21ccd19f325679c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Konstrukční úlohy.md",
+                "file": "kbb/math/Modulární aritmetika.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "720cc98eefa4f236",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Ekvigonala.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f43592e6e0c6fc7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fyz/Svetlo/Odraz světla.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9026f04f34351055",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "data/Odraz světla 2023-09-14 13.19.17.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/Svetlo/Odraz světla.md",
+                "file": "kbb/math/Modulární aritmetika.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/Svetlo/Odraz světla.md",
+                "file": "kbb/math/Modulární aritmetika.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/Svetlo/Odraz světla.md"
+                "file": "kbb/math/Modulární aritmetika.md"
               }
             }
           },
@@ -270,14 +235,25 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "f43592e6e0c6fc7f",
+  "active": "a21ccd19f325679c",
   "lastOpenFiles": [
-    "data/Odraz světla 2023-09-14 13.19.17.excalidraw.md",
+    "kbb/math/math.md",
+    "kbb/kbb.md",
+    "kbb/math/Modulární aritmetika.md",
+    "kbb/math",
+    "mat/mat.md",
+    "mat/Geometrie/Konstrukční úlohy.md",
+    "data/Konstrukční úlohy 2023-09-08 12.09.54.excalidraw.md",
+    "mat/Geometrie/Zobrazení v rovině.md",
+    "mat/Geometrie/Geometrie.md",
+    "mat/Funkce/Funkce.md",
+    "mat/Geometrie",
+    "cjl/cjl.md",
     "fyz/Svetlo/Odraz světla.md",
+    "data/Odraz světla 2023-09-14 13.19.17.excalidraw.md",
     "fyz/Svetlo/Svetlo.md",
     "fyz/fyz.md",
     "fyz/Svetlo",
-    "mat/Konstrukční úlohy.md",
     "mat/Ekvigonala.md",
     "README.md",
     "mat/Nerovnice.md",
@@ -290,15 +266,6 @@
     "ele/Vzorníček.md",
     "mat/Zlomky.md",
     "ech/Prvky/Kyslík.md",
-    "mat/Příklady 1.md",
-    "mat/Funkce/Příklady.md",
-    "mat/Funkce/Kartézský součin.md",
-    "ele/Ampérmetr.md",
-    "mat/mat.md",
-    "data/Ekvigonala 2023-09-08 12.31.39.excalidraw.md",
-    "data/Ekvigonala 2023-09-08 12.19.22.excalidraw.md",
-    "data/Konstrukční úlohy 2023-09-08 12.09.54.excalidraw.md",
-    "data/Konstrukční úlohy 2023-09-08 11.36.28.excalidraw.md",
     "PRA",
     "Maturitni cetba",
     "projects/dvop",
@@ -316,8 +283,6 @@
     "mat/Trigonometrie/Geometrie",
     "fyz/pohyb/Periodický a kmitavý",
     "fyz/Molekulová fyzika",
-    "mat/Trigonometrie",
-    "cjl/literatura/slohy/Realismus",
     "Untitled.canvas"
   ]
 }
