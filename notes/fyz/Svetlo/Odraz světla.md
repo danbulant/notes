@@ -88,3 +88,9 @@ $x=40cm$
 
 $x_2=x-x_1$
 $x_2=15cm$
+
+
+---
+
+Určete úhel dopadu světla na rozhraní vody ($n_v = 1.33$) a skla ($n_s = 1,5$), svírá-li odražený paprsek s paprskem lomeným úhel $120\degree$.
+
