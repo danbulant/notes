@@ -94,3 +94,4 @@ $x_2=15cm$
 
 Určete úhel dopadu světla na rozhraní vody ($n_v = 1.33$) a skla ($n_s = 1,5$), svírá-li odražený paprsek s paprskem lomeným úhel $120\degree$.
 
+![[Odraz světla 2023-09-21 14.11.58.excalidraw]]
