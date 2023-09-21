@@ -2,7 +2,17 @@
 
 ## Grupy
 
+Grupa je označena jako operace $\cdot$, neznamená násobení
+
 ### Omezenost
+
+$(\forall x \in M)(\forall y \in M)(x\cdot y\in M)$
+
+Po operaci je výsledek stále uvnitř dané množiny.
+
+### Asociativnost
+$(\forall x\in M)(\forall y\in M)(\forall z\in M)(x\cdot y\cdot z=(x\cdot y)\cdot z=x\cdot(y\cdot z))$
+Nezáleží na závorkách - ovšem neznamená že nezáleží na pořadí
 
 ### Existence neutrálního prvku
 $$(\forall x \in M)(\exists n \in M)(x \cdot n=n \cdot x=x)$$
@@ -13,6 +23,7 @@ $$(\forall x\in M)(\exists i \in M)(x\cdot i=n)$$
 ---
 
 ## Příklady
+Příkladem grupy je sčítání a modulo zároveň. Modulo je zbytek po celočíselném dělení.
 $a+_6b=mod(a+b,6)$
 
 $$3+_69+_610=3+3+4=4$$
@@ -29,7 +40,8 @@ $5\in\mathbb{Z}_{131}$
 |         | $\alpha$ | $\beta$ | q   |
 | ------- | -------- | ------- | --- |
 | $a=131$ | 1        | 0       |     |
-| $b=131$ | 0        | 1       | 26  |
+| $b=5$ | 0        | 1       | 26  |
 | 1       | 1        | -26     |     |
 
-$5^{-1}105$
+$5^{-1}=105$
+kde vzal 105? Nemám páru :)

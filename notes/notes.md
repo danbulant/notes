@@ -5,6 +5,7 @@
 -  [[data/data|data]]
 -  [[dej/dej|dej]]
 -  [[ech/ech|ech]]
+-  [[eko/eko|eko]]
 -  [[ele/ele|ele]]
 -  [[Excalidraw/Excalidraw|Excalidraw]]
 -  [[fyz/fyz|fyz]]

@@ -18,8 +18,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "513b16e7fb04f9d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "eko/Úvodní hodina.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d198e0b25bb7523",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "eko/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6591eff0c63e047c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Geometrie/Geometrie.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1827b65ef3448809",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Geometrie/Konstrukční úlohy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kbb/math/Modulární aritmetika.md",
+                "file": "mat/Geometrie/Konstrukční úlohy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kbb/math/Modulární aritmetika.md",
+                "file": "mat/Geometrie/Konstrukční úlohy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kbb/math/Modulární aritmetika.md"
+                "file": "mat/Geometrie/Konstrukční úlohy.md"
               }
             }
           },
@@ -235,17 +284,22 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "a21ccd19f325679c",
+  "active": "1827b65ef3448809",
   "lastOpenFiles": [
+    "mat/Geometrie/Středová souměrnost.md",
+    "mat/Geometrie/Geometrie.md",
+    "mat/Geometrie/Konstrukční úlohy.md",
+    "mat/mat.md",
+    "eko/Untitled.md",
+    "eko/Úvodní hodina.md",
+    "eko/eko.md",
+    "kbb/math/Modulární aritmetika.md",
+    "eko",
     "kbb/math/math.md",
     "kbb/kbb.md",
-    "kbb/math/Modulární aritmetika.md",
     "kbb/math",
-    "mat/mat.md",
-    "mat/Geometrie/Konstrukční úlohy.md",
     "data/Konstrukční úlohy 2023-09-08 12.09.54.excalidraw.md",
     "mat/Geometrie/Zobrazení v rovině.md",
-    "mat/Geometrie/Geometrie.md",
     "mat/Funkce/Funkce.md",
     "mat/Geometrie",
     "cjl/cjl.md",
@@ -262,10 +316,6 @@
     "ech/Názvosloví/Soli kyslíkatých kyselin.md",
     "mat/Funkce/Tangens.md",
     "fyz/pohyb/Volný pád.md",
-    "ele/Voltmetr.md",
-    "ele/Vzorníček.md",
-    "mat/Zlomky.md",
-    "ech/Prvky/Kyslík.md",
     "PRA",
     "Maturitni cetba",
     "projects/dvop",
@@ -282,7 +332,6 @@
     "dej/moderní/postkomunismus",
     "mat/Trigonometrie/Geometrie",
     "fyz/pohyb/Periodický a kmitavý",
-    "fyz/Molekulová fyzika",
     "Untitled.canvas"
   ]
 }

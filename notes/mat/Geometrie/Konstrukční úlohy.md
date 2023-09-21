@@ -37,3 +37,16 @@ $C\in l\cap k$
 $\triangle ABC$
 
 Uloha ma dve reseni v polorovine AB
+
+---
+
+135/2
+Jsou dany dve soustredne kruznice $k_1(O;r_1),k_2(O;r_2),r_1>r_2$, a bod $S$ lezici na mensi z nich. Sestrojte rovnobeznik $ABCD$ se stredem S, jehoz vrcholy lezi na danych kruznicich.
+
+
+
+$S(S): B|\rightarrow D$
+$A|\rightarrow C$
+
+$B\in k_2 \Rightarrow B'=D\in k_2'$
+$D\in k_1\Rightarrow D\in k_1\cap k_2'$
