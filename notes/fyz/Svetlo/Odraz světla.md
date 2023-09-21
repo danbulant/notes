@@ -95,3 +95,13 @@ $x_2=15cm$
 Určete úhel dopadu světla na rozhraní vody ($n_v = 1.33$) a skla ($n_s = 1,5$), svírá-li odražený paprsek s paprskem lomeným úhel $120\degree$.
 
 ![[Odraz světla 2023-09-21 14.11.58.excalidraw]]
+
+$\frac{\sin\alpha}{\sin60\degree\cos\alpha-\cos60\degree\sin\alpha}=\frac{n_2}{n_1}$
+$\frac{n_1}{n_2}=\frac{\sin60\degree\cos\alpha-\cos60\degree\sin\alpha}{\sin\alpha}$
+$=\sin60\degree\frac{\cos\alpha}{\sin\alpha}-\cos60\degree$
+
+$\frac{\frac{n_1}{n_2}+\cos60\degree}{\sin60\degree}=\frac{\cos\alpha}{\sin\alpha}$
+
+$\frac{\sin\alpha}{\cos\alpha}=\tg\alpha=\frac{\sin60\degree}{\frac{n_1}{n_2}+\cos60\degree}=0.62$
+$\frac{\sin\alpha}{\sin(60\degree-\alpha)}=\frac{n_2}{n_1}$
+$\alpha\dot=32\degree$
