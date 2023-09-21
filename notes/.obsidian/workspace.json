@@ -4,71 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "aa84ae38fae741da",
+        "id": "0cda690481482f21",
         "type": "tabs",
         "children": [
           {
-            "id": "a21ccd19f325679c",
+            "id": "bcb851dbd0686376",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kbb/math/Modulární aritmetika.md",
+                "file": "fyz/Svetlo/Odraz světla.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "513b16e7fb04f9d3",
+            "id": "d67f7f76e78f9b41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eko/Úvodní hodina.md",
+                "file": "mat/Funkce/Goniometrické funkce.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9d198e0b25bb7523",
+            "id": "e74a3f3a215f2ac2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "eko/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6591eff0c63e047c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Geometrie/Geometrie.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1827b65ef3448809",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mat/Geometrie/Konstrukční úlohy.md",
-                "mode": "source",
-                "source": false
+                "file": "data/Uplny odraz svetla 2023-09-21 12.58.19.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "$$",
+                "query": "sinus",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -134,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Geometrie/Konstrukční úlohy.md",
+                "file": "fyz/Svetlo/Odraz světla.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Geometrie/Konstrukční úlohy.md",
+                "file": "fyz/Svetlo/Odraz světla.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Geometrie/Konstrukční úlohy.md"
+                "file": "fyz/Svetlo/Odraz světla.md"
               }
             }
           },
@@ -284,16 +257,24 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "1827b65ef3448809",
+  "active": "bcb851dbd0686376",
   "lastOpenFiles": [
-    "mat/Geometrie/Středová souměrnost.md",
+    "mat/Funkce/Goniometrické funkce.md",
+    "fyz/Svetlo/Odraz světla.md",
+    "mat/Funkce/Vlastnosti funkcí.md",
+    "mat/Funkce/Sinus.md",
+    "fyz/Svetlo/Uplny odraz svetla.md",
+    "data/Uplny odraz svetla 2023-09-21 12.58.19.excalidraw.md",
+    "data/Uplny odraz svetla 2023-09-21 12.52.08.excalidraw.md",
+    "eko/eko.md",
+    "fyz/fyz.md",
+    "mat/mat.md",
+    "kbb/math/Modulární aritmetika.md",
+    "eko/Úvodní hodina.md",
+    "eko/Untitled.md",
     "mat/Geometrie/Geometrie.md",
     "mat/Geometrie/Konstrukční úlohy.md",
-    "mat/mat.md",
-    "eko/Untitled.md",
-    "eko/Úvodní hodina.md",
-    "eko/eko.md",
-    "kbb/math/Modulární aritmetika.md",
+    "mat/Geometrie/Středová souměrnost.md",
     "eko",
     "kbb/math/math.md",
     "kbb/kbb.md",
@@ -303,19 +284,11 @@
     "mat/Funkce/Funkce.md",
     "mat/Geometrie",
     "cjl/cjl.md",
-    "fyz/Svetlo/Odraz světla.md",
     "data/Odraz světla 2023-09-14 13.19.17.excalidraw.md",
     "fyz/Svetlo/Svetlo.md",
-    "fyz/fyz.md",
     "fyz/Svetlo",
     "mat/Ekvigonala.md",
     "README.md",
-    "mat/Nerovnice.md",
-    "mat/Absolutní hodnota.md",
-    "ech/Názvosloví/Aldehydy.md",
-    "ech/Názvosloví/Soli kyslíkatých kyselin.md",
-    "mat/Funkce/Tangens.md",
-    "fyz/pohyb/Volný pád.md",
     "PRA",
     "Maturitni cetba",
     "projects/dvop",

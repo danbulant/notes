@@ -52,3 +52,39 @@ $n_1=1$
 $n_2=2.42$
 
 
+---
+
+$n_{sc}=1.51$
+$n_{sf}=1.531$
+$\alpha=60\degree$
+
+$\frac{\sin\alpha}{\sin\beta}=\frac{n_2}{n_1}$
+$\frac{\sin\alpha=0.866025}{\sin\beta}=\frac{1.51}{1.531}$
+
+$\Delta\beta=0.55\degree\approx33'$
+$\Delta\beta=\beta_2-\beta_1$
+
+
+---
+
+Chlapec se chce dotknout tyčí předmětu v hloubce 40 cm pod hladinou vody. V jaké vzdálenosti od předmětu se tyč dotkne dna, jestliže tyč svírá s vodorovným směrem úhel 45°?
+
+$\alpha=45\degree$
+$h=40cm$
+$n=1.33$
+
+$\frac{\sin\alpha}{\sin\beta}=\frac{n_2}{n_1}$
+$\frac{\sin\alpha}{\sin\beta}=n$
+$\sin\beta=\frac{\sin\alpha}n$
+$\sin\beta=\frac{\sin45}{1.33}$
+$\sin\beta=\frac{\frac{\sqrt2}2}{1.33}$
+$\sin\beta=0.531$
+$\beta=32\degree$
+
+$x_1=\tg(\beta)h$
+$x_1=25cm$
+$x=h\tg(\alpha)$
+$x=40cm$
+
+$x_2=x-x_1$
+$x_2=15cm$
