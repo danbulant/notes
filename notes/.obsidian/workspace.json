@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "48fc1f277ebb4b13",
+        "id": "c3998d360a5b7415",
         "type": "tabs",
         "children": [
           {
-            "id": "12826dc958d28015",
+            "id": "d8cc7361e60e9cfb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eko/Úvodní hodina.md",
+                "file": "mat/Geometrie/Kružnice.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "eko/Úvodní hodina.md",
+                "file": "mat/Geometrie/Kružnice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "eko/Úvodní hodina.md",
+                "file": "mat/Geometrie/Kružnice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "eko/Úvodní hodina.md"
+                "file": "mat/Geometrie/Kružnice.md"
               }
             }
           },
@@ -235,9 +235,13 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "12826dc958d28015",
+  "active": "d8cc7361e60e9cfb",
   "lastOpenFiles": [
+    "mat/Funkce/Příklady.md",
+    "mat/Geometrie/Kružnice.md",
+    "mat/mat.md",
     "eko/eko.md",
+    "eko/Úvodní hodina.md",
     "data/Uplny odraz svetla 2023-09-21 12.58.19.excalidraw.md",
     "fyz/Svetlo/Odraz světla.md",
     "data/Odraz světla 2023-09-21 14.11.58.excalidraw.md",
@@ -247,9 +251,7 @@
     "mat/Funkce/Sinus.md",
     "data/Uplny odraz svetla 2023-09-21 12.52.08.excalidraw.md",
     "fyz/fyz.md",
-    "mat/mat.md",
     "kbb/math/Modulární aritmetika.md",
-    "eko/Úvodní hodina.md",
     "eko/Untitled.md",
     "mat/Geometrie/Geometrie.md",
     "mat/Geometrie/Konstrukční úlohy.md",
@@ -264,9 +266,7 @@
     "mat/Geometrie",
     "cjl/cjl.md",
     "data/Odraz světla 2023-09-14 13.19.17.excalidraw.md",
-    "fyz/Svetlo/Svetlo.md",
     "fyz/Svetlo",
-    "mat/Ekvigonala.md",
     "PRA",
     "Maturitni cetba",
     "projects/dvop",
