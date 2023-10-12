@@ -1,3 +1,6 @@
+---
+date: 2023-09-29
+---
 # Úvodní hodina
 Má se vše omlouvat když učitel vstoupí do třídy
 
@@ -39,3 +42,22 @@ Zacházení s prostředky (často peníze či majetek) za účelem nějakého c�
 | bezpečnost                   | sekundární | psychická | kolektivní   |
 | zábava                       | sekundární | psychická | individuální |
 | rozmnožování                 | sekundární | psychická | individuální             |
+
+## Statky a sluzby
+
+### Statky
+uspokojuje potreby
+
+Hmotne x nehmotne
+
+Volne x ekonomicke
+
+Spotreba x pouziti
+
+### Sluzby
+Osobni x vecna
+
+prubeh x vysledek
+
+### DÚ
+vymyslet 10 statků
