@@ -28,15 +28,11 @@ Platí že $\alpha+\delta=180\degree=\gamma+\beta$
 
 
 
+---
 
+## Příklady
 
-
-
-
-
-
-
-
-$$\frac{\sin\alpha}{\sin60\cos\alpha-\cos60\sin\alpha}|/\sin\alpha$$
-$$\frac{1}{\sin60\frac{\cos\alpha}{\sin\alpha}-\cos60}$$
-$$\frac{1}{\sin60\cotg\alpha-\cos60}$$
+![[Kružnice 2023-10-13 11.32.35.excalidraw]]
+$$\frac58kce$$
+$$2w=\frac58*360=225\degree$$
+$$w=2w/2=225/2=112.5\degree$$

@@ -4,18 +4,60 @@
     "type": "split",
     "children": [
       {
-        "id": "c3998d360a5b7415",
+        "id": "1d389366786d14f4",
         "type": "tabs",
         "children": [
           {
-            "id": "d8cc7361e60e9cfb",
+            "id": "9fc8edd4285b8f0e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Geometrie/Kružnice.md",
+                "file": "mat/Geometrie/Obvody a obsahy rovinných útvarů.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "19b2412b05e72974",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Obvody a obsahy rovinných útvarů 2023-10-13 12.28.11.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "0f2915ee4df601ab",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Obvody a obsahy rovinných útvarů 2023-10-13 12.18.54.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "4add29bd63d8464d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mat/Trigonometrie/Geometrie/Pravidelný n-úhelník.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3d0978033451e431",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Pravidelný n-úhelník 2023-10-13 12.07.37.excalidraw.md"
               }
             }
           }
@@ -85,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Geometrie/Kružnice.md",
+                "file": "mat/Geometrie/Obvody a obsahy rovinných útvarů.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Geometrie/Kružnice.md",
+                "file": "mat/Geometrie/Obvody a obsahy rovinných útvarů.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Geometrie/Kružnice.md"
+                "file": "mat/Geometrie/Obvody a obsahy rovinných útvarů.md"
               }
             }
           },
@@ -235,10 +277,20 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "d8cc7361e60e9cfb",
+  "active": "9fc8edd4285b8f0e",
   "lastOpenFiles": [
-    "mat/Funkce/Příklady.md",
+    "data/Obvody a obsahy rovinných útvarů 2023-10-13 12.28.11.excalidraw.md",
+    "mat/Geometrie/Obvody a obsahy rovinných útvarů.md",
+    "data/Obvody a obsahy rovinných útvarů 2023-10-13 12.18.54.excalidraw.md",
+    "mat/Trigonometrie/Geometrie/Pravidelný n-úhelník.md",
+    "data/Pravidelný n-úhelník 2023-10-13 12.07.37.excalidraw.md",
+    "data/Obvody a obsahy rovinných útvarů 2023-10-13 12.02.25.excalidraw.md",
     "mat/Geometrie/Kružnice.md",
+    "data/Kružnice 2023-10-13 11.32.35.excalidraw.md",
+    "fyz/Svetlo/Rovinné zrcadlo.md",
+    "fyz/Svetlo/Untitled.md",
+    "fyz/fyz.md",
+    "mat/Funkce/Příklady.md",
     "mat/mat.md",
     "eko/eko.md",
     "eko/Úvodní hodina.md",
@@ -250,22 +302,12 @@
     "mat/Funkce/Vlastnosti funkcí.md",
     "mat/Funkce/Sinus.md",
     "data/Uplny odraz svetla 2023-09-21 12.52.08.excalidraw.md",
-    "fyz/fyz.md",
     "kbb/math/Modulární aritmetika.md",
     "eko/Untitled.md",
     "mat/Geometrie/Geometrie.md",
-    "mat/Geometrie/Konstrukční úlohy.md",
-    "mat/Geometrie/Středová souměrnost.md",
     "eko",
-    "kbb/math/math.md",
-    "kbb/kbb.md",
     "kbb/math",
-    "data/Konstrukční úlohy 2023-09-08 12.09.54.excalidraw.md",
-    "mat/Geometrie/Zobrazení v rovině.md",
-    "mat/Funkce/Funkce.md",
     "mat/Geometrie",
-    "cjl/cjl.md",
-    "data/Odraz světla 2023-09-14 13.19.17.excalidraw.md",
     "fyz/Svetlo",
     "PRA",
     "Maturitni cetba",
