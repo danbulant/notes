@@ -54,10 +54,36 @@ Volne x ekonomicke
 
 Spotreba x pouziti
 
+| statek             | hmotnost | volnost    | spotrebni? |
+| ------------------ | -------- | ---------- | ---------- |
+| Eiskaffe           | hmotne   | ekonomicke | spotreba   |
+| telefon            | hmotne   | ekonomicke | pouziti    |
+| laptop             | hmotne   | ekonomicke | pouziti    |
+| hodinky            | hmotne   | ekonomicke | pouziti    |
+| pocitacova hra     | nehmotne | volne      | pouziti    |
+| jidlo              | hmotne   | ekonomicke | spotreba   |
+| piti               | hmotne   | ekonomicke | spotreba   |
+| elektronicka kniha | nehmotne | volne      | pouziti    |
+| programovaci jazyk | nehmotne | volne      | pouziti    |
+| fotak              | hmotne   | ekonomicke | pouziti           |
+
 ### Sluzby
 Osobni x vecna
 
 prubeh x vysledek
 
+| sluzba    | osobni/vecna | prubeh/vysledek |
+| --------- | ------------ | --------------- |
+| internet  | osobni       | prubeh          |
+| skola     | vecna        | vysledek        |
+| doktor    | vecna        | vysledek        |
+| terapie   | osobni       | vysledek        |
+| alza+     | vecna        | vysledek        |
+| discordo  | osobni       | prubeh          |
+| hosting   | osobni       | prubeh          |
+| noviny    | osobni       | vysledek        |
+| elektrina | vecna        | prubeh          |
+| reddit    | osobni       | prubeh                |
+
 ### DÚ
-vymyslet 10 statků
+vymyslet 10 statků a 10 sluzeb
