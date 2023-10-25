@@ -85,5 +85,6 @@ prubeh x vysledek
 | elektrina | vecna        | prubeh          |
 | reddit    | osobni       | prubeh                |
 
-### DÚ
-vymyslet 10 statků a 10 sluzeb
+
+## Zivotni uroven
+→ Kvantita a kvalita uspokojeni L.P.

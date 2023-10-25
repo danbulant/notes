@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "f7c141d1f3eb3d65",
+        "id": "f36b64c1f2265635",
         "type": "tabs",
         "children": [
           {
-            "id": "f7892a959cadceed",
+            "id": "cf8a6b586b0b20e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eko/Úvodní hodina.md",
+                "file": "kbb/math/Modulární aritmetika.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "188468c4415ee39e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ONA/Vyvoj lidske spolecnosti.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "eko/Úvodní hodina.md",
+                "file": "ONA/Vyvoj lidske spolecnosti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "eko/Úvodní hodina.md",
+                "file": "ONA/Vyvoj lidske spolecnosti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "eko/Úvodní hodina.md"
+                "file": "ONA/Vyvoj lidske spolecnosti.md"
               }
             }
           },
@@ -235,8 +248,12 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "f7892a959cadceed",
+  "active": "188468c4415ee39e",
   "lastOpenFiles": [
+    "ONA/Vyvoj lidske spolecnosti.md",
+    "kbb/math/Modulární aritmetika.md",
+    "cjl/literatura/Tropy a figury.md",
+    "eko/Úvodní hodina.md",
     "eko/eko.md",
     "eko/Untitled.md",
     "data/Pravidelný n-úhelník 2023-10-13 12.07.37.excalidraw.md",
@@ -252,7 +269,6 @@
     "fyz/fyz.md",
     "mat/Funkce/Příklady.md",
     "mat/mat.md",
-    "eko/Úvodní hodina.md",
     "data/Uplny odraz svetla 2023-09-21 12.58.19.excalidraw.md",
     "fyz/Svetlo/Odraz světla.md",
     "data/Odraz světla 2023-09-21 14.11.58.excalidraw.md",
@@ -260,9 +276,6 @@
     "mat/Funkce/Goniometrické funkce.md",
     "mat/Funkce/Vlastnosti funkcí.md",
     "mat/Funkce/Sinus.md",
-    "data/Uplny odraz svetla 2023-09-21 12.52.08.excalidraw.md",
-    "kbb/math/Modulární aritmetika.md",
-    "mat/Geometrie/Geometrie.md",
     "eko",
     "kbb/math",
     "mat/Geometrie",
