@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "f36b64c1f2265635",
+        "id": "125d8e7a1ca0d86f",
         "type": "tabs",
         "children": [
           {
-            "id": "cf8a6b586b0b20e5",
+            "id": "9a81c510e5d5ca3e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kbb/math/Modulární aritmetika.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "188468c4415ee39e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "kbb/math/Modulární aritmetika.md",
+                "file": "kbb/hodiny/procesor.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kbb/math/Modulární aritmetika.md",
+                "file": "kbb/hodiny/procesor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kbb/math/Modulární aritmetika.md",
+                "file": "kbb/hodiny/procesor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kbb/math/Modulární aritmetika.md"
+                "file": "kbb/hodiny/procesor.md"
               }
             }
           },
@@ -248,10 +235,16 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "188468c4415ee39e",
+  "active": "9a81c510e5d5ca3e",
   "lastOpenFiles": [
-    "ONA/Vyvoj lidske spolecnosti.md",
+    "kbb/hodiny/hodiny.md",
+    "kbb/kbb.md",
+    "kbb/hodiny/procesor.md",
+    "kbb/hodiny",
+    "kbb/haxagon/Terminals.md",
+    "kbb/haxagon/haxagon.md",
     "kbb/math/Modulární aritmetika.md",
+    "ONA/Vyvoj lidske spolecnosti.md",
     "cjl/literatura/Tropy a figury.md",
     "eko/Úvodní hodina.md",
     "eko/eko.md",
@@ -271,11 +264,6 @@
     "mat/mat.md",
     "data/Uplny odraz svetla 2023-09-21 12.58.19.excalidraw.md",
     "fyz/Svetlo/Odraz světla.md",
-    "data/Odraz světla 2023-09-21 14.11.58.excalidraw.md",
-    "fyz/Svetlo/Uplny odraz svetla.md",
-    "mat/Funkce/Goniometrické funkce.md",
-    "mat/Funkce/Vlastnosti funkcí.md",
-    "mat/Funkce/Sinus.md",
     "eko",
     "kbb/math",
     "mat/Geometrie",
@@ -295,7 +283,6 @@
     "data/Pasted image 20230607113344.png",
     "dej/moderní/postkomunismus",
     "mat/Trigonometrie/Geometrie",
-    "fyz/pohyb/Periodický a kmitavý",
     "Untitled.canvas"
   ]
 }

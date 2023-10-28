@@ -1,0 +1,24 @@
+# procesor
+
+- virtualni X fyzicka RAM
+	- cpu cache
+- stack vs heap
+	- stack overflow vs heap overflow
+- registry
+- page fault
+- 32bit x 64bit, ‘real’ mode x protected mode
+	- real mode
+		- adresuje fyzickou pamet
+		- umi jen 1MB
+		- procesory startuji v real mode
+		- segmentace
+			- umoznuje adresovat vice jak 64KB pameti, driv to neslo
+			- pointery na code segment, data segment, stack segment, extra segment
+			- adresy se pocitaji jako segment + offset
+				- instrukce maji dany v jakym segmentu operuji
+	- protected mode
+		- virtualni pamet
+		- je na OS aby managoval komu patri co (a co kazdy program vidi)
+	- 64bit
+		- i 64bitove procesory maji 32bitove instrukce ktere funguji stejne
+		- daji se pouzit 32bitove instrukce a registry pro vyssi rychlost
