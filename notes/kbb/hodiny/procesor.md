@@ -2,6 +2,7 @@
 
 - virtualni X fyzicka RAM
 	- cpu cache
+	- memory map
 - stack vs heap
 	- stack overflow vs heap overflow
 - registry
@@ -12,7 +13,7 @@
 		- umi jen 1MB
 		- procesory startuji v real mode
 		- segmentace
-			- umoznuje adresovat vice jak 64KB pameti, driv to neslo
+			- umoznuje adresovat vice jak 64KB pameti, driv to neslo (bylo by to moc pomale jinak)
 			- pointery na code segment, data segment, stack segment, extra segment
 			- adresy se pocitaji jako segment + offset
 				- instrukce maji dany v jakym segmentu operuji
@@ -22,3 +23,29 @@
 	- 64bit
 		- i 64bitove procesory maji 32bitove instrukce ktere funguji stejne
 		- daji se pouzit 32bitove instrukce a registry pro vyssi rychlost
+- jak teda spustit pocitac (ptat se lidi)
+	- bios/uefi
+		- spusti procesor, spusti bios
+		- bios prepne do protected mode, nastavni nektery specialni registry
+		- udela POST
+		- nacte bios nastaveni
+			- ulozene na ulozisti napajenem CMOS baterkou
+		- jdeme na boot!
+		- nejdrive vsechno zas resetujem zpatky, hezky do real mode
+		- precteme si hlavicku
+			- MBR Master Boot Record
+			- GPT GUID Partition Table
+		- vybereme co spustit
+		- nacteme prvnich 512 bajtu do RAM
+		- spustime, zbytek uz neni problem biosu
+	- boot loader
+		- grub, windows, systemd-boot
+		- nejdriv znova najde svuj disk (ano je tu vic veci co se opakuji) a nacte zbytek (cely se do 512 bajtu nevejde)
+			- kdyz selze tak dostanete grub-rescue, kdo z vas vi jak nabootovat linux z grub rescue?
+		- dela strasne jednoduchou vec
+		- nacte system do pameti a spusti jej
+		- u linuxu nacte kernel a initramfs, a rekne kernelu kde ma disk a aby spustil veci z initramfs, a spusti kernel
+		- linux spusti initramfs a namountuje (hlavni) disk
+		- pote se spusti procesy (zacne fungovat scheduler)
+			- spusti se idle proces (process co nic nedela, napriklad pouze spousti HALT/HLT instrukci)
+			- spusti se init proces (pid 1, /sbin/init)
