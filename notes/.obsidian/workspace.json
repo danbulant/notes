@@ -231,8 +231,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
   "active": "9a81c510e5d5ca3e",

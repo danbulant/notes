@@ -36,7 +36,7 @@
 			- MBR Master Boot Record
 			- GPT GUID Partition Table
 		- vybereme co spustit
-		- nacteme prvnich 512 bajtu do RAM
+		- nacteme prvnich 512 bajtu (sektor) do RAM
 		- spustime, zbytek uz neni problem biosu
 	- boot loader
 		- grub, windows, systemd-boot
@@ -45,7 +45,7 @@
 		- dela strasne jednoduchou vec
 		- nacte system do pameti a spusti jej
 		- u linuxu nacte kernel a initramfs, a rekne kernelu kde ma disk a aby spustil veci z initramfs, a spusti kernel
-		- linux spusti initramfs a namountuje (hlavni) disk
-		- pote se spusti procesy (zacne fungovat scheduler)
-			- spusti se idle proces (process co nic nedela, napriklad pouze spousti HALT/HLT instrukci)
+		- linux spusti initramfs (early user space) a namountuje (hlavni) disk
+		- pote se spusti procesy (zacne fungovat pre emptive scheduler)
+			- spusti se idle proces (process co nic nedela, napriklad pouze spousti HALT/HLT instrukci, ktera uspi jadro)
 			- spusti se init proces (pid 1, /sbin/init)
