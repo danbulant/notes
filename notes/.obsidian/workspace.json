@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "125d8e7a1ca0d86f",
+        "id": "006aaa4bd0e38c36",
         "type": "tabs",
         "children": [
           {
-            "id": "9a81c510e5d5ca3e",
+            "id": "c05acc73b03429b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kbb/hodiny/procesor.md",
+                "file": "PRA/Prameny.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kbb/hodiny/procesor.md",
+                "file": "PRA/Prameny.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kbb/hodiny/procesor.md",
+                "file": "PRA/Prameny.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kbb/hodiny/procesor.md"
+                "file": "PRA/Prameny.md"
               }
             }
           },
@@ -231,19 +231,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "9a81c510e5d5ca3e",
+  "active": "c05acc73b03429b0",
   "lastOpenFiles": [
-    "kbb/haxagon/haxagon.md",
-    "kbb/hodiny/procesor.md",
-    "kbb/haxagon/Terminals.md",
+    "PRA/Sbírka zákonů.md",
+    "PRA/Prameny.md",
+    "PRA/PRA.md",
+    "kbb/math/Modulární aritmetika.md",
     "kbb/math/math.md",
+    "kbb/hodiny/procesor.md",
+    "kbb/haxagon/haxagon.md",
+    "kbb/haxagon/Terminals.md",
     "kbb/hodiny/hodiny.md",
     "kbb/kbb.md",
     "kbb/hodiny",
-    "kbb/math/Modulární aritmetika.md",
     "ONA/Vyvoj lidske spolecnosti.md",
     "cjl/literatura/Tropy a figury.md",
     "eko/Úvodní hodina.md",
@@ -260,9 +264,6 @@
     "fyz/Svetlo/Rovinné zrcadlo.md",
     "fyz/Svetlo/Untitled.md",
     "fyz/fyz.md",
-    "mat/Funkce/Příklady.md",
-    "mat/mat.md",
-    "data/Uplny odraz svetla 2023-09-21 12.58.19.excalidraw.md",
     "eko",
     "kbb/math",
     "mat/Geometrie",
