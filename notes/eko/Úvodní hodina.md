@@ -88,3 +88,16 @@ prubeh x vysledek
 
 ## Zivotni uroven
 → Kvantita a kvalita uspokojeni L.P.
+
+### Parametry
+
+- HDP/obyvatel
+- demografie
+- vzdělání
+	- dostupnost
+	- kvalita
+	- cena
+- ekonomická situace
+- zdravotní péče
+	- dostupnost
+	- cena

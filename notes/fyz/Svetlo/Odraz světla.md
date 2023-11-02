@@ -14,7 +14,7 @@ $n$(vakuum)=1
 Absolutní index lomu: $n=\frac{c}v$
 
 ## zákon lomu
-$$\frac{\sin\alpha}{\sin\beta}=\frac{\frac{c}{n_1}}{\frac{c}{n_2}}=\frac{n_2}{n_1}$$
+$$\frac{\sin\alpha}{\sin\beta}=\frac{\frac{c}{n_1}}{\frac{c}{n_2}}=\frac{n_2}{n_1}=\frac{v_1}{v_2}$$
 
 Vzduch:
 - opticky řidší prostředí
