@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6673a9743bce4be8",
+        "id": "033fae727ea0cde6",
         "type": "tabs",
         "children": [
           {
-            "id": "44148a124232d6f5",
+            "id": "44f20d57ec1456cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cjl/literatura/slohy/Realismus/Opakování.md",
+                "file": "mat/Geometrie/Stereometrie.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cjl/literatura/slohy/Realismus/Opakování.md",
+                "file": "mat/Geometrie/Stereometrie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cjl/literatura/slohy/Realismus/Opakování.md",
+                "file": "mat/Geometrie/Stereometrie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cjl/literatura/slohy/Realismus/Opakování.md"
+                "file": "mat/Geometrie/Stereometrie.md"
               }
             }
           },
@@ -235,18 +235,19 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "44148a124232d6f5",
+  "active": "44f20d57ec1456cd",
   "lastOpenFiles": [
+    "data/Rovinné zrcadlo 2023-11-02 13.00.20.excalidraw.md",
+    "fyz/Svetlo/Rovinné zrcadlo.md",
+    "fyz/Svetlo/Uplny odraz svetla.md",
+    "fyz/Svetlo/Svetlo.md",
+    "fyz/Svetlo/Odraz světla.md",
+    "fyz/fyz.md",
     "cjl/literatura/slohy/Realismus/Opakování.md",
     "mat/Geometrie/Stereometrie.md",
     "data/Pasted image 20231102111638.png",
-    "fyz/Svetlo/Odraz světla.md",
     "eko/Úvodní hodina.md",
     "eko/eko.md",
-    "fyz/Svetlo/Rovinné zrcadlo.md",
-    "fyz/Svetlo/Svetlo.md",
-    "fyz/Svetlo/Uplny odraz svetla.md",
-    "fyz/fyz.md",
     "PRA/Prameny.md",
     "PRA/Sbírka zákonů.md",
     "PRA/PRA.md",
@@ -264,7 +265,6 @@
     "data/Pravidelný n-úhelník 2023-10-13 12.07.37.excalidraw.md",
     "mat/Trigonometrie/Geometrie/Pravidelný n-úhelník.md",
     "data/Obvody a obsahy rovinných útvarů 2023-10-13 12.18.54.excalidraw.md",
-    "data/Obvody a obsahy rovinných útvarů 2023-10-13 12.28.11.excalidraw.md",
     "eko",
     "kbb/math",
     "mat/Geometrie",
