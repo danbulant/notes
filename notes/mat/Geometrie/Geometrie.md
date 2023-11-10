@@ -3,6 +3,7 @@
 -  [[mat/Geometrie/Konstrukční úlohy|Konstrukční úlohy]]
 -  [[mat/Geometrie/Kružnice|Kružnice]]
 -  [[mat/Geometrie/Obvody a obsahy rovinných útvarů|Obvody a obsahy rovinných útvarů]]
+-  [[mat/Geometrie/Řezy těles|Řezy těles]]
 -  [[mat/Geometrie/Stereometrie|Stereometrie]]
 -  [[mat/Geometrie/Středová souměrnost|Středová souměrnost]]
 -  [[mat/Geometrie/Zobrazení v rovině|Zobrazení v rovině]]

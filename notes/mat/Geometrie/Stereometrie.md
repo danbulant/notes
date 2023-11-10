@@ -22,7 +22,7 @@ Geometrie prostoru
 - 2 roviny rovnobezne a 3. s nimi ruznobezna (protinaji se ve 2 primkach, 1. a 3. rovina a 2. a 3. rovina)
 - 3 ruznobezne, protinaji se ve 3 primkach
 
-## Přímky a roviny
+### Přímky a roviny
 
 - přímka leží v rovině $\leftrightarrow BE \subset \leftrightarrow ABFE$
 - různoběžné (mají 1 průsečík) $\stackrel{\leftrightarrow}{BC} \times \leftrightarrow ABFE$

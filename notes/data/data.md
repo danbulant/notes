@@ -348,6 +348,8 @@ imagePrefix: 'data/'
 -  [[data/Pravidelný n-úhelník 2023-10-13 12.07.37.excalidraw|Pravidelný n-úhelník 2023-10-13 12.07.37.excalidraw]]
 -  [[data/Rezistory 2022-06-09 11.29.33.excalidraw|Rezistory 2022-06-09 11.29.33.excalidraw]]
 -  [[data/Rovinné zrcadlo 2023-11-02 13.00.20.excalidraw|Rovinné zrcadlo 2023-11-02 13.00.20.excalidraw]]
+-  [[data/Rovinné zrcadlo 2023-11-09 13.03.10.excalidraw|Rovinné zrcadlo 2023-11-09 13.03.10.excalidraw]]
+-  [[data/Rovinné zrcadlo 2023-11-09 13.04.09.excalidraw|Rovinné zrcadlo 2023-11-09 13.04.09.excalidraw]]
 -  [[data/Screenshot_20230402_150005.png|Screenshot_20230402_150005.png]]
 -  [[data/Screenshot_20230402_150549.png|Screenshot_20230402_150549.png]]
 -  [[data/spoj průchozím šroubem 1.bmp|spoj průchozím šroubem 1.bmp]]

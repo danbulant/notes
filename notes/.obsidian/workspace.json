@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "033fae727ea0cde6",
+        "id": "271e8d573fe4a24d",
         "type": "tabs",
         "children": [
           {
-            "id": "44f20d57ec1456cd",
+            "id": "e4871a6e09c454d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Geometrie/Stereometrie.md",
+                "file": "cjl/literatura/slohy/Realismus/Světový realismus.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Geometrie/Stereometrie.md",
+                "file": "cjl/literatura/slohy/Realismus/Světový realismus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Geometrie/Stereometrie.md",
+                "file": "cjl/literatura/slohy/Realismus/Světový realismus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Geometrie/Stereometrie.md"
+                "file": "cjl/literatura/slohy/Realismus/Světový realismus.md"
               }
             }
           },
@@ -229,42 +229,42 @@
       "markdown-importer:Open format converter": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "c389d2bfe47fcef8",
+  "active": "e4871a6e09c454d4",
   "lastOpenFiles": [
-    "data/Rovinné zrcadlo 2023-11-02 13.00.20.excalidraw.md",
-    "fyz/Svetlo/Rovinné zrcadlo.md",
-    "fyz/Svetlo/Uplny odraz svetla.md",
-    "fyz/Svetlo/Svetlo.md",
-    "fyz/Svetlo/Odraz světla.md",
+    "dej/dej.md",
+    "cjl/literatura/slohy/Realismus/Světový realismus.md",
     "fyz/fyz.md",
+    "fyz/Svetlo/Rovinné zrcadlo.md",
+    "data/Rovinné zrcadlo 2023-11-09 13.04.09.excalidraw.md",
+    "data/Rovinné zrcadlo 2023-11-09 13.03.10.excalidraw.md",
+    "fyz/Svetlo/Odraz světla.md",
     "cjl/literatura/slohy/Realismus/Opakování.md",
+    "cjl/literatura/Tropy a figury.md",
+    "mat/Geometrie/Řezy těles.md",
     "mat/Geometrie/Stereometrie.md",
-    "data/Pasted image 20231102111638.png",
+    "mat/Geometrie/Kružnice.md",
+    "eko/Pracovní proces.md",
     "eko/Úvodní hodina.md",
     "eko/eko.md",
-    "PRA/Prameny.md",
-    "PRA/Sbírka zákonů.md",
-    "PRA/PRA.md",
-    "kbb/math/Modulární aritmetika.md",
-    "kbb/math/math.md",
-    "kbb/hodiny/procesor.md",
-    "kbb/haxagon/haxagon.md",
-    "kbb/haxagon/Terminals.md",
-    "kbb/hodiny/hodiny.md",
     "kbb/kbb.md",
+    "cjl/literatura/slohy/Realismus/Rozchod.md",
+    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
+    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
+    "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
+    "cjl/literatura/slohy/Realismus/Realismus.md",
+    "cjl/cjl.md",
+    "kbb/hodiny/procesor.md",
+    "data/Rovinné zrcadlo 2023-11-02 13.00.20.excalidraw.md",
+    "fyz/Svetlo/Uplny odraz svetla.md",
+    "fyz/Svetlo/Svetlo.md",
+    "data/Pasted image 20231102111638.png",
     "kbb/hodiny",
-    "ONA/Vyvoj lidske spolecnosti.md",
-    "cjl/literatura/Tropy a figury.md",
-    "eko/Untitled.md",
-    "data/Pravidelný n-úhelník 2023-10-13 12.07.37.excalidraw.md",
-    "mat/Trigonometrie/Geometrie/Pravidelný n-úhelník.md",
-    "data/Obvody a obsahy rovinných útvarů 2023-10-13 12.18.54.excalidraw.md",
     "eko",
     "kbb/math",
     "mat/Geometrie",
