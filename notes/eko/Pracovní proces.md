@@ -25,9 +25,14 @@ Důsledek: (technické) zastarávání
 
 
 ## DÚ
-10x pracovní proces (+ švadlena jako příklad)
+10x pracovní proces
 
-| P. Síla  | P. jednorázové s. | P. postupné s. |
-| -------- | ----------------- | -------------- |
-| švadlena | látka             | šicí stroj     |
-|          |                   |                |
+| P. Síla     | P. jednorázové s. | P. postupné s. |
+| ----------- | ----------------- | -------------- |
+| dřevorubec  | dřevo             | sekera         |
+| kuchař      | cuketa            | nože           |
+| opravář bot | lepidlo na boty   | kladivo        |
+| kovář       | železo            | kladivo        |
+| hrnčíř      | hlína             | hrnčířské kolo |
+| krejčí      | látka             | šicí stroj     |
+|             |                   |                |

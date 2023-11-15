@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "271e8d573fe4a24d",
+        "id": "4dc9129fa5469885",
         "type": "tabs",
         "children": [
           {
-            "id": "e4871a6e09c454d4",
+            "id": "077a87983c936fb2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cjl/literatura/slohy/Realismus/Světový realismus.md",
+                "file": "eko/Pracovní proces.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cjl/literatura/slohy/Realismus/Světový realismus.md",
+                "file": "eko/Pracovní proces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cjl/literatura/slohy/Realismus/Světový realismus.md",
+                "file": "eko/Pracovní proces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cjl/literatura/slohy/Realismus/Světový realismus.md"
+                "file": "eko/Pracovní proces.md"
               }
             }
           },
@@ -235,12 +235,15 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "e4871a6e09c454d4",
+  "active": "077a87983c936fb2",
   "lastOpenFiles": [
-    "dej/dej.md",
-    "cjl/literatura/slohy/Realismus/Světový realismus.md",
-    "fyz/fyz.md",
+    "eko/eko.md",
     "fyz/Svetlo/Rovinné zrcadlo.md",
+    "fyz/fyz.md",
+    "projects/projects.md",
+    "cjl/cjl.md",
+    "cjl/literatura/slohy/Realismus/Světový realismus.md",
+    "dej/dej.md",
     "data/Rovinné zrcadlo 2023-11-09 13.04.09.excalidraw.md",
     "data/Rovinné zrcadlo 2023-11-09 13.03.10.excalidraw.md",
     "fyz/Svetlo/Odraz světla.md",
@@ -251,18 +254,15 @@
     "mat/Geometrie/Kružnice.md",
     "eko/Pracovní proces.md",
     "eko/Úvodní hodina.md",
-    "eko/eko.md",
     "kbb/kbb.md",
     "cjl/literatura/slohy/Realismus/Rozchod.md",
     "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
     "cjl/literatura/slohy/Realismus/Božena Němcová.md",
     "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
     "cjl/literatura/slohy/Realismus/Realismus.md",
-    "cjl/cjl.md",
     "kbb/hodiny/procesor.md",
     "data/Rovinné zrcadlo 2023-11-02 13.00.20.excalidraw.md",
     "fyz/Svetlo/Uplny odraz svetla.md",
-    "fyz/Svetlo/Svetlo.md",
     "data/Pasted image 20231102111638.png",
     "kbb/hodiny",
     "eko",
