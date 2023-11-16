@@ -231,8 +231,7 @@
       "omnisearch:Omnisearch": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
   "active": "077a87983c936fb2",

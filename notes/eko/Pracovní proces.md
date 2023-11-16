@@ -35,4 +35,8 @@ Důsledek: (technické) zastarávání
 | kovář       | železo            | kladivo        |
 | hrnčíř      | hlína             | hrnčířské kolo |
 | krejčí      | látka             | šicí stroj     |
-|             |                   |                |
+| malíř       | barva             | štětec         |
+| zemědělec   | semeno            | traktor        |
+| sklenář     | sklo              | pec            |
+| kameník     | kámen             | brusný kotouč  |
+
