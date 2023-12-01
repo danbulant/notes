@@ -28,3 +28,34 @@ Geometrie prostoru
 - různoběžné (mají 1 průsečík) $\stackrel{\leftrightarrow}{BC} \times \leftrightarrow ABFE$
 - rovnoběžnost $\stackrel{\leftrightarrow}{DC}\|\leftrightarrow ABFE$
 
+---
+
+## Příklady
+
+V krychli $ABCDEFGH$ určete vzájemnou polohu a odchylku objektů:
+
+hrana $a$
+stenova uhlopr. $u_s=\sqrt2a$
+telesova uhlopr. $u_t=\sqrt3a$
+
+1) $\stackrel{\rightarrow}{AB}$ a $\stackrel{\rightarrow}{AC}$
+ruznobeznost, $\times$
+
+2) $\stackrel{\leftrightarrow}{AH}$ a $\stackrel{\leftrightarrow}{AC}$
+ruznobeznost, $\times$
+
+3) $\stackrel{\leftrightarrow}{BC}$ a $\stackrel{\leftrightarrow}{EH}$
+rovnobeznost, $\|$
+
+4) $\stackrel{\leftrightarrow}{AH}$ a $\stackrel{\leftrightarrow}{EB}$
+mimobeznost
+
+5) $\stackrel{\leftrightarrow}{AG}$ a $\stackrel{\leftrightarrow}{HB}$
+ruznobeznost, $\times$
+
+6) $\stackrel{\leftrightarrow}{EC}$ a $\stackrel{\leftrightarrow}{BFG}$
+ruznobeznost, $\times$
+
+7) $\stackrel{\leftrightarrow}{AHF}$ a $\stackrel{\leftrightarrow}{EHF}$
+ruznobeznost, protinaji se v primce
+![[Stereometrie 2023-11-24 12.32.36.excalidraw]]

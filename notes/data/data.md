@@ -356,6 +356,7 @@ imagePrefix: 'data/'
 -  [[data/spoj průchozím šroubem 2.bmp|spoj průchozím šroubem 2.bmp]]
 -  [[data/spoj průchozím šroubem.bmp|spoj průchozím šroubem.bmp]]
 -  [[data/šroub M24.bmp|šroub M24.bmp]]
+-  [[data/Stereometrie 2023-11-24 12.32.36.excalidraw|Stereometrie 2023-11-24 12.32.36.excalidraw]]
 -  [[data/Struktura povrchu_označení.excalidraw|Struktura povrchu_označení.excalidraw]]
 -  [[data/struktura povrchu.bmp|struktura povrchu.bmp]]
 -  [[data/struktura povrchu.svg|struktura povrchu.svg]]

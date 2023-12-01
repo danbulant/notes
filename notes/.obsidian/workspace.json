@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4dc9129fa5469885",
+        "id": "2b45b78c98b9b93b",
         "type": "tabs",
         "children": [
           {
-            "id": "077a87983c936fb2",
+            "id": "4b1ebfe9ff5d40a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eko/Pracovní proces.md",
+                "file": "vyp/opakovani.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "eko/Pracovní proces.md",
+                "file": "vyp/opakovani.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "eko/Pracovní proces.md",
+                "file": "vyp/opakovani.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "eko/Pracovní proces.md"
+                "file": "vyp/opakovani.md"
               }
             }
           },
@@ -231,11 +231,23 @@
       "omnisearch:Omnisearch": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "077a87983c936fb2",
+  "active": "4b1ebfe9ff5d40a2",
   "lastOpenFiles": [
+    "vyp/vyp.md",
+    "mat/Geometrie/Počítání hodnot kolem struhadla.md",
+    "vyp/opakovani.md",
+    "vyp",
+    "mat/Geometrie/Stereometrie.md",
+    "data/Stereometrie 2023-11-24 12.32.36.excalidraw.md",
+    "cjl/literatura/slohy/Realismus/Opakování.md",
+    "mat/mat.md",
+    "mat/Geometrie/Jehlany.md",
+    "mat/Geometrie/Řezy těles.md",
+    "eko/Pracovní proces.md",
     "eko/eko.md",
     "fyz/Svetlo/Rovinné zrcadlo.md",
     "fyz/fyz.md",
@@ -246,22 +258,12 @@
     "data/Rovinné zrcadlo 2023-11-09 13.04.09.excalidraw.md",
     "data/Rovinné zrcadlo 2023-11-09 13.03.10.excalidraw.md",
     "fyz/Svetlo/Odraz světla.md",
-    "cjl/literatura/slohy/Realismus/Opakování.md",
     "cjl/literatura/Tropy a figury.md",
-    "mat/Geometrie/Řezy těles.md",
-    "mat/Geometrie/Stereometrie.md",
     "mat/Geometrie/Kružnice.md",
-    "eko/Pracovní proces.md",
     "eko/Úvodní hodina.md",
     "kbb/kbb.md",
     "cjl/literatura/slohy/Realismus/Rozchod.md",
     "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
-    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
-    "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
-    "cjl/literatura/slohy/Realismus/Realismus.md",
-    "kbb/hodiny/procesor.md",
-    "data/Rovinné zrcadlo 2023-11-02 13.00.20.excalidraw.md",
-    "fyz/Svetlo/Uplny odraz svetla.md",
     "data/Pasted image 20231102111638.png",
     "kbb/hodiny",
     "eko",
@@ -281,7 +283,6 @@
     "data/Pasted image 20230607114014.png",
     "data/Pasted image 20230607113346.png",
     "dej/moderní/postkomunismus",
-    "mat/Trigonometrie/Geometrie",
     "Untitled.canvas"
   ]
 }
