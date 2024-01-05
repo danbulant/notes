@@ -1,0 +1,9 @@
+We have come a long way, from doing funny things with rocks to doing even more funny things with rocks, just slightly different things with different rocks.
+From making basic weapons and tools from rocks that help us kill animals to refining rocks with the precision many times smaller than a strand of hair and making weapons that destroy entire cities in seconds.
+From information taking years to spread without the ability to write it down to remember it correctly and fully to misinformation spreading to half the world in a matter of hours or days at most.
+From having to to talk with people, or later reading books, to being able to enter new worlds in virtual reality and escape the real reality.
+From books written about how to behave and how our savior lived to realistic movies about a grim future filled with flashy technology.
+From a lawless world to a bureacratic machine.
+From no companies to companies knowing more about you than you yourself, and selling that to other companies.
+
+And in less than a hundred years, we got from common horse carriages to motor vehicles being one of the largest killers. From first plane liftoff to planes being one of the largest air polluters. From mechanical calculators to systems calculating if you're eligible to buy a house and for what price. From a single radio for a house or even a whole village to personalized recommendations creating an infinite content queue acting as an echo chamber full of ads that are less scrutinized than the content itself. From a single ad in a newspaper costing a fortune to any scammer being able to buy ad space for pennies in hopes that you, or your grandmother, will fall for it.

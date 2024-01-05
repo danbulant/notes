@@ -4,18 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "2b45b78c98b9b93b",
+        "id": "5b686b947f245091",
         "type": "tabs",
         "children": [
           {
-            "id": "4b1ebfe9ff5d40a2",
+            "id": "c43e8e9f7a67fc93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vyp/opakovani.md",
+                "file": "mat/Geometrie/Analytická/Odchylka vektorů.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "5ca0febeb6b903ec",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Odchylka vektorů 2024-01-05 11.16.48.excalidraw.md"
               }
             }
           }
@@ -48,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sinus",
+                "query": "frown",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vyp/opakovani.md",
+                "file": "mat/Geometrie/Analytická/Odchylka vektorů.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vyp/opakovani.md",
+                "file": "mat/Geometrie/Analytická/Odchylka vektorů.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vyp/opakovani.md"
+                "file": "mat/Geometrie/Analytická/Odchylka vektorů.md"
               }
             }
           },
@@ -191,7 +201,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -235,44 +247,45 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "4b1ebfe9ff5d40a2",
+  "active": "c43e8e9f7a67fc93",
   "lastOpenFiles": [
-    "vyp/vyp.md",
-    "mat/Geometrie/Počítání hodnot kolem struhadla.md",
-    "vyp/opakovani.md",
-    "vyp",
-    "mat/Geometrie/Stereometrie.md",
-    "data/Stereometrie 2023-11-24 12.32.36.excalidraw.md",
-    "cjl/literatura/slohy/Realismus/Opakování.md",
-    "mat/mat.md",
-    "mat/Geometrie/Jehlany.md",
-    "mat/Geometrie/Řezy těles.md",
-    "eko/Pracovní proces.md",
-    "eko/eko.md",
-    "fyz/Svetlo/Rovinné zrcadlo.md",
-    "fyz/fyz.md",
-    "projects/projects.md",
+    "data/Odchylka vektorů 2024-01-05 11.16.48.excalidraw.md",
+    "mat/Geometrie/Analytická/Odchylka vektorů.md",
+    "mat/Geometrie/Analytická/Orientovaná úsečka.md",
+    "mat/Geometrie/Analytická/Skalární součin.md",
+    "mat/Geometrie/Analytická/Posunutí o vektor.md",
+    "mat/Geometrie/Analytická/Analytická.md",
     "cjl/cjl.md",
+    "data/Odchylka vektorů 2024-01-04 11.38.19.excalidraw.md",
+    "mat/Geometrie/Analytická/Vektor.md",
+    "mat/Geometrie/Analytická/Skalární součin.md.part",
+    "mat/Geometrie/Analytická/Jednotkový vektor.md",
+    "mat/Geometrie/Analytická/Jednotkový vektor.md.part",
     "cjl/literatura/slohy/Realismus/Světový realismus.md",
-    "dej/dej.md",
-    "data/Rovinné zrcadlo 2023-11-09 13.04.09.excalidraw.md",
-    "data/Rovinné zrcadlo 2023-11-09 13.03.10.excalidraw.md",
-    "fyz/Svetlo/Odraz světla.md",
-    "cjl/literatura/Tropy a figury.md",
-    "mat/Geometrie/Kružnice.md",
-    "eko/Úvodní hodina.md",
-    "kbb/kbb.md",
-    "cjl/literatura/slohy/Realismus/Rozchod.md",
-    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
+    "cjl/literatura/slohy/Realismus/Realismus.md",
+    "mat/mat.md",
+    "mat/Geometrie/Stereometrie.md",
+    "Excalidraw/Drawing 2023-12-14 19.19.50.excalidraw.md",
+    "data/Vektor 2023-12-15 12.16.27.excalidraw.md",
+    "data/Posunutí o vektor 2023-12-15 11.33.14.excalidraw.md",
+    "data/Vektor 2023-12-15 11.10.30.excalidraw.md",
+    "mat/Geometrie/Analytická/Příklady.md",
+    "numbat",
+    "mat/Geometrie/Analytická/Vzdálenost 2 a 3 bodů - Velikost úsečky.md",
+    "fyz/fyz.md",
+    "Excalidraw/Drawing 2023-12-14 15.41.10.excalidraw.md",
+    "fyz/pracovni list kapacita vodice.md",
+    "data/Priklady 2023-12-14 13.52.36.excalidraw.md",
+    "fyz/elektrika/Priklady.md",
+    "fyz/elektrika/elektrika.md",
+    "fyz/elektrika",
+    "mat/Geometrie/Analytická",
+    "vyp",
     "data/Pasted image 20231102111638.png",
     "kbb/hodiny",
     "eko",
     "kbb/math",
     "mat/Geometrie",
-    "fyz/Svetlo",
-    "PRA",
-    "Maturitni cetba",
-    "projects/dvop",
     "data/Pasted image 20230613140233.png",
     "data/Pasted image 20230613140100.png",
     "data/Pasted image 20230613135723.png",
@@ -282,7 +295,6 @@
     "data/Pasted image 20230607114133.png",
     "data/Pasted image 20230607114014.png",
     "data/Pasted image 20230607113346.png",
-    "dej/moderní/postkomunismus",
     "Untitled.canvas"
   ]
 }

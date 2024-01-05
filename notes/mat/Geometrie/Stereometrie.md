@@ -1,6 +1,8 @@
 # Stereometrie
 Geometrie prostoru
 
+![Drawing 2023-12-14 19.19.50.excalidraw](Drawing%202023-12-14%2019.19.50.excalidraw.md)
+
 ## Vzájemná poloha … ve 3D
 
 ### Dvou přímek

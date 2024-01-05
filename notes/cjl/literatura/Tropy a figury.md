@@ -59,7 +59,7 @@ Archaismus - Zastaralé slovo
 personifikace - lidské vlastosti neživým věcem
 Apostrofa - oslovení neživé věci
 Gradace - gradace jede a peláší
-Antiteze - protiklad
+Antiteze - protiklad$\vec{AB}\vec{AC}=
 hyperbola - přehánění
 Synekdocha - pojmenováním část celkem či celkem část
 metafora či metonimie - obrazné pojmenování
@@ -68,8 +68,8 @@ metonimie - vnitřní podoba
 epizeuxis - opakovaní v jednom verši 
 epifora - opakování na konči veršů  
 epanastrofa - opakování, konec verše a začátek dalšího verše
-eufenizmus - odlehčení okolností
 anafora - opakování na začátku veršu
+eufenizmus - odlehčení okolností
 oxymorón - protiklad
 autobiografie - vložení sebe sama do děje
 hyperonymie a hyponymie - Slova nadřazená a podřazená
