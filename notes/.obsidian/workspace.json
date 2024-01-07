@@ -4,28 +4,57 @@
     "type": "split",
     "children": [
       {
-        "id": "5b686b947f245091",
+        "id": "3c608be40bdfbd39",
         "type": "tabs",
+        "dimension": 48.8030888030888,
         "children": [
           {
-            "id": "c43e8e9f7a67fc93",
+            "id": "54ff31b0a12a2147",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Geometrie/Analytická/Odchylka vektorů.md",
+                "file": "pdv/pdv.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "7b6bf30f90bc7520",
+        "type": "tabs",
+        "dimension": 17.83783783783784,
+        "children": [
           {
-            "id": "5ca0febeb6b903ec",
+            "id": "70bc665291940266",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "data/Odchylka vektorů 2024-01-05 11.16.48.excalidraw.md"
+                "file": "vyp/vyp.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "966aa7611f6281ca",
+        "type": "tabs",
+        "dimension": 33.35907335907336,
+        "children": [
+          {
+            "id": "2682a35d569a8908",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vyp/opakovani.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -95,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Geometrie/Analytická/Odchylka vektorů.md",
+                "file": "pdv/pdv.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Geometrie/Analytická/Odchylka vektorů.md",
+                "file": "pdv/pdv.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Geometrie/Analytická/Odchylka vektorů.md"
+                "file": "pdv/pdv.md"
               }
             }
           },
@@ -224,7 +253,7 @@
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 11
       }
     ],
     "direction": "horizontal",
@@ -247,8 +276,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "c43e8e9f7a67fc93",
+  "active": "54ff31b0a12a2147",
   "lastOpenFiles": [
+    "vyp/vyp.md",
+    "pdv/pdv.md",
+    "vyp/opakovani.md",
+    "README.md",
+    "mat/mat.md",
+    "mat/Geometrie/Analytická/Vektorový součin.md",
+    "data/Vektorový součin 2024-01-05 12.19.14.excalidraw.md",
+    "data/Pasted Image 20240105121929_869.png",
+    "data/Vektorový součin 2024-01-05 12.05.56.excalidraw.md",
     "data/Odchylka vektorů 2024-01-05 11.16.48.excalidraw.md",
     "mat/Geometrie/Analytická/Odchylka vektorů.md",
     "mat/Geometrie/Analytická/Orientovaná úsečka.md",
@@ -263,7 +301,6 @@
     "mat/Geometrie/Analytická/Jednotkový vektor.md.part",
     "cjl/literatura/slohy/Realismus/Světový realismus.md",
     "cjl/literatura/slohy/Realismus/Realismus.md",
-    "mat/mat.md",
     "mat/Geometrie/Stereometrie.md",
     "Excalidraw/Drawing 2023-12-14 19.19.50.excalidraw.md",
     "data/Vektor 2023-12-15 12.16.27.excalidraw.md",
@@ -271,13 +308,6 @@
     "data/Vektor 2023-12-15 11.10.30.excalidraw.md",
     "mat/Geometrie/Analytická/Příklady.md",
     "numbat",
-    "mat/Geometrie/Analytická/Vzdálenost 2 a 3 bodů - Velikost úsečky.md",
-    "fyz/fyz.md",
-    "Excalidraw/Drawing 2023-12-14 15.41.10.excalidraw.md",
-    "fyz/pracovni list kapacita vodice.md",
-    "data/Priklady 2023-12-14 13.52.36.excalidraw.md",
-    "fyz/elektrika/Priklady.md",
-    "fyz/elektrika/elektrika.md",
     "fyz/elektrika",
     "mat/Geometrie/Analytická",
     "vyp",
@@ -294,7 +324,6 @@
     "data/Pasted image 20230608114007.png",
     "data/Pasted image 20230607114133.png",
     "data/Pasted image 20230607114014.png",
-    "data/Pasted image 20230607113346.png",
     "Untitled.canvas"
   ]
 }

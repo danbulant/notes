@@ -1,6 +1,6 @@
 # Odchylka vektorů
  
-Def: Mějme vektory $\vec{u}$ a $\vec{v}$ se spol. poč. bodem. Pak jejich odchylka $\varphi$ je velikost konvexního úhlu, který svýrají.
+Def: Mějme vektory $\vec{u}$ a $\vec{v}$ se spol. poč. bodem. Pak jejich odchylka $\varphi$ je velikost konvexního úhlu, který svírají.
 
 Platí: $\varphi\in\lt0\degree;180\degree\gt$
 $\vec{u}\vec{v}=|\vec{u}||\vec{v}|\cos\varphi$
@@ -48,6 +48,7 @@ $\vec{w}\perp\vec{u}$: $\vec{w}=(y_u;-x_u)$
 > $\vec{w}\perp\vec{u}\Leftrightarrow\vec{w}\vec{u}=0$
 > $\vec{w}\vec{u}=(y_u;-x_u)(x_u;y_u)=y_ux_u+(-x_u)y_u=0$
 
+Kolmé vektory k zadaným vektorům:
 $\vec{u}=(1;-1)$
 $\vec{u'}=(1;1)$
 $\vec{u''}=(-1;-1)$
@@ -57,3 +58,23 @@ $\vec{v''}=(-3;-\sqrt2)$
 $\vec{w}=(-2;-5)$
 $\vec{w'}=(-5;2)$
 $\vec{w''}=(5;-2)$
+
+---
+
+$\vec{u}=(t;2;-1)$ $\vec{v}=(1;-t;3)$
+$t\in\mathbb{R}$ tak, aby $\vec{u}\perp\vec{v}$
+
+$\vec{u}\vec{v}=0$
+$(t;2;-1)*(1;-t;3)=0$
+$t1+2(-t)+(-1)3=0$
+$t-2t-3=0$
+$-t-3=0$
+$t=-3$
+
+$\vec{u}=(-3;2;-1)$ $\vec{v}=(1;3;3)$
+
+$\vec{u}=(1;2;-4)$
+$\vec{v}=(2;3;2)$
+$\vec{u}\perp\vec{v}?$
+$\vec{u}\vec{v}=2+6-8=0$
+
