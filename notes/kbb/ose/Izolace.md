@@ -1,9 +1,8 @@
-
 ## VM
 Virtuální počítače poskytují větší separaci než containery, ale i sami se rozdělují do více kategorií podle míry izolace a rychlosti.
 
 ### Emulace
-Nejpomalejší ale nejvíc flexibilní režim - emuluje se i procesor samotný a jeho instrukce. Je to potřeba jestliže cílový guest systém nepoužívá stejnou CPU architekturu, nebo pro největší oddělení host systému.!
+Nejpomalejší ale nejvíc flexibilní režim - emuluje se i procesor samotný a jeho instrukce. Je to potřeba jestliže cílový guest systém nepoužívá stejnou CPU architekturu, nebo pro největší oddělení host systému.
 
 ### Full virtualization
 Plná virtualizace, používá se sice hardware akcelerace, ale guest systém nemusí poznat že je virtualizován a nepotřebuje pro to nic speciálního.

@@ -4,55 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3c608be40bdfbd39",
+        "id": "5da00c389a5dba35",
         "type": "tabs",
-        "dimension": 48.8030888030888,
         "children": [
           {
-            "id": "54ff31b0a12a2147",
+            "id": "1650d4b04f223898",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pdv/pdv.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "7b6bf30f90bc7520",
-        "type": "tabs",
-        "dimension": 17.83783783783784,
-        "children": [
-          {
-            "id": "70bc665291940266",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "vyp/vyp.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "966aa7611f6281ca",
-        "type": "tabs",
-        "dimension": 33.35907335907336,
-        "children": [
-          {
-            "id": "2682a35d569a8908",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "vyp/opakovani.md",
+                "file": "pva/skripta.md",
                 "mode": "source",
                 "source": false
               }
@@ -124,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pdv/pdv.md",
+                "file": "pva/skripta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pdv/pdv.md",
+                "file": "pva/skripta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pdv/pdv.md"
+                "file": "pva/skripta.md"
               }
             }
           },
@@ -276,11 +237,11 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "54ff31b0a12a2147",
+  "active": "1650d4b04f223898",
   "lastOpenFiles": [
+    "vyp/opakovani.md",
     "vyp/vyp.md",
     "pdv/pdv.md",
-    "vyp/opakovani.md",
     "README.md",
     "mat/mat.md",
     "mat/Geometrie/Analytická/Vektorový součin.md",
