@@ -4,19 +4,75 @@
     "type": "split",
     "children": [
       {
-        "id": "5da00c389a5dba35",
+        "id": "57c36eb49d8f2ed9",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
-            "id": "1650d4b04f223898",
+            "id": "530d80185ed0d520",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pva/skripta.md",
+                "file": "kbb/ose/Buffer Overflow.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "220c2bd4c1f0e9b6",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Buffer Overflow 2024-01-21 15.54.12.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "5eb72ff7c9707523",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Buffer Overflow 2024-01-21 20.13.05.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "d7d9d567f43c48b3",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Buffer Overflow 2024-01-21 18.11.54.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "57c8d8375df64870",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-01-21 20.54.05.excalidraw.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "3af121763a926220",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "70109fada722d711",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
             }
           }
         ]
@@ -69,7 +125,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.50418853759766
+    "width": 353.50418853759766,
+    "collapsed": true
   },
   "right": {
     "id": "d22ff97dba49a6cc",
@@ -85,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pva/skripta.md",
+                "file": "kbb/ose/Buffer Overflow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pva/skripta.md",
+                "file": "kbb/ose/Buffer Overflow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pva/skripta.md"
+                "file": "kbb/ose/Buffer Overflow.md"
               }
             }
           },
@@ -234,57 +291,58 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "obsidian-spaced-repetition:Review flashcards": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false
+      "breadcrumbs:Breadcrumbs Visualisation": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "1650d4b04f223898",
+  "active": "530d80185ed0d520",
   "lastOpenFiles": [
-    "vyp/opakovani.md",
-    "vyp/vyp.md",
-    "pdv/pdv.md",
-    "README.md",
-    "mat/mat.md",
-    "mat/Geometrie/Analytická/Vektorový součin.md",
-    "data/Vektorový součin 2024-01-05 12.19.14.excalidraw.md",
-    "data/Pasted Image 20240105121929_869.png",
-    "data/Vektorový součin 2024-01-05 12.05.56.excalidraw.md",
-    "data/Odchylka vektorů 2024-01-05 11.16.48.excalidraw.md",
-    "mat/Geometrie/Analytická/Odchylka vektorů.md",
-    "mat/Geometrie/Analytická/Orientovaná úsečka.md",
-    "mat/Geometrie/Analytická/Skalární součin.md",
-    "mat/Geometrie/Analytická/Posunutí o vektor.md",
-    "mat/Geometrie/Analytická/Analytická.md",
-    "cjl/cjl.md",
-    "data/Odchylka vektorů 2024-01-04 11.38.19.excalidraw.md",
-    "mat/Geometrie/Analytická/Vektor.md",
-    "mat/Geometrie/Analytická/Skalární součin.md.part",
-    "mat/Geometrie/Analytická/Jednotkový vektor.md",
-    "mat/Geometrie/Analytická/Jednotkový vektor.md.part",
-    "cjl/literatura/slohy/Realismus/Světový realismus.md",
-    "cjl/literatura/slohy/Realismus/Realismus.md",
-    "mat/Geometrie/Stereometrie.md",
+    "data/Pasted image 20240121221343.png",
+    "data/Pasted image 20240121221104.png",
+    "data/Pasted image 20240121221020.png",
+    "data/Pasted image 20240121220455.png",
+    "data/Pasted image 20240121213831.png",
+    "data/Buffer Overflow 2024-01-21 15.54.12.excalidraw.md",
+    "kbb/ose/Buffer Overflow.md",
+    "Excalidraw/Drawing 2024-01-21 20.54.05.excalidraw.md",
+    "Excalidraw/Drawing 2024-01-21 20.54.05.excalidraw.svg",
+    "data/Buffer Overflow 2024-01-21 20.13.05.excalidraw.md",
+    "data/Buffer Overflow 2024-01-21 18.11.54.excalidraw.md",
+    "data/Buffer Overflow 2024-01-21 20.13.05.excalidraw.svg",
+    "data/Pasted image 20240121191816.png",
+    "data/Pasted image 20240121190849.png",
+    "data/Pasted image 20240121190838.png",
+    "data/Pasted image 20240121190818.png",
+    "data/Buffer Overflow 2024-01-21 18.47.55.excalidraw.md",
+    "data/Buffer Overflow 2024-01-21 17.35.47.excalidraw.md",
+    "data/Buffer Overflow 2024-01-21 15.04.46.excalidraw.md",
+    "data/Buffer Overflow 2024-01-21 15.04.46.excalidraw 1 1.md",
+    "data/Buffer Overflow 2024-01-21 15.04.46.excalidraw 1.md",
+    "data/data.md",
+    "kbb/ose/Izolace.md",
+    "Excalidraw/Excalidraw.md",
+    "Excalidraw/tek-preruseni-jedna.excalidraw.md",
+    "Excalidraw/Rezistor-example1.excalidraw.md",
     "Excalidraw/Drawing 2023-12-14 19.19.50.excalidraw.md",
-    "data/Vektor 2023-12-15 12.16.27.excalidraw.md",
-    "data/Posunutí o vektor 2023-12-15 11.33.14.excalidraw.md",
-    "data/Vektor 2023-12-15 11.10.30.excalidraw.md",
+    "Excalidraw/Drawing 2023-12-14 15.41.10.excalidraw.md",
+    "kbb/ose/ose.md",
+    "kbb/hodiny/hodiny.md",
+    "kbb/hodiny/procesor.md",
+    "mat/Geometrie/Analytická/Vektor.md",
+    "mat/Geometrie/Analytická/Skalární součin.md",
     "mat/Geometrie/Analytická/Příklady.md",
+    "mat/Geometrie/Analytická/Posunutí o vektor.md",
+    "mat/Geometrie/Analytická/Parametricke vyjadreni primky.md",
+    "mat/Geometrie/Analytická/Skalární součin.md.part",
+    "mat/Geometrie/Analytická/Jednotkový vektor.md.part",
     "numbat",
     "fyz/elektrika",
     "mat/Geometrie/Analytická",
     "vyp",
-    "data/Pasted image 20231102111638.png",
     "kbb/hodiny",
     "eko",
     "kbb/math",
     "mat/Geometrie",
-    "data/Pasted image 20230613140233.png",
-    "data/Pasted image 20230613140100.png",
-    "data/Pasted image 20230613135723.png",
-    "data/Pasted image 20230613122350.png",
-    "data/Pasted image 20230613121341.png",
-    "data/Pasted image 20230608114007.png",
-    "data/Pasted image 20230607114133.png",
-    "data/Pasted image 20230607114014.png",
     "Untitled.canvas"
   ]
 }

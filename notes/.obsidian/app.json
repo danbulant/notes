@@ -1,7 +1,7 @@
 {
   "newFileLocation": "current",
   "attachmentFolderPath": "data",
-  "useMarkdownLinks": true,
+  "useMarkdownLinks": false,
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "legacyEditor": false,

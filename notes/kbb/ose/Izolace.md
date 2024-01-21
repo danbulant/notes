@@ -1,3 +1,6 @@
+# Izolace
+Izolace se rozděluje na VM a containery, převážně rozděleno tak že VM má vlastní kernel zatímco containery používají kernel host systému pro vyšší výkon a větší integraci se systémem.
+
 ## VM
 Virtuální počítače poskytují větší separaci než containery, ale i sami se rozdělují do více kategorií podle míry izolace a rychlosti.
 

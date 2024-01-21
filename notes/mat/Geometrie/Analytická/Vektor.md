@@ -152,3 +152,9 @@ $p=0$
 $2=1*0+3*\frac12$
 $2=\frac32$ neni
 
+---
+
+$S_p=(4\pi r^2)/2$
+$S_k=\sqrt{r^2+v^2}$
+$S_k=\sqrt{r^2+(6r)^2}=\sqrt{r^2+36r^2}=\sqrt{37r^2}=r\sqrt{37}$
+$S_p:S_k=2\pi r^2:r\sqrt{37}=2\pi r:\sqrt{37}$
