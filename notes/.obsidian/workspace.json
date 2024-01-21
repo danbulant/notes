@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "220c2bd4c1f0e9b6",
+            "id": "d3368004a5e49da6",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "data/Buffer Overflow 2024-01-21 15.54.12.excalidraw.md"
+                "file": "data/Buffer Overflow 2024-01-21 22.34.42.excalidraw.md"
               }
             }
           },
@@ -37,26 +37,6 @@
               "type": "excalidraw",
               "state": {
                 "file": "data/Buffer Overflow 2024-01-21 20.13.05.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "d7d9d567f43c48b3",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "data/Buffer Overflow 2024-01-21 18.11.54.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "57c8d8375df64870",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-01-21 20.54.05.excalidraw.md"
               }
             }
           }
@@ -297,22 +277,23 @@
   },
   "active": "530d80185ed0d520",
   "lastOpenFiles": [
+    "data/Pasted image 20240121224927.png",
+    "data/Pasted image 20240121224352.png",
+    "data/Pasted image 20240121224128.png",
+    "data/Buffer Overflow 2024-01-21 22.34.42.excalidraw.md",
+    "data/Buffer Overflow 2024-01-21 20.13.05.excalidraw.md",
+    "data/Buffer Overflow 2024-01-21 22.34.42.excalidraw.svg",
+    "kbb/ose/Buffer Overflow.md",
+    "data/Pasted image 20240121221825.png",
     "data/Pasted image 20240121221343.png",
     "data/Pasted image 20240121221104.png",
     "data/Pasted image 20240121221020.png",
     "data/Pasted image 20240121220455.png",
     "data/Pasted image 20240121213831.png",
     "data/Buffer Overflow 2024-01-21 15.54.12.excalidraw.md",
-    "kbb/ose/Buffer Overflow.md",
     "Excalidraw/Drawing 2024-01-21 20.54.05.excalidraw.md",
     "Excalidraw/Drawing 2024-01-21 20.54.05.excalidraw.svg",
-    "data/Buffer Overflow 2024-01-21 20.13.05.excalidraw.md",
     "data/Buffer Overflow 2024-01-21 18.11.54.excalidraw.md",
-    "data/Buffer Overflow 2024-01-21 20.13.05.excalidraw.svg",
-    "data/Pasted image 20240121191816.png",
-    "data/Pasted image 20240121190849.png",
-    "data/Pasted image 20240121190838.png",
-    "data/Pasted image 20240121190818.png",
     "data/Buffer Overflow 2024-01-21 18.47.55.excalidraw.md",
     "data/Buffer Overflow 2024-01-21 17.35.47.excalidraw.md",
     "data/Buffer Overflow 2024-01-21 15.04.46.excalidraw.md",
@@ -332,7 +313,6 @@
     "mat/Geometrie/Analytická/Skalární součin.md",
     "mat/Geometrie/Analytická/Příklady.md",
     "mat/Geometrie/Analytická/Posunutí o vektor.md",
-    "mat/Geometrie/Analytická/Parametricke vyjadreni primky.md",
     "mat/Geometrie/Analytická/Skalární součin.md.part",
     "mat/Geometrie/Analytická/Jednotkový vektor.md.part",
     "numbat",
