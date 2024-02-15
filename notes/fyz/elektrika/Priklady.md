@@ -44,3 +44,23 @@ $Q_1=0.03nC$
 
 ---
 
+$I=\frac{Q}t$
+
+
+Projde 900 coulombu behem 30min:
+$Q=900C$ $t=30min=1800s$
+$I=\frac{900}{1800}=\frac12A$
+
+Urcete konstantni proud kterym se behem 20s nabil kondenzator o kapacite $800\micro F$ a napeti $500V$
+
+$U=500V$
+$t=20s$
+$C=800\micro F$
+
+$C=\frac{Q}U$
+$Q=CU$
+$Q=800\micro F * 500V=400 000 \micro C=400 mC$
+
+$I=\frac{Q}t$ 
+$I=400mC/20s=20mA$
+

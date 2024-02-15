@@ -4,55 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "57c36eb49d8f2ed9",
+        "id": "b0d8ce9620f654fb",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
-            "id": "530d80185ed0d520",
+            "id": "c239735ec8a608a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kbb/ose/Buffer Overflow.md",
+                "file": "mat/Geometrie/Analytická/Kužolosečky.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "d3368004a5e49da6",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "data/Buffer Overflow 2024-01-21 22.34.42.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "5eb72ff7c9707523",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "data/Buffer Overflow 2024-01-21 20.13.05.excalidraw.md"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "3af121763a926220",
-        "type": "tabs",
-        "dimension": 50,
-        "children": [
-          {
-            "id": "70109fada722d711",
-            "type": "leaf",
-            "state": {
-              "type": "reveal-preview-view",
-              "state": {}
             }
           }
         ]
@@ -105,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.50418853759766,
-    "collapsed": true
+    "width": 353.50418853759766
   },
   "right": {
     "id": "d22ff97dba49a6cc",
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kbb/ose/Buffer Overflow.md",
+                "file": "mat/Geometrie/Analytická/Kužolosečky.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kbb/ose/Buffer Overflow.md",
+                "file": "mat/Geometrie/Analytická/Kužolosečky.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kbb/ose/Buffer Overflow.md"
+                "file": "mat/Geometrie/Analytická/Kužolosečky.md"
               }
             }
           },
@@ -271,58 +234,58 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "obsidian-spaced-repetition:Review flashcards": false,
-      "breadcrumbs:Breadcrumbs Visualisation": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "530d80185ed0d520",
+  "active": "c239735ec8a608a0",
   "lastOpenFiles": [
-    "data/Pasted image 20240121224927.png",
-    "data/Pasted image 20240121224352.png",
-    "data/Pasted image 20240121224128.png",
-    "data/Buffer Overflow 2024-01-21 22.34.42.excalidraw.md",
-    "data/Buffer Overflow 2024-01-21 20.13.05.excalidraw.md",
-    "data/Buffer Overflow 2024-01-21 22.34.42.excalidraw.svg",
+    "data/Kužolosečky 2024-02-15 10.44.44.excalidraw.md",
+    "mat/Geometrie/Analytická/Kužolosečky.md",
+    "data/Kužolosečky 2024-02-15 10.43.44.excalidraw.md",
+    "data/Kužolosečky 2024-02-15 10.25.10.excalidraw.md",
+    "data/Kužolosečky 2024-02-15 10.22.52.excalidraw.md",
+    "data/Kužolosečky 2024-02-15 10.22.28.excalidraw.md",
+    "data/Kužolosečky 2024-02-15 10.22.05.excalidraw.md",
+    "data/Kužolosečky 2024-02-15 10.22.05.excalidraw.svg",
+    "data/Kužolosečky 2024-02-15 10.30.09.excalidraw.md",
+    "data/Kužolosečky 2024-02-15 10.22.52.excalidraw.svg",
+    "data/Kužolosečky 2024-02-15 10.22.28.excalidraw.svg",
+    "mat/Geometrie/Analytická/Parametricke vyjadreni primky.md",
+    "mat/mat.md",
+    "eko/eko.md",
+    "eko/Trh.md",
+    "cjl/literatura/Tropy a figury.md",
+    "fyz/elektrika/elektrika.md",
+    "fyz/elektrika/Priklady.md",
     "kbb/ose/Buffer Overflow.md",
-    "data/Pasted image 20240121221825.png",
-    "data/Pasted image 20240121221343.png",
-    "data/Pasted image 20240121221104.png",
-    "data/Pasted image 20240121221020.png",
-    "data/Pasted image 20240121220455.png",
-    "data/Pasted image 20240121213831.png",
-    "data/Buffer Overflow 2024-01-21 15.54.12.excalidraw.md",
-    "Excalidraw/Drawing 2024-01-21 20.54.05.excalidraw.md",
-    "Excalidraw/Drawing 2024-01-21 20.54.05.excalidraw.svg",
     "data/Buffer Overflow 2024-01-21 18.11.54.excalidraw.md",
-    "data/Buffer Overflow 2024-01-21 18.47.55.excalidraw.md",
     "data/Buffer Overflow 2024-01-21 17.35.47.excalidraw.md",
-    "data/Buffer Overflow 2024-01-21 15.04.46.excalidraw.md",
-    "data/Buffer Overflow 2024-01-21 15.04.46.excalidraw 1 1.md",
-    "data/Buffer Overflow 2024-01-21 15.04.46.excalidraw 1.md",
-    "data/data.md",
-    "kbb/ose/Izolace.md",
-    "Excalidraw/Excalidraw.md",
-    "Excalidraw/tek-preruseni-jedna.excalidraw.md",
-    "Excalidraw/Rezistor-example1.excalidraw.md",
-    "Excalidraw/Drawing 2023-12-14 19.19.50.excalidraw.md",
-    "Excalidraw/Drawing 2023-12-14 15.41.10.excalidraw.md",
-    "kbb/ose/ose.md",
+    "kbb/ose/Buffer Overflow recap.md",
+    "data/Pasted image 20240121182515.png",
+    "data/Buffer Overflow recap 2024-01-28 11.25.31.excalidraw.md",
+    "data/Buffer Overflow recap 2024-01-28 11.25.31.excalidraw.svg",
+    "data/Pasted image 20240128112451.png",
+    "data/Pasted image 20240128112304.png",
+    "data/Pasted image 20240128112133.png",
+    "kbb/ose/procesor.md",
     "kbb/hodiny/hodiny.md",
-    "kbb/hodiny/procesor.md",
-    "mat/Geometrie/Analytická/Vektor.md",
-    "mat/Geometrie/Analytická/Skalární součin.md",
-    "mat/Geometrie/Analytická/Příklady.md",
-    "mat/Geometrie/Analytická/Posunutí o vektor.md",
-    "mat/Geometrie/Analytická/Skalární součin.md.part",
-    "mat/Geometrie/Analytická/Jednotkový vektor.md.part",
-    "numbat",
-    "fyz/elektrika",
-    "mat/Geometrie/Analytická",
-    "vyp",
-    "kbb/hodiny",
-    "eko",
-    "kbb/math",
-    "mat/Geometrie",
+    "OSE/OSE.md",
+    "vyp/Vytváření značky a loga.md",
+    "vyp/vyp.md",
+    "cjl/literatura/Majovci.md",
+    "export/Buffer Overflow/data/Pasted image 20240121224927.png",
+    "export/Buffer Overflow/data/Pasted image 20240121224352.png",
+    "export/Buffer Overflow/data",
+    "export/Buffer Overflow/plugin/chalkboard/_style.css",
+    "export/Buffer Overflow/plugin/chalkboard/img",
+    "export/Buffer Overflow/plugin/chalkboard/style.css",
+    "export/Buffer Overflow/plugin/chalkboard/plugin.js",
+    "export/Buffer Overflow/plugin/chalkboard/plugin (copy).js",
+    "export/Buffer Overflow/plugin/chalkboard",
+    "export/Buffer Overflow/plugin/chart/plugin.js",
+    "export/Buffer Overflow/plugin/chart/chart.min.js",
+    "export/Buffer Overflow/plugin/chart",
     "Untitled.canvas"
   ]
 }
