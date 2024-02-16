@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Geometrie/Analytická/Kužolosečky.md",
+                "file": "mat/Geometrie/Analytická/2 kružnice.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Geometrie/Analytická/Kužolosečky.md",
+                "file": "mat/Geometrie/Analytická/2 kružnice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Geometrie/Analytická/Kužolosečky.md",
+                "file": "mat/Geometrie/Analytická/2 kružnice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Geometrie/Analytická/Kužolosečky.md"
+                "file": "mat/Geometrie/Analytická/2 kružnice.md"
               }
             }
           },
@@ -240,13 +240,24 @@
   },
   "active": "c239735ec8a608a0",
   "lastOpenFiles": [
+    "data/2 kružnice 2024-02-16 12.15.54.excalidraw.md",
+    "data/2 kružnice 2024-02-16 12.15.54.excalidraw.svg",
+    "mat/Geometrie/Analytická/2 kružnice.md",
+    "data/2 kružnice 2024-02-16 12.15.11.excalidraw.md",
+    "data/2 kružnice 2024-02-16 12.15.11.excalidraw.svg",
+    "data/2 kružnice 2024-02-16 12.14.40.excalidraw.md",
+    "mat/Geometrie/Analytická/Kružnice.md",
+    "data/Kružnice 2024-02-15 11.29.46.excalidraw.md",
+    "data/Kružnice 2024-02-15 11.29.46.excalidraw.svg",
+    "mat/Geometrie/Analytická/Kuželosečky.md",
+    "data/Kužolosečky 2024-02-15 10.22.05.excalidraw.md",
+    "data/Kužolosečky 2024-02-15 11.01.27.excalidraw.md",
+    "data/Kužolosečky 2024-02-15 11.00.14.excalidraw.md",
     "data/Kužolosečky 2024-02-15 10.44.44.excalidraw.md",
-    "mat/Geometrie/Analytická/Kužolosečky.md",
     "data/Kužolosečky 2024-02-15 10.43.44.excalidraw.md",
     "data/Kužolosečky 2024-02-15 10.25.10.excalidraw.md",
     "data/Kužolosečky 2024-02-15 10.22.52.excalidraw.md",
     "data/Kužolosečky 2024-02-15 10.22.28.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 10.22.05.excalidraw.md",
     "data/Kužolosečky 2024-02-15 10.22.05.excalidraw.svg",
     "data/Kužolosečky 2024-02-15 10.30.09.excalidraw.md",
     "data/Kužolosečky 2024-02-15 10.22.52.excalidraw.svg",
@@ -260,22 +271,10 @@
     "fyz/elektrika/Priklady.md",
     "kbb/ose/Buffer Overflow.md",
     "data/Buffer Overflow 2024-01-21 18.11.54.excalidraw.md",
-    "data/Buffer Overflow 2024-01-21 17.35.47.excalidraw.md",
-    "kbb/ose/Buffer Overflow recap.md",
     "data/Pasted image 20240121182515.png",
-    "data/Buffer Overflow recap 2024-01-28 11.25.31.excalidraw.md",
     "data/Buffer Overflow recap 2024-01-28 11.25.31.excalidraw.svg",
     "data/Pasted image 20240128112451.png",
     "data/Pasted image 20240128112304.png",
-    "data/Pasted image 20240128112133.png",
-    "kbb/ose/procesor.md",
-    "kbb/hodiny/hodiny.md",
-    "OSE/OSE.md",
-    "vyp/Vytváření značky a loga.md",
-    "vyp/vyp.md",
-    "cjl/literatura/Majovci.md",
-    "export/Buffer Overflow/data/Pasted image 20240121224927.png",
-    "export/Buffer Overflow/data/Pasted image 20240121224352.png",
     "export/Buffer Overflow/data",
     "export/Buffer Overflow/plugin/chalkboard/_style.css",
     "export/Buffer Overflow/plugin/chalkboard/img",

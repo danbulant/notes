@@ -1,4 +1,12 @@
-# Kužolosečky
+# Kuželosečky
+
+vlevo (“x”) je plocha kužele, vpravo plocha válce (“I I“)
+
+- Někdy je nazýváme “kvadratické útvary v rovině”, protože je popisuje kvadratické rovnice.
+
+Rozdělení:
+- 1-4 regulární kuželosečky - neprochází vrcholem
+- 5-9 singulární - prochází vrcholem
 
 1. kružnice
 ![[Kužolosečky 2024-02-15 10.22.05.excalidraw]]
@@ -25,6 +33,10 @@ protne obě “strany”
 ![[Kužolosečky 2024-02-15 10.44.44.excalidraw]]
 
 7. přímka
+![[Kužolosečky 2024-02-15 11.00.14.excalidraw]]
+
+8. prázdná množina
+![[Kužolosečky 2024-02-15 11.01.27.excalidraw]]
 
 
 ## Kuželová plocha
