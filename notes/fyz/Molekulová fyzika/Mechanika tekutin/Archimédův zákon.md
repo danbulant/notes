@@ -1,7 +1,7 @@
 ---
 tags: [fyz, fyz/tekutiny]
 ---
-# Archimédův zákon
+w# Archimédův zákon
 ![](Pasted%20image%2020221011130332.png)
 
 Těleso ponořené do kapaliny je nadnášeno vztlakovou silou jejíž velikost je rovna tíze kapaliny o stejném objemu jako těleso.

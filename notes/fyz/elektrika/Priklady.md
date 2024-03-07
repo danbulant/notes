@@ -64,3 +64,51 @@ $Q=800\micro F * 500V=400 000 \micro C=400 mC$
 $I=\frac{Q}t$ 
 $I=400mC/20s=20mA$
 
+---
+
+$Ue=1.5V$
+$R_i=0.8\ohm$
+$R=5.2\ohm$
+
+$I=\frac{1.5}{0.8+5.2}=\frac{1.5}6=0.25A$
+
+---
+
+![[Priklady 2024-02-22 13.12.47.excalidraw]]
+
+$U=6V$
+$U_1=U_2=3V$
+$U_3=6V$
+$R_1=4\ohm$
+$R_2=2\ohm$
+$R_3=3\ohm$
+
+$R=\frac1{\frac1{R_3}+\frac1{R_1+R_2}}=2\ohm$
+
+$I=U/R=3A$
+$I_1=I_2=1A$
+$I_3=2A$
+
+---
+
+$t_1=20\degree C$
+$R_1=20\ohm$
+$t_2=500\degree C$
+$R_2=59\ohm$
+$\alpha=?$
+
+$R_2=R_1(1+\alpha\Delta t)$
+$\Delta t=t_2-t_1$
+$\alpha=\frac{\frac{R_2}{R_1}-1}{\Delta t}$
+$\Delta t=480\degree C$
+$\alpha=\frac{\frac{59}{20}-1}{480}$
+$\alpha=4*10^{-3}K^{-1}$
+
+---
+
+$d=1cm$
+$m=1kg$
+$\rho_{Fe}=8.7*10^{-8}\ohm m$
+$\rho=7870kgm^{-3}$
+$R=\rho_{Fe}\frac{l}S$
+$S=\pi r^2=\pi (\frac{d}2)^2$

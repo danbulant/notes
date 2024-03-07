@@ -8,7 +8,7 @@ Před 19.st. feudalismus, nevolnictví
 
 | TH                                                                   | CPH                                                              |
 | -------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Soukromé vlastniství podniků                                         | státní vlastnictví podniků                                       |
+| je možné soukromé vlastniství podniků                                         | státní vlastnictví podniků                                       |
 | Právní samostnatnost - rozhoduje o oboru, partnerech a zaměstnancích | právní nesamostnatnost                                           |
 | Ekonomická samost. - rozdělení zisku                                 | Ekonomická nesamost. - stát centrálně určoval ceny, platy a pod. |
 | Volný zahraniční obchod                                                    | Státní monopol ZO                                          |

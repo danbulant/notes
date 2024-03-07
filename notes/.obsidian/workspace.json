@@ -4,18 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "b0d8ce9620f654fb",
+        "id": "754ca9ecfefc95a2",
         "type": "tabs",
         "children": [
           {
-            "id": "c239735ec8a608a0",
+            "id": "55940cce3de507a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Geometrie/Analytická/2 kružnice.md",
+                "file": "mat/Geometrie/Analytická/Elipsa.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "42f86d3c9ec4146e",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Elipsa 2024-03-01 11.25.47.excalidraw.md"
               }
             }
           }
@@ -48,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "frown",
+                "query": "diskri",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Geometrie/Analytická/2 kružnice.md",
+                "file": "mat/Geometrie/Analytická/Elipsa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Geometrie/Analytická/2 kružnice.md",
+                "file": "mat/Geometrie/Analytická/Elipsa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Geometrie/Analytická/2 kružnice.md"
+                "file": "mat/Geometrie/Analytická/Elipsa.md"
               }
             }
           },
@@ -238,43 +248,43 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "c239735ec8a608a0",
+  "active": "55940cce3de507a7",
   "lastOpenFiles": [
+    "data/Elipsa 2024-03-01 11.25.47.excalidraw.md",
+    "mat/Geometrie/Analytická/Elipsa.md",
+    "data/Elipsa 2024-03-01 11.25.47.excalidraw.svg",
+    "data/Elipsa 2024-03-01 11.39.24.excalidraw.md",
+    "data/Pasted image 20240301122558.png",
+    "data/Pasted image 20240301120922.png",
+    "mat/Geometrie/Analytická/kružnice a přímka.md",
+    "mat/Geometrie/Analytická/Příklady.md",
+    "fyz/elektrika/Priklady.md",
+    "fyz/elektrika/elektrika.md",
+    "fyz/fyz.md",
+    "data/kružnice a přímka 2024-02-29 10.17.55.excalidraw.md",
+    "data/kružnice a přímka 2024-02-29 10.17.55.excalidraw.svg",
+    "mat/Tahák.md",
+    "data/kružnice a přímka 2024-02-23 12.14.30.excalidraw.md",
+    "data/kružnice a přímka 2024-02-23 12.19.00.excalidraw.md",
+    "data/kružnice a přímka 2024-02-23 12.14.30.excalidraw.svg",
+    "mat/mat.md",
+    "data/Priklady 2024-02-22 13.12.47.excalidraw.md",
+    "data/Priklady 2024-02-22 13.12.47.excalidraw.svg",
+    "mat/Příklady 2.md",
+    "dej/moderní/2. světová válka/Norimberské zákony.md",
+    "mat/Číselné obory.md",
+    "data/kružnice a přímka 2024-02-22 10.35.36.excalidraw.md",
+    "mat/Geometrie/Analytická/2 kružnice.md",
+    "data/kružnice a přímka 2024-02-22 10.35.36.excalidraw.svg",
+    "mat/Geometrie/Analytická/Kružnice.md",
+    "fyz/Molekulová fyzika/Mechanika tekutin/Archimédův zákon.md",
+    "mat/Geometrie/Analytická geometrie.md",
+    "ech/Názvosloví/Aldehydy.md",
+    "mat/Absolutní hodnota.md",
     "data/2 kružnice 2024-02-16 12.15.54.excalidraw.md",
     "data/2 kružnice 2024-02-16 12.15.54.excalidraw.svg",
-    "mat/Geometrie/Analytická/2 kružnice.md",
-    "data/2 kružnice 2024-02-16 12.15.11.excalidraw.md",
     "data/2 kružnice 2024-02-16 12.15.11.excalidraw.svg",
-    "data/2 kružnice 2024-02-16 12.14.40.excalidraw.md",
-    "mat/Geometrie/Analytická/Kružnice.md",
-    "data/Kružnice 2024-02-15 11.29.46.excalidraw.md",
     "data/Kružnice 2024-02-15 11.29.46.excalidraw.svg",
-    "mat/Geometrie/Analytická/Kuželosečky.md",
-    "data/Kužolosečky 2024-02-15 10.22.05.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 11.01.27.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 11.00.14.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 10.44.44.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 10.43.44.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 10.25.10.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 10.22.52.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 10.22.28.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 10.22.05.excalidraw.svg",
-    "data/Kužolosečky 2024-02-15 10.30.09.excalidraw.md",
-    "data/Kužolosečky 2024-02-15 10.22.52.excalidraw.svg",
-    "data/Kužolosečky 2024-02-15 10.22.28.excalidraw.svg",
-    "mat/Geometrie/Analytická/Parametricke vyjadreni primky.md",
-    "mat/mat.md",
-    "eko/eko.md",
-    "eko/Trh.md",
-    "cjl/literatura/Tropy a figury.md",
-    "fyz/elektrika/elektrika.md",
-    "fyz/elektrika/Priklady.md",
-    "kbb/ose/Buffer Overflow.md",
-    "data/Buffer Overflow 2024-01-21 18.11.54.excalidraw.md",
-    "data/Pasted image 20240121182515.png",
-    "data/Buffer Overflow recap 2024-01-28 11.25.31.excalidraw.svg",
-    "data/Pasted image 20240128112451.png",
-    "data/Pasted image 20240128112304.png",
     "export/Buffer Overflow/data",
     "export/Buffer Overflow/plugin/chalkboard/_style.css",
     "export/Buffer Overflow/plugin/chalkboard/img",
