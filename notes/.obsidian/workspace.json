@@ -4,18 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "4dc9129fa5469885",
+        "id": "754ca9ecfefc95a2",
         "type": "tabs",
         "children": [
           {
-            "id": "077a87983c936fb2",
+            "id": "55940cce3de507a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eko/Pracovní proces.md",
+                "file": "mat/Geometrie/Analytická/Elipsa.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "42f86d3c9ec4146e",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "data/Elipsa 2024-03-01 11.25.47.excalidraw.md"
               }
             }
           }
@@ -48,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sinus",
+                "query": "diskri",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "eko/Pracovní proces.md",
+                "file": "mat/Geometrie/Analytická/Elipsa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "eko/Pracovní proces.md",
+                "file": "mat/Geometrie/Analytická/Elipsa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "eko/Pracovní proces.md"
+                "file": "mat/Geometrie/Analytická/Elipsa.md"
               }
             }
           },
@@ -191,7 +201,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -212,7 +224,7 @@
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 11
       }
     ],
     "direction": "horizontal",
@@ -231,57 +243,58 @@
       "omnisearch:Omnisearch": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "077a87983c936fb2",
+  "active": "55940cce3de507a7",
   "lastOpenFiles": [
-    "eko/eko.md",
-    "fyz/Svetlo/Rovinné zrcadlo.md",
+    "data/Elipsa 2024-03-01 11.25.47.excalidraw.md",
+    "mat/Geometrie/Analytická/Elipsa.md",
+    "data/Elipsa 2024-03-01 11.25.47.excalidraw.svg",
+    "data/Elipsa 2024-03-01 11.39.24.excalidraw.md",
+    "data/Pasted image 20240301122558.png",
+    "data/Pasted image 20240301120922.png",
+    "mat/Geometrie/Analytická/kružnice a přímka.md",
+    "mat/Geometrie/Analytická/Příklady.md",
+    "fyz/elektrika/Priklady.md",
+    "fyz/elektrika/elektrika.md",
     "fyz/fyz.md",
-    "projects/projects.md",
-    "cjl/cjl.md",
-    "cjl/literatura/slohy/Realismus/Světový realismus.md",
-    "dej/dej.md",
-    "data/Rovinné zrcadlo 2023-11-09 13.04.09.excalidraw.md",
-    "data/Rovinné zrcadlo 2023-11-09 13.03.10.excalidraw.md",
-    "fyz/Svetlo/Odraz světla.md",
-    "cjl/literatura/slohy/Realismus/Opakování.md",
-    "cjl/literatura/Tropy a figury.md",
-    "mat/Geometrie/Řezy těles.md",
-    "mat/Geometrie/Stereometrie.md",
-    "mat/Geometrie/Kružnice.md",
-    "eko/Pracovní proces.md",
-    "eko/Úvodní hodina.md",
-    "kbb/kbb.md",
-    "cjl/literatura/slohy/Realismus/Rozchod.md",
-    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
-    "cjl/literatura/slohy/Realismus/Božena Němcová.md",
-    "cjl/literatura/slohy/Realismus/Fidlovačka aneb žádný řev a žádná rvačka.md",
-    "cjl/literatura/slohy/Realismus/Realismus.md",
-    "kbb/hodiny/procesor.md",
-    "data/Rovinné zrcadlo 2023-11-02 13.00.20.excalidraw.md",
-    "fyz/Svetlo/Uplny odraz svetla.md",
-    "data/Pasted image 20231102111638.png",
-    "kbb/hodiny",
-    "eko",
-    "kbb/math",
-    "mat/Geometrie",
-    "fyz/Svetlo",
-    "PRA",
-    "Maturitni cetba",
-    "projects/dvop",
-    "data/Pasted image 20230613140233.png",
-    "data/Pasted image 20230613140100.png",
-    "data/Pasted image 20230613135723.png",
-    "data/Pasted image 20230613122350.png",
-    "data/Pasted image 20230613121341.png",
-    "data/Pasted image 20230608114007.png",
-    "data/Pasted image 20230607114133.png",
-    "data/Pasted image 20230607114014.png",
-    "data/Pasted image 20230607113346.png",
-    "dej/moderní/postkomunismus",
-    "mat/Trigonometrie/Geometrie",
+    "data/kružnice a přímka 2024-02-29 10.17.55.excalidraw.md",
+    "data/kružnice a přímka 2024-02-29 10.17.55.excalidraw.svg",
+    "mat/Tahák.md",
+    "data/kružnice a přímka 2024-02-23 12.14.30.excalidraw.md",
+    "data/kružnice a přímka 2024-02-23 12.19.00.excalidraw.md",
+    "data/kružnice a přímka 2024-02-23 12.14.30.excalidraw.svg",
+    "mat/mat.md",
+    "data/Priklady 2024-02-22 13.12.47.excalidraw.md",
+    "data/Priklady 2024-02-22 13.12.47.excalidraw.svg",
+    "mat/Příklady 2.md",
+    "dej/moderní/2. světová válka/Norimberské zákony.md",
+    "mat/Číselné obory.md",
+    "data/kružnice a přímka 2024-02-22 10.35.36.excalidraw.md",
+    "mat/Geometrie/Analytická/2 kružnice.md",
+    "data/kružnice a přímka 2024-02-22 10.35.36.excalidraw.svg",
+    "mat/Geometrie/Analytická/Kružnice.md",
+    "fyz/Molekulová fyzika/Mechanika tekutin/Archimédův zákon.md",
+    "mat/Geometrie/Analytická geometrie.md",
+    "ech/Názvosloví/Aldehydy.md",
+    "mat/Absolutní hodnota.md",
+    "data/2 kružnice 2024-02-16 12.15.54.excalidraw.md",
+    "data/2 kružnice 2024-02-16 12.15.54.excalidraw.svg",
+    "data/2 kružnice 2024-02-16 12.15.11.excalidraw.svg",
+    "data/Kružnice 2024-02-15 11.29.46.excalidraw.svg",
+    "export/Buffer Overflow/data",
+    "export/Buffer Overflow/plugin/chalkboard/_style.css",
+    "export/Buffer Overflow/plugin/chalkboard/img",
+    "export/Buffer Overflow/plugin/chalkboard/style.css",
+    "export/Buffer Overflow/plugin/chalkboard/plugin.js",
+    "export/Buffer Overflow/plugin/chalkboard/plugin (copy).js",
+    "export/Buffer Overflow/plugin/chalkboard",
+    "export/Buffer Overflow/plugin/chart/plugin.js",
+    "export/Buffer Overflow/plugin/chart/chart.min.js",
+    "export/Buffer Overflow/plugin/chart",
     "Untitled.canvas"
   ]
 }

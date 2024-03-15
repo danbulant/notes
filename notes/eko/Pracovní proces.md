@@ -39,3 +39,18 @@ Důsledek: (technické) zastarávání
 | sklenář     | sklo              | pec            |
 | kameník     | kámen             | brusný kotouč  |
 
+## Dělba práce
+Rozdělování práce do jednotlivých oborů
+
+- vyvoj DP:
+	- sber
+	- lov
+	- remesla
+	- materialni
+	- chov
+	- pestitelstvi
+- specializace
+	- vykonnost, kvalita, lepsi kvalifikace
+- kooperace
+
+Vysoce rozvinuta delba prace odpovida vyvinuti statu jako takoveho.

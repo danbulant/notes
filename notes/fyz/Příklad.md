@@ -57,3 +57,16 @@ $v_2 = 90 \frac{km}{h} = 25 \frac{m}{s}$
 $t = 10s$
 $F = m * \frac{\Delta v}{t} = 1200 * \frac{5}{10}N = 1200 * \frac{1}{2}N = 600N$
 $s = \frac{1}{2}at^2 + v_0t = 25m + 20 * 10m = 225m$
+
+---
+
+$R=\rho \frac{l}S$
+$\rho_{cu}=1.7*10^{-8}\Omega m$
+a) $l=3km;d=1.6mm$
+$R=?$
+$r=1.6mm/2=0.8mm$
+$R=\rho \frac{l}S$
+$R=1.7*10^{-8}\frac{3km}{\pi (0.8mm)^2}$
+$R=25.3653Omega$\
+b) $l=5km;d=1.4mm$
+$R=55.217\Omega$

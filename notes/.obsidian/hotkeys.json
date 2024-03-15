@@ -1,1 +1,9 @@
-{}
+{
+  "app:show-debug-info": [
+    {
+      "modifiers": [],
+      "key": "F12"
+    }
+  ],
+  "obsidian-icons-plugin:open-icons-plugin-modal": []
+}

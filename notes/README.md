@@ -10,6 +10,8 @@ Chyby? Překlepy? Opravte je v souborech (či přidejte nové informace) a vytvo
 
 Používá markdown v Obsidian. Používá YAML hlavičky s parsovatelnými daty. Složky jsou podle předmětů.
 
+*asd*
+
 ## Activity
 
 Podporováno pouze v Obsidian zobrazení.

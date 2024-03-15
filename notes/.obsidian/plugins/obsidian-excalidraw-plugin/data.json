@@ -53,7 +53,7 @@
   "exportWithBackground": true,
   "exportPaddingSVG": 10,
   "keepInSync": false,
-  "autoexportSVG": false,
+  "autoexportSVG": true,
   "autoexportPNG": false,
   "autoExportLightAndDark": false,
   "autoexportExcalidraw": false,
