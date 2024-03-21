@@ -26,3 +26,27 @@ $d=10cm$
 ![[Pasted image 20240301122558.png]]
 
 osa EF je hlavni osa, osa paralelni je vedlejsi osa
+
+---
+
+a b alpha
+$a<b$
+
+$[\alpha]=rad$
+
+$\alpha a^2+2(b-a)=\alpha b^2$
+$\alpha a^2+2b-2a=\alpha b^2$
+$\alpha a^2=\alpha b^2-2b+2a$
+$0=\alpha b^2-2b+2a-\alpha a^2$
+$0=\alpha(b^2-a^2)-2(b-a)$
+$0=\alpha(b+a)(b-a)-2(b-a)$
+$0=\alpha(b+a)-2$
+$0=\alpha b+\alpha a-2$
+$2=\alpha(b+a)$
+$\alpha=\frac2{b+a}$
+
+$\alpha a+2(b-a)=\alpha b$
+$0=\alpha a+2b-2a-\alpha b$
+$0=\alpha(a-b)+2(b-a)$
+$0=\alpha(a-b)-2(a-b)$
+$\alpha=2$

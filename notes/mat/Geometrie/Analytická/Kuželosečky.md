@@ -19,7 +19,7 @@ oběžná dráha planet kolem slunce
 ![[Kužolosečky 2024-02-15 10.22.52.excalidraw]]
 graf kvadr. funkce
 trajektorie vrženého tělesa
-rovnobezne s “hranou”
+rovnobezne s “hranou” (povrchovou přímkou)
 
 4. hyperbola
 ![[Kužolosečky 2024-02-15 10.25.10.excalidraw]]

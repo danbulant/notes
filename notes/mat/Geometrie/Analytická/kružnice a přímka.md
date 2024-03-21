@@ -188,8 +188,8 @@ $D=2b-ac=8+5=13$
 $T_1=[5;1]$
 $T_2=[5;-5]$
 
-$t_1=T_1Q$
-$t_2=T_2Q$ 
+$t_1=\overleftrightarrow{T_1Q}$
+$t_2=\overleftrightarrow{T_2Q}$ 
 
 $x=Q+u\vec{s_1}$
 
