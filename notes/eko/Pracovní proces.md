@@ -23,7 +23,6 @@ Důsledek: například horší efektivita
 Příčina: technický pokrok
 Důsledek: (technické) zastarávání
 
-
 ## DÚ
 10x pracovní proces
 
