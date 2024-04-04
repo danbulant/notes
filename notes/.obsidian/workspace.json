@@ -4,28 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "754ca9ecfefc95a2",
+        "id": "2ded1715c49bd123",
         "type": "tabs",
         "children": [
           {
-            "id": "55940cce3de507a7",
+            "id": "0c609ab2cf707e0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Geometrie/Analytická/Elipsa.md",
+                "file": "vyp/vyp.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "42f86d3c9ec4146e",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "data/Elipsa 2024-03-01 11.25.47.excalidraw.md"
               }
             }
           }
@@ -58,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "diskri",
+                "query": "sinus",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -95,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Geometrie/Analytická/Elipsa.md",
+                "file": "vyp/vyp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Geometrie/Analytická/Elipsa.md",
+                "file": "vyp/vyp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Geometrie/Analytická/Elipsa.md"
+                "file": "vyp/vyp.md"
               }
             }
           },
@@ -224,7 +214,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 13
       }
     ],
     "direction": "horizontal",
@@ -233,6 +223,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-advanced-slides:Show Slide Preview": false,
       "juggl:Juggl global graph": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -244,57 +235,57 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "obsidian-spaced-repetition:Review flashcards": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "55940cce3de507a7",
+  "active": "0c609ab2cf707e0f",
   "lastOpenFiles": [
-    "data/Elipsa 2024-03-01 11.25.47.excalidraw.md",
-    "mat/Geometrie/Analytická/Elipsa.md",
-    "data/Elipsa 2024-03-01 11.25.47.excalidraw.svg",
-    "data/Elipsa 2024-03-01 11.39.24.excalidraw.md",
-    "data/Pasted image 20240301122558.png",
-    "data/Pasted image 20240301120922.png",
-    "mat/Geometrie/Analytická/kružnice a přímka.md",
+    "vyp/Cenová politika a swot analýza.md",
     "mat/Geometrie/Analytická/Příklady.md",
-    "fyz/elektrika/Priklady.md",
-    "fyz/elektrika/elektrika.md",
-    "fyz/fyz.md",
-    "data/kružnice a přímka 2024-02-29 10.17.55.excalidraw.md",
-    "data/kružnice a přímka 2024-02-29 10.17.55.excalidraw.svg",
-    "mat/Tahák.md",
-    "data/kružnice a přímka 2024-02-23 12.14.30.excalidraw.md",
-    "data/kružnice a přímka 2024-02-23 12.19.00.excalidraw.md",
-    "data/kružnice a přímka 2024-02-23 12.14.30.excalidraw.svg",
+    "data/Příklady 2024-03-15 11.06.56.excalidraw.md",
+    "data/Příklady 2024-03-15 11.06.56.excalidraw.svg",
+    "mat/Geometrie/Analytická/Elipsa.md",
+    "mat/Geometrie/Analytická/Analytická.md",
     "mat/mat.md",
-    "data/Priklady 2024-02-22 13.12.47.excalidraw.md",
-    "data/Priklady 2024-02-22 13.12.47.excalidraw.svg",
-    "mat/Příklady 2.md",
-    "dej/moderní/2. světová válka/Norimberské zákony.md",
-    "mat/Číselné obory.md",
-    "data/kružnice a přímka 2024-02-22 10.35.36.excalidraw.md",
-    "mat/Geometrie/Analytická/2 kružnice.md",
-    "data/kružnice a přímka 2024-02-22 10.35.36.excalidraw.svg",
+    "export/Buffer Overflow/Buffer Overflow.md",
+    "pva/pva.md",
+    "vyp/Vytváření značky a loga.md",
+    "vyp/vyp.md",
+    "vyp/opakovani.md",
+    "vyp",
+    "pva/vasek.md",
+    "pva/skripta.md",
+    "pva",
+    "mat/Geometrie/Analytická/Vektorový součin.md",
+    "mat/Geometrie/Analytická/Vzdálenost 2 a 3 bodů - Velikost úsečky.md",
+    "mat/Geometrie/Analytická/Vektor.md",
+    "mat/Geometrie/Analytická/Střed úsečky.md",
+    "mat/Geometrie/Analytická/Skalární součin.md",
+    "mat/Geometrie/Analytická/Parametricke vyjadreni primky.md",
+    "mat/Geometrie/Analytická/Posunutí o vektor.md",
+    "mat/Geometrie/Analytická/Orientovaná úsečka.md",
+    "mat/Geometrie/Analytická/Odchylka vektorů.md",
+    "mat/Geometrie/Analytická/Nulový vektor.md",
+    "mat/Geometrie/Analytická/Kuželosečky.md",
     "mat/Geometrie/Analytická/Kružnice.md",
-    "fyz/Molekulová fyzika/Mechanika tekutin/Archimédův zákon.md",
-    "mat/Geometrie/Analytická geometrie.md",
-    "ech/Názvosloví/Aldehydy.md",
-    "mat/Absolutní hodnota.md",
-    "data/2 kružnice 2024-02-16 12.15.54.excalidraw.md",
-    "data/2 kružnice 2024-02-16 12.15.54.excalidraw.svg",
-    "data/2 kružnice 2024-02-16 12.15.11.excalidraw.svg",
-    "data/Kružnice 2024-02-15 11.29.46.excalidraw.svg",
-    "export/Buffer Overflow/data",
-    "export/Buffer Overflow/plugin/chalkboard/_style.css",
-    "export/Buffer Overflow/plugin/chalkboard/img",
-    "export/Buffer Overflow/plugin/chalkboard/style.css",
-    "export/Buffer Overflow/plugin/chalkboard/plugin.js",
-    "export/Buffer Overflow/plugin/chalkboard/plugin (copy).js",
-    "export/Buffer Overflow/plugin/chalkboard",
-    "export/Buffer Overflow/plugin/chart/plugin.js",
-    "export/Buffer Overflow/plugin/chart/chart.min.js",
-    "export/Buffer Overflow/plugin/chart",
+    "mat/Geometrie/Analytická/kružnice a přímka.md",
+    "mat/Geometrie/Analytická",
+    "kbb/ose",
+    "fyz/elektrika",
+    "export/Buffer Overflow/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff",
+    "export/Buffer Overflow/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff",
+    "export/Buffer Overflow/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff",
+    "export/Buffer Overflow/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff",
+    "export/Buffer Overflow/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff",
+    "export/Buffer Overflow/plugin/chalkboard/img/whiteboard.png",
+    "export/Buffer Overflow/plugin/chalkboard/img/sponge.png",
+    "export/Buffer Overflow/plugin/chalkboard/img/chalk-yellow.png",
+    "export/Buffer Overflow/plugin/chalkboard/img/chalk-white.png",
+    "export/Buffer Overflow/plugin/chalkboard/img/chalk-red.png",
+    "export/Buffer Overflow/plugin/chalkboard/img/chalk-purple.png",
+    "export/Buffer Overflow/plugin/chalkboard/img/chalk-orange.png",
+    "export/Buffer Overflow/plugin/chalkboard/img/chalk-green.png",
+    "export/Buffer Overflow/plugin/chalkboard/img/chalk-blue.png",
     "Untitled.canvas"
   ]
 }

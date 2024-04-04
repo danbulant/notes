@@ -15,7 +15,6 @@
 -  [[mat/mat|mat]]
 -  [[Maturitni cetba/Maturitni cetba|Maturitni cetba]]
 -  [[Misc/Misc|Misc]]
--  [[numbat/numbat|numbat]]
 -  [[ONA/ONA|ONA]]
 -  [[OSE/OSE|OSE]]
 -  [[Osobnosti|Osobnosti]]
