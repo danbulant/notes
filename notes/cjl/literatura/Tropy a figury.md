@@ -59,7 +59,7 @@ Archaismus - Zastaralé slovo
 personifikace - lidské vlastosti neživým věcem
 Apostrofa - oslovení neživé věci
 Gradace - gradace jede a peláší
-Antiteze - protiklad$\vec{AB}\vec{AC}=
+Antiteze - protiklad
 hyperbola - přehánění
 Synekdocha - pojmenováním část celkem či celkem část
 metafora či metonimie - obrazné pojmenování

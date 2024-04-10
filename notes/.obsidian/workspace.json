@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fee790db294634db",
+        "id": "6004ee0bb496ffde",
         "type": "tabs",
         "children": [
           {
-            "id": "df88a24da8e3f7d6",
+            "id": "f2c4199809ef0427",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fyz/elektrika/mag sila.md",
+                "file": "fyz/elektrika/fotoveci.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fyz/elektrika/mag sila.md",
+                "file": "fyz/elektrika/fotoveci.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fyz/elektrika/mag sila.md",
+                "file": "fyz/elektrika/fotoveci.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fyz/elektrika/mag sila.md"
+                "file": "fyz/elektrika/fotoveci.md"
               }
             }
           },
@@ -238,21 +238,34 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "df88a24da8e3f7d6",
+  "active": "f2c4199809ef0427",
   "lastOpenFiles": [
-    "fyz/fyz.md",
+    "cjl/literatura/Tropy a figury.md",
+    "fyz/elektrika/fotoveci.md",
+    "mat/Geometrie/Analytická/Hyperbola.md",
+    "mat/Geometrie/Analytická/Příklady.md",
+    "mat/Geometrie/Analytická/Parabola.md",
+    "mat/Geometrie/Analytická/Kuželosečky.md",
+    "mat/Geometrie/Analytická/Elipsa.md",
+    "mat/Geometrie/Analytická/Kružnice.md",
     "mat/mat.md",
+    "vyp/vyp.md",
+    "vyp/swot.md",
+    "vyp/Vytváření značky a loga.md",
+    "vyp/opakovani.md",
+    "data/Parabola 2024-03-22 11.31.41.excalidraw.md",
+    "data/Parabola 2024-03-22 11.31.41.excalidraw.svg",
+    "data/Parabola 2024-03-22 11.21.34.excalidraw.md",
+    "data/Parabola 2024-03-22 11.21.03.excalidraw.md",
+    "fyz/fyz.md",
+    "fyz/elektrika/mag sila.md",
+    "eko/Hospodarsky proces.md",
     "data/Parabola 2024-03-21 11.18.48.excalidraw.md",
     "data/Parabola 2024-03-21 11.58.33.excalidraw.md",
-    "mat/Geometrie/Analytická/Kuželosečky.md",
-    "mat/Geometrie/Analytická/Parabola.md",
     "data/Parabola 2024-03-21 11.58.33.excalidraw.svg",
     "data/Parabola 2024-03-21 11.18.48.excalidraw.svg",
-    "fyz/elektrika/mag sila.md",
     "data/Hyperbola 2024-03-14 11.33.16.excalidraw.md",
-    "mat/Geometrie/Analytická/Hyperbola.md",
     "data/Hyperbola 2024-03-14 11.33.16.excalidraw.svg",
-    "mat/Geometrie/Analytická/Elipsa.md",
     "data/Hyperbola 2024-03-08 12.05.45.excalidraw.md",
     "data/Hyperbola 2024-03-08 12.05.45.excalidraw.svg",
     "mat/Geometrie/Analytická/kružnice a přímka.md",
@@ -261,20 +274,8 @@
     "data/Elipsa 2024-03-01 11.39.24.excalidraw.md",
     "data/Pasted image 20240301122558.png",
     "data/Pasted image 20240301120922.png",
-    "mat/Geometrie/Analytická/Příklady.md",
-    "fyz/elektrika/Priklady.md",
-    "fyz/elektrika/elektrika.md",
-    "data/kružnice a přímka 2024-02-29 10.17.55.excalidraw.md",
     "data/kružnice a přímka 2024-02-29 10.17.55.excalidraw.svg",
-    "mat/Tahák.md",
-    "data/kružnice a přímka 2024-02-23 12.14.30.excalidraw.md",
-    "data/kružnice a přímka 2024-02-23 12.19.00.excalidraw.md",
     "data/kružnice a přímka 2024-02-23 12.14.30.excalidraw.svg",
-    "data/Priklady 2024-02-22 13.12.47.excalidraw.md",
-    "data/Priklady 2024-02-22 13.12.47.excalidraw.svg",
-    "mat/Příklady 2.md",
-    "dej/moderní/2. světová válka/Norimberské zákony.md",
-    "mat/Číselné obory.md",
     "export/Buffer Overflow/data",
     "export/Buffer Overflow/plugin/chalkboard/_style.css",
     "export/Buffer Overflow/plugin/chalkboard/img",
