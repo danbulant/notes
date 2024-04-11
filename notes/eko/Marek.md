@@ -1,4 +1,4 @@
-# Ekonomika
+# Marek
 
 > 7\.9. (1. hodina) Úvodní hodina
 
