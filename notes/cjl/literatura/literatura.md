@@ -14,6 +14,7 @@ imagePrefix: 'data/'
 -  [[cjl/literatura/Díla, postavy, vlastnosti|Díla, postavy, vlastnosti]]
 -  [[cjl/literatura/Jan Hus|Jan Hus]]
 -  [[cjl/literatura/Jednota bratrská|Jednota bratrská]]
+-  [[cjl/literatura/Majovci|Majovci]]
 -  [[cjl/literatura/poznávání žánrů|poznávání žánrů]]
 -  [[cjl/literatura/slohy/slohy|slohy]]
 -  [[cjl/literatura/Slovní spojení|Slovní spojení]]
