@@ -1,6 +1,7 @@
 ---
 date: 15.2.
 ---
+# Podnikání
 
 ## OSVČ
 Podnikajicí fyzická osoba je osoba samostatně výdělečně činná.
