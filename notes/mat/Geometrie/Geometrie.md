@@ -3,6 +3,7 @@
 -  [[mat/Geometrie/Analytická geometrie|Analytická geometrie]]
 -  [[mat/Geometrie/Analytická/Analytická|Analytická]]
 -  [[mat/Geometrie/Jehlany|Jehlany]]
+-  [[mat/Geometrie/Kombinace variace permutace|Kombinace variace permutace]]
 -  [[mat/Geometrie/Konstrukční úlohy|Konstrukční úlohy]]
 -  [[mat/Geometrie/Kružnice|Kružnice]]
 -  [[mat/Geometrie/Obvody a obsahy rovinných útvarů|Obvody a obsahy rovinných útvarů]]
