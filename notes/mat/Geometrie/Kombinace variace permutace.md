@@ -1,7 +1,14 @@
 # Kombinace variace permutace
 Permutace - $n!$
 Variace - $V_k(n)=\frac{n!}{(n-k)!}$ - k členná variace z n prvků
-Kombinace - $K(n;k)=\binom kn=\frac{V_k(n)}{k!}=\frac{n!}{k!(n-k)!}$ - k členná kombinace z n prvků (nezáleží na pořadí)
+Kombinace - $K(n;k)=\binom nk=\frac{V_k(n)}{k!}=\frac{n!}{k!(n-k)!}$ - k členná kombinace z n prvků (nezáleží na pořadí)
+
+$$(A+B)^n=\sum^n_{k=0}\binom nk A^{n-k}B^k$$
+
+$$(m+x)^5=\sum^5_{k=0}\binom 5km^{5-k}x^k$$
+$$(x-n)^6=\sum^6_{k=0}\binom6kx^{6-k}n^k*(-(k\%2 * 2-1))$$
+$$(x-n)^6=\sum^6_{k=0}\binom6kx^{6-k}(-n)^k$$
+
 
 ---
 
@@ -56,3 +63,19 @@ $(x+2)(x+1)-(x)(x-1)=26$
 $x^2+x+2x-x^2+x+2=26$
 $4x=24$
 $x=6$
+
+---
+
+$\binom86 + \binom87 + \binom72 + \binom73=\binom97+\binom83=\frac{9!}{7!2!}+\frac{8!}{3!5!}=\frac{8*9}2+8*7=4*9+8*7=92$
+---
+
+Kolik různých slov je možné vytvořit přemisťováním písmen slova KAJAK
+
+$5!/2!/2!=5*3*2=30$
+
+Kolik různých čtyřmístných čísel je možné vytvořit z cifer čísla 1211.
+
+$4!/3!=4$
+
+Kolik různých slov je možné vytvořit přemisťováním písmen slova ANNAPURNA
+$9!/3!/3!=9*8*7*6*5*4/2*3=3*8*7*6*5*2=10080$
