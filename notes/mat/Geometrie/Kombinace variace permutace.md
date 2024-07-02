@@ -79,3 +79,7 @@ $4!/3!=4$
 
 Kolik různých slov je možné vytvořit přemisťováním písmen slova ANNAPURNA
 $9!/3!/3!=9*8*7*6*5*4/2*3=3*8*7*6*5*2=10080$
+
+----
+
+![[Kombinace variace permutace 2024-06-07 11.12.16.excalidraw]]
