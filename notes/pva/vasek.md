@@ -1,3 +1,4 @@
+# vasek
  
 ## Vysvětlení základních pojmů
 DOM (Document Object Model) je reprezentace HTML a na stránce funguje jakožto taková "API" jak přistupovat k 

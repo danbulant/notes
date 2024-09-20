@@ -23,6 +23,7 @@ imagePrefix: 'data/'
 -  [[mat/Mocniny|Mocniny]]
 -  [[mat/Násobek a dělitel|Násobek a dělitel]]
 -  [[mat/Nerovnice|Nerovnice]]
+-  [[mat/Posloupnost|Posloupnost]]
 -  [[mat/Příklady 1|Příklady 1]]
 -  [[mat/Příklady 2|Příklady 2]]
 -  [[mat/README|README]]
