@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1c0f7c6619f8de34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Posloupnost.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mat/Posloupnost.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mat/Posloupnost.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -238,10 +251,11 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "61fce6f2d25a77a3",
+  "active": "1c0f7c6619f8de34",
   "lastOpenFiles": [
-    "eko/Marek.md",
     "mat/Posloupnost.md",
+    "conflict-files-obsidian-git.md",
+    "eko/Marek.md",
     "mat/Funkce/Funkce.md",
     "pva/skripta.md",
     "pva/vasek.md",
@@ -258,7 +272,6 @@
     "eko/Podnikání.md",
     "eko/Pracovní proces.md",
     "fyz/elektrika/fotoveci.md",
-    "conflict-files-obsidian-git.md",
     "export/export.md",
     "vyp/Cenová politika a swot analýza.md",
     "export/Buffer Overflow/Buffer Overflow.md",

@@ -560,3 +560,25 @@ obrazek chybi :(
 * prokura, prokurista } v obchodním rejstříku 
   * prokurista (není majitel) má zvláštní plnou moc
   * prokura = moc zacházet s penězi
+
+
+
+---
+
+## Podnikový majetek
+
+- vlastnictví X pronájem
+- zákon o účetnictví
+- daňové zákony
+
+## Oběžný máj
+
+- peníze 
+- suroviny
+- nedokončená výroba
+- hotový výrobek
+- zboží
+- pohledávky
+- peníze…
+
+Pohledávku má dodavatel za odběratelem. Bylo dodané zboží ale nebylo zaplaceno.
