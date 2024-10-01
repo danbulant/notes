@@ -1,6 +1,15 @@
 # Posloupnost
 Posloupnost je funkce $f$ s $Df=\mathbb{N}$
 
+Je omezená tehdy když je omezená shora i zdola
+
+Je omezená zdola $\Leftrightarrow\exists d\in\mathbb{R}:a_n\ge d\forall n\in\mathbb{N}$
+Je omezená shora $\Leftrightarrow \exists h \in\mathbb{R}:a_n\le h\forall n\in\mathbb{N}$
+
+Klesající posloupnost je omezená shora jelikož je v $\mathbb{N} \Rightarrow$  začíná na 0 (pro $a_n=n$) a jen klesá
+
+
+
 ## Zadání
 - vzorcem pro n-tý člen
 $a_n=2n+3$
@@ -142,6 +151,106 @@ $a_2=2$
 $a_3=-3$
 
 Není monotóní - sporem jsme dokázali neplatnost podmínek pro monotónost
+
+---
+
+Je monotónní posloupnost?
+
+$\{\sin n\pi\}_1^\infty$
+
+Je konstantní
+$\sin n\pi=0\forall n\in\mathbb{N}$
+
+![[Posloupnost 2024-09-26 13.01.57.excalidraw]]
+
+Je omezená
+
+---
+
+$\{\frac{2n+3}{3n+1}\}_1^\infty$
+
+$\frac{2n+3}{3n+1}-\frac{2(n+1)+3}{3(n+1)+1}\lessgtr0$
+
+$\frac{2n+3}{3n+1}-\frac{2n+2+3}{3n+3+1}\lessgtr0$
+
+$\frac{2n+3}{3n+1}-\frac{2n+5}{3n+4}\lessgtr0$
+
+$\frac{(2n+3)(3n+4)}{(3n+1)(3n+4)}-\frac{(2n+5)(3n+1)}{(3n+4)(3n+1)}\lessgtr0$
+
+$\frac{6n^2+9n+8n+12}{9n^2+3n+12n}-\frac{6n^2+15n+2n+5}{9n^2+3n+12n}\lessgtr0$
+
+$\frac{7}{9n^2+15n}\lessgtr0$
+
+dole je kladné $\frac++$
+
+$7>0$
+
+je klesající $a_n>a_{n+1}$
+je omezená shora
+
+je omezená zdola, bude vždy kladné $2n+3>0;3n+1>0\Rightarrow + a +$ 
+
+---
+
+$a_n=\frac{3n}5-a_{n+1}+2a_{n+2};a_2=3;a_4=7$
+
+$a_2=\frac{3*2}5-a_3+2a_4$
+$3=\frac65-a_3+2*7$
+$a_3=\frac65+14-3$
+$a_3=\frac65+11$
+$a_3=\frac15+12$
+
+$a_1=\frac{3n}5-a_2+2*a_3$
+$a_1=\frac{3n}5-3+2*(\frac15+12)$
+$a_1=\frac35-3+\frac25+24$
+$a_1=22$
+
+$a_3=\frac{3n}5-a_4+2a_5$
+$\frac15+12=\frac95-7+2a_5$
+$2a_5=\frac15+12-\frac95+7$
+$2a_5=19-\frac85$
+$2a_5=18-\frac35$ 
+$a_5=9-\frac3{10}$
+$a_5=8+\frac7{10}$
+
+$a_{n+2}=a_n-n+4;a_3=1;a_2=2$
+
+$a_3=a_1-1+4$
+$1=a_1-1+4$
+$a_1=-2$
+
+$a_4=a_2-2+4$
+$a_4=2-2+4$ 
+$a_4=4$
+
+$a_5=a_3-3+4$
+$a_5=1-3+4$
+$a_5=2$
+
+
+---
+
+Přepis na rekurentní
+
+$\{\frac{2n-1}3\}^\infty_1$
+
+$a_n-a_{n+1}=\frac{2n-1}3-\frac{2(n+1)-1}3$
+$a_n-a_{n+1}=\frac{2n-1}3-\frac{2n+1}3$
+$a_n-a_{n+1}=\frac{2n-1-2n-1}3=-\frac{2}3$
+
+$a_{n+1}=a_n+\frac23$
+
+
+---
+
+Je omezená?
+
+$\{2^n\}^\infty_1$
+
+je roustoucí
+=> je omezená zdola
+
+$2^{n+1}-2^n=2*2^n-2^n=2^n>0$
 
 ## Funkce
 ### Vlastnosti

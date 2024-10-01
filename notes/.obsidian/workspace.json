@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "6fc77342ea8daf26",
+        "id": "f1b3353173ba94a0",
         "type": "tabs",
         "children": [
           {
-            "id": "61fce6f2d25a77a3",
+            "id": "8f52afcb8e614f9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mat/Posloupnost.md",
+                "file": "eko/Marek.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1c0f7c6619f8de34",
+            "id": "7f98da99b4a75a53",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "eko/Hospodarsky proces.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "d=2b",
+                "query": "pohled",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "eko/Hospodarsky proces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "eko/Hospodarsky proces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "eko/Hospodarsky proces.md"
               }
             }
           },
@@ -227,11 +227,11 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -251,11 +251,17 @@
       "breadcrumbs:Breadcrumbs Visualisation": false
     }
   },
-  "active": "1c0f7c6619f8de34",
+  "active": "8c976bdcdc74c84c",
   "lastOpenFiles": [
-    "mat/Posloupnost.md",
-    "conflict-files-obsidian-git.md",
     "eko/Marek.md",
+    "eko/Hospodarsky proces.md",
+    "eko/Majetek.md",
+    "eko/Podnikání.md",
+    "mat/mat.md",
+    "mat/Posloupnost.md",
+    "data/Posloupnost 2024-09-26 13.01.57.excalidraw.md",
+    "cjl/Básně.md",
+    "conflict-files-obsidian-git.md",
     "mat/Funkce/Funkce.md",
     "pva/skripta.md",
     "pva/vasek.md",
@@ -268,18 +274,12 @@
     "eko/eko.md",
     "mat/Geometrie/Analytická/Vektor.md",
     "mat/Geometrie/Analytická/Kuželosečky.md",
-    "mat/mat.md",
-    "eko/Podnikání.md",
     "eko/Pracovní proces.md",
     "fyz/elektrika/fotoveci.md",
     "export/export.md",
     "vyp/Cenová politika a swot analýza.md",
     "export/Buffer Overflow/Buffer Overflow.md",
     "data/Příklady 2024-03-15 11.06.56.excalidraw.svg",
-    "data/Příklady 2024-03-15 11.06.56.excalidraw.md",
-    "cjl/literatura/Tropy a figury.md",
-    "mat/Geometrie/Analytická/Hyperbola.md",
-    "mat/Geometrie/Analytická/Elipsa.md",
     "data/Parabola 2024-03-22 11.31.41.excalidraw.svg",
     "data/Parabola 2024-03-21 11.58.33.excalidraw.svg",
     "data/Parabola 2024-03-21 11.18.48.excalidraw.svg",
