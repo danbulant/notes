@@ -96,6 +96,118 @@ $a_8=-9.5$
 
 ---
 
+## Důkaz mat. indukcí
+
+Dokážeme, že hypotéza platí pro $n = 1$, a poté že platí pro $n=k+1$ pokud platí pro $n=k$. Poté platí pro celou posloupnost.
+
+Příklady:
+
+Dokažte větu:
+$\forall n\in\mathbb{N}$ je součet prvních $n$ členů posloupnosti $\{n^2\}^\infty_1$ roven $\frac{n(n+1)(2n+1)}6$
+
+$n=1 \Rightarrow \frac{1(1+1)(2*1+1)}6=\frac{1*2*3}6=1$
+
+Předpokládáme, že platí: $n=k$
+
+$n=k$
+$1^2+2^2+…+k^2$
+$\frac{k(k+1)(2k+1)}6$
+
+$n=k+1$
+$\frac{(k+1)((k+1)+1)(2(k+1)+1)}6$
+$1^2+2^2+…+k^2+(k+1)^2$
+$\frac{(k+1)(k+2)(2k+3)}6$
+$\frac{2k^3+3k^2+6k+2k^2+3k+4k+6}6$
+
+$\frac{k(k+1)(2k+1)}6+(k+1)^2=\frac{(k+1)(k+2)(2k+3)}6$
+
+$k(k+1)(2k+1)+6(k+1)^2=(k+1)(k+2)(2k+3)/k+1\ne0$
+
+$k(2k+1)+6(k+1)=(k+2)(2k+3)$
+
+$2k^2+k+6k+6=2k^2+3k+4k+6$
+$2k^2+7k+6=2k^2+7k+6$
+
+Ekvivalence, tudíž platí věta pro celou posloupnost
+
+---
+
+$6|(3n^2+6n+12)(n+1)n$
+
+Dělitelnost 3 → všude 3 v tom jednom tvaru
+Dělitelnost 2 → $(n+1)n$ protože v řadě se střídá sudé liché číslo
+
+$6|(n^3+11n)$
+
+$n=1$
+$6|(1^3+11)$
+$6|12$ platí
+
+$n=k$
+$6|(k^3+11k)$ pokud platí
+
+$n=k+1$
+$6|(k+1)^3+11(k+1)$
+
+$k^3+3k^2+3k+1+11k+11$
+$(k^3+11k)+(3k^2+3k+12)$
+
+$6|k^3+11k$ platí (předpoklad)
+
+$6|3k^2+3k+12$
+$2|k^2+k$
+
+$2|k(k+1)$
+
+12 je dělitelné 6, proto se odebrala
+3+3+12 je dělitelné 3
+$k(k+1)$ jsou vynásobené sudé a liché čísla (dvě po sobě jdoucí budou liché a sudé nebo naopak), budou dělitelné 2
+
+Dokažte
+$\forall n\in\mathbb{N}$
+$\sum\frac1{n(n+1)}=1-\frac1{n+1}$
+
+$n=1$
+
+$\frac1{1(1+1)}=1-\frac1{1+1}$ 
+$\frac12=1-\frac12$
+
+platí dáno
+
+$n=k$
+$\frac{1}{k(k+1)}=1-\frac1{k+1}$
+
+$n=k+1$
+
+$\frac1{(k+1)(k+2)}=1-\frac1{k+2}$
+
+$\frac1{k^2+3k+2}=1-\frac1{k+2}$ 
+
+$1=(k^2+3k+2)-\frac{k^2+3k+2}{k+2}$
+
+$1=(k^2+3k+2)-\frac{(k+1)(k+2)}{k+2}$
+$1=(k^2+3k+2)-(k+1)$
+$1=k^2+3k+2-k-1$
+$1=k^2+2k+1$
+$k^2=-2k$
+
+
+$\forall n\in\mathbb{N}:n<2^n$
+
+$n=1$
+$1<2$
+
+$n=k$
+$k<2^k$
+platí (dáno)
+
+$n=k+1$
+$k+1<2^{k+1}$
+
+
+
+---
+
 Dokaž že posloupnost je nebo není monotónní; jak?
 
 $a_n=\frac{n+1}n \rightarrow a_{n+1}=\frac{n+1+1}{n+1}$
@@ -267,3 +379,110 @@ $2^{n+1}-2^n=2*2^n-2^n=2^n>0$
 #### Omezenost
 - omezená shora i zdola
 
+
+---
+
+## Aritmetická posloupnost
+
+$3;1;-1;-3;-5;$ … diference $d=-2$ 
+$-1;-\frac12;0;\frac12;1;\frac32$ … $d=\frac12$
+$2;-4;8;-16$ … neni AP
+
+$AP\Leftrightarrow \exists d\in\mathbb{R};\forall n\in\mathbb{N}:a_{n+1}=a_n+d$
+
+
+Jsou monotónní
+$d>0$ roste
+$d<0$ klesá
+$d=0$ konst
+
+
+
+
+
+$a_n=2n-4$ => $d=2$
+$a_n=n^2$ neni
+$a_n=3^{n+1}=3*3^n$ neni
+
+
+
+---
+
+součet všech sudých trojciferných přirozených čísel
+$100+102+…..+998$
+
+$AP: a_1=100;a_n=998;d=2$
+
+$S_n=\frac{n}2(a_1+a_n)$
+$n=?;n=449$
+$a_n=a_1+(n-1)d$
+$998=100+(n-1)d$
+$n=450$
+
+
+---
+
+$a_1=-10;d=4.5$
+$71=-10+(n-1)4.5$
+$81=(n-1)4.5$
+$51=4.5n-4.5$
+$55.5=4.5n$
+$45+10.5=4.5n$
+neni - $10.5/4.5\not\in\mathbb{Z_0}$ $n$ by nebylo celé a tudíž by nebylo na posloupnosti
+
+$100=-10+(n-1)4.5$
+$110=4.5n-4.5$
+$105.5=4.5n$
+$90+15.5=4.5n$
+znova to stejné, není
+
+---
+
+## Geometrická posloupnost
+
+$$GP\Leftrightarrow \exists a \in\mathbb{R};\forall n \in \mathbb{N}: a_{n+1}=a_n*q$$
+$q\ne0;a_1\ne0$
+
+$a_n=a_1*q^{n-1}$
+$a_r=a_sq^{r-s}$
+$s_n=a_1\frac{q^n-1}{q-1};q\ne1$
+$s_n=na_1;q=1$
+$$\sum_{n=1}^{1}a_nq=s_n$$
+
+---
+
+$GP:a_1=6;a_2=24$
+$q=\frac{24}6=4$
+$a_5=6*q^3=6*4^4=6*256=1536$
+$a_8=6*q^7=98304$
+
+$GP$
+$a_1-a_3=-1.5$
+$a_2+a_1=1.5$
+$a_1=1.5-a_2$
+$a_2+1.5-a_3=-1.5$
+$a_2-a_3=3$
+
+$a_2=a_1q$
+
+$a_1-a_1q^2=-1.5$ 
+$a_1q+a_1=1.5$
+
+$a_1(q+1)=1.5/:(q+1)\ne0$
+$a_1=\frac{1.5}{q+1}$
+$\frac{1.5}{q+1}(1-q^2)=-1.5$ 
+
+
+$a_1-a_1q^2=-1.5$
+$a_1q+a_1=1.5$
+$a_1(q+1)=1.5\rightarrow a_1=\frac{1.5}{q+1}$
+
+$\frac{1.5}{q+1}-\frac{1.5}{q+1}q^2=-1.5$
+$1.5-1.5q^2=-1.5(q+1)$
+$1-q^2=-q-1$
+$(1-q)(1+q)=-(q+1)$
+$1-q=-1$
+$q=2$
+
+$a_1=\frac{1.5}{a+q}=\frac{1.5}{2+1}=\frac12$
+$s_5=\frac12*\frac{2^5-1}{2-1}=\frac{31}2$

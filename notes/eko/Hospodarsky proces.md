@@ -5,7 +5,7 @@ zisk = příjmy - výdaje
 Ze zisku jsou daně
 
 Výdaje jsou mzdy, energie atd
-Patří do nich ale i část dlouhodobého hmotného investičního majetku
+Patří do nich ale i část dlouhodobého hmotného investičního majetku - odpisy
 
 ## Kolobeh 
 
@@ -54,3 +54,37 @@ distribuce
 ### Smeny
 
 ### Spotreba
+
+---
+
+## Evidence pod. maj.
+
+- z.o účetnictví
+- z. daňové/příjem
+- skladní karty (průběžný zápis počtu položek na skladě; pro oběžný majetek)
+- inventární karta (dlouhodobý majetek, individualizovaný), i zvířata (husy, prasata etc)
+- inventarizace
+	- inventura
+	- vyřešení zjišť. rozdílů
+- škoda na pod. maj.
+	- úmyslný čin
+	- vyšší moc (počasí etc)
+	- omyl, nedbalost, neopatrnost
+
+
+----
+
+
+
+Ukazatele v pěněžním toku; účet; účtujeme
+Používají se v jednoduchém účetnictví, zejména pro OSVČ
+Příjmy = Zvýšení počtu peněz (na účtu, v pokladně etc)
+Výdaje = Snížení počtu peněz
+
+Podrobnější, analytičnější pohled
+Používají se v podvojném účetnictví
+Skutečné vynaložení prostředků
+Výnosy = Prodej výrobku, ale ještě nezaplatil
+Náklady = Spotřeba prostředků, může dojít dříve než je zaplacený (a tudíž než je platba ve výdajích)
+
+
