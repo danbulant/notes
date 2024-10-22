@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "3a654971c28b1dea",
+        "id": "63c7103fbd4df7b0",
         "type": "tabs",
         "children": [
           {
-            "id": "f4540838baf2081b",
+            "id": "94bedc8bee8805d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "eko/marek2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "marek2"
+            }
+          },
+          {
+            "id": "29fb48ada7621612",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -199,20 +213,20 @@
             "id": "52e50d5da98fbc86",
             "type": "leaf",
             "state": {
-              "type": "graph-analysis",
+              "type": "empty",
               "state": {},
-              "icon": "GA-ICON",
-              "title": "Graph Analysis"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           },
           {
             "id": "623d6a07f73a8b7f",
             "type": "leaf",
             "state": {
-              "type": "graph-analysis",
+              "type": "empty",
               "state": {},
-              "icon": "GA-ICON",
-              "title": "Graph Analysis"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           },
           {
@@ -248,9 +262,39 @@
               "icon": "lucide-file",
               "title": "Plugin no longer active"
             }
+          },
+          {
+            "id": "df761807887921f7",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "197078a11aca41e2",
+            "type": "leaf",
+            "state": {
+              "type": "graph-analysis",
+              "state": {},
+              "icon": "GA-ICON",
+              "title": "Graph Analysis"
+            }
+          },
+          {
+            "id": "dbb8fe77838334c2",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
           }
         ],
-        "currentTab": 13
+        "currentTab": 16
       }
     ],
     "direction": "horizontal",
@@ -273,18 +317,21 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "c389d2bfe47fcef8",
+  "active": "94bedc8bee8805d1",
   "lastOpenFiles": [
+    "mat/Posloupnost.md",
+    "data/Pasted image 20241022073250.png",
+    "data/Pasted image 20241022070908.png",
+    "eko/marek2.md",
     "eko/Hospodarsky proces.md",
+    "eko/Marek.md",
+    "eko/Podnikání.md",
     "eko/Majetek.md",
     "eko/Úvodní hodina.md",
-    "eko/Podnikání.md",
     "mat/mat.md",
-    "mat/Posloupnost.md",
     "cjl/ceska poezie mezivalecna.md",
     "eko/eko.md",
     "eko/Výrobní faktory.md",
-    "eko/Marek.md",
     "data/Posloupnost 2024-09-26 13.01.57.excalidraw.md",
     "cjl/Básně.md",
     "conflict-files-obsidian-git.md",
@@ -299,8 +346,6 @@
     "mat/Funkce/Exponenciální funkce.md",
     "mat/Geometrie/Analytická/Vektor.md",
     "mat/Geometrie/Analytická/Kuželosečky.md",
-    "eko/Pracovní proces.md",
-    "fyz/elektrika/fotoveci.md",
     "data/Příklady 2024-03-15 11.06.56.excalidraw.svg",
     "data/Parabola 2024-03-22 11.31.41.excalidraw.svg",
     "data/Parabola 2024-03-21 11.58.33.excalidraw.svg",
@@ -309,8 +354,6 @@
     "data/Hyperbola 2024-03-08 12.05.45.excalidraw.svg",
     "data/Elipsa 2024-03-01 11.25.47.excalidraw.svg",
     "data/Pasted image 20240301122558.png",
-    "data/Pasted image 20240301120922.png",
-    "data/kružnice a přímka 2024-02-29 10.17.55.excalidraw.svg",
     "export/Buffer Overflow/data",
     "export/Buffer Overflow/plugin/chalkboard/_style.css",
     "export/Buffer Overflow/plugin/chalkboard/img",
