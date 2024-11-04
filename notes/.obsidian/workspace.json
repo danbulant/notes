@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "94bedc8bee8805d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "eko/marek2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "marek2"
-            }
-          },
-          {
             "id": "29fb48ada7621612",
             "type": "leaf",
             "state": {
@@ -277,10 +263,10 @@
             "id": "197078a11aca41e2",
             "type": "leaf",
             "state": {
-              "type": "graph-analysis",
+              "type": "empty",
               "state": {},
-              "icon": "GA-ICON",
-              "title": "Graph Analysis"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           },
           {
@@ -289,12 +275,42 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "edfcf719e3a9b7cb",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "90a4a1d41ead7a44",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
+          },
+          {
+            "id": "08ad667046dd5c03",
+            "type": "leaf",
+            "state": {
+              "type": "graph-analysis",
+              "state": {},
+              "icon": "GA-ICON",
+              "title": "Graph Analysis"
+            }
           }
         ],
-        "currentTab": 16
+        "currentTab": 19
       }
     ],
     "direction": "horizontal",
@@ -317,12 +333,14 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "94bedc8bee8805d1",
+  "active": "08ad667046dd5c03",
   "lastOpenFiles": [
+    "data/Pasted image 20241024140155.png",
+    "data/Pasted image 20241024132348.png",
+    "eko/marek2.md",
     "mat/Posloupnost.md",
     "data/Pasted image 20241022073250.png",
     "data/Pasted image 20241022070908.png",
-    "eko/marek2.md",
     "eko/Hospodarsky proces.md",
     "eko/Marek.md",
     "eko/Podnikání.md",
@@ -353,7 +371,6 @@
     "data/Hyperbola 2024-03-14 11.33.16.excalidraw.svg",
     "data/Hyperbola 2024-03-08 12.05.45.excalidraw.svg",
     "data/Elipsa 2024-03-01 11.25.47.excalidraw.svg",
-    "data/Pasted image 20240301122558.png",
     "export/Buffer Overflow/data",
     "export/Buffer Overflow/plugin/chalkboard/_style.css",
     "export/Buffer Overflow/plugin/chalkboard/img",
