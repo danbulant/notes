@@ -135,6 +135,13 @@ SZP = 3768 * 0.11
 Daň = 3768 * 0.15 - 2570 (základní sleva na dani) - 1267 (sleva na první dítě)
 ČM = 29129
 
+$200*8.5$
+$400*17$
+$600*25$
+
+k teto mzde byla premie $18$%
+
+
 Test 12/12
 > 5\. 12. 2023 (9. hodina) SZP
 ## Sociální a Zdravotní pojišťění
@@ -152,7 +159,30 @@ SZB = 11% z HM
 ### Nemocenské pojištění
 - DNP (Dávky nemocenského pojištění)
 
-> 19\. 12. 2023 (11. hodina) Oprava písemné práce
+> 19\. 12. 2023 (11. hodina) Oprava písemné práce\
+
+## Rocni zuctovani dane z pr. f. o.
+
+Zaměstnanci je měsíčně strhávána daň z příjmu jako zálohová daň.
+
+HM=40000
+RHM=480000
+R. daň = 41160
+
+V ročním počítání daně může zaměstnanec použít odpočitatelné položky z daně základu,
+např. penzijní připojištění nebo životní pojištění, úroky z hypotéky
+
+Příklad:
+penz. přip. 24000
+život. poj. 24000
+odpočitatelné položky: 48000
+
+d. základ: RHM-odpoč.pol.=480000-48000=432000
+
+nová daň$=432000*0.15-12*2570=33960$
+
+Zaplatil-li již 41160, jedná se o přeplatek a stát vrátí peníze (na účet, do budoucna jako kredit)
+
 ## Inf. systém podniky
 - informace = údaj s **významem**
 1. čas (minulé / budoucí)

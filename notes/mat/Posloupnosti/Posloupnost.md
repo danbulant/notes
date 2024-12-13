@@ -566,10 +566,45 @@ $V=a_1*a_1q*a_1q^2=a_1^3q^3=64$
 $a_1+a_2+a_3=84cm$
 
 $a_1+a_1q+a_1q^2=84$
-$a_1(1+q+q^2)=84$
+$a_1(1+q+q^2)=84$`
 
 $4S_3=4a_1\frac{q^3-1}{q-1}=84$
 
 ---
 
+
+$$\lim_{n\rightarrow\infty}a_n=a\Leftrightarrow$$
+
+$$\forall\varepsilon>0\exists n_0\in\mathbb{N}:\forall n\ge n_0$$
+platí: $a_n\in(a-\varepsilon;a+\varepsilon)$
+→ posloupnost je konvergentní
+
+$$\lim_{n\rightarrow\infty}\frac1{n}=0$$
+$$\lim_{n\rightarrow\infty}3=3$$
+$$lim_{n\rightarrow\infty}\frac1{2n+3}=0$$
+$n$ jde do nekonečna, a proto to bude v podstatě $\frac1\infty$
+
+
+$\infty+\infty=\infty$
+$-\infty-\infty=-\infty$
+$\pm k*(\pm\infty)=$ pravidlo součinu
+$\infty*\infty=\infty$ 
+$-\infty*(-\infty)=\infty$
+$\infty*(-\infty)=-\infty$
+
+Není definováno: 
+$0*\infty$
+$\infty-\infty$
+$\frac\infty\infty$
+$\infty^0$
+$1^\infty$ 
+$0^0$
+$\frac00$
+
+Vypočti limity:
+$$\lim_{n\rightarrow\infty}\frac{n+1}n=\lim_{n\rightarrow\infty}(1+\frac1n)=1$$
+$1 \rightarrow 1;\frac1n\rightarrow0$
+
+$$\lim_{n\rightarrow\infty}\frac{1+n}{2n}=\lim_{n\rightarrow\infty}(\frac1{2n}+\frac{n}{2n})=0.5$$
+$$\lim_{n\rightarrow\infty}\frac{(-1)^n+n}n$$
 

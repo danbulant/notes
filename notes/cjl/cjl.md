@@ -17,6 +17,7 @@ imagePrefix: 'data/'
 -  [[cjl/Maturita|Maturita]]
 -  [[cjl/Pedagog a didaktik|Pedagog a didaktik]]
 -  [[cjl/Povinné knihy|Povinné knihy]]
+-  [[cjl/Slohové postupy|Slohové postupy]]
 -  [[cjl/Slohové práce/Slohové práce|Slohové práce]]
 -  [[cjl/Témata projevu|Témata projevu]]
 -  [[cjl/testy/testy|testy]]
