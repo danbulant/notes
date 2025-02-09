@@ -202,6 +202,25 @@ Zaplatil-li již 41160, jedná se o přeplatek a stát vrátí peníze (na úče
 > Zdrojový kód aplikace (minulá/budoucí, technická, jednotlivá, vnitřní)
 
 > 9\. 1. 2024 (12. hodina) Opakování, Management
+
+## Informacni system podniku
+
+### Informace
+- novy udaj, vyznam proj prijemce
+
+### Druhy
+#### Obsah 
+- technicke
+- socialni - ekonomicka
+#### Rozsah
+- jednotlive
+- souhrne
+#### Cas
+- minule
+- budouci
+#### Dosah
+- vnitrni
+- vnejsi
 ### Management
 - dříve teorie řízení
 - vedení
@@ -240,6 +259,12 @@ Zaplatil-li již 41160, jedná se o přeplatek a stát vrátí peníze (na úče
 - [multidisciplína]
 - maloobchod
 > 23\. 1. 2024 (14. hodina) Marketingové nástroje
+
+směry:
+- výrobně orientované
+- prodejně orientované
+- absolutní (vytvoří novou potřebu)
+	- snaha podřídit aktivitu novým potřebám zakázníků které aktivně vytváříte
 #### Marketingové nástroje [4p]
 - Product
     - vlastnosti výrobku (značka, design, servis)
@@ -461,6 +486,3 @@ vztah - klient - banka
     4. platební bilance (příjmy / výdaje Státního Rozpočtu)
 - velkou roli hraje politická orientace politických stran (konkrétní politickou reprezentací vlády a parlamentu)
 - [ saldo = rozdíl mezi příjmy a výdaji v účetním smyslu ]
-
-
-
