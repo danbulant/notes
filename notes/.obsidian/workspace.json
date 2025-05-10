@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f76d998e1c4a7dff",
+        "id": "2eb4648229c1a367",
         "type": "tabs",
         "children": [
           {
-            "id": "98ebefd7b972ee2d",
+            "id": "dedcd8d74066aed3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "eko/marek2.md",
+                "file": "Maturitni cetba/Kral Lavra.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "marek2"
+              "title": "Kral Lavra"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -665,12 +666,122 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "dd5e0bad589953c2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "147b3bba9e59d44c",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "91803508a458da84",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "298c211b980fd8e0",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "d1e576ef1fae0be8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "8a6a7d896a5b7a35",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "a583b7402e31512b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "1fed3159cb9926c0",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "4932fba8cd546241",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "cb52db64b109ec4e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "dd9553583e177df7",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           },
           {
-            "id": "dd5e0bad589953c2",
+            "id": "662ba9a8e85c3903",
             "type": "leaf",
             "state": {
               "type": "graph-analysis",
@@ -680,7 +791,7 @@
             }
           }
         ],
-        "currentTab": 56
+        "currentTab": 67
       }
     ],
     "direction": "horizontal",
@@ -703,18 +814,27 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "98ebefd7b972ee2d",
+  "active": "dedcd8d74066aed3",
   "lastOpenFiles": [
-    "eko/marek2.md",
+    "Maturitni cetba/Vysetrovani ztraty tridni knihy.md",
+    "Maturitni cetba/Kral Lavra.md",
+    "Maturitni cetba/Romeo a Julie.md",
+    "Maturitni cetba/Fahrenheit 451.md",
+    "cjl/cjl.md",
+    "cjl/literatura/literatura.md",
+    "mat/Diff/Derivace.md",
+    "mat/Diff/deleni.md",
     "mat/Diff/Limita.md",
+    "mat/Diff/Diff.md",
+    "mat/Diff/Diferencialni pocet.md",
+    "mat/mat.md",
+    "eko/eko.md",
+    "eko/marek2.md",
     "data/Limita 2024-12-12 13.00.01.excalidraw.md",
     "data/Pasted Image 20241212130016_247.png",
-    "mat/Diff/Diferencialni pocet.md",
     "data/Limita 2024-12-05 13.56.12.excalidraw.md",
     "data/Limita 2024-12-05 13.56.12.excalidraw.svg",
     "data/Pasted image 20241203091625.png",
-    "mat/Diff/deleni.md",
-    "mat/Diff/Diff.md",
     "cjl/Slohové postupy.md",
     "cjl/literatura/Základní literaturní pojmy.md",
     "cjl/Slohové práce/Slohové práce.md",
@@ -733,16 +853,8 @@
     "data/Planimetrie a stereometrie 2024-11-12 15.04.48.excalidraw.md",
     "data/Pasted Image 20241112150503_253.png",
     "data/Planimetrie a stereometrie 2024-11-12 15.04.48.excalidraw.svg",
-    "Excalidraw/Drawing 2024-11-12 15.04.32.excalidraw.md",
-    "mat/maturita/maturita.md",
     "mat/maturita",
     "data/Pasted image 20241024140155.png",
-    "eko/Hospodarsky proces.md",
-    "eko/Marek.md",
-    "eko/Podnikání.md",
-    "eko/Majetek.md",
-    "eko/Úvodní hodina.md",
-    "mat/mat.md",
     "export/Buffer Overflow/data",
     "export/Buffer Overflow/plugin/chalkboard/_style.css",
     "export/Buffer Overflow/plugin/chalkboard/img",

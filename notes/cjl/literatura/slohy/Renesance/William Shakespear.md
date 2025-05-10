@@ -17,6 +17,6 @@ Josef Václav Sádek též přeložil většinu děl.
 
 - [Hamlet](cjl/testy/Hamlet.md)
 - [Othello, mouření Benátský](Othello,%20mouření%20Benátský.md)
-- [Romeo a Julie](Romeo%20a%20Julie.md)
+- [Romeo a Julie](cjl/literatura/slohy/Renesance/Romeo%20a%20Julie.md)
 - [Zimní pohádka](Zimní%20pohádka.md)
 - [Zkrocení zlé ženy](Zkrocení%20zlé%20ženy.md)
