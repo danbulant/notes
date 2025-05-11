@@ -1,5 +1,23 @@
 # Fahrenheit 451
 
+Raymond Douglas Bradbury (Ray Bradbury)
+- nemel rad technologie (nemel ridicak, odmital pouzivat pocitace a internet)
+- kniha napsana na zacatku existence pocitacu, pred internetem; 1953
+- povidka byla nejdrive vydana v casopisu
+Sci-Fi antiutopie
+totalita, cenzura, dehumanizace (odosobneni), manipulace lidi/davu, globalizace
+Utopie, ktera je absurdni (lidi se v tom svete maji dobre, nemaji problem s pozary, ale je jim zakazan pristup ke kniham)
+Dalsim autorem je orwell, 1984 ci farma zvirat
+roman, 3 casti, epika, proza
+er-forma, chronologicke s retrospektivou
+montag (hlavni postava) ma uvahove monology
+
+Mildred, jeho zena, ukazana jako povrchni, nezajima se o vztahy ci premysleni, nahlasi montaga po tom co ji cte knihu.
+
+kontext:
+- psano behem zacatku studene valky a rozvoji technologii
+- po konci 2. svetove
+
 ## Film
 Knihy jsou zakazane. Televize, komiksy a casopisy ne. Vetsina domu jsou ohnuvzdorny, hasici - firemen - misto haseni zapaluji knihy.
 Montag, manzelka Linda, hlavni postava, hasic. Bylo mu slibeno povyseni. Nahodou se v zavesenem monorailu potkal s pani ucitelkou ktera se ho ptala proc spaluji knihy, jestli ty knihy cte, jestli hasici drive nehasili misto zakladani pozaru a podobne. Jednoho dne se predavkovala sedativy (vypadaji ze jsou povinne). Prijela zachranka a zacala vymenovat jeji krev. Druhy den na incident zapomneli. Maji povinnost se ostrihat.

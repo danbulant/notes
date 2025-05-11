@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maturitni cetba/Kral Lavra.md",
+                "file": "Maturitni cetba/Vysetrovani ztraty tridni knihy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kral Lavra"
+              "title": "Vysetrovani ztraty tridni knihy"
             }
           }
         ]
@@ -776,12 +776,52 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "662ba9a8e85c3903",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4aeba174b631f0ad",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "b312a3f0e58e956a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "38eea92d2be7d7e1",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           },
           {
-            "id": "662ba9a8e85c3903",
+            "id": "1df01f3c67b80db3",
             "type": "leaf",
             "state": {
               "type": "graph-analysis",
@@ -791,7 +831,7 @@
             }
           }
         ],
-        "currentTab": 67
+        "currentTab": 71
       }
     ],
     "direction": "horizontal",
@@ -816,10 +856,11 @@
   },
   "active": "dedcd8d74066aed3",
   "lastOpenFiles": [
-    "Maturitni cetba/Vysetrovani ztraty tridni knihy.md",
-    "Maturitni cetba/Kral Lavra.md",
     "Maturitni cetba/Romeo a Julie.md",
+    "Maturitni cetba/Maturitni cetba.md",
+    "Maturitni cetba/Kral Lavra.md",
     "Maturitni cetba/Fahrenheit 451.md",
+    "Maturitni cetba/Vysetrovani ztraty tridni knihy.md",
     "cjl/cjl.md",
     "cjl/literatura/literatura.md",
     "mat/Diff/Derivace.md",
@@ -850,7 +891,6 @@
     "mat/Posloupnosti/Posloupnost.md",
     "mat/Posloupnosti",
     "mat/maturita/Planimetrie a stereometrie.md",
-    "data/Planimetrie a stereometrie 2024-11-12 15.04.48.excalidraw.md",
     "data/Pasted Image 20241112150503_253.png",
     "data/Planimetrie a stereometrie 2024-11-12 15.04.48.excalidraw.svg",
     "mat/maturita",
