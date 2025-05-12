@@ -1,14 +1,16 @@
 # Vysetrovani ztraty tridni knihy
 Divadlo j. Cimrmana
-Zdenek Sverak
+Zdenek Sverak, Ladislav Smoljak
 činohra - drama, proza, dalsi ukazkou cinohry je tvorba shakespeara
 1 akt (trida)
 
-divadlo malych forem (alternativa ke klasickemu divadlu, mene vznesene hry, vice cinoher, casto autorske, mensi divadla)
+divadlo malych forem (alternativa ke klasickemu divadlu, mene vznesene hry, vice cinoher, casto autorske, mensi divadla, autori hraji, misto popularity jde o kreativitu, humor, komunikace s publikem)
+patri k nim i semafor (sedm malych forem) - jiri slitr
 mala forma - nevsedni zpusob divadla
-zde seminar o Cimrmanovi, humorny
+zde seminar o Cimrmanovi, humorny; puvodne byl pro doplneni delky kratsi hry jelikoz se nestihalo
 seminar ma 45min, stejne dlouhy jako hra sama o sobe
 hra je od zacatku hodiny do prestavky, 45min
+autorske divadlo
 
 co cimrman udelal, neudelal etc - napr. vysetrovani co zakopal do zahrady - zjisteno ze nic
 

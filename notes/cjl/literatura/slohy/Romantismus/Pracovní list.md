@@ -66,7 +66,7 @@ V první, pro větší “vtažení” do příběhu, pro větší možnost vyj�
 ![](Pasted%20image%2020230531073446.png)
 evzen onegin
 ![](Pasted%20image%2020230531073456.png)
-[Havran](Havran.md) 
+[Havran](cjl/literatura/slohy/Romantismus/Havran.md) 
 ![](Pasted%20image%2020230531073501.png)
 Tři mušketýři
 ![](Pasted%20image%2020230531073512.png)
