@@ -1,8 +1,9 @@
 # Havran
 Edgar Allan Poe
 - dalsi dilo jama a kyvadlo
-- horror, detektivky
+- horror, detektivky (Vrazdy v ulici Morgue)
 - amerika
+- mel rad shakespeara
 
 - romantismus
 - nejznamejsi jeho basen
