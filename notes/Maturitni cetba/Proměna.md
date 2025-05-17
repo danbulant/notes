@@ -6,12 +6,21 @@ Franz Kafka
 - existencionalismus
 	- člověk je osamocený a odcizený jedinec
 	- život je cesta k smrti
+	- byrokracie ničí život (proces)
+- narodil se v praze
+- měl 3 sestry, všechny zemřeli v koncentračních táborech
+- byl žid, ale nepraktikoval náboženství
+- byla menšina, mohl mít pocit že nikam nepatří
+- měl rád čechy, uměl česky, ale jeho rodný jazyk byla němčina, židé byli nucení rakouskem uherskem se naučit německy
+- měl přátele, nebyl uzavřený, kamarád max brott měl spálit jeho nedopsaná díla, on je však nespálil ale vydal, odtud pochází například kniha process či jeho deníky a dopisy
+- nepil, nekouřil, byl vegetarián, nepil kávu
 
 - epika
 - povídka/novela, má 3 kapitoly
 - strohý styl, k věci, nemá “zbytečnosti”
 - absurdní, iracionální
 - er forma, objektivní vypravěč
+- jeho vztah s otcem byl problematický, promítnutí i do díla
 
 - Řehoř Samsa se promění ve hmyz, škůdce
 - neresi ze se z nej neco stalo ale to ze musi zivit rodinu a nestiha prijit do prace

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "85d3d6128f4213af",
+        "id": "20b39f2c1dfe6817",
         "type": "tabs",
         "children": [
           {
-            "id": "f04c4e69bb69d393",
+            "id": "5b3955f20b1a6297",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maturitni cetba/Krysař.md",
+                "file": "Maturitni cetba/Proměna.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Krysař"
+              "title": "Proměna"
             }
           }
         ]
@@ -896,12 +896,42 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "367c96fbfa650e76",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "f0ce05d57f2aaf24",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "aadbdbdbd3310b77",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 78
+        "currentTab": 81
       }
     ],
     "direction": "horizontal",
@@ -924,19 +954,20 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "f04c4e69bb69d393",
+  "active": "5b3955f20b1a6297",
   "lastOpenFiles": [
+    "Maturitni cetba/Spalovač mrtvol.md",
+    "Maturitni cetba/Havran.md",
+    "Maturitni cetba/Farma Zvirat.md",
     "Maturitni cetba/Krysař.md",
     "Maturitni cetba/Audience.md",
     "Maturitni cetba/R.U.R..md",
     "Maturitni cetba/Bílá Nemoc.md",
     "Maturitni cetba/Proměna.md",
-    "Maturitni cetba/Farma Zvirat.md",
     "Maturitni cetba/Jama a kyvadlo.md",
     "Maturitni cetba/Fahrenheit 451.md",
     "Maturitni cetba/Maturitni cetba.md",
     "mat/mat.md",
-    "Maturitni cetba/Havran.md",
     "cjl/literatura/slohy/Romantismus/Havran.md",
     "Maturitni cetba/Kytice.md",
     "Maturitni cetba/Lakomec.md",
@@ -951,7 +982,6 @@
     "mat/Diff/Diff.md",
     "mat/Diff/Diferencialni pocet.md",
     "eko/eko.md",
-    "eko/marek2.md",
     "data/Pasted Image 20241212130016_247.png",
     "data/Limita 2024-12-05 13.56.12.excalidraw.svg",
     "data/Pasted image 20241203091625.png",
