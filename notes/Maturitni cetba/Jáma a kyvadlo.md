@@ -1,4 +1,4 @@
-# Jama a kyvadlo
+# Jáma a kyvadlo
 Navazuje na [[Maturitni cetba/Havran|Havran]]
 
 - epika, hororova povidka

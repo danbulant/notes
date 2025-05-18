@@ -1,4 +1,4 @@
-# Vysetrovani ztraty tridni knihy
+# Vyšetřování ztráty třídní knihy
 Divadlo j. Cimrmana
 Zdenek Sverak, Ladislav Smoljak
 činohra - drama, proza, dalsi ukazkou cinohry je tvorba shakespeara

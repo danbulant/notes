@@ -24,7 +24,6 @@ imagePrefix: 'data/'
 -  [[cjl/literatura/slohy/Renesance/Hamlet|Hamlet]]
 -  [[cjl/literatura/slohy/Renesance/Humanismus|Humanismus]]
 -  [[cjl/literatura/slohy/Renesance/Othello, mouření Benátský|Othello, mouření Benátský]]
--  [[cjl/literatura/slohy/Renesance/Romeo a Julie|Romeo a Julie]]
 -  [[cjl/literatura/slohy/Renesance/Sonety|Sonety]]
 -  [[cjl/literatura/slohy/Renesance/William Shakespear|William Shakespear]]
 -  [[cjl/literatura/slohy/Renesance/Zimní pohádka|Zimní pohádka]]

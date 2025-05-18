@@ -1,0 +1,42 @@
+# Velký Gatsby
+Francis Scott Fitzgerald
+- ztracená generace
+	- první světová válka, tématizuje ji
+	- ztracená - přišla po ní druhá, ztratili víru v lidi, svět
+	- též jazzový věk
+- nebyl slavný před smrtí
+- americký sen
+	- přijmeme každého bez ohledu na minulost
+	- když budete pracovat, zbohatnete
+	- po válce se začal plnit, američani se dali do práce, byl technický rozvoj
+	- autor nad tím polemizuje, většina postav není dobrých ale spíš nafoukaní, využívají
+		- proto i když vyšel nebyl tak populární, tehdy vypadalo že ten styl života je dobrý
+		- dostal se k penězům špatně (mafie)
+		- a je mu to k ničemu, svoji milou nemá a na pohřeb mu téměř nikdo nepřijde
+
+- v době vydání neměla velký úspěch
+- pár let po vydání přišla krize
+- ich forma
+- všichni bohatí
+- opakují se barvy, žlutá a zelená, symbol peněz
+	- daisy žluté šaty, gatsby žluté auto
+	- gatsby hledí přes moře na zelené světlo majaku
+- west ack, east ack, jedna část je rodiny co je sdědili, druhá co se vybudovali z ničeho jako gatsby
+	- nemají se navzájem rádi
+	- jeden má styl ale nepracovali, druhý zas nemají styl ale pracovali
+	- starý svět (tom) je i rasistický; tom specificky říká že my běloši jsme vytvořili hodnoty světa, i když on nic
+
+- Nick Carraway přijíždí na Long Island navštívit sestřenici Daisy a jejího manžela Toma
+- Nick žije blízko Jaye Gatsbyho který pořádá party každou neděli
+- Nick se spřátelí s Gatsbym
+- Gatsby miluje Daisy, nemohl si ji vzít dříve protože byl chudý, resp. nízká společenská vrstva a kvůli válce
+- pořádá party aby na sebe upozornil před Daisy
+- dají se trochu dohromady
+- vyjde najevo že gatsby vydělal své peníze prodejem alkoholu za prohibice
+- zjistí to Tom (manžel)
+- Daisy odmítne Gatsbyho a slíbí věrnost Tomovi
+- Tom je tak sebevědomý že pošle nechá Daisy dovést Gatsbyho domů
+- Tam ale přejedou Myrtle, milenku Toma
+- manžel Myrtle později zastřelí Gatsbyho
+- Nick uspořádá pohřeb Gatsbyho, nikdo na něj nepřijde, jenom Gatsbyho otec
+- Nick znechuceně odjíždí z new yorku

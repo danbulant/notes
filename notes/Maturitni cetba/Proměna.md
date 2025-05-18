@@ -7,6 +7,8 @@ Franz Kafka
 	- člověk je osamocený a odcizený jedinec
 	- život je cesta k smrti
 	- byrokracie ničí život (proces)
+- magický realismus
+	- je to v reálném světě, ale najednou se objeví něco nevšedního, např. brouk v proměně
 - narodil se v praze
 - měl 3 sestry, všechny zemřeli v koncentračních táborech
 - byl žid, ale nepraktikoval náboženství

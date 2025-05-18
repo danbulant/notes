@@ -1,8 +1,10 @@
-# Kral Lavra
+# Král Lávra
 Preryvany rym (ABCB)
 Lyrickoepicka basen
 
 Karel Havlicek Borovsky
+- dělal i epigramy
+	- krátká satirická báseň
 - zacatek realismu
 	- Bozena Nemcova
 		- sberatelka pohadek (ustni lidove slovesnosti)
@@ -21,6 +23,7 @@ Karel Havlicek Borovsky
 				- ceska poezie pro deti
 				- pojil se i k lumirovcum
 
+Film od Karla Zemana
 kritika rakouske vlady, resp. cenzury
 dilo bylo napsane tak aby alegoricky (skryty vyznam) kritizovalo cenzuru - kdyby rakouska vlada byla tak dobra jako kral lavra, nemela by cenzura smysl.
 satira

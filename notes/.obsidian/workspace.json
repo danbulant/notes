@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "20b39f2c1dfe6817",
+        "id": "3545085884133b0d",
         "type": "tabs",
         "children": [
           {
-            "id": "5b3955f20b1a6297",
+            "id": "49eaa7564403db08",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maturitni cetba/Proměna.md",
+                "file": "Maturitni cetba/Spalovač mrtvol.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proměna"
+              "title": "Spalovač mrtvol"
+            }
+          },
+          {
+            "id": "e6ac4184b6a02a97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Časová osa.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Časová osa"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -926,12 +941,22 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "24271b95482d43b3",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 81
+        "currentTab": 82
       }
     ],
     "direction": "horizontal",
@@ -954,34 +979,34 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "5b3955f20b1a6297",
+  "active": "e6ac4184b6a02a97",
   "lastOpenFiles": [
     "Maturitni cetba/Spalovač mrtvol.md",
+    "Maturitni cetba/Časová osa.md",
+    "Maturitni cetba/Proměna.md",
+    "Maturitni cetba/Král Lávra.md",
+    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
+    "Maturitni cetba/Jáma a kyvadlo.md",
+    "Maturitni cetba/Vyšetřování ztráty třídní knihy.md",
+    "Maturitni cetba/Velký Gatsby.md",
+    "cjl/cjl.md",
+    "cjl/literatura/slohy/Renesance/Hamlet.md",
+    "cjl/literatura/slohy/Renesance/Romeo a Julie.md",
+    "cjl/literatura/slohy/Renesance/Renesance.md",
+    "cjl/literatura/slohy/Realismus/Realismus.md",
+    "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
+    "cjl/literatura/slohy/Poetismus/Poetismus.md",
+    "cjl/literatura/slohy/Klasicismus/Klasicismus.md",
+    "cjl/literatura/slohy/Gotika/Gotika.md",
+    "cjl/literatura/slohy/Baroko/Baroko.md",
+    "cjl/literatura/slohy/slohy.md",
+    "cjl/literatura/literatura.md",
+    "cjl/Slohové práce/Slohové práce.md",
+    "Maturitni cetba/Já, robot.md",
     "Maturitni cetba/Havran.md",
     "Maturitni cetba/Farma Zvirat.md",
     "Maturitni cetba/Krysař.md",
     "Maturitni cetba/Audience.md",
-    "Maturitni cetba/R.U.R..md",
-    "Maturitni cetba/Bílá Nemoc.md",
-    "Maturitni cetba/Proměna.md",
-    "Maturitni cetba/Jama a kyvadlo.md",
-    "Maturitni cetba/Fahrenheit 451.md",
-    "Maturitni cetba/Maturitni cetba.md",
-    "mat/mat.md",
-    "cjl/literatura/slohy/Romantismus/Havran.md",
-    "Maturitni cetba/Kytice.md",
-    "Maturitni cetba/Lakomec.md",
-    "Maturitni cetba/Vysetrovani ztraty tridni knihy.md",
-    "Maturitni cetba/Romeo a Julie.md",
-    "Maturitni cetba/Kral Lavra.md",
-    "cjl/cjl.md",
-    "cjl/literatura/literatura.md",
-    "mat/Diff/Derivace.md",
-    "mat/Diff/deleni.md",
-    "mat/Diff/Limita.md",
-    "mat/Diff/Diff.md",
-    "mat/Diff/Diferencialni pocet.md",
-    "eko/eko.md",
     "data/Pasted Image 20241212130016_247.png",
     "data/Limita 2024-12-05 13.56.12.excalidraw.svg",
     "data/Pasted image 20241203091625.png",
