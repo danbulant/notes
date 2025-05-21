@@ -4,25 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "5eb6c5a3b1dab49c",
+        "id": "eae5df9826c4bbda",
         "type": "tabs",
         "children": [
           {
-            "id": "eb08165aca61f8aa",
+            "id": "4cf8191c0e2a960d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maturitni cetba/Romeo a Julie.md",
+                "file": "Maturitni cetba/Bylo nás pět.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Romeo a Julie"
+              "title": "Bylo nás pět"
             }
           },
           {
-            "id": "da4585111dfc99ab",
+            "id": "505d41c22627b393",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,51 +34,8 @@
               "icon": "lucide-file",
               "title": "Časová osa"
             }
-          },
-          {
-            "id": "d2cdba2f1a1d2605",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maturitni cetba/R.U.R..md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "R.U.R."
-            }
-          },
-          {
-            "id": "9168d481a00f8ead",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maturitni cetba/Lakomec.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lakomec"
-            }
-          },
-          {
-            "id": "396d25250f9cd26f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cjl/literatura/slohy/Renesance/Renesance.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Renesance"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -1041,16 +998,21 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "da4585111dfc99ab",
+  "active": "4cf8191c0e2a960d",
   "lastOpenFiles": [
-    "Maturitni cetba/Bílá Nemoc.md",
     "Maturitni cetba/Časová osa.md",
-    "Maturitni cetba/R.U.R..md",
+    "Maturitni cetba/Bylo nás pět.md",
     "Maturitni cetba/Romeo a Julie.md",
-    "cjl/literatura/slohy/Renesance/Renesance.md",
-    "Maturitni cetba/Lakomec.md",
-    "Maturitni cetba/Havran.md",
+    "Maturitni cetba/Audience.md",
+    "Maturitni cetba/Spalovač mrtvol.md",
+    "Maturitni cetba/Velký Gatsby.md",
     "Maturitni cetba/Já, robot.md",
+    "Maturitni cetba/Kytice.md",
+    "Maturitni cetba/Lakomec.md",
+    "Maturitni cetba/Bílá Nemoc.md",
+    "Maturitni cetba/R.U.R..md",
+    "cjl/literatura/slohy/Renesance/Renesance.md",
+    "Maturitni cetba/Havran.md",
     "Maturitni cetba/Jáma a kyvadlo.md",
     "cjl/literatura/slohy/Renesance/Zkrocení zlé ženy.md",
     "cjl/literatura/slohy/Renesance/Hamlet.md",
@@ -1058,17 +1020,12 @@
     "cjl/literatura/slohy/Renesance/Zimní pohádka.md",
     "cjl/literatura/slohy/Renesance/Humanismus.md",
     "cjl/literatura/slohy/Renesance/William Shakespear.md",
-    "Maturitni cetba/Spalovač mrtvol.md",
     "Maturitni cetba/Proměna.md",
     "Maturitni cetba/Král Lávra.md",
     "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
     "Maturitni cetba/Vyšetřování ztráty třídní knihy.md",
-    "Maturitni cetba/Velký Gatsby.md",
     "cjl/cjl.md",
     "cjl/literatura/slohy/Renesance/Romeo a Julie.md",
-    "cjl/literatura/slohy/Realismus/Realismus.md",
-    "cjl/literatura/slohy/Preromantismus/Preromantismus.md",
-    "cjl/literatura/slohy/Poetismus/Poetismus.md",
     "data/Pasted Image 20241212130016_247.png",
     "data/Limita 2024-12-05 13.56.12.excalidraw.svg",
     "data/Pasted image 20241203091625.png",

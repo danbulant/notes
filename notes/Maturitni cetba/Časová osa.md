@@ -72,7 +72,7 @@ Narození těsně před 1SV, zkušenosti z války
 - Pragmatismus
 	- Karel Čapek - [[R.U.R.]], [[Bílá Nemoc]] 
 	- Josef Čapek - bratr; kreslil; Pejsek a kočička
-- Karel Poláček - Bylo nás pět
+	- Karel Poláček - [[Bylo nás pět]] 
 
 ## Poválečné období
 

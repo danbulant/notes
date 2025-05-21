@@ -2,12 +2,12 @@
 Ladislav Fuks
 - studoval historii a dějiny umění
 - začal tvořit později
-- škvorecký
 - pan theodor mundstock
 	- charlie chaplin chtěl zfilmovat mundstocka
 - židovství, holokaust, mimo koncentrační tábory
 - souboj člověka s dějinami a okolním světem
 - hlavní postavy nejsou hrdinové; slabí lidé (psychicky i fyzicky)
+	- psychologicka proza
 - tragédie, často absurdní
 - později psal pro režim, řešil téma emigrace (intelektuál přemýšlí jestli má emigrovat; nakonec se rozhodne ne; Návrat z žitného pole)
 - byl homosexual
