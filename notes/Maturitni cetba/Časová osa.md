@@ -71,6 +71,8 @@ Narození těsně před 1SV, zkušenosti z války
 - [[Poetismus]], Surrealismus
 - Pragmatismus
 	- Karel Čapek - [[R.U.R.]], [[Bílá Nemoc]] 
+	- Josef Čapek - bratr; kreslil; Pejsek a kočička
+- Karel Poláček - Bylo nás pět
 
 ## Poválečné období
 
