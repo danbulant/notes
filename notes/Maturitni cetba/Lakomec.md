@@ -1,14 +1,15 @@
 # Lakomec
 Moliere
 - nizke dramata: komedie, fraska
-- Jean Batiste Poquelin, aby nepospinil jmeno rodiny (nedelal vznesenou funkci/divadlo bylo nizke) mel pseudonym
+- Jean Baptiste Poquelin, aby nepospinil jmeno rodiny (nedelal vznesenou funkci/divadlo bylo nizke) mel pseudonym
 - charakterova komedie - svymi komediemi popisoval lidske typy
-- zemrel na jevisti pri hre Zdravy nemocny (hral hypochondra)
+- zemrel na jevisti pri hre Zdravy nemocny (hral umirajiciho, pri hre se mu udelalo spatne a zemrel o nekolik hodin pozdeji)
 - Dalsi hra je Tartuffe, kde popisuje pokrytce
 - klasicismus
 - inspirace u Shakespeara, mixoval tragedii a komedii
 - dalsim autorem je Jean de La Fontaine
-	- bajky formou malych dramat, alegorie, kritika spolecnosti
+	- bajky formou malych dramat, alegorie, kritika spolecnosti (a pokrytectví)
+	- sbírka elegie
 
 - druh drama, zanr (charakterova) komedie
 - jedna z poslednich her
