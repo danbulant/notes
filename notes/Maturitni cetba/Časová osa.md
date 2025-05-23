@@ -69,10 +69,12 @@ Narození těsně před 1SV, zkušenosti z války
 ## Meziválečné období
 
 - [[Poetismus]], Surrealismus
-- Pragmatismus
+- Pragmatismus, Demokratický proud
+	- souhlasili s ideami TGM
 	- Karel Čapek - [[R.U.R.]], [[Bílá Nemoc]] 
 	- Josef Čapek - bratr; kreslil; Pejsek a kočička
 	- Karel Poláček - [[Bylo nás pět]] 
+	- Jaroslav Hašek - prozaik, novinář, bohém, humor, ironie, nadsázka, Dobrý voják švejk
 
 ## Poválečné období
 

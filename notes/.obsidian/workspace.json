@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maturitni cetba/Bylo nás pět.md",
+                "file": "Maturitni cetba/Fahrenheit 451.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bylo nás pět"
+              "title": "Fahrenheit 451"
             }
           },
           {
@@ -973,9 +973,29 @@
               "icon": "lucide-file",
               "title": "New tab"
             }
+          },
+          {
+            "id": "075b8bd2935c73f7",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "6e0c410d9cfd6866",
+            "type": "leaf",
+            "state": {
+              "type": "graph-analysis",
+              "state": {},
+              "icon": "GA-ICON",
+              "title": "Graph Analysis"
+            }
           }
         ],
-        "currentTab": 84
+        "currentTab": 86
       }
     ],
     "direction": "horizontal",
@@ -1001,6 +1021,7 @@
   "active": "4cf8191c0e2a960d",
   "lastOpenFiles": [
     "Maturitni cetba/Časová osa.md",
+    "Maturitni cetba/Fahrenheit 451.md",
     "Maturitni cetba/Bylo nás pět.md",
     "Maturitni cetba/Romeo a Julie.md",
     "Maturitni cetba/Audience.md",
@@ -1025,7 +1046,6 @@
     "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
     "Maturitni cetba/Vyšetřování ztráty třídní knihy.md",
     "cjl/cjl.md",
-    "cjl/literatura/slohy/Renesance/Romeo a Julie.md",
     "data/Pasted Image 20241212130016_247.png",
     "data/Limita 2024-12-05 13.56.12.excalidraw.svg",
     "data/Pasted image 20241203091625.png",

@@ -18,6 +18,9 @@ kontext:
 - psano behem zacatku studene valky a rozvoji technologii
 - po konci 2. svetove
 
+Knihy jsou zakazane aby neurazili mensiny. Spolecnost jako celek to chtela, totalita neprisla od vedeni / diktatury, spolecnost je jinak volna, mimo samotne knihy.
+Spolecnost je zaroven hekticka, vsichni nekam spechaji, potrebuji neco udelat. Umeni je maximalne ve forme televizniho poradu ci kratke radiove hry.
+
 ## Film
 Knihy jsou zakazane. Televize, komiksy a casopisy ne. Vetsina domu jsou ohnuvzdorny, hasici - firemen - misto haseni zapaluji knihy.
 Montag, manzelka Linda, hlavni postava, hasic. Bylo mu slibeno povyseni. Nahodou se v zavesenem monorailu potkal s pani ucitelkou ktera se ho ptala proc spaluji knihy, jestli ty knihy cte, jestli hasici drive nehasili misto zakladani pozaru a podobne. Jednoho dne se predavkovala sedativy (vypadaji ze jsou povinne). Prijela zachranka a zacala vymenovat jeji krev. Druhy den na incident zapomneli. Maji povinnost se ostrihat.
