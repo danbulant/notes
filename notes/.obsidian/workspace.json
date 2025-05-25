@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maturitni cetba/Fahrenheit 451.md",
+                "file": "Maturitni cetba/Revizor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fahrenheit 451"
+              "title": "Revizor"
             }
           },
           {
@@ -980,12 +980,32 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "6e0c410d9cfd6866",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "dd1b695277609b83",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           },
           {
-            "id": "6e0c410d9cfd6866",
+            "id": "30f9da4a668bd168",
             "type": "leaf",
             "state": {
               "type": "graph-analysis",
@@ -995,7 +1015,7 @@
             }
           }
         ],
-        "currentTab": 86
+        "currentTab": 88
       }
     ],
     "direction": "horizontal",
@@ -1020,8 +1040,9 @@
   },
   "active": "4cf8191c0e2a960d",
   "lastOpenFiles": [
-    "Maturitni cetba/Časová osa.md",
     "Maturitni cetba/Fahrenheit 451.md",
+    "Maturitni cetba/Revizor.md",
+    "Maturitni cetba/Časová osa.md",
     "Maturitni cetba/Bylo nás pět.md",
     "Maturitni cetba/Romeo a Julie.md",
     "Maturitni cetba/Audience.md",
@@ -1045,7 +1066,6 @@
     "Maturitni cetba/Král Lávra.md",
     "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
     "Maturitni cetba/Vyšetřování ztráty třídní knihy.md",
-    "cjl/cjl.md",
     "data/Pasted Image 20241212130016_247.png",
     "data/Limita 2024-12-05 13.56.12.excalidraw.svg",
     "data/Pasted image 20241203091625.png",

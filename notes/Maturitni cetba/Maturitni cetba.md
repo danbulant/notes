@@ -15,6 +15,7 @@
 -  [[Maturitni cetba/Lakomec|Lakomec]]
 -  [[Maturitni cetba/Proměna|Proměna]]
 -  [[Maturitni cetba/R.U.R.|R.U.R.]]
+-  [[Maturitni cetba/Revizor|Revizor]]
 -  [[Maturitni cetba/Romeo a Julie|Romeo a Julie]]
 -  [[Maturitni cetba/Spalovač mrtvol|Spalovač mrtvol]]
 -  [[Maturitni cetba/Velký Gatsby|Velký Gatsby]]
