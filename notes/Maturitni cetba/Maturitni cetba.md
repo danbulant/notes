@@ -14,6 +14,7 @@
 -  [[Maturitni cetba/Kytice|Kytice]]
 -  [[Maturitni cetba/Lakomec|Lakomec]]
 -  [[Maturitni cetba/Proměna|Proměna]]
+-  [[Maturitni cetba/Psohlavci|Psohlavci]]
 -  [[Maturitni cetba/R.U.R.|R.U.R.]]
 -  [[Maturitni cetba/Revizor|Revizor]]
 -  [[Maturitni cetba/Romeo a Julie|Romeo a Julie]]

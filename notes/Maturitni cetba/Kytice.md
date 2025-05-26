@@ -29,3 +29,63 @@ Karel Jaromir Erben
 	- balady zacinaji hrichy a konci trestem (napr. neucta k rodicum, polednice zabije dite)
 	- ve svatebni kosili je milenka zachranena pred mrtvym milencem modlitbou v kapli
 - nazev ovlivnil i treba hrbitovni kviti (jan neruda) - sbirka tragickych basni
+
+
+- kytice
+	- vlastenecká báseň (matka národa), vznik slova mateřídouška
+- poklad
+	- žena objeví během velkého pátku skálu která se otevírá jednou za rok
+	- najde poklad, nechá dítě a odejde s pokladem
+	- vrátí se, dítěti dá pár zlaťáků, ale opět odejde s pokladem
+	- vrátí se domů, ale zjišťuje že se poklad proměnil v kameny
+	- vzpomene si a vrací se pro dítě, skála je zavřena
+	- celý rok prosí boha o odpuštění
+	- po roce se skála opět otevře, dítě je žívé a zdravé a bere dítě a utíká domů
+- svatební košile
+	- dívka chce vidět svého přítele, který je v cizině
+	- odchází s biblí, růžencem a křížkem
+	- postupně ji přemluví aby je zahodila
+	- objeví se u hřbitova a zjistí že její přítel je umrlec (mrtvola, zombie)
+	- přemluví ho přelézt hřbitovní zeď jako první a uteče do márnice se modlit
+	- poté co se dostatečně dlouho modlí přichází ráno, temné síly ztratí moc, umrlec padá na zem
+	- svatební košile které nesla sebou jsou roztrhané na hřbitově
+- polednice
+	- matka vaří oběd
+	- dítko zlobí, matka hrozí že zavolá polednici
+	- dítě zlobí dál
+	- matka zavolá polednici
+	- když však polednice přijde, matka si přitiskne díte k sobě
+	- polednice nechce odejít
+	- omdlí
+	- později přijde otec, matku vzkřísí, ale dítě bylo udušené objetím
+	- v realitě nejspíše otrava oxidem uhelnatým (neklid dítěte a matky, halucinace, omdlení, otec vyvětral)
+- zlatý kolovrat
+	- žena má vlastní a nevlastní dceru (Dora)
+	- král si chce vzít nevlastní
+	- při cestě na hrad žena s dcerou zavraždí nevlastní, vypíchnou oči a rozřezají ruce a nohy, ty odnesou na hrad
+	- král odjíždí
+	- tělo najde stařeček, posílá pacholka pro ruce, nohy a oči postupně za součásti zlatého kolovratu
+	- dceru oživí živou vodou
+	- král se vrací, řekne manželce aby upletla zlatou niť
+	- zlatý kolovrat svým vrněním vyzradí vraždu
+	- král najde Doru a vezme si ji, matku s dcerou nechá potrestat stejně, useknout končetini, vyloupnout oči a hodit vlkům
+- štědrý den
+	- Marie a Hana jdou zjistit svůj osud
+	- Hana vidí ženicha, Marie pohřeb
+	- poté se tak stane (marie zemře)
+	- je lepší žíti v nejistotě než vědět
+- holoubek
+	- prostřední, unikátnější (ostatní jsou dvojice podobných témat)
+	- žena oplakává manžela
+	- mladý muž jede okolo a nabídne svatbu
+	- na hrobu manžela vyrostl dub
+	- na dubu je holoubek co smutně vrká když tam je žena
+	- žena nevydrží připomínku, zabila totiž svého původního manžela
+	- utopí se v potoce
+	- pohřbena mimo hřbitov, křesťanství zakazuje sebevraždu
+- záhořovo lože
+- vodník
+- vrba
+- lilie
+- dceřina kletba
+- věštkyně

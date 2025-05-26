@@ -8,21 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4cf8191c0e2a960d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maturitni cetba/Revizor.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Revizor"
-            }
-          },
-          {
-            "id": "505d41c22627b393",
+            "id": "7bdc106e7b921ff3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,8 +20,37 @@
               "icon": "lucide-file",
               "title": "Časová osa"
             }
+          },
+          {
+            "id": "9ddc025c3589ab92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Kytice.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Kytice"
+            }
+          },
+          {
+            "id": "ebc793a28b30769e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Krysař.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Krysař"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -1000,12 +1015,32 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "30f9da4a668bd168",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4ab441145829249f",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           },
           {
-            "id": "30f9da4a668bd168",
+            "id": "49bc95da4225b4c5",
             "type": "leaf",
             "state": {
               "type": "graph-analysis",
@@ -1015,7 +1050,7 @@
             }
           }
         ],
-        "currentTab": 88
+        "currentTab": 90
       }
     ],
     "direction": "horizontal",
@@ -1038,19 +1073,22 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "4cf8191c0e2a960d",
+  "active": "9ddc025c3589ab92",
   "lastOpenFiles": [
-    "Maturitni cetba/Fahrenheit 451.md",
-    "Maturitni cetba/Revizor.md",
     "Maturitni cetba/Časová osa.md",
-    "Maturitni cetba/Bylo nás pět.md",
+    "Maturitni cetba/Krysař.md",
+    "Maturitni cetba/Kytice.md",
+    "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
     "Maturitni cetba/Romeo a Julie.md",
+    "Maturitni cetba/Lakomec.md",
+    "Maturitni cetba/Psohlavci.md",
+    "Maturitni cetba/Revizor.md",
+    "Maturitni cetba/Fahrenheit 451.md",
+    "Maturitni cetba/Bylo nás pět.md",
     "Maturitni cetba/Audience.md",
     "Maturitni cetba/Spalovač mrtvol.md",
     "Maturitni cetba/Velký Gatsby.md",
     "Maturitni cetba/Já, robot.md",
-    "Maturitni cetba/Kytice.md",
-    "Maturitni cetba/Lakomec.md",
     "Maturitni cetba/Bílá Nemoc.md",
     "Maturitni cetba/R.U.R..md",
     "cjl/literatura/slohy/Renesance/Renesance.md",
@@ -1063,9 +1101,6 @@
     "cjl/literatura/slohy/Renesance/Humanismus.md",
     "cjl/literatura/slohy/Renesance/William Shakespear.md",
     "Maturitni cetba/Proměna.md",
-    "Maturitni cetba/Král Lávra.md",
-    "cjl/literatura/slohy/Realismus/Karel Havlíček Borovský.md",
-    "Maturitni cetba/Vyšetřování ztráty třídní knihy.md",
     "data/Pasted Image 20241212130016_247.png",
     "data/Limita 2024-12-05 13.56.12.excalidraw.svg",
     "data/Pasted image 20241203091625.png",

@@ -9,6 +9,7 @@ Viktor Dyk
 	- kritika maloměsťáků, předchozí generace
 
 - novela (kratší než román, “jednodušší”)
+- pověst, jedna z verzí je od bratří grimmů
 - chronologicky
 - er forma
 - kontrast dialogů a monologů, ze začátku málo monologů a strohé, poté gradace, na konci končí dlouhým monologem

@@ -3,11 +3,15 @@
 ## Humanismus a Renesance
 Počátky knihtisku
 - William Shakespear - [[Romeo a Julie]] 
+- Dante Alighieri - Božská komedie
+- Giovanny Boccacio - Dekameron
 
 [[Renesance]] 
 - obnovení antiky
 - rozvoj vědy a umění
 - fokus na člověka více než na boha
+- Michelangelo (např. socha David)
+- itálie
 
 ## Klasicismus
 - bajka, komedie, satira
@@ -33,9 +37,11 @@ Osvícenství navazuje (pozdní klasicismus)
 ## Romantismus
 - Edgar Allan Poe - [[Maturitni cetba/Havran|Havran]], [[Jáma a kyvadlo]] 
 - Karel Jaromír Erben - [[Maturitni cetba/Kytice|Kytice]] 
+- [[Karel Hynek Mácha]] - M8j
 
 Victor Hugo
 - román Bídníci
+	- Jean Valjean
 	- kradl jídlo pro svoje sestry
 	- je ve vězení 19let
 	- propustí ho, přespává u kněze
@@ -59,6 +65,8 @@ Victor Hugo
 	- ruchovci chtěli národní témata
 - Magický realismus
 	- Franz Kafka - [[Proměna]] 
+- Nikolaj Vasiljevič Gogol - [[Revizor]] 
+- Alois Jirásek - [[Psohlavci]] 
 ## Ztracená generace
 Narození těsně před 1SV, zkušenosti z války
 - kritika společnosti, psychické problémy, vyřazení ze společnosti, zdeformování představ o budoucnosti
