@@ -5,7 +5,7 @@
 -  [[Maturitni cetba/Bylo nás pět|Bylo nás pět]]
 -  [[Maturitni cetba/Časová osa|Časová osa]]
 -  [[Maturitni cetba/Fahrenheit 451|Fahrenheit 451]]
--  [[Maturitni cetba/Farma Zvirat|Farma Zvirat]]
+-  [[Maturitni cetba/Farma zvířat|Farma zvířat]]
 -  [[Maturitni cetba/Havran|Havran]]
 -  [[Maturitni cetba/Já, robot|Já, robot]]
 -  [[Maturitni cetba/Jáma a kyvadlo|Jáma a kyvadlo]]

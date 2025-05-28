@@ -1,4 +1,4 @@
-# Farma Zvirat
+# Farma zvířat
 George Orwell
 
 - pracoval jako novinar

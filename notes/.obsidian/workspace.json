@@ -22,7 +22,161 @@
             }
           },
           {
-            "id": "9ddc025c3589ab92",
+            "id": "adde53bc16eb5e8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Audience.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Audience"
+            }
+          },
+          {
+            "id": "2fab7884c6d742dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Spalovač mrtvol.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spalovač mrtvol"
+            }
+          },
+          {
+            "id": "1f4343ac80292f57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Velký Gatsby.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Velký Gatsby"
+            }
+          },
+          {
+            "id": "31061d5ca2392d0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Proměna.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Proměna"
+            }
+          },
+          {
+            "id": "51c2e498877cbfdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Proměna.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Proměna"
+            }
+          },
+          {
+            "id": "bc2f2100abc0e692",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Král Lávra.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Král Lávra"
+            }
+          },
+          {
+            "id": "63aa3b9dca1d993c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Lakomec.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lakomec"
+            }
+          },
+          {
+            "id": "504d86308bfe5071",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Proměna.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Proměna"
+            }
+          },
+          {
+            "id": "0eecc5755076ff31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Farma zvířat.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Farma zvířat"
+            }
+          },
+          {
+            "id": "f96d47355c6f493d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Velký Gatsby.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Velký Gatsby"
+            }
+          },
+          {
+            "id": "132b18680cda5961",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maturitni cetba/Psohlavci.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Psohlavci"
+            }
+          },
+          {
+            "id": "6f8d470e29dbaead",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,23 +188,8 @@
               "icon": "lucide-file",
               "title": "Kytice"
             }
-          },
-          {
-            "id": "ebc793a28b30769e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maturitni cetba/Krysař.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Krysař"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +262,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mat/Posloupnost.md",
+                "file": "Maturitni cetba/Časová osa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +272,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Posloupnost"
+              "title": "Backlinks for Časová osa"
             }
           },
           {
@@ -1049,13 +1188,11 @@
               "title": "Graph Analysis"
             }
           }
-        ],
-        "currentTab": 90
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -1073,34 +1210,34 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "9ddc025c3589ab92",
+  "active": "95710984799e1bd1",
   "lastOpenFiles": [
-    "Maturitni cetba/Časová osa.md",
-    "Maturitni cetba/Krysař.md",
-    "Maturitni cetba/Kytice.md",
-    "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
-    "Maturitni cetba/Romeo a Julie.md",
-    "Maturitni cetba/Lakomec.md",
     "Maturitni cetba/Psohlavci.md",
-    "Maturitni cetba/Revizor.md",
-    "Maturitni cetba/Fahrenheit 451.md",
-    "Maturitni cetba/Bylo nás pět.md",
+    "Maturitni cetba/Časová osa.md",
+    "Maturitni cetba/Velký Gatsby.md",
     "Maturitni cetba/Audience.md",
     "Maturitni cetba/Spalovač mrtvol.md",
-    "Maturitni cetba/Velký Gatsby.md",
+    "Maturitni cetba/Proměna.md",
+    "Maturitni cetba/Král Lávra.md",
+    "Maturitni cetba/Jáma a kyvadlo.md",
+    "Maturitni cetba/Havran.md",
+    "Maturitni cetba/Lakomec.md",
+    "Maturitni cetba/Farma zvířat.md",
     "Maturitni cetba/Já, robot.md",
+    "Maturitni cetba/Fahrenheit 451.md",
     "Maturitni cetba/Bílá Nemoc.md",
     "Maturitni cetba/R.U.R..md",
+    "Maturitni cetba/Krysař.md",
+    "cjl/literatura/slohy/Romantismus/Národní obrozeni.md",
+    "Maturitni cetba/Kytice.md",
+    "Maturitni cetba/Romeo a Julie.md",
+    "Maturitni cetba/Bylo nás pět.md",
+    "Maturitni cetba/Vyšetřování ztráty třídní knihy.md",
+    "Maturitni cetba/Revizor.md",
+    "cjl/literatura/slohy/Romantismus/Karel Hynek Mácha.md",
     "cjl/literatura/slohy/Renesance/Renesance.md",
-    "Maturitni cetba/Havran.md",
-    "Maturitni cetba/Jáma a kyvadlo.md",
     "cjl/literatura/slohy/Renesance/Zkrocení zlé ženy.md",
     "cjl/literatura/slohy/Renesance/Hamlet.md",
-    "cjl/literatura/slohy/Renesance/Sonety.md",
-    "cjl/literatura/slohy/Renesance/Zimní pohádka.md",
-    "cjl/literatura/slohy/Renesance/Humanismus.md",
-    "cjl/literatura/slohy/Renesance/William Shakespear.md",
-    "Maturitni cetba/Proměna.md",
     "data/Pasted Image 20241212130016_247.png",
     "data/Limita 2024-12-05 13.56.12.excalidraw.svg",
     "data/Pasted image 20241203091625.png",

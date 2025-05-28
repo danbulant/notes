@@ -86,6 +86,17 @@ Karel Jaromir Erben
 - záhořovo lože
 - vodník
 - vrba
+	- žena je propojená s vrbou, v noci je jak tělo bez duše
+	- manželovi to vadí a rozhodne se vrbu pokácet
+	- žena umírá po kácení, on z ní vyrobí kolébku a zasadí proutí, ze kterého poté udělá píšťalky pro děti
+	- možná dryáda
 - lilie
+	- na hrobě mrtvé panny v lese vyrostli lilie
+	- pán našel lilii v lese během lovu, vykopal ji a dal si ji na zahradu
+	- třetí den se květ lilie proměnila v dívku, ta varovala že ji sluneční svit zabije
+	- pán si ji vzal a ukryl; narodilo se jim dítě
+	- král povolal pána do služby
+	- matka se měla starat o kytku, ta ale neměla dívku ráda a nechala lilii na slunci
+	- dítě i dívka zemřela; pán proklel matku a pohřbil dívku s dcerou v lese
 - dceřina kletba
 - věštkyně
